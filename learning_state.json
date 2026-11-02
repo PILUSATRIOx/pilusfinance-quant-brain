@@ -2,22 +2,22 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793629684876,
+  "updatedAt": 1793631117690,
   "brain": {
     "v": 1,
-    "gen": 1,
-    "cycles": 11,
+    "gen": 2,
+    "cycles": 12,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1793614538964,
+    "lastOptAt": 1793631117207,
     "autoExecBursa": false,
     "params": {
       "atrMult": 1.8,
       "rsiLongMax": 62,
       "rsiShortMin": 38,
-      "minScore": 75,
+      "minScore": 70,
       "feeBps": 10,
       "riskPct": 1,
       "tp1Ratio": 0.8,
@@ -31,16 +31,16 @@
       "volConfirmMult": 1.15
     },
     "weights": {
-      "elder": null,
-      "donchian": null,
-      "bbrev": null,
-      "wyckoff": null,
-      "rsidiv": null,
-      "macdm": null,
-      "smc": null,
-      "statarb": 1,
-      "tsmom": 1,
-      "emax": null,
+      "elder": 0.27,
+      "donchian": 0.27,
+      "bbrev": 0.23,
+      "wyckoff": 0.37,
+      "rsidiv": 0.16,
+      "macdm": 0.28,
+      "smc": 0.36,
+      "statarb": 0.77,
+      "tsmom": 0.83,
+      "emax": 0.34,
       "TREND_PULLBACK": 1,
       "BREAKOUT": 1,
       "REVERSAL": 1,
@@ -59,8 +59,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 3,
-          "beta": 4
+          "alpha": 4,
+          "beta": 6
         }
       },
       "donchian": {
@@ -73,8 +73,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 3,
-          "beta": 4
+          "alpha": 4,
+          "beta": 6
         }
       },
       "bbrev": {
@@ -87,8 +87,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 4,
-          "beta": 3
+          "alpha": 6,
+          "beta": 4
         }
       },
       "wyckoff": {
@@ -101,7 +101,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 3,
+          "alpha": 6,
           "beta": 4
         }
       },
@@ -116,7 +116,7 @@
         },
         "RANGING": {
           "alpha": 5,
-          "beta": 2
+          "beta": 3
         }
       },
       "macdm": {
@@ -130,7 +130,7 @@
         },
         "RANGING": {
           "alpha": 4,
-          "beta": 3
+          "beta": 6
         }
       },
       "smc": {
@@ -143,8 +143,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 3,
-          "beta": 4
+          "alpha": 5,
+          "beta": 5
         }
       },
       "statarb": {
@@ -158,7 +158,7 @@
         },
         "RANGING": {
           "alpha": 4,
-          "beta": 3
+          "beta": 6
         }
       },
       "tsmom": {
@@ -185,12 +185,12 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 4,
-          "beta": 3
+          "alpha": 5,
+          "beta": 5
         }
       }
     },
-    "lastHurst": 0.52,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
@@ -389,40 +389,40 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 37,
-          "wins": 13,
-          "losses": 24,
-          "winRate": 35.13513513513514,
-          "pf": 0.2920959282581402,
-          "exp": -0.5508530275875441,
-          "netR": -20.38156202073913,
-          "maxDD": 20.781562020739127,
+          "trades": 36,
+          "wins": 14,
+          "losses": 22,
+          "winRate": 38.88888888888889,
+          "pf": 0.3739236133303041,
+          "exp": -0.45879163326117417,
+          "netR": -16.51649879740227,
+          "maxDD": 19.171108325231792,
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 28,
-          "wins": 12,
-          "losses": 16,
-          "winRate": 42.857142857142854,
-          "pf": 0.2649375197350556,
-          "exp": -0.5572124296929235,
-          "netR": -15.601948031401859,
-          "maxDD": 16.00194803140186,
+          "trades": 29,
+          "wins": 11,
+          "losses": 18,
+          "winRate": 37.93103448275862,
+          "pf": 0.21863398437486958,
+          "exp": -0.6437112878750714,
+          "netR": -18.66762734837707,
+          "maxDD": 19.06762734837707,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 27,
-          "wins": 19,
+          "trades": 25,
+          "wins": 17,
           "losses": 8,
-          "winRate": 70.37037037037037,
-          "pf": 1.3727155488325846,
-          "exp": 0.1377517522574838,
-          "netR": 3.7192973109520624,
-          "maxDD": 3.0622360289966517,
+          "winRate": 68,
+          "pf": 1.2925465238428233,
+          "exp": 0.11677189243808249,
+          "netR": 2.919297310952062,
+          "maxDD": 3.462236028996652,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -639,26 +639,26 @@
         },
         "SPY": {
           "trades": 15,
-          "wins": 9,
-          "losses": 6,
-          "winRate": 60,
-          "pf": 0.4586191216061872,
-          "exp": -0.2833100599021386,
-          "netR": -4.249650898532079,
-          "maxDD": 6.649650898532079,
+          "wins": 8,
+          "losses": 7,
+          "winRate": 53.333333333333336,
+          "pf": 0.34443410796018215,
+          "exp": -0.40604009224505166,
+          "netR": -6.090601383675775,
+          "maxDD": 6.649650898532078,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 18,
+          "trades": 19,
           "wins": 10,
-          "losses": 8,
-          "winRate": 55.55555555555556,
-          "pf": 0.6644093213977975,
-          "exp": -0.19179772215901375,
-          "netR": -3.4523589988622474,
-          "maxDD": 5.852358998862247,
+          "losses": 9,
+          "winRate": 52.63157894736842,
+          "pf": 0.5899009635021497,
+          "exp": -0.2500908600813202,
+          "netR": -4.751726341545083,
+          "maxDD": 5.9517263415450845,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -874,28 +874,28 @@
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 13,
+          "trades": 11,
           "wins": 8,
-          "losses": 5,
-          "winRate": 61.53846153846154,
-          "pf": 0.642303961711209,
-          "exp": -0.20550895044742584,
-          "netR": -2.671616355816536,
-          "maxDD": 4.707786530129983,
-          "atrMult": 1.5,
+          "losses": 3,
+          "winRate": 72.72727272727273,
+          "pf": 1.194910178972942,
+          "exp": 0.0733697941010611,
+          "netR": 0.8070677351116722,
+          "maxDD": 2.94071619740144,
+          "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "QQQ": {
           "trades": 13,
-          "wins": 7,
-          "losses": 6,
-          "winRate": 53.84615384615385,
-          "pf": 0.6427624012215934,
-          "exp": -0.20667858791309454,
-          "netR": -2.686821642870229,
-          "maxDD": 4.595300307016621,
-          "atrMult": 1.8,
+          "wins": 8,
+          "losses": 5,
+          "winRate": 61.53846153846154,
+          "pf": 0.6361386505968366,
+          "exp": -0.180908168046729,
+          "netR": -2.3518061846074767,
+          "maxDD": 3.162501845962768,
+          "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
@@ -1334,13 +1334,13 @@
         },
         "MSFT": {
           "trades": 8,
-          "wins": 2,
-          "losses": 6,
-          "winRate": 25,
-          "pf": 0.2647104117402621,
-          "exp": -0.6418623633540592,
-          "netR": -5.134898906832474,
-          "maxDD": 5.808875733301975,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.3870984210818052,
+          "exp": -0.44503363858504597,
+          "netR": -3.5602691086803677,
+          "maxDD": 5.808875733301976,
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1569,26 +1569,26 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 8,
-          "wins": 4,
+          "trades": 7,
+          "wins": 3,
           "losses": 4,
-          "winRate": 50,
-          "pf": 0.7877384388929572,
-          "exp": -0.12475272231327555,
-          "netR": -0.9980217785062044,
-          "maxDD": 3.5008898276249747,
-          "atrMult": 1.5,
+          "winRate": 42.857142857142854,
+          "pf": 0.2609422942519313,
+          "exp": -0.48553112887613564,
+          "netR": -3.3987179021329497,
+          "maxDD": 3.7987179021329496,
+          "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 7,
-          "wins": 4,
+          "trades": 6,
+          "wins": 3,
           "losses": 3,
-          "winRate": 57.14285714285714,
-          "pf": 0.4060967669864066,
-          "exp": -0.3342782347431272,
-          "netR": -2.3399476432018904,
+          "winRate": 50,
+          "pf": 0.304572575239805,
+          "exp": -0.4566579405336484,
+          "netR": -2.7399476432018903,
           "maxDD": 3.1399476432018902,
           "atrMult": 2,
           "regime": "CHAOS",
@@ -2236,6 +2236,45 @@
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 23,
+          "wins": 13,
+          "losses": 10,
+          "winRate": 56.52173913043478,
+          "pf": 0.8463234189951613,
+          "exp": -0.07625834035706551,
+          "netR": -1.7539418282125068,
+          "maxDD": 4.4754650954890165,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 33,
+          "wins": 20,
+          "losses": 13,
+          "winRate": 60.60606060606061,
+          "pf": 0.6716538345936948,
+          "exp": -0.19041708244060848,
+          "netR": -6.28376372054008,
+          "maxDD": 8.21682761830964,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 35,
+          "wins": 19,
+          "losses": 16,
+          "winRate": 54.285714285714285,
+          "pf": 0.6399598851078534,
+          "exp": -0.21357651576914902,
+          "netR": -7.475178051920215,
+          "maxDD": 9.150147800798663,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
         }
       },
       "tsmom": {
@@ -2394,11 +2433,70 @@
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793631117686,
+        "type": "CYCLE",
+        "text": "[CYCLE #12] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793631117207,
+        "type": "GEN",
+        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 70/100."
+      },
+      {
+        "t": 1793631117207,
+        "type": "GEN",
+        "text": "[GEN #2] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+13.41R · Win 74.2%)"
+      },
+      {
+        "t": 1793631116716,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1793629684871,
         "type": "CYCLE",
@@ -2578,9 +2676,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 150,
+      "newsIngested": 180,
       "lessons": 0,
-      "backtests": 264,
+      "backtests": 294,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2593,7 +2691,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1793629380599,
+      "fetchedAt": 1793631116716,
       "items": [
         {
           "source": "CoinDesk",
@@ -2925,7 +3023,7 @@
       "fearGreed": {
         "value": 37,
         "classification": "Fear",
-        "t": 1793629380599
+        "t": 1793631116716
       },
       "lastErrors": []
     },
@@ -3080,8 +3178,8 @@
       "winRate": 74.2,
       "pf": 39.12,
       "expPerTrade": 0.107,
-      "updatedAt": 1793629684874,
-      "gen": 1
+      "updatedAt": 1793631117689,
+      "gen": 2
     },
     "minScore": 75
   }
