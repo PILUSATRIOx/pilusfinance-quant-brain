@@ -1,13 +1,13 @@
 {
   "version": "1.0",
-  "updatedAt": 1793613593115,
+  "updatedAt": 1793613649340,
   "brain": {
     "v": 1,
     "gen": 0,
-    "cycles": 3,
+    "cycles": 4,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 0,
     "params": {
@@ -137,6 +137,45 @@
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         }
       },
       "donchian": {
@@ -243,6 +282,45 @@
           "maxDD": 7.101228723547617,
           "atrMult": 1.8,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
           "dataStatus": "LIVE"
         }
       },
@@ -351,6 +429,45 @@
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         }
       },
       "wyckoff": {
@@ -457,6 +574,45 @@
           "maxDD": 3.0446222876197617,
           "atrMult": 1.5,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
           "dataStatus": "LIVE"
         }
       },
@@ -565,6 +721,45 @@
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         }
       },
       "macdm": {
@@ -671,6 +866,45 @@
           "maxDD": 3.621319131914926,
           "atrMult": 2,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
           "dataStatus": "LIVE"
         }
       },
@@ -779,6 +1013,45 @@
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         }
       },
       "emax": {
@@ -886,11 +1159,60 @@
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793613649337,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #4 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793613648666,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 13 jurnal dimuat dari database."
+      },
       {
         "t": 1793613593112,
         "type": "CYCLE",
@@ -967,7 +1289,7 @@
       "tp1Hits": 0,
       "newsIngested": 30,
       "lessons": 0,
-      "backtests": 48,
+      "backtests": 72,
       "netR": 0,
       "backtestOOS": {
         "trades": 0,
