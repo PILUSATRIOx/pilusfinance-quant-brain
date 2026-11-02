@@ -3204,7 +3204,8 @@
                 '<span class="up">TP3 <b>' + fmtPx(s.tp3) + '</b></span>' +
                 '<span>R:R <b>1:2.5</b></span></div>' +
                 '<div class="qb-sig-meta"><span>rezim ' + esc(s.regime) + ' · vol ' + s.volPct.toFixed(2) + '% · ' + (s.votes || []).map(v => v.strat).join(' + ') + ' · ' + ago(s.createdAt) + '</span>' +
-                '<button type="button" class="btn-refresh" style="color:var(--gold);border-color:var(--gold);" onclick="executeSignalByIndexOnExchange(' + idx + ')"><canvas class="pf-cico" data-ico="bolt"></canvas> Eksekusi ke Bursa</button></div>' +
+                '<button type="button" class="btn-refresh" style="color:var(--gold);border-color:var(--gold);" onclick="executeSignalByIndexOnExchange(' + idx + ')"><canvas class="pf-cico" data-ico="bolt"></canvas> Paper Trade</button>' +
+                '<button type="button" class="btn-refresh" style="color:var(--up);border-color:var(--up);margin-left:4px;" onclick="executeManualOnBinance(' + idx + ')"><canvas class="pf-cico" data-ico="bolt"></canvas> Eksekusi Manual (Real)</button></div>' +
                 ((s.factors || []).length ? '<details class="qb-details"><summary>Alasan konfluensi (' + s.factors.length + ' screen)</summary><ul>' + s.factors.map(f => '<li>' + esc(f) + '</li>').join('') + '</ul></details>' : '') +
                 '</div>';
         });
@@ -3548,6 +3549,126 @@
         if (pos && typeof showToast === 'function') {
             showToast(`Order ${pos.side} ${pos.sym} ($${pos.notionalUsd}) dieksekusi di ${pos.exName} dengan SL & TP3 otomatis!`, 'ok');
         }
+    };
+    window.executeManualOnBinance = async function (idx) {
+        const sig = brain.signals[idx];
+        if (!sig) return;
+        const ex = getConnectedExchangesList()[0] || { id: 'binance', name: 'Binance', assetClass: 'CRYPTO' };
+        const cfg = userExchangeConfigs[ex.id] || {};
+        const bal = Math.max(10, parseFloat(cfg.balanceUsd) || 1000);
+        const sym = sig.sym;
+        const side = sig.side;
+        const entry = sig.entry || getLivePriceForSymbol(sym);
+        const lev = sig.lev || 5;
+        const volPct = sig.volPct || 1.2;
+        const atrMult = brain.learned.atrMult || 1.8;
+        const atrPct = volPct / 100;
+        const slDistPct = Math.max(0.003, atrPct * atrMult);
+        const riskPct = (brain.params.riskPct || 1.0) / 100;
+        const riskUsd = bal * riskPct;
+        const notionalUsd = riskUsd / slDistPct;
+        const marginUsd = Math.min(bal * 0.35, Math.max(10, notionalUsd / lev));
+        const qty = marginUsd * lev / entry;
+        const sl = side === 'LONG' ? entry * (1 - slDistPct) : entry * (1 + slDistPct);
+        const tp1Ratio = brain.learned.tp1Ratio || 0.8;
+        const riskPerUnit = Math.abs(entry - sl);
+        const tp1 = side === 'LONG' ? entry + tp1Ratio * riskPerUnit : entry - tp1Ratio * riskPerUnit;
+        const tp2 = side === 'LONG' ? entry + 1.6 * riskPerUnit : entry - 1.6 * riskPerUnit;
+        const tp3 = side === 'LONG' ? entry + 2.5 * riskPerUnit : entry - 2.5 * riskPerUnit;
+        const slPct = (slDistPct * 100).toFixed(2);
+        const tpPct = (slDistPct * 2.5 * 100).toFixed(2);
+
+        // Open Binance Futures in new tab
+        const binanceUrl = 'https://www.binance.com/en/futures/' + sym;
+        window.open(binanceUrl, '_blank');
+
+        // Build modal
+        const modalId = 'manualExecModal';
+        let modal = document.getElementById(modalId);
+        if (!modal) {
+            modal = document.createElement('div');
+            modal.id = modalId;
+            modal.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;padding:20px;';
+            document.body.appendChild(modal);
+        }
+        const rows = [
+            ['Symbol', sym, true],
+            ['Side', side, false],
+            ['Leverage', lev + 'x', false],
+            ['Margin (USDT)', marginUsd.toFixed(2), true],
+            ['Qty (coin)', qty.toFixed(6), true],
+            ['Notional (USDT)', (marginUsd * lev).toFixed(2), true],
+            ['Entry (Market)', fmtPx(entry), true],
+            ['SL Price', fmtPx(sl), true],
+            ['SL %', '-' + slPct + '%', false],
+            ['TP1 Price', fmtPx(tp1), true],
+            ['TP2 Price', fmtPx(tp2), true],
+            ['TP3 Price', fmtPx(tp3), true],
+            ['TP %', '+' + tpPct + '%', false],
+            ['Risk (USDT)', riskUsd.toFixed(2), false],
+        ];
+        modal.innerHTML = '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;max-width:480px;width:100%;max-height:90vh;overflow:auto;font-family:inherit;">' +
+            '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">' +
+            '<h3 style="margin:0;font-size:16px;">📋 Order Manual — ' + esc(sym) + ' ' + side + '</h3>' +
+            '<button onclick="document.getElementById(\'manualExecModal\').remove()" style="background:none;border:none;color:var(--fg);font-size:20px;cursor:pointer;">&times;</button></div>' +
+            '<p style="font-size:12px;color:var(--muted-foreground);margin:0 0 12px 0;">Binance Futures sudah dibuka di tab baru. Copy nilai di bawah → paste di Binance → klik Place Order. Lalu klik "Sudah Eksekusi" untuk tracking P/L.</p>' +
+            '<table style="width:100%;border-collapse:collapse;font-size:13px;">' +
+            rows.map(([k, v, copy]) => '<tr><td style="padding:4px 8px;color:var(--muted-foreground);">' + k + '</td><td style="padding:4px 8px;font-weight:700;text-align:right;">' + v + '</td>' + (copy ? '<td style="padding:4px 4px;"><button onclick="navigator.clipboard.writeText(\'' + v + '\');this.textContent=\'✓\';setTimeout(()=>this.textContent=\'Copy\',800)" style="font-size:10px;padding:2px 6px;cursor:pointer;">Copy</button></td>' : '<td></td>') + '</tr>').join('') +
+            '</table>' +
+            '<div style="margin-top:16px;display:flex;gap:8px;justify-content:flex-end;">' +
+            '<button onclick="document.getElementById(\'manualExecModal\').remove()" style="padding:8px 16px;cursor:pointer;">Tutup</button>' +
+            '<button onclick="window.confirmManualExecution(' + idx + ');document.getElementById(\'manualExecModal\').remove();" style="padding:8px 16px;background:var(--up);color:#fff;border:none;border-radius:4px;cursor:pointer;font-weight:700;">✅ Sudah Eksekusi (Track P/L)</button>' +
+            '</div></div>';
+        modal.style.display = 'flex';
+    };
+    window.confirmManualExecution = function (idx) {
+        const sig = brain.signals[idx];
+        if (!sig) return;
+        const ex = getConnectedExchangesList()[0] || { id: 'binance', name: 'Binance', assetClass: 'CRYPTO' };
+        const cfg = userExchangeConfigs[ex.id] || {};
+        const bal = Math.max(10, parseFloat(cfg.balanceUsd) || 1000);
+        const sym = sig.sym;
+        const side = sig.side;
+        const entry = sig.entry || getLivePriceForSymbol(sym);
+        const lev = sig.lev || 5;
+        const volPct = sig.volPct || 1.2;
+        const atrMult = brain.learned.atrMult || 1.8;
+        const atrPct = volPct / 100;
+        const slDistPct = Math.max(0.003, atrPct * atrMult);
+        const riskPct = (brain.params.riskPct || 1.0) / 100;
+        const riskUsd = bal * riskPct;
+        const notionalUsd = riskUsd / slDistPct;
+        const marginUsd = Math.min(bal * 0.35, Math.max(10, notionalUsd / lev));
+        const sl = side === 'LONG' ? entry * (1 - slDistPct) : entry * (1 + slDistPct);
+        const tp1Ratio = brain.learned.tp1Ratio || 0.8;
+        const riskPerUnit = Math.abs(entry - sl);
+        const tp1 = side === 'LONG' ? entry + tp1Ratio * riskPerUnit : entry - tp1Ratio * riskPerUnit;
+        const tp2 = side === 'LONG' ? entry + 1.6 * riskPerUnit : entry - 1.6 * riskPerUnit;
+        const tp3 = side === 'LONG' ? entry + 2.5 * riskPerUnit : entry - 2.5 * riskPerUnit;
+        const nonce = Math.random().toString(36).slice(2, 10);
+        const ts = Date.now();
+        const pos = {
+            id: 'MANUAL_' + ts + '_' + nonce.slice(-6),
+            nonce: nonce.slice(0, 12),
+            exId: ex.id,
+            exName: ex.name + ' (Manual)',
+            sym, side, lev,
+            marginUsd: Math.round(marginUsd * 100) / 100,
+            marginPct: Math.round((marginUsd / bal) * 1000) / 10,
+            notionalUsd: Math.round(marginUsd * lev * 100) / 100,
+            riskUsd: Math.round(riskUsd * 100) / 100,
+            entry, mark: entry, sl, tp1, tp2, tp3,
+            beActive: false, sigHash: 'MANUAL',
+            strategy: (brain.champion && brain.champion.name) || '7-Screen Confluence',
+            status: 'LIVE_OPEN', openedAt: ts, manual: true
+        };
+        liveExchangePositions.unshift(pos);
+        if (liveExchangePositions.length > 60) liveExchangePositions.length = 60;
+        saveCurrentUserWorkstate();
+        renderExchangeGatewayUI();
+        qbJournal('SIGNAL', '[MANUAL EXEC] ' + side + ' ' + sym + ' ' + lev + 'x | Margin $' + pos.marginUsd + ' | Entry ' + fmtPx(entry) + ' · SL ' + fmtPx(sl) + ' · TP3 ' + fmtPx(tp3));
+        if (typeof showToast === 'function') showToast('Trade manual dicatat! Quant brain akan track P/L dari harga riil.', 'ok');
+        qbRenderAll();
     };
     window.executeSignalByIndexOnExchange = async function (idx) {
         const sig = brain.signals[idx];
