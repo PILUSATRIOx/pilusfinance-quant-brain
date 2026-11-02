@@ -1,35 +1,36 @@
 {
-  "version": "1.0",
-  "updatedAt": 1793626754360,
+  "version": "2.5",
+  "projectId": "pilusfinance",
+  "senderId": "821263795912",
+  "updatedAt": 1793627913525,
   "brain": {
     "v": 1,
     "gen": 1,
-    "cycles": 8,
+    "cycles": 9,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1793614538964,
+    "autoExecBursa": false,
     "params": {
       "atrMult": 1.8,
       "rsiLongMax": 62,
       "rsiShortMin": 38,
       "minScore": 75,
       "feeBps": 10,
-      "riskPct": 1
+      "riskPct": 1,
+      "tp1Ratio": 0.8,
+      "volConfirmMult": 1.15
     },
     "learned": {
       "atrMult": 1.8,
       "rsiLongMax": 62,
-      "rsiShortMin": 38
+      "rsiShortMin": 38,
+      "tp1Ratio": 0.8,
+      "volConfirmMult": 1.15
     },
     "weights": {
-      "TREND_PULLBACK": 1,
-      "BREAKOUT": 1,
-      "REVERSAL": 1,
-      "MEAN_REVERSION": 1,
-      "MOMENTUM": 1,
-      "SCALP": 1,
       "elder": null,
       "donchian": null,
       "bbrev": null,
@@ -37,8 +38,159 @@
       "rsidiv": null,
       "macdm": null,
       "smc": null,
-      "emax": null
+      "statarb": 1,
+      "tsmom": 1,
+      "emax": null,
+      "TREND_PULLBACK": 1,
+      "BREAKOUT": 1,
+      "REVERSAL": 1,
+      "MEAN_REVERSION": 1,
+      "MOMENTUM": 1,
+      "SCALP": 1
     },
+    "bayesian": {
+      "elder": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 5
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "donchian": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "bbrev": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 5
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "wyckoff": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "rsidiv": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 5
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "macdm": {
+        "TREND_UP": {
+          "alpha": 5,
+          "beta": 2
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "smc": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "statarb": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 5
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "tsmom": {
+        "TREND_UP": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      },
+      "emax": {
+        "TREND_UP": {
+          "alpha": 5,
+          "beta": 2
+        },
+        "TREND_DOWN": {
+          "alpha": 2,
+          "beta": 2
+        },
+        "RANGING": {
+          "alpha": 2,
+          "beta": 2
+        }
+      }
+    },
+    "lastHurst": 0.52,
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
@@ -120,42 +272,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 30,
-          "wins": 18,
-          "losses": 12,
-          "winRate": 60,
-          "pf": 0.8081864499380275,
-          "exp": -0.08446239170744192,
-          "netR": -2.533871751223258,
-          "maxDD": 4.862698755763609,
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 28,
-          "wins": 14,
-          "losses": 14,
-          "winRate": 50,
-          "pf": 0.5177198806484403,
-          "exp": -0.2637157406302184,
-          "netR": -7.3840407376461155,
-          "maxDD": 7.771335764914989,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 37,
-          "wins": 16,
-          "losses": 21,
-          "winRate": 43.24324324324324,
-          "pf": 0.41966912641793197,
-          "exp": -0.3658792581756031,
-          "netR": -13.537532552497314,
-          "maxDD": 13.537532552497314,
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -356,42 +508,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 22,
-          "wins": 8,
-          "losses": 14,
-          "winRate": 36.36363636363637,
-          "pf": 0.43695423689806556,
-          "exp": -0.3925712670236923,
-          "netR": -8.636567874521232,
-          "maxDD": 10.212882222259074,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 22,
-          "wins": 10,
-          "losses": 12,
-          "winRate": 45.45454545454545,
-          "pf": 0.5660387144917374,
-          "exp": -0.25838456253774855,
-          "netR": -5.684460375830468,
-          "maxDD": 8.012281019662186,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 25,
-          "wins": 13,
-          "losses": 12,
-          "winRate": 52,
-          "pf": 0.6529976074760337,
-          "exp": -0.18336039925115308,
-          "netR": -4.584009981278827,
-          "maxDD": 7.101228723547617,
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -593,41 +745,41 @@
         },
         "ADAUSDT": {
           "trades": 20,
-          "wins": 10,
-          "losses": 10,
-          "winRate": 50,
-          "pf": 0.6772127495378962,
-          "exp": -0.1781283045574788,
-          "netR": -3.5625660911495762,
-          "maxDD": 5.081385757572424,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 19,
-          "wins": 13,
-          "losses": 6,
-          "winRate": 68.42105263157895,
-          "pf": 1.6376781015132982,
-          "exp": 0.22372453593243505,
-          "netR": 4.250766182716266,
-          "maxDD": 2.9406273454750105,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 22,
-          "wins": 14,
-          "losses": 8,
-          "winRate": 63.63636363636363,
-          "pf": 1.1550414411802523,
-          "exp": 0.062383959738206984,
-          "netR": 1.3724471142405537,
-          "maxDD": 2.9447365086165282,
-          "atrMult": 1.8,
-          "regime": "RANGING",
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -828,42 +980,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 16,
-          "wins": 12,
-          "losses": 4,
-          "winRate": 75,
-          "pf": 1.812671582897511,
-          "exp": 0.2292155913250622,
-          "netR": 3.667449461200995,
-          "maxDD": 1.4255631345328605,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 16,
-          "wins": 7,
-          "losses": 9,
-          "winRate": 43.75,
-          "pf": 0.5210056139466037,
-          "exp": -0.2937438879517268,
-          "netR": -4.699902207227629,
-          "maxDD": 6.723382621544472,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 16,
-          "wins": 11,
-          "losses": 5,
-          "winRate": 68.75,
-          "pf": 1.7352050130213268,
-          "exp": 0.26526247649016343,
-          "netR": 4.244199623842615,
-          "maxDD": 3.0446222876197617,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -1064,42 +1216,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 11,
-          "wins": 2,
-          "losses": 9,
-          "winRate": 18.181818181818183,
-          "pf": 0.3012435581796941,
-          "exp": -0.6420138470548379,
-          "netR": -7.062152317603217,
-          "maxDD": 8.577488366144086,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 10,
-          "wins": 4,
-          "losses": 6,
-          "winRate": 40,
-          "pf": 0.7230030586362519,
-          "exp": -0.18926010330953724,
-          "netR": -1.8926010330953724,
-          "maxDD": 4.92185379667384,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -1300,42 +1452,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 16,
-          "wins": 10,
-          "losses": 6,
-          "winRate": 62.5,
-          "pf": 0.7868663814504661,
-          "exp": -0.08756574221358995,
-          "netR": -1.4010518754174393,
-          "maxDD": 3.373584613033834,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 18,
-          "wins": 11,
-          "losses": 7,
-          "winRate": 61.111111111111114,
-          "pf": 0.5701521399052679,
-          "exp": -0.184291023399383,
-          "netR": -3.317238421188894,
-          "maxDD": 4.737119047044791,
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 9,
-          "wins": 5,
-          "losses": 4,
-          "winRate": 55.55555555555556,
-          "pf": 0.7114469755448097,
-          "exp": -0.14175388973284977,
-          "netR": -1.275785007595648,
-          "maxDD": 3.621319131914926,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -1536,42 +1688,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 7,
-          "wins": 6,
-          "losses": 1,
-          "winRate": 85.71428571428571,
-          "pf": 4.0716595180637905,
-          "exp": 0.5020913547160485,
-          "netR": 3.5146394830123397,
-          "maxDD": 1.1442151912812852,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 9,
-          "wins": 6,
-          "losses": 3,
-          "winRate": 66.66666666666666,
-          "pf": 1.755284823207985,
-          "exp": 0.27900323402430266,
-          "netR": 2.5110291062187238,
-          "maxDD": 3.324612158302638,
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 8,
-          "wins": 4,
-          "losses": 4,
-          "winRate": 50,
-          "pf": 0.35698572922883876,
-          "exp": -0.36024648501227313,
-          "netR": -2.881971880098185,
-          "maxDD": 4.081971880098185,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -1772,42 +1924,42 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 6,
-          "wins": 4,
-          "losses": 2,
-          "winRate": 66.66666666666666,
-          "pf": 1.2265458652061405,
-          "exp": 0.0849149286684447,
-          "netR": 0.5094895720106682,
-          "maxDD": 2.2489466825936937,
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 9,
-          "wins": 6,
-          "losses": 3,
-          "winRate": 66.66666666666666,
-          "pf": 1.0520797775958743,
-          "exp": 0.019530995154367833,
-          "netR": 0.17577895638931051,
-          "maxDD": 2.975186387186784,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 14,
-          "wins": 8,
-          "losses": 6,
-          "winRate": 57.14285714285714,
-          "pf": 0.7922274695176101,
-          "exp": -0.10290074897301246,
-          "netR": -1.4406104856221744,
-          "maxDD": 4.217345457555142,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
@@ -1967,6 +2119,45 @@
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
         }
       },
       "tsmom": {
@@ -2008,11 +2199,65 @@
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793627913522,
+        "type": "CYCLE",
+        "text": "[CYCLE #9] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793627912694,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
+      },
+      {
+        "t": 1793627912692,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1793626754347,
         "type": "CYCLE",
@@ -2162,9 +2407,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 90,
+      "newsIngested": 120,
       "lessons": 0,
-      "backtests": 174,
+      "backtests": 204,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2177,7 +2422,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1793626650936,
+      "fetchedAt": 1793627912692,
       "items": [
         {
           "source": "CoinDesk",
@@ -2188,7 +2433,7 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin's 'volatility curve' has a midterm bump",
+          "title": "Bitcoin&#39;s &#39;volatility curve&#39; has a midterm bump",
           "link": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump",
           "pubDate": "2026-11-02 12:30:17",
           "summary": "Your day-ahead look for Nov. 2, 2026"
@@ -2223,7 +2468,7 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Live updates: Binance records $6 billion outflows after starting withdrawals, less then 4% of total holdings",
+          "title": "Live updates: Bitcoin posts small rise as Binance records $6 billion outflows after starting withdrawals",
           "link": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings",
           "pubDate": "2026-11-02 08:49:30",
           "summary": "The outflows followed a 45-hour withdrawal freeze after a $6.3 billion theft, with rival exchanges attracting deposits as customers regained access to their funds."
@@ -2233,7 +2478,7 @@
           "title": "China’s Communist Party calls for a crackdown on corruption that uses crypto and blockchain",
           "link": "https://www.coindesk.com/markets/2026/11/02/china-s-communist-party-calls-for-a-crackdown-on-corruption-that-uses-crypto-and-blockchain",
           "pubDate": "2026-11-02 08:41:28",
-          "summary": "China's Communist Party has named virtual currency and blockchain in a new anti-corruption call."
+          "summary": "China&#39;s Communist Party has named virtual currency and blockchain in a new anti-corruption call."
         },
         {
           "source": "CoinDesk",
@@ -2248,6 +2493,20 @@
           "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now",
           "pubDate": "2026-11-02 06:46:41",
           "summary": "The first trading day after the Binance hack saw  the biggest ETF outflow since June 25."
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "AI agent disputes head to ‘Internet Court’ — and a jury of AI agents",
+          "link": "https://cointelegraph.com/magazine/ai-agent-disputes-sent-to-internet-court-and-a-jury-of-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 13:30:00",
+          "summary": "\n   \n Who better to judge a dispute between AI agents than a jury of different AI models? That’s the idea behind GenLayer, which is already issuing thousands of judgements each day. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 13:29:29",
+          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
         },
         {
           "source": "CoinTelegraph",
@@ -2306,22 +2565,8 @@
           "summary": "\n   \n OKX led cryptocurrency exchanges with $445 million in daily inflows, while Binance processed about $7 billion in net outflows. \n"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack",
-          "link": "https://cointelegraph.com/markets/bitcoin-etfs-october-red-binance-hack-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 07:50:36",
-          "summary": "\n   \n US spot Bitcoin ETFs ended October with $515 million in net withdrawals, while Ether funds posted a record $1.61 billion in monthly outflows. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "BTCPay Server warns of hot wallet thefts running on outdated software",
-          "link": "https://cointelegraph.com/news/btcpay-server-hot-wallet-thefts-older-versions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 05:34:02",
-          "summary": "\n   \n BTCPay Server urged operators to shut down their servers after receiving reports of unauthorized attackers draining funds from hot wallets. \n"
-        },
-        {
           "source": "Decrypt",
-          "title": "Morning Minute: The Binance Hack Leads to Mass Outflows while FBI Opens Probe",
+          "title": "Morning Minute: Binance Hack Leads to Mass Outflows While FBI Opens Probe",
           "link": "https://decrypt.co/382332/morning-minute-the-binance-hack-leads-to-mass-outflows-while-fbi-opens-probe",
           "pubDate": "2026-11-02 13:34:02",
           "summary": "Uptober was far from it, with the Binance hack punctuating a red month. Will November be better? Or will the Binance hack hang over crypto?"
@@ -2359,7 +2604,7 @@
           "title": "How to Run an AI Model Locally—And Why You Might Want To",
           "link": "https://decrypt.co/382295/how-to-run-ai-model-locally-why-you-might-want",
           "pubDate": "2026-11-01 14:01:02",
-          "summary": "Free tools like Ollama and LM Studio can run open-weight AI models on your laptop, offline, and without a subscription. Here's how to get started."
+          "summary": "Free tools like Ollama and LM Studio can run open-weight AI models on your laptop, offline, and without a subscription. Here&#39;s how to get started."
         },
         {
           "source": "Decrypt",
@@ -2373,7 +2618,7 @@
           "title": "Why AI Models Cheat: Reward Hacking, Explained",
           "link": "https://decrypt.co/382274/why-ai-models-cheat-reward-hacking-explained",
           "pubDate": "2026-10-31 13:01:03",
-          "summary": "From boat-racing bots to OpenAI models inside Hugging Face, here's how AI reward hacking works and why it matters."
+          "summary": "From boat-racing bots to OpenAI models inside Hugging Face, here&#39;s how AI reward hacking works and why it matters."
         },
         {
           "source": "Decrypt",
@@ -2404,14 +2649,12 @@
           "critHead": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.67,
-          "sources": [
-            "CoinTelegraph"
-          ],
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
           "multiSourced": false,
-          "critical": true,
-          "critHead": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack"
+          "critical": false,
+          "critHead": ""
         },
         "SOL": {
           "sentiment": "BEARISH",
@@ -2504,10 +2747,6 @@
           "head": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         },
         {
-          "coin": "ETH",
-          "head": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack"
-        },
-        {
           "coin": "SOL",
           "head": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         }
@@ -2515,7 +2754,7 @@
       "fearGreed": {
         "value": 37,
         "classification": "Fear",
-        "t": 1793626650936
+        "t": 1793627912692
       },
       "lastErrors": []
     },
@@ -2662,12 +2901,15 @@
       ]
     },
     "champion": {
-      "id": "wyckoff",
-      "name": "Wyckoff Spring & Upthrust",
-      "netR": 4.01,
-      "trades": 168,
-      "winRate": 62.9,
-      "updatedAt": 1793614538964,
+      "id": "emax",
+      "name": "EMA Cross Naive (CONTROL)",
+      "book": "Baseline Penelitian",
+      "netR": -1.58,
+      "trades": 116,
+      "winRate": 67.4,
+      "pf": 20.61,
+      "expPerTrade": -0.014,
+      "updatedAt": 1793627913524,
       "gen": 1
     },
     "minScore": 75
