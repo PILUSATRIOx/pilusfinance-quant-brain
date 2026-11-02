@@ -377,13 +377,63 @@
     function buildIndicators(k) {
         const c = k.map(x => x.c);
         const bb = bbSeries(c, 20, 2);
+        const kalman = kalmanSeries(c);
+        const hurst = hurstRS(c.slice(-Math.min(200, c.length)));
         return {
             c, k,
             ema20: emaSeries(c, 20), ema50: emaSeries(c, 50), ema200: emaSeries(c, Math.min(200, Math.floor(c.length / 2))),
             rsi: rsiSeries(c, 14), atr: atrSeries(k, 14), bb,
             macd: macdSeries(c),
-            volSma20: k.map((_, i) => sma(k.map(x => x.v), i, 20))
+            volSma20: k.map((_, i) => sma(k.map(x => x.v), i, 20)),
+            kalman, hurst
         };
+    }
+    function kalmanSeries(prices) {
+        const out = new Array(prices.length).fill(null);
+        if (prices.length < 5) return out;
+        let x = prices[0], v = 0; let P00 = 1, P01 = 0, P11 = 1;
+        const Q = 0.01, R = 0.5;
+        for (let i = 1; i < prices.length; i++) {
+            const xp = x + v, vp = v;
+            const P00p = P00 + 2 * P01 + P11 + Q;
+            const P01p = P01 + P11;
+            const P11p = P11 + Q;
+            const y = prices[i] - xp;
+            const S = P00p + R;
+            const K0 = P00p / S, K1 = P01p / S;
+            x = xp + K0 * y; v = vp + K1 * y;
+            P00 = (1 - K0) * P00p; P01 = (1 - K0) * P01p; P11 = P11p - K1 * P01p;
+            out[i] = { state: x, vel: v };
+        }
+        return out;
+    }
+    function hurstRS(series) {
+        const n = series.length;
+        if (n < 40) return 0.5;
+        const lags = [8, 16, 32, 64].filter(l => l <= Math.floor(n / 2));
+        const logL = [], logRS = [];
+        lags.forEach(L => {
+            const chunks = Math.floor(n / L);
+            let rsSum = 0, cnt = 0;
+            for (let c = 0; c < chunks; c++) {
+                const sl = series.slice(c * L, (c + 1) * L);
+                const m = sl.reduce((a, b) => a + b, 0) / L;
+                const dev = sl.map(x => x - m);
+                let cum = 0, maxC = -Infinity, minC = Infinity;
+                dev.forEach(d => { cum += d; maxC = Math.max(maxC, cum); minC = Math.min(minC, cum); });
+                const R = maxC - minC;
+                const S = Math.sqrt(dev.reduce((a, b) => a + b * b, 0) / L) || 1e-9;
+                rsSum += R / S; cnt++;
+            }
+            if (cnt > 0) { logL.push(Math.log(L)); logRS.push(Math.log(rsSum / cnt)); }
+        });
+        if (logL.length < 2) return 0.5;
+        const mx = logL.reduce((a, b) => a + b, 0) / logL.length;
+        const my = logRS.reduce((a, b) => a + b, 0) / logRS.length;
+        let num = 0, den = 0;
+        logL.forEach((x, i) => { num += (x - mx) * (logRS[i] - my); den += (x - mx) * (x - mx); });
+        const H = den > 0 ? num / den : 0.5;
+        return Math.max(0, Math.min(1, H));
     }
 
     /* Regime detection (Two Sigma blueprint): Efficiency Ratio + BB-width percentile */
@@ -712,17 +762,26 @@
         else if (nw.impact < -0.3 && side === 'SHORT') { score += 10; factors.push('✔ Screen6: sentimen BEARISH multi-sumber (' + nw.sources.join(',') + ')'); }
         else factors.push('◦ Screen6: berita netral (tidak menambah/mengurangi)');
 
+        // Screen 7 — Momentum Burst detector (Two Sigma style): volume >=1.35x, body >=55%, Kalman velocity searah -> TP3 diperluas ke 3.2R, SL tetap -1R
+        const volRatio = (ind.volSma20[i] || 0) > 0 ? ind.k[i].v / ind.volSma20[i] : 1;
+        const bodyRatio = (ind.k[i].h - ind.k[i].l) > 0 ? Math.abs(ind.k[i].c - ind.k[i].o) / (ind.k[i].h - ind.k[i].l) : 0;
+        const kv = (ind.kalman && ind.kalman[i]) ? ind.kalman[i].vel : 0;
+        const kalmanAligned = (side === 'LONG' && kv > 0) || (side === 'SHORT' && kv < 0);
+        const momentumBurst = volRatio >= 1.35 && bodyRatio >= 0.55 && kalmanAligned;
+        if (momentumBurst) { score += 12; factors.push('Screen7 (Momentum Burst): vol ' + volRatio.toFixed(2) + 'x, body ' + (bodyRatio * 100).toFixed(0) + '%, Kalman aligned -> TP3 3.2R'); }
+
         const volPct = (atr / px) * 100;
         const mult = brain.learned.atrMult;
         const sl = side === 'LONG' ? px - mult * atr : px + mult * atr;
         const risk = Math.abs(px - sl);
+        const tp3Mult = momentumBurst ? 3.2 : 2.5;
         return {
             sym, side, entry: px, sl, rsiAtEntry: rsi != null ? Math.round(rsi) : null,
             tp1: side === 'LONG' ? px + 0.8 * risk : px - 0.8 * risk,
             tp2: side === 'LONG' ? px + 1.6 * risk : px - 1.6 * risk,
-            tp3: side === 'LONG' ? px + 2.5 * risk : px - 2.5 * risk,
+            tp3: side === 'LONG' ? px + tp3Mult * risk : px - tp3Mult * risk,
             lev: leverageFor(volPct), conf: Math.max(0, Math.min(100, Math.round(score))),
-            regime, factors, votes: votes.list, atr, volPct
+            regime, factors, votes: votes.list, atr, volPct, momentumBurst, hurst: ind.hurst
         };
     }
     async function qbScanSymbols(list) {
