@@ -1,15 +1,15 @@
 {
   "version": "1.0",
-  "updatedAt": 1793614508694,
+  "updatedAt": 1793614539940,
   "brain": {
     "v": 1,
-    "gen": 0,
-    "cycles": 5,
+    "gen": 1,
+    "cycles": 6,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 0,
+    "lastOptAt": 1793614538964,
     "params": {
       "atrMult": 1.8,
       "rsiLongMax": 62,
@@ -29,7 +29,15 @@
       "REVERSAL": 1,
       "MEAN_REVERSION": 1,
       "MOMENTUM": 1,
-      "SCALP": 1
+      "SCALP": 1,
+      "elder": null,
+      "donchian": null,
+      "bbrev": null,
+      "wyckoff": null,
+      "rsidiv": null,
+      "macdm": null,
+      "smc": null,
+      "emax": null
     },
     "leaderboard": {
       "elder": {
@@ -214,6 +222,45 @@
           "maxDD": 9.376890830423463,
           "atrMult": 1.5,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 37,
+          "wins": 13,
+          "losses": 24,
+          "winRate": 35.13513513513514,
+          "pf": 0.2920959282581402,
+          "exp": -0.5508530275875441,
+          "netR": -20.38156202073913,
+          "maxDD": 20.781562020739127,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 28,
+          "wins": 12,
+          "losses": 16,
+          "winRate": 42.857142857142854,
+          "pf": 0.2649375197350556,
+          "exp": -0.5572124296929235,
+          "netR": -15.601948031401859,
+          "maxDD": 16.00194803140186,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 27,
+          "wins": 19,
+          "losses": 8,
+          "winRate": 70.37037037037037,
+          "pf": 1.3727155488325846,
+          "exp": 0.1377517522574838,
+          "netR": 3.7192973109520624,
+          "maxDD": 3.0622360289966517,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
       },
@@ -400,6 +447,45 @@
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 14,
+          "wins": 9,
+          "losses": 5,
+          "winRate": 64.28571428571429,
+          "pf": 1.1819687799294436,
+          "exp": 0.07506122890351355,
+          "netR": 1.0508572046491897,
+          "maxDD": 2.26018607064793,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 15,
+          "wins": 9,
+          "losses": 6,
+          "winRate": 60,
+          "pf": 0.4586191216061872,
+          "exp": -0.2833100599021386,
+          "netR": -4.249650898532079,
+          "maxDD": 6.649650898532079,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 18,
+          "wins": 10,
+          "losses": 8,
+          "winRate": 55.55555555555556,
+          "pf": 0.6644093213977975,
+          "exp": -0.19179772215901375,
+          "netR": -3.4523589988622474,
+          "maxDD": 5.852358998862247,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
         }
       },
       "bbrev": {
@@ -584,6 +670,45 @@
           "maxDD": 3.1461181157152582,
           "atrMult": 2,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 11,
+          "wins": 7,
+          "losses": 4,
+          "winRate": 63.63636363636363,
+          "pf": 1.34528917024423,
+          "exp": 0.14300298203917716,
+          "netR": 1.5730328024309488,
+          "maxDD": 1.8787790576142707,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 13,
+          "wins": 8,
+          "losses": 5,
+          "winRate": 61.53846153846154,
+          "pf": 0.642303961711209,
+          "exp": -0.20550895044742584,
+          "netR": -2.671616355816536,
+          "maxDD": 4.707786530129983,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 13,
+          "wins": 7,
+          "losses": 6,
+          "winRate": 53.84615384615385,
+          "pf": 0.6427624012215934,
+          "exp": -0.20667858791309454,
+          "netR": -2.686821642870229,
+          "maxDD": 4.595300307016621,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
       },
@@ -770,6 +895,45 @@
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 14,
+          "wins": 10,
+          "losses": 4,
+          "winRate": 71.42857142857143,
+          "pf": 1.2891469661123647,
+          "exp": 0.09809220330709788,
+          "netR": 1.3732908462993703,
+          "maxDD": 1.9688401350098272,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 12,
+          "wins": 8,
+          "losses": 4,
+          "winRate": 66.66666666666666,
+          "pf": 1.1091023892815854,
+          "exp": 0.051656967894016116,
+          "netR": 0.6198836147281934,
+          "maxDD": 3.3324320290792437,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 7,
+          "wins": 6,
+          "losses": 1,
+          "winRate": 85.71428571428571,
+          "pf": 2.752784018306601,
+          "exp": 0.3115612730885394,
+          "netR": 2.180928911619776,
+          "maxDD": 1.2442656304721524,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
         }
       },
       "rsidiv": {
@@ -954,6 +1118,45 @@
           "maxDD": 1.830810111252264,
           "atrMult": 1.8,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 8,
+          "wins": 2,
+          "losses": 6,
+          "winRate": 25,
+          "pf": 0.2647104117402621,
+          "exp": -0.6418623633540592,
+          "netR": -5.134898906832474,
+          "maxDD": 5.808875733301975,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 2,
+          "wins": 1,
+          "losses": 1,
+          "winRate": 50,
+          "pf": 0.29917575492755893,
+          "exp": -0.46850336869184833,
+          "netR": -0.9370067373836967,
+          "maxDD": 1.3370067373836967,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.8974436436316129,
+          "netR": 1.7948872872632258,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
       },
@@ -1140,6 +1343,45 @@
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 8,
+          "wins": 4,
+          "losses": 4,
+          "winRate": 50,
+          "pf": 0.7877384388929572,
+          "exp": -0.12475272231327555,
+          "netR": -0.9980217785062044,
+          "maxDD": 3.5008898276249747,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 7,
+          "wins": 4,
+          "losses": 3,
+          "winRate": 57.14285714285714,
+          "pf": 0.4060967669864066,
+          "exp": -0.3342782347431272,
+          "netR": -2.3399476432018904,
+          "maxDD": 3.1399476432018902,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 7,
+          "wins": 3,
+          "losses": 4,
+          "winRate": 42.857142857142854,
+          "pf": 0.45653722263705243,
+          "exp": -0.38052614292899994,
+          "netR": -2.6636830005029997,
+          "maxDD": 4.901316357723758,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
         }
       },
       "smc": {
@@ -1324,6 +1566,45 @@
           "maxDD": 2.2054847096143577,
           "atrMult": 1.8,
           "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 8,
+          "wins": 1,
+          "losses": 7,
+          "winRate": 12.5,
+          "pf": 0.04933767917955918,
+          "exp": -0.9634242394748722,
+          "netR": -7.707393915798978,
+          "maxDD": 7.707393915798978,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 4,
+          "wins": 4,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.058527016592235,
+          "netR": 4.23410806636894,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 4,
+          "wins": 3,
+          "losses": 1,
+          "winRate": 75,
+          "pf": 2.3276816919433614,
+          "exp": 0.4417524805811025,
+          "netR": 1.76700992232441,
+          "maxDD": 1.3308987636471756,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
       },
@@ -1510,11 +1791,70 @@
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
+        },
+        "MSFT": {
+          "trades": 8,
+          "wins": 5,
+          "losses": 3,
+          "winRate": 62.5,
+          "pf": 0.5597436126904106,
+          "exp": -0.19663305544189003,
+          "netR": -1.5730644435351202,
+          "maxDD": 2.4021615171120203,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "SPY": {
+          "trades": 10,
+          "wins": 7,
+          "losses": 3,
+          "winRate": 70,
+          "pf": 0.6787629907421029,
+          "exp": -0.1325151250422055,
+          "netR": -1.325151250422055,
+          "maxDD": 2.525151250422055,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "QQQ": {
+          "trades": 8,
+          "wins": 5,
+          "losses": 3,
+          "winRate": 62.5,
+          "pf": 1.1912225505106817,
+          "exp": 0.09590581718184668,
+          "netR": 0.7672465374547734,
+          "maxDD": 1.8899049082614365,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793614539939,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #6 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793614538964,
+        "type": "GEN",
+        "text": "🏆 CHAMPION: Wyckoff Spring & Upthrust (wyckoff) — netR 4.01R, win 62.9%, 168 trades (formula paling maksimal profit saat ini)."
+      },
+      {
+        "t": 1793614538964,
+        "type": "GEN",
+        "text": "🧠 GENERASI #1 selesai — universe penuh di-backtest walk-forward | bobot strategi diperbarui dari hasil out-of-sample riil | akurasi live: 0.0%"
+      },
+      {
+        "t": 1793614538588,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 18 jurnal dimuat dari database."
+      },
       {
         "t": 1793614508692,
         "type": "CYCLE",
@@ -1616,7 +1956,7 @@
       "tp1Hits": 0,
       "newsIngested": 60,
       "lessons": 0,
-      "backtests": 96,
+      "backtests": 120,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -1975,7 +2315,15 @@
       "bias": {},
       "positions": []
     },
-    "champion": null,
+    "champion": {
+      "id": "wyckoff",
+      "name": "Wyckoff Spring & Upthrust",
+      "netR": 4.01,
+      "trades": 168,
+      "winRate": 62.9,
+      "updatedAt": 1793614538964,
+      "gen": 1
+    },
     "minScore": 75
   }
 }

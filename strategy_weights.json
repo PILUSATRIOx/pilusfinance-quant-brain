@@ -5,7 +5,15 @@
     "REVERSAL": 1,
     "MEAN_REVERSION": 1,
     "MOMENTUM": 1,
-    "SCALP": 1
+    "SCALP": 1,
+    "elder": null,
+    "donchian": null,
+    "bbrev": null,
+    "wyckoff": null,
+    "rsidiv": null,
+    "macdm": null,
+    "smc": null,
+    "emax": null
   },
-  "updatedAt": 1793614508694
+  "updatedAt": 1793614539940
 }
