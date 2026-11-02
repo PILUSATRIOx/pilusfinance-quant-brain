@@ -94,10 +94,11 @@
             weights: w,
             leaderboard: {}, signals: [], journal: [],
             accuracyHistory: [], equityR: 0,
-            stats: { closed: 0, wins: 0, losses: 0, be: 0, tp1Hits: 0, newsIngested: 0, lessons: 0, backtests: 0, netR: 0, backtestOOS: { trades: 0, netR: 0, winRatePct: null } },
+            stats: { closed: 0, wins: 0, losses: 0, be: 0, tp1Hits: 0, newsIngested: 0, lessons: 0, backtests: 0, netR: 0, peakEquity: 0, maxDrawdown: 0, consecutiveLosses: 0, defensiveMode: false, backtestOOS: { trades: 0, netR: 0, winRatePct: null } },
             news: { fetchedAt: 0, items: [], perCoin: {}, breaker: [], fearGreed: null },
             derivatives: {},
-            whale: { fetchedAt: 0, bias: {}, positions: [] }
+            whale: { fetchedAt: 0, bias: {}, positions: [] },
+            champion: null
         };
     }
     function loadBrain() {
@@ -105,7 +106,7 @@
             const raw = localStorage.getItem(QB_STORE);
             if (!raw) return defaultBrain();
             const b = JSON.parse(raw); const d = defaultBrain();
-            return Object.assign(d, b, { params: Object.assign(d.params, b.params || {}), learned: Object.assign(d.learned, b.learned || {}), stats: Object.assign(d.stats, b.stats || {}), news: Object.assign(d.news, b.news || {}), whale: Object.assign(d.whale, b.whale || {}) });
+            return Object.assign(d, b, { params: Object.assign(d.params, b.params || {}), learned: Object.assign(d.learned, b.learned || {}), stats: Object.assign(d.stats, b.stats || {}), news: Object.assign(d.news, b.news || {}), whale: Object.assign(d.whale, b.whale || {}), champion: b.champion || d.champion });
         } catch (e) { return defaultBrain(); }
     }
     function saveBrain() { try { localStorage.setItem(QB_STORE, JSON.stringify(brain)); } catch (e) { } }
@@ -807,9 +808,24 @@
                     s.closedAt = Date.now(); s.netR = Math.round(netR * 100) / 100; s.closeReason = reason;
                     brain.stats.closed++;
                     if (s.status === 'WIN') brain.stats.wins++; else if (s.status === 'LOSS') brain.stats.losses++; else brain.stats.be++;
-                    brain.equityR += s.netR;
-                    brain.stats.netR = brain.equityR;
-                    reinforceWeights(s);
+            // Money management: lacak peak equity & max drawdown, proteksi modal
+            if (brain.stats.peakEquity == null) brain.stats.peakEquity = 0;
+            if (brain.equityR > brain.stats.peakEquity) brain.stats.peakEquity = brain.equityR;
+            const dd = brain.stats.peakEquity - brain.equityR;
+            if (dd > (brain.stats.maxDrawdown || 0)) brain.stats.maxDrawdown = Math.round(dd * 100) / 100;
+            if (s.status === 'LOSS') { brain.stats.consecutiveLosses = (brain.stats.consecutiveLosses || 0) + 1; }
+            else if (s.status === 'WIN') { brain.stats.consecutiveLosses = 0; }
+            // Defensive mode: turunkan risk kalau drawdown ≥ 5R atau 3 loss beruntun
+            if (dd >= 5 || (brain.stats.consecutiveLosses || 0) >= 3) {
+                brain.stats.defensiveMode = true;
+                brain.params.riskPct = Math.max(0.25, (brain.params.riskPct || 1.0) * 0.7);
+            } else if (brain.stats.defensiveMode && brain.equityR >= brain.stats.peakEquity) {
+                brain.stats.defensiveMode = false;
+                brain.params.riskPct = 1.0;
+            }
+            brain.equityR += s.netR;
+            brain.stats.netR = brain.equityR;
+            reinforceWeights(s);
                     if (s.status === 'LOSS') qbPostMortem(s); else qbJournal('WIN', '✅ ' + s.sym + ' ' + s.side + ' WIN +' + s.netR.toFixed(2) + 'R — ' + reason + ' (MFE ' + (s.mfe || 0).toFixed(2) + 'R)');
                     brain.accuracyHistory.push({ t: Date.now(), acc: brain.stats.closed ? (brain.stats.wins + brain.stats.be) / brain.stats.closed * 100 : 0, eq: Math.round(brain.equityR * 100) / 100 });
                 }
@@ -1008,6 +1024,15 @@
                 }
             });
             qbJournal('GEN', '🧠 GENERASI #' + brain.gen + ' selesai — universe penuh di-backtest walk-forward | bobot strategi diperbarui dari hasil out-of-sample riil | akurasi live: ' + qbAccuracy().toFixed(1) + '%');
+            // Champion: strategi dengan netR total tertinggi (min 5 trades) = formula paling maksimal profit
+            let champ = null;
+            QB_STRATS.forEach(st => {
+                const per = brain.leaderboard[st.id] || {};
+                let netR = 0, trades = 0, winSum = 0, n = 0;
+                Object.values(per).forEach(r => { if (r && r.dataStatus === 'LIVE' && r.trades >= 5) { netR += r.netR; trades += r.trades; winSum += r.winRate; n++; } });
+                if (n > 0 && (!champ || netR > champ.netR)) champ = { id: st.id, name: st.name, netR: Math.round(netR * 100) / 100, trades, winRate: Math.round(winSum / n * 10) / 10 };
+            });
+            if (champ) { brain.champion = Object.assign({}, champ, { updatedAt: Date.now(), gen: brain.gen }); qbJournal('GEN', '🏆 CHAMPION: ' + champ.name + ' (' + champ.id + ') — netR ' + champ.netR + 'R, win ' + champ.winRate + '%, ' + champ.trades + ' trades (formula paling maksimal profit saat ini).'); }
             // Auto-tuning selektivitas: generasi tanpa sinyal → turunkan ambang bertahap (floor 55) agar otak tetap beraktivitas tanpa jadi spam
             if (brain.signals.length === 0 && brain.gen >= 2 && brain.params.minScore > 55) {
                 brain.params.minScore = Math.max(55, brain.params.minScore - 5);

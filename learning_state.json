@@ -1,13 +1,13 @@
 {
   "version": "1.0",
-  "updatedAt": 1793613649340,
+  "updatedAt": 1793614508694,
   "brain": {
     "v": 1,
     "gen": 0,
-    "cycles": 4,
+    "cycles": 5,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 0,
     "params": {
@@ -176,6 +176,45 @@
           "atrMult": 1.8,
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 26,
+          "wins": 15,
+          "losses": 11,
+          "winRate": 57.692307692307686,
+          "pf": 0.9808443003644229,
+          "exp": -0.009339639601008006,
+          "netR": -0.24283062962620816,
+          "maxDD": 6.29305120753023,
+          "atrMult": 1.5,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 33,
+          "wins": 19,
+          "losses": 14,
+          "winRate": 57.57575757575758,
+          "pf": 0.6475273874811426,
+          "exp": -0.1785844256913092,
+          "netR": -5.893286047813204,
+          "maxDD": 7.7156549334174045,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 29,
+          "wins": 13,
+          "losses": 16,
+          "winRate": 44.827586206896555,
+          "pf": 0.7264168496242918,
+          "exp": -0.17021185493481567,
+          "netR": -4.936143793109654,
+          "maxDD": 9.376890830423463,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         }
       },
       "donchian": {
@@ -321,6 +360,45 @@
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 15,
+          "wins": 9,
+          "losses": 6,
+          "winRate": 60,
+          "pf": 1.0215508821302954,
+          "exp": 0.009762116319709847,
+          "netR": 0.1464317447956477,
+          "maxDD": 4.871412609446816,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 12,
+          "wins": 7,
+          "losses": 5,
+          "winRate": 58.333333333333336,
+          "pf": 0.8304185194833116,
+          "exp": -0.08535225690609993,
+          "netR": -1.0242270828731992,
+          "maxDD": 3.2448761248582745,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 16,
+          "wins": 6,
+          "losses": 10,
+          "winRate": 37.5,
+          "pf": 0.3289961271327489,
+          "exp": -0.4539820521432518,
+          "netR": -7.263712834292029,
+          "maxDD": 7.6637128342920295,
+          "atrMult": 2,
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -468,6 +546,45 @@
           "atrMult": 1.8,
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 16,
+          "wins": 12,
+          "losses": 4,
+          "winRate": 75,
+          "pf": 1.327625919900301,
+          "exp": 0.09184880729275574,
+          "netR": 1.4695809166840919,
+          "maxDD": 1.8349055630757904,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 7,
+          "wins": 7,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.561631482401601,
+          "netR": 3.9314203768112073,
+          "maxDD": 0,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 11,
+          "wins": 7,
+          "losses": 4,
+          "winRate": 63.63636363636363,
+          "pf": 0.915768066939146,
+          "exp": -0.03328017547249926,
+          "netR": -0.3660819301974918,
+          "maxDD": 3.1461181157152582,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         }
       },
       "wyckoff": {
@@ -613,6 +730,45 @@
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.21476349595345606,
+          "exp": -0.5484427187407503,
+          "netR": -4.387541749926003,
+          "maxDD": 5.1875417499260035,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 12,
+          "wins": 5,
+          "losses": 7,
+          "winRate": 41.66666666666667,
+          "pf": 0.5157476772705957,
+          "exp": -0.3258001554453514,
+          "netR": -3.9096018653442166,
+          "maxDD": 5.488839529706681,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 10,
+          "wins": 7,
+          "losses": 3,
+          "winRate": 70,
+          "pf": 1.5648140085235906,
+          "exp": 0.18412293184699977,
+          "netR": 1.8412293184699977,
+          "maxDD": 2.1669668925451395,
+          "atrMult": 2,
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -760,6 +916,45 @@
           "atrMult": 1.8,
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 7,
+          "wins": 4,
+          "losses": 3,
+          "winRate": 57.14285714285714,
+          "pf": 1.1756099044595303,
+          "exp": 0.08331473177590723,
+          "netR": 0.5832031224313506,
+          "maxDD": 3.321014974788912,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 10,
+          "wins": 7,
+          "losses": 3,
+          "winRate": 70,
+          "pf": 1.1242498546832718,
+          "exp": 0.043255447038729744,
+          "netR": 0.43255447038729744,
+          "maxDD": 2.6813277769211994,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 4,
+          "wins": 2,
+          "losses": 2,
+          "winRate": 50,
+          "pf": 0.8670320663963919,
+          "exp": -0.07415655268881216,
+          "netR": -0.29662621075524864,
+          "maxDD": 1.830810111252264,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         }
       },
       "macdm": {
@@ -905,6 +1100,45 @@
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 7,
+          "wins": 5,
+          "losses": 2,
+          "winRate": 71.42857142857143,
+          "pf": 1.8838012064049536,
+          "exp": 0.28223083755173434,
+          "netR": 1.9756158628621403,
+          "maxDD": 2.235362260816967,
+          "atrMult": 1.8,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 11,
+          "wins": 8,
+          "losses": 3,
+          "winRate": 72.72727272727273,
+          "pf": 0.8801486421344936,
+          "exp": -0.03961359239993783,
+          "netR": -0.43574951639931614,
+          "maxDD": 3.235749516399316,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 10,
+          "wins": 6,
+          "losses": 4,
+          "winRate": 60,
+          "pf": 0.5375668998894657,
+          "exp": -0.20645605979339265,
+          "netR": -2.0645605979339265,
+          "maxDD": 3.664560597933926,
+          "atrMult": 1.5,
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1052,6 +1286,45 @@
           "atrMult": 1.8,
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 6,
+          "wins": 4,
+          "losses": 2,
+          "winRate": 66.66666666666666,
+          "pf": 0.7112287481991706,
+          "exp": -0.10827130841078349,
+          "netR": -0.649627850464701,
+          "maxDD": 1.8496278504647008,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 5,
+          "wins": 2,
+          "losses": 3,
+          "winRate": 40,
+          "pf": 0.23400174836574378,
+          "exp": -0.523755574979383,
+          "netR": -2.6187778748969146,
+          "maxDD": 3.4187778748969144,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 5,
+          "wins": 3,
+          "losses": 2,
+          "winRate": 60,
+          "pf": 1.5888340624721071,
+          "exp": 0.2597329042564676,
+          "netR": 1.298664521282338,
+          "maxDD": 2.2054847096143577,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         }
       },
       "emax": {
@@ -1198,11 +1471,65 @@
           "atrMult": 1.8,
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
+        },
+        "NVDA": {
+          "trades": 4,
+          "wins": 2,
+          "losses": 2,
+          "winRate": 50,
+          "pf": 0.8632918350458495,
+          "exp": -0.07499831035390178,
+          "netR": -0.2999932414156071,
+          "maxDD": 2.194406175492296,
+          "atrMult": 2,
+          "regime": "CHAOS",
+          "dataStatus": "LIVE"
+        },
+        "AAPL": {
+          "trades": 4,
+          "wins": 3,
+          "losses": 1,
+          "winRate": 75,
+          "pf": 1.0241882359947616,
+          "exp": 0.0070850948521005985,
+          "netR": 0.028340379408402394,
+          "maxDD": 1.1716596205915977,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "TSLA": {
+          "trades": 6,
+          "wins": 5,
+          "losses": 1,
+          "winRate": 83.33333333333334,
+          "pf": 3.800889310437479,
+          "exp": 0.5257418559296075,
+          "netR": 3.154451135577645,
+          "maxDD": 1.1262319877556828,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793614508692,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #5 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793614505540,
+        "type": "NEWS",
+        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1793614502389,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 15 jurnal dimuat dari database."
+      },
       {
         "t": 1793613649337,
         "type": "CYCLE",
@@ -1287,10 +1614,14 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 30,
+      "newsIngested": 60,
       "lessons": 0,
-      "backtests": 72,
+      "backtests": 96,
       "netR": 0,
+      "peakEquity": 0,
+      "maxDrawdown": 0,
+      "consecutiveLosses": 0,
+      "defensiveMode": false,
       "backtestOOS": {
         "trades": 0,
         "netR": 0,
@@ -1298,8 +1629,22 @@
       }
     },
     "news": {
-      "fetchedAt": 1793613566458,
+      "fetchedAt": 1793614505540,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Metals.io issues tokens backed by 25 tonnes of physical copper stored in Germany",
+          "link": "https://www.coindesk.com/markets/2026/11/02/metals-io-issues-tokens-backed-by-25-tonnes-of-physical-copper-stored-in-germany",
+          "pubDate": "2026-11-02 09:33:20",
+          "summary": "The company is starting with $366,000 worth of copper stored in Germany, hoping to build a market for investors to own and trade physical metal onchain."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Binance hack fallout, U.S. midterms and jobs report: Crypto Week Ahead",
+          "link": "https://www.coindesk.com/markets/2026/11/02/binance-hack-fallout-u-s-midterms-and-jobs-report-crypto-week-ahead",
+          "pubDate": "2026-11-02 09:04:49",
+          "summary": "Your look at what’s coming in the week starting Nov. 2."
+        },
         {
           "source": "CoinDesk",
           "title": "Live updates: Binance records $6 billion outflows after starting withdrawals, less then 4% of total holdings",
@@ -1355,20 +1700,6 @@
           "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
           "pubDate": "2026-11-01 19:30:00",
           "summary": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years. Here's what to know."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
-          "link": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
-          "pubDate": "2026-11-01 17:00:00",
-          "summary": "The researchers say any approval an agent can reach is unreliable, and they built Countersign, an app tying approval to a physical action the agent can’t fake."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "The key races to watch for the 2026 election",
-          "link": "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
-          "pubDate": "2026-11-01 15:00:00",
-          "summary": "While crypto isn't a major issue in the 2026 election, the industry will be shaped by who takes office in January. Here are the main races CoinDesk is tracking."
         },
         {
           "source": "CoinTelegraph",
@@ -1634,7 +1965,7 @@
       "fearGreed": {
         "value": 37,
         "classification": "Fear",
-        "t": 1793613566458
+        "t": 1793614505540
       },
       "lastErrors": []
     },
@@ -1644,6 +1975,7 @@
       "bias": {},
       "positions": []
     },
+    "champion": null,
     "minScore": 75
   }
 }
