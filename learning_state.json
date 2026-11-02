@@ -1,13 +1,13 @@
 {
   "version": "1.0",
-  "updatedAt": 1793614539940,
+  "updatedAt": 1793626807785,
   "brain": {
     "v": 1,
     "gen": 1,
-    "cycles": 6,
+    "cycles": 7,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1793614538964,
     "params": {
@@ -42,31 +42,43 @@
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 25,
@@ -266,31 +278,43 @@
       },
       "donchian": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 20,
@@ -490,31 +514,43 @@
       },
       "bbrev": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 19,
@@ -714,31 +750,43 @@
       },
       "wyckoff": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 25,
@@ -938,31 +986,43 @@
       },
       "rsidiv": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 8,
@@ -1162,31 +1222,43 @@
       },
       "macdm": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 16,
@@ -1386,31 +1458,43 @@
       },
       "smc": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 15,
@@ -1610,31 +1694,43 @@
       },
       "emax": {
         "BTCUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "XRPUSDT": {
           "trades": 10,
@@ -1836,6 +1932,26 @@
     "signals": [],
     "journal": [
       {
+        "t": 1793626807782,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #7 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793626805063,
+        "type": "CB",
+        "text": "🛡 CIRCUIT BREAKER AKTIF: BTC, ETH, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
+      },
+      {
+        "t": 1793626805061,
+        "type": "NEWS",
+        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1793626802057,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 22 jurnal dimuat dari database."
+      },
+      {
         "t": 1793614539939,
         "type": "CYCLE",
         "text": "⚙ Siklus #6 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
@@ -1954,9 +2070,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 60,
+      "newsIngested": 90,
       "lessons": 0,
-      "backtests": 120,
+      "backtests": 144,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -1969,8 +2085,36 @@
       }
     },
     "news": {
-      "fetchedAt": 1793614505540,
+      "fetchedAt": 1793626805062,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "XRP Ledger set to fix flaw that could let stablecoin partners print new tokens",
+          "link": "https://www.coindesk.com/tech/2026/11/02/xrp-ledger-set-to-fix-flaw-that-could-let-stablecoin-partners-print-new-tokens",
+          "pubDate": "2026-11-02 12:37:24",
+          "summary": "The fix is on track for Wednesday after validator support briefly dipped and restarted the two-week activation clock. XRP itself is unaffected."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin's 'volatility curve' has a midterm bump",
+          "link": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump",
+          "pubDate": "2026-11-02 12:30:17",
+          "summary": "Your day-ahead look for Nov. 2, 2026"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "No proof of AI in North Korean hackers move of stolen Binance funds",
+          "link": "https://www.coindesk.com/tech/2026/11/02/no-proof-of-ai-in-north-korean-hackers-move-of-stolen-binance-funds-through-thousands-of-wallets",
+          "pubDate": "2026-11-02 11:57:45",
+          "summary": "Elliptic tracked thousands of transfers, failed swaps and repeated transactions that suggest the hackers relied on scripts rather than AI agents."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin eases to $77,900 as Binance customers pull $3.6 billion after withdrawals reopen",
+          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen",
+          "pubDate": "2026-11-02 11:30:00",
+          "summary": "Bitcoin fell 0.4% to around $77,900 since midnight UTC as Binance customers pulled a net $3.64 billion after withdrawals reopened and ETFs lost $643 million."
+        },
         {
           "source": "CoinDesk",
           "title": "Metals.io issues tokens backed by 25 tonnes of physical copper stored in Germany",
@@ -2014,32 +2158,46 @@
           "summary": "The first trading day after the Binance hack saw  the biggest ETF outflow since June 25."
         },
         {
-          "source": "CoinDesk",
-          "title": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time",
-          "link": "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time",
-          "pubDate": "2026-11-02 05:18:12",
-          "summary": "The 19 wallets holding 18,270 stolen BTC have taken in nothing since Thursday except payments worth under a dollar, each carrying a message, from pleas to laundering pitches to a token shill."
+          "source": "CoinTelegraph",
+          "title": "Binance taps half its SAFU Bitcoin holdings, releases reserve proof",
+          "link": "https://cointelegraph.com/news/binance-safu-btc-balance-halves-recovery-unclear?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 13:21:47",
+          "summary": "\n   \n Binance’s SAFU Bitcoin wallet now holds about 7,500 BTC after a 7,499 BTC transfer linked to the hack, with no timeline for restoring the $1 billion fund. \n"
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin claws back toward $79,000 as markets shake off crypto's biggest hack",
-          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-claws-back-toward-usd79-000-as-markets-shake-off-crypto-s-biggest-hack",
-          "pubDate": "2026-11-02 04:42:22",
-          "summary": "ZEC led the majors and oil slid on a report that Trump wants to give Iran diplomacy more time, with U.S. midterm elections on Tuesday."
+          "source": "CoinTelegraph",
+          "title": "FATF targets crypto hubs in review of money laundering controls",
+          "link": "https://cointelegraph.com/news/fatf-targeted-crypto-compliance-jurisdiction-reviews?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 12:56:07",
+          "summary": "\n   \n The watchdog has not named the jurisdictions under review. Initial findings on compliance with its crypto standards are due in June 2027. \n"
         },
         {
-          "source": "CoinDesk",
-          "title": "BTCPay, a bitcoin payment tool, tells users to switch off their servers after reports of drained wallets",
-          "link": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets",
-          "pubDate": "2026-11-02 04:41:16",
-          "summary": "The open-source project says it is still investigating and hasn't given a loss figure or announced a fix. Its founder said the reports appear to involve versions older than 2.4.2."
+          "source": "CoinTelegraph",
+          "title": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis",
+          "link": "https://cointelegraph.com/news/binance-hackers-solana-new-phase-laundering-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 12:40:45",
+          "summary": "\n   \n Crypto exchange Gate said it froze two linked accounts as US investigators urged platforms to block transactions tied to the $6.3 billion theft. \n"
         },
         {
-          "source": "CoinDesk",
-          "title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
-          "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
-          "pubDate": "2026-11-01 19:30:00",
-          "summary": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years. Here's what to know."
+          "source": "CoinTelegraph",
+          "title": "From Uptober to Hacktober: Are Bitcoin’s seasonal patterns becoming obsolete?",
+          "link": "https://cointelegraph.com/markets/uptober-hacktober-bitcoin-seasonal-pattern?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 11:19:18",
+          "summary": "\n   \n Bitcoin lost 7.3% in October 2026 after another decline the previous year, despite the month’s historically strong returns, as analysts reassess seasonal signals. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Trezor lifts password ceiling after Coldcard’s $100M wallet thefts",
+          "link": "https://cointelegraph.com/news/trezor-wallet-passphrase-limit-128-characters-coldcard-attacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 10:46:59",
+          "summary": "\n   \n Trezor cited July’s Coldcard attacks, in which strong passphrases helped protect some users whose wallet recovery information was compromised. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Hong Kong takes tokenized settlement to 24/7, plans stablecoin trials",
+          "link": "https://cointelegraph.com/news/hong-kong-24-7-tokenized-settlements-stablecoin-trials?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 10:14:55",
+          "summary": "\n   \n The HKMA plans to bring regulated stablecoins into tokenized government debt trials, while HSBC says its RedCoin stablecoin has reached 50,000 users. \n"
         },
         {
           "source": "CoinTelegraph",
@@ -2070,46 +2228,32 @@
           "summary": "\n   \n BTCPay Server urged operators to shut down their servers after receiving reports of unauthorized attackers draining funds from hot wallets. \n"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bank of Korea probes financial firms’ exposure to crypto risks",
-          "link": "https://cointelegraph.com/news/bank-of-korea-probes-financial-firms-exposure-to-crypto-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 03:55:50",
-          "summary": "\n   \n The central bank is surveying 31 financial institutions on how a major exchange shutdown, prolonged crypto downturn or losses at another firm could affect their operations. \n"
+          "source": "Decrypt",
+          "title": "Morning Minute: The Binance Hack Leads to Mass Outflows while FBI Opens Probe",
+          "link": "https://decrypt.co/382332/morning-minute-the-binance-hack-leads-to-mass-outflows-while-fbi-opens-probe",
+          "pubDate": "2026-11-02 13:34:02",
+          "summary": "Uptober was far from it, with the Binance hack punctuating a red month. Will November be better? Or will the Binance hack hang over crypto?"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "THORChain halts swaps after block reorg bug, slowing Binance hackers",
-          "link": "https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 01:51:48",
-          "summary": "\n   \n THORChain node operators paused swaps involving assets on 10 networks, including Bitcoin, Ethereum, Solana and Tron. \n"
+          "source": "Decrypt",
+          "title": "Strategy Resumes Bitcoin Buys With $66M Purchase",
+          "link": "https://decrypt.co/382333/strategy-resumes-bitcoin-buys-with-66m-purchase",
+          "pubDate": "2026-11-02 13:19:36",
+          "summary": "The Bitcoin treasury firm also spent $208.2 million buying back its STRC preferred stock, cutting its USD Cash balance to $132.7 million."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Binance net outflows surge to $5.8B as withdrawals resume after record hack",
-          "link": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-01 23:59:27",
-          "summary": "\n   \n The exchange says withdrawals surged after some services resumed but have since slowed, with the outflows representing a fraction of its roughly $171 billion in customer assets.  \n"
+          "source": "Decrypt",
+          "title": "BTCPay Tells Merchants to Switch Off Servers Amid Hot Wallet Attack Reports",
+          "link": "https://decrypt.co/382324/btcpay-tells-merchants-to-switch-off-servers-amid-hot-wallet-attack-reports",
+          "pubDate": "2026-11-02 12:24:18",
+          "summary": "The Bitcoin payment software says attacks targeted versions 2.4.1 and older, days after it shipped an emergency fix for a critical flaw."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "THORChain founder rejects freeze request, CZ thanks Secret Service: Hodler’s Digest",
-          "link": "https://cointelegraph.com/magazine/36b-flees-binance-on-reopen-thorchain-co-founder-opposes-coin-freeze-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-01 23:09:13",
-          "summary": "\n   \n Binance has reopened withdrawals following the world’s biggest ever hack, and THORChain co-founder argues it should not halt the protocol to comply with FBI demands. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-01 14:17:00",
-          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "DeepSeek developing AI agent requiring less human input: Report",
-          "link": "https://cointelegraph.com/news/deepseek-developing-ai-agent-requiring-less-human-input-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-01 13:40:33",
-          "summary": "\n   \n The proposal comes amid intense competition among AI developers, including US companies Anthropic and OpenAI, the SCMP said. \n"
+          "source": "Decrypt",
+          "title": "FBI Blames North Korea for $6B Binance Hack as Exchange Reopens Withdrawals",
+          "link": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals",
+          "pubDate": "2026-11-02 10:36:19",
+          "summary": "Binance saw $3.64 billion in net outflows in the first nine and a half hours after reopening withdrawals, or 2.1% of its assets, it said."
         },
         {
           "source": "Decrypt",
@@ -2152,34 +2296,6 @@
           "link": "https://decrypt.co/382287/intel-stock-suffers-worst-crash-in-50-years-as-weak-forecast-overshadows-ai-chip-demand",
           "pubDate": "2026-10-30 20:53:23",
           "summary": "Intel beat third-quarter earnings expectations, but warned of a prolonged PC slump, sending shares to their worst daily decline in 50 years."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Worried About Crypto Hacks? Buy Bitcoin Proxies in Stock Market Instead, Say Wall Street Firms",
-          "link": "https://decrypt.co/382282/crypto-hacks-buy-bitcoin-proxies-stock-market-wall-street",
-          "pubDate": "2026-10-30 20:06:03",
-          "summary": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the record $6.4 billion theft is a Binance security failure, not a crypto-wide threat, pointing clients toward proxies like Coinbase, Robinhood, and Strategy."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Reddit Stock Plunges 30% as Google's AI Search Hits Traffic and User Growth",
-          "link": "https://decrypt.co/382276/reddit-stock-plunges-30-googles-ai-search",
-          "pubDate": "2026-10-30 19:31:02",
-          "summary": "Reddit shares are down 44% this week after CEO Steve Huffman warned that Google's AI-powered search features are cutting referrals, while weaker user growth and disappointing fourth-quarter guidance added to investor con"
-        },
-        {
-          "source": "Decrypt",
-          "title": "Binance Hack: Why Bitcoin Didn't Crash Like It Did in 2018",
-          "link": "https://decrypt.co/382257/binance-hack-why-bitcoin-didnt-crash",
-          "pubDate": "2026-10-30 18:45:03",
-          "summary": "Binance lost about $6.4 billion, the largest crypto hack on record, yet Bitcoin fell about 3%, against nearly 11% in 2018 when the exchange was last attacked."
-        },
-        {
-          "source": "Decrypt",
-          "title": "$8 Million Crypto Kidnapping Lands Texas Brothers 15-Year Prison Terms",
-          "link": "https://decrypt.co/382269/crypto-kidnapping-texas-brothers-15-year-prison",
-          "pubDate": "2026-10-30 18:16:02",
-          "summary": "Raymond and Isiah Garcia held a Minnesota family at gunpoint for more than nine hours, forcing the father to transfer over $8 million in crypto, in one of the clearest “wrench attack” prosecutions yet."
         }
       ],
       "perCoin": {
@@ -2193,11 +2309,11 @@
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time"
+          "critHead": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -1,
+          "impact": -0.67,
           "sources": [
             "CoinTelegraph"
           ],
@@ -2213,12 +2329,14 @@
           ],
           "multiSourced": false,
           "critical": true,
-          "critHead": "THORChain halts swaps after block reorg bug, slowing Binance hackers"
+          "critHead": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         },
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -2291,7 +2409,7 @@
       "breaker": [
         {
           "coin": "BTC",
-          "head": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time"
+          "head": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         },
         {
           "coin": "ETH",
@@ -2299,21 +2417,157 @@
         },
         {
           "coin": "SOL",
-          "head": "THORChain halts swaps after block reorg bug, slowing Binance hackers"
+          "head": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
         }
       ],
       "fearGreed": {
         "value": 37,
         "classification": "Fear",
-        "t": 1793614505540
+        "t": 1793626805061
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793613406005,
-      "bias": {},
-      "positions": []
+      "fetchedAt": 1793626806471,
+      "bias": {
+        "HYPE": -40,
+        "BTC": -20,
+        "ARB": 7.66,
+        "LDO": 20,
+        "AAVE": 20,
+        "ZRO": 5,
+        "ETHFI": 16.29,
+        "ENA": 0,
+        "EIGEN": 20,
+        "WLFI": -20,
+        "MEGA": 20,
+        "WLD": 16.32,
+        "GRASS": 20,
+        "ZEC": 10.88,
+        "AERO": 20
+      },
+      "positions": [
+        {
+          "whale": "0x37b81a",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 817.43,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "BTC",
+          "side": "SHORT",
+          "pct": 100.91,
+          "lev": 20
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ARB",
+          "side": "LONG",
+          "pct": 7.66,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "LDO",
+          "side": "LONG",
+          "pct": 27.36,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "AAVE",
+          "side": "LONG",
+          "pct": 136.54,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ZRO",
+          "side": "LONG",
+          "pct": 0,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ETHFI",
+          "side": "LONG",
+          "pct": 16.29,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ENA",
+          "side": "SHORT",
+          "pct": 184.13,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "EIGEN",
+          "side": "LONG",
+          "pct": 23.83,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "WLFI",
+          "side": "SHORT",
+          "pct": 74.16,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "MEGA",
+          "side": "LONG",
+          "pct": 37.86,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "WLD",
+          "side": "LONG",
+          "pct": 16.32,
+          "lev": 10
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "ENA",
+          "side": "LONG",
+          "pct": 57.29,
+          "lev": 10
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "GRASS",
+          "side": "LONG",
+          "pct": 164.51,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "ZEC",
+          "side": "LONG",
+          "pct": 10.88,
+          "lev": 10
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "AERO",
+          "side": "LONG",
+          "pct": 160.8,
+          "lev": 3
+        },
+        {
+          "whale": "0x03ef8f",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 977.82,
+          "lev": 10
+        }
+      ]
     },
     "champion": {
       "id": "wyckoff",
