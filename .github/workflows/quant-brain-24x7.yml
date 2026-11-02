@@ -1,0 +1,46 @@
+name: PILUSFINANCE 24/7 Autonomous Quant Brain & Firebase Cloud Sync
+
+on:
+  schedule:
+    # Runs automatically every 5 minutes, 24 hours a day, 7 days a week — even when all browser tabs are closed
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'headless-quant-daemon.js'
+      - 'brain-pure.js'
+
+permissions:
+  contents: write
+
+jobs:
+  quant-brain-24x7:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - name: Checkout PILUSFINANCE Quant Brain Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js 20 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run 24/7 Autonomous Quant Brain Cycle (Walk-Forward + Kalman + Hurst + Bayesian + Post-Mortem)
+        env:
+          GITHUB_ACTIONS: 'true'
+          QUANT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIREBASE_RTDB_URL: 'https://pilusfinance-default-rtdb.firebaseio.com'
+        run: |
+          node headless-quant-daemon.js --once
+
+      - name: Commit & Push Real-Time Learning State to GitHub Database
+        run: |
+          git config --global user.name "PILUSFINANCE Quant Brain 24/7"
+          git config --global user.email "pilusatrio@gmail.com"
+          git add learning_state.json accuracy_report.json strategy_weights.json trade_journal.json
+          git diff --staged --quiet || (git commit -m "chore(quant-brain): 24/7 autonomous learning & momentum sync [skip ci]" && git push origin main)
