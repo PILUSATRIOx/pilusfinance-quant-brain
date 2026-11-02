@@ -2264,11 +2264,19 @@
             if (ex.id === 'binance') {
                 const qs = `timestamp=${ts}&recvWindow=5000`;
                 const sig = await computeHmacSignature(secret, qs, ex.authType);
-                const r = await fetchTimeout(`https://fapi.binance.com/fapi/v2/balance?${qs}&signature=${sig}`, 4500);
-                if (r.ok) {
-                    const arr = await r.json();
-                    const usdt = Array.isArray(arr) ? arr.find(a => a.asset === 'USDT') : null;
-                    if (usdt && parseFloat(usdt.balance) >= 0) return parseFloat(usdt.balance);
+                const urls = [
+                    `https://fapi.binance.com/fapi/v2/balance?${qs}&signature=${sig}`,
+                    `https://api.allorigins.win/raw?url=${encodeURIComponent('https://fapi.binance.com/fapi/v2/balance?' + qs + '&signature=' + sig)}`
+                ];
+                for (const u of urls) {
+                    try {
+                        const r = await fetchTimeout(u, 4500, { headers: u.includes('allorigins') ? {} : { 'X-MBX-APIKEY': apiKey } });
+                        if (r.ok) {
+                            const arr = await r.json();
+                            const usdt = Array.isArray(arr) ? arr.find(a => a.asset === 'USDT') : null;
+                            if (usdt && parseFloat(usdt.balance) >= 0) return parseFloat(usdt.balance);
+                        }
+                    } catch (e) { }
                 }
             } else if (ex.id === 'bybit') {
                 const qs = `accountType=UNIFIED`;
@@ -2337,7 +2345,7 @@
         if (keyInp) keyInp.value = cfg.keyMask || '';
         if (secInp) secInp.value = '';
         if (extInp) extInp.value = '';
-        if (balInp) balInp.value = cfg.balanceUsd != null ? cfg.balanceUsd : 1000;
+        if (balInp) balInp.value = cfg.balanceUsd != null ? cfg.balanceUsd : 0;
         if (autoSel) autoSel.value = cfg.autoTrade !== false ? 'ON' : 'OFF';
 
         const extLbl = document.getElementById('exExtraFieldLabel');
@@ -2376,6 +2384,7 @@
             keyMask: vault.keyMask,
             secretMask: vault.secretMask,
             balanceUsd: balUsd,
+            _liveFetched: liveFetchedBal != null,
             autoTrade: autoTradeFlag !== false,
             lastSig: sig.slice(0, 28),
             updatedAt: ts
@@ -2394,7 +2403,7 @@
         const apiKey = document.getElementById('exApiKeyInput')?.value || '';
         const secret = document.getElementById('exApiSecretInput')?.value || '';
         const extra = document.getElementById('exExtraFieldInput')?.value || '';
-        const balUsd = parseFloat(document.getElementById('exInitialBalInput')?.value || '1000');
+        const balUsd = parseFloat(document.getElementById('exInitialBalInput')?.value || '0');
         const autoTrade = (document.getElementById('exAutoTradeSel')?.value || 'ON') === 'ON';
 
         const cfg = await connectExchangeSecure(ex.id, apiKey, secret, balUsd, extra, autoTrade);
@@ -2408,7 +2417,13 @@
         if (syncEl) syncEl.textContent = 'Sync: ' + new Date().toLocaleTimeString('id-ID');
 
         selectExchangeCard(ex.id);
-        if (typeof showToast === 'function') showToast(`${ex.name} terenkripsi AES-256-GCM & terhubung! Live Saldo $${cfg.balanceUsd.toLocaleString('en-US')}.`, 'ok');
+        if (typeof showToast === 'function') {
+            if (cfg.balanceUsd === 0 && !cfg._liveFetched) {
+                showToast(`${ex.name}: Saldo live tidak terdeteksi (CORS/IP restriction). Masukkan saldo aktual manual lalu hubungkan ulang.`, 'warn');
+            } else {
+                showToast(`${ex.name} terenkripsi AES-256-GCM & terhubung! Live Saldo $${cfg.balanceUsd.toLocaleString('en-US')}.`, 'ok');
+            }
+        }
     }
 
     function disconnectSelectedExchange() {
