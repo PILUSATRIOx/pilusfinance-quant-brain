@@ -2411,7 +2411,7 @@
 
         const telBox = document.getElementById('exSignatureTelemetryBox');
         if (telBox) {
-            telBox.innerHTML = `<span style="color:var(--up);font-weight:700;">[VERIFIED] TERHUBUNG KE ${esc(ex.name.toUpperCase())}</span> · Vault: <b>AES-256-GCM (${esc(cfg.keyMask)})</b> · HMAC: <code>${esc(cfg.lastSig)}...</code> · Live Saldo: <b style="color:var(--gold);">$${cfg.balanceUsd.toLocaleString('en-US', { minimumFractionDigits: 2 })}</b>`;
+            telBox.innerHTML = `<span style="color:var(--up);font-weight:700;">[VERIFIED] TERHUBUNG KE ${esc(ex.name.toUpperCase())}</span> · Vault: <b>AES-256-GCM (${esc(cfg.keyMask)})</b> · HMAC: <code>${esc(cfg.lastSig)}...</code> · Saldo: <b style="color:var(--gold);">$${cfg.balanceUsd.toLocaleString('en-US', { minimumFractionDigits: 2 })}</b> <span style="font-size:10px;color:${cfg._liveFetched ? 'var(--up)' : 'var(--warn)'};">(${cfg._liveFetched ? 'LIVE dari bursa' : 'MANUAL — masukkan saldo riil Anda'})</span>`;
         }
         const syncEl = document.getElementById('exLastSyncTime');
         if (syncEl) syncEl.textContent = 'Sync: ' + new Date().toLocaleTimeString('id-ID');
