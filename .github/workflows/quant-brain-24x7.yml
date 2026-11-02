@@ -42,5 +42,6 @@ jobs:
         run: |
           git config --global user.name "PILUSFINANCE Quant Brain 24/7"
           git config --global user.email "pilusatrio@gmail.com"
+          git pull --rebase -X theirs origin main || true
           git add learning_state.json accuracy_report.json strategy_weights.json trade_journal.json
           git diff --staged --quiet || (git commit -m "chore(quant-brain): 24/7 autonomous learning & momentum sync [skip ci]" && git push origin main)
