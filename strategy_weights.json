@@ -1,1 +1,11 @@
-{ "weights": { "TREND_PULLBACK": 1.0, "BREAKOUT": 1.0, "REVERSAL": 1.0, "MEAN_REVERSION": 1.0, "MOMENTUM": 1.0, "SCALP": 1.0 }, "updatedAt": null }
+{
+  "weights": {
+    "TREND_PULLBACK": 1,
+    "BREAKOUT": 1,
+    "REVERSAL": 1,
+    "MEAN_REVERSION": 1,
+    "MOMENTUM": 1,
+    "SCALP": 1
+  },
+  "updatedAt": 1793613593115
+}

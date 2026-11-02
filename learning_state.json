@@ -1,13 +1,1327 @@
 {
   "version": "1.0",
-  "updatedAt": null,
+  "updatedAt": 1793613593115,
   "brain": {
     "v": 1,
-    "learned": { "atrMult": 1.8, "rsiLongMax": 62, "rsiShortMin": 38 },
-    "weights": { "TREND_PULLBACK": 1.0, "BREAKOUT": 1.0, "REVERSAL": 1.0, "MEAN_REVERSION": 1.0, "MOMENTUM": 1.0, "SCALP": 1.0 },
-    "minScore": 75,
+    "gen": 0,
+    "cycles": 3,
+    "firstBootAt": 1793613402157,
+    "running": false,
+    "optCursor": 9,
+    "scanCursor": 0,
+    "lastOptAt": 0,
+    "params": {
+      "atrMult": 1.8,
+      "rsiLongMax": 62,
+      "rsiShortMin": 38,
+      "minScore": 75,
+      "feeBps": 10,
+      "riskPct": 1
+    },
+    "learned": {
+      "atrMult": 1.8,
+      "rsiLongMax": 62,
+      "rsiShortMin": 38
+    },
+    "weights": {
+      "TREND_PULLBACK": 1,
+      "BREAKOUT": 1,
+      "REVERSAL": 1,
+      "MEAN_REVERSION": 1,
+      "MOMENTUM": 1,
+      "SCALP": 1
+    },
+    "leaderboard": {
+      "elder": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 25,
+          "wins": 14,
+          "losses": 11,
+          "winRate": 56.00000000000001,
+          "pf": 0.9938949705554402,
+          "exp": -0.003039960934867327,
+          "netR": -0.07599902337168318,
+          "maxDD": 5.204568006889433,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 24,
+          "wins": 13,
+          "losses": 11,
+          "winRate": 54.166666666666664,
+          "pf": 0.7979775669904856,
+          "exp": -0.10308206623086119,
+          "netR": -2.4739695895406686,
+          "maxDD": 6.880461225424645,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 45,
+          "wins": 25,
+          "losses": 20,
+          "winRate": 55.55555555555556,
+          "pf": 0.6249037217444706,
+          "exp": -0.20191327083019522,
+          "netR": -9.086097187358785,
+          "maxDD": 12.510422391076942,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 30,
+          "wins": 18,
+          "losses": 12,
+          "winRate": 60,
+          "pf": 0.8081864499380275,
+          "exp": -0.08446239170744192,
+          "netR": -2.533871751223258,
+          "maxDD": 4.862698755763609,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 28,
+          "wins": 14,
+          "losses": 14,
+          "winRate": 50,
+          "pf": 0.5177198806484403,
+          "exp": -0.2637157406302184,
+          "netR": -7.3840407376461155,
+          "maxDD": 7.771335764914989,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 37,
+          "wins": 16,
+          "losses": 21,
+          "winRate": 43.24324324324324,
+          "pf": 0.41966912641793197,
+          "exp": -0.3658792581756031,
+          "netR": -13.537532552497314,
+          "maxDD": 13.537532552497314,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "donchian": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 20,
+          "wins": 11,
+          "losses": 9,
+          "winRate": 55.00000000000001,
+          "pf": 0.6435921889257062,
+          "exp": -0.18298211029792974,
+          "netR": -3.659642205958595,
+          "maxDD": 7.056658753090934,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 21,
+          "wins": 11,
+          "losses": 10,
+          "winRate": 52.38095238095239,
+          "pf": 0.7764023713698768,
+          "exp": -0.12183088933420186,
+          "netR": -2.558448676018239,
+          "maxDD": 4.649177032559239,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 25,
+          "wins": 12,
+          "losses": 13,
+          "winRate": 48,
+          "pf": 0.41079301672244134,
+          "exp": -0.38489958314477674,
+          "netR": -9.622489578619419,
+          "maxDD": 10.641630428132414,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 22,
+          "wins": 8,
+          "losses": 14,
+          "winRate": 36.36363636363637,
+          "pf": 0.43695423689806556,
+          "exp": -0.3925712670236923,
+          "netR": -8.636567874521232,
+          "maxDD": 10.212882222259074,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 22,
+          "wins": 10,
+          "losses": 12,
+          "winRate": 45.45454545454545,
+          "pf": 0.5660387144917374,
+          "exp": -0.25838456253774855,
+          "netR": -5.684460375830468,
+          "maxDD": 8.012281019662186,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 25,
+          "wins": 13,
+          "losses": 12,
+          "winRate": 52,
+          "pf": 0.6529976074760337,
+          "exp": -0.18336039925115308,
+          "netR": -4.584009981278827,
+          "maxDD": 7.101228723547617,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "bbrev": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 19,
+          "wins": 13,
+          "losses": 6,
+          "winRate": 68.42105263157895,
+          "pf": 1.1177646252014672,
+          "exp": 0.04126605915556407,
+          "netR": 0.7840551239557173,
+          "maxDD": 2.5311078492248447,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 19,
+          "wins": 8,
+          "losses": 11,
+          "winRate": 42.10526315789473,
+          "pf": 0.4495290419807058,
+          "exp": -0.3522954109572137,
+          "netR": -6.69361280818706,
+          "maxDD": 7.493612808187061,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 20,
+          "wins": 14,
+          "losses": 6,
+          "winRate": 70,
+          "pf": 1.3728086645841215,
+          "exp": 0.13242974431235865,
+          "netR": 2.648594886247173,
+          "maxDD": 3.8681389059851337,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 20,
+          "wins": 10,
+          "losses": 10,
+          "winRate": 50,
+          "pf": 0.6772127495378962,
+          "exp": -0.1781283045574788,
+          "netR": -3.5625660911495762,
+          "maxDD": 5.081385757572424,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 19,
+          "wins": 13,
+          "losses": 6,
+          "winRate": 68.42105263157895,
+          "pf": 1.6376781015132982,
+          "exp": 0.22372453593243505,
+          "netR": 4.250766182716266,
+          "maxDD": 2.9406273454750105,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 22,
+          "wins": 14,
+          "losses": 8,
+          "winRate": 63.63636363636363,
+          "pf": 1.1550414411802523,
+          "exp": 0.062383959738206984,
+          "netR": 1.3724471142405537,
+          "maxDD": 2.9447365086165282,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "wyckoff": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 25,
+          "wins": 14,
+          "losses": 11,
+          "winRate": 56.00000000000001,
+          "pf": 0.8433546933744425,
+          "exp": -0.08088898627022557,
+          "netR": -2.0222246567556392,
+          "maxDD": 8.571491646090802,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 18,
+          "wins": 12,
+          "losses": 6,
+          "winRate": 66.66666666666666,
+          "pf": 1.213117229420348,
+          "exp": 0.07988606478750548,
+          "netR": 1.4379491661750987,
+          "maxDD": 5.947221564798598,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 14,
+          "wins": 10,
+          "losses": 4,
+          "winRate": 71.42857142857143,
+          "pf": 1.7111532507798393,
+          "exp": 0.26175075211273036,
+          "netR": 3.664510529578225,
+          "maxDD": 1.304478158108231,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 16,
+          "wins": 12,
+          "losses": 4,
+          "winRate": 75,
+          "pf": 1.812671582897511,
+          "exp": 0.2292155913250622,
+          "netR": 3.667449461200995,
+          "maxDD": 1.4255631345328605,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 16,
+          "wins": 7,
+          "losses": 9,
+          "winRate": 43.75,
+          "pf": 0.5210056139466037,
+          "exp": -0.2937438879517268,
+          "netR": -4.699902207227629,
+          "maxDD": 6.723382621544472,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 16,
+          "wins": 11,
+          "losses": 5,
+          "winRate": 68.75,
+          "pf": 1.7352050130213268,
+          "exp": 0.26526247649016343,
+          "netR": 4.244199623842615,
+          "maxDD": 3.0446222876197617,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "rsidiv": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.5889084495126873,
+          "exp": -0.29837211783109807,
+          "netR": -2.3869769426487846,
+          "maxDD": 3.8565125539798757,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 6,
+          "wins": 5,
+          "losses": 1,
+          "winRate": 83.33333333333334,
+          "pf": 2.9003393036731975,
+          "exp": 0.3406114163590721,
+          "netR": 2.0436684981544326,
+          "maxDD": 1.0754229490513574,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 7,
+          "wins": 4,
+          "losses": 3,
+          "winRate": 57.14285714285714,
+          "pf": 0.9903972365409434,
+          "exp": -0.005070620322359213,
+          "netR": -0.03549434225651449,
+          "maxDD": 2.4697422408311116,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 11,
+          "wins": 2,
+          "losses": 9,
+          "winRate": 18.181818181818183,
+          "pf": 0.3012435581796941,
+          "exp": -0.6420138470548379,
+          "netR": -7.062152317603217,
+          "maxDD": 8.577488366144086,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 10,
+          "wins": 4,
+          "losses": 6,
+          "winRate": 40,
+          "pf": 0.7230030586362519,
+          "exp": -0.18926010330953724,
+          "netR": -1.8926010330953724,
+          "maxDD": 4.92185379667384,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "macdm": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 16,
+          "wins": 10,
+          "losses": 6,
+          "winRate": 62.5,
+          "pf": 1.2445550268185148,
+          "exp": 0.10439946524461582,
+          "netR": 1.6703914439138532,
+          "maxDD": 1.8603081335763862,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 15,
+          "wins": 9,
+          "losses": 6,
+          "winRate": 60,
+          "pf": 0.8342857313717905,
+          "exp": -0.07630874226760348,
+          "netR": -1.1446311340140523,
+          "maxDD": 5.307257555365403,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 15,
+          "wins": 6,
+          "losses": 9,
+          "winRate": 40,
+          "pf": 0.4131912173821218,
+          "exp": -0.4236443029910236,
+          "netR": -6.354664544865354,
+          "maxDD": 8.34883672153306,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 16,
+          "wins": 10,
+          "losses": 6,
+          "winRate": 62.5,
+          "pf": 0.7868663814504661,
+          "exp": -0.08756574221358995,
+          "netR": -1.4010518754174393,
+          "maxDD": 3.373584613033834,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 18,
+          "wins": 11,
+          "losses": 7,
+          "winRate": 61.111111111111114,
+          "pf": 0.5701521399052679,
+          "exp": -0.184291023399383,
+          "netR": -3.317238421188894,
+          "maxDD": 4.737119047044791,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 9,
+          "wins": 5,
+          "losses": 4,
+          "winRate": 55.55555555555556,
+          "pf": 0.7114469755448097,
+          "exp": -0.14175388973284977,
+          "netR": -1.275785007595648,
+          "maxDD": 3.621319131914926,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "smc": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 15,
+          "wins": 8,
+          "losses": 7,
+          "winRate": 53.333333333333336,
+          "pf": 0.652296342429444,
+          "exp": -0.1906544916402727,
+          "netR": -2.8598173746040905,
+          "maxDD": 5.832104344513686,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 12,
+          "wins": 8,
+          "losses": 4,
+          "winRate": 66.66666666666666,
+          "pf": 1.4281927140310684,
+          "exp": 0.16351461941969866,
+          "netR": 1.9621754330363839,
+          "maxDD": 4.582458712489944,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 8,
+          "wins": 5,
+          "losses": 3,
+          "winRate": 62.5,
+          "pf": 1.0591066280598698,
+          "exp": 0.027938885768422864,
+          "netR": 0.2235110861473829,
+          "maxDD": 3.7814893774854825,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 7,
+          "wins": 6,
+          "losses": 1,
+          "winRate": 85.71428571428571,
+          "pf": 4.0716595180637905,
+          "exp": 0.5020913547160485,
+          "netR": 3.5146394830123397,
+          "maxDD": 1.1442151912812852,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 9,
+          "wins": 6,
+          "losses": 3,
+          "winRate": 66.66666666666666,
+          "pf": 1.755284823207985,
+          "exp": 0.27900323402430266,
+          "netR": 2.5110291062187238,
+          "maxDD": 3.324612158302638,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 8,
+          "wins": 4,
+          "losses": 4,
+          "winRate": 50,
+          "pf": 0.35698572922883876,
+          "exp": -0.36024648501227313,
+          "netR": -2.881971880098185,
+          "maxDD": 4.081971880098185,
+          "atrMult": 2,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      },
+      "emax": {
+        "BTCUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "ETHUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "SOLUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
+        },
+        "XRPUSDT": {
+          "trades": 10,
+          "wins": 4,
+          "losses": 6,
+          "winRate": 40,
+          "pf": 0.5157365634412749,
+          "exp": -0.35257426084809346,
+          "netR": -3.5257426084809347,
+          "maxDD": 4.262976890995951,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 9,
+          "wins": 5,
+          "losses": 4,
+          "winRate": 55.55555555555556,
+          "pf": 0.8869821524557648,
+          "exp": -0.059024602075374064,
+          "netR": -0.5312214186783666,
+          "maxDD": 2.3268318671272565,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 14,
+          "wins": 6,
+          "losses": 8,
+          "winRate": 42.857142857142854,
+          "pf": 0.5144702010745786,
+          "exp": -0.3639013953593239,
+          "netR": -5.094619535030535,
+          "maxDD": 5.094619535030535,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "ADAUSDT": {
+          "trades": 6,
+          "wins": 4,
+          "losses": 2,
+          "winRate": 66.66666666666666,
+          "pf": 1.2265458652061405,
+          "exp": 0.0849149286684447,
+          "netR": 0.5094895720106682,
+          "maxDD": 2.2489466825936937,
+          "atrMult": 1.8,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "AVAXUSDT": {
+          "trades": 9,
+          "wins": 6,
+          "losses": 3,
+          "winRate": 66.66666666666666,
+          "pf": 1.0520797775958743,
+          "exp": 0.019530995154367833,
+          "netR": 0.17577895638931051,
+          "maxDD": 2.975186387186784,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        },
+        "LINKUSDT": {
+          "trades": 14,
+          "wins": 8,
+          "losses": 6,
+          "winRate": 57.14285714285714,
+          "pf": 0.7922274695176101,
+          "exp": -0.10290074897301246,
+          "netR": -1.4406104856221744,
+          "maxDD": 4.217345457555142,
+          "atrMult": 1.5,
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
+        }
+      }
+    },
     "signals": [],
-    "journal": []
-  },
-  "note": "Auto-synced by PilusFinance Quant Brain. Read-only public audit trail."
+    "journal": [
+      {
+        "t": 1793613593112,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #3 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793613587456,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
+      },
+      {
+        "t": 1793613572386,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #2 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793613566460,
+        "type": "CB",
+        "text": "🛡 CIRCUIT BREAKER AKTIF: BTC, ETH, SOL — Long baru diblokir (Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a tim)"
+      },
+      {
+        "t": 1793613566458,
+        "type": "NEWS",
+        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1793613563343,
+        "type": "SYS",
+        "text": "⚠️ GitHub load gagal: qbSave is not defined"
+      },
+      {
+        "t": 1793613563343,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
+      },
+      {
+        "t": 1793613406011,
+        "type": "CYCLE",
+        "text": "⚙ Siklus #1 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
+      },
+      {
+        "t": 1793613405997,
+        "type": "ERR",
+        "text": "⚠ Semua feed berita gagal. Retry siklus berikutnya."
+      },
+      {
+        "t": 1793613405997,
+        "type": "NEWS",
+        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1793613402976,
+        "type": "SYS",
+        "text": "⚠️ GitHub load gagal: qbSave is not defined"
+      },
+      {
+        "t": 1793613402976,
+        "type": "SYS",
+        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
+      },
+      {
+        "t": 1793613402398,
+        "type": "SYS",
+        "text": "🧠 PILUS QUANT BRAIN v1.0 online — basis pengetahuan: 11 literatur institusional terenkode, 8 strategi siap di-backtest walk-forward pada 18 aset riil (crypto+forex+saham)."
+      }
+    ],
+    "accuracyHistory": [],
+    "equityR": 0,
+    "stats": {
+      "closed": 0,
+      "wins": 0,
+      "losses": 0,
+      "be": 0,
+      "tp1Hits": 0,
+      "newsIngested": 30,
+      "lessons": 0,
+      "backtests": 48,
+      "netR": 0,
+      "backtestOOS": {
+        "trades": 0,
+        "netR": 0,
+        "winRatePct": null
+      }
+    },
+    "news": {
+      "fetchedAt": 1793613566458,
+      "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Live updates: Binance records $6 billion outflows after starting withdrawals, less then 4% of total holdings",
+          "link": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings",
+          "pubDate": "2026-11-02 08:49:30",
+          "summary": "The outflows followed a 45-hour withdrawal freeze after a $6.3 billion theft, with rival exchanges attracting deposits as customers regained access to their funds."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "China’s Communist Party calls for a crackdown on corruption that uses crypto and blockchain",
+          "link": "https://www.coindesk.com/markets/2026/11/02/china-s-communist-party-calls-for-a-crackdown-on-corruption-that-uses-crypto-and-blockchain",
+          "pubDate": "2026-11-02 08:41:28",
+          "summary": "China's Communist Party has named virtual currency and blockchain in a new anti-corruption call."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Why stealing billions from a crypto exchange can be harder to stop than a bank theft",
+          "link": "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
+          "pubDate": "2026-11-02 08:32:01",
+          "summary": "The $6.3 billion Binance breach has revived a debate over whether crypto exchanges are less secure than banks or simply harder to protect once hackers get inside."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin ETFs lost $643 million in outflows Friday, and 2026 is barely green now",
+          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now",
+          "pubDate": "2026-11-02 06:46:41",
+          "summary": "The first trading day after the Binance hack saw  the biggest ETF outflow since June 25."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time",
+          "link": "https://www.coindesk.com/tech/2026/11/02/strangers-are-begging-the-binance-hacker-for-bitcoin-one-help-me-bro-at-a-time",
+          "pubDate": "2026-11-02 05:18:12",
+          "summary": "The 19 wallets holding 18,270 stolen BTC have taken in nothing since Thursday except payments worth under a dollar, each carrying a message, from pleas to laundering pitches to a token shill."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin claws back toward $79,000 as markets shake off crypto's biggest hack",
+          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-claws-back-toward-usd79-000-as-markets-shake-off-crypto-s-biggest-hack",
+          "pubDate": "2026-11-02 04:42:22",
+          "summary": "ZEC led the majors and oil slid on a report that Trump wants to give Iran diplomacy more time, with U.S. midterm elections on Tuesday."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "BTCPay, a bitcoin payment tool, tells users to switch off their servers after reports of drained wallets",
+          "link": "https://www.coindesk.com/tech/2026/11/02/btcpay-a-bitcoin-payment-tool-tells-users-to-switch-off-their-servers-after-reports-of-drained-wallets",
+          "pubDate": "2026-11-02 04:41:16",
+          "summary": "The open-source project says it is still investigating and hasn't given a loss figure or announced a fix. Its founder said the reports appear to involve versions older than 2.4.2."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "The crypto reader's guide to the 2026 midterm election: State of Crypto",
+          "link": "https://www.coindesk.com/policy/2026/11/01/the-crypto-reader-s-guide-to-the-2026-midterm-election-state-of-crypto",
+          "pubDate": "2026-11-01 19:30:00",
+          "summary": "America is going to the polls, and the results will shape crypto legislation and regulation over the next two years. Here's what to know."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "AI agents bypassed crypto spending limits without human approval, researchers find in a new test",
+          "link": "https://www.coindesk.com/tech/2026/11/01/ai-agents-bypassed-crypto-spending-limits-without-human-approval-researchers-find-in-a-new-test",
+          "pubDate": "2026-11-01 17:00:00",
+          "summary": "The researchers say any approval an agent can reach is unreliable, and they built Countersign, an app tying approval to a physical action the agent can’t fake."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "The key races to watch for the 2026 election",
+          "link": "https://www.coindesk.com/policy/2026/11/01/the-key-races-to-watch-for-the-2026-election",
+          "pubDate": "2026-11-01 15:00:00",
+          "summary": "While crypto isn't a major issue in the 2026 election, the industry will be shaped by who takes office in January. Here are the main races CoinDesk is tracking."
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "BTC heads into US midterm showdown: Three things to know in Bitcoin this week",
+          "link": "https://cointelegraph.com/markets/btc-price-script-midterms-three-things-bitcoin-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 09:41:36",
+          "summary": "\n   \n Bitcoin price action held its 100-day moving average into the monthly close as crypto markets braced for US midterm election and tech earnings volatility. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "OKX draws $445M in net inflows as Binance outflows exceed $7B",
+          "link": "https://cointelegraph.com/news/okx-leads-crypto-exchanges-445m-inflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 08:56:03",
+          "summary": "\n   \n OKX led cryptocurrency exchanges with $445 million in daily inflows, while Binance processed about $7 billion in net outflows. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack",
+          "link": "https://cointelegraph.com/markets/bitcoin-etfs-october-red-binance-hack-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 07:50:36",
+          "summary": "\n   \n US spot Bitcoin ETFs ended October with $515 million in net withdrawals, while Ether funds posted a record $1.61 billion in monthly outflows. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "BTCPay Server warns of hot wallet thefts running on outdated software",
+          "link": "https://cointelegraph.com/news/btcpay-server-hot-wallet-thefts-older-versions?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 05:34:02",
+          "summary": "\n   \n BTCPay Server urged operators to shut down their servers after receiving reports of unauthorized attackers draining funds from hot wallets. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bank of Korea probes financial firms’ exposure to crypto risks",
+          "link": "https://cointelegraph.com/news/bank-of-korea-probes-financial-firms-exposure-to-crypto-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 03:55:50",
+          "summary": "\n   \n The central bank is surveying 31 financial institutions on how a major exchange shutdown, prolonged crypto downturn or losses at another firm could affect their operations. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "THORChain halts swaps after block reorg bug, slowing Binance hackers",
+          "link": "https://cointelegraph.com/news/thorchain-halts-swaps-after-block-reorg-bug-slowing-binance-hackers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 01:51:48",
+          "summary": "\n   \n THORChain node operators paused swaps involving assets on 10 networks, including Bitcoin, Ethereum, Solana and Tron. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance net outflows surge to $5.8B as withdrawals resume after record hack",
+          "link": "https://cointelegraph.com/news/binance-net-outflows-surge-to-58b-as-withdrawals-resume-after-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-01 23:59:27",
+          "summary": "\n   \n The exchange says withdrawals surged after some services resumed but have since slowed, with the outflows representing a fraction of its roughly $171 billion in customer assets.  \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "THORChain founder rejects freeze request, CZ thanks Secret Service: Hodler’s Digest",
+          "link": "https://cointelegraph.com/magazine/36b-flees-binance-on-reopen-thorchain-co-founder-opposes-coin-freeze-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-01 23:09:13",
+          "summary": "\n   \n Binance has reopened withdrawals following the world’s biggest ever hack, and THORChain co-founder argues it should not halt the protocol to comply with FBI demands. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-01 14:17:00",
+          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "DeepSeek developing AI agent requiring less human input: Report",
+          "link": "https://cointelegraph.com/news/deepseek-developing-ai-agent-requiring-less-human-input-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-01 13:40:33",
+          "summary": "\n   \n The proposal comes amid intense competition among AI developers, including US companies Anthropic and OpenAI, the SCMP said. \n"
+        },
+        {
+          "source": "Decrypt",
+          "title": "Bitcoin ETF Investors Head for the Exits After Record Binance Hack",
+          "link": "https://decrypt.co/382309/bitcoin-etf-investors-exits-record-binance-hack",
+          "pubDate": "2026-11-01 16:01:02",
+          "summary": "Bitcoin ETFs saw $643.2 million in outflows Friday, the first full trading session after the $6.4 billion Binance hack, ending October with roughly $516 million in net outflows."
+        },
+        {
+          "source": "Decrypt",
+          "title": "How to Run an AI Model Locally—And Why You Might Want To",
+          "link": "https://decrypt.co/382295/how-to-run-ai-model-locally-why-you-might-want",
+          "pubDate": "2026-11-01 14:01:02",
+          "summary": "Free tools like Ollama and LM Studio can run open-weight AI models on your laptop, offline, and without a subscription. Here's how to get started."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Binance Hack: Everything You Need to Know About the Biggest Crypto Heist in History",
+          "link": "https://decrypt.co/382306/binance-hack-everything-you-need-to-know",
+          "pubDate": "2026-10-31 15:01:02",
+          "summary": "Attackers tied to North Korea drained roughly $6.4 billion from the world’s largest crypto exchange. Here’s what we know about how it happened, who’s behind it, and what comes next."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Why AI Models Cheat: Reward Hacking, Explained",
+          "link": "https://decrypt.co/382274/why-ai-models-cheat-reward-hacking-explained",
+          "pubDate": "2026-10-31 13:01:03",
+          "summary": "From boat-racing bots to OpenAI models inside Hugging Face, here's how AI reward hacking works and why it matters."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Binance Hack Shows Why Offshore Exchanges Need US Oversight, CFTC Chair Says",
+          "link": "https://decrypt.co/382285/binance-hack-why-offshore-exchanges-need-us-oversight-cftc-chair",
+          "pubDate": "2026-10-30 21:16:04",
+          "summary": "Michael Selig said the record $6.4 billion theft shows why offshore exchanges should register with the CFTC and adopt U.S.-grade cybersecurity standards."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Intel Stock Suffers Worst Crash in 50 Years as Weak Forecast Overshadows AI Chip Demand",
+          "link": "https://decrypt.co/382287/intel-stock-suffers-worst-crash-in-50-years-as-weak-forecast-overshadows-ai-chip-demand",
+          "pubDate": "2026-10-30 20:53:23",
+          "summary": "Intel beat third-quarter earnings expectations, but warned of a prolonged PC slump, sending shares to their worst daily decline in 50 years."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Worried About Crypto Hacks? Buy Bitcoin Proxies in Stock Market Instead, Say Wall Street Firms",
+          "link": "https://decrypt.co/382282/crypto-hacks-buy-bitcoin-proxies-stock-market-wall-street",
+          "pubDate": "2026-10-30 20:06:03",
+          "summary": "Analysts at Cantor Fitzgerald, TD Cowen and Compass Point say the record $6.4 billion theft is a Binance security failure, not a crypto-wide threat, pointing clients toward proxies like Coinbase, Robinhood, and Strategy."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Reddit Stock Plunges 30% as Google's AI Search Hits Traffic and User Growth",
+          "link": "https://decrypt.co/382276/reddit-stock-plunges-30-googles-ai-search",
+          "pubDate": "2026-10-30 19:31:02",
+          "summary": "Reddit shares are down 44% this week after CEO Steve Huffman warned that Google's AI-powered search features are cutting referrals, while weaker user growth and disappointing fourth-quarter guidance added to investor con"
+        },
+        {
+          "source": "Decrypt",
+          "title": "Binance Hack: Why Bitcoin Didn't Crash Like It Did in 2018",
+          "link": "https://decrypt.co/382257/binance-hack-why-bitcoin-didnt-crash",
+          "pubDate": "2026-10-30 18:45:03",
+          "summary": "Binance lost about $6.4 billion, the largest crypto hack on record, yet Bitcoin fell about 3%, against nearly 11% in 2018 when the exchange was last attacked."
+        },
+        {
+          "source": "Decrypt",
+          "title": "$8 Million Crypto Kidnapping Lands Texas Brothers 15-Year Prison Terms",
+          "link": "https://decrypt.co/382269/crypto-kidnapping-texas-brothers-15-year-prison",
+          "pubDate": "2026-10-30 18:16:02",
+          "summary": "Raymond and Isiah Garcia held a Minnesota family at gunpoint for more than nine hours, forcing the father to transfer over $8 million in crypto, in one of the clearest “wrench attack” prosecutions yet."
+        }
+      ],
+      "perCoin": {
+        "BTC": {
+          "sentiment": "BEARISH",
+          "impact": -1,
+          "sources": [
+            "CoinDesk",
+            "CoinTelegraph",
+            "Decrypt"
+          ],
+          "multiSourced": true,
+          "critical": true,
+          "critHead": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time"
+        },
+        "ETH": {
+          "sentiment": "BEARISH",
+          "impact": -1,
+          "sources": [
+            "CoinTelegraph"
+          ],
+          "multiSourced": false,
+          "critical": true,
+          "critHead": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack"
+        },
+        "SOL": {
+          "sentiment": "BEARISH",
+          "impact": -0.5,
+          "sources": [
+            "CoinTelegraph"
+          ],
+          "multiSourced": false,
+          "critical": true,
+          "critHead": "THORChain halts swaps after block reorg bug, slowing Binance hackers"
+        },
+        "XRP": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "DOGE": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "BNB": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "ADA": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "AVAX": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "LINK": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "SUI": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "EUR": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "GBP": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        }
+      },
+      "breaker": [
+        {
+          "coin": "BTC",
+          "head": "Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a time"
+        },
+        {
+          "coin": "ETH",
+          "head": "Bitcoin ETFs sink into October outflows with $643M exit after Binance hack"
+        },
+        {
+          "coin": "SOL",
+          "head": "THORChain halts swaps after block reorg bug, slowing Binance hackers"
+        }
+      ],
+      "fearGreed": {
+        "value": 37,
+        "classification": "Fear",
+        "t": 1793613566458
+      },
+      "lastErrors": []
+    },
+    "derivatives": {},
+    "whale": {
+      "fetchedAt": 1793613406005,
+      "bias": {},
+      "positions": []
+    },
+    "minScore": 75
+  }
 }
