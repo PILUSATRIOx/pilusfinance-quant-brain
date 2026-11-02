@@ -1,12 +1,23 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1793631117692
-=======
-  "updatedAt": 1793631117690,
+  "updatedAt": 1793658907268,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793658907266,
+      "type": "CYCLE",
+      "text": "[CYCLE #13] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793658904781,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Mercado Bitcoin wallets show post-hack transfers after $46M theft)"
+    },
+    {
+      "t": 1793658904779,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793631117686,
       "type": "CYCLE",
@@ -198,5 +209,4 @@
       "text": "🧠 PILUS QUANT BRAIN v1.0 online — basis pengetahuan: 11 literatur institusional terenkode, 8 strategi siap di-backtest walk-forward pada 18 aset riil (crypto+forex+saham)."
     }
   ]
->>>>>>> Stashed changes
 }

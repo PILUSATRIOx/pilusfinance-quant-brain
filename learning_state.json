@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793631117690,
+  "updatedAt": 1793658907268,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 12,
+    "cycles": 13,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1793631117207,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 8
+          "beta": 11
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 8
+          "beta": 11
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 8
+          "beta": 11
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 8,
+          "alpha": 11,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 8
+          "beta": 11
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 8,
+          "alpha": 11,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -194,42 +194,42 @@
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
-          "trades": 57,
-          "wins": 36,
-          "losses": 21,
-          "winRate": 63.1578947368421,
-          "pf": 0.8688977283623118,
-          "exp": -0.06139968078707468,
-          "netR": -3.499781804863257,
-          "maxDD": 8.597796334404759,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 32,
-          "wins": 14,
-          "losses": 18,
-          "winRate": 43.75,
-          "pf": 0.4378516505558174,
-          "exp": -0.35709683850307233,
-          "netR": -11.427098832098315,
-          "maxDD": 11.827098832098315,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 47,
-          "wins": 28,
-          "losses": 19,
-          "winRate": 59.57446808510638,
-          "pf": 0.7992468368989813,
-          "exp": -0.09468623884873484,
-          "netR": -4.450253225890537,
-          "maxDD": 8.351643521637452,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -430,42 +430,42 @@
       },
       "donchian": {
         "BTCUSDT": {
-          "trades": 23,
-          "wins": 11,
-          "losses": 12,
-          "winRate": 47.82608695652174,
-          "pf": 0.4953451637620315,
-          "exp": -0.3222087077232422,
-          "netR": -7.410800277634571,
-          "maxDD": 8.329176077741105,
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 21,
-          "wins": 12,
-          "losses": 9,
-          "winRate": 57.14285714285714,
-          "pf": 0.7580994607054719,
-          "exp": -0.12044128803742037,
-          "netR": -2.5292670487858278,
-          "maxDD": 3.974126173789053,
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 24,
-          "wins": 10,
-          "losses": 14,
-          "winRate": 41.66666666666667,
-          "pf": 0.3193520273706189,
-          "exp": -0.45637294016264623,
-          "netR": -10.95295056390351,
-          "maxDD": 12.152950563903511,
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -666,42 +666,42 @@
       },
       "bbrev": {
         "BTCUSDT": {
-          "trades": 12,
-          "wins": 8,
-          "losses": 4,
-          "winRate": 66.66666666666666,
-          "pf": 1.280192518203064,
-          "exp": 0.11446858350528988,
-          "netR": 1.3736230020634785,
-          "maxDD": 2.3101405879083865,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 17,
-          "wins": 10,
-          "losses": 7,
-          "winRate": 58.82352941176471,
-          "pf": 1.0495169226679784,
-          "exp": 0.023351577897346668,
-          "netR": 0.39697682425489333,
-          "maxDD": 2.9944269586257706,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
           "atrMult": 2,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 18,
-          "wins": 12,
-          "losses": 6,
-          "winRate": 66.66666666666666,
-          "pf": 0.8959988207512518,
-          "exp": -0.03823366125986613,
-          "netR": -0.6882059026775903,
-          "maxDD": 3.2099640608475233,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
           "atrMult": 2,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -902,42 +902,42 @@
       },
       "wyckoff": {
         "BTCUSDT": {
-          "trades": 16,
-          "wins": 6,
-          "losses": 10,
-          "winRate": 37.5,
-          "pf": 0.3630772139473563,
-          "exp": -0.48441574808458493,
-          "netR": -7.750651969353359,
-          "maxDD": 8.266790576359263,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 19,
-          "wins": 8,
-          "losses": 11,
-          "winRate": 42.10526315789473,
-          "pf": 0.39636598732571554,
-          "exp": -0.42261173238667354,
-          "netR": -8.029622915346797,
-          "maxDD": 8.174435448417269,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 13,
-          "wins": 10,
-          "losses": 3,
-          "winRate": 76.92307692307693,
-          "pf": 2.0263243407230846,
-          "exp": 0.28125465970894126,
-          "netR": 3.6563105762162365,
-          "maxDD": 1.2528448248859996,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1138,42 +1138,42 @@
       },
       "rsidiv": {
         "BTCUSDT": {
-          "trades": 4,
-          "wins": 3,
-          "losses": 1,
-          "winRate": 75,
-          "pf": 1.8180761775608385,
-          "exp": 0.2515242805388632,
-          "netR": 1.0060971221554529,
-          "maxDD": 1.2298330519233722,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 5,
-          "wins": 2,
-          "losses": 3,
-          "winRate": 40,
-          "pf": 0.5697069332430426,
-          "exp": -0.28873218376991205,
-          "netR": -1.4436609188495604,
-          "maxDD": 2.268488071536254,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 10,
-          "wins": 4,
-          "losses": 6,
-          "winRate": 40,
-          "pf": 0.5524608134488553,
-          "exp": -0.30956760796753435,
-          "netR": -3.0956760796753438,
-          "maxDD": 3.8129946726987156,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1374,42 +1374,42 @@
       },
       "macdm": {
         "BTCUSDT": {
-          "trades": 21,
-          "wins": 11,
-          "losses": 10,
-          "winRate": 52.38095238095239,
-          "pf": 0.5013771836671693,
-          "exp": -0.29981190651448586,
-          "netR": -6.296050036804203,
-          "maxDD": 7.562749784945783,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 15,
-          "wins": 9,
-          "losses": 6,
-          "winRate": 60,
-          "pf": 0.6729858346048248,
-          "exp": -0.15206950178625783,
-          "netR": -2.2810425267938674,
-          "maxDD": 3.6529168062445443,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 13,
-          "wins": 8,
-          "losses": 5,
-          "winRate": 61.53846153846154,
-          "pf": 0.971780969975549,
-          "exp": -0.012172704525228374,
-          "netR": -0.15824515882796886,
-          "maxDD": 4.525073918016142,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1610,42 +1610,42 @@
       },
       "smc": {
         "BTCUSDT": {
-          "trades": 9,
-          "wins": 4,
-          "losses": 5,
-          "winRate": 44.44444444444444,
-          "pf": 0.5488293232126713,
-          "exp": -0.3246574125841556,
-          "netR": -2.9219167132574,
-          "maxDD": 3.8261507100489576,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 9,
-          "wins": 4,
-          "losses": 5,
-          "winRate": 44.44444444444444,
-          "pf": 0.5885710742218841,
-          "exp": -0.28665358354423265,
-          "netR": -2.579882251898094,
-          "maxDD": 3.521264605514082,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 6,
-          "wins": 6,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.9434840059971807,
-          "netR": 5.6609040359830844,
-          "maxDD": 0,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1846,42 +1846,42 @@
       },
       "emax": {
         "BTCUSDT": {
-          "trades": 15,
-          "wins": 7,
-          "losses": 8,
-          "winRate": 46.666666666666664,
-          "pf": 0.45149103937873947,
-          "exp": -0.36846676401292855,
-          "netR": -5.527001460193929,
-          "maxDD": 7.049681785524308,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 11,
-          "wins": 8,
-          "losses": 3,
-          "winRate": 72.72727272727273,
-          "pf": 0.8906034460860548,
-          "exp": -0.03573358287299742,
-          "netR": -0.3930694116029716,
-          "maxDD": 2.427883307673752,
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 8,
-          "wins": 4,
-          "losses": 4,
-          "winRate": 50,
-          "pf": 0.843926952451268,
-          "exp": -0.08879957476571125,
-          "netR": -0.71039659812569,
-          "maxDD": 1.856276263270966,
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2082,42 +2082,42 @@
       },
       "statarb": {
         "BTCUSDT": {
-          "trades": 9,
-          "wins": 7,
-          "losses": 2,
-          "winRate": 77.77777777777779,
-          "pf": 1.9743212943713284,
-          "exp": 0.26624900250010985,
-          "netR": 2.3962410225009885,
-          "maxDD": 1.249097599070368,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 15,
-          "wins": 11,
-          "losses": 4,
-          "winRate": 73.33333333333333,
-          "pf": 1.9630367405194158,
-          "exp": 0.2882668684101331,
-          "netR": 4.324003026151996,
-          "maxDD": 2.203211926908438,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 15,
-          "wins": 9,
-          "losses": 6,
-          "winRate": 60,
-          "pf": 0.708314993376964,
-          "exp": -0.13065904852468133,
-          "netR": -1.95988572787022,
-          "maxDD": 3.6702127242992937,
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -2279,42 +2279,42 @@
       },
       "tsmom": {
         "BTCUSDT": {
-          "trades": 4,
-          "wins": 3,
-          "losses": 1,
-          "winRate": 75,
-          "pf": 1.0699502755040338,
-          "exp": 0.01961313822861946,
-          "netR": 0.07845255291447784,
-          "maxDD": 1.1215474470855222,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 27,
-          "wins": 11,
-          "losses": 16,
-          "winRate": 40.74074074074074,
-          "pf": 0.5257814163268144,
-          "exp": -0.3278757652075476,
-          "netR": -8.852645660603784,
-          "maxDD": 9.252645660603784,
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 37,
-          "wins": 20,
-          "losses": 17,
-          "winRate": 54.054054054054056,
-          "pf": 0.6365175499294559,
-          "exp": -0.19044441180669372,
-          "netR": -7.046443236847668,
-          "maxDD": 10.062020748986907,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -2477,6 +2477,21 @@
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793658907266,
+        "type": "CYCLE",
+        "text": "[CYCLE #13] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793658904781,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Mercado Bitcoin wallets show post-hack transfers after $46M theft)"
+      },
+      {
+        "t": 1793658904779,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1793631117686,
         "type": "CYCLE",
@@ -2676,9 +2691,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 180,
+      "newsIngested": 210,
       "lessons": 0,
-      "backtests": 294,
+      "backtests": 324,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2691,77 +2706,126 @@
       }
     },
     "news": {
-      "fetchedAt": 1793631116716,
+      "fetchedAt": 1793658904779,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "XRP Ledger set to fix flaw that could let stablecoin partners print new tokens",
-          "link": "https://www.coindesk.com/tech/2026/11/02/xrp-ledger-set-to-fix-flaw-that-could-let-stablecoin-partners-print-new-tokens",
-          "pubDate": "2026-11-02 12:37:24",
-          "summary": "The fix is on track for Wednesday after validator support briefly dipped and restarted the two-week activation clock. XRP itself is unaffected."
+          "title": "Big crypto wants the one thing it can’t buy: your vote",
+          "link": "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
+          "pubDate": "2026-11-02 21:38:53",
+          "summary": "Our loyalty has been to the technology. This election, the trap is to let the biggest intermediaries claim it for themselves, argues Berkeley Law lecturer Hermine Wong."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin&#39;s &#39;volatility curve&#39; has a midterm bump",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/02/bitcoin-s-volatility-curve-has-a-midterm-bump",
-          "pubDate": "2026-11-02 12:30:17",
-          "summary": "Your day-ahead look for Nov. 2, 2026"
+          "title": "Bitcoin traders eye post-election rally as exchange outflows point to supply squeeze",
+          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-traders-eye-post-election-rally-as-exchange-outflows-point-to-supply-squeeze",
+          "pubDate": "2026-11-02 18:13:57",
+          "summary": "Bulls are watching short positions, exchange withdrawals and key price levels for signs of a rebound after the midterms."
         },
         {
           "source": "CoinDesk",
-          "title": "No proof of AI in North Korean hackers move of stolen Binance funds",
-          "link": "https://www.coindesk.com/tech/2026/11/02/no-proof-of-ai-in-north-korean-hackers-move-of-stolen-binance-funds-through-thousands-of-wallets",
-          "pubDate": "2026-11-02 11:57:45",
-          "summary": "Elliptic tracked thousands of transfers, failed swaps and repeated transactions that suggest the hackers relied on scripts rather than AI agents."
+          "title": "EU entity suspected of losing $106 million from crypto exchange accounts, ZachXBT says",
+          "link": "https://www.coindesk.com/tech/2026/11/02/eu-entity-suspected-of-losing-usd106-million-from-crypto-exchange-accounts-zachxbt-says",
+          "pubDate": "2026-11-02 17:21:04",
+          "summary": "The unidentified attacker moved funds through ether, instant exchanges and Monero, but the victim and affected exchanges remain unknown."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin eases to $77,900 as Binance customers pull $3.6 billion after withdrawals reopen",
-          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-eases-to-usd77-900-as-binance-customers-pull-usd3-6-billion-after-withdrawals-reopen",
-          "pubDate": "2026-11-02 11:30:00",
-          "summary": "Bitcoin fell 0.4% to around $77,900 since midnight UTC as Binance customers pulled a net $3.64 billion after withdrawals reopened and ETFs lost $643 million."
+          "title": "NYSE tokenized stock plans take shape as four more transfer agents join",
+          "link": "https://www.coindesk.com/business/2026/11/02/nyse-taps-wall-street-giant-broadridge-to-bring-shareholder-voting-onto-blockchain-rails",
+          "pubDate": "2026-11-02 16:41:46",
+          "summary": "Broadridge, Computershare, Equiniti and Superstate join the exchange&#39;s planned blockchain market, bringing shareholder records and voting services onchain."
         },
         {
           "source": "CoinDesk",
-          "title": "Metals.io issues tokens backed by 25 tonnes of physical copper stored in Germany",
-          "link": "https://www.coindesk.com/markets/2026/11/02/metals-io-issues-tokens-backed-by-25-tonnes-of-physical-copper-stored-in-germany",
-          "pubDate": "2026-11-02 09:33:20",
-          "summary": "The company is starting with $366,000 worth of copper stored in Germany, hoping to build a market for investors to own and trade physical metal onchain."
+          "title": "Brazil’s Mercado Bitcoin halts withdrawals after $40 million drained across 10 chains",
+          "link": "https://www.coindesk.com/business/2026/11/02/brazil-s-mercado-bitcoin-halts-withdrawals-after-usd40-million-drained-across-10-chains",
+          "pubDate": "2026-11-02 15:53:29",
+          "summary": "The Brazilian exchange paused deposits and withdrawals after wallets on at least 10 chains were emptied, days after the $6.3 billion Binance hack."
         },
         {
           "source": "CoinDesk",
-          "title": "Binance hack fallout, U.S. midterms and jobs report: Crypto Week Ahead",
-          "link": "https://www.coindesk.com/markets/2026/11/02/binance-hack-fallout-u-s-midterms-and-jobs-report-crypto-week-ahead",
-          "pubDate": "2026-11-02 09:04:49",
-          "summary": "Your look at what’s coming in the week starting Nov. 2."
+          "title": "Nvidia, Costco and Nike join pushback against OKX–ICE tokenized stock plans",
+          "link": "https://www.coindesk.com/business/2026/11/02/nvidia-costco-and-nike-join-pushback-against-okx-ice-tokenized-stock-plans",
+          "pubDate": "2026-11-02 15:26:43",
+          "summary": "Nearly 70% of the companies initially picked for trading have opted out, while 19 firms including Apple, Tesla and Amazon have no disclosed objection as the 30-day response window nears its end."
         },
         {
           "source": "CoinDesk",
-          "title": "Live updates: Bitcoin posts small rise as Binance records $6 billion outflows after starting withdrawals",
-          "link": "https://www.coindesk.com/markets/2026/11/02/live-updates-binance-records-usd6-billion-outflows-after-starting-withdrawals-less-then-4-of-total-holdings",
-          "pubDate": "2026-11-02 08:49:30",
-          "summary": "The outflows followed a 45-hour withdrawal freeze after a $6.3 billion theft, with rival exchanges attracting deposits as customers regained access to their funds."
+          "title": "Anthropic swings to third quarter operating loss as compute costs surge ahead of IPO",
+          "link": "https://www.coindesk.com/markets/2026/11/02/anthropic-swings-to-third-quarter-operating-loss-as-compute-costs-surge-ahead-of-ipo",
+          "pubDate": "2026-11-02 15:18:55",
+          "summary": "The Claude developer generated $17 billion in quarterly revenue, but higher computing costs resulted in a $567 million operating loss."
         },
         {
           "source": "CoinDesk",
-          "title": "China’s Communist Party calls for a crackdown on corruption that uses crypto and blockchain",
-          "link": "https://www.coindesk.com/markets/2026/11/02/china-s-communist-party-calls-for-a-crackdown-on-corruption-that-uses-crypto-and-blockchain",
-          "pubDate": "2026-11-02 08:41:28",
-          "summary": "China&#39;s Communist Party has named virtual currency and blockchain in a new anti-corruption call."
+          "title": "Standard Chartered debuts tokenized deposits in Hong Kong for corporate clients",
+          "link": "https://www.coindesk.com/business/2026/11/02/standard-chartered-debuts-tokenized-deposits-in-hong-kong-for-corporate-clients",
+          "pubDate": "2026-11-02 15:05:24",
+          "summary": "The bank uses Hong Kong&#39;s EnsembleTX system to move deposits between participating banks around the clock, settling in central bank money."
         },
         {
           "source": "CoinDesk",
-          "title": "Why stealing billions from a crypto exchange can be harder to stop than a bank theft",
-          "link": "https://www.coindesk.com/business/2026/11/02/why-crypto-exchange-hacks-can-be-harder-to-contain-versus-global-banks",
-          "pubDate": "2026-11-02 08:32:01",
-          "summary": "The $6.3 billion Binance breach has revived a debate over whether crypto exchanges are less secure than banks or simply harder to protect once hackers get inside."
+          "title": "Crypto&#39;s Washington playbook is working. Don&#39;t abandon it now.",
+          "link": "https://www.coindesk.com/opinion/2026/11/02/crypto-s-washington-playbook-is-working-don-t-abandon-it-now",
+          "pubDate": "2026-11-02 15:00:09",
+          "summary": "Regardless of how the midterm elections unfold or which party secures the presidency in 2028, our industry must adhere to its established playbook, writes Solana Policy Institute’s Colin McLaren."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin ETFs lost $643 million in outflows Friday, and 2026 is barely green now",
-          "link": "https://www.coindesk.com/markets/2026/11/02/bitcoin-etfs-lost-usd643-million-in-outflows-friday-and-2026-is-barely-green-now",
-          "pubDate": "2026-11-02 06:46:41",
-          "summary": "The first trading day after the Binance hack saw  the biggest ETF outflow since June 25."
+          "title": "Coinbase downgraded at Morgan Stanley; price target slashed 53% on weak earnings outlook",
+          "link": "https://www.coindesk.com/markets/2026/11/02/morgan-stanley-downgrades-coinbase-slashes-price-target-53-on-weak-earnings-outlook",
+          "pubDate": "2026-11-02 14:29:33",
+          "summary": "Analyst Michael Cyprys cited weak crypto trading activity and doubts about an earnings recovery."
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "New Jersey drops Coinbase staking order ahead of crypto’s midterm test",
+          "link": "https://cointelegraph.com/news/new-jersey-coinbase-staking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 22:22:30",
+          "summary": "\n   \n New Jersey lifted its staking ban and dropped a $5 million penalty, clearing the way for Coinbase to restore staking access for users in the US state. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "AI poses greater threat to Bitcoin than quantum computing, Swan founder says",
+          "link": "https://cointelegraph.com/news/ai-hackers-threat-bitcoin-quantum-computing-swan?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 21:54:41",
+          "summary": "\n   \n The Swan Bitcoin founder warned that hackers are using large language models to exploit security flaws with just a few prompts. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Crypto investigators flag suspected $106M theft, $786K Solana bot drain",
+          "link": "https://cointelegraph.com/news/zachxbt-flags-suspected-106m-crypto-theft-as-solana-bot-faces-possible-786k-drain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 21:16:24",
+          "summary": "\n   \n A European entity may have lost $106 million from exchange accounts, while a wallet associated with a Solana arbitrage bot may have lost another $786,000. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Coinbase hit with 50% price target cut as post-earnings rout deepens",
+          "link": "https://cointelegraph.com/news/morgan-stanley-cuts-coinbase-target-to-120-as-earnings-recovery-outlook-weakens?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 20:22:23",
+          "summary": "\n   \n Slowing trading activity and fallout from the Binance hack are clouding Coinbase’s revenue prospects, prompting Morgan Stanley to lower its rating on the stock. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin risks drop below $76K as 7% oil slide fails to spark BTC price rally",
+          "link": "https://cointelegraph.com/markets/bitcoin-risks-sub-76k-drop-as-7-fall-in-oil-fails-to-spark-btc-price-rally?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 19:27:58",
+          "summary": "\n   \n Bitcoin fell around 1.7% on Monday as stocks pared early gains fueled by hopes of a diplomatic resolution to the US-Iran war. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Mercado Bitcoin wallets show post-hack transfers after $46M theft",
+          "link": "https://cointelegraph.com/news/mercado-bitcoin-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 19:05:35",
+          "summary": "\n   \n Brazil’s exchange Mercado Bitcoin paused deposits and withdrawals after a security breach, saying customer funds and data were safe. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Animoca Brands clears final hurdle for Abu Dhabi fund management",
+          "link": "https://cointelegraph.com/news/animoca-brands-expands-asset-management-business-with-abu-dhabi-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 18:00:16",
+          "summary": "\n   \n The former mobile games company is building out its fund management business in Abu Dhabi as it targets institutional demand for stablecoins and tokenized assets.  \n"
         },
         {
           "source": "CoinTelegraph",
@@ -2785,123 +2849,74 @@
           "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Binance taps half its SAFU Bitcoin holdings, releases reserve proof",
-          "link": "https://cointelegraph.com/news/binance-safu-btc-balance-halves-recovery-unclear?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 13:21:47",
-          "summary": "\n   \n Binance’s SAFU Bitcoin wallet now holds about 7,500 BTC after a 7,499 BTC transfer linked to the hack, with no timeline for restoring the $1 billion fund. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "FATF targets crypto hubs in review of money laundering controls",
-          "link": "https://cointelegraph.com/news/fatf-targeted-crypto-compliance-jurisdiction-reviews?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 12:56:07",
-          "summary": "\n   \n The watchdog has not named the jurisdictions under review. Initial findings on compliance with its crypto standards are due in June 2027. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis",
-          "link": "https://cointelegraph.com/news/binance-hackers-solana-new-phase-laundering-chainalysis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 12:40:45",
-          "summary": "\n   \n Crypto exchange Gate said it froze two linked accounts as US investigators urged platforms to block transactions tied to the $6.3 billion theft. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "From Uptober to Hacktober: Are Bitcoin’s seasonal patterns becoming obsolete?",
-          "link": "https://cointelegraph.com/markets/uptober-hacktober-bitcoin-seasonal-pattern?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 11:19:18",
-          "summary": "\n   \n Bitcoin lost 7.3% in October 2026 after another decline the previous year, despite the month’s historically strong returns, as analysts reassess seasonal signals. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Trezor lifts password ceiling after Coldcard’s $100M wallet thefts",
-          "link": "https://cointelegraph.com/news/trezor-wallet-passphrase-limit-128-characters-coldcard-attacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 10:46:59",
-          "summary": "\n   \n Trezor cited July’s Coldcard attacks, in which strong passphrases helped protect some users whose wallet recovery information was compromised. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Hong Kong takes tokenized settlement to 24/7, plans stablecoin trials",
-          "link": "https://cointelegraph.com/news/hong-kong-24-7-tokenized-settlements-stablecoin-trials?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 10:14:55",
-          "summary": "\n   \n The HKMA plans to bring regulated stablecoins into tokenized government debt trials, while HSBC says its RedCoin stablecoin has reached 50,000 users. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "BTC heads into US midterm showdown: Three things to know in Bitcoin this week",
-          "link": "https://cointelegraph.com/markets/btc-price-script-midterms-three-things-bitcoin-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 09:41:36",
-          "summary": "\n   \n Bitcoin price action held its 100-day moving average into the monthly close as crypto markets braced for US midterm election and tech earnings volatility. \n"
+          "source": "Decrypt",
+          "title": "Bitcoin Firm Strive Climbs Up the Treasury Ranks With Another Big Buy",
+          "link": "https://decrypt.co/382385/bitcoin-firm-strive-treasury-ranks-another-big-buy",
+          "pubDate": "2026-11-02 22:16:02",
+          "summary": "Strive added 124 Bitcoin for about $10 million and now trails Twenty One Capital by 390 BTC for third place among Treasury companies."
         },
         {
           "source": "Decrypt",
-          "title": "Morning Minute: Binance Hack Leads to Mass Outflows While FBI Opens Probe",
-          "link": "https://decrypt.co/382332/morning-minute-the-binance-hack-leads-to-mass-outflows-while-fbi-opens-probe",
-          "pubDate": "2026-11-02 13:34:02",
-          "summary": "Uptober was far from it, with the Binance hack punctuating a red month. Will November be better? Or will the Binance hack hang over crypto?"
+          "title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
+          "link": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack",
+          "pubDate": "2026-11-02 21:16:03",
+          "summary": "Onchain investigator ZachXBT says an unidentified EU entity lost more than $106 million from centralized exchange accounts on Sunday,."
         },
         {
           "source": "Decrypt",
-          "title": "Strategy Resumes Bitcoin Buys With $66M Purchase",
-          "link": "https://decrypt.co/382333/strategy-resumes-bitcoin-buys-with-66m-purchase",
-          "pubDate": "2026-11-02 13:19:36",
-          "summary": "The Bitcoin treasury firm also spent $208.2 million buying back its STRC preferred stock, cutting its USD Cash balance to $132.7 million."
+          "title": "Claude-Built Linux Exploit Targets Bug That Ubuntu Still Hasn&#39;t Patched",
+          "link": "https://decrypt.co/382375/claude-built-linux-exploit-bug-ubuntu",
+          "pubDate": "2026-11-02 20:36:03",
+          "summary": "Anthropic says Claude wrote an attack that can take over a Linux server with no password. Red Hat patched on Sunday, but Ubuntu still has no fix."
         },
         {
           "source": "Decrypt",
-          "title": "BTCPay Tells Merchants to Switch Off Servers Amid Hot Wallet Attack Reports",
-          "link": "https://decrypt.co/382324/btcpay-tells-merchants-to-switch-off-servers-amid-hot-wallet-attack-reports",
-          "pubDate": "2026-11-02 12:24:18",
-          "summary": "The Bitcoin payment software says attacks targeted versions 2.4.1 and older, days after it shipped an emergency fix for a critical flaw."
+          "title": "Tom Lee Calls Bottom on AI Stock Selloff, Citing Tight Supply and Crypto Resilience",
+          "link": "https://decrypt.co/382357/tom-lee-calls-bottom-ai-stock-selloff-crypto",
+          "pubDate": "2026-11-02 19:46:02",
+          "summary": "The Fundstrat strategist says constraints on AI spending have slowed growth without ending the boom, while crypto’s response to the Binance hack suggests sellers may already be exhausted."
         },
         {
           "source": "Decrypt",
-          "title": "FBI Blames North Korea for $6B Binance Hack as Exchange Reopens Withdrawals",
-          "link": "https://decrypt.co/382316/fbi-blames-north-korea-for-6b-binance-hack-as-exchange-reopens-withdrawals",
-          "pubDate": "2026-11-02 10:36:19",
-          "summary": "Binance saw $3.64 billion in net outflows in the first nine and a half hours after reopening withdrawals, or 2.1% of its assets, it said."
+          "title": "North Korea Is Laundering Binance Hack Loot at One New Wallet Every 25 Seconds",
+          "link": "https://decrypt.co/382355/north-korea-laundering-binance-hack-loot-new-wallet-every-25-seconds",
+          "pubDate": "2026-11-02 18:46:03",
+          "summary": "$2.85 billion of the $6.43 billion stolen from Binance has been frozen or seized, compared with about 3% in the Bybit hack, as North Korea’s automated laundering spans 12,000 wallets."
         },
         {
           "source": "Decrypt",
-          "title": "Bitcoin ETF Investors Head for the Exits After Record Binance Hack",
-          "link": "https://decrypt.co/382309/bitcoin-etf-investors-exits-record-binance-hack",
-          "pubDate": "2026-11-01 16:01:02",
-          "summary": "Bitcoin ETFs saw $643.2 million in outflows Friday, the first full trading session after the $6.4 billion Binance hack, ending October with roughly $516 million in net outflows."
+          "title": "Proton Users Revolt After CEO Calls Security Caution &#39;Loser Thinking&#39; Amid AI Push",
+          "link": "https://decrypt.co/382353/proton-users-revolt-ceo-calls-security-caution-loser-thinking-ai",
+          "pubDate": "2026-11-02 18:16:02",
+          "summary": "Proton customers say they are canceling subscriptions after reports of pressure to adopt AI coding, as the privacy company scraps employee re-interviews but defends its broader shift toward automated development."
         },
         {
           "source": "Decrypt",
-          "title": "How to Run an AI Model Locally—And Why You Might Want To",
-          "link": "https://decrypt.co/382295/how-to-run-ai-model-locally-why-you-might-want",
-          "pubDate": "2026-11-01 14:01:02",
-          "summary": "Free tools like Ollama and LM Studio can run open-weight AI models on your laptop, offline, and without a subscription. Here&#39;s how to get started."
+          "title": "Nvidia and Nike Lead Biggest Wave Yet of Tokenized Stock Objections",
+          "link": "https://decrypt.co/382348/nvidia-nike-biggest-wave-yet-tokenized-stock-objections",
+          "pubDate": "2026-11-02 17:36:03",
+          "summary": "Nvidia, Costco, Nike and nine other companies objected to trading of their shares on the planned OKX-ICE tokenized stock venue, bringing the total to 50."
         },
         {
           "source": "Decrypt",
-          "title": "Binance Hack: Everything You Need to Know About the Biggest Crypto Heist in History",
-          "link": "https://decrypt.co/382306/binance-hack-everything-you-need-to-know",
-          "pubDate": "2026-10-31 15:01:02",
-          "summary": "Attackers tied to North Korea drained roughly $6.4 billion from the world’s largest crypto exchange. Here’s what we know about how it happened, who’s behind it, and what comes next."
+          "title": "Elon Musk Mocks Sam Altman Over Claim Home PCs Are Wasting RAM",
+          "link": "https://decrypt.co/382345/elon-musk-mocks-sam-altman-over-claim-home-pcs-are-wasting-ram",
+          "pubDate": "2026-11-02 17:07:28",
+          "summary": "The OpenAI CEO said it&#39;s &quot;quite terrible&quot; for DRAM to sit largely idle in personal computers while AI data centers face a supply crunch."
         },
         {
           "source": "Decrypt",
-          "title": "Why AI Models Cheat: Reward Hacking, Explained",
-          "link": "https://decrypt.co/382274/why-ai-models-cheat-reward-hacking-explained",
-          "pubDate": "2026-10-31 13:01:03",
-          "summary": "From boat-racing bots to OpenAI models inside Hugging Face, here&#39;s how AI reward hacking works and why it matters."
+          "title": "Brazil&#39;s Largest Exchange Mercado Bitcoin Halts Withdrawals After $40 Million Hack",
+          "link": "https://decrypt.co/382341/mercado-bitcoin-halts-withdrawals-40-million-hack",
+          "pubDate": "2026-11-02 16:46:03",
+          "summary": "Brazil&#39;s largest crypto exchange paused deposits and withdrawals after a security incident. Tether froze more than 4.5 million USDT tied to the attack."
         },
         {
           "source": "Decrypt",
-          "title": "Binance Hack Shows Why Offshore Exchanges Need US Oversight, CFTC Chair Says",
-          "link": "https://decrypt.co/382285/binance-hack-why-offshore-exchanges-need-us-oversight-cftc-chair",
-          "pubDate": "2026-10-30 21:16:04",
-          "summary": "Michael Selig said the record $6.4 billion theft shows why offshore exchanges should register with the CFTC and adopt U.S.-grade cybersecurity standards."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Intel Stock Suffers Worst Crash in 50 Years as Weak Forecast Overshadows AI Chip Demand",
-          "link": "https://decrypt.co/382287/intel-stock-suffers-worst-crash-in-50-years-as-weak-forecast-overshadows-ai-chip-demand",
-          "pubDate": "2026-10-30 20:53:23",
-          "summary": "Intel beat third-quarter earnings expectations, but warned of a prolonged PC slump, sending shares to their worst daily decline in 50 years."
+          "title": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish",
+          "link": "https://decrypt.co/382340/bitmine-buys-more-ethereum-tom-lee-binance-hack-bullish",
+          "pubDate": "2026-11-02 16:23:24",
+          "summary": "The chairman laid out six reasons the market’s “muted” 4% ETH drop after the record Binance theft shows crypto is “increasingly resilient,” as the firm’s stash neared its 5% supply goal."
         }
       ],
       "perCoin": {
@@ -2915,32 +2930,34 @@
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
+          "critHead": "Mercado Bitcoin wallets show post-hack transfers after $46M theft"
         },
         "ETH": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
-          "multiSourced": false,
-          "critical": false,
-          "critHead": ""
+          "sentiment": "BEARISH",
+          "impact": -0.17,
+          "sources": [
+            "CoinDesk",
+            "Decrypt"
+          ],
+          "multiSourced": true,
+          "critical": true,
+          "critHead": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish"
         },
         "SOL": {
           "sentiment": "BEARISH",
-          "impact": -0.5,
+          "impact": -1,
           "sources": [
+            "CoinDesk",
             "CoinTelegraph"
           ],
-          "multiSourced": false,
-          "critical": true,
-          "critHead": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
+          "multiSourced": true,
+          "critical": false,
+          "critHead": ""
         },
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3013,38 +3030,38 @@
       "breaker": [
         {
           "coin": "BTC",
-          "head": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
+          "head": "Mercado Bitcoin wallets show post-hack transfers after $46M theft"
         },
         {
-          "coin": "SOL",
-          "head": "Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis"
+          "coin": "ETH",
+          "head": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish"
         }
       ],
       "fearGreed": {
         "value": 37,
         "classification": "Fear",
-        "t": 1793631116716
+        "t": 1793658904779
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793629381431,
+      "fetchedAt": 1793658905763,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.55,
+        "ARB": 9.88,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.06,
+        "ETHFI": 20,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 16.91,
+        "WLD": 18.5,
         "GRASS": 20,
-        "ZEC": 11.28,
+        "ZEC": 12.33,
         "AERO": 20
       },
       "positions": [
@@ -3052,35 +3069,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 761.43,
+          "pct": 774.59,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 99.48,
+          "pct": 130.21,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.55,
+          "pct": 9.88,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 26.98,
+          "pct": 35.31,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 134.6,
+          "pct": 176.18,
           "lev": 10
         },
         {
@@ -3094,77 +3111,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.06,
+          "pct": 21.01,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 181.53,
+          "pct": 235.98,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 23.49,
+          "pct": 30.75,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 73.11,
+          "pct": 95.69,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 37.33,
+          "pct": 48.86,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 16.91,
+          "pct": 18.5,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 59.37,
+          "pct": 64.94,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 170.47,
+          "pct": 186.47,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.28,
+          "pct": 12.33,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 166.62,
+          "pct": 182.26,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 970.92,
+          "pct": 996.98,
           "lev": 10
         }
       ]
@@ -3173,12 +3190,12 @@
       "id": "emax",
       "name": "EMA Cross Naive (CONTROL)",
       "book": "Baseline Penelitian",
-      "netR": 13.41,
-      "trades": 125,
-      "winRate": 74.2,
-      "pf": 39.12,
-      "expPerTrade": 0.107,
-      "updatedAt": 1793631117689,
+      "netR": 33.5,
+      "trades": 100,
+      "winRate": 81.5,
+      "pf": 55.5,
+      "expPerTrade": 0.335,
+      "updatedAt": 1793658907268,
       "gen": 2
     },
     "minScore": 75
