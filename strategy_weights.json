@@ -1,16 +1,16 @@
 {
-  "updatedAt": 1793629382729,
+  "updatedAt": 1793629684876,
   "gen": 1,
   "champion": {
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
     "book": "Baseline Penelitian",
-    "netR": 11.88,
+    "netR": 13.41,
     "trades": 125,
-    "winRate": 72.8,
-    "pf": 33.68,
-    "expPerTrade": 0.095,
-    "updatedAt": 1793629382728,
+    "winRate": 74.2,
+    "pf": 39.12,
+    "expPerTrade": 0.107,
+    "updatedAt": 1793629684874,
     "gen": 1
   },
   "weights": {
