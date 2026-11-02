@@ -1,8 +1,18 @@
 {
-  "updatedAt": 1793627913525,
+  "updatedAt": 1793629382729,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793629382726,
+      "type": "CYCLE",
+      "text": "[CYCLE #10] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793629380599,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793627913522,
       "type": "CYCLE",

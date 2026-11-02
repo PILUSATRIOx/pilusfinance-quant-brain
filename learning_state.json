@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793627913525,
+  "updatedAt": 1793629382729,
   "brain": {
     "v": 1,
     "gen": 1,
-    "cycles": 9,
+    "cycles": 10,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1793614538964,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 5
+          "beta": 8
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 5
+          "beta": 8
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 5
+          "beta": 8
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 5,
+          "alpha": 8,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 5
+          "beta": 8
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 5,
+          "alpha": 8,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -311,42 +311,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -547,42 +547,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 2,
+          "wins": 2,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 2,
+          "wins": 2,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 2,
+          "wins": 2,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -783,42 +783,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
+          "atrMult": 2,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -1019,42 +1019,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
+          "trades": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 2,
           "winRate": 0,
           "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
+          "trades": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 2,
           "winRate": 0,
           "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
+          "trades": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 2,
           "winRate": 0,
           "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -1255,42 +1255,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -1491,42 +1491,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -1727,42 +1727,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
+          "trades": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 2,
           "winRate": 0,
           "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
+          "trades": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 2,
           "winRate": 0,
           "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
+          "trades": 2,
           "wins": 0,
-          "losses": 0,
+          "losses": 2,
           "winRate": 0,
           "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -1963,42 +1963,42 @@
           "dataStatus": "LIVE"
         },
         "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "UNKNOWN",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "NVDA": {
@@ -2158,6 +2158,45 @@
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
         }
       },
       "tsmom": {
@@ -2238,11 +2277,60 @@
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
+        },
+        "SUIUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "EURUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "GBPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793629382726,
+        "type": "CYCLE",
+        "text": "[CYCLE #10] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793629380599,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1793627913522,
         "type": "CYCLE",
@@ -2407,9 +2495,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 120,
+      "newsIngested": 150,
       "lessons": 0,
-      "backtests": 204,
+      "backtests": 234,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2422,7 +2510,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1793627912692,
+      "fetchedAt": 1793629380599,
       "items": [
         {
           "source": "CoinDesk",
@@ -2496,6 +2584,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Strategy spends triple its weekly Bitcoin outlay on STRC buybacks",
+          "link": "https://cointelegraph.com/news/strategy-repurchases-208m-strc-65m-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 13:48:28",
+          "summary": "\n   \n Strategy spent $208.2 million buying back STRC preferred shares and $65.5 million on Bitcoin, while allocating $98.5 million to its USD Cash balance. \n"
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "AI agent disputes head to ‘Internet Court’ — and a jury of AI agents",
           "link": "https://cointelegraph.com/magazine/ai-agent-disputes-sent-to-internet-court-and-a-jury-of-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-02 13:30:00",
@@ -2556,13 +2651,6 @@
           "link": "https://cointelegraph.com/markets/btc-price-script-midterms-three-things-bitcoin-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-02 09:41:36",
           "summary": "\n   \n Bitcoin price action held its 100-day moving average into the monthly close as crypto markets braced for US midterm election and tech earnings volatility. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "OKX draws $445M in net inflows as Binance outflows exceed $7B",
-          "link": "https://cointelegraph.com/news/okx-leads-crypto-exchanges-445m-inflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 08:56:03",
-          "summary": "\n   \n OKX led cryptocurrency exchanges with $445 million in daily inflows, while Binance processed about $7 billion in net outflows. \n"
         },
         {
           "source": "Decrypt",
@@ -2754,28 +2842,28 @@
       "fearGreed": {
         "value": 37,
         "classification": "Fear",
-        "t": 1793627912692
+        "t": 1793629380599
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793626653181,
+      "fetchedAt": 1793629381431,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.67,
+        "ARB": 7.55,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.31,
+        "ETHFI": 16.06,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 16.97,
+        "WLD": 16.91,
         "GRASS": 20,
-        "ZEC": 11.31,
+        "ZEC": 11.28,
         "AERO": 20
       },
       "positions": [
@@ -2783,35 +2871,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 782.65,
+          "pct": 761.43,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 101.05,
+          "pct": 99.48,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.67,
+          "pct": 7.55,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 27.4,
+          "pct": 26.98,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 136.72,
+          "pct": 134.6,
           "lev": 10
         },
         {
@@ -2825,77 +2913,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.31,
+          "pct": 16.06,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 184.38,
+          "pct": 181.53,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 23.86,
+          "pct": 23.49,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 74.26,
+          "pct": 73.11,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 37.91,
+          "pct": 37.33,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 16.97,
+          "pct": 16.91,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 59.56,
+          "pct": 59.37,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 171.03,
+          "pct": 170.47,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.31,
+          "pct": 11.28,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 167.17,
+          "pct": 166.62,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1003.73,
+          "pct": 970.92,
           "lev": 10
         }
       ]
@@ -2904,12 +2992,12 @@
       "id": "emax",
       "name": "EMA Cross Naive (CONTROL)",
       "book": "Baseline Penelitian",
-      "netR": -1.58,
-      "trades": 116,
-      "winRate": 67.4,
-      "pf": 20.61,
-      "expPerTrade": -0.014,
-      "updatedAt": 1793627913524,
+      "netR": 11.88,
+      "trades": 125,
+      "winRate": 72.8,
+      "pf": 33.68,
+      "expPerTrade": 0.095,
+      "updatedAt": 1793629382728,
       "gen": 1
     },
     "minScore": 75
