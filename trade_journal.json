@@ -1,8 +1,23 @@
 {
-  "updatedAt": 1793677260701,
+  "updatedAt": 1793704865092,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793704865087,
+      "type": "CYCLE",
+      "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793704863383,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin pledges to cover all user losses after near $40 million hack)"
+    },
+    {
+      "t": 1793704863381,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793677260698,
       "type": "CYCLE",
