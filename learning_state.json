@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793658907268,
+  "updatedAt": 1793677260701,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 13,
+    "cycles": 14,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1793631117207,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 11
+          "beta": 14
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 11
+          "beta": 14
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 11
+          "beta": 14
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 11,
+          "alpha": 14,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 11
+          "beta": 14
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 11,
+          "alpha": 14,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -233,42 +233,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 25,
-          "wins": 14,
-          "losses": 11,
-          "winRate": 56.00000000000001,
-          "pf": 0.9938949705554402,
-          "exp": -0.003039960934867327,
-          "netR": -0.07599902337168318,
-          "maxDD": 5.204568006889433,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 24,
-          "wins": 13,
-          "losses": 11,
-          "winRate": 54.166666666666664,
-          "pf": 0.7979775669904856,
-          "exp": -0.10308206623086119,
-          "netR": -2.4739695895406686,
-          "maxDD": 6.880461225424645,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 44,
-          "wins": 24,
-          "losses": 20,
-          "winRate": 54.54545454545454,
-          "pf": 0.5659030125857721,
-          "exp": -0.23898394074430937,
-          "netR": -10.515293392749612,
-          "maxDD": 12.510422391076943,
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.58596451660369,
+          "exp": -0.298530570154126,
+          "netR": -2.388244561233008,
+          "maxDD": 3.8859258257564164,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -469,42 +469,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 20,
-          "wins": 11,
-          "losses": 9,
-          "winRate": 55.00000000000001,
-          "pf": 0.6435921889257062,
-          "exp": -0.18298211029792974,
-          "netR": -3.659642205958595,
-          "maxDD": 7.056658753090934,
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 21,
-          "wins": 11,
-          "losses": 10,
-          "winRate": 52.38095238095239,
-          "pf": 0.7764023713698768,
-          "exp": -0.12183088933420186,
-          "netR": -2.558448676018239,
-          "maxDD": 4.649177032559239,
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 24,
-          "wins": 11,
-          "losses": 13,
-          "winRate": 45.83333333333333,
-          "pf": 0.3863001044271975,
-          "exp": -0.4176037324424758,
-          "netR": -10.02248957861942,
-          "maxDD": 10.641630428132416,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4905457224192111,
+          "netR": 2.9810914448384223,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -705,42 +705,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 19,
-          "wins": 13,
-          "losses": 6,
-          "winRate": 68.42105263157895,
-          "pf": 1.1177646252014672,
-          "exp": 0.04126605915556407,
-          "netR": 0.7840551239557173,
-          "maxDD": 2.5311078492248447,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
           "atrMult": 2,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 19,
-          "wins": 8,
-          "losses": 11,
-          "winRate": 42.10526315789473,
-          "pf": 0.4495290419807058,
-          "exp": -0.3522954109572137,
-          "netR": -6.69361280818706,
-          "maxDD": 7.493612808187061,
+          "trades": 20,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
           "atrMult": 2,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
           "trades": 20,
-          "wins": 14,
-          "losses": 6,
-          "winRate": 70,
-          "pf": 1.372463458033995,
-          "exp": 0.1323403977637591,
-          "netR": 2.646807955275182,
-          "maxDD": 3.8699258369571248,
+          "wins": 2,
+          "losses": 18,
+          "winRate": 10,
+          "pf": 0.1468319506082603,
+          "exp": -0.8754830128083476,
+          "netR": -17.509660256166953,
+          "maxDD": 17.509660256166953,
           "atrMult": 2,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -941,42 +941,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 25,
-          "wins": 14,
-          "losses": 11,
-          "winRate": 56.00000000000001,
-          "pf": 0.8433546933744425,
-          "exp": -0.08088898627022557,
-          "netR": -2.0222246567556392,
-          "maxDD": 8.571491646090802,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 18,
-          "wins": 12,
-          "losses": 6,
-          "winRate": 66.66666666666666,
-          "pf": 1.213117229420348,
-          "exp": 0.07988606478750548,
-          "netR": 1.4379491661750987,
-          "maxDD": 5.947221564798598,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 13,
-          "wins": 10,
-          "losses": 3,
-          "winRate": 76.92307692307693,
-          "pf": 2.2651631521134483,
-          "exp": 0.37883088192593267,
-          "netR": 4.924801465037125,
-          "maxDD": 1.304478158108231,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1489346700766112,
+          "netR": -2.2978693401532224,
+          "maxDD": 2.2978693401532224,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1177,42 +1177,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 8,
-          "wins": 3,
+          "trades": 6,
+          "wins": 1,
           "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.5885666454985278,
-          "exp": -0.2987936213440816,
-          "netR": -2.390348970752653,
-          "maxDD": 3.859884582083744,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
           "trades": 6,
-          "wins": 5,
-          "losses": 1,
-          "winRate": 83.33333333333334,
-          "pf": 2.9003393036731975,
-          "exp": 0.3406114163590721,
-          "netR": 2.0436684981544326,
-          "maxDD": 1.0754229490513574,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 7,
-          "wins": 4,
-          "losses": 3,
-          "winRate": 57.14285714285714,
-          "pf": 0.9903972365409434,
-          "exp": -0.005070620322359213,
-          "netR": -0.03549434225651449,
-          "maxDD": 2.4697422408311116,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.258080401081765,
+          "exp": -0.7119427183296289,
+          "netR": -4.271656309977773,
+          "maxDD": 4.271656309977773,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1413,42 +1413,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 16,
-          "wins": 10,
-          "losses": 6,
-          "winRate": 62.5,
-          "pf": 1.2445550268185148,
-          "exp": 0.10439946524461582,
-          "netR": 1.6703914439138532,
-          "maxDD": 1.8603081335763862,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 15,
-          "wins": 9,
-          "losses": 6,
-          "winRate": 60,
-          "pf": 0.8342857313717905,
-          "exp": -0.07630874226760348,
-          "netR": -1.1446311340140523,
-          "maxDD": 5.307257555365403,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 14,
-          "wins": 5,
-          "losses": 9,
-          "winRate": 35.714285714285715,
-          "pf": 0.2791759849515122,
-          "exp": -0.5575672235512213,
-          "netR": -7.805941129717098,
-          "maxDD": 8.348836721533058,
-          "atrMult": 2,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.7669671906909145,
+          "netR": 2.3009015720727435,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1649,42 +1649,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 15,
-          "wins": 8,
-          "losses": 7,
-          "winRate": 53.333333333333336,
-          "pf": 0.652296342429444,
-          "exp": -0.1906544916402727,
-          "netR": -2.8598173746040905,
-          "maxDD": 5.832104344513686,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 12,
-          "wins": 8,
-          "losses": 4,
-          "winRate": 66.66666666666666,
-          "pf": 1.4281927140310684,
-          "exp": 0.16351461941969866,
-          "netR": 1.9621754330363839,
-          "maxDD": 4.582458712489944,
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 8,
-          "wins": 5,
-          "losses": 3,
-          "winRate": 62.5,
-          "pf": 1.0591066280598698,
-          "exp": 0.027938885768422864,
-          "netR": 0.2235110861473829,
-          "maxDD": 3.7814893774854825,
+          "trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "winRate": 0,
+          "pf": 0,
+          "exp": -1.1556303473372016,
+          "netR": -2.311260694674403,
+          "maxDD": 2.311260694674403,
           "atrMult": 1.8,
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1885,42 +1885,42 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 10,
-          "wins": 4,
-          "losses": 6,
-          "winRate": 40,
-          "pf": 0.5157365634412749,
-          "exp": -0.35257426084809346,
-          "netR": -3.5257426084809347,
-          "maxDD": 4.262976890995951,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 9,
-          "wins": 5,
-          "losses": 4,
-          "winRate": 55.55555555555556,
-          "pf": 0.8869821524557648,
-          "exp": -0.059024602075374064,
-          "netR": -0.5312214186783666,
-          "maxDD": 2.3268318671272565,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 14,
-          "wins": 6,
-          "losses": 8,
-          "winRate": 42.857142857142854,
-          "pf": 0.5144702010745786,
-          "exp": -0.3639013953593239,
-          "netR": -5.094619535030535,
-          "maxDD": 5.094619535030535,
-          "atrMult": 1.5,
-          "regime": "RANGING",
+          "trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -2275,6 +2275,45 @@
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
+        },
+        "XRPUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 26,
+          "wins": 3,
+          "losses": 23,
+          "winRate": 11.538461538461538,
+          "pf": 0.12692563220564845,
+          "exp": -0.894647462129408,
+          "netR": -23.26083401536461,
+          "maxDD": 23.26083401536461,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
         }
       },
       "tsmom": {
@@ -2472,11 +2511,65 @@
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
+        },
+        "XRPUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "DOGEUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
+        },
+        "BNBUSDT": {
+          "trades": 0,
+          "wins": 0,
+          "losses": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0,
+          "atrMult": 1.8,
+          "regime": "TREND_UP",
+          "dataStatus": "LIVE"
         }
       }
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793677260698,
+        "type": "CYCLE",
+        "text": "[CYCLE #14] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793677258815,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin wallets show post-hack transfers after $46M theft)"
+      },
+      {
+        "t": 1793677258814,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1793658907266,
         "type": "CYCLE",
@@ -2691,9 +2784,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 210,
+      "newsIngested": 240,
       "lessons": 0,
-      "backtests": 324,
+      "backtests": 354,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2706,7 +2799,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1793658904779,
+      "fetchedAt": 1793677258814,
       "items": [
         {
           "source": "CoinDesk",
@@ -2780,6 +2873,34 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Binance begins second withdrawal phase, exchange outflows slow",
+          "link": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 03:03:44",
+          "summary": "\n   \n The exchange says additional assets will become available for withdrawal from 04:00 UTC on Tuesday as security checks are completed, following an initial reopening on Sunday. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "South Korea urges exchanges to boost cold storage after Binance hack",
+          "link": "https://cointelegraph.com/news/south-korea-urges-exchanges-to-boost-cold-storage-after-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 01:32:39",
+          "summary": "\n   \n South Korean crypto exchanges are already required to hold at least 80% of customer crypto in cold wallets, but the regulator is urging more.  \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "North Korea denies role in $6.3B Binance hack, points finger at US",
+          "link": "https://cointelegraph.com/news/north-korea-denies-role-in-63b-binance-hack-points-finger-at-us?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 23:07:07",
+          "summary": "\n   \n Pyongyang has pushed back against the FBI’s attribution of the Binance attack, with Kim Yo Jong calling the US allegations politically motivated. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-02 22:36:09",
+          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "New Jersey drops Coinbase staking order ahead of crypto’s midterm test",
           "link": "https://cointelegraph.com/news/new-jersey-coinbase-staking?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-02 22:22:30",
@@ -2821,32 +2942,11 @@
           "summary": "\n   \n Brazil’s exchange Mercado Bitcoin paused deposits and withdrawals after a security breach, saying customer funds and data were safe. \n"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Animoca Brands clears final hurdle for Abu Dhabi fund management",
-          "link": "https://cointelegraph.com/news/animoca-brands-expands-asset-management-business-with-abu-dhabi-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 18:00:16",
-          "summary": "\n   \n The former mobile games company is building out its fund management business in Abu Dhabi as it targets institutional demand for stablecoins and tokenized assets.  \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Strategy spends triple its weekly Bitcoin outlay on STRC buybacks",
-          "link": "https://cointelegraph.com/news/strategy-repurchases-208m-strc-65m-bitcoin?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 13:48:28",
-          "summary": "\n   \n Strategy spent $208.2 million buying back STRC preferred shares and $65.5 million on Bitcoin, while allocating $98.5 million to its USD Cash balance. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "AI agent disputes head to ‘Internet Court’ — and a jury of AI agents",
-          "link": "https://cointelegraph.com/magazine/ai-agent-disputes-sent-to-internet-court-and-a-jury-of-ai-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 13:30:00",
-          "summary": "\n   \n Who better to judge a dispute between AI agents than a jury of different AI models? That’s the idea behind GenLayer, which is already issuing thousands of judgements each day. \n"
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-02 13:29:29",
-          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+          "source": "Decrypt",
+          "title": "Claude Fable 5.5, GPT 6.2 Astra Could Be Right Around the Corner, Leaks Suggest",
+          "link": "https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks",
+          "pubDate": "2026-11-02 23:10:25",
+          "summary": "Users say Claude is routing some requests to a stronger unreleased model, a Mythos 5.5 label appeared in Anthropic’s site code, and OpenAI appears to be testing GPT-6.2 Astra."
         },
         {
           "source": "Decrypt",
@@ -2910,13 +3010,6 @@
           "link": "https://decrypt.co/382341/mercado-bitcoin-halts-withdrawals-40-million-hack",
           "pubDate": "2026-11-02 16:46:03",
           "summary": "Brazil&#39;s largest crypto exchange paused deposits and withdrawals after a security incident. Tether froze more than 4.5 million USDT tied to the attack."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish",
-          "link": "https://decrypt.co/382340/bitmine-buys-more-ethereum-tom-lee-binance-hack-bullish",
-          "pubDate": "2026-11-02 16:23:24",
-          "summary": "The chairman laid out six reasons the market’s “muted” 4% ETH drop after the record Binance theft shows crypto is “increasingly resilient,” as the firm’s stash neared its 5% supply goal."
         }
       ],
       "perCoin": {
@@ -2933,15 +3026,14 @@
           "critHead": "Mercado Bitcoin wallets show post-hack transfers after $46M theft"
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
-            "CoinDesk",
-            "Decrypt"
+            "CoinDesk"
           ],
-          "multiSourced": true,
-          "critical": true,
-          "critHead": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish"
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
         },
         "SOL": {
           "sentiment": "BEARISH",
@@ -3031,26 +3123,22 @@
         {
           "coin": "BTC",
           "head": "Mercado Bitcoin wallets show post-hack transfers after $46M theft"
-        },
-        {
-          "coin": "ETH",
-          "head": "Bitmine Buys More Ethereum as Tom Lee Calls the Binance Hack Bullish"
         }
       ],
       "fearGreed": {
-        "value": 37,
+        "value": 26,
         "classification": "Fear",
-        "t": 1793658904779
+        "t": 1793677258814
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793658905763,
+      "fetchedAt": 1793677259660,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 9.88,
+        "ARB": 10.39,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3059,9 +3147,9 @@
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 18.5,
+        "WLD": 18.99,
         "GRASS": 20,
-        "ZEC": 12.33,
+        "ZEC": 12.66,
         "AERO": 20
       },
       "positions": [
@@ -3069,35 +3157,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 774.59,
+          "pct": 791.39,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 130.21,
+          "pct": 136.92,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 9.88,
+          "pct": 10.39,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 35.31,
+          "pct": 37.13,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 176.18,
+          "pct": 185.25,
           "lev": 10
         },
         {
@@ -3111,77 +3199,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 21.01,
+          "pct": 22.1,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 235.98,
+          "pct": 248.13,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 30.75,
+          "pct": 32.33,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 95.69,
+          "pct": 100.62,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 48.86,
+          "pct": 51.37,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 18.5,
+          "pct": 18.99,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 64.94,
+          "pct": 66.66,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 186.47,
+          "pct": 191.06,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 12.33,
+          "pct": 12.66,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 182.26,
+          "pct": 187.11,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 996.98,
+          "pct": 1009.35,
           "lev": 10
         }
       ]
@@ -3190,12 +3278,12 @@
       "id": "emax",
       "name": "EMA Cross Naive (CONTROL)",
       "book": "Baseline Penelitian",
-      "netR": 33.5,
-      "trades": 100,
-      "winRate": 81.5,
-      "pf": 55.5,
-      "expPerTrade": 0.335,
-      "updatedAt": 1793658907268,
+      "netR": 56.11,
+      "trades": 76,
+      "winRate": 90.5,
+      "pf": 71.89,
+      "expPerTrade": 0.738,
+      "updatedAt": 1793677260700,
       "gen": 2
     },
     "minScore": 75
