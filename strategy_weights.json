@@ -1,21 +1,4 @@
 {
-<<<<<<< Updated upstream
-=======
-  "updatedAt": 1793677260701,
-  "gen": 2,
-  "champion": {
-    "id": "emax",
-    "name": "EMA Cross Naive (CONTROL)",
-    "book": "Baseline Penelitian",
-    "netR": 56.11,
-    "trades": 76,
-    "winRate": 90.5,
-    "pf": 71.89,
-    "expPerTrade": 0.738,
-    "updatedAt": 1793677260700,
-    "gen": 2
-  },
->>>>>>> Stashed changes
   "weights": {
     "elder": 0.27,
     "donchian": 0.27,
@@ -34,9 +17,5 @@
     "MOMENTUM": 1,
     "SCALP": 1
   },
-<<<<<<< Updated upstream
-  "updatedAt": 1793677260702
-=======
-  "bayesianCells": 10
->>>>>>> Stashed changes
+  "updatedAt": 1793704865093
 }
