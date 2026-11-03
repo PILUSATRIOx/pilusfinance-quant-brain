@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793704865092,
+  "updatedAt": 1793730586001,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 15,
+    "cycles": 16,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1793631117207,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 17
+          "beta": 20
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 17
+          "beta": 20
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 17
+          "beta": 20
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 17,
+          "alpha": 20,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 17
+          "beta": 20
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 17,
+          "alpha": 20,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -190,7 +190,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.54,
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
@@ -2556,6 +2556,21 @@
     "signals": [],
     "journal": [
       {
+        "t": 1793730585999,
+        "type": "CYCLE",
+        "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793730584399,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
+      },
+      {
+        "t": 1793730584398,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1793704865087,
         "type": "CYCLE",
         "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2799,9 +2814,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 270,
+      "newsIngested": 300,
       "lessons": 0,
-      "backtests": 384,
+      "backtests": 414,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2814,77 +2829,133 @@
       }
     },
     "news": {
-      "fetchedAt": 1793704863381,
+      "fetchedAt": 1793730584398,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "Tether holds 150,000 bitcoin worth $11.5 billion, CEO Paolo Ardoino says",
-          "link": "https://www.coindesk.com/business/2026/11/03/tether-holds-150-000-bitcoin-worth-usd11-5-billion-ceo-paolo-ardoino-says",
-          "pubDate": "2026-11-03 10:15:53",
-          "summary": "Ardoino didn’t say where the extra coins sit. Holdings outside USDT reserves, such as Tether’s investments, wouldn’t appear in the report."
+          "title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
+          "link": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties",
+          "pubDate": "2026-11-03 16:55:10",
+          "summary": "The Tron founder says World Liberty failed to disclose its UAE ties until months into his lawsuit over $45 million in WLFI tokens."
         },
         {
           "source": "CoinDesk",
-          "title": "Live news: Bitcoin faces fifth weekly loss as midterm elections weigh on markets",
-          "link": "https://www.coindesk.com/markets/2026/11/03/live-news-bitcoin-faces-fifth-weekly-loss-as-midterm-uncertainty-and-apple-warning-weigh-on-markets",
-          "pubDate": "2026-11-03 09:50:16",
-          "summary": "A fifth straight weekly decline would mark bitcoin’s joint third-longest losing streak, as oil rebounds and Apple’s margin warning adds to investor caution ahead of the U.S. midterms."
+          "title": "South Korea&#39;s president says country needs a ‘cybersecurity czar’ following $6.3 billion Binance hack",
+          "link": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack",
+          "pubDate": "2026-11-03 16:49:56",
+          "summary": "Lee Jae Myung said he wants a government-wide agency to tackle cyberattacks as AI raises security concerns across financial institutions and critical infrastructure."
         },
         {
           "source": "CoinDesk",
-          "title": "North Korea denies role in $6.4 billion Binance hack after FBI points to TraderTraitor",
-          "link": "https://www.coindesk.com/business/2026/11/03/north-korea-denies-role-in-usd6-4-billion-binance-hack-after-fbi-points-to-tradertraitor",
-          "pubDate": "2026-11-03 09:40:32",
-          "summary": "The high-profile denial follows FBI alerts identifying North Korean-controlled wallet addresses tied to the largest cryptocurrency exploit in history."
+          "title": "Amazon, Tesla and SpaceX join OKX–ICE tokenized stock objections as deadline looms",
+          "link": "https://www.coindesk.com/business/2026/11/03/amazon-tesla-and-spacex-join-okx-ice-tokenized-stock-objections-as-deadline-looms",
+          "pubDate": "2026-11-03 16:17:51",
+          "summary": "Objections have reached 56 companies, with nearly 80% of the venture’s initial stock selection opting out."
         },
         {
           "source": "CoinDesk",
-          "title": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack",
-          "link": "https://www.coindesk.com/business/2026/11/03/mercado-bitcoin-pledges-to-cover-all-user-losses-after-near-usd40-million-hack",
-          "pubDate": "2026-11-03 08:56:48",
-          "summary": "Partners like Tether, Circle, and Chainalysis helped freeze $11M of the stolen assets."
+          "title": "Stablecoin governance group behind OUSD sets out management fee, offers equity earning pool",
+          "link": "https://www.coindesk.com/business/2026/11/03/stablecoin-governance-group-behind-ousd-sets-out-management-fee-offers-equity-earning-pool",
+          "pubDate": "2026-11-03 16:12:35",
+          "summary": "Governance group Open Standard will charge a 0.1 basis point management fee on payment volume, capped at at $0.01 per payment."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin’s latest chart signal looks a lot like the ones before its big crashes",
-          "link": "https://www.coindesk.com/markets/2026/11/03/bitcoin-s-price-chart-is-flashing-a-red-signal",
-          "pubDate": "2026-11-03 08:50:56",
-          "summary": "The Guppy Multiple Moving Average bands signal a bearish momentum, even as seasonality and post-midterm history lean bullish."
+          "title": "CFTC clears perpetual futures on stocks, bringing crypto trading model to Wall Street",
+          "link": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street",
+          "pubDate": "2026-11-03 15:02:13",
+          "summary": "CFTC Chair Michael Selig said the move gives U.S. traders a regulated alternative to “offshore, and often unregulated, venues.”"
         },
         {
           "source": "CoinDesk",
-          "title": "Binance has spent half its SAFU bitcoin, about $580 million worth, data shows",
-          "link": "https://www.coindesk.com/markets/2026/11/03/binance-has-spent-half-its-safu-bitcoin-about-usd580-million-worth-data-shows",
-          "pubDate": "2026-11-03 05:36:56",
-          "summary": "The user protection fund now sits below the $800 million level that Binance’s own rules say triggers a top-up, and the exchange hasn’t said when it will refill it."
+          "title": "Binance&#39;s $6.3 billion hack began with a fake job interview, and a campaign &#39;built over many months&#39;",
+          "link": "https://www.coindesk.com/business/2026/11/03/binance-s-usd6-3-billion-hack-began-with-a-fake-job-interview-exchange-says",
+          "pubDate": "2026-11-03 14:53:19",
+          "summary": "North Korea-linked attackers spent months compromising Binance employees and internal systems before exploiting its hot-wallet signing infrastructure through Ethereum&#39;s EIP-7702 mechanism."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin miner Cipher posts $31 million profit as AI pivot begins",
-          "link": "https://www.coindesk.com/markets/2026/11/03/bitcoin-miner-cipher-posts-usd31-million-profit-as-ai-pivot-begins",
-          "pubDate": "2026-11-03 05:29:48",
-          "summary": "The company&#39;s revenue dropped 63% in the third quarter, while a $127 million accounting gain helped turn an operating loss into a reported profit."
+          "title": "South Korea asks its biggest banks how a major crypto hack would hit them",
+          "link": "https://www.coindesk.com/business/2026/11/03/south-korea-asks-its-biggest-banks-how-a-major-crypto-hack-would-hit-them",
+          "pubDate": "2026-11-03 14:42:30",
+          "summary": "In its first such survey, the BOK also asked about a crypto price crash, losses at another firm, and each firm’s crypto teams, budgets and investments."
         },
         {
           "source": "CoinDesk",
-          "title": "Arbitrum’s council moved $30 million of Binance hack funds without the hacker’s key",
-          "link": "https://www.coindesk.com/tech/2026/11/03/arbitrum-s-council-moved-usd30-million-of-binance-hack-funds-without-the-hacker-s-key",
-          "pubDate": "2026-11-03 05:25:12",
-          "summary": "A 12-person committee briefly rewrote one of Arbitrum’s core contracts to spend from an address it held no key for, then put the code back. It’s the second time this year."
+          "title": "CZ warns of more AI-driven hacks following Binance’s historic $6.3 billion heist",
+          "link": "https://www.coindesk.com/business/2026/11/03/cz-warns-of-more-ai-driven-hacks-following-binance-s-historic-usd6-4-billion-heist",
+          "pubDate": "2026-11-03 14:22:09",
+          "summary": "While investigators found no evidence that AI agents laundered the stolen Binance funds, Zhao stressed that automated tools are lowering the barrier for complex breaches."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin drops below $77,000 as chip rout deepens ahead of U.S. midterm vote",
-          "link": "https://www.coindesk.com/markets/2026/11/03/bitcoin-drops-below-usd77-000-as-chip-rout-deepens-ahead-of-u-s-midterm-vote",
-          "pubDate": "2026-11-03 04:48:17",
-          "summary": "ZEC tumbled nearly 10% and BNB fell under $700 as the Nasdaq 100 slid into a correction, dragging Asian stocks lower."
+          "title": "LO:TECH raises $12 million to expand crypto trading into U.S. and Asia",
+          "link": "https://www.coindesk.com/business/2026/11/03/lo-tech-raises-usd12-million-to-expand-crypto-trading-into-u-s-and-asia",
+          "pubDate": "2026-11-03 14:00:00",
+          "summary": "LO:TECH is betting on round-the-clock tokenized stock trading but didn’t say if it trades them now; a WFE study found stock exchanges still set prices."
         },
         {
           "source": "CoinDesk",
-          "title": "Big crypto wants the one thing it can’t buy: your vote",
-          "link": "https://www.coindesk.com/opinion/2026/11/02/big-crypto-wants-the-one-thing-it-can-t-buy-your-vote",
-          "pubDate": "2026-11-02 21:38:53",
-          "summary": "Our loyalty has been to the technology. This election, the trap is to let the biggest intermediaries claim it for themselves, argues Berkeley Law lecturer Hermine Wong."
+          "title": "Binance net outflows reach $5.3 billion after record hack. CEO says recovery underway",
+          "link": "https://www.coindesk.com/business/2026/11/03/binance-net-outflows-reach-usd5-3b-after-record-hack-though-ceo-cites-recovery",
+          "pubDate": "2026-11-03 12:57:28",
+          "summary": "Nearly $11 billion left the exchange over 46 hours, although CEO Richard Teng said hourly deposits were beginning to exceed withdrawals."
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Wall Street killed Bitcoin’s wild rallies: 10x’s Markus Thielen",
+          "link": "https://cointelegraph.com/magazine/wall-street-killed-bitcoins-wild-rallies-markus-thielen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 16:47:01",
+          "summary": "\n   \n Markus Thielen sees Bitcoin reaching $90,000 by year-end, questions institutional ETF demand and says Ethereum must do more for holders. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance traces $6.3B hack to fake job interviews, compromised AI tool",
+          "link": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 16:44:06",
+          "summary": "\n   \n Hackers exploited compromised employee computers and stolen credentials to breach Binance’s wallet infrastructure, according to the exchange’s investigation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin price defends $76K lows as analysts see stocks pricing in ‘political gridlock’",
+          "link": "https://cointelegraph.com/markets/bitcoin-price-defends-76k-lows-as-analysis-sees-stocks-pricing-in-political-gridlock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 15:44:42",
+          "summary": "\n   \n Bitcoin made modest gains at the start of Wall Street trading on Tuesday as markets awaited cues from the US midterm elections. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "What’s at stake for crypto as the US votes in the 2026 midterms?",
+          "link": "https://cointelegraph.com/news/us-midterms-2026-stake-crypto-election-day?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 13:53:07",
+          "summary": "\n   \n Crypto groups spent about $176 million ahead of the US midterms, with control of Congress and the future of crypto legislation at stake. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 13:50:51",
+          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Moscow Exchange to launch Bitcoin, Ether and USDT trading in December",
+          "link": "https://cointelegraph.com/news/moscow-exchange-bitcoin-ether-usdt-trading-december?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 13:15:47",
+          "summary": "\n   \n Moscow Exchange plans to launch crypto trading on Dec. 1 under Russia’s new law, with annual purchase limits for non-qualified investors. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "NEAR token sinks 7% as proposal to cut annual token issuance passes",
+          "link": "https://cointelegraph.com/markets/near-sinks-7-proposal-cut-annual-token-issuance-passes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 12:30:13",
+          "summary": "\n   \n The proposed issuance cut would prevent 11.8 million NEAR from entering circulation over two years, worth about $45 million at today’s price. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance’s net inflows turn positive at $2.3B as withdrawals expand",
+          "link": "https://cointelegraph.com/news/binances-daily-inflows-positive-18b-withdrawals?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 11:32:02",
+          "summary": "\n   \n Binance led exchanges in 24-hour net inflows, reversing Monday’s heavy outflows as it restored access to funds after its $6.3 billion hack. \n"
         },
         {
           "source": "CoinTelegraph",
@@ -2901,60 +2972,67 @@
           "summary": "\n   \n Bitcoin fell below the realized price of the one-to-three-month-old buyer cohort in a move that risked flipping it to new resistance. \n"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "ARK buys $17M in Coinbase, Circle shares while trimming Bullish",
-          "link": "https://cointelegraph.com/news/ark-buys-coinbase-circle-trims-bullish?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 08:35:13",
-          "summary": "\n   \n ARK Invest added Coinbase and Circle shares across two trading sessions while selling about $8 million in Bullish as crypto stocks declined. \n"
+          "source": "Decrypt",
+          "title": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack",
+          "link": "https://decrypt.co/382459/brazil-mercado-bitcoin-will-refund-users-40-million-hack",
+          "pubDate": "2026-11-03 18:16:03",
+          "summary": "Mercado Bitcoin says customers won&#39;t pay for a hack that drained tens of millions. Withdrawals on the exchange remain frozen with no restart date."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Suspected EU crypto theft estimate rises to $133M: ZachXBT",
-          "link": "https://cointelegraph.com/news/zachxbt-eu-crypto-theft-133m-alleged-cover-up?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 08:18:22",
-          "summary": "\n   \n ZachXBT identified another $27 million in exchange withdrawals, some of which occurred after he first flagged the suspected crypto theft. \n"
+          "source": "Decrypt",
+          "title": "Elon Musk’s Tesla and SpaceX Block Their Stock From OKX-ICE Tokenized Venue",
+          "link": "https://decrypt.co/382458/elon-musk-tesla-spacex-block-okx-ice-tokenized-stock",
+          "pubDate": "2026-11-03 17:46:15",
+          "summary": "Amazon, Tesla, SpaceX, Netflix, Lam Research, and SoFi objected to trading of their shares on the planned OKX-ICE tokenized stock venue, bringing the total to 56."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "BlackRock’s IBIT sees biggest Bitcoin ETF outflows since June",
-          "link": "https://cointelegraph.com/markets/blackrocks-ibit-biggest-bitcoin-etf-outflow-june?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 07:49:51",
-          "summary": "\n   \n BlackRock’s Bitcoin ETF shed $405.3 million on Monday as US spot Bitcoin funds opened November with nearly $399 million in net outflows. \n"
+          "source": "Decrypt",
+          "title": "Five Ways North Korea Breaks Into Crypto Firms—and How Binance Was Hacked",
+          "link": "https://decrypt.co/382420/five-ways-north-korea-breaks-into-crypto-firms-and-how-binance-was-hacked",
+          "pubDate": "2026-11-03 17:30:54",
+          "summary": "From AI deepfakes to poisoning code libraries: here&#39;s how North Korean hackers get inside crypto companies."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 06:00:00",
-          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+          "source": "Decrypt",
+          "title": "Epidemic of Hacked Freezers Spreads Across Europe",
+          "link": "https://decrypt.co/382423/epidemic-hacked-freezers-spreads-europe",
+          "pubDate": "2026-11-03 17:04:46",
+          "summary": "A suspected hacking wave has pushed supermarket freezers into defrost mode across ten European countries, with temperatures reportedly hitting 50°C. Nobody knows who&#39;s behind it or why it spread."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Crypto.com to withdraw Hong Kong consumer app citing regulatory changes",
-          "link": "https://cointelegraph.com/news/crypto-com-hong-kong-app-shutdown-license-pending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 05:10:19",
-          "summary": "\n   \n Crypto.com will discontinue its consumer app services in Hong Kong in February next year. \n"
+          "source": "Decrypt",
+          "title": "UK Says AI-Powered Ransomware Attack on Critical Infrastructure &#39;Highly Likely&#39; by 2028",
+          "link": "https://decrypt.co/382411/uk-says-ai-powered-ransomware-attack-on-critical-infrastructure-highly-likely-by-2028",
+          "pubDate": "2026-11-03 16:09:19",
+          "summary": "The National Cyber Security Centre said AI will expose security flaws &quot;tolerated for far too long,&quot; and called time on &quot;tech on the cheap.&quot;"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Australia lifts rates to 18-year high as AI boom, energy costs fuel inflation",
-          "link": "https://cointelegraph.com/markets/australia-lifts-rates-as-ai-boom-energy-costs-fuel-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 04:14:32",
-          "summary": "\n   \n The Reserve Bank of Australia raised its benchmark rate to 4.85% on rising technology costs from AI investment and higher energy prices. \n"
+          "source": "Decrypt",
+          "title": "Ethereum Privacy Network Aztec Rolls Out Major Security and Speed Upgrade",
+          "link": "https://decrypt.co/382387/ethereum-privacy-network-aztec-security-speed-upgrade",
+          "pubDate": "2026-11-03 14:01:02",
+          "summary": "The “Tierra” upgrade resolves a critical bug from the prior version, adds formal verification, and an AI-powered testing harness."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "UK warns AI ransomware attack on infrastructure ‘highly likely’ by 2028",
-          "link": "https://cointelegraph.com/news/uk-warns-ai-ransomware-attack-on-infrastructure-highly-likely-by-2028?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 03:58:45",
-          "summary": "\n   \n The warning comes as UK cyber officials also flag growing threats from state-backed hackers targeting government officials and politicians. \n"
+          "source": "Decrypt",
+          "title": "Morning Minute: Tom Lee Calls the Binance Hack Bullish for Ethereum",
+          "link": "https://decrypt.co/382410/morning-minute-tom-lee-calls-the-binance-hack-bullish-for-ethereum",
+          "pubDate": "2026-11-03 13:11:47",
+          "summary": "Meanwhile, both the BTC ETFs and ETH ETFs bleed outflows in the Binance hack aftermath, dragging down prices."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Binance begins second withdrawal phase, exchange outflows slow",
-          "link": "https://cointelegraph.com/news/binance-begins-second-withdrawal-phase-following-record-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-03 03:03:44",
-          "summary": "\n   \n The exchange says additional assets will become available for withdrawal from 04:00 UTC on Tuesday as security checks are completed, following an initial reopening on Sunday. \n"
+          "source": "Decrypt",
+          "title": "Binance Misses Monthly Luna Classic Burn for First Time Since 2023",
+          "link": "https://decrypt.co/382401/binance-misses-monthly-luna-classic-burn-for-first-time-since-2023",
+          "pubDate": "2026-11-03 12:15:29",
+          "summary": "LUNC holders are waiting for Binance’s November burn, but it hasn’t arrived as the exchange recovers from a record $6.3 billion hack."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Liquid Network Restores Full Bitcoin Backing Two Months After $320M Exploit",
+          "link": "https://decrypt.co/382397/liquid-network-restores-full-bitcoin-backing-two-months-after-320m-exploit",
+          "pubDate": "2026-11-03 11:22:10",
+          "summary": "Blockstream CEO Adam Back said the sidechain&#39;s defenses have been hardened, and warned developers not to trust AI-suggested fixes blindly."
         },
         {
           "source": "Decrypt",
@@ -2962,75 +3040,23 @@
           "link": "https://decrypt.co/382394/north-korea-denies-6-3b-binance-hack-calls-fbi-finding-a-political-provocation",
           "pubDate": "2026-11-03 10:18:48",
           "summary": "Kim Yo Jong suggested the U.S. itself could be behind the theft, as Binance said hourly deposits had begun to exceed withdrawals."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Claude Fable 5.5, GPT 6.2 Astra Could Be Right Around the Corner, Leaks Suggest",
-          "link": "https://decrypt.co/382390/claude-mythos-fable-5-5-gpt-6-2-astra-leaks",
-          "pubDate": "2026-11-02 23:10:25",
-          "summary": "Users say Claude is routing some requests to a stronger unreleased model, a Mythos 5.5 label appeared in Anthropic’s site code, and OpenAI appears to be testing GPT-6.2 Astra."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Firm Strive Climbs Up the Treasury Ranks With Another Big Buy",
-          "link": "https://decrypt.co/382385/bitcoin-firm-strive-treasury-ranks-another-big-buy",
-          "pubDate": "2026-11-02 22:16:02",
-          "summary": "Strive added 124 Bitcoin for about $10 million and now trails Twenty One Capital by 390 BTC for third place among Treasury companies."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Mystery $106 Million Crypto Theft Hits EU Entity Days After Binance Hack",
-          "link": "https://decrypt.co/382383/mystery-106-million-crypto-theft-eu-entity-binance-hack",
-          "pubDate": "2026-11-02 21:16:03",
-          "summary": "Onchain investigator ZachXBT says an unidentified EU entity lost more than $106 million from centralized exchange accounts on Sunday,."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Claude-Built Linux Exploit Targets Bug That Ubuntu Still Hasn&#39;t Patched",
-          "link": "https://decrypt.co/382375/claude-built-linux-exploit-bug-ubuntu",
-          "pubDate": "2026-11-02 20:36:03",
-          "summary": "Anthropic says Claude wrote an attack that can take over a Linux server with no password. Red Hat patched on Sunday, but Ubuntu still has no fix."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Tom Lee Calls Bottom on AI Stock Selloff, Citing Tight Supply and Crypto Resilience",
-          "link": "https://decrypt.co/382357/tom-lee-calls-bottom-ai-stock-selloff-crypto",
-          "pubDate": "2026-11-02 19:46:02",
-          "summary": "The Fundstrat strategist says constraints on AI spending have slowed growth without ending the boom, while crypto’s response to the Binance hack suggests sellers may already be exhausted."
-        },
-        {
-          "source": "Decrypt",
-          "title": "North Korea Is Laundering Binance Hack Loot at One New Wallet Every 25 Seconds",
-          "link": "https://decrypt.co/382355/north-korea-laundering-binance-hack-loot-new-wallet-every-25-seconds",
-          "pubDate": "2026-11-02 18:46:03",
-          "summary": "$2.85 billion of the $6.43 billion stolen from Binance has been frozen or seized, compared with about 3% in the Bybit hack, as North Korea’s automated laundering spans 12,000 wallets."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Proton Users Revolt After CEO Calls Security Caution &#39;Loser Thinking&#39; Amid AI Push",
-          "link": "https://decrypt.co/382353/proton-users-revolt-ceo-calls-security-caution-loser-thinking-ai",
-          "pubDate": "2026-11-02 18:16:02",
-          "summary": "Proton customers say they are canceling subscriptions after reports of pressure to adopt AI coding, as the privacy company scraps employee re-interviews but defends its broader shift toward automated development."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Nvidia and Nike Lead Biggest Wave Yet of Tokenized Stock Objections",
-          "link": "https://decrypt.co/382348/nvidia-nike-biggest-wave-yet-tokenized-stock-objections",
-          "pubDate": "2026-11-02 17:36:03",
-          "summary": "Nvidia, Costco, Nike and nine other companies objected to trading of their shares on the planned OKX-ICE tokenized stock venue, bringing the total to 50."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Elon Musk Mocks Sam Altman Over Claim Home PCs Are Wasting RAM",
-          "link": "https://decrypt.co/382345/elon-musk-mocks-sam-altman-over-claim-home-pcs-are-wasting-ram",
-          "pubDate": "2026-11-02 17:07:28",
-          "summary": "The OpenAI CEO said it&#39;s &quot;quite terrible&quot; for DRAM to sit largely idle in personal computers while AI data centers face a supply crunch."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.67,
+          "impact": -0.33,
+          "sources": [
+            "CoinTelegraph",
+            "Decrypt"
+          ],
+          "multiSourced": true,
+          "critical": true,
+          "critHead": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack"
+        },
+        "ETH": {
+          "sentiment": "BEARISH",
+          "impact": -0.83,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3038,15 +3064,7 @@
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack"
-        },
-        "ETH": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
-          "multiSourced": false,
-          "critical": false,
-          "critHead": ""
+          "critHead": "Binance&#39;s $6.3 billion hack began with a fake job interview, and a campaign &#39;built over many months&#39;"
         },
         "SOL": {
           "sentiment": "NEUTRAL",
@@ -3075,9 +3093,7 @@
         "BNB": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3134,23 +3150,27 @@
       "breaker": [
         {
           "coin": "BTC",
-          "head": "Mercado Bitcoin pledges to cover all user losses after near $40 million hack"
+          "head": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack"
+        },
+        {
+          "coin": "ETH",
+          "head": "Binance&#39;s $6.3 billion hack began with a fake job interview, and a campaign &#39;built over many months&#39;"
         }
       ],
       "fearGreed": {
         "value": 26,
         "classification": "Fear",
-        "t": 1793704863381
+        "t": 1793730584398
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793704864225,
+      "fetchedAt": 1793730585086,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 9.59,
+        "ARB": 9.92,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3159,9 +3179,9 @@
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 17.28,
+        "WLD": 16.52,
         "GRASS": 20,
-        "ZEC": 11.52,
+        "ZEC": 11.01,
         "AERO": 20
       },
       "positions": [
@@ -3169,35 +3189,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 773.49,
+          "pct": 753.39,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 126.36,
+          "pct": 130.66,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 9.59,
+          "pct": 9.92,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 34.26,
+          "pct": 35.43,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 170.96,
+          "pct": 176.79,
           "lev": 10
         },
         {
@@ -3211,77 +3231,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 20.39,
+          "pct": 21.09,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 228.99,
+          "pct": 236.8,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 29.84,
+          "pct": 30.85,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 92.86,
+          "pct": 96.03,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 47.41,
+          "pct": 49.02,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 17.28,
+          "pct": 16.52,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 60.66,
+          "pct": 57.97,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 173.86,
+          "pct": 166.14,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.52,
+          "pct": 11.01,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 170.25,
+          "pct": 162.7,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 980.58,
+          "pct": 954.88,
           "lev": 10
         }
       ]
@@ -3295,7 +3315,7 @@
       "winRate": 90.5,
       "pf": 71.89,
       "expPerTrade": 0.738,
-      "updatedAt": 1793704865090,
+      "updatedAt": 1793730586000,
       "gen": 2
     },
     "minScore": 75

@@ -1,7 +1,7 @@
 {
-  "updatedAt": 1793704865092,
+  "updatedAt": 1793730586001,
   "gen": 2,
-  "cycles": 15,
+  "cycles": 16,
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
@@ -17,7 +17,7 @@
     "winRate": 90.5,
     "pf": 71.89,
     "expPerTrade": 0.738,
-    "updatedAt": 1793704865090,
+    "updatedAt": 1793730586000,
     "gen": 2
   },
   "learnedParameters": {
@@ -27,6 +27,6 @@
     "tp1Ratio": 0.8,
     "volConfirmMult": 1.15
   },
-  "hurstExponent": 0.53,
+  "hurstExponent": 0.54,
   "proof": "Verified 24/7 autonomous evaluation against real OHLCV market prices with strict 1.0% risk money management."
 }
