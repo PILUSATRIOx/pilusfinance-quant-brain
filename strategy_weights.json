@@ -1,32 +1,15 @@
 {
-<<<<<<< Updated upstream
-=======
-  "updatedAt": 1793748963777,
-  "gen": 2,
-  "champion": {
-    "id": "emax",
-    "name": "EMA Cross Naive (CONTROL)",
-    "book": "Baseline Penelitian",
-    "netR": 57.6,
-    "trades": 77,
-    "winRate": 90.5,
-    "pf": 71.89,
-    "expPerTrade": 0.748,
-    "updatedAt": 1793748963776,
-    "gen": 2
-  },
->>>>>>> Stashed changes
   "weights": {
-    "elder": 0.27,
-    "donchian": 0.27,
-    "bbrev": 0.23,
-    "wyckoff": 0.37,
-    "rsidiv": 0.16,
-    "macdm": 0.28,
+    "elder": 0.39,
+    "donchian": 0.5,
+    "bbrev": 0.28,
+    "wyckoff": 0.6,
+    "rsidiv": 0.24,
+    "macdm": 0.42,
     "smc": 0.36,
-    "statarb": 0.77,
+    "statarb": 0.6,
     "tsmom": 0.83,
-    "emax": 0.34,
+    "emax": 0.72,
     "TREND_PULLBACK": 1,
     "BREAKOUT": 1,
     "REVERSAL": 1,
@@ -34,5 +17,5 @@
     "MOMENTUM": 1,
     "SCALP": 1
   },
-  "updatedAt": 1793748962501
+  "updatedAt": 1793761878527
 }
