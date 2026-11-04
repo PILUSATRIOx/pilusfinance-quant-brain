@@ -1,8 +1,33 @@
 {
-  "updatedAt": 1793748963777,
+  "updatedAt": 1793761878525,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793761878521,
+      "type": "CYCLE",
+      "text": "[CYCLE #18] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793761878051,
+      "type": "GEN",
+      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 65/100."
+    },
+    {
+      "t": 1793761878051,
+      "type": "GEN",
+      "text": "[GEN #3] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+57.6R · Win 90.5%)"
+    },
+    {
+      "t": 1793761876908,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
+    },
+    {
+      "t": 1793761876906,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793748963775,
       "type": "CYCLE",

@@ -2,22 +2,22 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793748963777,
+  "updatedAt": 1793761878525,
   "brain": {
     "v": 1,
-    "gen": 2,
-    "cycles": 17,
+    "gen": 3,
+    "cycles": 18,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1793631117207,
+    "lastOptAt": 1793761878051,
     "autoExecBursa": false,
     "params": {
       "atrMult": 1.8,
       "rsiLongMax": 62,
       "rsiShortMin": 38,
-      "minScore": 70,
+      "minScore": 65,
       "feeBps": 10,
       "riskPct": 1,
       "tp1Ratio": 0.8,
@@ -31,16 +31,16 @@
       "volConfirmMult": 1.15
     },
     "weights": {
-      "elder": 0.27,
-      "donchian": 0.27,
-      "bbrev": 0.23,
-      "wyckoff": 0.37,
-      "rsidiv": 0.16,
-      "macdm": 0.28,
+      "elder": 0.39,
+      "donchian": 0.5,
+      "bbrev": 0.28,
+      "wyckoff": 0.6,
+      "rsidiv": 0.24,
+      "macdm": 0.42,
       "smc": 0.36,
-      "statarb": 0.77,
+      "statarb": 0.6,
       "tsmom": 0.83,
-      "emax": 0.34,
+      "emax": 0.72,
       "TREND_PULLBACK": 1,
       "BREAKOUT": 1,
       "REVERSAL": 1,
@@ -59,8 +59,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 5,
-          "beta": 8
+          "alpha": 6,
+          "beta": 10
         }
       },
       "donchian": {
@@ -74,7 +74,7 @@
         },
         "RANGING": {
           "alpha": 6,
-          "beta": 7
+          "beta": 10
         }
       },
       "bbrev": {
@@ -87,8 +87,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 7,
-          "beta": 6
+          "alpha": 9,
+          "beta": 7
         }
       },
       "wyckoff": {
@@ -101,7 +101,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 7,
+          "alpha": 10,
           "beta": 6
         }
       },
@@ -116,7 +116,7 @@
         },
         "RANGING": {
           "alpha": 8,
-          "beta": 3
+          "beta": 4
         }
       },
       "macdm": {
@@ -130,7 +130,7 @@
         },
         "RANGING": {
           "alpha": 6,
-          "beta": 7
+          "beta": 10
         }
       },
       "smc": {
@@ -143,8 +143,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 5,
-          "beta": 8
+          "alpha": 7,
+          "beta": 9
         }
       },
       "statarb": {
@@ -158,7 +158,7 @@
         },
         "RANGING": {
           "alpha": 5,
-          "beta": 8
+          "beta": 11
         }
       },
       "tsmom": {
@@ -185,8 +185,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 7,
-          "beta": 6
+          "alpha": 8,
+          "beta": 8
         }
       }
     },
@@ -389,14 +389,14 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 36,
+          "trades": 37,
           "wins": 14,
-          "losses": 22,
-          "winRate": 38.88888888888889,
-          "pf": 0.3739236133303041,
-          "exp": -0.45879163326117417,
-          "netR": -16.51649879740227,
-          "maxDD": 19.171108325231792,
+          "losses": 23,
+          "winRate": 37.83783783783784,
+          "pf": 0.3576638574155445,
+          "exp": -0.477868188391227,
+          "netR": -17.6811229704754,
+          "maxDD": 19.516421634268696,
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -411,7 +411,7 @@
           "netR": -18.66762734837707,
           "maxDD": 19.06762734837707,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -424,7 +424,7 @@
           "netR": 2.919297310952062,
           "maxDD": 3.462236028996652,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -625,29 +625,29 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 14,
+          "trades": 15,
           "wins": 9,
-          "losses": 5,
-          "winRate": 64.28571428571429,
-          "pf": 1.1819687799294436,
-          "exp": 0.07506122890351355,
-          "netR": 1.0508572046491897,
-          "maxDD": 2.26018607064793,
+          "losses": 6,
+          "winRate": 60,
+          "pf": 0.9912866780363909,
+          "exp": -0.003999871702172145,
+          "netR": -0.059998075532582185,
+          "maxDD": 2.2690665384811695,
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 15,
+          "trades": 14,
           "wins": 8,
-          "losses": 7,
-          "winRate": 53.333333333333336,
-          "pf": 0.34443410796018215,
-          "exp": -0.40604009224505166,
-          "netR": -6.090601383675775,
+          "losses": 6,
+          "winRate": 57.14285714285714,
+          "pf": 0.4076614414277219,
+          "exp": -0.33211792132371987,
+          "netR": -4.649650898532078,
           "maxDD": 6.649650898532078,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -660,7 +660,7 @@
           "netR": -4.751726341545083,
           "maxDD": 5.9517263415450845,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -879,11 +879,11 @@
           "losses": 3,
           "winRate": 72.72727272727273,
           "pf": 1.194910178972942,
-          "exp": 0.0733697941010611,
-          "netR": 0.8070677351116722,
+          "exp": 0.07336979410106112,
+          "netR": 0.8070677351116723,
           "maxDD": 2.94071619740144,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -892,11 +892,11 @@
           "losses": 5,
           "winRate": 61.53846153846154,
           "pf": 0.6361386505968366,
-          "exp": -0.180908168046729,
-          "netR": -2.3518061846074767,
-          "maxDD": 3.162501845962768,
+          "exp": -0.18090816804672902,
+          "netR": -2.351806184607477,
+          "maxDD": 3.1625018459627685,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1097,42 +1097,42 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 14,
-          "wins": 10,
+          "trades": 15,
+          "wins": 11,
           "losses": 4,
-          "winRate": 71.42857142857143,
-          "pf": 1.2891469661123647,
-          "exp": 0.09809220330709788,
-          "netR": 1.3732908462993703,
+          "winRate": 73.33333333333333,
+          "pf": 1.373367134590596,
+          "exp": 0.11821938975329135,
+          "netR": 1.7732908462993704,
           "maxDD": 1.9688401350098272,
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 12,
-          "wins": 8,
+          "trades": 13,
+          "wins": 9,
           "losses": 4,
-          "winRate": 66.66666666666666,
-          "pf": 1.1091023892815854,
-          "exp": 0.051656967894016116,
-          "netR": 0.6198836147281934,
+          "winRate": 69.23076923076923,
+          "pf": 1.1795042432356857,
+          "exp": 0.07845258574832256,
+          "netR": 1.0198836147281933,
           "maxDD": 3.3324320290792437,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 7,
-          "wins": 6,
+          "trades": 8,
+          "wins": 7,
           "losses": 1,
-          "winRate": 85.71428571428571,
-          "pf": 2.752784018306601,
-          "exp": 0.3115612730885394,
-          "netR": 2.180928911619776,
+          "winRate": 87.5,
+          "pf": 3.074258782379458,
+          "exp": 0.322616113952472,
+          "netR": 2.580928911619776,
           "maxDD": 1.2442656304721524,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1337,9 +1337,9 @@
           "wins": 3,
           "losses": 5,
           "winRate": 37.5,
-          "pf": 0.3870984210818052,
-          "exp": -0.44503363858504597,
-          "netR": -3.5602691086803677,
+          "pf": 0.5814399129010607,
+          "exp": -0.30392044160972376,
+          "netR": -2.43136353287779,
           "maxDD": 5.808875733301976,
           "atrMult": 1.8,
           "regime": "RANGING",
@@ -1355,7 +1355,7 @@
           "netR": -0.9370067373836967,
           "maxDD": 1.3370067373836967,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1368,7 +1368,7 @@
           "netR": 1.7948872872632258,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1569,13 +1569,13 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 7,
-          "wins": 3,
+          "trades": 8,
+          "wins": 4,
           "losses": 4,
-          "winRate": 42.857142857142854,
-          "pf": 0.2609422942519313,
-          "exp": -0.48553112887613564,
-          "netR": -3.3987179021329497,
+          "winRate": 50,
+          "pf": 0.347923059002575,
+          "exp": -0.3748397377666187,
+          "netR": -2.9987179021329498,
           "maxDD": 3.7987179021329496,
           "atrMult": 1.8,
           "regime": "RANGING",
@@ -1591,7 +1591,7 @@
           "netR": -2.7399476432018903,
           "maxDD": 3.1399476432018902,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1604,7 +1604,7 @@
           "netR": -2.6636830005029997,
           "maxDD": 4.901316357723758,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1805,13 +1805,13 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 8,
-          "wins": 1,
+          "trades": 9,
+          "wins": 2,
           "losses": 7,
-          "winRate": 12.5,
-          "pf": 0.04933767917955918,
-          "exp": -0.9634242394748722,
-          "netR": -7.707393915798978,
+          "winRate": 22.22222222222222,
+          "pf": 0.09867535835911836,
+          "exp": -0.8119326573109975,
+          "netR": -7.307393915798977,
           "maxDD": 7.707393915798978,
           "atrMult": 1.8,
           "regime": "RANGING",
@@ -1827,7 +1827,7 @@
           "netR": 4.23410806636894,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1840,7 +1840,7 @@
           "netR": 1.76700992232441,
           "maxDD": 1.3308987636471756,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -2063,7 +2063,7 @@
           "netR": -1.325151250422055,
           "maxDD": 2.525151250422055,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2076,7 +2076,7 @@
           "netR": 0.7672465374547734,
           "maxDD": 1.8899049082614365,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -2238,13 +2238,13 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 23,
+          "trades": 24,
           "wins": 13,
-          "losses": 10,
-          "winRate": 56.52173913043478,
-          "pf": 0.8463234189951613,
-          "exp": -0.07625834035706551,
-          "netR": -1.7539418282125068,
+          "losses": 11,
+          "winRate": 54.166666666666664,
+          "pf": 0.7715486825870358,
+          "exp": -0.11916890402452796,
+          "netR": -2.860053696588671,
           "maxDD": 4.4754650954890165,
           "atrMult": 2,
           "regime": "RANGING",
@@ -2255,12 +2255,12 @@
           "wins": 20,
           "losses": 13,
           "winRate": 60.60606060606061,
-          "pf": 0.6716538345936948,
-          "exp": -0.19041708244060848,
-          "netR": -6.28376372054008,
+          "pf": 0.6716538345936947,
+          "exp": -0.19041708244060845,
+          "netR": -6.283763720540079,
           "maxDD": 8.21682761830964,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2269,11 +2269,11 @@
           "losses": 16,
           "winRate": 54.285714285714285,
           "pf": 0.6399598851078534,
-          "exp": -0.21357651576914902,
-          "netR": -7.475178051920215,
-          "maxDD": 9.150147800798663,
+          "exp": -0.21357651576914896,
+          "netR": -7.475178051920214,
+          "maxDD": 9.150147800798662,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2496,7 +2496,7 @@
           "netR": 0,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2509,7 +2509,7 @@
           "netR": 0,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2555,6 +2555,31 @@
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1793761878521,
+        "type": "CYCLE",
+        "text": "[CYCLE #18] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793761878051,
+        "type": "GEN",
+        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 65/100."
+      },
+      {
+        "t": 1793761878051,
+        "type": "GEN",
+        "text": "[GEN #3] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+57.6R · Win 90.5%)"
+      },
+      {
+        "t": 1793761876908,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
+      },
+      {
+        "t": 1793761876906,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1793748963775,
         "type": "CYCLE",
@@ -2824,9 +2849,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 300,
+      "newsIngested": 330,
       "lessons": 0,
-      "backtests": 444,
+      "backtests": 474,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2839,49 +2864,241 @@
       }
     },
     "news": {
-      "fetchedAt": 1793730584398,
+      "fetchedAt": 1793761876906,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "[OFFLINE] CoinDesk feed tidak terjangkau",
-          "link": "",
-          "pubDate": "",
-          "summary": "Periksa koneksi — engine tetap jalan dengan sumber lain.",
-          "offline": true
+          "title": "Live updates: Crypto&#39;s big election gamble faces voters as Democrats gain ground",
+          "link": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog",
+          "pubDate": "2026-11-04 00:00:00",
+          "summary": "Voters are choosing who will represent them in the House, Senate and state-wide seats."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "What voters said about their views on crypto",
+          "link": "https://www.coindesk.com/policy/2026/11/03/what-voters-said-about-their-views-on-crypto",
+          "pubDate": "2026-11-03 23:19:44",
+          "summary": "A CoinDesk-commissioned poll from April sheds light on how voters — who aren&#39;t necessarily part of the crypto sector — view this industry."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "What happens if North Korea steals Wall Street&#39;s tokenized assets next",
+          "link": "https://www.coindesk.com/business/2026/11/03/what-happens-if-north-korea-steals-wall-street-s-tokenized-assets-next",
+          "pubDate": "2026-11-03 23:00:07",
+          "summary": "The $6.3 billion Binance hack showed how quickly cryptocurrencies can disappear on blockchain rails. Tokenized securities may offer better recourse than crypto after a theft, but the markets around them can still break d"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "CFTC gets into legal clash over stock perps after having cleared path for crypto version",
+          "link": "https://www.coindesk.com/policy/2026/11/03/cftc-gets-into-legal-clash-over-stock-perps-after-having-cleared-path-for-crypto-version",
+          "pubDate": "2026-11-03 22:14:44",
+          "summary": "A group backed by Citadel Securities and other firms sued the U.S. derivatives regulator for opening a path for perps that it argued belong in the SEC&#39;s hands."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Justin Sun seeks sanctions against Trump-linked World Liberty Financial over UAE ties",
+          "link": "https://www.coindesk.com/policy/2026/11/03/justin-sun-seeks-sanctions-against-trump-linked-world-liberty-financial-over-uae-ties",
+          "pubDate": "2026-11-03 16:55:10",
+          "summary": "The Tron founder says World Liberty failed to disclose its UAE ties until months into his lawsuit over $45 million in WLFI tokens."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "South Korea&#39;s president says country needs a ‘cybersecurity czar’ following $6.3 billion Binance hack",
+          "link": "https://www.coindesk.com/tech/2026/11/03/south-korea-s-president-says-country-needs-a-cybersecurity-czar-following-usd6-3-billion-binance-hack",
+          "pubDate": "2026-11-03 16:49:56",
+          "summary": "Lee Jae Myung said he wants a government-wide agency to tackle cyberattacks as AI raises security concerns across financial institutions and critical infrastructure."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Amazon, Tesla and SpaceX join OKX–ICE tokenized stock objections as deadline looms",
+          "link": "https://www.coindesk.com/business/2026/11/03/amazon-tesla-and-spacex-join-okx-ice-tokenized-stock-objections-as-deadline-looms",
+          "pubDate": "2026-11-03 16:17:51",
+          "summary": "Objections have reached 56 companies, with nearly 80% of the venture’s initial stock selection opting out."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Stablecoin governance group behind OUSD sets out management fee, offers equity earning pool",
+          "link": "https://www.coindesk.com/business/2026/11/03/stablecoin-governance-group-behind-ousd-sets-out-management-fee-offers-equity-earning-pool",
+          "pubDate": "2026-11-03 16:12:35",
+          "summary": "Governance group Open Standard will charge a 0.1 basis point management fee on payment volume, capped at at $0.01 per payment."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "CFTC clears perpetual futures on stocks, bringing crypto trading model to Wall Street",
+          "link": "https://www.coindesk.com/policy/2026/11/03/cftc-clears-perpetual-futures-on-stocks-bringing-crypto-trading-model-to-wall-street",
+          "pubDate": "2026-11-03 15:02:13",
+          "summary": "CFTC Chair Michael Selig said the move gives U.S. traders a regulated alternative to “offshore, and often unregulated, venues.”"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Binance&#39;s $6.3 billion hack began with a fake job interview, and a campaign &#39;built over many months&#39;",
+          "link": "https://www.coindesk.com/business/2026/11/03/binance-s-usd6-3-billion-hack-began-with-a-fake-job-interview-exchange-says",
+          "pubDate": "2026-11-03 14:53:19",
+          "summary": "North Korea-linked attackers spent months compromising Binance employees and internal systems before exploiting its hot-wallet signing infrastructure through Ethereum&#39;s EIP-7702 mechanism."
         },
         {
           "source": "CoinTelegraph",
-          "title": "[OFFLINE] CoinTelegraph feed tidak terjangkau",
-          "link": "",
-          "pubDate": "",
-          "summary": "Periksa koneksi — engine tetap jalan dengan sumber lain.",
-          "offline": true
+          "title": "US midterms election 2026 live: Crypto-backed Andy Barr wins Kentucky Senate seat",
+          "link": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 02:20:00",
+          "summary": "\n   \n Follow live coverage of the 2026 US midterm elections, including key congressional races, crypto-backed candidates and what the results could mean for digital asset regulation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "1inch lawyer sees agencies driving US crypto regulation as midterms unfold",
+          "link": "https://cointelegraph.com/news/1inch-lawyer-sees-agencies-driving-us-crypto-regulation-as-midterms-unfold?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 00:45:16",
+          "summary": "\n   \n Crypto executives expect US regulators to drive crypto policymaking regardless of the midterm election outcome. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "RUNE rallies 15% as THORChain restarts most swaps after halt",
+          "link": "https://cointelegraph.com/markets/rune-rallies-15-as-thorchain-restarts-most-swaps-after-outage?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 23:56:09",
+          "summary": "\n   \n THORChain has restored trading on Bitcoin, Ethereum and several other networks following a refund bug, while three chains remain paused. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 22:39:18",
+          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "SpaceX blocks tokenized stock listing on OKXICE despite offshore trading boom",
+          "link": "https://cointelegraph.com/news/spacex-tokenization-okxice?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 21:47:20",
+          "summary": "\n   \n SpaceX joined several other issuers objecting to OKXICE tokenized trading, months after crypto platforms offered tokens tied to its shares. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "CFTC clears stock perpetual futures for trading on US exchanges",
+          "link": "https://cointelegraph.com/news/cftc-equity-perpetual-futures-trading-us-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 20:24:55",
+          "summary": "\n   \n US regulators are opening the door to stock-based perpetual futures, extending a popular crypto trading product into traditional markets amid ongoing legal disputes. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "US midterms: Prediction markets favor Democrats in key crypto races",
+          "link": "https://cointelegraph.com/news/us-midterm-prediction-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 19:38:19",
+          "summary": "\n   \n Kalshi and Polymarket price a 75% chance of a Democratic sweep, days after markets misjudged Brazil’s runoff. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Wall Street killed Bitcoin’s wild rallies: 10x’s Markus Thielen",
+          "link": "https://cointelegraph.com/magazine/wall-street-killed-bitcoins-wild-rallies-markus-thielen?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 16:47:01",
+          "summary": "\n   \n Markus Thielen sees Bitcoin reaching $90,000 by year-end, questions institutional ETF demand and says Ethereum must do more for holders. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance traces $6.3B hack to fake job interviews, compromised AI tool",
+          "link": "https://cointelegraph.com/news/binance-fake-job-interviews-compromised-ai-tool-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 16:44:06",
+          "summary": "\n   \n Hackers exploited compromised employee computers and stolen credentials to breach Binance’s wallet infrastructure, according to the exchange’s investigation. \n"
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin price defends $76K lows as analysts see stocks pricing in ‘political gridlock’",
+          "link": "https://cointelegraph.com/markets/bitcoin-price-defends-76k-lows-as-analysis-sees-stocks-pricing-in-political-gridlock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-03 15:44:42",
+          "summary": "\n   \n Bitcoin made modest gains at the start of Wall Street trading on Tuesday as markets awaited cues from the US midterm elections. \n"
         },
         {
           "source": "Decrypt",
-          "title": "[OFFLINE] Decrypt feed tidak terjangkau",
-          "link": "",
-          "pubDate": "",
-          "summary": "Periksa koneksi — engine tetap jalan dengan sumber lain.",
-          "offline": true
+          "title": "OpenAI Wants to Rebrand AI Data Centers, Use Them to &#39;Protect the Grid&#39;",
+          "link": "https://decrypt.co/382476/openai-ai-data-centers-rebrand-protect-power-grid",
+          "pubDate": "2026-11-03 23:48:32",
+          "summary": "The ChatGPT maker says future facilities could ease pressure on power grids by cutting demand during emergencies."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Tether Holds 150,000 Bitcoin, CEO Says—About 50,000 More Than Its Reserve Report Shows",
+          "link": "https://decrypt.co/382474/tether-holds-150000-bitcoin-ceo-says",
+          "pubDate": "2026-11-03 22:46:02",
+          "summary": "Paolo Ardoino told the Plan ₿ Forum in Lugano the company owns “give or take 150,000 Bitcoin,” but its Q3 reserve report implies just 100,060."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Anthropic&#39;s AI Is Getting Cheaper to Use. That&#39;s Becoming a Problem for Its Business",
+          "link": "https://decrypt.co/382471/anthropic-ai-cheaper-use-problem-for-business",
+          "pubDate": "2026-11-03 21:50:17",
+          "summary": "Claude&#39;s prices are falling, but Anthropic&#39;s computing expenses grew faster than sales in the latest quarter—a tricky equation ahead of its IPO."
+        },
+        {
+          "source": "Decrypt",
+          "title": "CrowdStrike Launches AI Agent &#39;Kill Switch,&#39; Plans to Acquire Fiddler AI",
+          "link": "https://decrypt.co/382467/crowdstrike-ai-agent-kill-switch-acquire-fiddler-ai",
+          "pubDate": "2026-11-03 21:16:03",
+          "summary": "CrowdStrike&#39;s new kill switch lets security teams cut off unauthorized AI agents through a gateway, while its planned Fiddler acquisition aims to make autonomous software easier to monitor and audit."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Justin Sun Accuses Trump-Backed World Liberty of Using UAE Ties to Escape Federal Court",
+          "link": "https://decrypt.co/382469/justin-sun-sanctions-trump-backed-world-liberty-uae-ties",
+          "pubDate": "2026-11-03 20:36:02",
+          "summary": "Tron founder Justin Sun said he has asked a federal court to sanction World Liberty Financial, alleging the Trump family-backed venture delayed disclosing UAE ties that could defeat federal jurisdiction over his lawsuit."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Crypto Docs Host GitBook Hit by AI Agent Security Breach, Urges Users to Rotate Keys",
+          "link": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach",
+          "pubDate": "2026-11-03 19:46:03",
+          "summary": "GitBook says attackers accessed infrastructure credentials in an AI-assisted breach, prompting a shutdown and emergency token resets."
+        },
+        {
+          "source": "Decrypt",
+          "title": "CFTC Lets Traders Bet on Stocks With Crypto-Style Perpetual Futures",
+          "link": "https://decrypt.co/382464/cftc-traders-bet-stocks-with-crypto-style-perpetual-futures",
+          "pubDate": "2026-11-03 19:16:02",
+          "summary": "Chairman Michael Selig said “equity perpetual futures” can now trade on CFTC-registered exchanges, extending a crypto-native instrument to traditional stocks."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack",
+          "link": "https://decrypt.co/382459/brazil-mercado-bitcoin-will-refund-users-40-million-hack",
+          "pubDate": "2026-11-03 18:16:03",
+          "summary": "Mercado Bitcoin says customers won&#39;t pay for a hack that drained tens of millions. Withdrawals on the exchange remain frozen with no restart date."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Elon Musk’s Tesla and SpaceX Block Their Stock From OKX-ICE Tokenized Venue",
+          "link": "https://decrypt.co/382458/elon-musk-tesla-spacex-block-okx-ice-tokenized-stock",
+          "pubDate": "2026-11-03 17:46:15",
+          "summary": "Amazon, Tesla, SpaceX, Netflix, Lam Research, and SoFi objected to trading of their shares on the planned OKX-ICE tokenized stock venue, bringing the total to 56."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Five Ways North Korea Breaks Into Crypto Firms—and How Binance Was Hacked",
+          "link": "https://decrypt.co/382420/five-ways-north-korea-breaks-into-crypto-firms-and-how-binance-was-hacked",
+          "pubDate": "2026-11-03 17:30:54",
+          "summary": "From AI deepfakes to poisoning code libraries: here&#39;s how North Korean hackers get inside crypto companies."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
-          "multiSourced": false,
-          "critical": false,
-          "critHead": ""
+          "sentiment": "BEARISH",
+          "impact": -0.17,
+          "sources": [
+            "CoinTelegraph",
+            "Decrypt"
+          ],
+          "multiSourced": true,
+          "critical": true,
+          "critHead": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack"
         },
         "ETH": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
-          "multiSourced": false,
-          "critical": false,
-          "critHead": ""
+          "sentiment": "BEARISH",
+          "impact": -0.67,
+          "sources": [
+            "CoinDesk",
+            "CoinTelegraph"
+          ],
+          "multiSourced": true,
+          "critical": true,
+          "critHead": "Binance&#39;s $6.3 billion hack began with a fake job interview, and a campaign &#39;built over many months&#39;"
         },
         "SOL": {
           "sentiment": "NEUTRAL",
@@ -2964,21 +3181,30 @@
           "critHead": ""
         }
       },
-      "breaker": [],
+      "breaker": [
+        {
+          "coin": "BTC",
+          "head": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack"
+        },
+        {
+          "coin": "ETH",
+          "head": "Binance&#39;s $6.3 billion hack began with a fake job interview, and a campaign &#39;built over many months&#39;"
+        }
+      ],
       "fearGreed": {
-        "value": 26,
+        "value": 34,
         "classification": "Fear",
-        "t": 1793748962349
+        "t": 1793761876906
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793748962914,
+      "fetchedAt": 1793761877646,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 10.35,
+        "ARB": 10.22,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -2987,9 +3213,9 @@
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 14.59,
+        "WLD": 19.3,
         "GRASS": 20,
-        "ZEC": 9.72,
+        "ZEC": 12.86,
         "AERO": 20
       },
       "positions": [
@@ -2997,35 +3223,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 764.13,
+          "pct": 832.96,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 136.41,
+          "pct": 134.61,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 10.35,
+          "pct": 10.22,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 36.99,
+          "pct": 36.5,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 184.56,
+          "pct": 182.13,
           "lev": 10
         },
         {
@@ -3039,77 +3265,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 22.01,
+          "pct": 21.73,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 247.2,
+          "pct": 243.95,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 32.21,
+          "pct": 31.79,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 100.25,
+          "pct": 98.93,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 51.18,
+          "pct": 50.51,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 14.59,
+          "pct": 19.3,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 51.2,
+          "pct": 67.73,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 146.75,
+          "pct": 194.13,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 9.72,
+          "pct": 12.86,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 143.71,
+          "pct": 190.11,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 968.54,
+          "pct": 1043.42,
           "lev": 10
         }
       ]
@@ -3123,8 +3349,8 @@
       "winRate": 90.5,
       "pf": 71.89,
       "expPerTrade": 0.748,
-      "updatedAt": 1793748963776,
-      "gen": 2
+      "updatedAt": 1793761878524,
+      "gen": 3
     },
     "minScore": 75
   }
