@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793789497449,
+  "updatedAt": 1793816153752,
   "brain": {
     "v": 1,
     "gen": 3,
-    "cycles": 19,
+    "cycles": 20,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1793761878051,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 23
+          "beta": 26
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 23
+          "beta": 26
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 23
+          "beta": 26
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 23,
+          "alpha": 26,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 23
+          "beta": 26
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 23,
+          "alpha": 26,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,21 @@
     "signals": [],
     "journal": [
       {
+        "t": 1793816153747,
+        "type": "CYCLE",
+        "text": "[CYCLE #20] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793816151959,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Binance hackers move 81% of stolen Solana, route funds via THORChain)"
+      },
+      {
+        "t": 1793816151957,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1793789497444,
         "type": "CYCLE",
         "text": "[CYCLE #19] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2864,9 +2879,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 360,
+      "newsIngested": 390,
       "lessons": 0,
-      "backtests": 504,
+      "backtests": 534,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2879,8 +2894,29 @@
       }
     },
     "news": {
-      "fetchedAt": 1793789495740,
+      "fetchedAt": 1793816151957,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin rebounds from midterm dip as DeFi leads gains",
+          "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-rebounds-from-midterm-dip-as-defi-leads-gains",
+          "pubDate": "2026-11-04 10:38:58",
+          "summary": "Bitcoin recovered from a dip to around $75,600 as Democrats won Congress, while DeFi tokens led gains and Trump-linked coins fell."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "ZachXBT names French bank Crédit Mutuel Arkéa as suspected victim of $133 million crypto theft",
+          "link": "https://www.coindesk.com/business/2026/11/04/zachxbt-names-french-bank-credit-mutuel-arkea-as-suspected-victim-of-usd133-million-crypto-theft",
+          "pubDate": "2026-11-04 10:18:50",
+          "summary": "Blockchain sleuth ZachXBT says the French bank may have lost more than $133 million from crypto exchange accounts. Crypto.com confirms it has blocked funds linked to the theft."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Elon Musk floats space data centers as Democratic sweep puts pressure on AI trade",
+          "link": "https://www.coindesk.com/markets/2026/11/04/elon-musk-floats-space-data-centers-as-democratic-sweep-puts-pressure-on-ai-trade",
+          "pubDate": "2026-11-04 10:03:33",
+          "summary": "Texas election result raises fears of data centre restrictions, while Musk and Palihapitiya draw attention to the space economy."
+        },
         {
           "source": "CoinDesk",
           "title": "Morgan Stanley says it is among the first banks to tokenize real world assets",
@@ -2931,95 +2967,137 @@
           "summary": "The dominance of Republicans in all three government branches has been broken by the midterms, and the industry will feel the result as Congress changes hands."
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin briefly sinks to $75,700 as bets on a Democratic sweep rattle markets",
-          "link": "https://www.coindesk.com/markets/2026/11/04/bitcoin-briefly-sinks-to-usd75-700-as-bets-on-a-democratic-sweep-rattle-markets",
-          "pubDate": "2026-11-04 04:48:16",
-          "summary": "Stock futures and the dollar slid and Treasuries rallied as early U.S. midterm returns pointed to Democrats taking both chambers of Congress."
+          "source": "CoinTelegraph",
+          "title": "Bitcoin hits $80.5K as US stocks rally on midterm election results",
+          "link": "https://cointelegraph.com/markets/bitcoin-price-us-stocks-rally-midterm-election-result?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 15:29:23",
+          "summary": "    Bitcoin climbed toward $80,500 as risk assets rallied on Democrats’ midterm election gains and oil prices fell. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Live updates: Crypto&#39;s election gamble falters as Democratic victories usher in a &#39;blue wave&#39;",
-          "link": "https://www.coindesk.com/tech/2026/11/03/election-2026-coindesk-live-blog",
-          "pubDate": "2026-11-04 00:00:00",
-          "summary": "Voters are choosing who will represent them in the House, Senate and state-wide seats."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 13:47:43",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinDesk",
-          "title": "What voters said about their views on crypto",
-          "link": "https://www.coindesk.com/policy/2026/11/03/what-voters-said-about-their-views-on-crypto",
-          "pubDate": "2026-11-03 23:19:44",
-          "summary": "A CoinDesk-commissioned poll from April sheds light on how voters — who aren&#39;t necessarily part of the crypto sector — view this industry."
+          "source": "CoinTelegraph",
+          "title": "France backs reporting for self-custodied crypto worth 100K euros or more",
+          "link": "https://cointelegraph.com/news/france-approves-amendment-self-custodied-crypto-wallets-100k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 13:44:52",
+          "summary": "    The amendment would require taxpayers to report holdings worth at least $112,000, but the measure still needs to survive the budget process. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Canton’s CC rises 4% as SEC staff view it as ‘digital commodity’",
+          "link": "https://cointelegraph.com/markets/cantons-cc-rises-sec-no-action-letter-digital-commodity?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 12:12:15",
+          "summary": "    SEC staff’s no-action letter covers CC earned by running infrastructure and applications, but is not a binding ruling on its legal status. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance hack may be ‘temporary setback’ for crypto, Grayscale’s Pandl says",
+          "link": "https://cointelegraph.com/markets/crypto-market-recovery-grayscale-binance-hack-temporary-setback?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-04 11:11:57",
+          "summary": "    Zach Pandl highlighted institutional custody safeguards as crypto markets recovered some losses following the record $6.3 billion Binance hack. "
         },
         {
           "source": "CoinTelegraph",
           "title": "Justin Sun seeks $264K sanctions over World Liberty’s UAE disclosure",
           "link": "https://cointelegraph.com/news/justin-sun-world-liberty-264k-sanctions-uae-disclosure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-04 10:30:42",
-          "summary": "\n   \n Sun plans to refile his token-freeze lawsuit in California state court after the sanctions motion is resolved. A hearing is set for Dec. 10. \n"
+          "summary": "    Sun plans to refile his token-freeze lawsuit in California state court after the sanctions motion is resolved. A hearing is set for Dec. 10. "
         },
         {
           "source": "CoinTelegraph",
           "title": "Bitcoin ETFs lose $1.16B as Bitwise calls selling ‘short-term’",
           "link": "https://cointelegraph.com/markets/bitcoin-etf-shed-1-16-billion-bitwise-short-term-risk-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-04 09:38:07",
-          "summary": "\n   \n Bitwise’s André Dragosch attributed Bitcoin ETF outflows to weaker market sentiment, saying institutions have largely maintained their exposure. \n"
+          "summary": "    Bitwise’s André Dragosch attributed Bitcoin ETF outflows to weaker market sentiment, saying institutions have largely maintained their exposure. "
         },
         {
           "source": "CoinTelegraph",
           "title": "US midterm elections 2026 as it happened: Democrats win control of Congress",
           "link": "https://cointelegraph.com/news/us-midterms-2026-live-results-and-what-they-mean-for-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-04 09:27:34",
-          "summary": "\n   \n Democrats won control of Congress in the 2026 US midterms. Catch up on key races, crypto-backed candidates and the outlook for crypto regulation. \n"
+          "summary": "    Democrats won control of Congress in the 2026 US midterms. Catch up on key races, crypto-backed candidates and the outlook for crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
           "title": "Binance hackers move 81% of stolen Solana, route funds via THORChain",
           "link": "https://cointelegraph.com/news/binance-hackers-move-81-stolen-solana-route-thorchain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-04 09:15:55",
-          "summary": "\n   \n The Binance attackers moved most of the stolen SOL and continued laundering funds through THORChain after the protocol resumed swaps. \n"
+          "summary": "    The Binance attackers moved most of the stolen SOL and continued laundering funds through THORChain after the protocol resumed swaps. "
         },
         {
           "source": "CoinTelegraph",
           "title": "Democrats win US House to secure control of Congress in midterms",
           "link": "https://cointelegraph.com/news/democrats-win-us-house-congress-control?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-04 07:50:27",
-          "summary": "\n   \n Democrats will take control of House committees in January 2027, giving them power to investigate President Donald Trump’s administration. \n"
+          "summary": "    Democrats will take control of House committees in January 2027, giving them power to investigate President Donald Trump’s administration. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin bounces from 7-week low under $76K as Democrats sweep Congress",
-          "link": "https://cointelegraph.com/markets/bitcoin-bounces-from-7-week-low-under-76k-as-democrats-eye-congress-sweep?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-04 07:25:47",
-          "summary": "\n   \n Bitcoin price downside reached a seven-week-low of $75,618 as 24-hour crypto long liquidations neared $300 million. \n"
+          "source": "Decrypt",
+          "title": "What Is x402? How AI Agents Pay With Crypto",
+          "link": "https://decrypt.co/resources/what-is-x402-how-ai-agents-pay-with-crypto",
+          "pubDate": "2026-11-04 17:59:09",
+          "summary": "Coinbase&#39;s x402 protocol puts the web&#39;s long-unused 402 code to work so AI agents and apps can pay for APIs and data in stablecoins like USDC."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-04 06:03:33",
-          "summary": "\n   \n Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. \n"
+          "source": "Decrypt",
+          "title": "Tech, AI Stocks Split After Democratic Sweep: Microsoft Jumps, Tesla and Nvidia Tank",
+          "link": "https://decrypt.co/382528/tech-ai-stocks-split-democratic-microsoft-jumps-tesla-nvidia-tank",
+          "pubDate": "2026-11-04 17:06:03",
+          "summary": "Microsoft and Alphabet surged while Nvidia and Tesla fell, highlighting a divided market as investors reassess Washington&#39;s approach to AI and Big Tech."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Ethereum dev targets 2028 for quantum resistance, a year early",
-          "link": "https://cointelegraph.com/news/ethereum-post-quantum-transition-2028-target?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-04 05:46:33",
-          "summary": "\n   \n Ethereum researcher Justin Drake said it is their “hope” that Ethereum will achieve its post-quantum and post-AI transition by December 2028. \n"
+          "source": "Decrypt",
+          "title": "Bitcoin Rebounds After Democratic Midterm Sweep, But Crypto Faces Tougher Fight in Washington",
+          "link": "https://decrypt.co/382515/bitcoin-rebounds-democratic-midterm-sweep-crypto-washington",
+          "pubDate": "2026-11-04 16:49:31",
+          "summary": "Bitcoin bounced back after Democrats won control of Congress, but a stalled market structure bill and heavy industry campaign spending reveal crypto’s exposure to shifting US political power."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Democrats claim control of the US Senate",
-          "link": "https://cointelegraph.com/news/democrats-flip-us-senate-as-crypto-industry-faces-policy-reset?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-04 04:40:44",
-          "summary": "\n   \n The shift in Senate control could change the path for the CLARITY Act, reshape committee leadership and bring closer scrutiny of Trump’s crypto businesses.  \n"
+          "source": "Decrypt",
+          "title": "Wall Street’s Plumbing Goes Onchain as Morgan Stanley Tokenizes Securities",
+          "link": "https://decrypt.co/382513/wall-streets-plumbing-onchain-morgan-stanley-tokenizes-securities",
+          "pubDate": "2026-11-04 16:29:36",
+          "summary": "Morgan Stanley says it has converted U.S. equities and Treasuries into tokenized form through the newly launched DTCC Tokenization Service, which 20 Wall Street firms have signed up to use."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "ZachXBT identifies French bank as alleged victim of $133M crypto theft",
-          "link": "https://cointelegraph.com/news/zachxbt-french-bank-credit-mutuel-arkea-133m-crypto-theft?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-04 03:35:30",
-          "summary": "\n   \n The French bank has not confirmed its alleged involvement in the crypto theft, which ZachXBT said could have resulted in losses exceeding $133 million. \n"
+          "source": "Decrypt",
+          "title": "Crédit Mutuel Arkéa Confirms Cyberattack After ZachXBT Ties It to $133M Crypto Theft",
+          "link": "https://decrypt.co/382486/zachxbt-names-french-bank-credit-mutuel-arkea-as-alleged-victim-of-133m-crypto-theft",
+          "pubDate": "2026-11-04 15:30:31",
+          "summary": "The French bank said the attack allowed &quot;fraudulent operations&quot; but did not mention crypto, and is still assessing the amounts."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Morning Minute: CFTC Clears Stock Perps, Gets Sued the Same Day",
+          "link": "https://decrypt.co/382497/morning-minute-cftc-clears-stock-perps-gets-sued-the-same-day",
+          "pubDate": "2026-11-04 13:25:01",
+          "summary": "Plus, pro-crypto spending largely failed to produce results as the Democrats swept the Senate and House in Midterms."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Bitcoin Shrugs Off Midterms as Experts Say Democratic Sweep Was &#39;Priced In&#39;",
+          "link": "https://decrypt.co/382492/bitcoin-shrugs-off-midterms-as-experts-say-democratic-sweep-was-priced-in",
+          "pubDate": "2026-11-04 13:13:24",
+          "summary": "Experts say the Democratic sweep was largely priced in, but it makes the road ahead harder for crypto policy."
+        },
+        {
+          "source": "Decrypt",
+          "title": "USDC Issuer Circle Quietly Cuts 5% of Staff in Profitable Quarter",
+          "link": "https://decrypt.co/382493/usdc-issuer-circle-quietly-cuts-5-of-staff-in-profitable-quarter",
+          "pubDate": "2026-11-04 12:44:00",
+          "summary": "The USDC issuer disclosed the cuts in its earnings release, booking $9.1 million in restructuring costs as reserve income fell 8%."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Midterms Blue Wave Makes $917K for One Polymarket Trader, If Alaska Doesn’t Flip",
+          "link": "https://decrypt.co/382489/midterms-blue-wave-makes-917k-for-one-polymarket-trader-if-alaska-doesnt-flip",
+          "pubDate": "2026-11-04 11:48:50",
+          "summary": "A Polymarket trader topped the prediction market’s leaderboard after Democrats swept the US midterms, but Alaska could still flip it."
         },
         {
           "source": "Decrypt",
@@ -3027,69 +3105,6 @@
           "link": "https://decrypt.co/382484/judge-orders-bitcoin-wallet-returned-to-family-of-convicted-canadian-killer",
           "pubDate": "2026-11-04 10:35:01",
           "summary": "A Nova Scotia judge found prosecutors failed to link William Sandeson&#39;s Bitcoin to the 2015 murder of fellow student Taylor Samson."
-        },
-        {
-          "source": "Decrypt",
-          "title": "OpenAI Wants to Rebrand AI Data Centers, Use Them to &#39;Protect the Grid&#39;",
-          "link": "https://decrypt.co/382476/openai-ai-data-centers-rebrand-protect-power-grid",
-          "pubDate": "2026-11-03 23:48:32",
-          "summary": "The ChatGPT maker says future facilities could ease pressure on power grids by cutting demand during emergencies."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Tether Holds 150,000 Bitcoin, CEO Says—About 50,000 More Than Its Reserve Report Shows",
-          "link": "https://decrypt.co/382474/tether-holds-150000-bitcoin-ceo-says",
-          "pubDate": "2026-11-03 22:46:02",
-          "summary": "Paolo Ardoino told the Plan ₿ Forum in Lugano the company owns “give or take 150,000 Bitcoin,” but its Q3 reserve report implies just 100,060."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Anthropic&#39;s AI Is Getting Cheaper to Use. That&#39;s Becoming a Problem for Its Business",
-          "link": "https://decrypt.co/382471/anthropic-ai-cheaper-use-problem-for-business",
-          "pubDate": "2026-11-03 21:50:17",
-          "summary": "Claude&#39;s prices are falling, but Anthropic&#39;s computing expenses grew faster than sales in the latest quarter—a tricky equation ahead of its IPO."
-        },
-        {
-          "source": "Decrypt",
-          "title": "CrowdStrike Launches AI Agent &#39;Kill Switch,&#39; Plans to Acquire Fiddler AI",
-          "link": "https://decrypt.co/382467/crowdstrike-ai-agent-kill-switch-acquire-fiddler-ai",
-          "pubDate": "2026-11-03 21:16:03",
-          "summary": "CrowdStrike&#39;s new kill switch lets security teams cut off unauthorized AI agents through a gateway, while its planned Fiddler acquisition aims to make autonomous software easier to monitor and audit."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Justin Sun Accuses Trump-Backed World Liberty of Using UAE Ties to Escape Federal Court",
-          "link": "https://decrypt.co/382469/justin-sun-sanctions-trump-backed-world-liberty-uae-ties",
-          "pubDate": "2026-11-03 20:36:02",
-          "summary": "Tron founder Justin Sun said he has asked a federal court to sanction World Liberty Financial, alleging the Trump family-backed venture delayed disclosing UAE ties that could defeat federal jurisdiction over his lawsuit."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Crypto Docs Host GitBook Hit by AI Agent Security Breach, Urges Users to Rotate Keys",
-          "link": "https://decrypt.co/382465/crypto-docs-gitbook-ai-agent-security-breach",
-          "pubDate": "2026-11-03 19:46:03",
-          "summary": "GitBook says attackers accessed infrastructure credentials in an AI-assisted breach, prompting a shutdown and emergency token resets."
-        },
-        {
-          "source": "Decrypt",
-          "title": "CFTC Lets Traders Bet on Stocks With Crypto-Style Perpetual Futures",
-          "link": "https://decrypt.co/382464/cftc-traders-bet-stocks-with-crypto-style-perpetual-futures",
-          "pubDate": "2026-11-03 19:16:02",
-          "summary": "Chairman Michael Selig said “equity perpetual futures” can now trade on CFTC-registered exchanges, extending a crypto-native instrument to traditional stocks."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack",
-          "link": "https://decrypt.co/382459/brazil-mercado-bitcoin-will-refund-users-40-million-hack",
-          "pubDate": "2026-11-03 18:16:03",
-          "summary": "Mercado Bitcoin says customers won&#39;t pay for a hack that drained tens of millions. Withdrawals on the exchange remain frozen with no restart date."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Elon Musk’s Tesla and SpaceX Block Their Stock From OKX-ICE Tokenized Venue",
-          "link": "https://decrypt.co/382458/elon-musk-tesla-spacex-block-okx-ice-tokenized-stock",
-          "pubDate": "2026-11-03 17:46:15",
-          "summary": "Amazon, Tesla, SpaceX, Netflix, Lam Research, and SoFi objected to trading of their shares on the planned OKX-ICE tokenized stock venue, bringing the total to 56."
         }
       ],
       "perCoin": {
@@ -3102,15 +3117,13 @@
             "Decrypt"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack"
+          "critical": false,
+          "critHead": ""
         },
         "ETH": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinTelegraph"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3202,10 +3215,6 @@
       },
       "breaker": [
         {
-          "coin": "BTC",
-          "head": "Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Million Hack"
-        },
-        {
           "coin": "SOL",
           "head": "Binance hackers move 81% of stolen Solana, route funds via THORChain"
         }
@@ -3213,17 +3222,17 @@
       "fearGreed": {
         "value": 34,
         "classification": "Fear",
-        "t": 1793789495740
+        "t": 1793816151957
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793789496661,
+      "fetchedAt": 1793816152810,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 9.83,
+        "ARB": 9.69,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3232,9 +3241,9 @@
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 13.07,
+        "WLD": 12.7,
         "GRASS": 20,
-        "ZEC": 8.72,
+        "ZEC": 8.47,
         "AERO": 20
       },
       "positions": [
@@ -3242,35 +3251,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 756.79,
+          "pct": 778.81,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 129.52,
+          "pct": 127.7,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 9.83,
+          "pct": 9.69,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 35.12,
+          "pct": 34.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 175.24,
+          "pct": 172.78,
           "lev": 10
         },
         {
@@ -3284,77 +3293,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 20.9,
+          "pct": 20.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 234.71,
+          "pct": 231.42,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 30.58,
+          "pct": 30.15,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 95.18,
+          "pct": 93.85,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 48.59,
+          "pct": 47.91,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 13.07,
+          "pct": 12.7,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 45.89,
+          "pct": 44.57,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 131.52,
+          "pct": 127.74,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 8.72,
+          "pct": 8.47,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 128.8,
+          "pct": 125.1,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1008.44,
+          "pct": 985.45,
           "lev": 10
         }
       ]
@@ -3368,7 +3377,7 @@
       "winRate": 90.5,
       "pf": 71.89,
       "expPerTrade": 0.748,
-      "updatedAt": 1793789497447,
+      "updatedAt": 1793816153750,
       "gen": 3
     },
     "minScore": 75

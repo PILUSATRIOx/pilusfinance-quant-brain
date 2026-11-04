@@ -1,8 +1,23 @@
 {
-  "updatedAt": 1793789497449,
+  "updatedAt": 1793816153752,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793816153747,
+      "type": "CYCLE",
+      "text": "[CYCLE #20] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793816151959,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Binance hackers move 81% of stolen Solana, route funds via THORChain)"
+    },
+    {
+      "t": 1793816151957,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793789497444,
       "type": "CYCLE",
@@ -287,21 +302,6 @@
       "t": 1793613405997,
       "type": "NEWS",
       "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793613402976,
-      "type": "SYS",
-      "text": "⚠️ GitHub load gagal: qbSave is not defined"
-    },
-    {
-      "t": 1793613402976,
-      "type": "SYS",
-      "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793613402398,
-      "type": "SYS",
-      "text": "🧠 PILUS QUANT BRAIN v1.0 online — basis pengetahuan: 11 literatur institusional terenkode, 8 strategi siap di-backtest walk-forward pada 18 aset riil (crypto+forex+saham)."
     }
   ]
 }
