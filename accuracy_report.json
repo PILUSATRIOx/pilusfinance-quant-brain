@@ -1,15 +1,35 @@
 {
+<<<<<<< Updated upstream
   "updatedAt": 1793835804558,
+=======
+  "updatedAt": 1793835804557,
+  "gen": 3,
+  "cycles": 21,
+>>>>>>> Stashed changes
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
   "losses": 0,
   "winRatePct": null,
   "netR": 0,
+<<<<<<< Updated upstream
   "backtestOOS": {
     "trades": 0,
     "netR": 0,
     "winRatePct": null
+=======
+  "championStrategy": {
+    "id": "emax",
+    "name": "EMA Cross Naive (CONTROL)",
+    "book": "Baseline Penelitian",
+    "netR": 57.6,
+    "trades": 77,
+    "winRate": 90.5,
+    "pf": 71.89,
+    "expPerTrade": 0.748,
+    "updatedAt": 1793835804555,
+    "gen": 3
+>>>>>>> Stashed changes
   },
   "proof": "Accuracy computed only from real tracked signals vs real prices."
 }

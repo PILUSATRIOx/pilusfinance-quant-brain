@@ -1,8 +1,23 @@
 {
-  "updatedAt": 1793816153752,
+  "updatedAt": 1793835804557,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793835804553,
+      "type": "CYCLE",
+      "text": "[CYCLE #21] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793835802976,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (THORChain&#39;s RUNE jumps 10% as North Korean hackers resume laundering Binance)"
+    },
+    {
+      "t": 1793835802974,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793816153747,
       "type": "CYCLE",
@@ -287,21 +302,6 @@
       "t": 1793613563343,
       "type": "SYS",
       "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793613406011,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #1 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-    },
-    {
-      "t": 1793613405997,
-      "type": "ERR",
-      "text": "⚠ Semua feed berita gagal. Retry siklus berikutnya."
-    },
-    {
-      "t": 1793613405997,
-      "type": "NEWS",
-      "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
     }
   ]
 }
