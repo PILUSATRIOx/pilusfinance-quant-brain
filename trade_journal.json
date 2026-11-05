@@ -1,8 +1,28 @@
 {
-  "updatedAt": 1793878514816,
+  "updatedAt": 1793904997093,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793904997088,
+      "type": "CYCLE",
+      "text": "[CYCLE #24] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793904996406,
+      "type": "GEN",
+      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 60/100."
+    },
+    {
+      "t": 1793904996406,
+      "type": "GEN",
+      "text": "[GEN #4] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.03R · Win 88.7%)"
+    },
+    {
+      "t": 1793904995176,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+    },
     {
       "t": 1793878514812,
       "type": "CYCLE",
@@ -282,26 +302,6 @@
       "t": 1793613649337,
       "type": "CYCLE",
       "text": "⚙ Siklus #4 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-    },
-    {
-      "t": 1793613648666,
-      "type": "SYS",
-      "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 13 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793613593112,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #3 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-    },
-    {
-      "t": 1793613587456,
-      "type": "SYS",
-      "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793613572386,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #2 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
     }
   ]
 }
