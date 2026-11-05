@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793904997093,
+  "updatedAt": 1793922944266,
   "brain": {
     "v": 1,
     "gen": 4,
-    "cycles": 24,
+    "cycles": 25,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1793904996406,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 32
+          "beta": 35
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 32
+          "beta": 35
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 32
+          "beta": 35
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 32,
+          "alpha": 35,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 32
+          "beta": 35
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 32,
+          "alpha": 35,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -190,7 +190,7 @@
         }
       }
     },
-    "lastHurst": 0.47,
+    "lastHurst": 0.46,
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
@@ -2556,6 +2556,21 @@
     "signals": [],
     "journal": [
       {
+        "t": 1793922944261,
+        "type": "CYCLE",
+        "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793922942513,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Differe)"
+      },
+      {
+        "t": 1793922942511,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+      },
+      {
         "t": 1793904997088,
         "type": "CYCLE",
         "text": "[CYCLE #24] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2934,9 +2949,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 510,
+      "newsIngested": 540,
       "lessons": 0,
-      "backtests": 654,
+      "backtests": 684,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2949,7 +2964,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1793904995176,
+      "fetchedAt": 1793922942511,
       "items": [
         {
           "source": "CoinDesk",
@@ -3023,6 +3038,41 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-05 23:03:41",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "American Bitcoin’s $126M profit masks mining pressure as rivals turn to AI",
+          "link": "https://cointelegraph.com/news/american-bitcoins-126m-profit-masks-mining-pressure-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-05 22:43:18",
+          "summary": "    The Eric Trump-backed miner reported $126 million in quarterly net income, largely driven by gains on its Bitcoin holdings, despite rising mining costs and shrinking margins. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Asian crypto exchanges batten down the hatches as hacks surge: Asia Express",
+          "link": "https://cointelegraph.com/magazine/asian-crypto-exchanges-bunker-down-as-hacks-surge-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-05 22:18:42",
+          "summary": "    Asian crypto exchanges are scrambling to tighten security on fears of a wave of potentially AI-assisted hacks, even as regional governments embrace tokenization and stablecoins. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Crypto ally French Hill wins reelection but set to lose House chair",
+          "link": "https://cointelegraph.com/news/crypto-ally-french-hill-wins-reelection-arkansas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-05 21:39:19",
+          "summary": "    Republican French Hill secured another term in Congress but will lose his leadership of the House Financial Services Committee when Democrats take control in January. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance, Deribit revoke SignalPlus API keys after fake Teams invite attack",
+          "link": "https://cointelegraph.com/news/binance-deribit-revoke-signalplus-api-fake-teams-attack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-05 19:02:19",
+          "summary": "    SignalPlus said attackers compromised an engineer’s computer in a breach that resulted in losses of less than $82,000, which the crypto trading platform pledged to reimburse in full. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Fed, OCC check US banks after Binance hack as experts flag security risks",
           "link": "https://cointelegraph.com/news/fed-occ-check-us-banks-binance-hack-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-05 18:32:45",
@@ -3051,45 +3101,59 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 13:46:01",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
           "title": "Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO says",
           "link": "https://cointelegraph.com/news/blockchain-is-perfect-solution-for-ai-agent-trust-vechain-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-05 13:34:57",
           "summary": "    Sunny Lu said AI agents would need identity and reputation systems, making the case while promoting agent-building platform VeWorld.ai. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Can decentralized phone networks power the AI revolution?",
-          "link": "https://cointelegraph.com/magazine/can-decentralized-phone-networks-power-the-ai-revolution?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 13:30:00",
-          "summary": "    Decentralized AI networks want to turn everyday phones into an alternative to centralized computing infrastructure  — but skeptics have their doubts. "
+          "source": "Decrypt",
+          "title": "Claude Gets Personal Finance—Anthony Pompliano Accuses Anthropic of Copying His Startup",
+          "link": "https://decrypt.co/382689/claude-personal-finance-anthony-pompliano-anthropic",
+          "pubDate": "2026-11-05 23:06:02",
+          "summary": "Anthropic&#39;s Claude finance assistant analyzes spending from linked accounts in the U.S., and Anthony Pompliano has a big problem with it."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Trump’s memecoin ventures derailed CLARITY Act, Scaramucci says",
-          "link": "https://cointelegraph.com/news/scaramucci-trump-memecoins-clarity-act-failure?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 12:39:36",
-          "summary": "    The SkyBridge founder said disputes over ethics restrictions also stalled negotiations, with both sides responsible for the setback. "
+          "source": "Decrypt",
+          "title": "Bitcoin Fixes This? Paraguay President Resigns After Bank Lockout Hits 60% of Country",
+          "link": "https://decrypt.co/382676/paraguay-president-resigns-bank-lockout-bitcoin-fixes-this",
+          "pubDate": "2026-11-05 22:16:03",
+          "summary": "Ueno’s collapse trapped millions of Paraguayan depositors and triggered a president’s resignation, reviving Bitcoin’s argument for self-custody."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Thailand to block Bitget in December over unlicensed crypto trading",
-          "link": "https://cointelegraph.com/news/thailand-block-bitget-december-unlicensed-crypto-trading?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 11:33:20",
-          "summary": "    Thailand’s SEC filed a criminal complaint against Bitget’s operator, with access to its website and app set to be blocked from Dec. 5. "
+          "source": "Decrypt",
+          "title": "OpenAI Promises to Foot AI’s Power Bill After Voter Revolt. Who Enforces It?",
+          "link": "https://decrypt.co/382674/openai-promises-foot-ai-power-bill-after-voter-revolt",
+          "pubDate": "2026-11-05 21:36:03",
+          "summary": "OpenAI wants to ease the backlash against AI campuses with promises on electricity, water and secrecy. Its new compact raises a tougher question: Who would make the company comply?"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin win rate vs. S&amp;amp;P 500 recovers as post-midterm history favors stocks",
-          "link": "https://cointelegraph.com/markets/bitcoin-win-rate-sp-500-us-midterms-stocks-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 10:28:26",
-          "summary": "    Bitcoin outperformed the S&amp;amp;P 500 in half of the past 90 US trading sessions, while historical midterm data highlights gains for stocks. "
+          "source": "Decrypt",
+          "title": "DOJ Creates &#39;Super Intelligence&#39; Task Force to Guard Against AI Abuse",
+          "link": "https://decrypt.co/382672/doj-creates-super-intelligence-task-force-to-guard-against-ai-abuse",
+          "pubDate": "2026-11-05 20:46:02",
+          "summary": "Led by two senior DOJ officials, the Super Intelligence Task Force will target misuse by foreign governments, criminal groups and fraudsters—while pushing AI developers to tighten internal controls so their systems “beha"
+        },
+        {
+          "source": "Decrypt",
+          "title": "Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Different Story",
+          "link": "https://decrypt.co/382670/mercado-bitcoin-hack-contained-blockchain-data",
+          "pubDate": "2026-11-05 20:16:03",
+          "summary": "Fresh forensic analysis traces $48.6 million across 11 blockchains and finds thousands of customer deposit addresses drained hours after the Brazilian exchange said it had stopped the breach on Monday."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Zcash Upgrade Could Lock $16 Million in Crypto Forever",
+          "link": "https://decrypt.co/382663/zcash-upgrade-could-lock-16-million-crypto",
+          "pubDate": "2026-11-05 19:46:03",
+          "summary": "Zcash&#39;s latest upgrade promises faster transactions, but thousands of coins remain in an aging privacy system that will soon stop accepting withdrawals, potentially leaving their owners empty-handed."
+        },
+        {
+          "source": "Decrypt",
+          "title": "OpenAI Found 948 Linux Security Flaws—And Figured Out How to Exploit Them",
+          "link": "https://decrypt.co/382632/openai-linux-security-flaws-exploit",
+          "pubDate": "2026-11-05 19:16:03",
+          "summary": "An automated OpenAI system produced working exploits and draft fixes at roughly $1,279 per flaw, raising new questions about how cheaply AI can find holes in critical software at scale."
         },
         {
           "source": "Decrypt",
@@ -3111,55 +3175,6 @@
           "link": "https://decrypt.co/382626/hollywood-studios-quietly-ban-staff-from-betting-on-prediction-markets-report",
           "pubDate": "2026-11-05 17:31:10",
           "summary": "Employees are being told not to bet on casting news, release dates or earnings, though experts say the rules will be hard to enforce."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Solana Labs’ Leap Launches Mobile App for Trading Tokenized Stocks and Crypto",
-          "link": "https://decrypt.co/382609/solana-labs-leap-launches-mobile-app-tokenized-stocks-crypto",
-          "pubDate": "2026-11-05 17:01:03",
-          "summary": "Leap, built by the team behind Dialect, launched a beta iPhone app for trading tokenized stocks, ETFs, metals, currencies and crypto on Solana, pitching itself to traders looking beyond meme coins."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Democrats to Push Broader Crypto Market Structure Bill After Sweeping US Midterms: Report",
-          "link": "https://decrypt.co/382602/democrats-to-push-broader-crypto-market-structure-bill-after-sweeping-us-midterms-report",
-          "pubDate": "2026-11-05 16:37:20",
-          "summary": "Analysts said that the Clarity Act&#39;s path has become tougher, while advocacy group Stand With Crypto has endorsed 27 winning candidates so far."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Erases Election Rally as AI Stocks Plunge, $428 Million in Crypto Longs Get Wiped Out",
-          "link": "https://decrypt.co/382612/bitcoin-erases-election-rally-ai-stocks-plunge-428-million-crypto-longs",
-          "pubDate": "2026-11-05 16:29:11",
-          "summary": "Bitcoin plunged nearly 5% as AI stocks sank, Democratic midterm wins raised fresh policy questions, and forced liquidations erased a Wednesday rally that had been fueled partly by short covering."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Sam Altman Says It&#39;s &#39;Fucking Annoying&#39; His RAM Comments Were Taken Out of Context",
-          "link": "https://decrypt.co/382606/sam-altman-says-its-fucking-annoying-his-ram-comments-were-taken-out-of-context",
-          "pubDate": "2026-11-05 13:37:25",
-          "summary": "The OpenAI CEO briefly renamed himself &quot;Ram Altman&quot; on X after Elon Musk mocked him for saying idle home PC memory is &quot;quite terrible.&quot;"
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Democrat Sweep Pumps Crypto as Clarity Act Resurfaces",
-          "link": "https://decrypt.co/382603/morning-minute-democrat-sweep-pumps-crypto-as-clarity-act-resurfaces",
-          "pubDate": "2026-11-05 13:14:05",
-          "summary": "The Dems are already talking compromise on the Clarity Act and their requests all seem logical - does the bill have new life?"
-        },
-        {
-          "source": "Decrypt",
-          "title": "Stablecoins Go Mainstream as Samsung Wallet Adds USDC on Solana",
-          "link": "https://decrypt.co/382586/stablecoins-samsung-wallet-adds-usdc-solana",
-          "pubDate": "2026-11-05 13:01:02",
-          "summary": "Eligible U.S. Galaxy users can now buy, hold, send and receive USDC on Solana directly in Samsung Wallet, without a separate crypto app or private keys to manage."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Binance Cuts Off SignalPlus API Keys Over &#39;Potential Security Issue&#39; at Trading Platform",
-          "link": "https://decrypt.co/382599/binance-cuts-off-signalplus-api-keys-over-potential-security-issue-at-trading-platform",
-          "pubDate": "2026-11-05 12:23:24",
-          "summary": "The exchange said its own systems and user funds are unaffected, a week after it lost $6.4 billion in a hack blamed on North Korea."
         }
       ],
       "perCoin": {
@@ -3172,8 +3187,8 @@
             "Decrypt"
           ],
           "multiSourced": true,
-          "critical": false,
-          "critHead": ""
+          "critical": true,
+          "critHead": "Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Different Story"
         },
         "ETH": {
           "sentiment": "NEUTRAL",
@@ -3187,11 +3202,9 @@
           "critHead": ""
         },
         "SOL": {
-          "sentiment": "BULLISH",
-          "impact": 0.67,
-          "sources": [
-            "Decrypt"
-          ],
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3269,32 +3282,37 @@
           "critHead": ""
         }
       },
-      "breaker": [],
+      "breaker": [
+        {
+          "coin": "BTC",
+          "head": "Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Different Story"
+        }
+      ],
       "fearGreed": {
         "value": 50,
         "classification": "Neutral",
-        "t": 1793904995176
+        "t": 1793922942511
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793904995798,
+      "fetchedAt": 1793922943426,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 9,
+        "ARB": 8.8,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 19.13,
+        "ETHFI": 18.71,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
         "WLD": 18.41,
         "GRASS": 20,
-        "ZEC": 12.28,
+        "ZEC": 12.27,
         "AERO": 20
       },
       "positions": [
@@ -3302,35 +3320,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 839.47,
+          "pct": 849.27,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 118.52,
+          "pct": 115.95,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 9,
+          "pct": 8.8,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 32.14,
+          "pct": 31.44,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 160.36,
+          "pct": 156.89,
           "lev": 10
         },
         {
@@ -3344,35 +3362,35 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 19.13,
+          "pct": 18.71,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 214.8,
+          "pct": 210.14,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 27.99,
+          "pct": 27.38,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 87.1,
+          "pct": 85.22,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 44.47,
+          "pct": 43.51,
           "lev": 3
         },
         {
@@ -3386,35 +3404,35 @@
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 64.63,
+          "pct": 64.6,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 185.25,
+          "pct": 185.15,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 12.28,
+          "pct": 12.27,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 181.41,
+          "pct": 181.32,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1066.28,
+          "pct": 1068.26,
           "lev": 10
         }
       ]
@@ -3428,7 +3446,7 @@
       "winRate": 88.7,
       "pf": 66.52,
       "expPerTrade": 0.715,
-      "updatedAt": 1793904997092,
+      "updatedAt": 1793922944264,
       "gen": 4
     },
     "minScore": 75

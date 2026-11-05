@@ -1,8 +1,23 @@
 {
-  "updatedAt": 1793904997093,
+  "updatedAt": 1793922944266,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793922944261,
+      "type": "CYCLE",
+      "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793922942513,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Differe)"
+    },
+    {
+      "t": 1793922942511,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+    },
     {
       "t": 1793904997088,
       "type": "CYCLE",
@@ -287,21 +302,6 @@
       "t": 1793614508692,
       "type": "CYCLE",
       "text": "⚙ Siklus #5 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-    },
-    {
-      "t": 1793614505540,
-      "type": "NEWS",
-      "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793614502389,
-      "type": "SYS",
-      "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 15 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793613649337,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #4 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
     }
   ]
 }
