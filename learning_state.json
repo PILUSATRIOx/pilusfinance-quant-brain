@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793939704075,
+  "updatedAt": 1793967928090,
   "brain": {
     "v": 1,
     "gen": 4,
-    "cycles": 26,
+    "cycles": 27,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1793904996406,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 38
+          "beta": 41
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 38
+          "beta": 41
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 38
+          "beta": 41
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 38,
+          "alpha": 41,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 38
+          "beta": 41
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 38,
+          "alpha": 41,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1793967928084,
+        "type": "CYCLE",
+        "text": "[CYCLE #27] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793967926310,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1793939704072,
         "type": "CYCLE",
         "text": "[CYCLE #26] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2959,9 +2969,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 570,
+      "newsIngested": 600,
       "lessons": 0,
-      "backtests": 714,
+      "backtests": 744,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2974,8 +2984,29 @@
       }
     },
     "news": {
-      "fetchedAt": 1793939702542,
+      "fetchedAt": 1793967926310,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Zcash’s landmark NU7 upgrade goes live, speeding up private payments",
+          "link": "https://www.coindesk.com/tech/2026/11/06/zcash-s-landmark-nu7-upgrade-goes-live-speeding-up-private-payments",
+          "pubDate": "2026-11-06 05:14:48",
+          "summary": "NU7 cuts the target time between blocks to 25 seconds, reduces the work wallets must do to find private payments and sets aside fees for future miners."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Hyperliquid treasury firm seeking U.S. regulatory nod as a domestic futures platform",
+          "link": "https://www.coindesk.com/policy/2026/11/05/hyperliquid-treasury-firm-seeking-u-s-regulatory-nod-as-a-domestic-futures-platform",
+          "pubDate": "2026-11-06 02:24:23",
+          "summary": "The company said it&#39;s trying to establish a U.S. &quot;futures commission merchant&quot; with full compliance for activity with U.S. clients, though the timing is uncertain."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin developer proposes ‘landmines’ to make quantum thieves lose their own BTC",
+          "link": "https://www.coindesk.com/tech/2026/11/05/bitcoin-developer-proposes-landmines-to-make-quantum-thieves-lose-their-own-btc",
+          "pubDate": "2026-11-06 01:30:00",
+          "summary": "Anyone trying to move vulnerable bitcoin would have to put up matching collateral, giving prepared owners a chance to take both."
+        },
         {
           "source": "CoinDesk",
           "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
@@ -2985,7 +3016,7 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcion tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
+          "title": "Bitcoin tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
           "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full",
           "pubDate": "2026-11-05 18:48:40",
           "summary": "The post-election rally quickly reversed as AI stocks plunged, but cryptocurrencies held up relatively better despite a $1 billion liquidation wave."
@@ -3026,95 +3057,88 @@
           "summary": "The investment follows talks first reported by CoinDesk in June that included a proposed equity stake in Aave Group."
         },
         {
-          "source": "CoinDesk",
-          "title": "Google could take stake in bitcoin miner TeraWulf’s $19 billion AI project if Anthropic defaults",
-          "link": "https://www.coindesk.com/tech/2026/11/05/google-could-take-ownership-stake-in-bitcoin-miner-terawulf-s-ai-project-if-anthropic-defaults",
-          "pubDate": "2026-11-05 13:29:40",
-          "summary": "A $19 billion data-center agreement includes an unusual provision allowing Google to acquire part of the project if Anthropic fails to pay its rent."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Binance cuts SignalPlus access after security warning, urges users to check accounts",
-          "link": "https://www.coindesk.com/tech/2026/11/05/binance-cuts-signalplus-access-after-security-warning-urges-users-to-check-accounts",
-          "pubDate": "2026-11-05 12:55:03",
-          "summary": "The exchange says its systems are unaffected but has removed trading connections to the third-party platform as a precaution."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Ukraine’s central bank opposes crypto bill, citing monetary sovereignty concerns",
-          "link": "https://www.coindesk.com/business/2026/11/05/ukraine-s-central-bank-opposes-crypto-bill-citing-monetary-sovereignty-concerns",
-          "pubDate": "2026-11-05 12:50:57",
-          "summary": "Ukraine’s central bank won’t back a crypto legalization bill in its current form and wants lawmakers to revise it before a final vote."
+          "source": "CoinTelegraph",
+          "title": "Solana’s Shanghai event halted over unauthorized promotion: Report",
+          "link": "https://cointelegraph.com/news/solana-shanghai-event-halted-unauthorized-promotion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 12:15:28",
+          "summary": "    Solana’s promotional campaigns through domestic entities allegedly violated China’s crypto-related restrictions, an unidentified PBOC official told China’s Financial News. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Core Scientific to quit Bitcoin mining by year-end as AI business surges",
-          "link": "https://cointelegraph.com/news/core-scientific-to-quit-bitcoin-mining-by-year-end-as-ai-business-surges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 00:19:49",
-          "summary": "    The former Bitcoin mining heavyweight plans to become a pure-play data center provider in 2027, with mining now accounting for just 7.5% of quarterly revenue. "
+          "title": "Binance hackers had 8 weeks of access before $6.3B exploit, Security Alliance estimates",
+          "link": "https://cointelegraph.com/news/binance-hackers-8-weeks-access-63b-exploit-security-alliance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 11:26:30",
+          "summary": "    The cybersecurity company flagged similar multi-stage intrusion patterns behind other high-profile crypto heists, including the $388 million Bitget hack. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 23:03:41",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "title": "Bitcoin holds $75K as AI regulation fears see KOSPI halted after 8% crash",
+          "link": "https://cointelegraph.com/markets/bitcoin-holds-ai-regulation-fears-kospi-halted?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 11:16:53",
+          "summary": "    Bitcoin consolidated as fears over US AI regulation spread to Asia, causing South Korea to announce measures to calm stock-market volatility. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "American Bitcoin’s $126M profit masks mining pressure as rivals turn to AI",
-          "link": "https://cointelegraph.com/news/american-bitcoins-126m-profit-masks-mining-pressure-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 22:43:18",
-          "summary": "    The Eric Trump-backed miner reported $126 million in quarterly net income, largely driven by gains on its Bitcoin holdings, despite rising mining costs and shrinking margins. "
+          "title": "Greece approves 10% tax on crypto gains starting in 2027",
+          "link": "https://cointelegraph.com/news/greece-approves-10-tax-crypto-gains-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 11:05:36",
+          "summary": "    Greece has approved a 10% tax on cryptocurrency gains starting in 2027, with an exemption for investors whose annual net gains do not exceed 500 euros. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Asian crypto exchanges batten down the hatches as hacks surge: Asia Express",
-          "link": "https://cointelegraph.com/magazine/asian-crypto-exchanges-bunker-down-as-hacks-surge-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 22:18:42",
-          "summary": "    Asian crypto exchanges are scrambling to tighten security on fears of a wave of potentially AI-assisted hacks, even as regional governments embrace tokenization and stablecoins. "
+          "title": "GOPAX halts crypto trading, withdrawals to move all assets to cold storage",
+          "link": "https://cointelegraph.com/news/gopax-halts-crypto-trading-withdrawals-cold-storage?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 10:47:33",
+          "summary": "    South Korea’s GOPAX suspended trading, deposits and standard withdrawals after a hacking threat, with manual withdrawals available through support. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Crypto ally French Hill wins reelection but set to lose House chair",
-          "link": "https://cointelegraph.com/news/crypto-ally-french-hill-wins-reelection-arkansas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 21:39:19",
-          "summary": "    Republican French Hill secured another term in Congress but will lose his leadership of the House Financial Services Committee when Democrats take control in January. "
+          "title": "Binance’s $6.3B hack leaves questions over hot wallet safeguards",
+          "link": "https://cointelegraph.com/news/binances-hack-questions-hot-wallet-risk-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 10:40:57",
+          "summary": "    Experts say blockchain records show repeated wallet drains but cannot establish Binance’s internal signing controls or transaction limits. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Binance, Deribit revoke SignalPlus API keys after fake Teams invite attack",
-          "link": "https://cointelegraph.com/news/binance-deribit-revoke-signalplus-api-fake-teams-attack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 19:02:19",
-          "summary": "    SignalPlus said attackers compromised an engineer’s computer in a breach that resulted in losses of less than $82,000, which the crypto trading platform pledged to reimburse in full. "
+          "title": "Zcash NU7 upgrade goes live, leaves 12,224 ZEC stranded in Sprout pool",
+          "link": "https://cointelegraph.com/news/zcash-nu7-upgrade-15m-sprout-funds-unspendable?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 09:00:36",
+          "summary": "    Zcash’s NU7 upgrade has rendered about $15 million in legacy Sprout funds unspendable, although a future network upgrade could potentially restore access. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Fed, OCC check US banks after Binance hack as experts flag security risks",
-          "link": "https://cointelegraph.com/news/fed-occ-check-us-banks-binance-hack-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 18:32:45",
-          "summary": "    US regulators reportedly contacted banks following last week’s $6.3 billion Binance security hack, while experts raised concerns about transaction security and crypto risks. "
+          "title": "Hyperliquid Strategies seeks futures registration for perps",
+          "link": "https://cointelegraph.com/news/nasdaq-hyperliquid-strategies-futures-broker-license-onchain-perps?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 08:42:54",
+          "summary": "    The HYPE treasury company spent $785 million on tokens during the quarter and wants to bring Hyperliquid-based perpetual futures to the US. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Europe’s largest asset manager Amundi tokenizes equity index fund on Ethereum",
-          "link": "https://cointelegraph.com/news/amundi-tokenizes-european-equity-index-fund-ethereum?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 18:09:38",
-          "summary": "    The new share class offers blockchain-based exposure to an index tracking 600 companies across European markets.  "
+          "title": "Bitcoin, Ether ETFs post $530M outflows as election gains evaporate",
+          "link": "https://cointelegraph.com/markets/bitcoin-ether-etfs-lose-post-election-gains-erased?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 08:19:18",
+          "summary": "    US spot Bitcoin and Ether ETFs shed a combined $530 million Thursday as Bitcoin fell below $76,000 and US stocks tumbled. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Paraguay president resigns after collapse of Ueno digital bank",
-          "link": "https://cointelegraph.com/news/paraguay-president-resigns-after-collapse-ueno-digital-bank?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 17:40:25",
-          "summary": "    Santiago Peña stepped down amid mounting scrutiny over his former ties to Ueno Bank’s parent company, as the lender’s collapse left millions of customers unable to access their funds. "
+          "title": "Chainalysis says breach exposed password hashes and live tokens",
+          "link": "https://cointelegraph.com/news/chainalysis-cyberattack-password-hashes-live-tokens-exposed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 06:54:34",
+          "summary": "    Chainalysis disclosed password hashes and live tokens were exposed after initially reporting only non-sensitive customer data was accessed. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin crashes 6% to 7-week low as US stocks erase election gains",
-          "link": "https://cointelegraph.com/markets/bitcoin-price-crashes-7-week-low-stocks-election-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 16:48:41",
-          "summary": "    Bitcoin saw sudden downside at the Wall Street open as stocks witnessed a snap sell-off, reversing post-election gains. "
+          "source": "Decrypt",
+          "title": "Former FBI Agent Pleads Guilty to Stealing $2.5M in Crypto From 35 Investigations",
+          "link": "https://decrypt.co/382695/former-fbi-agent-pleads-guilty-to-stealing-2-5m-in-crypto-from-35-investigations",
+          "pubDate": "2026-11-06 10:57:06",
+          "summary": "Patrick Yaroch drained wallets using credentials the FBI had collected, then asked ChatGPT for advice on starting a new life in Europe."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Zcash&#39;s NU7 Upgrade Goes Live, Recycling 60% of Fees to Fund Future Block Rewards",
+          "link": "https://decrypt.co/382692/zcashs-nu7-upgrade-goes-live-recycling-60-of-fees-to-fund-future-block-rewards",
+          "pubDate": "2026-11-06 10:13:27",
+          "summary": "The Network Sustainability Mechanism will reissue removed ZEC from 2031 within the 21 million cap, as the community debates its dev fund."
         },
         {
           "source": "Decrypt",
@@ -3171,20 +3195,6 @@
           "link": "https://decrypt.co/382633/trump-american-bitcoin-q3-profit-bitcoin-lifts-books",
           "pubDate": "2026-11-05 18:25:31",
           "summary": "The Hut 8-backed miner reversed a second-quarter loss, driven largely by a $197 million gain on its Bitcoin holdings."
-        },
-        {
-          "source": "Decrypt",
-          "title": "S&amp;amp;#038;P 500 Plunges, Wall Street Fears Circuit Breaker, Just One Day After Trump Celebrated Record Highs",
-          "link": "https://decrypt.co/382637/sp-500-plunges-wall-street-circuit-breaker-trump-record-highs",
-          "pubDate": "2026-11-05 18:05:21",
-          "summary": "A day after Trump celebrated stock market records, the S&amp;amp;P 500 sank 3.8%, putting emergency trading halts in focus as AI stocks dragged Wall Street sharply lower during Thursday trading."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Hollywood Studios Quietly Ban Staff From Betting on Prediction Markets: Report",
-          "link": "https://decrypt.co/382626/hollywood-studios-quietly-ban-staff-from-betting-on-prediction-markets-report",
-          "pubDate": "2026-11-05 17:31:10",
-          "summary": "Employees are being told not to bet on casting news, release dates or earnings, though experts say the rules will be hard to enforce."
         }
       ],
       "perCoin": {
@@ -3201,8 +3211,8 @@
           "critHead": "Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Different Story"
         },
         "ETH": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
+          "sentiment": "BULLISH",
+          "impact": 0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph"
@@ -3214,7 +3224,9 @@
         "SOL": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinTelegraph"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3301,28 +3313,28 @@
       "fearGreed": {
         "value": 28,
         "classification": "Fear",
-        "t": 1793939702542
+        "t": 1793967926310
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793939703206,
+      "fetchedAt": 1793967927209,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 8.23,
+        "ARB": 8.39,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 17.5,
+        "ETHFI": 17.84,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 18.41,
+        "WLD": 15.91,
         "GRASS": 20,
-        "ZEC": 12.28,
+        "ZEC": 10.61,
         "AERO": 20
       },
       "positions": [
@@ -3330,35 +3342,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 846.64,
+          "pct": 847.88,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 108.45,
+          "pct": 110.56,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 8.23,
+          "pct": 8.39,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 29.41,
+          "pct": 29.98,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 146.73,
+          "pct": 149.58,
           "lev": 10
         },
         {
@@ -3372,77 +3384,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 17.5,
+          "pct": 17.84,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 196.54,
+          "pct": 200.35,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 25.61,
+          "pct": 26.11,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 79.7,
+          "pct": 81.25,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 40.69,
+          "pct": 41.48,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 18.41,
+          "pct": 15.91,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 64.63,
+          "pct": 55.84,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 185.23,
+          "pct": 160.05,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 12.28,
+          "pct": 10.61,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 181.39,
+          "pct": 156.73,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1083.66,
+          "pct": 1105.29,
           "lev": 10
         }
       ]
@@ -3456,7 +3468,7 @@
       "winRate": 88.7,
       "pf": 66.52,
       "expPerTrade": 0.715,
-      "updatedAt": 1793939704074,
+      "updatedAt": 1793967928088,
       "gen": 4
     },
     "minScore": 75
