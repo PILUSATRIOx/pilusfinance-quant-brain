@@ -1,8 +1,18 @@
 {
-  "updatedAt": 1793922944266,
+  "updatedAt": 1793939704075,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1793939704072,
+      "type": "CYCLE",
+      "text": "[CYCLE #26] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793939702542,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793922944261,
       "type": "CYCLE",
@@ -292,16 +302,6 @@
       "t": 1793614538964,
       "type": "GEN",
       "text": "🧠 GENERASI #1 selesai — universe penuh di-backtest walk-forward | bobot strategi diperbarui dari hasil out-of-sample riil | akurasi live: 0.0%"
-    },
-    {
-      "t": 1793614538588,
-      "type": "SYS",
-      "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 18 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793614508692,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #5 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
     }
   ]
 }

@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1793922944266,
+  "updatedAt": 1793939704075,
   "brain": {
     "v": 1,
     "gen": 4,
-    "cycles": 25,
+    "cycles": 26,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1793904996406,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 35
+          "beta": 38
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 35
+          "beta": 38
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 35
+          "beta": 38
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 35,
+          "alpha": 38,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 35
+          "beta": 38
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 35,
+          "alpha": 38,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1793939704072,
+        "type": "CYCLE",
+        "text": "[CYCLE #26] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1793939702542,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1793922944261,
         "type": "CYCLE",
         "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2949,9 +2959,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 540,
+      "newsIngested": 570,
       "lessons": 0,
-      "backtests": 684,
+      "backtests": 714,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2964,11 +2974,25 @@
       }
     },
     "news": {
-      "fetchedAt": 1793922942511,
+      "fetchedAt": 1793939702542,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist",
+          "title": "U.S. Justice Department assembles force to shield against foreign AI threats",
+          "link": "https://www.coindesk.com/policy/2026/11/05/u-s-justice-department-assembles-force-to-shield-against-foreign-ai-threats",
+          "pubDate": "2026-11-05 18:59:45",
+          "summary": "The new DOJ task force will aid the recently designated U.S. &quot;SI Force&quot; by warding off bad actors backed by other nations, criminal groups or corporate fraud."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcion tumbles to $76,000 as collapsing AI trade drags stocks sharply lower",
+          "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-crypto-stocks-caught-in-ai-trade-meltdown-but-wintermute-trader-sees-glass-half-full",
+          "pubDate": "2026-11-05 18:48:40",
+          "summary": "The post-election rally quickly reversed as AI stocks plunged, but cryptocurrencies held up relatively better despite a $1 billion liquidation wave."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "What is TraderTraitor, the hacking squad behind the $6.3 billion Binance heist?",
           "link": "https://www.coindesk.com/business/2026/11/05/what-is-tradertraitor-the-hacking-squad-behind-the-usd6-3-billion-binance-heist",
           "pubDate": "2026-11-05 16:58:21",
           "summary": "The hacking group has been behind some of the crypto industry&#39;s most recent high-profile thefts."
@@ -3023,18 +3047,11 @@
           "summary": "Ukraine’s central bank won’t back a crypto legalization bill in its current form and wants lawmakers to revise it before a final vote."
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin is resilient, but leverage is missing and demand still tepid",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/05/bitcoin-is-resilient-but-leverage-is-missing-and-demand-still-tepid",
-          "pubDate": "2026-11-05 12:27:04",
-          "summary": "Your day-ahead look for Nov. 5, 2026"
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin miners are oversold following 35% October rout, VanEck says",
-          "link": "https://www.coindesk.com/markets/2026/11/05/bitcoin-miners-are-oversold-following-35-october-rout-says-vaneck",
-          "pubDate": "2026-11-05 11:49:23",
-          "summary": "Investors dumped AI infrastructure providers across the board in October, treating companies in very different sectors as one monolithic trade."
+          "source": "CoinTelegraph",
+          "title": "Core Scientific to quit Bitcoin mining by year-end as AI business surges",
+          "link": "https://cointelegraph.com/news/core-scientific-to-quit-bitcoin-mining-by-year-end-as-ai-business-surges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-06 00:19:49",
+          "summary": "    The former Bitcoin mining heavyweight plans to become a pure-play data center provider in 2027, with mining now accounting for just 7.5% of quarterly revenue. "
         },
         {
           "source": "CoinTelegraph",
@@ -3098,13 +3115,6 @@
           "link": "https://cointelegraph.com/markets/bitcoin-price-crashes-7-week-low-stocks-election-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-05 16:48:41",
           "summary": "    Bitcoin saw sudden downside at the Wall Street open as stocks witnessed a snap sell-off, reversing post-election gains. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Blockchain is ‘perfect solution’ for AI agent trust, VeChain CEO says",
-          "link": "https://cointelegraph.com/news/blockchain-is-perfect-solution-for-ai-agent-trust-vechain-ceo-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-05 13:34:57",
-          "summary": "    Sunny Lu said AI agents would need identity and reputation systems, making the case while promoting agent-building platform VeWorld.ai. "
         },
         {
           "source": "Decrypt",
@@ -3289,30 +3299,30 @@
         }
       ],
       "fearGreed": {
-        "value": 50,
-        "classification": "Neutral",
-        "t": 1793922942511
+        "value": 28,
+        "classification": "Fear",
+        "t": 1793939702542
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1793922943426,
+      "fetchedAt": 1793939703206,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 8.8,
+        "ARB": 8.23,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 18.71,
+        "ETHFI": 17.5,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
         "WLD": 18.41,
         "GRASS": 20,
-        "ZEC": 12.27,
+        "ZEC": 12.28,
         "AERO": 20
       },
       "positions": [
@@ -3320,35 +3330,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 849.27,
+          "pct": 846.64,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 115.95,
+          "pct": 108.45,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 8.8,
+          "pct": 8.23,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 31.44,
+          "pct": 29.41,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 156.89,
+          "pct": 146.73,
           "lev": 10
         },
         {
@@ -3362,35 +3372,35 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 18.71,
+          "pct": 17.5,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 210.14,
+          "pct": 196.54,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 27.38,
+          "pct": 25.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 85.22,
+          "pct": 79.7,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 43.51,
+          "pct": 40.69,
           "lev": 3
         },
         {
@@ -3404,35 +3414,35 @@
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 64.6,
+          "pct": 64.63,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 185.15,
+          "pct": 185.23,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 12.27,
+          "pct": 12.28,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 181.32,
+          "pct": 181.39,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1068.26,
+          "pct": 1083.66,
           "lev": 10
         }
       ]
@@ -3446,7 +3456,7 @@
       "winRate": 88.7,
       "pf": 66.52,
       "expPerTrade": 0.715,
-      "updatedAt": 1793922944264,
+      "updatedAt": 1793939704074,
       "gen": 4
     },
     "minScore": 75
