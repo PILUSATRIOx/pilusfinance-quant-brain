@@ -1,12 +1,18 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1793993796481
-=======
-  "updatedAt": 1793993796420,
+  "updatedAt": 1794008923787,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794008923783,
+      "type": "CYCLE",
+      "text": "[CYCLE #29] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794008922054,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1793993796417,
       "type": "CYCLE",
@@ -296,17 +302,6 @@
       "t": 1793626658216,
       "type": "CYCLE",
       "text": "⚙ Siklus #7 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-    },
-    {
-      "t": 1793626650944,
-      "type": "CB",
-      "text": "🛡 CIRCUIT BREAKER AKTIF: BTC, ETH, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
-    },
-    {
-      "t": 1793626650936,
-      "type": "NEWS",
-      "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
     }
   ]
->>>>>>> Stashed changes
 }
