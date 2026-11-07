@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794069221385,
+  "updatedAt": 1794083221275,
   "brain": {
     "v": 1,
     "gen": 5,
-    "cycles": 32,
+    "cycles": 33,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1794021435070,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 50
+          "beta": 53
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 50
+          "beta": 53
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 50
+          "beta": 53
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 50,
+          "alpha": 53,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 50
+          "beta": 53
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 50,
+          "alpha": 53,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794083221270,
+        "type": "CYCLE",
+        "text": "[CYCLE #33] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794083219740,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794069221381,
         "type": "CYCLE",
         "text": "[CYCLE #32] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3029,9 +3039,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 750,
+      "newsIngested": 780,
       "lessons": 0,
-      "backtests": 894,
+      "backtests": 924,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3044,8 +3054,22 @@
       }
     },
     "news": {
-      "fetchedAt": 1794069220209,
+      "fetchedAt": 1794083219740,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "U.S. Treasury moves to cut off crypto exchange MEXC over $16 billion in alleged illicit flows",
+          "link": "https://www.coindesk.com/business/2026/11/07/u-s-treasury-moves-to-cut-off-crypto-exchange-mexc-over-usd16-billion-in-alleged-illicit-flows",
+          "pubDate": "2026-11-07 17:36:46",
+          "summary": "Treasury billed the move as part of its campaign against Iran, but the order rests on MEXC&#39;s alleged role in Russian illicit finance."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Gnosis Pay breach exposes card numbers, home addresses and linked crypto wallets",
+          "link": "https://www.coindesk.com/business/2026/11/07/gnosis-pay-breach-exposes-card-numbers-home-addresses-and-linked-crypto-wallets",
+          "pubDate": "2026-11-07 16:51:00",
+          "summary": "One user said the exposed data tied his home address and card number to every crypto wallet linked to his account, raising the risk of targeted scams."
+        },
         {
           "source": "CoinDesk",
           "title": "Apple, Meta reject OKX–ICE tokenized stock plans, leaving crypto firms as the ones to watch",
@@ -3101,20 +3125,6 @@
           "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-steadies-near-usd76-000-after-ai-led-selloff",
           "pubDate": "2026-11-06 11:49:35",
           "summary": "Bitcoin bounced from around $75,200 after Thursday’s AI-led selloff, which drove more than $1 billion in liquidations, as traders await the U.S. jobs report."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin recovers $76,000 level as ETFs shed $430 million after tech rout",
-          "link": "https://www.coindesk.com/markets/2026/11/06/bitcoin-recovers-usd76-000-level-as-etfs-shed-usd430-million-after-tech-rout",
-          "pubDate": "2026-11-06 09:53:27",
-          "summary": "Bitcoin recovered above $76,000 Friday after dropping below that level during Thursday&#39;s tech-driven market rout."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Greece approves 10% tax on crypto gains and 15% levy on DeFi income",
-          "link": "https://www.coindesk.com/policy/2026/11/06/greece-approves-10-tax-on-crypto-gains-and-15-levy-on-defi-income",
-          "pubDate": "2026-11-06 08:47:42",
-          "summary": "Investors will have 12 months to declare past crypto gains without late-filing penalties, though questions remain over crypto-to-crypto swaps."
         },
         {
           "source": "CoinTelegraph",
@@ -3188,6 +3198,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Apple Completes the Set: Every Magnificent Seven Stock Opts Out of OKX-ICE Venue",
+          "link": "https://decrypt.co/382768/apple-meta-every-magnificent-seven-stock-opts-out-okx-ice-venue",
+          "pubDate": "2026-11-07 17:01:03",
+          "summary": "Apple and Meta’s objections mean all seven of the biggest U.S. tech companies have now asked to keep their shares off the planned OKX-ICE venue."
+        },
+        {
+          "source": "Decrypt",
           "title": "AI Chip Stocks Bounce After Global Rout—But Is the Bubble Starting to Burst?",
           "link": "https://decrypt.co/382770/ai-chip-stocks-bounce-global-rout-bubble-starting-burst",
           "pubDate": "2026-11-07 16:01:02",
@@ -3248,19 +3265,12 @@
           "link": "https://decrypt.co/382718/crypto-card-provider-gnosis-pay-hackers-customer-data",
           "pubDate": "2026-11-06 16:41:29",
           "summary": "Gnosis Pay said hackers accessed customer information on the legacy system behind its branded cards, though funds weren’t affected and its enterprise card platform was untouched."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Crypto Liquidations Top $1 Billion as Bitcoin Tests 11-Week Low",
-          "link": "https://decrypt.co/382717/bitcoin-price-11-week-low-crypto-liquidations-ai-stock",
-          "pubDate": "2026-11-06 16:34:07",
-          "summary": "Bitcoin fell toward $75,500 after AI stocks plunged, and over $1 billion in the crypto derivatives market has been wiped out."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "BULLISH",
-          "impact": 0.17,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3363,28 +3373,28 @@
       "fearGreed": {
         "value": 25,
         "classification": "Extreme Fear",
-        "t": 1794069220209
+        "t": 1794083219740
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794069220750,
+      "fetchedAt": 1794083220497,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.68,
+        "ARB": 7.82,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.32,
+        "ETHFI": 16.63,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 17.67,
+        "WLD": 16.67,
         "GRASS": 20,
-        "ZEC": 11.78,
+        "ZEC": 11.11,
         "AERO": 20
       },
       "positions": [
@@ -3392,35 +3402,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 847.55,
+          "pct": 853.78,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 101.13,
+          "pct": 103.04,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.68,
+          "pct": 7.82,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 27.42,
+          "pct": 27.94,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 136.83,
+          "pct": 139.41,
           "lev": 10
         },
         {
@@ -3434,77 +3444,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.32,
+          "pct": 16.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 183.27,
+          "pct": 186.74,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 23.88,
+          "pct": 24.33,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 74.32,
+          "pct": 75.73,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 37.94,
+          "pct": 38.66,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 17.67,
+          "pct": 16.67,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 62.03,
+          "pct": 58.51,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 177.77,
+          "pct": 167.7,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.78,
+          "pct": 11.11,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 174.09,
+          "pct": 164.23,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1082.35,
+          "pct": 1081.08,
           "lev": 10
         }
       ]
@@ -3518,7 +3528,7 @@
       "winRate": 89.1,
       "pf": 66.45,
       "expPerTrade": 0.691,
-      "updatedAt": 1794069221383,
+      "updatedAt": 1794083221274,
       "gen": 5
     },
     "minScore": 75
