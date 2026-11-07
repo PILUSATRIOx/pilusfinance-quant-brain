@@ -1,8 +1,28 @@
 {
-  "updatedAt": 1794008923787,
+  "updatedAt": 1794021435437,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794021435434,
+      "type": "CYCLE",
+      "text": "[CYCLE #30] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794021435070,
+      "type": "GEN",
+      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 55/100."
+    },
+    {
+      "t": 1794021435070,
+      "type": "GEN",
+      "text": "[GEN #5] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+53.89R · Win 89.1%)"
+    },
+    {
+      "t": 1794021434159,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794008923783,
       "type": "CYCLE",
@@ -282,26 +302,6 @@
       "t": 1793627912694,
       "type": "CB",
       "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
-    },
-    {
-      "t": 1793627912692,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793626754347,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #8 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-    },
-    {
-      "t": 1793626749554,
-      "type": "SYS",
-      "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 22 jurnal dimuat dari database."
-    },
-    {
-      "t": 1793626658216,
-      "type": "CYCLE",
-      "text": "⚙ Siklus #7 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
     }
   ]
 }
