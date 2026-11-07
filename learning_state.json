@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794021435437,
+  "updatedAt": 1794047002612,
   "brain": {
     "v": 1,
     "gen": 5,
-    "cycles": 30,
+    "cycles": 31,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1794021435070,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 44
+          "beta": 47
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 44
+          "beta": 47
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 44
+          "beta": 47
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 44,
+          "alpha": 47,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 44
+          "beta": 47
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 44,
+          "alpha": 47,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794047002607,
+        "type": "CYCLE",
+        "text": "[CYCLE #31] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794047001167,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794021435434,
         "type": "CYCLE",
         "text": "[CYCLE #30] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3009,9 +3019,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 690,
+      "newsIngested": 720,
       "lessons": 0,
-      "backtests": 834,
+      "backtests": 864,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3024,7 +3034,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794021434159,
+      "fetchedAt": 1794047001167,
       "items": [
         {
           "source": "CoinDesk",
@@ -3098,6 +3108,20 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Suspicious prediction market activity seen before election poll release: NYT",
+          "link": "https://cointelegraph.com/news/suspicious-prediction-market-activity-seen-before-election-poll-release-nyt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-07 09:10:35",
+          "summary": "    Bets were placed shortly before two recent New York Times/Siena political polls were released to the public, according to a report. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Nvidia may face a more hostile post-election Washington: Report",
+          "link": "https://cointelegraph.com/news/nvidia-may-be-facing-a-more-hostile-post-election-washington-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-07 07:45:24",
+          "summary": "    CEO Jensen Huang’s relationship with President Donald Trump probably won’t save the company from a more adversarial Washington, Semafor says. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-06 22:00:15",
@@ -3151,20 +3175,6 @@
           "link": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-06 17:49:33",
           "summary": "    BTC price action stayed weak after US nonfarm payrolls data significantly beat forecasts, increasing bets of a December interest-rate hike. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "What Democrats’ US midterm sweep means for the CLARITY Act",
-          "link": "https://cointelegraph.com/magazine/clarity-act-faces-new-test-under-democratic-congress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 14:30:00",
-          "summary": "    The CLARITY Act faces a new test as Democrats control Congress, raising questions over consumer protections, ethics and what the crypto industry may have to concede. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Nigeria sets new crypto licensing rules, bans algorithmic stablecoins",
-          "link": "https://cointelegraph.com/news/nigeria-algorithmic-stablecoin-ban-crypto-licensing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 13:57:14",
-          "summary": "    Nigeria has banned algorithmic stablecoins and introduced reserve requirements for issuers as it expands central bank oversight of crypto payment services. "
         },
         {
           "source": "Decrypt",
@@ -3346,28 +3356,28 @@
       "fearGreed": {
         "value": 25,
         "classification": "Extreme Fear",
-        "t": 1794021434159
+        "t": 1794047001167
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794021434781,
+      "fetchedAt": 1794047001908,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 8.51,
+        "ARB": 7.98,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 18.1,
+        "ETHFI": 16.96,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 16.55,
+        "WLD": 17.3,
         "GRASS": 20,
-        "ZEC": 11.03,
+        "ZEC": 11.53,
         "AERO": 20
       },
       "positions": [
@@ -3375,35 +3385,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 819.35,
+          "pct": 839.49,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 112.15,
+          "pct": 105.1,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 8.51,
+          "pct": 7.98,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 30.41,
+          "pct": 28.5,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 151.74,
+          "pct": 142.21,
           "lev": 10
         },
         {
@@ -3417,77 +3427,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 18.1,
+          "pct": 16.96,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 203.24,
+          "pct": 190.48,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 26.48,
+          "pct": 24.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 82.42,
+          "pct": 77.24,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 42.08,
+          "pct": 39.43,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 16.55,
+          "pct": 17.3,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 58.09,
+          "pct": 60.72,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 166.5,
+          "pct": 174.02,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.03,
+          "pct": 11.53,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 163.05,
+          "pct": 170.42,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1051.45,
+          "pct": 1075.82,
           "lev": 10
         }
       ]
@@ -3501,7 +3511,7 @@
       "winRate": 89.1,
       "pf": 66.45,
       "expPerTrade": 0.691,
-      "updatedAt": 1794021435436,
+      "updatedAt": 1794047002610,
       "gen": 5
     },
     "minScore": 75

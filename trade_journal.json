@@ -1,8 +1,18 @@
 {
-  "updatedAt": 1794021435437,
+  "updatedAt": 1794047002612,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794047002607,
+      "type": "CYCLE",
+      "text": "[CYCLE #31] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794047001167,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794021435434,
       "type": "CYCLE",
@@ -292,16 +302,6 @@
       "t": 1793629380599,
       "type": "NEWS",
       "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793627913522,
-      "type": "CYCLE",
-      "text": "[CYCLE #9] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1793627912694,
-      "type": "CB",
-      "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
     }
   ]
 }
