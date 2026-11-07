@@ -1,8 +1,18 @@
 {
-  "updatedAt": 1794083221275,
+  "updatedAt": 1794095262327,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794095262321,
+      "type": "CYCLE",
+      "text": "[CYCLE #34] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794095260798,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794083221270,
       "type": "CYCLE",
@@ -292,16 +302,6 @@
       "t": 1793631117686,
       "type": "CYCLE",
       "text": "[CYCLE #12] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1793631117207,
-      "type": "GEN",
-      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 70/100."
-    },
-    {
-      "t": 1793631117207,
-      "type": "GEN",
-      "text": "[GEN #2] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+13.41R · Win 74.2%)"
     }
   ]
 }
