@@ -1,23 +1,13 @@
 {
-<<<<<<< Updated upstream
-  "updatedAt": 1794047002613,
-=======
-  "updatedAt": 1794047002612,
+  "updatedAt": 1794069221385,
   "gen": 5,
-  "cycles": 31,
->>>>>>> Stashed changes
+  "cycles": 32,
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
   "losses": 0,
   "winRatePct": null,
   "netR": 0,
-<<<<<<< Updated upstream
-  "backtestOOS": {
-    "trades": 0,
-    "netR": 0,
-    "winRatePct": null
-=======
   "championStrategy": {
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
@@ -27,9 +17,8 @@
     "winRate": 89.1,
     "pf": 66.45,
     "expPerTrade": 0.691,
-    "updatedAt": 1794047002610,
+    "updatedAt": 1794069221383,
     "gen": 5
->>>>>>> Stashed changes
   },
   "learnedParameters": {
     "atrMult": 1.8,

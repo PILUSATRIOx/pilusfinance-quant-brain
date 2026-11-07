@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794047002612,
+  "updatedAt": 1794069221385,
   "brain": {
     "v": 1,
     "gen": 5,
-    "cycles": 31,
+    "cycles": 32,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1794021435070,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 47
+          "beta": 50
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 47
+          "beta": 50
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 47
+          "beta": 50
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 47,
+          "alpha": 50,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 47
+          "beta": 50
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 47,
+          "alpha": 50,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794069221381,
+        "type": "CYCLE",
+        "text": "[CYCLE #32] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794069220209,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794047002607,
         "type": "CYCLE",
         "text": "[CYCLE #31] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3019,9 +3029,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 720,
+      "newsIngested": 750,
       "lessons": 0,
-      "backtests": 864,
+      "backtests": 894,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3034,7 +3044,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794047001167,
+      "fetchedAt": 1794069220209,
       "items": [
         {
           "source": "CoinDesk",
@@ -3108,6 +3118,34 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-07 14:22:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Ex-FBI counterintelligence agent stole almost $2.5M in crypto",
+          "link": "https://cointelegraph.com/news/ex-fbi-counterintelligence-agent-stole-almost-25m-in-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-07 14:16:00",
+          "summary": "    Yaroch paid off his debts and intended to use the proceeds to finance a new life in Portugal, where he planned to buy a vineyard. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin holders have received eCash — What can you do with it?",
+          "link": "https://cointelegraph.com/magazine/bitcoin-holders-have-received-ecash-what-can-you-with-it?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-07 13:30:00",
+          "summary": "    Bitcoin’s eCash fork gives eligible holders an equivalent balance of ECX, but questions remain over where they can trade the tokens and what they can do with them. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "US sanctions Canadian money-exchange firms over Iran ties",
+          "link": "https://cointelegraph.com/news/us-sanctions-canadian-money-exchange-firms-over-iran-ties?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-07 11:10:47",
+          "summary": "    US  also offers as much as $20 million and possible relocation for information about Iran’s nuclear program. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Suspicious prediction market activity seen before election poll release: NYT",
           "link": "https://cointelegraph.com/news/suspicious-prediction-market-activity-seen-before-election-poll-release-nyt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-07 09:10:35",
@@ -3119,13 +3157,6 @@
           "link": "https://cointelegraph.com/news/nvidia-may-be-facing-a-more-hostile-post-election-washington-report?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-07 07:45:24",
           "summary": "    CEO Jensen Huang’s relationship with President Donald Trump probably won’t save the company from a more adversarial Washington, Semafor says. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 22:00:15",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -3156,25 +3187,18 @@
           "summary": "    While the proposal doesn’t exclude altcoins and smaller cryptocurrencies, experts say they could face challenges getting into retirement plans.  "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Russia finalizes crypto trading rules ahead of Nov. 17 rollout",
-          "link": "https://cointelegraph.com/news/russia-finalizes-crypto-trading-rules-november-rollout?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 18:47:45",
-          "summary": "    The rules allow retail investors to trade BTC, ETH and USDT through regulated intermediaries, with Moscow Exchange planning to launch crypto trading in December. "
+          "source": "Decrypt",
+          "title": "AI Chip Stocks Bounce After Global Rout—But Is the Bubble Starting to Burst?",
+          "link": "https://decrypt.co/382770/ai-chip-stocks-bounce-global-rout-bubble-starting-burst",
+          "pubDate": "2026-11-07 16:01:02",
+          "summary": "A Friday rebound offered relief after a historic selloff. The question now is whether politics and mounting debt could turn an AI correction into something much worse."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Strive buys 15,124 Bitcoin in October, closes in on top treasury holders",
-          "link": "https://cointelegraph.com/news/strive-buys-bitcoin-october-top-btc-corporate-holders?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 18:22:42",
-          "summary": "    Bitcoin treasury company Strive reported $509 million in third-quarter net income and purchased 15,124 BTC in October, bringing its total holdings to 43,124 BTC. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin price dips under $75K as crypto markets miss tech-stock rebound",
-          "link": "https://cointelegraph.com/markets/bitcoin-price-under-75k-crypto-markets-tech-stock?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 17:49:33",
-          "summary": "    BTC price action stayed weak after US nonfarm payrolls data significantly beat forecasts, increasing bets of a December interest-rate hike. "
+          "source": "Decrypt",
+          "title": "Sony Axing Game Discs Will Have Outsized Impact on Low-Income Gamers, Experts Say",
+          "link": "https://decrypt.co/382714/sony-axing-game-discs-will-have-outsized-impact-on-low-income-gamers-experts-say",
+          "pubDate": "2026-11-07 14:01:02",
+          "summary": "Experts say a disc-free PlayStation will price out low-income players, while in much of Africa, digital-only gaming means breaking Sony’s rules."
         },
         {
           "source": "Decrypt",
@@ -3231,26 +3255,12 @@
           "link": "https://decrypt.co/382717/bitcoin-price-11-week-low-crypto-liquidations-ai-stock",
           "pubDate": "2026-11-06 16:34:07",
           "summary": "Bitcoin fell toward $75,500 after AI stocks plunged, and over $1 billion in the crypto derivatives market has been wiped out."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Anthropic IPO Valuation Could Be Slashed in Half to $1T After AI Stock Rout: Report",
-          "link": "https://decrypt.co/382716/anthropic-ipo-valuation-could-fall-to-1-trillion-after-ai-stock-rout-report",
-          "pubDate": "2026-11-06 16:28:58",
-          "summary": "Investors told The Wall Street Journal that the $1.5 trillion target now looks too high, as prediction markets bet on a December listing."
-        },
-        {
-          "source": "Decrypt",
-          "title": "$3.1B in Stolen Binance Crypto Has Yet to Be Laundered: Elliptic",
-          "link": "https://decrypt.co/382711/3-1b-in-stolen-binance-crypto-has-yet-to-be-laundered-elliptic",
-          "pubDate": "2026-11-06 14:04:18",
-          "summary": "The attackers have used more than 20,000 wallets on 16 blockchains so far, but the bulk of the stolen ETH and Bitcoin hasn&#39;t moved."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BULLISH",
-          "impact": 0.83,
+          "impact": 0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3263,11 +3273,8 @@
         "ETH": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinTelegraph",
-            "Decrypt"
-          ],
-          "multiSourced": true,
+          "sources": [],
+          "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
@@ -3356,28 +3363,28 @@
       "fearGreed": {
         "value": 25,
         "classification": "Extreme Fear",
-        "t": 1794047001167
+        "t": 1794069220209
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794047001908,
+      "fetchedAt": 1794069220750,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.98,
+        "ARB": 7.68,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.96,
+        "ETHFI": 16.32,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 17.3,
+        "WLD": 17.67,
         "GRASS": 20,
-        "ZEC": 11.53,
+        "ZEC": 11.78,
         "AERO": 20
       },
       "positions": [
@@ -3385,35 +3392,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 839.49,
+          "pct": 847.55,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 105.1,
+          "pct": 101.13,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.98,
+          "pct": 7.68,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 28.5,
+          "pct": 27.42,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 142.21,
+          "pct": 136.83,
           "lev": 10
         },
         {
@@ -3427,77 +3434,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.96,
+          "pct": 16.32,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 190.48,
+          "pct": 183.27,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 24.82,
+          "pct": 23.88,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 77.24,
+          "pct": 74.32,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 39.43,
+          "pct": 37.94,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 17.3,
+          "pct": 17.67,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 60.72,
+          "pct": 62.03,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 174.02,
+          "pct": 177.77,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.53,
+          "pct": 11.78,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 170.42,
+          "pct": 174.09,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1075.82,
+          "pct": 1082.35,
           "lev": 10
         }
       ]
@@ -3511,7 +3518,7 @@
       "winRate": 89.1,
       "pf": 66.45,
       "expPerTrade": 0.691,
-      "updatedAt": 1794047002610,
+      "updatedAt": 1794069221383,
       "gen": 5
     },
     "minScore": 75
