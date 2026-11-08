@@ -2,16 +2,16 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794105909445,
+  "updatedAt": 1794130341254,
   "brain": {
     "v": 1,
-    "gen": 5,
-    "cycles": 35,
+    "gen": 6,
+    "cycles": 36,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1794021435070,
+    "lastOptAt": 1794130340740,
     "autoExecBursa": false,
     "params": {
       "atrMult": 1.8,
@@ -31,16 +31,16 @@
       "volConfirmMult": 1.15
     },
     "weights": {
-      "elder": 0.51,
-      "donchian": 0.65,
-      "bbrev": 0.33,
-      "wyckoff": 0.82,
-      "rsidiv": 0.31,
-      "macdm": 0.57,
-      "smc": 0.84,
-      "statarb": 0.44,
+      "elder": 0.55,
+      "donchian": 0.68,
+      "bbrev": 0.34,
+      "wyckoff": 0.88,
+      "rsidiv": 0.33,
+      "macdm": 0.6,
+      "smc": 0.99,
+      "statarb": 0.4,
       "tsmom": 0.83,
-      "emax": 0.94,
+      "emax": 1.01,
       "TREND_PULLBACK": 1,
       "BREAKOUT": 1,
       "REVERSAL": 1,
@@ -59,8 +59,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 11,
-          "beta": 18
+          "alpha": 12,
+          "beta": 20
         }
       },
       "donchian": {
@@ -74,7 +74,7 @@
         },
         "RANGING": {
           "alpha": 11,
-          "beta": 18
+          "beta": 21
         }
       },
       "bbrev": {
@@ -87,8 +87,8 @@
           "beta": 4
         },
         "RANGING": {
-          "alpha": 18,
-          "beta": 11
+          "alpha": 20,
+          "beta": 12
         }
       },
       "wyckoff": {
@@ -101,7 +101,7 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 18,
+          "alpha": 21,
           "beta": 11
         }
       },
@@ -116,7 +116,7 @@
         },
         "RANGING": {
           "alpha": 14,
-          "beta": 7
+          "beta": 8
         }
       },
       "macdm": {
@@ -130,7 +130,7 @@
         },
         "RANGING": {
           "alpha": 10,
-          "beta": 19
+          "beta": 22
         }
       },
       "smc": {
@@ -143,8 +143,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 12,
-          "beta": 17
+          "alpha": 14,
+          "beta": 18
         }
       },
       "statarb": {
@@ -157,8 +157,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 10,
-          "beta": 19
+          "alpha": 11,
+          "beta": 21
         }
       },
       "tsmom": {
@@ -185,8 +185,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 16,
-          "beta": 13
+          "alpha": 17,
+          "beta": 15
         }
       }
     },
@@ -393,24 +393,24 @@
           "wins": 13,
           "losses": 26,
           "winRate": 33.33333333333333,
-          "pf": 0.27144249377696367,
-          "exp": -0.5787752496441978,
-          "netR": -22.572234736123715,
-          "maxDD": 22.572234736123715,
+          "pf": 0.27144395803263766,
+          "exp": -0.5787706768386469,
+          "netR": -22.57205639670723,
+          "maxDD": 22.57205639670723,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 30,
+          "trades": 28,
           "wins": 12,
-          "losses": 18,
-          "winRate": 40,
-          "pf": 0.2358545505328927,
-          "exp": -0.6073073737154852,
-          "netR": -18.219221211464554,
-          "maxDD": 18.219221211464554,
-          "atrMult": 2,
+          "losses": 16,
+          "winRate": 42.857142857142854,
+          "pf": 0.25850929029615605,
+          "exp": -0.5707062505597892,
+          "netR": -15.979775015674097,
+          "maxDD": 15.979775015674097,
+          "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
@@ -419,11 +419,11 @@
           "wins": 18,
           "losses": 8,
           "winRate": 69.23076923076923,
-          "pf": 1.433901848016544,
-          "exp": 0.16748451762583397,
-          "netR": 4.354597458271683,
-          "maxDD": 3.51922399000456,
-          "atrMult": 1.8,
+          "pf": 1.541049768509091,
+          "exp": 0.21794329989469322,
+          "netR": 5.6665257972620235,
+          "maxDD": 4.034962387729662,
+          "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
@@ -625,40 +625,40 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 16,
+          "trades": 15,
           "wins": 8,
-          "losses": 8,
-          "winRate": 50,
-          "pf": 0.5848010163734321,
-          "exp": -0.23690105747826573,
-          "netR": -3.7904169196522517,
-          "maxDD": 3.7904169196522517,
+          "losses": 7,
+          "winRate": 53.333333333333336,
+          "pf": 0.6691841666814097,
+          "exp": -0.1759495621893146,
+          "netR": -2.6392434328397187,
+          "maxDD": 3.3612639706857013,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
           "trades": 17,
-          "wins": 9,
-          "losses": 8,
-          "winRate": 52.94117647058824,
-          "pf": 0.4465232994656859,
-          "exp": -0.3626073110226058,
-          "netR": -6.164324287384298,
-          "maxDD": 6.979719688019003,
+          "wins": 8,
+          "losses": 9,
+          "winRate": 47.05882352941176,
+          "pf": 0.36223935754378933,
+          "exp": -0.4736284299652562,
+          "netR": -8.051683309409356,
+          "maxDD": 8.467112341356735,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 19,
-          "wins": 11,
-          "losses": 8,
-          "winRate": 57.89473684210527,
-          "pf": 0.7032917989979312,
-          "exp": -0.16065047362432877,
-          "netR": -3.0523589988622466,
-          "maxDD": 5.852358998862247,
+          "trades": 20,
+          "wins": 10,
+          "losses": 10,
+          "winRate": 50,
+          "pf": 0.5277691716316975,
+          "exp": -0.30578752196004777,
+          "netR": -6.115750439200955,
+          "maxDD": 7.715750439200956,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -861,14 +861,14 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 13,
-          "wins": 9,
-          "losses": 4,
-          "winRate": 69.23076923076923,
-          "pf": 1.761978343579792,
-          "exp": 0.26875352238462524,
-          "netR": 3.493795791000128,
-          "maxDD": 1.906385101495812,
+          "trades": 11,
+          "wins": 8,
+          "losses": 3,
+          "winRate": 72.72727272727273,
+          "pf": 2.252489213227769,
+          "exp": 0.38816903395978425,
+          "netR": 4.269859373557627,
+          "maxDD": 1.8788377260432592,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -878,10 +878,10 @@
           "wins": 8,
           "losses": 3,
           "winRate": 72.72727272727273,
-          "pf": 1.0113929578919443,
-          "exp": 0.0041704901926474395,
-          "netR": 0.04587539211912184,
-          "maxDD": 2.8266445776612934,
+          "pf": 1.0113762707163922,
+          "exp": 0.004164387797825394,
+          "netR": 0.04580826577607933,
+          "maxDD": 2.8266504655232696,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -891,10 +891,10 @@
           "wins": 7,
           "losses": 7,
           "winRate": 50,
-          "pf": 0.4260778239827728,
-          "exp": -0.35711199423401785,
-          "netR": -4.99956791927625,
-          "maxDD": 4.99956791927625,
+          "pf": 0.4260299240808571,
+          "exp": -0.3571430533595703,
+          "netR": -5.000002747033984,
+          "maxDD": 5.000002747033984,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1101,10 +1101,10 @@
           "wins": 11,
           "losses": 4,
           "winRate": 73.33333333333333,
-          "pf": 1.373367134590596,
-          "exp": 0.11821938975329135,
-          "netR": 1.7732908462993704,
-          "maxDD": 1.9688401350098272,
+          "pf": 1.3733664905414968,
+          "exp": 0.11821924115948379,
+          "netR": 1.7732886173922568,
+          "maxDD": 1.9688401358325482,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1114,24 +1114,24 @@
           "wins": 10,
           "losses": 4,
           "winRate": 71.42857142857143,
-          "pf": 1.4260920198152474,
-          "exp": 0.1729224022558291,
-          "netR": 2.4209136315816076,
-          "maxDD": 3.3324320290792437,
+          "pf": 1.4260290115361687,
+          "exp": 0.17290108336656726,
+          "netR": 2.420615167131942,
+          "maxDD": 3.3324665441994785,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 13,
+          "trades": 11,
           "wins": 9,
-          "losses": 4,
-          "winRate": 69.23076923076923,
-          "pf": 1.7699094104728443,
-          "exp": 0.31050794678032134,
-          "netR": 4.036603308144177,
-          "maxDD": 3.47462151982693,
-          "atrMult": 1.5,
+          "losses": 2,
+          "winRate": 81.81818181818183,
+          "pf": 2.1941882067477616,
+          "exp": 0.27596849560483794,
+          "netR": 3.0356534516532174,
+          "maxDD": 1.7420226347072063,
+          "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
@@ -1337,24 +1337,24 @@
           "wins": 3,
           "losses": 5,
           "winRate": 37.5,
-          "pf": 0.5814399129010607,
-          "exp": -0.30392044160972376,
-          "netR": -2.43136353287779,
-          "maxDD": 5.808875733301976,
+          "pf": 0.5814316015379363,
+          "exp": -0.3039304930768305,
+          "netR": -2.431443944614644,
+          "maxDD": 5.8089524998744375,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
           "trades": 2,
-          "wins": 1,
-          "losses": 1,
-          "winRate": 50,
-          "pf": 0.29917575492755893,
-          "exp": -0.46850336869184833,
-          "netR": -0.9370067373836967,
-          "maxDD": 1.3370067373836967,
-          "atrMult": 2,
+          "wins": 2,
+          "losses": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 0.4,
+          "netR": 0.8,
+          "maxDD": 0,
+          "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
@@ -1363,10 +1363,10 @@
           "wins": 1,
           "losses": 1,
           "winRate": 50,
-          "pf": 0.34285518327474973,
-          "exp": -0.3833366673640994,
-          "netR": -0.7666733347281988,
-          "maxDD": 1.1666733347281988,
+          "pf": 0.3428552427899055,
+          "exp": -0.38333656610453476,
+          "netR": -0.7666731322090695,
+          "maxDD": 1.1666731322090695,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1573,23 +1573,23 @@
           "wins": 4,
           "losses": 4,
           "winRate": 50,
-          "pf": 0.347923059002575,
-          "exp": -0.3748397377666187,
-          "netR": -2.9987179021329498,
-          "maxDD": 3.7987179021329496,
+          "pf": 0.3479224961715861,
+          "exp": -0.3748406676795207,
+          "netR": -2.9987253414361654,
+          "maxDD": 3.7987253414361652,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
           "trades": 6,
-          "wins": 3,
-          "losses": 3,
-          "winRate": 50,
-          "pf": 0.304572575239805,
-          "exp": -0.4566579405336484,
-          "netR": -2.7399476432018903,
-          "maxDD": 3.1399476432018902,
+          "wins": 2,
+          "losses": 4,
+          "winRate": 33.33333333333333,
+          "pf": 0.1516717372612889,
+          "exp": -0.7457581555683629,
+          "netR": -4.474548933410177,
+          "maxDD": 4.8745489334101775,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1599,10 +1599,10 @@
           "wins": 4,
           "losses": 3,
           "winRate": 57.14285714285714,
-          "pf": 0.7174321665837389,
-          "exp": -0.148408325017848,
-          "netR": -1.038858275124936,
-          "maxDD": 3.676491632345694,
+          "pf": 0.7174321665845566,
+          "exp": -0.14840832501724943,
+          "netR": -1.038858275120746,
+          "maxDD": 3.676491632341504,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1809,10 +1809,10 @@
           "wins": 2,
           "losses": 7,
           "winRate": 22.22222222222222,
-          "pf": 0.09867535835911836,
-          "exp": -0.8119326573109975,
-          "netR": -7.307393915798977,
-          "maxDD": 7.707393915798978,
+          "pf": 0.09867533581066425,
+          "exp": -0.811932863159127,
+          "netR": -7.307395768432143,
+          "maxDD": 7.707395768432144,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1823,8 +1823,8 @@
           "losses": 0,
           "winRate": 100,
           "pf": 99,
-          "exp": 1.13532661608269,
-          "netR": 5.67663308041345,
+          "exp": 1.1353112868879625,
+          "netR": 5.676556434439813,
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "CHAOS",
@@ -1835,10 +1835,10 @@
           "wins": 3,
           "losses": 1,
           "winRate": 75,
-          "pf": 1.7197334692471502,
-          "exp": 0.2295498079637408,
-          "netR": 0.9181992318549632,
-          "maxDD": 1.2757489697059807,
+          "pf": 1.719717906362729,
+          "exp": 0.22954761130381474,
+          "netR": 0.9181904452152589,
+          "maxDD": 1.2757643475282687,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -2045,24 +2045,24 @@
           "wins": 4,
           "losses": 4,
           "winRate": 50,
-          "pf": 0.3428217796960861,
-          "exp": -0.3833935060289967,
-          "netR": -3.0671480482319735,
-          "maxDD": 3.4962451218088737,
+          "pf": 0.34281465142930145,
+          "exp": -0.38340563673733735,
+          "netR": -3.067245093898699,
+          "maxDD": 3.4963421673561754,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 10,
-          "wins": 7,
+          "trades": 9,
+          "wins": 6,
           "losses": 3,
-          "winRate": 70,
-          "pf": 0.6787629907421029,
-          "exp": -0.1325151250422055,
-          "netR": -1.325151250422055,
-          "maxDD": 2.525151250422055,
-          "atrMult": 1.8,
+          "winRate": 66.66666666666666,
+          "pf": 0.5981047730433096,
+          "exp": -0.17918609807520067,
+          "netR": -1.612674882676806,
+          "maxDD": 2.412674882676806,
+          "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
@@ -2071,11 +2071,11 @@
           "wins": 5,
           "losses": 3,
           "winRate": 62.5,
-          "pf": 1.1912225505106817,
-          "exp": 0.09590581718184668,
-          "netR": 0.7672465374547734,
-          "maxDD": 1.8899049082614365,
-          "atrMult": 1.5,
+          "pf": 1.285580091108008,
+          "exp": 0.13720687648891655,
+          "netR": 1.0976550119113324,
+          "maxDD": 1.7749207558768505,
+          "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         }
@@ -2238,40 +2238,40 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 31,
+          "trades": 26,
           "wins": 18,
-          "losses": 13,
-          "winRate": 58.06451612903226,
-          "pf": 1.0895277754515216,
-          "exp": 0.044612391342023286,
-          "netR": 1.3829841316027218,
-          "maxDD": 3.7201999083961867,
-          "atrMult": 1.5,
+          "losses": 8,
+          "winRate": 69.23076923076923,
+          "pf": 1.614552827551521,
+          "exp": 0.21766404128601732,
+          "netR": 5.65926507343645,
+          "maxDD": 2.3162432497176524,
+          "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 35,
+          "trades": 33,
           "wins": 21,
-          "losses": 14,
-          "winRate": 60,
-          "pf": 0.7483642756004628,
-          "exp": -0.14611314714237356,
-          "netR": -5.1139601499830745,
-          "maxDD": 8.21682761830964,
+          "losses": 12,
+          "winRate": 63.63636363636363,
+          "pf": 0.8887664657231282,
+          "exp": -0.05767919848800948,
+          "netR": -1.9034135501043128,
+          "maxDD": 8.216849102894358,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 36,
-          "wins": 19,
-          "losses": 17,
-          "winRate": 52.77777777777778,
-          "pf": 0.6072259824035292,
-          "exp": -0.23873346740798443,
-          "netR": -8.59440482668744,
-          "maxDD": 9.150147800798662,
+          "trades": 35,
+          "wins": 20,
+          "losses": 15,
+          "winRate": 57.14285714285714,
+          "pf": 0.8116328026175401,
+          "exp": -0.10311207174575616,
+          "netR": -3.608922511101466,
+          "maxDD": 7.98946807548532,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -2555,6 +2555,21 @@
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1794130341250,
+        "type": "CYCLE",
+        "text": "[CYCLE #36] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794130340740,
+        "type": "GEN",
+        "text": "[GEN #6] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.09R · Win 87.9%)"
+      },
+      {
+        "t": 1794130339812,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1794105909442,
         "type": "CYCLE",
@@ -3059,9 +3074,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 840,
+      "newsIngested": 870,
       "lessons": 0,
-      "backtests": 984,
+      "backtests": 1014,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3074,7 +3089,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794105907153,
+      "fetchedAt": 1794130339812,
       "items": [
         {
           "source": "CoinDesk",
@@ -3148,6 +3163,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Binance’s  finance chief Kaiser Ng to leave company, report says",
+          "link": "https://cointelegraph.com/news/binances-finance-chief-kaiser-ng-to-leave-company-report-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-08 08:12:56",
+          "summary": "    Ng will be replaced by Justin Yek, who was formerly vice-president of finance at Airwallex. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-07 14:22:00",
@@ -3208,13 +3230,6 @@
           "link": "https://cointelegraph.com/interview/trm-labs-binance-hack-interview?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-06 20:36:25",
           "summary": "    TRM Labs executive Ari Redbord called for governments to take offensive action against North Korean hackers following the record $6.3 billion Binance theft. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "US 401(k) proposal leaves door open to altcoins, but hurdles remain",
-          "link": "https://cointelegraph.com/news/us-401k-proposal-leaves-door-open-altcoins-hurdles?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-06 20:04:27",
-          "summary": "    While the proposal doesn’t exclude altcoins and smaller cryptocurrencies, experts say they could face challenges getting into retirement plans.  "
         },
         {
           "source": "Decrypt",
@@ -3393,28 +3408,28 @@
       "fearGreed": {
         "value": 28,
         "classification": "Fear",
-        "t": 1794105907152
+        "t": 1794130339812
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794105907999,
+      "fetchedAt": 1794130340411,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.62,
+        "ARB": 7.81,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.21,
+        "ETHFI": 16.61,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 16.93,
+        "WLD": 17.21,
         "GRASS": 20,
-        "ZEC": 11.29,
+        "ZEC": 11.47,
         "AERO": 20
       },
       "positions": [
@@ -3422,35 +3437,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 843.7,
+          "pct": 855.54,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 100.43,
+          "pct": 102.92,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.62,
+          "pct": 7.81,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 27.23,
+          "pct": 27.91,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 135.88,
+          "pct": 139.25,
           "lev": 10
         },
         {
@@ -3464,77 +3479,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.21,
+          "pct": 16.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 182,
+          "pct": 186.51,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 23.71,
+          "pct": 24.3,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 73.81,
+          "pct": 75.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 37.68,
+          "pct": 38.61,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 16.93,
+          "pct": 17.21,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 59.42,
+          "pct": 60.4,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 170.3,
+          "pct": 173.12,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 11.29,
+          "pct": 11.47,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 166.77,
+          "pct": 169.53,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1080.02,
+          "pct": 1088.82,
           "lev": 10
         }
       ]
@@ -3543,13 +3558,13 @@
       "id": "emax",
       "name": "EMA Cross Naive (CONTROL)",
       "book": "Baseline Penelitian",
-      "netR": 55.05,
-      "trades": 79,
-      "winRate": 88,
+      "netR": 55.09,
+      "trades": 78,
+      "winRate": 87.9,
       "pf": 66.53,
-      "expPerTrade": 0.697,
-      "updatedAt": 1794105909444,
-      "gen": 5
+      "expPerTrade": 0.706,
+      "updatedAt": 1794130341253,
+      "gen": 6
     },
     "minScore": 75
   }
