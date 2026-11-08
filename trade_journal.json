@@ -1,12 +1,18 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1794154534799
-=======
-  "updatedAt": 1794154534798,
+  "updatedAt": 1794169810476,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794169810473,
+      "type": "CYCLE",
+      "text": "[CYCLE #38] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794169808561,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1794154534795,
       "type": "CYCLE",
@@ -296,17 +302,6 @@
       "t": 1793704865087,
       "type": "CYCLE",
       "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1793704863383,
-      "type": "CB",
-      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin pledges to cover all user losses after near $40 million hack)"
-    },
-    {
-      "t": 1793704863381,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
     }
   ]
->>>>>>> Stashed changes
 }

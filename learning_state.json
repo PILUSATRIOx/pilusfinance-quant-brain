@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794154534798,
+  "updatedAt": 1794169810476,
   "brain": {
     "v": 1,
     "gen": 6,
-    "cycles": 37,
+    "cycles": 38,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1794130340740,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 59
+          "beta": 62
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 59
+          "beta": 62
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 59
+          "beta": 62
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 59,
+          "alpha": 62,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 59
+          "beta": 62
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 59,
+          "alpha": 62,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794169810473,
+        "type": "CYCLE",
+        "text": "[CYCLE #38] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794169808561,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794154534795,
         "type": "CYCLE",
         "text": "[CYCLE #37] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3084,9 +3094,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 900,
+      "newsIngested": 930,
       "lessons": 0,
-      "backtests": 1044,
+      "backtests": 1074,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3099,8 +3109,22 @@
       }
     },
     "news": {
-      "fetchedAt": 1794154533325,
+      "fetchedAt": 1794169808561,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "What the election results mean for crypto: State of Crypto",
+          "link": "https://www.coindesk.com/policy/2026/11/08/what-the-election-results-mean-for-crypto-state-of-crypto",
+          "pubDate": "2026-11-08 19:30:00",
+          "summary": "Democrats had an astoundingly good night, smashing all expectations. Is that actually bad news for the industry?"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Stablecoin growth has stalled. The payments boom hasn&#39;t",
+          "link": "https://www.coindesk.com/business/2026/11/08/stablecoin-growth-has-stalled-the-payments-boom-hasn-t",
+          "pubDate": "2026-11-08 19:16:42",
+          "summary": "Stablecoin supply has barely grown this year, even as payments using the tokens surge. Circle&#39;s latest earnings offer another example of the divergence between dollars outstanding and activity on blockchain networks."
+        },
         {
           "source": "CoinDesk",
           "title": "These Finland homes get free heat from bitcoin miners (as long as BTC stays above $70,000)",
@@ -3156,20 +3180,6 @@
           "link": "https://www.coindesk.com/business/2026/11/05/thailand-moves-to-block-bitget-as-crypto-exchange-s-local-acquisition-faces-uncertainty",
           "pubDate": "2026-11-06 14:33:49",
           "summary": "Thailand’s SEC filed a criminal complaint against Bitget’s operator, alleging it ran an unlicensed crypto exchange for Thai users from 2022 to 2025."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "U.S. added 165,000 jobs in October, blowing past 65,000 estimate",
-          "link": "https://www.coindesk.com/markets/2026/11/06/u-s-added-165-000-jobs-in-october-blowing-past-65-000-estimate",
-          "pubDate": "2026-11-06 13:31:54",
-          "summary": "The unemployment rate unexpectedly fell to 4.1%. The strong showing surely puts a December rate hike in play, but next week&#39;s inflation numbers and the fate of the stock market could prove more important."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Over $1 billion in bullish bets liquidated while ETF flows suggest no help in spot market",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/06/over-usd1-billion-in-bullish-bets-liquidated-while-etf-flows-suggest-no-help-in-spot-market",
-          "pubDate": "2026-11-06 12:30:00",
-          "summary": "Your day-ahead look for Nov. 6, 2026"
         },
         {
           "source": "CoinTelegraph",
@@ -3418,28 +3428,28 @@
       "fearGreed": {
         "value": 28,
         "classification": "Fear",
-        "t": 1794154533325
+        "t": 1794169808561
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794154533891,
+      "fetchedAt": 1794169809290,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.94,
+        "ARB": 7.91,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.88,
+        "ETHFI": 16.83,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 18.09,
+        "WLD": 19.18,
         "GRASS": 20,
-        "ZEC": 12.06,
+        "ZEC": 12.79,
         "AERO": 20
       },
       "positions": [
@@ -3447,35 +3457,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 851.21,
+          "pct": 865.58,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 104.57,
+          "pct": 104.27,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.94,
+          "pct": 7.91,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 28.36,
+          "pct": 28.28,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 141.48,
+          "pct": 141.08,
           "lev": 10
         },
         {
@@ -3489,77 +3499,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.88,
+          "pct": 16.83,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 189.51,
+          "pct": 188.97,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 24.69,
+          "pct": 24.62,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 76.85,
+          "pct": 76.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 39.23,
+          "pct": 39.12,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 18.09,
+          "pct": 19.18,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 63.5,
+          "pct": 67.32,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 182,
+          "pct": 192.95,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 12.06,
+          "pct": 12.79,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 178.23,
+          "pct": 188.95,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1081.96,
+          "pct": 1093.36,
           "lev": 10
         }
       ]
@@ -3573,7 +3583,7 @@
       "winRate": 87.9,
       "pf": 66.53,
       "expPerTrade": 0.706,
-      "updatedAt": 1794154534796,
+      "updatedAt": 1794169810475,
       "gen": 6
     },
     "minScore": 75
