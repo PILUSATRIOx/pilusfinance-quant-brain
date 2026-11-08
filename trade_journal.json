@@ -1,4 +1,312 @@
 {
+<<<<<<< Updated upstream
   "trades": [],
   "updatedAt": 1794154534799
+=======
+  "updatedAt": 1794154534798,
+  "closedTrades": [],
+  "activeSignals": [],
+  "recentJournal": [
+    {
+      "t": 1794154534795,
+      "type": "CYCLE",
+      "text": "[CYCLE #37] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794154533325,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794130341250,
+      "type": "CYCLE",
+      "text": "[CYCLE #36] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794130340740,
+      "type": "GEN",
+      "text": "[GEN #6] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.09R · Win 87.9%)"
+    },
+    {
+      "t": 1794130339812,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794105909442,
+      "type": "CYCLE",
+      "text": "[CYCLE #35] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794105907153,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794095262321,
+      "type": "CYCLE",
+      "text": "[CYCLE #34] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794095260798,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794083221270,
+      "type": "CYCLE",
+      "text": "[CYCLE #33] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794083219740,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794069221381,
+      "type": "CYCLE",
+      "text": "[CYCLE #32] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794069220209,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794047002607,
+      "type": "CYCLE",
+      "text": "[CYCLE #31] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794047001167,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794021435434,
+      "type": "CYCLE",
+      "text": "[CYCLE #30] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794021435070,
+      "type": "GEN",
+      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 55/100."
+    },
+    {
+      "t": 1794021435070,
+      "type": "GEN",
+      "text": "[GEN #5] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+53.89R · Win 89.1%)"
+    },
+    {
+      "t": 1794021434159,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794008923783,
+      "type": "CYCLE",
+      "text": "[CYCLE #29] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794008922054,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793993796417,
+      "type": "CYCLE",
+      "text": "[CYCLE #28] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793993794661,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793967928084,
+      "type": "CYCLE",
+      "text": "[CYCLE #27] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793967926310,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793939704072,
+      "type": "CYCLE",
+      "text": "[CYCLE #26] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793939702542,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793922944261,
+      "type": "CYCLE",
+      "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793922942513,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Differe)"
+    },
+    {
+      "t": 1793922942511,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+    },
+    {
+      "t": 1793904997088,
+      "type": "CYCLE",
+      "text": "[CYCLE #24] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793904996406,
+      "type": "GEN",
+      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 60/100."
+    },
+    {
+      "t": 1793904996406,
+      "type": "GEN",
+      "text": "[GEN #4] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.03R · Win 88.7%)"
+    },
+    {
+      "t": 1793904995176,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+    },
+    {
+      "t": 1793878514812,
+      "type": "CYCLE",
+      "text": "[CYCLE #23] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793878512915,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+    },
+    {
+      "t": 1793850285511,
+      "type": "CYCLE",
+      "text": "[CYCLE #22] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793850284011,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
+    },
+    {
+      "t": 1793835804553,
+      "type": "CYCLE",
+      "text": "[CYCLE #21] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793835802976,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (THORChain&#39;s RUNE jumps 10% as North Korean hackers resume laundering Binance)"
+    },
+    {
+      "t": 1793835802974,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793816153747,
+      "type": "CYCLE",
+      "text": "[CYCLE #20] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793816151959,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Binance hackers move 81% of stolen Solana, route funds via THORChain)"
+    },
+    {
+      "t": 1793816151957,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793789497444,
+      "type": "CYCLE",
+      "text": "[CYCLE #19] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793789495742,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
+    },
+    {
+      "t": 1793789495740,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793761878521,
+      "type": "CYCLE",
+      "text": "[CYCLE #18] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793761878051,
+      "type": "GEN",
+      "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 65/100."
+    },
+    {
+      "t": 1793761878051,
+      "type": "GEN",
+      "text": "[GEN #3] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+57.6R · Win 90.5%)"
+    },
+    {
+      "t": 1793761876908,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
+    },
+    {
+      "t": 1793761876906,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793748963775,
+      "type": "CYCLE",
+      "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793748962349,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793730585999,
+      "type": "CYCLE",
+      "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793730584399,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
+    },
+    {
+      "t": 1793730584398,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1793704865087,
+      "type": "CYCLE",
+      "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1793704863383,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin pledges to cover all user losses after near $40 million hack)"
+    },
+    {
+      "t": 1793704863381,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
+    }
+  ]
+>>>>>>> Stashed changes
 }
