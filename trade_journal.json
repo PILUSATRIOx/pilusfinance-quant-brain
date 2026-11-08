@@ -1,8 +1,18 @@
 {
-  "updatedAt": 1794169810476,
+  "updatedAt": 1794182158650,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794182158646,
+      "type": "CYCLE",
+      "text": "[CYCLE #39] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794182156874,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1794169810473,
       "type": "CYCLE",
@@ -292,16 +302,6 @@
       "t": 1793730584399,
       "type": "CB",
       "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
-    },
-    {
-      "t": 1793730584398,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793704865087,
-      "type": "CYCLE",
-      "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
     }
   ]
 }
