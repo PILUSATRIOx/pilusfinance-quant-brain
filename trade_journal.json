@@ -1,8 +1,23 @@
 {
-  "updatedAt": 1794196954851,
+  "updatedAt": 1794228263650,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794228263647,
+      "type": "CYCLE",
+      "text": "[CYCLE #41] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794228261318,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Solana moves to scrap the transaction feature used in the $270 million Drift hac)"
+    },
+    {
+      "t": 1794228261316,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1794196954847,
       "type": "CYCLE",
@@ -287,21 +302,6 @@
       "t": 1793761876908,
       "type": "CB",
       "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
-    },
-    {
-      "t": 1793761876906,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793748963775,
-      "type": "CYCLE",
-      "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1793748962349,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
     }
   ]
 }
