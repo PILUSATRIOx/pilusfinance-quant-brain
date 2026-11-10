@@ -1,12 +1,23 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1794314882480
-=======
-  "updatedAt": 1794314882479,
+  "updatedAt": 1794340951871,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794340951867,
+      "type": "CYCLE",
+      "text": "[CYCLE #45] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794340950207,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin to resume cash withdrawals after $49M hack)"
+    },
+    {
+      "t": 1794340950205,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 32 (Fear) — makro sentiment riil."
+    },
     {
       "t": 1794314882476,
       "type": "CYCLE",
@@ -291,22 +302,6 @@
       "t": 1793835804553,
       "type": "CYCLE",
       "text": "[CYCLE #21] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1793835802976,
-      "type": "CB",
-      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (THORChain&#39;s RUNE jumps 10% as North Korean hackers resume laundering Binance)"
-    },
-    {
-      "t": 1793835802974,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1793816153747,
-      "type": "CYCLE",
-      "text": "[CYCLE #20] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
     }
   ]
->>>>>>> Stashed changes
 }
