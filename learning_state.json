@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794284465745,
+  "updatedAt": 1794314882479,
   "brain": {
     "v": 1,
     "gen": 7,
-    "cycles": 43,
+    "cycles": 44,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1794264234179,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 71
+          "beta": 74
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 71
+          "beta": 74
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 71
+          "beta": 74
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 71,
+          "alpha": 74,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 71
+          "beta": 74
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 71,
+          "alpha": 74,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,21 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794314882476,
+        "type": "CYCLE",
+        "text": "[CYCLE #44] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794314880447,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Solana Set for Another Tokenized Stock Venue as Formation Notifies the SEC)"
+      },
+      {
+        "t": 1794314880446,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 32 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794284465740,
         "type": "CYCLE",
         "text": "[CYCLE #43] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3159,9 +3174,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1080,
+      "newsIngested": 1110,
       "lessons": 0,
-      "backtests": 1224,
+      "backtests": 1254,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3174,8 +3189,36 @@
       }
     },
     "news": {
-      "fetchedAt": 1794284464327,
+      "fetchedAt": 1794314880446,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
+          "link": "https://www.coindesk.com/tech/2026/11/10/an-11-year-old-ethereum-wallet-moved-usd4-6-million-and-dodged-a-scam-set-up-in-minutes",
+          "pubDate": "2026-11-10 07:01:06",
+          "summary": "Bots spotted a wallet from Ethereum’s 2015 launch the moment it stirred and planted lookalike addresses in its history, but the owner sent the money to the right place anyway."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin miner MARA sold 13,597 BTC for $1.1 billion in six weeks, plans to sell more",
+          "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more",
+          "pubDate": "2026-11-10 05:18:31",
+          "summary": "MARA paid off every loan backed by its bitcoin and says the rest of its coins can fund AI datacenters."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "XRP Ledger maps out quantum-proof accounts, with no extra fees for users",
+          "link": "https://www.coindesk.com/tech/2026/11/10/xrp-ledger-maps-out-quantum-proof-accounts-with-no-extra-fees-for-users",
+          "pubDate": "2026-11-10 04:51:20",
+          "summary": "The XRP Ledger Foundation’s design lets owners add a quantum-resistant key and switch off the old one, part of a roadmap that puts the network on track for a full transition by 2028."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin faces U.S. CPI test as analysts warn inflation relief may not be enough",
+          "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-faces-u-s-cpi-test-as-analysts-warn-inflation-relief-may-not-be-enough",
+          "pubDate": "2026-11-10 03:22:26",
+          "summary": "Bitcoin trades below $75,000 ahead of the October inflation data. Analysts warning that sustainable recovery depends on improving liquidity and spot ETF demand rather than temporary macro relief."
+        },
         {
           "source": "CoinDesk",
           "title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
@@ -3219,32 +3262,67 @@
           "summary": "Avalanche will serve as the core settlement ledger for the exchange&#39;s planned blockchain stock market"
         },
         {
-          "source": "CoinDesk",
-          "title": "Solana set for its first tokenized stock venue under SEC framework, listing Galaxy",
-          "link": "https://www.coindesk.com/business/2026/11/06/solana-lset-for-its-first-tokenized-stock-venue-under-sec-framework-listing-galaxy",
-          "pubDate": "2026-11-09 12:41:35",
-          "summary": "Formation Securities plans to launch in early 2027 with Galaxy, Exodus and Forward Industries shares, expanding the U.S. regulator&#39;s experiment in blockchain-based stock trading."
+          "source": "CoinTelegraph",
+          "title": "Coinbase, Kalshi join lawsuit backing CFTC over US stock perp futures",
+          "link": "https://cointelegraph.com/news/coinbase-kalshi-cftc-stock-perpetual-futures-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 11:44:55",
+          "summary": "    Coinbase, Kalshi and four other companies backed the CFTC in a lawsuit over whether US exchanges can list perpetual futures tied to individual stocks. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Trump says he knows ‘nothing’ about World Liberty’s UAE ties as Justin Sun challenges filings",
-          "link": "https://www.coindesk.com/business/2026/11/09/trump-says-he-knows-nothing-about-world-liberty-s-uae-ties-as-justin-sun-challenges-filings",
-          "pubDate": "2026-11-09 12:37:13",
-          "summary": "Trump confirmed he co-owns World Liberty, whose UAE ownership could derail Justin Sun’s federal lawsuit over frozen WLFI tokens"
+          "source": "CoinTelegraph",
+          "title": "Binance warns iOS flaw could expose crypto wallet keys",
+          "link": "https://cointelegraph.com/news/binance-warns-ios-flaw-could-expose-crypto-wallet-keys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 11:25:57",
+          "summary": "    The exchange urged iPhone users to remove apps installed from untrusted sources, and it is unclear whether Apple’s latest iOS updates fix the flaw. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin bulls can&#39;t rely on ETF flows",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/09/bitcoin-bulls-can-t-rely-on-etf-flows",
-          "pubDate": "2026-11-09 12:30:00",
-          "summary": "Your day-ahead look for Nov. 9, 2026"
+          "source": "CoinTelegraph",
+          "title": "Ex-employee sues Ethereum Foundation and Vitalik Buterin over firing",
+          "link": "https://cointelegraph.com/news/ex-employee-sues-ethereum-foundation-vitalik-buterin-over-firing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 10:56:51",
+          "summary": "    Kayleen Fulton alleges she was fired less than two weeks after disclosing a cancer diagnosis and helping organize a staff letter challenging a requirement to endorse the foundation’s new mandate. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Nvidia-led tech selloff weighs on crypto majors",
-          "link": "https://www.coindesk.com/markets/2026/11/09/tech-selloff-weighs-on-crypto-majors",
-          "pubDate": "2026-11-09 11:42:04",
-          "summary": "Only five of the top 100 cryptocurrencies by market value are up 1% or more over the past 24 hours. That is the state of the market today."
+          "source": "CoinTelegraph",
+          "title": "Bitcoin price eyes $74K as Fed rate-hike bets hit 96% after Waller speech",
+          "link": "https://cointelegraph.com/markets/bitcoin-price-eyes-74k-fed-rate-hike-expected-after-waller-speech?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 10:08:22",
+          "summary": "    Bitcoin price action and stock futures trended lower after Fed governor Christopher Waller said that he would vote to raise interest rates by 0.25% at the December FOMC meeting.  "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "BitGo Q3 profit nearly doubles on crypto gains as revenue falls 51%",
+          "link": "https://cointelegraph.com/news/bitgo-q3-2026-earnings-crypto-treasury-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 09:05:16",
+          "summary": "    BitGo’s $71 million unrealized gain on its crypto holdings helped nearly double its net income, but revenue and earnings came in below preliminary analyst expectations. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "BlackRock Bitcoin ETF outflows hit $1.66B over seven trading sessions",
+          "link": "https://cointelegraph.com/markets/blackrock-ibit-bitcoin-etf-outflows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 08:02:05",
+          "summary": "    US spot Bitcoin ETFs shed $201 million Monday, with seven straight sessions of net withdrawals from BlackRock’s IBIT totaling $1.66 billion. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Securitize agrees to buy River One to expand into asset-backed lending",
+          "link": "https://cointelegraph.com/news/securitize-river-one-asset-backed-lending?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 07:49:14",
+          "summary": "    Securitize agreed to buy River One to bring stablecoin funding to asset-backed lending and expects the deal to close in the fourth quarter of 2026.  "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 06:00:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Crypto exchanges need hard dollar caps on hot wallets, CertiK says",
+          "link": "https://cointelegraph.com/news/crypto-exchanges-need-dollar-caps-on-hot-wallets-certik?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 05:05:58",
+          "summary": "    “Cold storage is a useful measure of online exposure, but it is not a standalone security score,” the cybersecurity firm told Cointelegraph.  "
         },
         {
           "source": "CoinTelegraph",
@@ -3254,67 +3332,25 @@
           "summary": "    Control Room cuts off model output for internal research jobs when people or automated monitors flag safety or security concerns. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "HIVE, MARA mine more Bitcoin but earn less as crypto prices fall",
-          "link": "https://cointelegraph.com/markets/hives-bitcoin-output-jumps-49-but-mining-revenue-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 00:42:39",
-          "summary": "    Both miners reported higher Bitcoin production but lower mining revenue and rising electricity costs as they expanded their AI infrastructure businesses. "
+          "source": "Decrypt",
+          "title": "Binance Halts MEXC Transfers as FinCEN Cuts Exchange Off From US Financial System",
+          "link": "https://decrypt.co/382926/binance-halts-mexc-transfers-as-fincen-cuts-exchange-off-from-us-financial-system",
+          "pubDate": "2026-11-10 12:13:27",
+          "summary": "The exchange will reject withdrawals to MEXC and hold deposits from it for review, after FinCEN tied it to $16 billion in suspicious flows."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 22:06:26",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "source": "Decrypt",
+          "title": "Nvidia, Jensen Huang Sued by Shareholders Over Alleged Ties to Suspected Chinese Spy",
+          "link": "https://decrypt.co/382913/nvidia-jensen-huang-sued-by-shareholders-over-alleged-ties-to-suspected-chinese-spy",
+          "pubDate": "2026-11-10 11:26:56",
+          "summary": "A proposed class action claims the chipmaker misled investors about the CEO&#39;s alleged affair and the national security risks it posed."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Should you leave Australia to avoid paying 47% tax on crypto gains?",
-          "link": "https://cointelegraph.com/magazine/should-you-leave-australia-to-avoid-47-tax-on-crypto-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 21:00:00",
-          "summary": "    Some Australian crypto investors are moving overseas to avoid the huge CGT increase from July 2027. But there are also less drastic ways you can pay less tax. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "North Korean hackers create memecoins to launder funds from Binance hack: Elliptic",
-          "link": "https://cointelegraph.com/news/north-korean-hackers-memecoins-launder-binance-hack-elliptic?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 20:26:34",
-          "summary": "    The blockchain firm traced stolen funds through six new tokens on NEAR, where hackers used liquidity pools to obscure transfers between wallets. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Formation Securities plans Solana stock trading venue under SEC exemption",
-          "link": "https://cointelegraph.com/news/formation-securities-solana-stock-trading-venue-sec-exemption?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 19:52:34",
-          "summary": "    The proposed venue would offer 24/7 trading of tokenized shares from Galaxy Digital, Exodus and Forward Industries, with a launch planned for early 2027. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Mercado Bitcoin begins post-hack reopening without a timeline for withdrawals",
-          "link": "https://cointelegraph.com/news/mercado-bitcoin-reopening-withdrawals-hack-suspended?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 18:25:29",
-          "summary": "    Customers can view their pre-hack balances as access returns in phases. The exchange has yet to say when withdrawals will resume. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "PNC Bank tests turning USDC payments into dollar deposits",
-          "link": "https://cointelegraph.com/news/pnc-bank-launches-usdc-payment-pilot-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 17:48:35",
-          "summary": "    The pilot lets eligible corporate and institutional clients accept USDC on Ethereum, with each token converted to one US dollar before deposit. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Avalanche’s AVAX leads crypto gains following NYSE tokenization deal",
-          "link": "https://cointelegraph.com/news/avalanche-avax-crypto-nyse-tokenization-deal?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 17:41:02",
-          "summary": "    Avalanche’s AVAX token rose as much as 10% after the NYSE selected its blockchain to support settlement on a planned tokenized stock trading platform. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin, tech stocks brush off Nvidia nerves as analyst mulls $68K target",
-          "link": "https://cointelegraph.com/markets/bitcoin-stocks-nvidia-analyst-68k-target?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 17:13:25",
-          "summary": "    Bitcoin rebounded from an 11-week low near $73,500 as the Nasdaq Composite rallied despite sell-off in Nvidia shares. "
+          "source": "Decrypt",
+          "title": "&#39;Tough Questions&#39; Ahead: Warren Targets Prediction Markets, Trump Crypto as Banking Chair",
+          "link": "https://decrypt.co/382910/tough-questions-ahead-warren-targets-prediction-markets-trump-crypto-as-banking-chair",
+          "pubDate": "2026-11-10 10:41:06",
+          "summary": "An aide said Trump family crypto businesses should &quot;preserve their documents&quot; as Warren prepares to take over the Senate Banking Committee."
         },
         {
           "source": "Decrypt",
@@ -3364,46 +3400,14 @@
           "link": "https://decrypt.co/382859/solana-tokenized-stock-venue-formation-sec",
           "pubDate": "2026-11-09 17:46:02",
           "summary": "Operating under the SEC’s “Innovation Exemption,” the firm plans to list tokenized shares of Exodus, Forward Industries, and Galaxy Digital in early 2027, with the same voting and dividend rights as real stock."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Vitalik Buterin Moves On From ‘Ultrasound Money,’ Says ETH’s Value Is Stability",
-          "link": "https://decrypt.co/382837/vitalik-buterin-moves-on-from-ultrasound-money-says-eths-value-is-stability",
-          "pubDate": "2026-11-09 17:14:10",
-          "summary": "The Ethereum co-founder says ETH&#39;s value comes from stability, not fee burns, citing its decentralization, censorship resistance and security."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Tom Lee’s Bitmine Adds $20M in Ethereum, Seizing on Vitalik’s &#39;ETH Is Money&#39; Declaration",
-          "link": "https://decrypt.co/382854/tom-lee-bitmine-adds-20m-ethereum-vitalik-eth-money",
-          "pubDate": "2026-11-09 17:08:21",
-          "summary": "The firm’s stash reached 6.07 million ETH—4.97% of supply and 99% of the way to its “Alchemy of 5%” goal—as chairman Tom Lee called Vitalik Buterin’s “ETH is money” comments a “seismic shift.”"
-        },
-        {
-          "source": "Decrypt",
-          "title": "NYSE Taps Avalanche to Settle Its Planned Tokenized Stock Platform",
-          "link": "https://decrypt.co/382833/nyse-avalanche-settle-tokenized-stock-platform",
-          "pubDate": "2026-11-09 15:49:22",
-          "summary": "Ava Labs said Avalanche will serve as the “core ledger technology” for the clearing firm behind the NYSE-affiliated venue, which aims to bring 24/7 trading, clearing and settlement of tokenized securities onchain."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
+          "sentiment": "BULLISH",
+          "impact": 0.5,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
-          ],
-          "multiSourced": true,
-          "critical": true,
-          "critHead": "Mercado Bitcoin begins post-hack reopening without a timeline for withdrawals"
-        },
-        "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -1,
-          "sources": [
             "CoinTelegraph",
             "Decrypt"
           ],
@@ -3411,22 +3415,33 @@
           "critical": false,
           "critHead": ""
         },
-        "SOL": {
+        "ETH": {
           "sentiment": "BEARISH",
-          "impact": -0.83,
+          "impact": -0.67,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
           "multiSourced": true,
+          "critical": false,
+          "critHead": ""
+        },
+        "SOL": {
+          "sentiment": "BEARISH",
+          "impact": -0.5,
+          "sources": [
+            "Decrypt"
+          ],
+          "multiSourced": false,
           "critical": true,
-          "critHead": "Solana set for its first tokenized stock venue under SEC framework, listing Galaxy"
+          "critHead": "Solana Set for Another Tokenized Stock Venue as Formation Notifies the SEC"
         },
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3456,14 +3471,12 @@
           "critHead": ""
         },
         "AVAX": {
-          "sentiment": "BEARISH",
-          "impact": -0.5,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
-            "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinDesk"
           ],
-          "multiSourced": true,
+          "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
@@ -3502,39 +3515,35 @@
       },
       "breaker": [
         {
-          "coin": "BTC",
-          "head": "Mercado Bitcoin begins post-hack reopening without a timeline for withdrawals"
-        },
-        {
           "coin": "SOL",
-          "head": "Solana set for its first tokenized stock venue under SEC framework, listing Galaxy"
+          "head": "Solana Set for Another Tokenized Stock Venue as Formation Notifies the SEC"
         }
       ],
       "fearGreed": {
         "value": 32,
         "classification": "Fear",
-        "t": 1794284464327
+        "t": 1794314880446
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794284464904,
+      "fetchedAt": 1794314881414,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.79,
+        "ARB": 8.28,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 16.56,
+        "ETHFI": 17.61,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
         "WLD": 20,
         "GRASS": 20,
-        "ZEC": 13.93,
+        "ZEC": 13.61,
         "AERO": 20
       },
       "positions": [
@@ -3542,35 +3551,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 897.26,
+          "pct": 877.44,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 102.6,
+          "pct": 109.09,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.79,
+          "pct": 8.28,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 27.82,
+          "pct": 29.58,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 138.82,
+          "pct": 147.6,
           "lev": 10
         },
         {
@@ -3584,77 +3593,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 16.56,
+          "pct": 17.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 185.93,
+          "pct": 197.7,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 24.23,
+          "pct": 25.76,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 75.4,
+          "pct": 80.17,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 38.49,
+          "pct": 40.93,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 20.9,
+          "pct": 20.41,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 73.36,
+          "pct": 71.64,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 205.12,
+          "pct": 200.3,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 13.93,
+          "pct": 13.61,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 196.41,
+          "pct": 191.8,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1156.84,
+          "pct": 1122.46,
           "lev": 10
         }
       ]
@@ -3668,7 +3677,7 @@
       "winRate": 88.4,
       "pf": 66.55,
       "expPerTrade": 0.727,
-      "updatedAt": 1794284465743,
+      "updatedAt": 1794314882477,
       "gen": 7
     },
     "minScore": 75
