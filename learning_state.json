@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794264235002,
+  "updatedAt": 1794284465745,
   "brain": {
     "v": 1,
     "gen": 7,
-    "cycles": 42,
+    "cycles": 43,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1794264234179,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 68
+          "beta": 71
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 68
+          "beta": 71
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 68
+          "beta": 71
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 68,
+          "alpha": 71,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 68
+          "beta": 71
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 68,
+          "alpha": 71,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794284465740,
+        "type": "CYCLE",
+        "text": "[CYCLE #43] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794284464327,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 32 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794264235000,
         "type": "CYCLE",
         "text": "[CYCLE #42] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3149,9 +3159,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1050,
+      "newsIngested": 1080,
       "lessons": 0,
-      "backtests": 1194,
+      "backtests": 1224,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3164,8 +3174,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1794264232449,
+      "fetchedAt": 1794284464327,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Securitize pushes into $6 trillion asset-backed finance market with River One acquisition",
+          "link": "https://www.coindesk.com/business/2026/11/09/securitize-pushes-into-usd6-trillion-asset-backed-finance-market-with-river-one-acquisition",
+          "pubDate": "2026-11-09 22:56:27",
+          "summary": "The tokenization firm unveiled an acquisition and a $50 million stock buyback as quarterly revenue rose 13%. SECZ shares jumped 10% after hours."
+        },
         {
           "source": "CoinDesk",
           "title": "Robinhood backs tokenization of its stock on OKX–ICE platform even as most companies opt out",
@@ -3230,11 +3247,18 @@
           "summary": "Only five of the top 100 cryptocurrencies by market value are up 1% or more over the past 24 hours. That is the state of the market today."
         },
         {
-          "source": "CoinDesk",
-          "title": "Zcash developers want 20-second blocks just days after major speed upgrade",
-          "link": "https://www.coindesk.com/tech/2026/11/09/zcash-developers-want-20-second-blocks-just-days-after-major-speed-upgrade",
-          "pubDate": "2026-11-09 10:52:49",
-          "summary": "Early data shows Zcash&#39;s orphan-block rate holding close to pre-upgrade levels despite blocks arriving three times faster, encouraging developers to push for another reduction."
+          "source": "CoinTelegraph",
+          "title": "OpenAI builds kill switch to stop rogue agents within 35 seconds",
+          "link": "https://cointelegraph.com/news/openai-builds-kill-switch-stop-rogue-agents?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 03:04:54",
+          "summary": "    Control Room cuts off model output for internal research jobs when people or automated monitors flag safety or security concerns. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "HIVE, MARA mine more Bitcoin but earn less as crypto prices fall",
+          "link": "https://cointelegraph.com/markets/hives-bitcoin-output-jumps-49-but-mining-revenue-falls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 00:42:39",
+          "summary": "    Both miners reported higher Bitcoin production but lower mining revenue and rising electricity costs as they expanded their AI infrastructure businesses. "
         },
         {
           "source": "CoinTelegraph",
@@ -3293,18 +3317,11 @@
           "summary": "    Bitcoin rebounded from an 11-week low near $73,500 as the Nasdaq Composite rallied despite sell-off in Nvidia shares. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Analysts see no broader ‘contagion’ from $6.3B Binance hack",
-          "link": "https://cointelegraph.com/markets/analysts-no-contagion-effect-63b-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 13:52:46",
-          "summary": "    Binance’s pledge to cover all user losses helped contain the fallout from the $6.3 billion hack, analysts said. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "The $2.85B Binance hackers lost shows why the UK needs stablecoin freeze rules",
-          "link": "https://cointelegraph.com/opinion/285b-binance-hackers-lost-shows-why-uk-needs-stablecoin-freeze-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-09 13:30:00",
-          "summary": "    The Binance hack proved stablecoin freezes work. Now the UK should make clear freeze rules a condition of listing coins. "
+          "source": "Decrypt",
+          "title": "Anthropic&#39;s Claude Fable 5.2 and Mythos 5.0 Are Impressive, But Be Prepared to Sell a Kidney to Afford Them",
+          "link": "https://decrypt.co/382897/anthropic-claude-fable-5-2-and-mythos-5-2-impressive-and-expensive",
+          "pubDate": "2026-11-09 22:36:02",
+          "summary": "Anthropic&#39;s latest AI can build complex software and even design physical objects. Users are producing impressive results, and estimated bills large enough to make developers wince."
         },
         {
           "source": "Decrypt",
@@ -3368,19 +3385,12 @@
           "link": "https://decrypt.co/382833/nyse-avalanche-settle-tokenized-stock-platform",
           "pubDate": "2026-11-09 15:49:22",
           "summary": "Ava Labs said Avalanche will serve as the “core ledger technology” for the clearing firm behind the NYSE-affiliated venue, which aims to bring 24/7 trading, clearing and settlement of tokenized securities onchain."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Strategy Buys $82M in Bitcoin, Buys Back $188M of STRC",
-          "link": "https://decrypt.co/382820/strategy-buys-82m-in-bitcoin-buys-back-188m-of-strc",
-          "pubDate": "2026-11-09 13:24:29",
-          "summary": "The Bitcoin treasury firm sold $284 million of MSTR stock to fund the moves, days before MSCI names companies facing index removal."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "BULLISH",
-          "impact": 0.17,
+          "sentiment": "BEARISH",
+          "impact": -0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3501,30 +3511,30 @@
         }
       ],
       "fearGreed": {
-        "value": 29,
+        "value": 32,
         "classification": "Fear",
-        "t": 1794264232449
+        "t": 1794284464327
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794264233351,
+      "fetchedAt": 1794284464904,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 7.35,
+        "ARB": 7.79,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
-        "ETHFI": 15.64,
+        "ETHFI": 16.56,
         "ENA": 0,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
-        "WLD": 18.32,
+        "WLD": 20,
         "GRASS": 20,
-        "ZEC": 12.21,
+        "ZEC": 13.93,
         "AERO": 20
       },
       "positions": [
@@ -3532,35 +3542,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 878.88,
+          "pct": 897.26,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 96.9,
+          "pct": 102.6,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 7.35,
+          "pct": 7.79,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 26.28,
+          "pct": 27.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 131.1,
+          "pct": 138.82,
           "lev": 10
         },
         {
@@ -3574,77 +3584,77 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 15.64,
+          "pct": 16.56,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 175.6,
+          "pct": 185.93,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 22.88,
+          "pct": 24.23,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 71.21,
+          "pct": 75.4,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 36.36,
+          "pct": 38.49,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "WLD",
           "side": "LONG",
-          "pct": 18.32,
+          "pct": 20.9,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 64.29,
+          "pct": 73.36,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 179.76,
+          "pct": 205.12,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ZEC",
           "side": "LONG",
-          "pct": 12.21,
+          "pct": 13.93,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 172.13,
+          "pct": 196.41,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1118.84,
+          "pct": 1156.84,
           "lev": 10
         }
       ]
@@ -3658,7 +3668,7 @@
       "winRate": 88.4,
       "pf": 66.55,
       "expPerTrade": 0.727,
-      "updatedAt": 1794264235001,
+      "updatedAt": 1794284465743,
       "gen": 7
     },
     "minScore": 75

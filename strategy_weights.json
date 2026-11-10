@@ -1,7 +1,5 @@
 {
-<<<<<<< Updated upstream
-=======
-  "updatedAt": 1794264235002,
+  "updatedAt": 1794284465745,
   "gen": 7,
   "champion": {
     "id": "emax",
@@ -12,10 +10,9 @@
     "winRate": 88.4,
     "pf": 66.55,
     "expPerTrade": 0.727,
-    "updatedAt": 1794264235001,
+    "updatedAt": 1794284465743,
     "gen": 7
   },
->>>>>>> Stashed changes
   "weights": {
     "elder": 0.57,
     "donchian": 0.7,
@@ -34,5 +31,5 @@
     "MOMENTUM": 1,
     "SCALP": 1
   },
-  "updatedAt": 1794264235003
+  "bayesianCells": 10
 }
