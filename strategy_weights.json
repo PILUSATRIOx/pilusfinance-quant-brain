@@ -1,8 +1,6 @@
 {
-<<<<<<< Updated upstream
-=======
-  "updatedAt": 1794380427754,
-  "gen": 7,
+  "updatedAt": 1794409213851,
+  "gen": 8,
   "champion": {
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
@@ -12,19 +10,18 @@
     "winRate": 89.4,
     "pf": 66.48,
     "expPerTrade": 0.722,
-    "updatedAt": 1794380427753,
-    "gen": 7
+    "updatedAt": 1794409213850,
+    "gen": 8
   },
->>>>>>> Stashed changes
   "weights": {
     "elder": 0.57,
-    "donchian": 0.7,
+    "donchian": 0.75,
     "bbrev": 0.34,
-    "wyckoff": 0.95,
+    "wyckoff": 0.99,
     "rsidiv": 0.34,
-    "macdm": 0.66,
-    "smc": 1.09,
-    "statarb": 0.38,
+    "macdm": 0.69,
+    "smc": 1.17,
+    "statarb": 0.37,
     "tsmom": 0.83,
     "emax": 1.07,
     "TREND_PULLBACK": 1,
@@ -34,5 +31,5 @@
     "MOMENTUM": 1,
     "SCALP": 1
   },
-  "updatedAt": 1794380427756
+  "bayesianCells": 10
 }
