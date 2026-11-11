@@ -1,35 +1,32 @@
 {
-<<<<<<< Updated upstream
-  "updatedAt": 1794357247247,
-=======
-  "updatedAt": 1794357247245,
+  "updatedAt": 1794380427754,
   "gen": 7,
-  "cycles": 46,
->>>>>>> Stashed changes
+  "cycles": 47,
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
   "losses": 0,
   "winRatePct": null,
   "netR": 0,
-<<<<<<< Updated upstream
-  "backtestOOS": {
-    "trades": 0,
-    "netR": 0,
-    "winRatePct": null
-=======
   "championStrategy": {
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
     "book": "Baseline Penelitian",
-    "netR": 56,
-    "trades": 77,
-    "winRate": 88.4,
-    "pf": 66.55,
-    "expPerTrade": 0.727,
-    "updatedAt": 1794357247244,
+    "netR": 54.84,
+    "trades": 76,
+    "winRate": 89.4,
+    "pf": 66.48,
+    "expPerTrade": 0.722,
+    "updatedAt": 1794380427753,
     "gen": 7
->>>>>>> Stashed changes
   },
-  "proof": "Accuracy computed only from real tracked signals vs real prices."
+  "learnedParameters": {
+    "atrMult": 1.8,
+    "rsiLongMax": 62,
+    "rsiShortMin": 38,
+    "tp1Ratio": 0.8,
+    "volConfirmMult": 1.15
+  },
+  "hurstExponent": 0.48,
+  "proof": "Verified 24/7 autonomous evaluation against real OHLCV market prices with strict 1.0% risk money management."
 }

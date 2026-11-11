@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794357247245,
+  "updatedAt": 1794380427754,
   "brain": {
     "v": 1,
     "gen": 7,
-    "cycles": 46,
+    "cycles": 47,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1794264234179,
     "autoExecBursa": false,
@@ -59,8 +59,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 14,
-          "beta": 24
+          "alpha": 15,
+          "beta": 26
         }
       },
       "donchian": {
@@ -73,8 +73,8 @@
           "beta": 4
         },
         "RANGING": {
-          "alpha": 13,
-          "beta": 25
+          "alpha": 15,
+          "beta": 26
         }
       },
       "bbrev": {
@@ -87,7 +87,7 @@
           "beta": 4
         },
         "RANGING": {
-          "alpha": 23,
+          "alpha": 26,
           "beta": 15
         }
       },
@@ -101,8 +101,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 25,
-          "beta": 13
+          "alpha": 26,
+          "beta": 15
         }
       },
       "rsidiv": {
@@ -115,8 +115,8 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 17,
-          "beta": 9
+          "alpha": 19,
+          "beta": 10
         }
       },
       "macdm": {
@@ -129,8 +129,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 12,
-          "beta": 26
+          "alpha": 14,
+          "beta": 27
         }
       },
       "smc": {
@@ -144,7 +144,7 @@
         },
         "RANGING": {
           "alpha": 17,
-          "beta": 21
+          "beta": 24
         }
       },
       "statarb": {
@@ -157,8 +157,8 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 13,
-          "beta": 25
+          "alpha": 15,
+          "beta": 26
         }
       },
       "tsmom": {
@@ -185,12 +185,12 @@
           "beta": 3
         },
         "RANGING": {
-          "alpha": 20,
+          "alpha": 23,
           "beta": 18
         }
       }
     },
-    "lastHurst": 0.47,
+    "lastHurst": 0.48,
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
@@ -350,42 +350,42 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 24,
-          "wins": 17,
-          "losses": 7,
-          "winRate": 70.83333333333334,
-          "pf": 1.9784852272017703,
-          "exp": 0.32443034201157545,
-          "netR": 7.78632820827781,
-          "maxDD": 2.3280536633627866,
-          "atrMult": 1.8,
+          "trades": 26,
+          "wins": 15,
+          "losses": 11,
+          "winRate": 57.692307692307686,
+          "pf": 1.0685236395653381,
+          "exp": 0.03348068877827817,
+          "netR": 0.8704979082352325,
+          "maxDD": 6.291290833908468,
+          "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 29,
-          "wins": 19,
+          "trades": 28,
+          "wins": 18,
           "losses": 10,
-          "winRate": 65.51724137931035,
-          "pf": 0.9593587774641729,
-          "exp": -0.01600152642128774,
-          "netR": -0.4640442662173444,
-          "maxDD": 3.224802497243671,
+          "winRate": 64.28571428571429,
+          "pf": 0.8329536671441837,
+          "exp": -0.0676698449450163,
+          "netR": -1.8947556584604563,
+          "maxDD": 4.314532681332811,
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 29,
-          "wins": 13,
-          "losses": 16,
-          "winRate": 44.827586206896555,
-          "pf": 0.6626028427929125,
-          "exp": -0.21009827659943464,
-          "netR": -6.0928500213836045,
-          "maxDD": 9.37174256358552,
+          "trades": 26,
+          "wins": 11,
+          "losses": 15,
+          "winRate": 42.30769230769231,
+          "pf": 0.5934035321523453,
+          "exp": -0.26480634890877075,
+          "netR": -6.88496507162804,
+          "maxDD": 9.371764161864972,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -586,42 +586,42 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 15,
-          "wins": 9,
-          "losses": 6,
-          "winRate": 60,
-          "pf": 1.191342117050867,
-          "exp": 0.08667358955583732,
-          "netR": 1.3001038433375598,
-          "maxDD": 4.871370081173243,
-          "atrMult": 1.8,
+          "trades": 13,
+          "wins": 10,
+          "losses": 3,
+          "winRate": 76.92307692307693,
+          "pf": 2.5504669073882105,
+          "exp": 0.399598338895311,
+          "netR": 5.194778405639043,
+          "maxDD": 2.2502437911519557,
+          "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 13,
-          "wins": 8,
+          "trades": 12,
+          "wins": 7,
           "losses": 5,
-          "winRate": 61.53846153846154,
-          "pf": 1.0966794700277638,
-          "exp": 0.043806666267734315,
-          "netR": 0.569486661480546,
-          "maxDD": 4.046022544111084,
+          "winRate": 58.333333333333336,
+          "pf": 1.0287610892470154,
+          "exp": 0.014118038269106958,
+          "netR": 0.1694164592292835,
+          "maxDD": 4.046035457731982,
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
           "trades": 17,
-          "wins": 9,
-          "losses": 8,
-          "winRate": 52.94117647058824,
-          "pf": 0.5334139926963284,
-          "exp": -0.243483125590331,
-          "netR": -4.139213135035627,
-          "maxDD": 4.539213135035627,
+          "wins": 10,
+          "losses": 7,
+          "winRate": 58.82352941176471,
+          "pf": 0.6610047127576736,
+          "exp": -0.15482180738803003,
+          "netR": -2.6319707255965104,
+          "maxDD": 3.565246669553121,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -822,28 +822,28 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 18,
+          "trades": 17,
           "wins": 12,
-          "losses": 6,
-          "winRate": 66.66666666666666,
-          "pf": 1.0069887813875522,
-          "exp": 0.002703168489017755,
-          "netR": 0.04865703280231959,
-          "maxDD": 3.0869605892798444,
+          "losses": 5,
+          "winRate": 70.58823529411765,
+          "pf": 1.196855072352606,
+          "exp": 0.06783043107694964,
+          "netR": 1.1531173283081437,
+          "maxDD": 3.087046478979202,
           "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
           "trades": 8,
-          "wins": 8,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.6849285922283097,
-          "netR": 5.479428737826478,
-          "maxDD": 0,
-          "atrMult": 2,
+          "wins": 5,
+          "losses": 3,
+          "winRate": 62.5,
+          "pf": 1.4419009161347252,
+          "exp": 0.19884748343677494,
+          "netR": 1.5907798674941995,
+          "maxDD": 2.441750576180608,
+          "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
@@ -852,12 +852,12 @@
           "wins": 6,
           "losses": 4,
           "winRate": 60,
-          "pf": 0.7972806814098274,
-          "exp": -0.09043425240743058,
-          "netR": -0.9043425240743058,
-          "maxDD": 3.2610574382531854,
+          "pf": 1.0639674878497614,
+          "exp": 0.02853625871518397,
+          "netR": 0.2853625871518397,
+          "maxDD": 3.261056651498682,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1058,14 +1058,14 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 8,
-          "wins": 4,
+          "trades": 10,
+          "wins": 6,
           "losses": 4,
-          "winRate": 50,
-          "pf": 0.3575993027288331,
-          "exp": -0.3592852068608748,
-          "netR": -2.8742816548869983,
-          "maxDD": 4.074281654886998,
+          "winRate": 60,
+          "pf": 0.5363637647805184,
+          "exp": -0.20745751998778048,
+          "netR": -2.074575199877805,
+          "maxDD": 4.074575199877804,
           "atrMult": 2,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1075,25 +1075,25 @@
           "wins": 4,
           "losses": 10,
           "winRate": 28.57142857142857,
-          "pf": 0.3111786930246907,
-          "exp": -0.5844907593077817,
-          "netR": -8.182870630308944,
-          "maxDD": 8.907961848226748,
+          "pf": 0.31117646121356807,
+          "exp": -0.5844967025079625,
+          "netR": -8.182953835111475,
+          "maxDD": 8.908039221176892,
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
           "trades": 11,
-          "wins": 8,
-          "losses": 3,
-          "winRate": 72.72727272727273,
-          "pf": 2.0463474171967806,
-          "exp": 0.31005915992612704,
-          "netR": 3.4106507591873974,
-          "maxDD": 2.166967377536166,
+          "wins": 7,
+          "losses": 4,
+          "winRate": 63.63636363636363,
+          "pf": 1.4469309306884306,
+          "exp": 0.1760691646245884,
+          "netR": 1.9367608108704724,
+          "maxDD": 2.1669668926450973,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1298,23 +1298,23 @@
           "wins": 3,
           "losses": 3,
           "winRate": 50,
-          "pf": 1.0333336788919305,
-          "exp": 0.018644979891996077,
-          "netR": 0.11186987935197645,
-          "maxDD": 3.356061589081249,
+          "pf": 0.6986131602172025,
+          "exp": -0.16858238124445388,
+          "netR": -1.0114942874667232,
+          "maxDD": 3.3561328961665478,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 10,
-          "wins": 7,
+          "trades": 9,
+          "wins": 6,
           "losses": 3,
-          "winRate": 70,
-          "pf": 1.124250435424319,
-          "exp": 0.04325564888268354,
-          "netR": 0.4325564888268354,
-          "maxDD": 2.6813277502782267,
+          "winRate": 66.66666666666666,
+          "pf": 1.0093375799319804,
+          "exp": 0.003611957165601908,
+          "netR": 0.03250761449041717,
+          "maxDD": 2.6813746952870403,
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1324,12 +1324,12 @@
           "wins": 4,
           "losses": 1,
           "winRate": 80,
-          "pf": 3.4140693530380983,
-          "exp": 0.5507302455229871,
-          "netR": 2.7536512276149354,
-          "maxDD": 1.1406678205617724,
+          "pf": 3.4140693974453087,
+          "exp": 0.5507302554968152,
+          "netR": 2.7536512774840762,
+          "maxDD": 1.140667820236705,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1530,14 +1530,14 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 9,
-          "wins": 6,
+          "trades": 10,
+          "wins": 7,
           "losses": 3,
-          "winRate": 66.66666666666666,
-          "pf": 1.7287690439911156,
-          "exp": 0.27020576349206876,
-          "netR": 2.431851871428619,
-          "maxDD": 2.235362259430728,
+          "winRate": 70,
+          "pf": 1.8485504437598603,
+          "exp": 0.28316745943700933,
+          "netR": 2.831674594370093,
+          "maxDD": 2.235504349919074,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
@@ -1547,25 +1547,25 @@
           "wins": 6,
           "losses": 2,
           "winRate": 75,
-          "pf": 1.0239061664732794,
-          "exp": 0.007004401552425821,
-          "netR": 0.056035212419406566,
-          "maxDD": 1.5439647875805935,
+          "pf": 1.023975652305721,
+          "exp": 0.0070242839031575965,
+          "netR": 0.05619427122526077,
+          "maxDD": 1.5438057287747393,
           "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 10,
-          "wins": 5,
-          "losses": 5,
+          "trades": 8,
+          "wins": 4,
+          "losses": 4,
           "winRate": 50,
-          "pf": 0.358939157856703,
-          "exp": -0.35719749607214696,
-          "netR": -3.5719749607214695,
-          "maxDD": 3.9719749607214694,
+          "pf": 0.358365868069687,
+          "exp": -0.3580888634213025,
+          "netR": -2.86471090737042,
+          "maxDD": 2.86471090737042,
           "atrMult": 1.5,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1766,15 +1766,15 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 5,
-          "wins": 4,
-          "losses": 1,
-          "winRate": 80,
-          "pf": 1.4079692936682617,
-          "exp": 0.09272231614775776,
-          "netR": 0.46361158073878883,
-          "maxDD": 1.1363884192612113,
-          "atrMult": 2,
+          "trades": 4,
+          "wins": 2,
+          "losses": 2,
+          "winRate": 50,
+          "pf": 0.3454550352808782,
+          "exp": -0.3789465475221299,
+          "netR": -1.5157861900885197,
+          "maxDD": 1.5157861900885197,
+          "atrMult": 1.5,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
@@ -1784,9 +1784,9 @@
           "losses": 3,
           "winRate": 0,
           "pf": 0,
-          "exp": -1.1861212731247484,
-          "netR": -3.5583638193742453,
-          "maxDD": 3.5583638193742453,
+          "exp": -1.1861234467005437,
+          "netR": -3.5583703401016313,
+          "maxDD": 3.5583703401016313,
           "atrMult": 1.5,
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1796,12 +1796,12 @@
           "wins": 2,
           "losses": 2,
           "winRate": 50,
-          "pf": 0.8816626479106543,
-          "exp": -0.06523765822711325,
-          "netR": -0.260950632908453,
-          "maxDD": 2.2051417266074447,
+          "pf": 0.8816627022042133,
+          "exp": -0.06523762428331598,
+          "netR": -0.2609504971332639,
+          "maxDD": 2.205141590976526,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2002,42 +2002,42 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 4,
+          "trades": 3,
           "wins": 2,
-          "losses": 2,
-          "winRate": 50,
-          "pf": 0.8632919015961751,
-          "exp": -0.07499826807331242,
-          "netR": -0.2999930722932497,
-          "maxDD": 2.194406006636812,
-          "atrMult": 2,
+          "losses": 1,
+          "winRate": 66.66666666666666,
+          "pf": 1.6616379090215112,
+          "exp": 0.24914575872927822,
+          "netR": 0.7474372761878346,
+          "maxDD": 1.1296772237449504,
+          "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
           "trades": 6,
-          "wins": 4,
-          "losses": 2,
-          "winRate": 66.66666666666666,
-          "pf": 1.1967321643120712,
-          "exp": 0.07422752258552386,
-          "netR": 0.44536513551314316,
-          "maxDD": 1.171659620053895,
-          "atrMult": 2,
+          "wins": 5,
+          "losses": 1,
+          "winRate": 83.33333333333334,
+          "pf": 2.806186169934414,
+          "exp": 0.3318513231981736,
+          "netR": 1.9911079391890418,
+          "maxDD": 1.102382452226031,
+          "atrMult": 1.8,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
           "trades": 7,
-          "wins": 6,
-          "losses": 1,
-          "winRate": 85.71428571428571,
-          "pf": 5.183294638907596,
-          "exp": 0.6727775881438232,
-          "netR": 4.709443117006762,
-          "maxDD": 1.125773707930016,
-          "atrMult": 1.5,
-          "regime": "CHAOS",
+          "wins": 5,
+          "losses": 2,
+          "winRate": 71.42857142857143,
+          "pf": 1.4322140878362821,
+          "exp": 0.13667966620028413,
+          "netR": 0.9567576634019889,
+          "maxDD": 1.4136198016858674,
+          "atrMult": 1.8,
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2199,42 +2199,42 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 29,
+          "trades": 30,
           "wins": 14,
-          "losses": 15,
-          "winRate": 48.275862068965516,
-          "pf": 0.4637019872505145,
-          "exp": -0.3139257725349214,
-          "netR": -9.10384740351272,
-          "maxDD": 10.756005838466674,
+          "losses": 16,
+          "winRate": 46.666666666666664,
+          "pf": 0.4368107025442832,
+          "exp": -0.3382970986119808,
+          "netR": -10.148912958359425,
+          "maxDD": 11.401071405398826,
           "atrMult": 1.8,
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 28,
-          "wins": 17,
-          "losses": 11,
-          "winRate": 60.71428571428571,
-          "pf": 0.9890325853448046,
-          "exp": -0.004898254549058052,
-          "netR": -0.13715112737362545,
-          "maxDD": 3.677661398602896,
+          "trades": 26,
+          "wins": 16,
+          "losses": 10,
+          "winRate": 61.53846153846154,
+          "pf": 1.0536684030562598,
+          "exp": 0.023446086730954406,
+          "netR": 0.6095982550048146,
+          "maxDD": 3.677762874928323,
           "atrMult": 2,
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 25,
-          "wins": 19,
+          "trades": 23,
+          "wins": 17,
           "losses": 6,
-          "winRate": 76,
-          "pf": 2.597673412219791,
-          "exp": 0.4157235084766755,
-          "netR": 10.393087711916888,
-          "maxDD": 2.406969787335856,
+          "winRate": 73.91304347826086,
+          "pf": 2.296625547591195,
+          "exp": 0.3667270768833313,
+          "netR": 8.43472276831662,
+          "maxDD": 2.40696492168643,
           "atrMult": 2,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2470,7 +2470,7 @@
           "netR": 0,
           "maxDD": 0,
           "atrMult": 1.8,
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2555,6 +2555,16 @@
     },
     "signals": [],
     "journal": [
+      {
+        "t": 1794380427750,
+        "type": "CYCLE",
+        "text": "[CYCLE #47] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794380426463,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
+      },
       {
         "t": 1794357247243,
         "type": "CYCLE",
@@ -3199,9 +3209,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1170,
+      "newsIngested": 1200,
       "lessons": 0,
-      "backtests": 1314,
+      "backtests": 1344,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3214,7 +3224,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794357245049,
+      "fetchedAt": 1794380426463,
       "items": [
         {
           "source": "CoinDesk",
@@ -3288,6 +3298,41 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 06:00:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Initia confirms second exploit in 3 weeks, $3.27M stolen in latest attack",
+          "link": "https://cointelegraph.com/news/initia-second-crypto-exploit-three-weeks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 05:52:14",
+          "summary": "    Initia said an attacker exploited compromised cloud credentials to move $3.27 million in crypto assets, with about $2.16 million remaining frozen on its halted network. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Across Protocol restores website after hackers hijack domain",
+          "link": "https://cointelegraph.com/news/across-protocol-restores-website-after-hackers-hijack-domain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 04:42:30",
+          "summary": "    The cross-chain bridge said a social engineering attack targeting domain registrar Namecheap allowed hackers to redirect users to a phishing site. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Crypto ally Tom Emmer elected House GOP minority whip",
+          "link": "https://cointelegraph.com/news/crypto-ally-tom-emmer-elected-house-gop-minority-whip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 03:07:45",
+          "summary": "    The Minnesota lawmaker, who helped establish the Congressional Crypto Caucus, will stay on as Republican whip after Democrats won the midterms.  "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "LNbits rushes emergency patch after reported Bitcoin wallet thefts",
+          "link": "https://cointelegraph.com/news/lnbits-rushes-emergency-patch-after-reported-bitcoin-wallet-thefts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 01:16:58",
+          "summary": "    The project warned that installations running older versions were vulnerable and urged operators to replace potentially exposed credentials even after upgrading. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "CFTC warns Kalshi of imminent charges over notification of contracts: Politico",
           "link": "https://cointelegraph.com/news/cftc-warns-kalshi-imminent-charges-over-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-10 23:49:51",
@@ -3299,13 +3344,6 @@
           "link": "https://cointelegraph.com/news/banks-270m-project-faro-stablecoin-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-10 23:08:28",
           "summary": "    Project Faro, backed by Goldman Sachs, Citigroup and BBVA, has secured $270 million in funding to launch a US dollar stablecoin in the first half of 2027. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 22:04:47",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -3327,34 +3365,6 @@
           "link": "https://cointelegraph.com/interview/ava-labs-nyse-general-purpose-chains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-10 21:07:44",
           "summary": "    Ava Labs’ John Nahas said the collaboration with the NYSE shows institutions moving past pilots toward purpose-built onchain market infrastructure. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Kimber Digital Securities gains broker-dealer status for tokenized assets",
-          "link": "https://cointelegraph.com/news/kimber-digital-securities-broker-dealer-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 20:26:02",
-          "summary": "    The Plume affiliate plans to offer tokenized US stocks, ETFs and bonds through self-custodial wallets, with traditional shareholder rights preserved. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Mercado Bitcoin to resume cash withdrawals after $49M hack",
-          "link": "https://cointelegraph.com/news/pix-withdrawals-resume-mercado-bitcoin-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 18:12:07",
-          "summary": "    Starting next week, customers can deposit and withdraw money through Brazil’s instant payment system. Crypto transfers remain suspended. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Hot US inflation raises odds of half-point Fed hike in December",
-          "link": "https://cointelegraph.com/news/hot-us-inflation-raises-rate-hike-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 17:31:09",
-          "summary": "    US inflation came in above forecasts in October, increasing expectations of a bigger rate hike in December and raising concerns for crypto investors. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Polymarket US trading volume jumps 266% despite regulatory battles",
-          "link": "https://cointelegraph.com/news/polymarket-us-trading-volume-jumps-regulatory-battles?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 17:07:48",
-          "summary": "    Trading volume on Polymarket’s US exchange surged from June to October, fueled by sports betting, even as the platform faces mounting regulatory scrutiny.  "
         },
         {
           "source": "Decrypt",
@@ -3429,16 +3439,16 @@
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
+          "sentiment": "BULLISH",
+          "impact": 0.5,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
             "Decrypt"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Mercado Bitcoin to resume cash withdrawals after $49M hack"
+          "critical": false,
+          "critHead": ""
         },
         "ETH": {
           "sentiment": "NEUTRAL",
@@ -3533,26 +3543,21 @@
           "critHead": ""
         }
       },
-      "breaker": [
-        {
-          "coin": "BTC",
-          "head": "Mercado Bitcoin to resume cash withdrawals after $49M hack"
-        }
-      ],
+      "breaker": [],
       "fearGreed": {
         "value": 29,
         "classification": "Fear",
-        "t": 1794357245049
+        "t": 1794380426463
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794357245968,
+      "fetchedAt": 1794380427019,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 9.91,
+        "ARB": 10.28,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3569,35 +3574,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 918.67,
+          "pct": 924.99,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 130.5,
+          "pct": 135.5,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 9.91,
+          "pct": 10.28,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 35.39,
+          "pct": 36.75,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 176.57,
+          "pct": 183.34,
           "lev": 10
         },
         {
@@ -3611,63 +3616,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 21.06,
+          "pct": 21.87,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 236.5,
+          "pct": 245.57,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 30.82,
+          "pct": 32,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 95.91,
+          "pct": 99.58,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 48.96,
+          "pct": 50.84,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 72.16,
+          "pct": 76.85,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 201.77,
+          "pct": 214.88,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 167.48,
+          "pct": 162.33,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1187.03,
+          "pct": 1184.8,
           "lev": 10
         }
       ]
@@ -3676,12 +3681,12 @@
       "id": "emax",
       "name": "EMA Cross Naive (CONTROL)",
       "book": "Baseline Penelitian",
-      "netR": 56,
-      "trades": 77,
-      "winRate": 88.4,
-      "pf": 66.55,
-      "expPerTrade": 0.727,
-      "updatedAt": 1794357247244,
+      "netR": 54.84,
+      "trades": 76,
+      "winRate": 89.4,
+      "pf": 66.48,
+      "expPerTrade": 0.722,
+      "updatedAt": 1794380427753,
       "gen": 7
     },
     "minScore": 75
