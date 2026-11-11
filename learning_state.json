@@ -1,27 +1,23 @@
 {
   "version": "2.5",
-<<<<<<< Updated upstream
-  "updatedAt": 1794409213853,
-=======
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794409213851,
->>>>>>> Stashed changes
+  "updatedAt": 1794433767570,
   "brain": {
     "v": 1,
-    "gen": 8,
-    "cycles": 48,
-    "firstBootAt": 1793613402157,
+    "gen": 0,
+    "cycles": 1,
+    "firstBootAt": 1794433764734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
-    "lastOptAt": 1794409213349,
+    "lastOptAt": 0,
     "autoExecBursa": false,
     "params": {
       "atrMult": 1.8,
       "rsiLongMax": 62,
       "rsiShortMin": 38,
-      "minScore": 55,
+      "minScore": 75,
       "feeBps": 10,
       "riskPct": 1,
       "tp1Ratio": 0.8,
@@ -35,36 +31,30 @@
       "volConfirmMult": 1.15
     },
     "weights": {
-      "elder": 0.57,
-      "donchian": 0.75,
-      "bbrev": 0.34,
-      "wyckoff": 0.99,
-      "rsidiv": 0.34,
-      "macdm": 0.69,
-      "smc": 1.17,
-      "statarb": 0.37,
-      "tsmom": 0.83,
-      "emax": 1.07,
-      "TREND_PULLBACK": 1,
-      "BREAKOUT": 1,
-      "REVERSAL": 1,
-      "MEAN_REVERSION": 1,
-      "MOMENTUM": 1,
-      "SCALP": 1
+      "elder": 1,
+      "donchian": 1,
+      "bbrev": 1,
+      "wyckoff": 1,
+      "rsidiv": 1,
+      "macdm": 1,
+      "smc": 1,
+      "statarb": 1,
+      "tsmom": 1,
+      "emax": 1
     },
     "bayesian": {
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 80
+          "beta": 5
         },
         "TREND_DOWN": {
-          "alpha": 3,
-          "beta": 3
+          "alpha": 2,
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 16,
-          "beta": 28
+          "alpha": 2,
+          "beta": 2
         }
       },
       "donchian": {
@@ -74,25 +64,25 @@
         },
         "TREND_DOWN": {
           "alpha": 2,
-          "beta": 4
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 15,
-          "beta": 29
+          "alpha": 2,
+          "beta": 2
         }
       },
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 80
+          "beta": 5
         },
         "TREND_DOWN": {
           "alpha": 2,
-          "beta": 4
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 27,
-          "beta": 17
+          "alpha": 2,
+          "beta": 2
         }
       },
       "wyckoff": {
@@ -101,40 +91,40 @@
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 3,
-          "beta": 3
+          "alpha": 2,
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 29,
-          "beta": 15
+          "alpha": 2,
+          "beta": 2
         }
       },
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 80
+          "beta": 5
         },
         "TREND_DOWN": {
-          "alpha": 4,
+          "alpha": 2,
           "beta": 2
         },
         "RANGING": {
-          "alpha": 19,
-          "beta": 12
+          "alpha": 2,
+          "beta": 2
         }
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 80,
+          "alpha": 5,
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 3,
-          "beta": 3
+          "alpha": 2,
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 14,
-          "beta": 30
+          "alpha": 2,
+          "beta": 2
         }
       },
       "smc": {
@@ -143,26 +133,26 @@
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 3,
-          "beta": 3
+          "alpha": 2,
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 19,
-          "beta": 25
+          "alpha": 2,
+          "beta": 2
         }
       },
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 80
+          "beta": 5
         },
         "TREND_DOWN": {
-          "alpha": 3,
-          "beta": 3
+          "alpha": 2,
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 16,
-          "beta": 28
+          "alpha": 2,
+          "beta": 2
         }
       },
       "tsmom": {
@@ -181,20 +171,20 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 80,
+          "alpha": 5,
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 3,
-          "beta": 3
+          "alpha": 2,
+          "beta": 2
         },
         "RANGING": {
-          "alpha": 24,
-          "beta": 20
+          "alpha": 2,
+          "beta": 2
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.52,
     "leaderboard": {
       "elder": {
         "BTCUSDT": {
@@ -235,201 +225,6 @@
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.58596451660369,
-          "exp": -0.298530570154126,
-          "netR": -2.388244561233008,
-          "maxDD": 3.8859258257564164,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 26,
-          "wins": 15,
-          "losses": 11,
-          "winRate": 57.692307692307686,
-          "pf": 1.0685236395653381,
-          "exp": 0.03348068877827817,
-          "netR": 0.8704979082352325,
-          "maxDD": 6.291290833908468,
-          "atrMult": 1.5,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 28,
-          "wins": 18,
-          "losses": 10,
-          "winRate": 64.28571428571429,
-          "pf": 0.8329536671441837,
-          "exp": -0.0676698449450163,
-          "netR": -1.8947556584604563,
-          "maxDD": 4.314532681332811,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 26,
-          "wins": 11,
-          "losses": 15,
-          "winRate": 42.30769230769231,
-          "pf": 0.5934035321523453,
-          "exp": -0.26480634890877075,
-          "netR": -6.88496507162804,
-          "maxDD": 9.371764161864972,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 39,
-          "wins": 14,
-          "losses": 25,
-          "winRate": 35.8974358974359,
-          "pf": 0.29594846698311367,
-          "exp": -0.537393680044077,
-          "netR": -20.958353521719,
-          "maxDD": 21.358353521719,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 28,
-          "wins": 10,
-          "losses": 18,
-          "winRate": 35.714285714285715,
-          "pf": 0.20359124047333313,
-          "exp": -0.6738621954429307,
-          "netR": -18.86814147240206,
-          "maxDD": 18.86814147240206,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 26,
-          "wins": 18,
-          "losses": 8,
-          "winRate": 69.23076923076923,
-          "pf": 1.4581224140548505,
-          "exp": 0.1738962216965025,
-          "netR": 4.521301764109065,
-          "maxDD": 2.651224550834884,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
         }
       },
       "donchian": {
@@ -470,201 +265,6 @@
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 2,
-          "wins": 2,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4905457224192111,
-          "netR": 2.9810914448384223,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 13,
-          "wins": 10,
-          "losses": 3,
-          "winRate": 76.92307692307693,
-          "pf": 2.5504669073882105,
-          "exp": 0.399598338895311,
-          "netR": 5.194778405639043,
-          "maxDD": 2.2502437911519557,
-          "atrMult": 2,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 12,
-          "wins": 7,
-          "losses": 5,
-          "winRate": 58.333333333333336,
-          "pf": 1.0287610892470154,
-          "exp": 0.014118038269106958,
-          "netR": 0.1694164592292835,
-          "maxDD": 4.046035457731982,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 17,
-          "wins": 10,
-          "losses": 7,
-          "winRate": 58.82352941176471,
-          "pf": 0.6610047127576736,
-          "exp": -0.15482180738803003,
-          "netR": -2.6319707255965104,
-          "maxDD": 3.565246669553121,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 12,
-          "wins": 6,
-          "losses": 6,
-          "winRate": 50,
-          "pf": 0.3571796977721276,
-          "exp": -0.35994223985148044,
-          "netR": -4.319306878217765,
-          "maxDD": 4.319306878217765,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 15,
-          "wins": 8,
-          "losses": 7,
-          "winRate": 53.333333333333336,
-          "pf": 0.35412417047475314,
-          "exp": -0.3890918923928012,
-          "netR": -5.836378385892018,
-          "maxDD": 7.436378385892018,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 18,
-          "wins": 10,
-          "losses": 8,
-          "winRate": 55.55555555555556,
-          "pf": 0.6644093213977975,
-          "exp": -0.1917977221590137,
-          "netR": -3.4523589988622465,
-          "maxDD": 5.852358998862247,
-          "atrMult": 1.5,
-          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -707,201 +307,6 @@
           "atrMult": 2,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 20,
-          "wins": 2,
-          "losses": 18,
-          "winRate": 10,
-          "pf": 0.1468319506082603,
-          "exp": -0.8754830128083476,
-          "netR": -17.509660256166953,
-          "maxDD": 17.509660256166953,
-          "atrMult": 2,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 17,
-          "wins": 12,
-          "losses": 5,
-          "winRate": 70.58823529411765,
-          "pf": 1.196855072352606,
-          "exp": 0.06783043107694964,
-          "netR": 1.1531173283081437,
-          "maxDD": 3.087046478979202,
-          "atrMult": 1.5,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 8,
-          "wins": 5,
-          "losses": 3,
-          "winRate": 62.5,
-          "pf": 1.4419009161347252,
-          "exp": 0.19884748343677494,
-          "netR": 1.5907798674941995,
-          "maxDD": 2.441750576180608,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 10,
-          "wins": 6,
-          "losses": 4,
-          "winRate": 60,
-          "pf": 1.0639674878497614,
-          "exp": 0.02853625871518397,
-          "netR": 0.2853625871518397,
-          "maxDD": 3.261056651498682,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 9,
-          "wins": 7,
-          "losses": 2,
-          "winRate": 77.77777777777779,
-          "pf": 3.458555063487429,
-          "exp": 0.6478853716922907,
-          "netR": 5.830968345230616,
-          "maxDD": 1.9717054101523608,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 11,
-          "wins": 8,
-          "losses": 3,
-          "winRate": 72.72727272727273,
-          "pf": 0.7947063462597894,
-          "exp": -0.07514950706011757,
-          "netR": -0.8266445776612933,
-          "maxDD": 2.826644577661294,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 15,
-          "wins": 8,
-          "losses": 7,
-          "winRate": 53.333333333333336,
-          "pf": 0.6019639658594433,
-          "exp": -0.23115888880206412,
-          "netR": -3.4673833320309617,
-          "maxDD": 4.99956791927625,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
         }
       },
       "wyckoff": {
@@ -942,201 +347,6 @@
           "maxDD": 2.2978693401532224,
           "atrMult": 1.8,
           "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1489346700766112,
-          "netR": -2.2978693401532224,
-          "maxDD": 2.2978693401532224,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 10,
-          "wins": 6,
-          "losses": 4,
-          "winRate": 60,
-          "pf": 0.5363637647805184,
-          "exp": -0.20745751998778048,
-          "netR": -2.074575199877805,
-          "maxDD": 4.074575199877804,
-          "atrMult": 2,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 14,
-          "wins": 4,
-          "losses": 10,
-          "winRate": 28.57142857142857,
-          "pf": 0.31117646121356807,
-          "exp": -0.5844967025079625,
-          "netR": -8.182953835111475,
-          "maxDD": 8.908039221176892,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 11,
-          "wins": 7,
-          "losses": 4,
-          "winRate": 63.63636363636363,
-          "pf": 1.4469309306884306,
-          "exp": 0.1760691646245884,
-          "netR": 1.9367608108704724,
-          "maxDD": 2.1669668926450973,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 14,
-          "wins": 11,
-          "losses": 3,
-          "winRate": 78.57142857142857,
-          "pf": 1.8277392183388157,
-          "exp": 0.21099968256427196,
-          "netR": 2.9539955558998074,
-          "maxDD": 1.968840135009827,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 12,
-          "wins": 9,
-          "losses": 3,
-          "winRate": 75,
-          "pf": 1.6682552200796918,
-          "exp": 0.23012660625472647,
-          "netR": 2.7615192750567177,
-          "maxDD": 3.3324320290792437,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 9,
-          "wins": 8,
-          "losses": 1,
-          "winRate": 88.88888888888889,
-          "pf": 3.395733546452315,
-          "exp": 0.33121432351330843,
-          "netR": 2.9809289116197757,
-          "maxDD": 1.2442656304721524,
-          "atrMult": 2,
-          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1179,201 +389,6 @@
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 6,
-          "wins": 1,
-          "losses": 5,
-          "winRate": 16.666666666666664,
-          "pf": 0.258080401081765,
-          "exp": -0.7119427183296289,
-          "netR": -4.271656309977773,
-          "maxDD": 4.271656309977773,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 6,
-          "wins": 3,
-          "losses": 3,
-          "winRate": 50,
-          "pf": 0.6986131602172025,
-          "exp": -0.16858238124445388,
-          "netR": -1.0114942874667232,
-          "maxDD": 3.3561328961665478,
-          "atrMult": 1.8,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 9,
-          "wins": 6,
-          "losses": 3,
-          "winRate": 66.66666666666666,
-          "pf": 1.0093375799319804,
-          "exp": 0.003611957165601908,
-          "netR": 0.03250761449041717,
-          "maxDD": 2.6813746952870403,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 5,
-          "wins": 4,
-          "losses": 1,
-          "winRate": 80,
-          "pf": 3.4140693974453087,
-          "exp": 0.5507302554968152,
-          "netR": 2.7536512774840762,
-          "maxDD": 1.140667820236705,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.5814399129010607,
-          "exp": -0.30392044160972376,
-          "netR": -2.43136353287779,
-          "maxDD": 5.808875733301976,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 2,
-          "wins": 1,
-          "losses": 1,
-          "winRate": 50,
-          "pf": 0.29917575492755893,
-          "exp": -0.46850336869184833,
-          "netR": -0.9370067373836967,
-          "maxDD": 1.3370067373836967,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 3,
-          "wins": 2,
-          "losses": 1,
-          "winRate": 66.66666666666666,
-          "pf": 0.6857103665494995,
-          "exp": -0.12222444490939958,
-          "netR": -0.36667333472819874,
-          "maxDD": 1.1666733347281988,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
         }
       },
       "macdm": {
@@ -1414,201 +429,6 @@
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 0.7669671906909145,
-          "netR": 2.3009015720727435,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 10,
-          "wins": 7,
-          "losses": 3,
-          "winRate": 70,
-          "pf": 1.8485504437598603,
-          "exp": 0.28316745943700933,
-          "netR": 2.831674594370093,
-          "maxDD": 2.235504349919074,
-          "atrMult": 1.8,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 8,
-          "wins": 6,
-          "losses": 2,
-          "winRate": 75,
-          "pf": 1.023975652305721,
-          "exp": 0.0070242839031575965,
-          "netR": 0.05619427122526077,
-          "maxDD": 1.5438057287747393,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 8,
-          "wins": 4,
-          "losses": 4,
-          "winRate": 50,
-          "pf": 0.358365868069687,
-          "exp": -0.3580888634213025,
-          "netR": -2.86471090737042,
-          "maxDD": 2.86471090737042,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 9,
-          "wins": 4,
-          "losses": 5,
-          "winRate": 44.44444444444444,
-          "pf": 0.28417968693265355,
-          "exp": -0.44780450678539907,
-          "netR": -4.030240561068592,
-          "maxDD": 4.030240561068592,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 7,
-          "wins": 4,
-          "losses": 3,
-          "winRate": 57.14285714285714,
-          "pf": 0.4060967669864066,
-          "exp": -0.3342782347431272,
-          "netR": -2.3399476432018904,
-          "maxDD": 3.1399476432018902,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 7,
-          "wins": 4,
-          "losses": 3,
-          "winRate": 57.14285714285714,
-          "pf": 0.7174321665837389,
-          "exp": -0.148408325017848,
-          "netR": -1.038858275124936,
-          "maxDD": 3.676491632345694,
-          "atrMult": 2,
-          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
@@ -1651,437 +471,6 @@
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 2,
-          "wins": 0,
-          "losses": 2,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1556303473372016,
-          "netR": -2.311260694674403,
-          "maxDD": 2.311260694674403,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 4,
-          "wins": 2,
-          "losses": 2,
-          "winRate": 50,
-          "pf": 0.3454550352808782,
-          "exp": -0.3789465475221299,
-          "netR": -1.5157861900885197,
-          "maxDD": 1.5157861900885197,
-          "atrMult": 1.5,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 3,
-          "wins": 0,
-          "losses": 3,
-          "winRate": 0,
-          "pf": 0,
-          "exp": -1.1861234467005437,
-          "netR": -3.5583703401016313,
-          "maxDD": 3.5583703401016313,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 4,
-          "wins": 2,
-          "losses": 2,
-          "winRate": 50,
-          "pf": 0.8816627022042133,
-          "exp": -0.06523762428331598,
-          "netR": -0.2609504971332639,
-          "maxDD": 2.205141590976526,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 8,
-          "wins": 2,
-          "losses": 6,
-          "winRate": 25,
-          "pf": 0.11499529013116906,
-          "exp": -0.7696008322248267,
-          "netR": -6.156806657798613,
-          "maxDD": 6.556806657798614,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 5,
-          "wins": 5,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.13532661608269,
-          "netR": 5.67663308041345,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 4,
-          "wins": 3,
-          "losses": 1,
-          "winRate": 75,
-          "pf": 1.7197334692471502,
-          "exp": 0.2295498079637408,
-          "netR": 0.9181992318549632,
-          "maxDD": 1.2757489697059807,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        }
-      },
-      "emax": {
-        "BTCUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ETHUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SOLUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 3,
-          "wins": 3,
-          "losses": 0,
-          "winRate": 100,
-          "pf": 99,
-          "exp": 1.4950184989427544,
-          "netR": 4.485055496828263,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 3,
-          "wins": 2,
-          "losses": 1,
-          "winRate": 66.66666666666666,
-          "pf": 1.6616379090215112,
-          "exp": 0.24914575872927822,
-          "netR": 0.7474372761878346,
-          "maxDD": 1.1296772237449504,
-          "atrMult": 1.8,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 6,
-          "wins": 5,
-          "losses": 1,
-          "winRate": 83.33333333333334,
-          "pf": 2.806186169934414,
-          "exp": 0.3318513231981736,
-          "netR": 1.9911079391890418,
-          "maxDD": 1.102382452226031,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 7,
-          "wins": 5,
-          "losses": 2,
-          "winRate": 71.42857142857143,
-          "pf": 1.4322140878362821,
-          "exp": 0.13667966620028413,
-          "netR": 0.9567576634019889,
-          "maxDD": 1.4136198016858674,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 8,
-          "wins": 4,
-          "losses": 4,
-          "winRate": 50,
-          "pf": 0.3428217796960861,
-          "exp": -0.3833935060289967,
-          "netR": -3.0671480482319735,
-          "maxDD": 3.4962451218088737,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 9,
-          "wins": 6,
-          "losses": 3,
-          "winRate": 66.66666666666666,
-          "pf": 0.5817968492075168,
-          "exp": -0.19168347226911728,
-          "netR": -1.7251512504220554,
-          "maxDD": 2.5251512504220552,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 7,
-          "wins": 5,
-          "losses": 2,
-          "winRate": 71.42857142857143,
-          "pf": 1.7916114810781723,
-          "exp": 0.3016886310870569,
-          "netR": 2.1118204176093984,
-          "maxDD": 1.3453310281068114,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
         }
       },
       "statarb": {
@@ -2112,201 +501,6 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "AVAXUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "LINKUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 30,
-          "wins": 14,
-          "losses": 16,
-          "winRate": 46.666666666666664,
-          "pf": 0.4368107025442832,
-          "exp": -0.3382970986119808,
-          "netR": -10.148912958359425,
-          "maxDD": 11.401071405398826,
-          "atrMult": 1.8,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 26,
-          "wins": 16,
-          "losses": 10,
-          "winRate": 61.53846153846154,
-          "pf": 1.0536684030562598,
-          "exp": 0.023446086730954406,
-          "netR": 0.6095982550048146,
-          "maxDD": 3.677762874928323,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 23,
-          "wins": 17,
-          "losses": 6,
-          "winRate": 73.91304347826086,
-          "pf": 2.296625547591195,
-          "exp": 0.3667270768833313,
-          "netR": 8.43472276831662,
-          "maxDD": 2.40696492168643,
-          "atrMult": 2,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 26,
-          "wins": 18,
-          "losses": 8,
-          "winRate": 69.23076923076923,
-          "pf": 1.495364035242172,
-          "exp": 0.17523740524031137,
-          "netR": 4.556172536248096,
-          "maxDD": 2.3162432497054355,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 33,
-          "wins": 21,
-          "losses": 12,
-          "winRate": 63.63636363636363,
-          "pf": 0.84533272638931,
-          "exp": -0.07975081741420155,
-          "netR": -2.631776974668651,
-          "maxDD": 8.21682761830964,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 35,
-          "wins": 20,
-          "losses": 15,
-          "winRate": 57.14285714285714,
-          "pf": 0.8225720288451929,
-          "exp": -0.09712330031055105,
-          "netR": -3.399315510869287,
-          "maxDD": 7.988909968839888,
-          "atrMult": 1.5,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 26,
-          "wins": 3,
-          "losses": 23,
-          "winRate": 11.538461538461538,
-          "pf": 0.12692563220564845,
-          "exp": -0.894647462129408,
-          "netR": -23.26083401536461,
-          "maxDD": 23.26083401536461,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
           "trades": 26,
           "wins": 3,
           "losses": 23,
@@ -2359,197 +553,43 @@
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
-        },
-        "ADAUSDT": {
-          "trades": 0,
-          "wins": 0,
+        }
+      },
+      "emax": {
+        "BTCUSDT": {
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
-        "AVAXUSDT": {
-          "trades": 0,
-          "wins": 0,
+        "ETHUSDT": {
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
-        "LINKUSDT": {
-          "trades": 0,
-          "wins": 0,
+        "SOLUSDT": {
+          "trades": 3,
+          "wins": 3,
           "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "SUIUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "GBPUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "NVDA": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
-        },
-        "AAPL": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "TSLA": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "MSFT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "SPY": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "QQQ": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "XRPUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "DOGEUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0,
-          "atrMult": 1.8,
-          "regime": "TREND_UP",
-          "dataStatus": "LIVE"
-        },
-        "BNBUSDT": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
+          "winRate": 100,
+          "pf": 99,
+          "exp": 1.4950184989427544,
+          "netR": 4.485055496828263,
           "maxDD": 0,
           "atrMult": 1.8,
           "regime": "TREND_UP",
@@ -2560,664 +600,19 @@
     "signals": [],
     "journal": [
       {
-        "t": 1794409213848,
+        "t": 1794433767568,
         "type": "CYCLE",
-        "text": "[CYCLE #48] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+        "text": "[CYCLE #1] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       },
       {
-        "t": 1794409213349,
-        "type": "GEN",
-        "text": "[GEN #8] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+54.84R · Win 89.4%)"
-      },
-      {
-        "t": 1794409211892,
+        "t": 1794433765763,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
       },
       {
-        "t": 1794380427750,
-        "type": "CYCLE",
-        "text": "[CYCLE #47] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794380426463,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794357247243,
-        "type": "CYCLE",
-        "text": "[CYCLE #46] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794357245049,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794340951867,
-        "type": "CYCLE",
-        "text": "[CYCLE #45] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794340950207,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin to resume cash withdrawals after $49M hack)"
-      },
-      {
-        "t": 1794340950205,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 32 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794314882476,
-        "type": "CYCLE",
-        "text": "[CYCLE #44] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794314880447,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Solana Set for Another Tokenized Stock Venue as Formation Notifies the SEC)"
-      },
-      {
-        "t": 1794314880446,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 32 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794284465740,
-        "type": "CYCLE",
-        "text": "[CYCLE #43] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794284464327,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 32 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794264235000,
-        "type": "CYCLE",
-        "text": "[CYCLE #42] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794264234179,
-        "type": "GEN",
-        "text": "[GEN #7] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+56R · Win 88.4%)"
-      },
-      {
-        "t": 1794264232451,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Mercado Bitcoin begins post-hack reopening without a timeline for withdrawals)"
-      },
-      {
-        "t": 1794264232449,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794228263647,
-        "type": "CYCLE",
-        "text": "[CYCLE #41] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794228261318,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Solana moves to scrap the transaction feature used in the $270 million Drift hac)"
-      },
-      {
-        "t": 1794228261316,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794196954847,
-        "type": "CYCLE",
-        "text": "[CYCLE #40] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794196953008,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794182158646,
-        "type": "CYCLE",
-        "text": "[CYCLE #39] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794182156874,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794169810473,
-        "type": "CYCLE",
-        "text": "[CYCLE #38] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794169808561,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794154534795,
-        "type": "CYCLE",
-        "text": "[CYCLE #37] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794154533325,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794130341250,
-        "type": "CYCLE",
-        "text": "[CYCLE #36] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794130340740,
-        "type": "GEN",
-        "text": "[GEN #6] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.09R · Win 87.9%)"
-      },
-      {
-        "t": 1794130339812,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794105909442,
-        "type": "CYCLE",
-        "text": "[CYCLE #35] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794105907153,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794095262321,
-        "type": "CYCLE",
-        "text": "[CYCLE #34] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794095260798,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794083221270,
-        "type": "CYCLE",
-        "text": "[CYCLE #33] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794083219740,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794069221381,
-        "type": "CYCLE",
-        "text": "[CYCLE #32] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794069220209,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794047002607,
-        "type": "CYCLE",
-        "text": "[CYCLE #31] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794047001167,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794021435434,
-        "type": "CYCLE",
-        "text": "[CYCLE #30] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794021435070,
-        "type": "GEN",
-        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 55/100."
-      },
-      {
-        "t": 1794021435070,
-        "type": "GEN",
-        "text": "[GEN #5] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+53.89R · Win 89.1%)"
-      },
-      {
-        "t": 1794021434159,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 25 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794008923783,
-        "type": "CYCLE",
-        "text": "[CYCLE #29] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794008922054,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793993796417,
-        "type": "CYCLE",
-        "text": "[CYCLE #28] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793993794661,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793967928084,
-        "type": "CYCLE",
-        "text": "[CYCLE #27] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793967926310,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793939704072,
-        "type": "CYCLE",
-        "text": "[CYCLE #26] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793939702542,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793922944261,
-        "type": "CYCLE",
-        "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793922942513,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin Said Its Hack Was Contained, But Blockchain Data Tells a Differe)"
-      },
-      {
-        "t": 1793922942511,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
-      },
-      {
-        "t": 1793904997088,
-        "type": "CYCLE",
-        "text": "[CYCLE #24] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793904996406,
-        "type": "GEN",
-        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 60/100."
-      },
-      {
-        "t": 1793904996406,
-        "type": "GEN",
-        "text": "[GEN #4] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.03R · Win 88.7%)"
-      },
-      {
-        "t": 1793904995176,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
-      },
-      {
-        "t": 1793878514812,
-        "type": "CYCLE",
-        "text": "[CYCLE #23] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793878512915,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
-      },
-      {
-        "t": 1793850285511,
-        "type": "CYCLE",
-        "text": "[CYCLE #22] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793850284011,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 50 (Neutral) — makro sentiment riil."
-      },
-      {
-        "t": 1793835804553,
-        "type": "CYCLE",
-        "text": "[CYCLE #21] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793835802976,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (THORChain&#39;s RUNE jumps 10% as North Korean hackers resume laundering Binance)"
-      },
-      {
-        "t": 1793835802974,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793816153747,
-        "type": "CYCLE",
-        "text": "[CYCLE #20] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793816151959,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: SOL — Long baru diblokir (Binance hackers move 81% of stolen Solana, route funds via THORChain)"
-      },
-      {
-        "t": 1793816151957,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793789497444,
-        "type": "CYCLE",
-        "text": "[CYCLE #19] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793789495742,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
-      },
-      {
-        "t": 1793789495740,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793761878521,
-        "type": "CYCLE",
-        "text": "[CYCLE #18] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793761878051,
-        "type": "GEN",
-        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 65/100."
-      },
-      {
-        "t": 1793761878051,
-        "type": "GEN",
-        "text": "[GEN #3] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+57.6R · Win 90.5%)"
-      },
-      {
-        "t": 1793761876908,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
-      },
-      {
-        "t": 1793761876906,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 34 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793748963775,
-        "type": "CYCLE",
-        "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793748962349,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793730585999,
-        "type": "CYCLE",
-        "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793730584399,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Brazil&#39;s Biggest Bitcoin Exchange Says It Will Refund Users After a $40 Mill)"
-      },
-      {
-        "t": 1793730584398,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793704865087,
-        "type": "CYCLE",
-        "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793704863383,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin pledges to cover all user losses after near $40 million hack)"
-      },
-      {
-        "t": 1793704863381,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793677260698,
-        "type": "CYCLE",
-        "text": "[CYCLE #14] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793677258815,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Mercado Bitcoin wallets show post-hack transfers after $46M theft)"
-      },
-      {
-        "t": 1793677258814,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 26 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793658907266,
-        "type": "CYCLE",
-        "text": "[CYCLE #13] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793658904781,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Mercado Bitcoin wallets show post-hack transfers after $46M theft)"
-      },
-      {
-        "t": 1793658904779,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793631117686,
-        "type": "CYCLE",
-        "text": "[CYCLE #12] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793631117207,
-        "type": "GEN",
-        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 70/100."
-      },
-      {
-        "t": 1793631117207,
-        "type": "GEN",
-        "text": "[GEN #2] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+13.41R · Win 74.2%)"
-      },
-      {
-        "t": 1793631116716,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793629684871,
-        "type": "CYCLE",
-        "text": "[CYCLE #11] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793629382726,
-        "type": "CYCLE",
-        "text": "[CYCLE #10] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793629380599,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793627913522,
-        "type": "CYCLE",
-        "text": "[CYCLE #9] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793627912694,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
-      },
-      {
-        "t": 1793627912692,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793626754347,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #8 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793626749554,
+        "t": 1794433764774,
         "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 22 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793626658216,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #7 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793626650944,
-        "type": "CB",
-        "text": "🛡 CIRCUIT BREAKER AKTIF: BTC, ETH, SOL — Long baru diblokir (Binance hackers begin swapping stolen Solana tokens for Bitcoin: Chainalysis)"
-      },
-      {
-        "t": 1793626650936,
-        "type": "NEWS",
-        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793626647979,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 22 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793614539939,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #6 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793614538964,
-        "type": "GEN",
-        "text": "🏆 CHAMPION: Wyckoff Spring & Upthrust (wyckoff) — netR 4.01R, win 62.9%, 168 trades (formula paling maksimal profit saat ini)."
-      },
-      {
-        "t": 1793614538964,
-        "type": "GEN",
-        "text": "🧠 GENERASI #1 selesai — universe penuh di-backtest walk-forward | bobot strategi diperbarui dari hasil out-of-sample riil | akurasi live: 0.0%"
-      },
-      {
-        "t": 1793614538588,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 18 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793614508692,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #5 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793614505540,
-        "type": "NEWS",
-        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793614502389,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 15 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793613649337,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #4 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793613648666,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 13 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793613593112,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #3 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793613587456,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793613572386,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #2 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793613566460,
-        "type": "CB",
-        "text": "🛡 CIRCUIT BREAKER AKTIF: BTC, ETH, SOL — Long baru diblokir (Strangers are begging the Binance hacker for bitcoin, one ‘help me bro’ at a tim)"
-      },
-      {
-        "t": 1793613566458,
-        "type": "NEWS",
-        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793613563343,
-        "type": "SYS",
-        "text": "⚠️ GitHub load gagal: qbSave is not defined"
-      },
-      {
-        "t": 1793613563343,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793613406011,
-        "type": "CYCLE",
-        "text": "⚙ Siklus #1 selesai — sinyal dievaluasi vs harga riil, berita tier-1 dibaca, 3 aset di-backtest ulang."
-      },
-      {
-        "t": 1793613405997,
-        "type": "ERR",
-        "text": "⚠ Semua feed berita gagal. Retry siklus berikutnya."
-      },
-      {
-        "t": 1793613405997,
-        "type": "NEWS",
-        "text": "📊 Fear & Greed: 37 (Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1793613402976,
-        "type": "SYS",
-        "text": "⚠️ GitHub load gagal: qbSave is not defined"
-      },
-      {
-        "t": 1793613402976,
-        "type": "SYS",
-        "text": "☁️ Sinkronisasi GitHub berhasil — 0 sinyal, 0 jurnal dimuat dari database."
-      },
-      {
-        "t": 1793613402398,
-        "type": "SYS",
-        "text": "🧠 PILUS QUANT BRAIN v1.0 online — basis pengetahuan: 11 literatur institusional terenkode, 8 strategi siap di-backtest walk-forward pada 18 aset riil (crypto+forex+saham)."
+        "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
       }
     ],
     "accuracyHistory": [],
@@ -3228,9 +623,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1230,
+      "newsIngested": 30,
       "lessons": 0,
-      "backtests": 1374,
+      "backtests": 30,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3243,8 +638,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1794409211892,
+      "fetchedAt": 1794433765763,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Crypto Long &amp;amp; Short: The GENIUS Act’s guarantees don’t cover DeFi lending",
+          "link": "https://www.coindesk.com/coindesk-indices/2026/11/11/crypto-long-and-short-the-genius-act-s-guarantees-don-t-cover-defi-lending",
+          "pubDate": "2026-11-11 16:00:45",
+          "summary": "Institutions weighing DeFi lending tend to ask which markets are safest. Mike Hathaway and Joseph Quintilian of Ajna argue the better question is who can change a loan’s terms after the money is lent, and why a fully bac"
+        },
         {
           "source": "CoinDesk",
           "title": "OKXICE to debut tokenized stock trading with Strategy, Coinbase, Circle this month",
@@ -3309,11 +711,32 @@
           "summary": "Stacey Cunningham, who recently joined digital asset platform Bullish as President, sees the company’s planned Equiniti acquisition and focus on stock issuers as key to its tokenization ambitions."
         },
         {
-          "source": "CoinDesk",
-          "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
-          "link": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
-          "pubDate": "2026-11-10 17:32:22",
-          "summary": "The venture, known as Project Faro, plans to issue a dollar-denominated stablecoin and is expected to be incorporated in the U.S."
+          "source": "CoinTelegraph",
+          "title": "Nomura explores sale of crypto unit Laser Digital: Bloomberg",
+          "link": "https://cointelegraph.com/news/nomura-sale-crypto-unit-laser-digital?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 21:36:01",
+          "summary": "    The potential sale of Laser Digital follows a fourth straight quarterly loss for Nomura’s European operations.  "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "US data center restrictions could give Bitcoin miners an edge in AI, though challenges remain",
+          "link": "https://cointelegraph.com/news/us-data-center-restrictions-bitcoin-miners-edge-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 20:43:19",
+          "summary": "    As US voters push back against new data centers, Bitcoin miners already expanding into AI could benefit from their existing facilities. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "OKXICE moves ahead with tokenized stocks as blue chips push back",
+          "link": "https://cointelegraph.com/news/okxice-tokenized-stocks-blue-chips-push-back?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 18:30:43",
+          "summary": "    The Nov. 23 debut puts a new SEC exemption to the test as Nasdaq pursues its own tokenized stock plans after warning that trading across platforms could fragment liquidity. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin hovers near $74K as stocks rise despite US bond yield rebound",
+          "link": "https://cointelegraph.com/markets/bitcoin-74k-stocks-us-bond-yield-inflation-cpi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-11 16:26:00",
+          "summary": "    Bitcoin traded in a narrow range as investors bought the dip in tech stocks and US bond yields climbed on high CPI inflation data. "
         },
         {
           "source": "CoinTelegraph",
@@ -3358,32 +781,67 @@
           "summary": "    The Financial Stability Board cited progress on crypto licensing and urged stronger enforcement and cooperation with foreign regulators. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Zcash falls below $1,000 for first time since September",
-          "link": "https://cointelegraph.com/markets/zcash-falls-1k-grayscales-1m-ecosystem-commitment?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-11 12:31:44",
-          "summary": "    Zcash fell nearly 15% amid a broader sell-off in privacy coins, a day after Grayscale pledged $1 million to ecosystem initiatives. "
+          "source": "Decrypt",
+          "title": "Stablecoin Drain, ETF Outflows Leave Bitcoin &#39;Running on Empty&#39;",
+          "link": "https://decrypt.co/383094/stablecoin-drain-etf-outflows-bitcoin-running-empty",
+          "pubDate": "2026-11-11 21:46:03",
+          "summary": "Stablecoin supply fell $14.2 billion in 30 days, the fastest contraction since June 2022, amid weak ETF demand."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Barclays boosts BlackRock Bitcoin ETF stake 48% as banks expand holdings",
-          "link": "https://cointelegraph.com/news/barclays-blackrock-ibit-boost-key-q3-filings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-11 11:56:23",
-          "summary": "    Barclays reported a $187 million stake as of Sept. 30, while Citigroup disclosed a new $119 million position in Fidelity’s Bitcoin ETF. "
+          "source": "Decrypt",
+          "title": "Bitcoin Short-Term Holders Send $3.6 Billion in BTC to Exchanges at a Loss",
+          "link": "https://decrypt.co/383077/bitcoin-short-term-holders-send-3-illion-btc-exchanges-loss",
+          "pubDate": "2026-11-11 21:16:03",
+          "summary": "Recent buyers are moving billions in Bitcoin to exchanges below their purchase prices, while Binance sees sharp inflows from recently moved coins."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Kraken parent adds over 200 tokenized UK and EU stocks to xStocks",
-          "link": "https://cointelegraph.com/news/kraken-xstocks-200-tokenized-uk-eu-equities?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-11 11:30:36",
-          "summary": "    The expansion adds more than 200 tokenized UK and EU equities, including all 40 companies in Germany’s DAX index, as xStocks plans further expansion into Hong Kong. "
+          "source": "Decrypt",
+          "title": "This New AI Music Model Is Already Better Than Suno—We Put ACE to the Test",
+          "link": "https://decrypt.co/383070/new-ai-music-model-already-better-than-suno-ace-review",
+          "pubDate": "2026-11-11 20:16:02",
+          "summary": "ACE Music v1 tops the AI music rankings with more natural vocals and stronger song structure. Our tests found impressive results, though niche genres remain a challenge."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin short-term holders send 47K BTC to exchanges at a loss",
-          "link": "https://cointelegraph.com/markets/bitcoin-speculators-btc-exchanges-unrealized-loss-727k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-11 11:05:26",
-          "summary": "    Bitcoin fell to an 11-week low of $72,670 after slipping below short-term holders’ average cost basis of about $75,700, according to CryptoQuant. "
+          "source": "Decrypt",
+          "title": "Tether&#39;s Tiny AI Agent Beats Models 2.5 Times Its Size at Controlling Your Phone",
+          "link": "https://decrypt.co/383066/tether-tiny-ai-agent-beats-models-phone",
+          "pubDate": "2026-11-11 19:36:02",
+          "summary": "BotPsy packs 800 million parameters into an AI assistant designed to manage everyday tasks locally, outperforming larger rivals as Tether expands its push into decentralized artificial intelligence."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Deutsche Bank Goes Live With Crypto Custody After a Five-Year Buildup",
+          "link": "https://decrypt.co/383067/deutsche-bank-goes-live-with-crypto-custody-after-a-five-year-buildup",
+          "pubDate": "2026-11-11 19:06:02",
+          "summary": "Deutsche Bank’s custody service now holds Bitcoin, Ethereum and three stablecoins for institutional and corporate clients in Europe."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Bitcoin Faces First Back-to-Back Annual Losses in History, But There&#39;s a Catch",
+          "link": "https://decrypt.co/383049/bitcoin-first-back-to-back-annual-losses-history",
+          "pubDate": "2026-11-11 17:56:02",
+          "summary": "Bitcoin is heading toward its first consecutive losing years, breaking an 18-year pattern. But there&#39;s some nuance in the data."
+        },
+        {
+          "source": "Decrypt",
+          "title": "What Are Solana Privacy Rings? Inside Helius’ Privacy Protocol for Solana",
+          "link": "https://decrypt.co/resources/what-are-solana-privacy-rings-inside-helius-privacy-protocol-for-solana",
+          "pubDate": "2026-11-11 17:09:18",
+          "summary": "Solana Privacy Rings encrypt balances and transfer amounts without leaving Solana. Here&#39;s how they work, and how they compare."
+        },
+        {
+          "source": "Decrypt",
+          "title": "A High-Severity Bug Could Have Stalled Bitcoin Mining—Bitcoin Core Has a Fix",
+          "link": "https://decrypt.co/383044/bitcoin-core-patches-bug-could-have-stalled-btc-mining",
+          "pubDate": "2026-11-11 16:58:57",
+          "summary": "Three bugs—spanning denial-of-service and privacy issues rather than coin theft—have all been patched, with the most serious capable of halting a miner’s ability to build new blocks."
+        },
+        {
+          "source": "Decrypt",
+          "title": "OKX-ICE Tokenized Stock Venue Sets Launch, Turning to Crypto Companies After Big Tech Opts Out",
+          "link": "https://decrypt.co/383040/okx-ice-tokenized-stock-venue-sets-launch-crypto-companies-big-tech-opts-out",
+          "pubDate": "2026-11-11 16:14:01",
+          "summary": "OKXICE will open its tokenized securities venue Nov. 23 with more than 70 assets, led by crypto companies like Coinbase, Circle, Robinhood and Strategy, after 67 companies objected to having their shares listed."
         },
         {
           "source": "Decrypt",
@@ -3391,75 +849,12 @@
           "link": "https://decrypt.co/382992/decrypt-becomes-first-news-publisher-to-offer-perps-trading-powered-by-solanas-phoenix",
           "pubDate": "2026-11-11 14:02:55",
           "summary": "The integration brings perpetual futures trading into Decrypt, so readers can trade crypto, stocks and commodities without leaving the news."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: What Anthropic’s $1.4 Trillion IPO Means for Crypto",
-          "link": "https://decrypt.co/383001/morning-minute-what-anthropics-1-4-trillion-ipo-means-for-crypto",
-          "pubDate": "2026-11-11 12:55:18",
-          "summary": "Hint: if it plays out similarly to the SpaceX IPO, it means the Bitcoin bottom is very close."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Kraken Parent Payward Brings 200 UK and EU Stocks Onchain as xStocks",
-          "link": "https://decrypt.co/383000/kraken-parent-payward-brings-200-uk-and-eu-stocks-onchain-as-xstocks",
-          "pubDate": "2026-11-11 12:46:24",
-          "summary": "The expansion takes xStocks past 1,500 tokenized assets, though the new UK tokens still can&#39;t be bought by investors in the UK."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Nvidia Sheds $430B in Two Days as Jensen Huang Faces Calls to Resign",
-          "link": "https://decrypt.co/382991/nvidia-sheds-430b-in-two-days-as-jensen-huang-faces-calls-to-resign",
-          "pubDate": "2026-11-11 12:15:46",
-          "summary": "Nvidia&#39;s independent directors have hired Wachtell Lipton to investigate its CEO&#39;s ties to an alleged Chinese spy, as pressure mounts."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Avalanche Won Over the NYSE. Now It Has to ‘Capture Value’ for AVAX",
-          "link": "https://decrypt.co/382988/avalanche-won-over-the-nyse-now-it-has-to-capture-value-for-avax",
-          "pubDate": "2026-11-11 10:53:11",
-          "summary": "The New York Stock Exchange will use Avalanche infrastructure, but experts say that won&#39;t necessarily boost AVAX&#39;s price."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Prisoner Jailed for 8 Years Over $2.7M Crypto Theft Plot Run From His Cell",
-          "link": "https://decrypt.co/382984/prisoner-jailed-for-8-years-over-2-7m-crypto-theft-plot-run-from-his-cell",
-          "pubDate": "2026-11-11 10:20:53",
-          "summary": "Robert Barr planned to have accomplices force a crypto investor to install remote-access software so he could drain the wallet from prison."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Miner HIVE Eyes $45 Million in Annual Revenue From AI Deal",
-          "link": "https://decrypt.co/382982/bitcoin-miner-hive-eyes-45-million-ai-data-center",
-          "pubDate": "2026-11-10 22:46:02",
-          "summary": "The Bitcoin miner says its Boden facility could generate $45 million annually, but a June letter of intent remains nonbinding as executives negotiate financing and customer protections for the project."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Trump Media Posts $410 Million Profit. Bitcoin Gains Did the Heavy Lifting",
-          "link": "https://decrypt.co/382967/trump-media-posts-410-million-profit-bitcoin-gains",
-          "pubDate": "2026-11-10 21:36:03",
-          "summary": "Truth Social’s parent booked $409.7 million in quarterly income largely from crypto investments, even as its stock remained more than 94% below its March 2024 peak."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Nvidia Erases 2026 Gains as Republicans Threaten Jensen Huang With Subpoena",
-          "link": "https://decrypt.co/382974/nvidia-erases-2026-gains-republicans-threaten-ceo-subpoena",
-          "pubDate": "2026-11-10 20:45:50",
-          "summary": "The chipmaker has erased its 2026 gains as a suspected Chinese espionage case brings fresh scrutiny of CEO Jensen Huang."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
-          "link": "https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents",
-          "pubDate": "2026-11-10 20:16:03",
-          "summary": "An SGLang flaw let an attacker reach internal systems and potentially view confidential AI requests, exposing the limits of hardware-backed privacy protections."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
+          "sentiment": "BEARISH",
+          "impact": -1,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3471,11 +866,12 @@
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -0.17,
+          "impact": -0.67,
           "sources": [
-            "CoinTelegraph"
+            "CoinTelegraph",
+            "Decrypt"
           ],
-          "multiSourced": false,
+          "multiSourced": true,
           "critical": false,
           "critHead": ""
         },
@@ -3524,9 +920,7 @@
         "AVAX": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "Decrypt"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3568,17 +962,17 @@
       "fearGreed": {
         "value": 29,
         "classification": "Fear",
-        "t": 1794409211892
+        "t": 1794433765763
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794409212909,
+      "fetchedAt": 1794433766631,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 10.45,
+        "ARB": 10.44,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3595,35 +989,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 894,
+          "pct": 893.45,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 137.69,
+          "pct": 137.54,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 10.45,
+          "pct": 10.44,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 37.34,
+          "pct": 37.3,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 186.3,
+          "pct": 186.09,
           "lev": 10
         },
         {
@@ -3637,63 +1031,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 22.22,
+          "pct": 22.2,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 249.53,
+          "pct": 249.25,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 32.51,
+          "pct": 32.48,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 101.19,
+          "pct": 101.08,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 51.66,
+          "pct": 51.6,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 76.37,
+          "pct": 73.72,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 213.54,
+          "pct": 206.12,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 154.1,
+          "pct": 148.75,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1143.57,
+          "pct": 1160.84,
           "lev": 10
         }
       ]
@@ -3702,14 +1096,13 @@
       "id": "emax",
       "name": "EMA Cross Naive (CONTROL)",
       "book": "Baseline Penelitian",
-      "netR": 54.84,
-      "trades": 76,
-      "winRate": 89.4,
-      "pf": 66.48,
-      "expPerTrade": 0.722,
-      "updatedAt": 1794409213850,
-      "gen": 8
-    },
-    "minScore": 75
+      "netR": 13.46,
+      "trades": 9,
+      "winRate": 100,
+      "pf": 99,
+      "expPerTrade": 1.495,
+      "updatedAt": 1794433767569,
+      "gen": 0
+    }
   }
 }
