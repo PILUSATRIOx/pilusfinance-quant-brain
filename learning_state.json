@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794340951871,
+  "updatedAt": 1794357247245,
   "brain": {
     "v": 1,
     "gen": 7,
-    "cycles": 45,
+    "cycles": 46,
     "firstBootAt": 1793613402157,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1794264234179,
     "autoExecBursa": false,
@@ -52,7 +52,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 77
+          "beta": 80
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -80,7 +80,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 77
+          "beta": 80
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -108,7 +108,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 77
+          "beta": 80
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -121,7 +121,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 77,
+          "alpha": 80,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -150,7 +150,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 77
+          "beta": 80
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -177,7 +177,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 77,
+          "alpha": 80,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2556,6 +2556,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794357247243,
+        "type": "CYCLE",
+        "text": "[CYCLE #46] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794357245049,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794340951867,
         "type": "CYCLE",
         "text": "[CYCLE #45] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3189,9 +3199,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1140,
+      "newsIngested": 1170,
       "lessons": 0,
-      "backtests": 1284,
+      "backtests": 1314,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3204,8 +3214,50 @@
       }
     },
     "news": {
-      "fetchedAt": 1794340950205,
+      "fetchedAt": 1794357245049,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Warren: What is White House doing to prevent a repeat of teleprompter&#39;s Trump bets?",
+          "link": "https://www.coindesk.com/policy/2026/11/10/warren-what-is-white-house-doing-to-prevent-a-repeat-of-teleprompter-s-trump-bets",
+          "pubDate": "2026-11-10 20:36:33",
+          "summary": "U.S. Senator Elizabeth Warren argued the administration is not doing enough about staff insider trading, questioning whether CFTC enforcement action was sufficient."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Former NYSE president says stock issuers hold the key to tokenization as Bullish builds its platform",
+          "link": "https://www.coindesk.com/business/2026/11/10/former-nyse-president-says-stock-issuers-hold-the-key-to-tokenization-as-bullish-builds-its-platform",
+          "pubDate": "2026-11-10 20:15:08",
+          "summary": "Stacey Cunningham, who recently joined digital asset platform Bullish as President, sees the company’s planned Equiniti acquisition and focus on stock issuers as key to its tokenization ambitions."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Goldman Sachs, Citi among banks said to commit $270 million to stablecoin venture",
+          "link": "https://www.coindesk.com/business/2026/11/10/goldman-sachs-citi-among-banks-said-to-commit-usd270-million-to-stablecoin-venture",
+          "pubDate": "2026-11-10 17:32:22",
+          "summary": "The venture, known as Project Faro, plans to issue a dollar-denominated stablecoin and is expected to be incorporated in the U.S."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Crypto is now teamed up with U.S. government in two legal battles over perps",
+          "link": "https://www.coindesk.com/news-analysis/2026/11/10/crypto-teams-up-with-u-s-government-to-defend-stock-perps-in-legal-fight",
+          "pubDate": "2026-11-10 17:07:22",
+          "summary": "Twice now, crypto firms have found themselves on the side of the U.S. Commodity Futures Trading Commission in holding that perpetual futures aren&#39;t swaps."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Plume affiliate lands broker-dealer license to bring real U.S. assets onchain",
+          "link": "https://www.coindesk.com/markets/2026/11/10/emb-10-am-et-plume-affiliate-gets-the-legal-green-light-to-trade-regulated-security-entitlements-onchain",
+          "pubDate": "2026-11-10 15:51:56",
+          "summary": "Kimber Digital Securities secured SEC and Finra approvals, a regulatory milestone paving the way for the delivery of legally binding claims, dividends, and yield-bearing products directly to self-custodial wallets and st"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Will stablecoins survive once the banks catch up?",
+          "link": "https://www.coindesk.com/opinion/2026/11/10/will-stablecoins-survive-once-the-banks-catch-up",
+          "pubDate": "2026-11-10 14:00:00",
+          "summary": "As crypto firms and banks converge, it is fair to ask what lasting advantage stablecoins have, argues Alessandro Hatami, founder of Pacemakers and former COO of Digital Banking at Lloyds Banking Group."
+        },
         {
           "source": "CoinDesk",
           "title": "U.S. CPI rose stronger than expected 0.4% in October; core rate rose 0.3%",
@@ -3235,46 +3287,53 @@
           "summary": "Bitcoin slipped despite a Monday rebound in U.S. stocks, with spot ETFs losing $201 million as traders await October inflation data later today."
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin slips before U.S. inflation report as traders price in Fed rate increase",
-          "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase",
-          "pubDate": "2026-11-10 10:48:37",
-          "summary": "Fed Governor Waller backs December tightening even if inflation cools, while falling oil prices offer some relief and Anthropic withdraws IPO pricing details."
+          "source": "CoinTelegraph",
+          "title": "CFTC warns Kalshi of imminent charges over notification of contracts: Politico",
+          "link": "https://cointelegraph.com/news/cftc-warns-kalshi-imminent-charges-over-contracts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 23:49:51",
+          "summary": "    The prediction markets operator says the issue involves procedural errors affecting a handful of contracts, many of which weren’t live, according to Politico.  "
         },
         {
-          "source": "CoinDesk",
-          "title": "Live news: Bitcoin adds to losses after disappointing inflation data",
-          "link": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat",
-          "pubDate": "2026-11-10 10:41:45",
-          "summary": "A rate hike in December appears totally assured now, with Fed Governor Chris Waller suggesting even a 50-basis-point move could be appropriate."
+          "source": "CoinTelegraph",
+          "title": "Global banks commit $270M to stablecoin venture targeting 2027 launch",
+          "link": "https://cointelegraph.com/news/banks-270m-project-faro-stablecoin-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 23:08:28",
+          "summary": "    Project Faro, backed by Goldman Sachs, Citigroup and BBVA, has secured $270 million in funding to launch a US dollar stablecoin in the first half of 2027. "
         },
         {
-          "source": "CoinDesk",
-          "title": "The crypto wallet that grew up inside Telegram is striking out on its own",
-          "link": "https://www.coindesk.com/business/2026/11/10/the-crypto-wallet-that-grew-up-inside-telegram-is-striking-out-on-its-own",
-          "pubDate": "2026-11-10 09:59:17",
-          "summary": "The app will offer crypto trading, tokenized U.S. stocks and ETFs, and perpetual futures, all already available through Telegram."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 22:04:47",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Coinbase, Kalshi, Kraken parent back CFTC in legal fight over stock perpetual futures",
-          "link": "https://www.coindesk.com/policy/2026/11/10/coinbase-kalshi-kraken-parent-back-cftc-in-legal-fight-over-stock-perpetual-futures",
-          "pubDate": "2026-11-10 09:14:30",
-          "summary": "The Capital Markets Alliance argues that the products fall under the Securities and Exchange Commission’s jurisdiction."
+          "source": "CoinTelegraph",
+          "title": "Can crypto trust firms compete with banks in US derivatives settlements?",
+          "link": "https://cointelegraph.com/news/crypto-trust-firms-compete-banks-us-derivatives-settlements?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 21:34:40",
+          "summary": "    Crypto custodians are moving into a market handling billions in daily settlements, but regulatory relief and a shift in congressional control leave questions over their long-term role. "
         },
         {
-          "source": "CoinDesk",
-          "title": "An 11-year-old Ethereum wallet moved $4.6 million and dodged a scam set up in minutes",
-          "link": "https://www.coindesk.com/tech/2026/11/10/an-11-year-old-ethereum-wallet-moved-usd4-6-million-and-dodged-a-scam-set-up-in-minutes",
-          "pubDate": "2026-11-10 07:01:06",
-          "summary": "Bots spotted a wallet from Ethereum’s 2015 launch the moment it stirred and planted lookalike addresses in its history, but the owner sent the money to the right place anyway."
+          "source": "CoinTelegraph",
+          "title": "Across Protocol warns users to avoid app amid reports of drained wallets",
+          "link": "https://cointelegraph.com/news/across-protocol-warns-avoid-app-drained-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 21:24:36",
+          "summary": "    The protocol is investigating a potential security incident affecting its domain, while several users have reported losing funds after interacting with the platform. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin miner MARA sold 13,597 BTC for $1.1 billion in six weeks, plans to sell more",
-          "link": "https://www.coindesk.com/markets/2026/11/10/bitcoin-miner-mara-sold-13-597-btc-for-usd1-1-billion-in-six-weeks-plans-to-sell-more",
-          "pubDate": "2026-11-10 05:18:31",
-          "summary": "MARA paid off every loan backed by its bitcoin and says the rest of its coins can fund AI datacenters."
+          "source": "CoinTelegraph",
+          "title": "Ava Labs exec says NYSE deal marks end of blockchain’s ‘general purpose era’",
+          "link": "https://cointelegraph.com/interview/ava-labs-nyse-general-purpose-chains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 21:07:44",
+          "summary": "    Ava Labs’ John Nahas said the collaboration with the NYSE shows institutions moving past pilots toward purpose-built onchain market infrastructure. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Kimber Digital Securities gains broker-dealer status for tokenized assets",
+          "link": "https://cointelegraph.com/news/kimber-digital-securities-broker-dealer-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-10 20:26:02",
+          "summary": "    The Plume affiliate plans to offer tokenized US stocks, ETFs and bonds through self-custodial wallets, with traditional shareholder rights preserved. "
         },
         {
           "source": "CoinTelegraph",
@@ -3298,53 +3357,32 @@
           "summary": "    Trading volume on Polymarket’s US exchange surged from June to October, fueled by sports betting, even as the platform faces mounting regulatory scrutiny.  "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin nears 11-week low after ‘discouraging’ US CPI inflation beat",
-          "link": "https://cointelegraph.com/markets/bitcoin-11-week-low-discouraging-us-cpi-inflation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 16:25:03",
-          "summary": "    Bitcoin and US stocks initially fall after October inflation tops forecasts, with traders expecting a quarter-point Fed rate hike in December. "
+          "source": "Decrypt",
+          "title": "Bitcoin Miner HIVE Eyes $45 Million in Annual Revenue From AI Deal",
+          "link": "https://decrypt.co/382982/bitcoin-miner-hive-eyes-45-million-ai-data-center",
+          "pubDate": "2026-11-10 22:46:02",
+          "summary": "The Bitcoin miner says its Boden facility could generate $45 million annually, but a June letter of intent remains nonbinding as executives negotiate financing and customer protections for the project."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Poland’s lower house backs sanctions bill covering crypto freezes",
-          "link": "https://cointelegraph.com/news/poland-bill-freeze-sanctions-crypto-assets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 13:40:39",
-          "summary": "    The bill is now before the Senate and would broaden the grounds for adding people and companies to Poland’s national sanctions list. "
+          "source": "Decrypt",
+          "title": "Trump Media Posts $410 Million Profit. Bitcoin Gains Did the Heavy Lifting",
+          "link": "https://decrypt.co/382967/trump-media-posts-410-million-profit-bitcoin-gains",
+          "pubDate": "2026-11-10 21:36:03",
+          "summary": "Truth Social’s parent booked $409.7 million in quarterly income largely from crypto investments, even as its stock remained more than 94% below its March 2024 peak."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 13:34:37",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "source": "Decrypt",
+          "title": "Nvidia Erases 2026 Gains as Republicans Threaten Jensen Huang With Subpoena",
+          "link": "https://decrypt.co/382974/nvidia-erases-2026-gains-republicans-threaten-ceo-subpoena",
+          "pubDate": "2026-11-10 20:45:50",
+          "summary": "The chipmaker has erased its 2026 gains as a suspected Chinese espionage case brings fresh scrutiny of CEO Jensen Huang."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin’s ‘best buying opportunity ever’ has arrived: Mark Moss",
-          "link": "https://cointelegraph.com/magazine/bitcoins-best-buying-opportunity-ever-has-arrived-mark-moss?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 13:30:00",
-          "summary": "    Bitcoin Opportunity Fund co-founder Mark Moss says that with banks and ETFs widening access to Bitcoin he expects a new record high in 2027. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin may benefit as global tightening slows, Binance Research says",
-          "link": "https://cointelegraph.com/markets/bitcoin-price-global-tightening-binance-research?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 13:15:59",
-          "summary": "    Binance Research says Bitcoin could find support as global monetary tightening slows, even as markets price in a December Fed rate hike. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Coinbase, Kalshi join lawsuit backing CFTC over US stock perp futures",
-          "link": "https://cointelegraph.com/news/coinbase-kalshi-cftc-stock-perpetual-futures-lawsuit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 11:44:55",
-          "summary": "    Coinbase, Kalshi and four other companies backed the CFTC in a lawsuit over whether US exchanges can list perpetual futures tied to individual stocks. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Binance warns iOS flaw could expose crypto wallet keys",
-          "link": "https://cointelegraph.com/news/binance-warns-ios-flaw-could-expose-crypto-wallet-keys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-10 11:25:57",
-          "summary": "    The exchange urged iPhone users to remove apps installed from untrusted sources, and it is unclear whether Apple’s latest iOS updates fix the flaw. "
+          "source": "Decrypt",
+          "title": "Near AI Breach Exposes User Details and Data From 18 AI Agents",
+          "link": "https://decrypt.co/382965/near-ai-breach-exposes-user-details-data-ai-agents",
+          "pubDate": "2026-11-10 20:16:03",
+          "summary": "An SGLang flaw let an attacker reach internal systems and potentially view confidential AI requests, exposing the limits of hardware-backed privacy protections."
         },
         {
           "source": "Decrypt",
@@ -3387,40 +3425,12 @@
           "link": "https://decrypt.co/382806/decrypt-money-account-gets-confidential-transfers-with-solana-privacy-firm-helius",
           "pubDate": "2026-11-10 14:32:48",
           "summary": "Helius&#39; Solana Privacy Rings will let Decrypt users send funds without broadcasting amounts, as it grows out The Information Exchange."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Anthropic Sets IPO Price Range at $70 to $78, Valuing Company at Up to $1.4 Trillion",
-          "link": "https://decrypt.co/382939/anthropic-sets-ipo-price-range-at-70-to-78-valuing-company-at-up-to-1-4-trillion",
-          "pubDate": "2026-11-10 14:06:02",
-          "summary": "The Claude developer is also lining up $26 billion from Nvidia, Google and other tech giants in a private placement alongside the listing."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Moody’s Taps Chainlink to Send Credit Ratings Across Multiple Blockchains",
-          "link": "https://decrypt.co/382888/moodys-chainlink-credit-ratings-across-multiple-blockchains",
-          "pubDate": "2026-11-10 14:01:02",
-          "summary": "The testnet pilot used Chainlink’s CCIP to distribute Moody’s ratings simultaneously across permissioned and permissionless blockchains, while preserving the firm’s existing publication and governance processes."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Vitalik Recasts ETH as a Store of Value",
-          "link": "https://decrypt.co/382931/morning-minute-vitalik-recasts-eth-as-a-store-of-value",
-          "pubDate": "2026-11-10 13:24:51",
-          "summary": "It’s a big shift for Ethereum from the “ultrasound money” days. But can ETH compete as a store-of-value play?"
-        },
-        {
-          "source": "Decrypt",
-          "title": "Binance Warns of Apple iOS Flaw That Could Expose iPhone Users&#39; Private Keys",
-          "link": "https://decrypt.co/382928/binance-warns-of-apple-ios-flaw-that-could-expose-iphone-users-private-keys",
-          "pubDate": "2026-11-10 12:45:34",
-          "summary": "Apple has not publicly confirmed the &quot;worse_query&quot; bug, which a researcher published days before its latest iOS security update."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3431,13 +3441,10 @@
           "critHead": "Mercado Bitcoin to resume cash withdrawals after $49M hack"
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
-          "sources": [
-            "CoinDesk",
-            "Decrypt"
-          ],
-          "multiSourced": true,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
+          "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
@@ -3496,9 +3503,7 @@
         "LINK": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "Decrypt"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3535,19 +3540,19 @@
         }
       ],
       "fearGreed": {
-        "value": 32,
+        "value": 29,
         "classification": "Fear",
-        "t": 1794340950205
+        "t": 1794357245049
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794340951074,
+      "fetchedAt": 1794357245968,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 9.75,
+        "ARB": 9.91,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3564,35 +3569,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 925.44,
+          "pct": 918.67,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 128.49,
+          "pct": 130.5,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 9.75,
+          "pct": 9.91,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 34.84,
+          "pct": 35.39,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 173.85,
+          "pct": 176.57,
           "lev": 10
         },
         {
@@ -3606,63 +3611,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 20.74,
+          "pct": 21.06,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 232.86,
+          "pct": 236.5,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 30.34,
+          "pct": 30.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 94.43,
+          "pct": 95.91,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 48.21,
+          "pct": 48.96,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 71.91,
+          "pct": 72.16,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 201.06,
+          "pct": 201.77,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 166.9,
+          "pct": 167.48,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1144.41,
+          "pct": 1187.03,
           "lev": 10
         }
       ]
@@ -3676,7 +3681,7 @@
       "winRate": 88.4,
       "pf": 66.55,
       "expPerTrade": 0.727,
-      "updatedAt": 1794340951869,
+      "updatedAt": 1794357247244,
       "gen": 7
     },
     "minScore": 75
