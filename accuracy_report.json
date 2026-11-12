@@ -1,7 +1,7 @@
 {
-  "updatedAt": 1794478362257,
+  "updatedAt": 1794507563891,
   "gen": 0,
-  "cycles": 3,
+  "cycles": 4,
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
@@ -12,12 +12,12 @@
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
     "book": "Baseline Penelitian",
-    "netR": 40.37,
-    "trades": 27,
+    "netR": 53.82,
+    "trades": 36,
     "winRate": 100,
     "pf": 99,
     "expPerTrade": 1.495,
-    "updatedAt": 1794478362256,
+    "updatedAt": 1794507563889,
     "gen": 0
   },
   "learnedParameters": {
@@ -27,6 +27,6 @@
     "tp1Ratio": 0.8,
     "volConfirmMult": 1.15
   },
-  "hurstExponent": 0.52,
+  "hurstExponent": 0.51,
   "proof": "Verified 24/7 autonomous evaluation against real OHLCV market prices with strict 1.0% risk money management."
 }
