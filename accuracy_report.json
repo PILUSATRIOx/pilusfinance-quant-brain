@@ -1,7 +1,7 @@
 {
-  "updatedAt": 1794450813764,
+  "updatedAt": 1794478362257,
   "gen": 0,
-  "cycles": 2,
+  "cycles": 3,
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
@@ -12,12 +12,12 @@
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
     "book": "Baseline Penelitian",
-    "netR": 26.91,
-    "trades": 18,
+    "netR": 40.37,
+    "trades": 27,
     "winRate": 100,
     "pf": 99,
     "expPerTrade": 1.495,
-    "updatedAt": 1794450813763,
+    "updatedAt": 1794478362256,
     "gen": 0
   },
   "learnedParameters": {
