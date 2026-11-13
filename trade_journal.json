@@ -1,4 +1,107 @@
 {
+<<<<<<< Updated upstream
   "trades": [],
   "updatedAt": 1794595228195
+=======
+  "updatedAt": 1794595228193,
+  "closedTrades": [],
+  "activeSignals": [],
+  "recentJournal": [
+    {
+      "t": 1794595228191,
+      "type": "CYCLE",
+      "text": "[CYCLE #8] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794595226985,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 20 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794569364516,
+      "type": "CYCLE",
+      "text": "[CYCLE #7] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794569363024,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 20 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794540996399,
+      "type": "CYCLE",
+      "text": "[CYCLE #6] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794540995986,
+      "type": "GEN",
+      "text": "[GEN #1] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.96R · Win 88.6%)"
+    },
+    {
+      "t": 1794540995151,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 20 (Extreme Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794526958788,
+      "type": "CYCLE",
+      "text": "[CYCLE #5] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794526957244,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794507563888,
+      "type": "CYCLE",
+      "text": "[CYCLE #4] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794507561499,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: ETH — Long baru diblokir (Are Alt-L1s over? Security, costs drive smaller chains to Ethereum)"
+    },
+    {
+      "t": 1794507561497,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794478362255,
+      "type": "CYCLE",
+      "text": "[CYCLE #3] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794478360247,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794450813762,
+      "type": "CYCLE",
+      "text": "[CYCLE #2] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794450812189,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794433767568,
+      "type": "CYCLE",
+      "text": "[CYCLE #1] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794433765763,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
+    },
+    {
+      "t": 1794433764774,
+      "type": "SYS",
+      "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
+    }
+  ]
+>>>>>>> Stashed changes
 }
