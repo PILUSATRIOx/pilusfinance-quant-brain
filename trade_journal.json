@@ -1,12 +1,23 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1794595228195
-=======
-  "updatedAt": 1794595228193,
+  "updatedAt": 1794613935106,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794613935103,
+      "type": "CYCLE",
+      "text": "[CYCLE #9] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794613933647,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Adam Back makes case for simpler security as Blockstream launches Bitcoin custod)"
+    },
+    {
+      "t": 1794613933645,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 20 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794595228191,
       "type": "CYCLE",
@@ -103,5 +114,4 @@
       "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
     }
   ]
->>>>>>> Stashed changes
 }
