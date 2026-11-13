@@ -1,4 +1,21 @@
 {
+<<<<<<< Updated upstream
+=======
+  "updatedAt": 1794540996402,
+  "gen": 1,
+  "champion": {
+    "id": "emax",
+    "name": "EMA Cross Naive (CONTROL)",
+    "book": "Baseline Penelitian",
+    "netR": 55.96,
+    "trades": 76,
+    "winRate": 88.6,
+    "pf": 66.51,
+    "expPerTrade": 0.736,
+    "updatedAt": 1794540996401,
+    "gen": 1
+  },
+>>>>>>> Stashed changes
   "weights": {
     "elder": 0.83,
     "donchian": 0.87,

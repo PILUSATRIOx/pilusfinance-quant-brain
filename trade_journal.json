@@ -1,12 +1,23 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1794526958793
-=======
-  "updatedAt": 1794526958792,
+  "updatedAt": 1794540996402,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794540996399,
+      "type": "CYCLE",
+      "text": "[CYCLE #6] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794540995986,
+      "type": "GEN",
+      "text": "[GEN #1] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+55.96R · Win 88.6%)"
+    },
+    {
+      "t": 1794540995151,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 20 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794526958788,
       "type": "CYCLE",
@@ -68,5 +79,4 @@
       "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
     }
   ]
->>>>>>> Stashed changes
 }
