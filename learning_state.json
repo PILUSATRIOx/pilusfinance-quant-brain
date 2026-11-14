@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794613935106,
+  "updatedAt": 1794627543858,
   "brain": {
     "v": 1,
     "gen": 1,
-    "cycles": 9,
+    "cycles": 10,
     "firstBootAt": 1794433764734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1794540995986,
     "autoExecBursa": false,
@@ -46,7 +46,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 25
+          "beta": 28
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -74,7 +74,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 23
+          "beta": 26
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -102,7 +102,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 23
+          "beta": 26
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -115,7 +115,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 23,
+          "alpha": 26,
           "beta": 4
         },
         "TREND_DOWN": {
@@ -144,7 +144,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 3,
-          "beta": 24
+          "beta": 27
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -171,7 +171,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 25,
+          "alpha": 28,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2550,6 +2550,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794627543854,
+        "type": "CYCLE",
+        "text": "[CYCLE #10] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794627542266,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794613935103,
         "type": "CYCLE",
         "text": "[CYCLE #9] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2668,9 +2678,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 270,
+      "newsIngested": 300,
       "lessons": 0,
-      "backtests": 270,
+      "backtests": 300,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2683,8 +2693,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1794613933645,
+      "fetchedAt": 1794627542266,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin miners pay Paraguay $350 million a year, but AI is pushing them out",
+          "link": "https://www.coindesk.com/tech/2026/11/13/bitcoin-miners-pay-paraguay-usd350-million-a-year-but-ai-is-pushing-them-out",
+          "pubDate": "2026-11-13 23:30:00",
+          "summary": "Contracts that sell power to a 4% slice of the world’s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay’s state utility calls the date final, and it has just signed a 15-year deal to power a Founde"
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
@@ -2747,13 +2764,6 @@
           "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-firm-nakamoto-owes-kraken-usd165-million-more-than-its-entire-market-value",
           "pubDate": "2026-11-13 06:03:41",
           "summary": "About 70% of the bitcoin treasury firm’s coins are pledged to the exchange, bought at roughly $118,000 each, and bitcoin now trades under $69,000."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin ETFs are now down over $1.5 billion in net outflows for the year",
-          "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-etfs-are-now-down-over-usd1-5-billion-in-net-outflows-for-the-year",
-          "pubDate": "2026-11-13 05:45:26",
-          "summary": "Recent rapid redemptions explain the market swoon. Bitcoin&#39;s spot price fell below $70,000 on Friday, the lowest since August."
         },
         {
           "source": "CoinTelegraph",
@@ -2899,7 +2909,7 @@
       "perCoin": {
         "BTC": {
           "sentiment": "BULLISH",
-          "impact": 0.33,
+          "impact": 0.5,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -3011,19 +3021,19 @@
         }
       ],
       "fearGreed": {
-        "value": 20,
+        "value": 13,
         "classification": "Extreme Fear",
-        "t": 1794613933645
+        "t": 1794627542266
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794613934222,
+      "fetchedAt": 1794627543078,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 11.08,
+        "ARB": 11.44,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3040,35 +3050,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 928.61,
+          "pct": 934.54,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 90.58,
+          "pct": 93.6,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.08,
+          "pct": 11.44,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 39.57,
+          "pct": 40.89,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 197.43,
+          "pct": 204.01,
           "lev": 10
         },
         {
@@ -3082,63 +3092,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.55,
+          "pct": 24.33,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 264.45,
+          "pct": 273.26,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 34.46,
+          "pct": 35.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 107.24,
+          "pct": 110.81,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 54.75,
+          "pct": 56.57,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 87.73,
+          "pct": 96.11,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 245.29,
+          "pct": 268.71,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 142.2,
+          "pct": 155.77,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1185.59,
+          "pct": 1149.74,
           "lev": 10
         }
       ]
@@ -3152,7 +3162,7 @@
       "winRate": 88.6,
       "pf": 66.51,
       "expPerTrade": 0.736,
-      "updatedAt": 1794613935105,
+      "updatedAt": 1794627543857,
       "gen": 1
     }
   }
