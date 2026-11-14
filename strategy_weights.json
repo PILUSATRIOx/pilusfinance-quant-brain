@@ -1,29 +1,29 @@
 {
-  "updatedAt": 1794653677116,
-  "gen": 1,
+  "updatedAt": 1794674828417,
+  "gen": 2,
   "champion": {
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
     "book": "Baseline Penelitian",
-    "netR": 55.24,
-    "trades": 76,
-    "winRate": 89.3,
-    "pf": 66.57,
-    "expPerTrade": 0.727,
-    "updatedAt": 1794653677115,
-    "gen": 1
+    "netR": 53.6,
+    "trades": 77,
+    "winRate": 88.9,
+    "pf": 66.55,
+    "expPerTrade": 0.696,
+    "updatedAt": 1794674828416,
+    "gen": 2
   },
   "weights": {
-    "elder": 0.83,
-    "donchian": 0.87,
-    "bbrev": 0.74,
+    "elder": 0.73,
+    "donchian": 0.81,
+    "bbrev": 0.58,
     "wyckoff": 0.99,
-    "rsidiv": 0.74,
-    "macdm": 0.85,
-    "smc": 0.74,
-    "statarb": 0.74,
+    "rsidiv": 0.58,
+    "macdm": 0.78,
+    "smc": 0.58,
+    "statarb": 0.58,
     "tsmom": 1,
-    "emax": 1.03
+    "emax": 1.02
   },
   "bayesianCells": 10
 }
