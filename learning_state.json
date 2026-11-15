@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794726923413,
+  "updatedAt": 1794754041606,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 15,
+    "cycles": 16,
     "firstBootAt": 1794433764734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1794674827542,
     "autoExecBursa": false,
@@ -46,7 +46,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 37
+          "beta": 40
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -74,7 +74,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 35
+          "beta": 38
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -102,7 +102,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 35
+          "beta": 38
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -115,7 +115,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 35,
+          "alpha": 38,
           "beta": 4
         },
         "TREND_DOWN": {
@@ -144,7 +144,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 3,
-          "beta": 36
+          "beta": 39
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -171,7 +171,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 37,
+          "alpha": 40,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2550,6 +2550,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794754041603,
+        "type": "CYCLE",
+        "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794754039952,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794726923409,
         "type": "CYCLE",
         "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2743,9 +2753,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 450,
+      "newsIngested": 480,
       "lessons": 0,
-      "backtests": 450,
+      "backtests": 480,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2758,8 +2768,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1794726922076,
+      "fetchedAt": 1794754039952,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
+          "link": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
+          "pubDate": "2026-11-15 02:50:57",
+          "summary": "XRP tanked to its lowest level since November 2024 as ETF outflows and shrinking stablecoin supply add to pressure on crypto markets."
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
@@ -2824,11 +2841,25 @@
           "summary": "Analysts see no direct link between Nvidia and bitcoin&#39;s decline, pointing instead to investor capital headed into Anthropic as well as a broader risk-off move."
         },
         {
-          "source": "CoinDesk",
-          "title": "U.S. Senate Banking Committee races toward hearing on new SEC nominations",
-          "link": "https://www.coindesk.com/policy/2026/11/13/u-s-senate-banking-committee-races-toward-hearing-on-new-sec-nominations",
-          "pubDate": "2026-11-13 17:05:43",
-          "summary": "The committee that needs to advance President Donald Trump&#39;s nominees responded quickly to set his SEC picks for review next week."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-15 11:18:48",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin falls to four-month low near $62K as crypto selloff deepens",
+          "link": "https://cointelegraph.com/markets/bitcoin-four-month-low-62k-crypto-market-selloff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-15 10:23:17",
+          "summary": "    The global cryptocurrency market capitalization fell 4% to $2.26 trillion over 24 hours, while Ether and Solana posted double-digit weekly losses. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Coinone warns of phishing, identity theft after customer data breach",
+          "link": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-15 08:07:58",
+          "summary": "    The South Korean crypto exchange said potentially exposed information includes passwords, bank account numbers, national identification numbers and crypto wallet addresses. "
         },
         {
           "source": "CoinTelegraph",
@@ -2836,13 +2867,6 @@
           "link": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-15 06:27:26",
           "summary": "    The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-14 11:28:12",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -2887,18 +2911,11 @@
           "summary": "    Payward’s adjusted EBITDA fell 66% year over year to $60 million, even as its share of global spot trading nearly doubled and fee-based services expanded. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "US regulators move ahead on crypto trust charters as Senate scrutiny grows",
-          "link": "https://cointelegraph.com/news/us-regulators-crypto-trust-charters-senate-scrutiny-grows?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-13 20:53:20",
-          "summary": "    Coinbase’s trust company received final clearance as lawmakers seek records on crypto firms’ compliance and potential conflicts of interest. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Metaplanet swings to $170M loss as Bitcoin sale hits earnings",
-          "link": "https://cointelegraph.com/news/metaplanet-swings-170m-loss-bitcoin-sale-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-13 18:28:29",
-          "summary": "    Bitcoin sales, valuation losses and rising borrowing costs weighed on the Japanese company’s earnings despite higher revenue and operating profit. "
+          "source": "Decrypt",
+          "title": "Bitcoin ETFs Lose $2.1 Billion in November as Outflow Streak Hits Seven Days",
+          "link": "https://decrypt.co/383282/bitcoin-etfs-lose-2-1-billion-november-outflow-streak-seven-days",
+          "pubDate": "2026-11-15 14:01:02",
+          "summary": "Spot Bitcoin ETFs shed $185.4 million on Friday, their seventh straight day of outflows, pushing November losses to about $2.1 billion as Bitcoin fell toward $64,000."
         },
         {
           "source": "Decrypt",
@@ -2962,13 +2979,6 @@
           "link": "https://decrypt.co/383264/dormant-bitcoin-wallets-wake-up-after-16-years",
           "pubDate": "2026-11-13 19:36:03",
           "summary": "Two Bitcoin mining rewards from September 2010 moved minutes apart. The coins are worth nearly 1.15 million times their original market value."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Fed Chair Warsh Wants Answers on AI Inflation—and Bitcoin May Feel the Impact",
-          "link": "https://decrypt.co/383259/fed-chair-warsh-wants-answers-ai-inflation-bitcoin",
-          "pubDate": "2026-11-13 18:36:02",
-          "summary": "The Federal Reserve is examining whether AI will lower prices or keep inflation elevated, a question that could shape interest rates and the outlook for crypto."
         }
       ],
       "perCoin": {
@@ -2988,24 +2998,29 @@
           "sentiment": "BEARISH",
           "impact": -0.5,
           "sources": [
-            "CoinDesk"
+            "CoinDesk",
+            "CoinTelegraph"
           ],
-          "multiSourced": false,
+          "multiSourced": true,
           "critical": false,
           "critHead": ""
         },
         "SOL": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinTelegraph"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
         "XRP": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
+          "sentiment": "BEARISH",
+          "impact": -0.67,
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3086,17 +3101,17 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1794726922075
+        "t": 1794754039952
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794726922742,
+      "fetchedAt": 1794754040913,
       "bias": {
         "HYPE": -40,
-        "BTC": -17.25,
-        "ARB": 13.18,
+        "BTC": -17.14,
+        "ARB": 13.1,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3113,35 +3128,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1006.32,
+          "pct": 974.63,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 17.25,
+          "pct": 17.14,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 13.18,
+          "pct": 13.1,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 47.08,
+          "pct": 46.8,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 234.9,
+          "pct": 233.53,
           "lev": 10
         },
         {
@@ -3155,63 +3170,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 28.02,
+          "pct": 27.86,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 247.59,
+          "pct": 246.13,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 41,
+          "pct": 40.76,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 127.59,
+          "pct": 126.84,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 65.14,
+          "pct": 64.76,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 95.21,
+          "pct": 110.19,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 266.2,
+          "pct": 308.1,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 83.25,
+          "pct": 96.35,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1266.84,
+          "pct": 1250.35,
           "lev": 10
         }
       ]
@@ -3225,7 +3240,7 @@
       "winRate": 88.9,
       "pf": 66.55,
       "expPerTrade": 0.696,
-      "updatedAt": 1794726923412,
+      "updatedAt": 1794754041605,
       "gen": 2
     }
   }
