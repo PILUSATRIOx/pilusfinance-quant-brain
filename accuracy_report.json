@@ -1,7 +1,7 @@
 {
-  "updatedAt": 1794689879700,
+  "updatedAt": 1794703654640,
   "gen": 2,
-  "cycles": 13,
+  "cycles": 14,
   "totalSignals": 0,
   "closed": 0,
   "wins": 0,
@@ -17,7 +17,7 @@
     "winRate": 88.9,
     "pf": 66.55,
     "expPerTrade": 0.696,
-    "updatedAt": 1794689879699,
+    "updatedAt": 1794703654639,
     "gen": 2
   },
   "learnedParameters": {
