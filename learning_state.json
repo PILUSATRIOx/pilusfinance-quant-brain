@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794703654640,
+  "updatedAt": 1794726923413,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 14,
+    "cycles": 15,
     "firstBootAt": 1794433764734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1794674827542,
     "autoExecBursa": false,
@@ -46,7 +46,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 34
+          "beta": 37
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -74,7 +74,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 32
+          "beta": 35
         },
         "TREND_DOWN": {
           "alpha": 3,
@@ -102,7 +102,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 32
+          "beta": 35
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -115,7 +115,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 32,
+          "alpha": 35,
           "beta": 4
         },
         "TREND_DOWN": {
@@ -144,7 +144,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 3,
-          "beta": 33
+          "beta": 36
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -171,7 +171,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 34,
+          "alpha": 37,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2550,6 +2550,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794726923409,
+        "type": "CYCLE",
+        "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794726922075,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794703654637,
         "type": "CYCLE",
         "text": "[CYCLE #14] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2733,9 +2743,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 420,
+      "newsIngested": 450,
       "lessons": 0,
-      "backtests": 420,
+      "backtests": 450,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2748,11 +2758,11 @@
       }
     },
     "news": {
-      "fetchedAt": 1794703653098,
+      "fetchedAt": 1794726922076,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "Bitcoin slides to 3-month low of $65,000 as analyst flags fourth capitulation wave",
+          "title": "Bitcoin crashes to 3-month low below $63,000 as analyst flags fourth capitulation wave",
           "link": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst",
           "pubDate": "2026-11-14 16:33:29",
           "summary": "&quot;They are now selling at the very price they wish they had taken advantage of three months ago,&quot; wrote James Check."
@@ -2822,6 +2832,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
+          "link": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-15 06:27:26",
+          "summary": "    The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-14 11:28:12",
@@ -2882,13 +2899,6 @@
           "link": "https://cointelegraph.com/news/metaplanet-swings-170m-loss-bitcoin-sale-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-13 18:28:29",
           "summary": "    Bitcoin sales, valuation losses and rising borrowing costs weighed on the Japanese company’s earnings despite higher revenue and operating profit. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin holds below $70K as stocks slip despite a cooler US PPI print",
-          "link": "https://cointelegraph.com/markets/bitcoin-below-70k-stocks-slip-cooler-us-ppi-print?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-13 16:39:11",
-          "summary": "    Bitcoin was down about 4% on the day amid a tepid market reaction to October’s US PPI reading, which came in below expected levels. "
         },
         {
           "source": "Decrypt",
@@ -3076,17 +3086,17 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1794703653098
+        "t": 1794726922075
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794703653883,
+      "fetchedAt": 1794726922742,
       "bias": {
         "HYPE": -40,
-        "BTC": -20,
-        "ARB": 15.56,
+        "BTC": -17.25,
+        "ARB": 13.18,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3103,35 +3113,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1006.68,
+          "pct": 1006.32,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 39.79,
+          "pct": 17.25,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 15.56,
+          "pct": 13.18,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 55.58,
+          "pct": 47.08,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 277.33,
+          "pct": 234.9,
           "lev": 10
         },
         {
@@ -3145,63 +3155,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 33.08,
+          "pct": 28.02,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 368.06,
+          "pct": 247.59,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 48.4,
+          "pct": 41,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 150.64,
+          "pct": 127.59,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 76.9,
+          "pct": 65.14,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 111.8,
+          "pct": 95.21,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 312.59,
+          "pct": 266.2,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 97.75,
+          "pct": 83.25,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1223.13,
+          "pct": 1266.84,
           "lev": 10
         }
       ]
@@ -3215,7 +3225,7 @@
       "winRate": 88.9,
       "pf": 66.55,
       "expPerTrade": 0.696,
-      "updatedAt": 1794703654639,
+      "updatedAt": 1794726923412,
       "gen": 2
     }
   }
