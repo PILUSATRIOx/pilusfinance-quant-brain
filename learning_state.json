@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794754041606,
+  "updatedAt": 1794772727961,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 16,
+    "cycles": 17,
     "firstBootAt": 1794433764734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1794674827542,
     "autoExecBursa": false,
@@ -49,12 +49,12 @@
           "beta": 40
         },
         "TREND_DOWN": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         },
         "RANGING": {
-          "alpha": 6,
-          "beta": 7
+          "alpha": 7,
+          "beta": 8
         }
       },
       "donchian": {
@@ -63,12 +63,12 @@
           "beta": 4
         },
         "TREND_DOWN": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         },
         "RANGING": {
           "alpha": 3,
-          "beta": 10
+          "beta": 12
         }
       },
       "bbrev": {
@@ -77,11 +77,11 @@
           "beta": 38
         },
         "TREND_DOWN": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         },
         "RANGING": {
-          "alpha": 7,
+          "alpha": 9,
           "beta": 6
         }
       },
@@ -92,11 +92,11 @@
         },
         "TREND_DOWN": {
           "alpha": 2,
-          "beta": 3
+          "beta": 4
         },
         "RANGING": {
-          "alpha": 9,
-          "beta": 4
+          "alpha": 10,
+          "beta": 5
         }
       },
       "rsidiv": {
@@ -106,11 +106,11 @@
         },
         "TREND_DOWN": {
           "alpha": 2,
-          "beta": 3
+          "beta": 4
         },
         "RANGING": {
-          "alpha": 3,
-          "beta": 8
+          "alpha": 4,
+          "beta": 9
         }
       },
       "macdm": {
@@ -119,12 +119,12 @@
           "beta": 4
         },
         "TREND_DOWN": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         },
         "RANGING": {
           "alpha": 3,
-          "beta": 10
+          "beta": 12
         }
       },
       "smc": {
@@ -133,12 +133,12 @@
           "beta": 4
         },
         "TREND_DOWN": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         },
         "RANGING": {
           "alpha": 7,
-          "beta": 5
+          "beta": 6
         }
       },
       "statarb": {
@@ -148,10 +148,10 @@
         },
         "TREND_DOWN": {
           "alpha": 2,
-          "beta": 3
+          "beta": 4
         },
         "RANGING": {
-          "alpha": 6,
+          "alpha": 8,
           "beta": 7
         }
       },
@@ -175,11 +175,11 @@
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         },
         "RANGING": {
-          "alpha": 7,
+          "alpha": 9,
           "beta": 6
         }
       }
@@ -2550,6 +2550,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794772727957,
+        "type": "CYCLE",
+        "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794772726484,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794754041603,
         "type": "CYCLE",
         "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2753,9 +2763,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 480,
+      "newsIngested": 510,
       "lessons": 0,
-      "backtests": 480,
+      "backtests": 510,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2768,8 +2778,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1794754039952,
+      "fetchedAt": 1794772726484,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Crypto insiders aren&#39;t counting on silver linings in Congress&#39; &#39;lame duck&#39; session",
+          "link": "https://www.coindesk.com/news-analysis/2026/11/13/crypto-insiders-aren-t-counting-on-silver-linings-in-congress-lame-duck-session",
+          "pubDate": "2026-11-15 14:00:00",
+          "summary": "With ascendent Democrats ready to pursue their own crypto and tech agendas next year, the final weeks of this session probably won&#39;t produce crypto surprises."
+        },
         {
           "source": "CoinDesk",
           "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
@@ -2834,11 +2851,11 @@
           "summary": "Contracts that sell power to a 4% slice of the world’s bitcoin mining at $44 a megawatt-hour expire on Dec. 31, 2027. Paraguay’s state utility calls the date final, and it has just signed a 15-year deal to power a Founde"
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin plunges to $68,000 as Anthropic IPO frenzy adds to market jitters",
-          "link": "https://www.coindesk.com/markets/2026/11/13/bitcoin-slides-to-usd68k-as-nvidia-turmoil-anthropic-ipo-fuel-broader-market-sell-off",
-          "pubDate": "2026-11-13 18:39:58",
-          "summary": "Analysts see no direct link between Nvidia and bitcoin&#39;s decline, pointing instead to investor capital headed into Anthropic as well as a broader risk-off move."
+          "source": "CoinTelegraph",
+          "title": "Enterprise blockchain is going to come back from the dead",
+          "link": "https://cointelegraph.com/opinion/enterprise-blockchain-come-back-from-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-15 14:30:00",
+          "summary": "    With scalability, privacy tools and onchain liquidity improving, businesses may finally have the infrastructure to make enterprise blockchain work. "
         },
         {
           "source": "CoinTelegraph",
@@ -2904,11 +2921,11 @@
           "summary": "    Blockstream’s new custody system, developed with Thales, uses dedicated hardware for transaction signing as Adam Back advocates for offline security to reduce cyber risks. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Kraken parent Payward gains market share as slower trading weighs on earnings",
-          "link": "https://cointelegraph.com/news/kraken-parent-payward-gains-market-share-slower-trading-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-13 21:01:39",
-          "summary": "    Payward’s adjusted EBITDA fell 66% year over year to $60 million, even as its share of global spot trading nearly doubled and fee-based services expanded. "
+          "source": "Decrypt",
+          "title": "How Wall Street Is Racing to Claim the Onchain Dollar",
+          "link": "https://decrypt.co/383284/how-wall-street-racing-onchain-dollar-stablecoins",
+          "pubDate": "2026-11-15 16:01:02",
+          "summary": "From Goldman and Citi’s $270 million “Project Faro” to SoFi, Anchorage, Mastercard, Visa and Circle, traditional finance is racing to claim the onchain dollar once dominated by Tether and Circle."
         },
         {
           "source": "Decrypt",
@@ -2972,13 +2989,6 @@
           "link": "https://decrypt.co/383267/jpmorgan-bitcoin-crypto-linked-holdings-approach-1-billion",
           "pubDate": "2026-11-13 20:16:03",
           "summary": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Dormant Bitcoin Wallets Wake Up After 16 Years, Moving $6.9 Million",
-          "link": "https://decrypt.co/383264/dormant-bitcoin-wallets-wake-up-after-16-years",
-          "pubDate": "2026-11-13 19:36:03",
-          "summary": "Two Bitcoin mining rewards from September 2010 moved minutes apart. The coins are worth nearly 1.15 million times their original market value."
         }
       ],
       "perCoin": {
@@ -3058,11 +3068,9 @@
           "critHead": ""
         },
         "LINK": {
-          "sentiment": "BEARISH",
-          "impact": -0.5,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3101,17 +3109,17 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1794754039952
+        "t": 1794772726484
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794754040913,
+      "fetchedAt": 1794772727203,
       "bias": {
         "HYPE": -40,
-        "BTC": -17.14,
-        "ARB": 13.1,
+        "BTC": -16.46,
+        "ARB": 12.57,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3128,35 +3136,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 974.63,
+          "pct": 980.96,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 17.14,
+          "pct": 16.46,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 13.1,
+          "pct": 12.57,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 46.8,
+          "pct": 44.92,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 233.53,
+          "pct": 224.14,
           "lev": 10
         },
         {
@@ -3170,63 +3178,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 27.86,
+          "pct": 26.74,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 246.13,
+          "pct": 236.24,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 40.76,
+          "pct": 39.12,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 126.84,
+          "pct": 121.75,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 64.76,
+          "pct": 62.16,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 110.19,
+          "pct": 105.74,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 308.1,
+          "pct": 295.64,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 96.35,
+          "pct": 92.45,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1250.35,
+          "pct": 1237.74,
           "lev": 10
         }
       ]
@@ -3240,7 +3248,7 @@
       "winRate": 88.9,
       "pf": 66.55,
       "expPerTrade": 0.696,
-      "updatedAt": 1794754041605,
+      "updatedAt": 1794772727959,
       "gen": 2
     }
   }
