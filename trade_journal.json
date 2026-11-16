@@ -1,12 +1,18 @@
 {
-<<<<<<< Updated upstream
-  "trades": [],
-  "updatedAt": 1794828506668
-=======
-  "updatedAt": 1794828506666,
+  "updatedAt": 1794863444055,
   "closedTrades": [],
   "activeSignals": [],
   "recentJournal": [
+    {
+      "t": 1794863444053,
+      "type": "CYCLE",
+      "text": "[CYCLE #21] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794863442746,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794828506663,
       "type": "CYCLE",
@@ -253,5 +259,4 @@
       "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
     }
   ]
->>>>>>> Stashed changes
 }
