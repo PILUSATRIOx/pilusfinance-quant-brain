@@ -2,14 +2,14 @@
   "version": "2.5",
   "projectId": "pilusfinance",
   "senderId": "821263795912",
-  "updatedAt": 1794798926903,
+  "updatedAt": 1794828506666,
   "brain": {
     "v": 1,
     "gen": 3,
-    "cycles": 19,
+    "cycles": 20,
     "firstBootAt": 1794433764734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1794786552889,
     "autoExecBursa": false,
@@ -46,7 +46,7 @@
       "elder": {
         "TREND_UP": {
           "alpha": 2,
-          "beta": 43
+          "beta": 46
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -74,7 +74,7 @@
       "bbrev": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 41
+          "beta": 44
         },
         "TREND_DOWN": {
           "alpha": 4,
@@ -102,7 +102,7 @@
       "rsidiv": {
         "TREND_UP": {
           "alpha": 4,
-          "beta": 41
+          "beta": 44
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -115,7 +115,7 @@
       },
       "macdm": {
         "TREND_UP": {
-          "alpha": 41,
+          "alpha": 44,
           "beta": 4
         },
         "TREND_DOWN": {
@@ -144,7 +144,7 @@
       "statarb": {
         "TREND_UP": {
           "alpha": 3,
-          "beta": 42
+          "beta": 45
         },
         "TREND_DOWN": {
           "alpha": 2,
@@ -171,7 +171,7 @@
       },
       "emax": {
         "TREND_UP": {
-          "alpha": 43,
+          "alpha": 46,
           "beta": 2
         },
         "TREND_DOWN": {
@@ -2550,6 +2550,16 @@
     "signals": [],
     "journal": [
       {
+        "t": 1794828506663,
+        "type": "CYCLE",
+        "text": "[CYCLE #20] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794828505240,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794798926899,
         "type": "CYCLE",
         "text": "[CYCLE #19] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -2793,9 +2803,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 570,
+      "newsIngested": 600,
       "lessons": 0,
-      "backtests": 570,
+      "backtests": 600,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -2808,8 +2818,43 @@
       }
     },
     "news": {
-      "fetchedAt": 1794798925319,
+      "fetchedAt": 1794828505240,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Vitalik Buterin flips to ‘total bull’ on a faster route to quantum-safe Ethereum",
+          "link": "https://www.coindesk.com/tech/2026/11/16/vitalik-buterin-flips-to-total-bull-on-a-faster-route-to-quantum-safe-ethereum",
+          "pubDate": "2026-11-16 08:18:03",
+          "summary": "A proposed system would combine bulky digital signatures into a shared proof, helping protect wallets without making every payment much more expensive."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin miners were hijacked and their BTC rewards redirected to an attacker",
+          "link": "https://www.coindesk.com/tech/2026/11/16/bitcoin-miners-were-hijacked-and-their-btc-rewards-redirected-to-an-attacker",
+          "pubDate": "2026-11-16 07:51:15",
+          "summary": "Luxor said just over a dozen customers were affected and will be reimbursed after their machines were redirected to another mining pool."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Cardano holders vote down $5 million bid to buy warehouse copper",
+          "link": "https://www.coindesk.com/markets/2026/11/16/cardano-holders-vote-down-usd5-million-bid-to-buy-warehouse-copper",
+          "pubDate": "2026-11-16 06:27:42",
+          "summary": "Toto Finance’s 22 million ADA treasury request expired Sunday with about 20 million ADA in favor, and none of Cardano’s seven constitutional committee members voted yes."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Trump administration to name Nvidia, OpenAI and several others as AI national champions",
+          "link": "https://www.coindesk.com/markets/2026/11/16/trump-administration-to-name-nvidia-openai-and-several-others-as-u-s-ai-national-champions",
+          "pubDate": "2026-11-16 06:01:41",
+          "summary": "The Wall Street Journal reported that the move aims to help the firms expand overseas and compete with global rivals, though nothing has been confirmed."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin’s biggest bet is now a drop below $60,000, not a rally above $100,000",
+          "link": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000",
+          "pubDate": "2026-11-16 05:01:17",
+          "summary": "The $60,000 put has replaced the $100,000 call as bitcoin’s biggest options bet on Deribit, with $900 million in open interest after the recent slide."
+        },
         {
           "source": "CoinDesk",
           "title": "Did prediction markets call the U.S. midterm election?: State of Crypto",
@@ -2826,6 +2871,13 @@
         },
         {
           "source": "CoinDesk",
+          "title": "Changing of Lagarde: How the candidates to be next ECB president view bitcoin, stablecoins and CBDCs",
+          "link": "https://www.coindesk.com/policy/2026/11/14/changing-of-lagarde-how-the-candidates-to-be-next-ecb-president-view-bitcoin-stablecoins-and-cbdcs",
+          "pubDate": "2026-11-15 07:00:00",
+          "summary": "ECB President Christine Lagarde will step down from her post in February 2027, and none of the primary candidates to succeed her are great fans of crypto."
+        },
+        {
+          "source": "CoinDesk",
           "title": "XRP crashes to its lowest since November 2024 as money leaves crypto",
           "link": "https://www.coindesk.com/markets/2026/11/15/xrp-crashes-to-its-lowest-since-november-2024-as-money-leaves-crypto",
           "pubDate": "2026-11-15 02:50:57",
@@ -2839,50 +2891,57 @@
           "summary": "&quot;They are now selling at the very price they wish they had taken advantage of three months ago,&quot; wrote James Check."
         },
         {
-          "source": "CoinDesk",
-          "title": "Ethereum scaling project MegaETH slashes staff by 20% as it pursues AI business",
-          "link": "https://www.coindesk.com/business/2026/11/14/ethereum-scaling-project-megaeth-slashes-staff-by-20-as-it-pursues-ai-business",
-          "pubDate": "2026-11-14 16:33:23",
-          "summary": "Decentralized Finance total value locked on MegaETH dropped significantly from over $245 million to $8.8 million."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Kazakhstan plans tokenized government bonds in first quarter after $22 million note sale",
-          "link": "https://www.coindesk.com/business/2026/11/14/kazakhstan-plans-tokenized-government-bonds-in-first-quarter-after-usd22-million-note-sale",
-          "pubDate": "2026-11-14 15:38:27",
-          "summary": "The plan follows Kazakhstan&#39;s first sale of tokenized central bank notes as the country expands its crypto market."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "UK, Singapore, and Thailand central banks test cross-border FX settlement as stablecoins gain ground",
-          "link": "https://www.coindesk.com/policy/2026/11/14/uk-singapore-and-thailand-central-banks-test-cross-border-fx-settlement-as-stablecoins-gain-ground",
-          "pubDate": "2026-11-14 15:00:00",
-          "summary": "Project Meridian FX APAC said it demonstrated how transactions can be coordinated across conventional settlement systems and those built using blockchain technology."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Britain could turn wasted Scottish wind power into bitcoin to cut its $1.3 billion grid bill",
-          "link": "https://www.coindesk.com/policy/2026/11/13/britain-could-turn-wasted-scottish-wind-power-into-bitcoin-to-cut-its-usd1-3-billion-grid-bill",
-          "pubDate": "2026-11-14 13:00:00",
-          "summary": "Britain could use bitcoin mining to absorb surplus Scottish wind power and reduce payments to wind farms to halt generation, according to a Bitcoin Policy Institute report."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "A behind the scenes force may amplify bitcoin and ether price volatility",
-          "link": "https://www.coindesk.com/markets/2026/11/14/a-behind-the-scenes-force-may-amplify-bitcoin-and-ether-price-volatility",
-          "pubDate": "2026-11-14 12:57:00",
-          "summary": "Both bitcoin and ether are trading in price ranges where market makers and dealers may add to market volatility."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011",
-          "link": "https://www.coindesk.com/markets/2026/11/13/satoshi-era-wallet-served-in-a-usd260-billion-lawsuit-moves-75-btc-it-held-since-2011",
-          "pubDate": "2026-11-14 04:30:00",
-          "summary": "The roughly $5 million transfer also spent the tiny payment used to deliver a court notice to the address in May."
+          "source": "CoinTelegraph",
+          "title": "Singapore, Germany test cross-border FX settlement with CBDCs",
+          "link": "https://cointelegraph.com/news/singapore-german-central-banks-settlement-cbdcs?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 10:49:12",
+          "summary": "    Project Simbolon aims to reduce the cost and time of cross-border settlement and promote common standards for payments and FX "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Luxor CEO warns of AI ‘dark forest’ after Bitcoin miner hijack",
+          "title": "BTC price tags 18-week low into Nvidia earnings: Three things to know in Bitcoin this week",
+          "link": "https://cointelegraph.com/markets/btc-price-18-week-low-nvidia-three-things-know-bitcoin-this-week?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 10:39:05",
+          "summary": "    Bitcoin traders awaited Nvidia Q3 earnings after BTC price selling pressure saw a dip below $62,000 at the weekend. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "DBS, JPMorgan’s Kinexys launch 24/7 transfers of tokenized deposits",
+          "link": "https://cointelegraph.com/news/dbs-jpmorgans-kinexys-launch-tokenized-transfers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 08:50:50",
+          "summary": "    Ant International is the first customer to use the service, which lets clients transfer US dollar deposits between Singapore and the US. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Harvard, Dartmouth keep Bitcoin ETF stakes steady as fund gains 42% in Q3",
+          "link": "https://cointelegraph.com/news/harvard-dartmouth-bitcoin-etf-ibit-up-q3?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 08:27:39",
+          "summary": "    Harvard’s gold ETF share count rose nearly 20-fold in Q3, while Dartmouth kept its positions in Solana and Ether staking ETFs unchanged. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 06:00:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Aster CEO suspects foul play after token plunges 32% in minutes",
+          "link": "https://cointelegraph.com/markets/aster-ceo-suspects-foul-play-after-token-plunges-32-in-minutes?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 05:28:40",
+          "summary": "    Aster’s CEO attributed the extreme volatility to highly leveraged liquidations but said the exchange remained operational. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Asian chip stocks tumble ahead of Nvidia Q3 earnings",
+          "link": "https://cointelegraph.com/markets/asian-chip-stocks-tumble-ahead-of-nvidia-q3-earnings?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-16 04:42:07",
+          "summary": "    The weakness came amid a wider sell-off in regional equity markets, with Japan’s Nikkei 225 down 2% and South Korea’s Kospi losing 2.6%. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Luxor CEO warns of AI ‘dark forest’ following Bitcoin miner hijack",
           "link": "https://cointelegraph.com/news/luxor-ceo-warns-of-ai-dark-forest-after-bitcoin-miner-hijack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-16 02:33:07",
           "summary": "    Attackers redirected customers’ Bitcoin mining power through Luxor’s Commander platform over the weekend, prompting its CEO to issue a warning to crypto businesses. \n "
@@ -2902,53 +2961,25 @@
           "summary": "    Anchorage Digital data suggests the Bitcoin selloff is being driven by US investors. A “war room” has been set up by supporters to reinstate Nvidia boss Jensen Huang. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Enterprise blockchain is going to come back from the dead",
-          "link": "https://cointelegraph.com/opinion/enterprise-blockchain-come-back-from-dead?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-15 14:30:00",
-          "summary": "    With scalability, privacy tools and onchain liquidity improving, businesses may finally have the infrastructure to make enterprise blockchain work. "
+          "source": "Decrypt",
+          "title": "German Lawmakers Back Customs Powers to Seize Crypto of &#39;Unclear Origin&#39;",
+          "link": "https://decrypt.co/383297/german-lawmakers-back-customs-powers-to-seize-crypto-of-unclear-origin",
+          "pubDate": "2026-11-16 10:25:15",
+          "summary": "A new law lets Germany&#39;s customs agency freeze assets worth more than €100,000 without a criminal case if their origin is in doubt."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-15 11:18:48",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "source": "Decrypt",
+          "title": "Vitalik Buterin Now ‘a Total Bull’ on leanPCS as Fast Track to Quantum-Safe Ethereum",
+          "link": "https://decrypt.co/383294/vitalik-buterin-now-a-total-bull-on-leanpcs-as-fast-track-to-quantum-safe-ethereum",
+          "pubDate": "2026-11-16 09:54:55",
+          "summary": "The Ethereum co-founder says proof aggregation could deliver a &quot;cryptographic proof singularity&quot; much sooner than developers expected."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin falls to four-month low near $62K as crypto selloff deepens",
-          "link": "https://cointelegraph.com/markets/bitcoin-four-month-low-62k-crypto-market-selloff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-15 10:23:17",
-          "summary": "    The global cryptocurrency market capitalization fell 4% to $2.26 trillion over 24 hours, while Ether and Solana posted double-digit weekly losses. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Coinone warns of phishing, identity theft after customer data breach",
-          "link": "https://cointelegraph.com/news/coinone-data-breach-phishing-identity-theft-customer-information?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-15 08:07:58",
-          "summary": "    The South Korean crypto exchange said potentially exposed information includes passwords, bank account numbers, national identification numbers and crypto wallet addresses. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "RWA protocol stUSDT winds down three years after $2.3B TVL peak",
-          "link": "https://cointelegraph.com/news/rwa-protocol-stusdt-winds-down-three-years-after-23b-tvl-peak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-15 06:27:26",
-          "summary": "    The stUSDT team did not disclose a reason for winding down the RWA protocol but assured holders that all underlying assets remain fully backed. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Microsoft confirms global outage resolved, rules out cyberattack",
-          "link": "https://cointelegraph.com/news/microsoft-365-outage-resolved-cyberattack-ruled-out?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-14 10:34:06",
-          "summary": "    Microsoft attributed the outage to a network capacity upgrade issue, confirming that the disruption was unrelated to cyberattacks or AI agents. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "MegaETH parent cuts 20% of staff amid restructuring, AI push",
-          "link": "https://cointelegraph.com/news/megaeth-parent-cuts-20-percent-staff-ai-push?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-14 08:12:30",
-          "summary": "    MegaETH co-founder Shuyao Kong said the restructuring affected employees who helped build the project’s blockchain, wallet and ecosystem. "
+          "source": "Decrypt",
+          "title": "Elon Musk Joins 160,000 Backing Petition to Bring Jensen Huang Back to Nvidia",
+          "link": "https://decrypt.co/383286/elon-musk-joins-160000-backing-petition-to-bring-jensen-huang-back-to-nvidia",
+          "pubDate": "2026-11-16 09:25:01",
+          "summary": "Huang has reportedly discussed a comeback with confidants, but Treasury Secretary Scott Bessent says Nvidia needs a &quot;dramatic shake-up.&quot;"
         },
         {
           "source": "Decrypt",
@@ -2998,27 +3029,6 @@
           "link": "https://decrypt.co/383276/nvidia-arm-ceo-rene-haas-replace-jensen-huang",
           "pubDate": "2026-11-13 22:16:03",
           "summary": "Nvidia&#39;s board has reportedly approached Arm&#39;s chief executive as it searches for a replacement for Jensen Huang, while some employees are pushing to bring the chipmaker&#39;s founder back as CEO."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Should Government Officials Be Banned From Prediction Markets? House Oversight Says Maybe",
-          "link": "https://decrypt.co/383271/government-officials-banned-prediction-markets-house-oversight",
-          "pubDate": "2026-11-13 21:36:03",
-          "summary": "A House Oversight staff memorandum, citing suspicious trades by officials, military personnel and clearance holders, recommends Congress weigh new limits on federal personnel betting on platforms like Kalshi and Polymark"
-        },
-        {
-          "source": "Decrypt",
-          "title": "China’s $3.2 Billion AI Pipeline Still Calls for Nvidia Chips Washington Restricts",
-          "link": "https://decrypt.co/383266/china-ai-pipeline-nvidia-chips-washington-restricts",
-          "pubDate": "2026-11-13 20:45:03",
-          "summary": "Chinese data center projects are still being designed around restricted Nvidia processors, even as Beijing pushes domestic alternatives."
-        },
-        {
-          "source": "Decrypt",
-          "title": "JPMorgan’s Bitcoin and Crypto-Linked Holdings Approach $1 Billion",
-          "link": "https://decrypt.co/383267/jpmorgan-bitcoin-crypto-linked-holdings-approach-1-billion",
-          "pubDate": "2026-11-13 20:16:03",
-          "summary": "The bank’s Q3 13F shows roughly $981 million across Bitcoin ETFs, Strategy and Coinbase—likely over $1 billion counting Robinhood and miners."
         }
       ],
       "perCoin": {
@@ -3031,15 +3041,16 @@
             "Decrypt"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011"
+          "critical": false,
+          "critHead": ""
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.5,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph"
+            "CoinTelegraph",
+            "Decrypt"
           ],
           "multiSourced": true,
           "critical": false,
@@ -3084,7 +3095,9 @@
         "ADA": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3116,7 +3129,9 @@
         "EUR": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -3130,26 +3145,21 @@
           "critHead": ""
         }
       },
-      "breaker": [
-        {
-          "coin": "BTC",
-          "head": "Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2011"
-        }
-      ],
+      "breaker": [],
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1794798925319
+        "t": 1794828505240
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794798926048,
+      "fetchedAt": 1794828505951,
       "bias": {
         "HYPE": -40,
-        "BTC": -15.67,
-        "ARB": 11.97,
+        "BTC": -15.39,
+        "ARB": 11.76,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3166,35 +3176,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 996.26,
+          "pct": 960.43,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 15.67,
+          "pct": 15.39,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.97,
+          "pct": 11.76,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 42.77,
+          "pct": 42,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 213.39,
+          "pct": 209.57,
           "lev": 10
         },
         {
@@ -3208,63 +3218,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 25.45,
+          "pct": 25,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 224.91,
+          "pct": 220.88,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 37.24,
+          "pct": 36.57,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 115.91,
+          "pct": 113.83,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 59.18,
+          "pct": 58.11,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 99.67,
+          "pct": 106.95,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 278.67,
+          "pct": 299.03,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 87.14,
+          "pct": 93.51,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1271.97,
+          "pct": 1202.89,
           "lev": 10
         }
       ]
@@ -3278,7 +3288,7 @@
       "winRate": 88.9,
       "pf": 66.56,
       "expPerTrade": 0.733,
-      "updatedAt": 1794798926902,
+      "updatedAt": 1794828506665,
       "gen": 3
     }
   }

@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1794798926903,
+  "updatedAt": 1794828506666,
   "gen": 3,
   "champion": {
     "id": "emax",
@@ -10,7 +10,7 @@
     "winRate": 88.9,
     "pf": 66.56,
     "expPerTrade": 0.733,
-    "updatedAt": 1794798926902,
+    "updatedAt": 1794828506665,
     "gen": 3
   },
   "weights": {
