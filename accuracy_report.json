@@ -1,25 +1,13 @@
 {
-<<<<<<< Updated upstream
-  "updatedAt": 1794863444057,
-=======
-  "updatedAt": 1794863444055,
+  "updatedAt": 1794887289418,
   "gen": 3,
-  "cycles": 21,
->>>>>>> Stashed changes
-  "totalSignals": 0,
+  "cycles": 22,
+  "totalSignals": 1,
   "closed": 0,
   "wins": 0,
   "losses": 0,
   "winRatePct": null,
   "netR": 0,
-<<<<<<< Updated upstream
-  "backtestOOS": {
-    "trades": 0,
-    "netR": 0,
-    "winRatePct": null
-  },
-  "proof": "Accuracy computed only from real tracked signals vs real prices."
-=======
   "championStrategy": {
     "id": "emax",
     "name": "EMA Cross Naive (CONTROL)",
@@ -29,7 +17,7 @@
     "winRate": 88.9,
     "pf": 66.56,
     "expPerTrade": 0.733,
-    "updatedAt": 1794863444055,
+    "updatedAt": 1794887289417,
     "gen": 3
   },
   "learnedParameters": {
@@ -41,5 +29,4 @@
   },
   "hurstExponent": 0.52,
   "proof": "Verified 24/7 autonomous evaluation against real OHLCV market prices with strict 1.0% risk money management."
->>>>>>> Stashed changes
 }

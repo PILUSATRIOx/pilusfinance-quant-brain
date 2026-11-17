@@ -1,8 +1,80 @@
 {
-  "updatedAt": 1794863444055,
+  "updatedAt": 1794887289418,
   "closedTrades": [],
-  "activeSignals": [],
+  "activeSignals": [
+    {
+      "id": "sig_AAPL_1794887289010",
+      "sym": "AAPL",
+      "side": "LONG",
+      "entry": 352.80999755859375,
+      "sl": 349.3928128737241,
+      "rsiAtEntry": 45,
+      "tp1": 355.5437453064895,
+      "tp2": 358.2774930543852,
+      "tp3": 361.3529592707679,
+      "momentumBurst": false,
+      "lev": 10,
+      "conf": 90,
+      "regime": "RANGING",
+      "hurst": 0.47,
+      "kalmanPrice": 352.80999755859375,
+      "kalmanVelZ": -0.0981,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 45 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.80x ATR kebal wick-hunt",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[INFO] Screen6: berita netral"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "LONG",
+          "note": "WYCKOFF SPRING: sweep bawah range lalu reclaim + volume",
+          "w": 1.12,
+          "barAge": 0
+        },
+        {
+          "strat": "statarb",
+          "side": "LONG",
+          "note": "D.E. Shaw Z-Score (-1.82 sigma) mean-reversion deceleration (RSI 41)",
+          "w": 0.42,
+          "barAge": 1
+        }
+      ],
+      "atr": 1.8984359360386933,
+      "volPct": 0.5380901757817693,
+      "status": "OPEN",
+      "createdAt": 1794887289010,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0,
+      "mae": 0
+    }
+  ],
   "recentJournal": [
+    {
+      "t": 1794887289414,
+      "type": "CYCLE",
+      "text": "[CYCLE #22] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794887289010,
+      "type": "SIGNAL",
+      "text": "[SIGNAL] LONG AAPL @ 352.8100 | Skor 90/100 | rezim RANGING (H=0.47) | 2 strategi: wyckoff+statarb"
+    },
+    {
+      "t": 1794887287388,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Hackers Redirected Bitcoin Miner Rewards via AI Attack, Luxor CEO Says)"
+    },
+    {
+      "t": 1794887287385,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794863444053,
       "type": "CYCLE",
