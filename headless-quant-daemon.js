@@ -16,7 +16,14 @@ const crypto = require('crypto');
 const SINGLE_RUN = process.argv.includes('--once') || process.env.GITHUB_ACTIONS === 'true';
 const DAEMON_INTERVAL_MS = parseInt(process.env.QUANT_INTERVAL_MS || '300000', 10); // Default 5 minutes
 const GITHUB_TOKEN = process.env.QUANT_GITHUB_TOKEN || process.env.GITHUB_TOKEN || '';
-const FIREBASE_RTDB_URL = process.env.FIREBASE_RTDB_URL || 'https://pilusfinance-default-rtdb.firebaseio.com';
+const FIREBASE_RTDB_URL = process.env.FIREBASE_RTDB_URL || 'https://pilusfinance-default-rtdb.asia-southeast1.firebasedatabase.app';
+// JSON key service account Firebase (GitHub Secret FIREBASE_SERVICE_ACCOUNT_JSON). Tanpa ini, tulis ke RTDB dilewati
+// karena rules hanya mengizinkan admin terverifikasi / service account.
+const FIREBASE_SERVICE_ACCOUNT_JSON = process.env.FIREBASE_SERVICE_ACCOUNT_JSON || '';
+// Data harga sintetis HANYA bila diminta eksplisit (QUANT_SANDBOX=1). Sebelumnya setiap fetch yang gagal
+// (mis. Binance memblokir IP runner GitHub di AS, HTTP 451) diam-diam diganti data palsu, sehingga brain
+// "belajar" dari harga buatan.
+const SANDBOX_MODE = process.env.QUANT_SANDBOX === '1';
 const STATE_FILE = path.join(__dirname, 'learning_state.json');
 
 // Bootstrap headless browser-compatible environment for brain-pure.js
@@ -95,14 +102,61 @@ function buildDeterministicSandboxKlines(n = 600, seed0 = 77) {
     return out;
 }
 
+// OAuth2 access token dari service account (JWT RS256 -> oauth2.googleapis.com). Akses service account
+// melewati security rules RTDB, sehingga daemon tetap bisa menulis setelah tulis publik ditutup.
+let cachedGoogleToken = null;
+async function getServiceAccountAccessToken(nativeFetchFn) {
+    if (!FIREBASE_SERVICE_ACCOUNT_JSON || !nativeFetchFn) return null;
+    if (cachedGoogleToken && cachedGoogleToken.exp - 60e3 > Date.now()) return cachedGoogleToken.token;
+    const sa = JSON.parse(FIREBASE_SERVICE_ACCOUNT_JSON);
+    const b64url = (buf) => Buffer.from(buf).toString('base64').replace(/=+$/, '').replace(/\+/g, '-').replace(/\//g, '_');
+    const iat = Math.floor(Date.now() / 1000);
+    const header = b64url(JSON.stringify({ alg: 'RS256', typ: 'JWT' }));
+    const claims = b64url(JSON.stringify({
+        iss: sa.client_email,
+        scope: 'https://www.googleapis.com/auth/firebase.database https://www.googleapis.com/auth/userinfo.email',
+        aud: sa.token_uri || 'https://oauth2.googleapis.com/token',
+        iat, exp: iat + 3600
+    }));
+    const signature = b64url(crypto.createSign('RSA-SHA256').update(header + '.' + claims).sign(sa.private_key));
+    const res = await nativeFetchFn(sa.token_uri || 'https://oauth2.googleapis.com/token', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: 'grant_type=' + encodeURIComponent('urn:ietf:params:oauth:grant-type:jwt-bearer') + '&assertion=' + header + '.' + claims + '.' + signature
+    });
+    const j = await res.json();
+    if (!res.ok || !j.access_token) throw new Error('Gagal mengambil access token service account: ' + (j.error_description || j.error || res.status));
+    cachedGoogleToken = { token: j.access_token, exp: Date.now() + (j.expires_in || 3600) * 1000 };
+    return cachedGoogleToken.token;
+}
+
 const nativeFetch = typeof global.fetch === 'function' ? global.fetch.bind(global) : null;
+let warnedNoServiceAccount = false;
+const failedResponse = (status) => ({ ok: false, status: status || 0, json: async () => ({}), text: async () => '' });
 global.fetch = async (url, opts) => {
+    const method = String((opts && opts.method) || 'GET').toUpperCase();
+    if (String(url).startsWith(FIREBASE_RTDB_URL) && method !== 'GET') {
+        let token = null;
+        try { token = await getServiceAccountAccessToken(nativeFetch); } catch (e) { console.error('[24/7 QUANT DAEMON] ' + e.message); }
+        if (!token) {
+            if (!warnedNoServiceAccount) {
+                console.warn('[24/7 QUANT DAEMON] Token service account tidak tersedia (FIREBASE_SERVICE_ACCOUNT_JSON kosong/tidak valid): sync ke Firebase RTDB dilewati.');
+                warnedNoServiceAccount = true;
+            }
+            return failedResponse(401);
+        }
+        url = String(url) + (String(url).includes('?') ? '&' : '?') + 'access_token=' + encodeURIComponent(token);
+    }
     if (nativeFetch) {
         try {
             const res = await nativeFetch(url, opts);
             if (res && res.ok) return res;
-        } catch (e) {}
+            if (!SANDBOX_MODE) return res;
+        } catch (e) {
+            if (!SANDBOX_MODE) throw e;
+        }
     }
+    if (!SANDBOX_MODE) return failedResponse(0);
     const su = String(url);
     if (su.includes('/klines')) return { ok: true, json: async () => buildDeterministicSandboxKlines(600, 77) };
     if (su.includes('premiumIndex')) return { ok: true, json: async () => ({ lastFundingRate: '0.00010', markPrice: '92400' }) };
@@ -177,6 +231,32 @@ async function executeAutonomous24x7Cycle() {
     fs.writeFileSync(path.join(__dirname, 'strategy_weights.json'), JSON.stringify(strategyWeights, null, 2));
     fs.writeFileSync(path.join(__dirname, 'trade_journal.json'), JSON.stringify(tradeJournal, null, 2));
 
+    // 3b. 24/7 Cloud Auto-Trade Execution (When PC is OFF, executes via GitHub Secrets if configured)
+    const relayModPath = path.join(__dirname, "exchange-execution-relay.js");
+    if (fs.existsSync(relayModPath) && tradeJournal.activeSignals.length > 0) {
+        try {
+            const { executeLiveExchangeOrder } = require(relayModPath);
+            const topSig = tradeJournal.activeSignals[0];
+            const cloudExchanges = [
+                { exId: "binance", apiKey: process.env.BINANCE_API_KEY, secret: process.env.BINANCE_API_SECRET, extra: "" },
+                { exId: "indodax", apiKey: process.env.INDODAX_API_KEY, secret: process.env.INDODAX_API_SECRET, extra: "" },
+                { exId: "bybit",   apiKey: process.env.BYBIT_API_KEY,   secret: process.env.BYBIT_API_SECRET,   extra: "" },
+                { exId: "okx",     apiKey: process.env.OKX_API_KEY,     secret: process.env.OKX_API_SECRET,     extra: process.env.OKX_PASSPHRASE || "" }
+            ].filter(x => x.apiKey && x.secret);
+            for (const cx of cloudExchanges) {
+                const execRes = await executeLiveExchangeOrder({
+                    exId: cx.exId, apiKey: cx.apiKey, secret: cx.secret, extra: cx.extra,
+                    sym: topSig.sym, side: topSig.side, lev: topSig.lev || 5,
+                    marginUsd: 50, notionalUsd: 50 * (topSig.lev || 5),
+                    entry: topSig.entry, sl: topSig.sl, tp1: topSig.tp1, tp3: topSig.tp3
+                }).catch(() => null);
+                if (execRes && execRes.ok) {
+                    console.log(`[24/7 CLOUD AUTO-EXEC] Executed ${topSig.side} ${topSig.sym} on ${cx.exId.toUpperCase()} while PC OFF -> OrderID: ${execRes.exchangeOrderId}`);
+                }
+            }
+        } catch (e) {}
+    }
+
     // 4. Push to GitHub API & Firebase RTDB
     await Promise.all([
         B.cloud.syncGithub().catch(() => false),
@@ -184,7 +264,7 @@ async function executeAutonomous24x7Cycle() {
     ]);
 
     const elapsedMs = Date.now() - startTs;
-    console.log(`[24/7 QUANT DAEMON] Cycle #${st.cycles} (Gen #${st.gen}) complete in ${elapsedMs}ms | Backtests=${st.stats.backtests} | ActiveSignals=${tradeJournal.activeSignals.length} | Champion=${st.champion ? st.champion.name : 'Pending'} | Learned=${JSON.stringify(st.learned)}`);
+    console.log(`[24/7 QUANT DAEMON] Cycle #${st.cycles} (Gen #${st.gen}) complete in ${elapsedMs}ms | Backtests=${st.stats.backtests} | ActiveSignals=${tradeJournal.activeSignals.length} | Champion=${st.champion ? st.champion.name + (st.champion.significant ? '' : ' (belum signifikan)') : 'Pending'} | Learned=${JSON.stringify(st.learned)}`);
 }
 
 (async () => {
