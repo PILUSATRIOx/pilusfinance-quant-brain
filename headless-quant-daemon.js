@@ -24,7 +24,12 @@ const FIREBASE_SERVICE_ACCOUNT_JSON = process.env.FIREBASE_SERVICE_ACCOUNT_JSON 
 // (mis. Binance memblokir IP runner GitHub di AS, HTTP 451) diam-diam diganti data palsu, sehingga brain
 // "belajar" dari harga buatan.
 const SANDBOX_MODE = process.env.QUANT_SANDBOX === '1';
+// Di Cloud Functions (QUANT_HOST=cloud) state dipulihkan & disimpan oleh fungsi induk lewat Admin SDK,
+// jadi daemon tidak membaca/menulis state remote lain (GitHub / REST RTDB) agar tidak ada dua sumber kebenaran.
+const CLOUD_HOST = process.env.QUANT_HOST === 'cloud';
 const STATE_FILE = path.join(__dirname, 'learning_state.json');
+const FACTORY_STATE_FILE = path.join(__dirname, 'factory_state.json');
+const FORCE_FACTORY = process.argv.includes('--factory');
 
 // Bootstrap headless browser-compatible environment for brain-pure.js
 const domMap = {};
@@ -135,11 +140,12 @@ let warnedNoServiceAccount = false;
 const failedResponse = (status) => ({ ok: false, status: status || 0, json: async () => ({}), text: async () => '' });
 global.fetch = async (url, opts) => {
     const method = String((opts && opts.method) || 'GET').toUpperCase();
+    if (CLOUD_HOST && (/raw\.githubusercontent\.com|api\.github\.com/.test(String(url)) || String(url).startsWith(FIREBASE_RTDB_URL))) return failedResponse(0);
     if (String(url).startsWith(FIREBASE_RTDB_URL) && method !== 'GET') {
         let token = null;
         try { token = await getServiceAccountAccessToken(nativeFetch); } catch (e) { console.error('[24/7 QUANT DAEMON] ' + e.message); }
         if (!token) {
-            if (!warnedNoServiceAccount) {
+            if (FIREBASE_SERVICE_ACCOUNT_JSON && !warnedNoServiceAccount) { // diam bila service account memang tidak dipakai
                 console.warn('[24/7 QUANT DAEMON] Token service account tidak tersedia (FIREBASE_SERVICE_ACCOUNT_JSON kosong/tidak valid): sync ke Firebase RTDB dilewati.');
                 warnedNoServiceAccount = true;
             }
@@ -173,6 +179,28 @@ const brainCodePath = fs.existsSync(path.join(__dirname, 'brain-pure.js'))
 eval(fs.readFileSync(brainCodePath, 'utf8'));
 
 const B = global.PilusQuantBrain;
+
+// Pabrik strategi 24/7 (riset harian dengan DSR, PBO, inkubasi paper-trading & money management ketat).
+const factoryModPath = path.join(__dirname, 'strategy-factory.js');
+async function runStrategyFactoryIfDue() {
+    if (!fs.existsSync(factoryModPath) || !nativeFetch) return null;
+    const SF = require(factoryModPath);
+    let fstate = null;
+    try { fstate = JSON.parse(fs.readFileSync(FACTORY_STATE_FILE, 'utf8')); } catch (e) { fstate = SF.defaultState(); }
+    if (FORCE_FACTORY || SF.shouldRun(fstate, Date.now())) {
+        const t0 = Date.now();
+        try {
+            const sum = await SF.runDaily(nativeFetch, fstate);
+            console.log(`[STRATEGY FACTORY] ${sum.day}: ${sum.nTrials} percobaan, hurdle Sharpe ${sum.hurdleSharpe}, PBO ${sum.pbo}, inkubasi ${sum.incubating.length}, promosi ${sum.promoted.length}, risiko x${sum.portfolio.riskScale} (${((Date.now() - t0) / 1000).toFixed(1)}s)`);
+        } catch (e) {
+            fstate.lastError = { at: Date.now(), message: String(e && e.message || e) };
+            if (fstate.summary) fstate.summary.lastError = fstate.lastError;
+            console.warn('[STRATEGY FACTORY] Gagal: ' + fstate.lastError.message);
+        }
+        fs.writeFileSync(FACTORY_STATE_FILE, JSON.stringify(fstate));
+    }
+    return fstate.summary ? Object.assign({}, fstate.summary, { lastError: fstate.lastError || null }) : (fstate.lastError ? { lastError: fstate.lastError } : null);
+}
 
 async function executeAutonomous24x7Cycle() {
     const startTs = Date.now();
@@ -231,12 +259,24 @@ async function executeAutonomous24x7Cycle() {
     fs.writeFileSync(path.join(__dirname, 'strategy_weights.json'), JSON.stringify(strategyWeights, null, 2));
     fs.writeFileSync(path.join(__dirname, 'trade_journal.json'), JSON.stringify(tradeJournal, null, 2));
 
-    // 3b. 24/7 Cloud Auto-Trade Execution (When PC is OFF, executes via GitHub Secrets if configured)
+    // 3b. Eksekusi order otomatis dari daemon. Money management ketat:
+    //  - hanya bila diizinkan EKSPLISIT (QUANT_ENABLE_AUTOEXEC=1),
+    //  - hanya sinyal dari sistem TERVERIFIKASI out-of-sample (riskMult > 0; risk engine juga membuatnya 0 saat
+    //    drawdown ekuitas >= maxDrawdownR), bukan sinyal paper,
+    //  - setiap sinyal dieksekusi paling banyak SEKALI (versi lama mengirim order yang sama setiap siklus),
+    //  - ukuran margin mengikuti pengali risiko dari risk engine.
     const relayModPath = path.join(__dirname, "exchange-execution-relay.js");
-    if (fs.existsSync(relayModPath) && tradeJournal.activeSignals.length > 0) {
+    const autoExecAllowed = process.env.QUANT_ENABLE_AUTOEXEC === '1';
+    const execLogPath = path.join(__dirname, 'executed_signals.json');
+    let executedIds = [];
+    try { executedIds = JSON.parse(fs.readFileSync(execLogPath, 'utf8')); } catch (e) { executedIds = []; }
+    const eligible = tradeJournal.activeSignals.filter(s => s.status === 'OPEN' && s.systemVerified === true && s.riskMult > 0 && !executedIds.includes(s.id));
+    if (autoExecAllowed && fs.existsSync(relayModPath) && eligible.length > 0) {
         try {
             const { executeLiveExchangeOrder } = require(relayModPath);
-            const topSig = tradeJournal.activeSignals[0];
+            const topSig = eligible[0];
+            executedIds.push(topSig.id);
+            fs.writeFileSync(execLogPath, JSON.stringify(executedIds.slice(-500)));
             const cloudExchanges = [
                 { exId: "binance", apiKey: process.env.BINANCE_API_KEY, secret: process.env.BINANCE_API_SECRET, extra: "" },
                 { exId: "indodax", apiKey: process.env.INDODAX_API_KEY, secret: process.env.INDODAX_API_SECRET, extra: "" },
@@ -247,7 +287,7 @@ async function executeAutonomous24x7Cycle() {
                 const execRes = await executeLiveExchangeOrder({
                     exId: cx.exId, apiKey: cx.apiKey, secret: cx.secret, extra: cx.extra,
                     sym: topSig.sym, side: topSig.side, lev: topSig.lev || 5,
-                    marginUsd: 50, notionalUsd: 50 * (topSig.lev || 5),
+                    marginUsd: 50 * topSig.riskMult, notionalUsd: 50 * topSig.riskMult * (topSig.lev || 5),
                     entry: topSig.entry, sl: topSig.sl, tp1: topSig.tp1, tp3: topSig.tp3
                 }).catch(() => null);
                 if (execRes && execRes.ok) {
@@ -256,6 +296,16 @@ async function executeAutonomous24x7Cycle() {
             }
         } catch (e) {}
     }
+
+    // 3c. Pabrik strategi harian; ringkasannya ikut tersinkron ke GitHub & Firebase bersama state brain.
+    try {
+        const fsum = await runStrategyFactoryIfDue();
+        if (fsum) {
+            st.factory = fsum;
+            learningState.brain = st;
+            fs.writeFileSync(path.join(__dirname, 'learning_state.json'), JSON.stringify(learningState, null, 2));
+        }
+    } catch (e) { console.warn('[STRATEGY FACTORY] ' + (e && e.message)); }
 
     // 4. Push to GitHub API & Firebase RTDB
     await Promise.all([
