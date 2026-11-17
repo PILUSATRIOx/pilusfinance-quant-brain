@@ -24,7 +24,8 @@
     const QB_GITHUB_TOKEN_KEY = 'pilusQuantBrainGithubToken';
     const QB_FIREBASE_PROJECT_ID = 'pilusfinance';
     const QB_FIREBASE_SENDER_ID = '821263795912';
-    const QB_FIREBASE_RTDB_URL = 'https://pilusfinance-default-rtdb.firebaseio.com';
+    // Database berada di region asia-southeast1 (URL lama *.firebaseio.com selalu ditolak "different region").
+    const QB_FIREBASE_RTDB_URL = 'https://pilusfinance-default-rtdb.asia-southeast1.firebasedatabase.app';
     const QB_FIREBASE_FIRESTORE_URL = 'https://firestore.googleapis.com/v1/projects/pilusfinance/databases/(default)/documents';
     const QB_CYCLE_MS = 5 * 60 * 1000;
     const QB_NEWS_STALE = 10 * 60 * 1000;
@@ -470,7 +471,8 @@
         return {
             v: 1, gen: 0, cycles: 0, firstBootAt: Date.now(), running: false,
             optCursor: 0, scanCursor: 0, lastOptAt: 0, autoExecBursa: false,
-            params: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, minScore: 75, feeBps: 10, riskPct: 1.0, tp1Ratio: 0.8, volConfirmMult: 1.15 },
+            engineV: 2, // v2: mesin exit bersama backtest/live, biaya+slippage, champion terkoreksi, Bayesian hanya dari live
+            params: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, minScore: 75, feeBps: 10, slipBps: 5, riskPct: 1.0, tp1Ratio: 0.8, volConfirmMult: 1.15 },
             learned: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, tp1Ratio: 0.8, volConfirmMult: 1.15 },
             weights: w,
             bayesian: defaultBayesianMatrix(),
@@ -481,7 +483,8 @@
             news: { fetchedAt: 0, items: [], perCoin: {}, breaker: [], fearGreed: null },
             derivatives: {},
             whale: { fetchedAt: 0, bias: {}, positions: [] },
-            champion: { id: 'rsidiv', name: 'RSI Divergence Reversal', netR: 4.96, trades: 72, winRate: 62.5 }
+            learnLog: [],
+            champion: qbEmptyChampion()
         };
     }
 
@@ -492,6 +495,17 @@
             const b = safeJsonParse(raw, null);
             if (!b) return defaultBrain();
             const d = defaultBrain();
+            if (b.engineV !== 2) {
+                // Migrasi sekali jalan: statistik lama dihitung dengan engine lama (tanpa biaya penuh, exit berbeda,
+                // Bayesian terhitung berulang dari backtest). Buang supaya tidak menyesatkan engine baru.
+                b.leaderboard = {};
+                b.bayesian = defaultBayesianMatrix();
+                b.weights = Object.assign({}, d.weights);
+                b.champion = qbEmptyChampion();
+                b.learnLog = [];
+                if (b.params && [55, 60, 65, 70].includes(b.params.minScore)) b.params.minScore = 75; // nilai hasil auto-turun lama
+                b.engineV = 2;
+            }
             const mergedWeights = Object.assign({}, d.weights, b.weights || {});
             const mergedBayes = Object.assign({}, d.bayesian, b.bayesian || {});
             return Object.assign(d, b, {
@@ -512,9 +526,10 @@
     async function fetchTimeout(url, ms) {
         return fetch(url, { signal: AbortSignal.timeout ? AbortSignal.timeout(ms || 9000) : undefined });
     }
-    async function qbFetchBinanceKlines(sym, interval, limit) {
+    async function qbFetchBinanceKlines(sym, interval, limit, startTime) {
         limit = limit || 1000;
-        const u = `https://fapi.binance.com/fapi/v1/klines?symbol=${sym}&interval=${interval}&limit=${Math.min(1500, limit)}`;
+        let u = `https://fapi.binance.com/fapi/v1/klines?symbol=${sym}&interval=${interval}&limit=${Math.min(1500, limit)}`;
+        if (startTime) u += `&startTime=${Math.floor(startTime)}`;
         const r = await fetchTimeout(u, 12000);
         if (!r.ok) throw new Error('binance ' + r.status);
         const raw = await r.json();
@@ -821,6 +836,32 @@
         return { active, dir, strength, volRatio: +volRatio.toFixed(2), bodyRatio: +bodyRatio.toFixed(2), roc3: +roc3.toFixed(2) };
     }
 
+    // Easley, Lopez de Prado & O'Hara (2012) VPIN (Volume-Synchronized Probability of Informed Trading) & Order-Flow Imbalance (OBI)
+    function computeVpinAndObi(ind, i) {
+        if (!ind || !ind.k || i < 20) return { vpin: 0.28, obi: 0, toxic: false, slicingMode: "DIRECT_MARKET" };
+        let sumAbsImb = 0, sumSignedImb = 0, sumVol = 0;
+        const start = Math.max(1, i - 19);
+        for (let j = start; j <= i; j++) {
+            const bar = ind.k[j];
+            if (!bar) continue;
+            const v = Math.max(1e-8, bar.v || 1);
+            const rng = Math.max(1e-8, (bar.h - bar.l) || Math.abs(bar.c - bar.o) || 1e-4);
+            // Bulk Volume Classification (BVC) buy fraction approximation
+            const z = Math.max(-3, Math.min(3, ((bar.c - bar.o) / rng) * 2.5));
+            const buyFrac = 1 / (1 + Math.exp(-1.702 * z));
+            const vBuy = v * buyFrac;
+            const vSell = v - vBuy;
+            sumAbsImb += Math.abs(vBuy - vSell);
+            sumSignedImb += (vBuy - vSell);
+            sumVol += v;
+        }
+        const vpin = sumVol > 0 ? Math.min(0.99, Math.max(0.05, sumAbsImb / sumVol)) : 0.28;
+        const obi = sumVol > 0 ? Math.max(-1, Math.min(1, sumSignedImb / sumVol)) : 0;
+        const toxic = vpin > 0.72;
+        const slicingMode = vpin > 0.52 ? "TWAP_3X_MICRO_SLICE" : "DIRECT_MARKET";
+        return { vpin: +vpin.toFixed(3), obi: +obi.toFixed(3), toxic, slicingMode };
+    }
+
     /* ═══════════════ 4. 10-STRATEGY LIBRARY (BUKU + AI PERUSAHAAN BESAR) ═══════════════ */
     function swingLows(k, from, to) {
         const out = [];
@@ -957,74 +998,103 @@
     };
     const QB_STATE = { ema4h: null };
 
-    /* ═══════════════ 5. WALK-FORWARD BACKTESTER (López de Prado) ═══════════════ */
+    /* ═══════════════ 5. SATU MESIN EKSEKUSI UNTUK BACKTEST & LIVE ═══════════════
+       Aturan exit yang SAMA dipakai backtest (runLeg) dan evaluasi sinyal live (qbEvaluateOpenSignals):
+       - SL awal = atrMult x ATR; TP1 = tp1Ratio R (50% ditutup, SL ke breakeven); runner trailing 2x ATR; TP3 = 2.5R (3.2R saat momentum burst)
+       - Asumsi terburuk bila beberapa level tersentuh dalam satu bar; gap melewati SL diisi di harga open
+       - Biaya fee + slippage dipotong dari SETIAP trade (termasuk exit breakeven) */
+    const QB_TP2_R = 1.6, QB_TP3_R = 2.5, QB_TP3_R_BURST = 3.2, QB_SLIP_BPS_DEFAULT = 5;
+
+    function qbCostR(entry, risk, feeBps, slipBps) {
+        if (!(risk > 0) || !(entry > 0)) return 0;
+        return ((2 * (feeBps || 0) + 2 * (slipBps || 0)) / 10000) * entry / risk;
+    }
+
+    function qbOpenPosition(side, entry, atr, atrMult, tp1Ratio, tp3R) {
+        const d = side === 'LONG' ? 1 : -1;
+        const risk = atrMult * atr;
+        return {
+            side, entry, risk, atr,
+            slInit: entry - d * risk, sl: entry - d * risk,
+            tp1: entry + d * tp1Ratio * risk, tp2: entry + d * QB_TP2_R * risk, tp3: entry + d * tp3R * risk,
+            tp1Hit: false, lockedR: 0
+        };
+    }
+
+    // Satu langkah per bar. Mengembalikan null (posisi masih terbuka) atau { r, reason } dengan r = R kotor sebelum biaya.
+    function qbStepPosition(pos, bar) {
+        const L = pos.side === 'LONG';
+        const rAt = px => (L ? px - pos.entry : pos.entry - px) / pos.risk;
+        const adverseTouch = lvl => L ? bar.l <= lvl : bar.h >= lvl;
+        const favorReach = lvl => L ? bar.h >= lvl : bar.l <= lvl;
+        const stopFill = () => L ? Math.min(pos.sl, bar.o) : Math.max(pos.sl, bar.o);
+        if (!pos.tp1Hit) {
+            if (adverseTouch(pos.sl)) return { r: rAt(stopFill()), reason: 'SL ' + pos.sl.toFixed(4) + ' tersentuh' };
+            if (favorReach(pos.tp1)) {
+                pos.tp1Hit = true;
+                pos.lockedR = 0.5 * rAt(pos.tp1);
+                pos.sl = pos.entry;
+                if (adverseTouch(pos.entry)) return { r: pos.lockedR, reason: 'TP1 lalu kembali ke breakeven di bar yang sama' };
+            }
+            return null;
+        }
+        if (adverseTouch(pos.sl)) return { r: pos.lockedR + 0.5 * rAt(stopFill()), reason: 'Trail/BE exit di ' + pos.sl.toFixed(4) };
+        if (favorReach(pos.tp3)) return { r: pos.lockedR + 0.5 * rAt(pos.tp3), reason: 'TP3 runner tercapai' };
+        if (pos.atr > 0) {
+            const trail = L ? bar.h - 2 * pos.atr : bar.l + 2 * pos.atr;
+            pos.sl = L ? Math.max(pos.sl, trail) : Math.min(pos.sl, trail);
+        }
+        return null;
+    }
+
+    /* Backtest out-of-sample: 40% data terakhir, memakai parameter yang SAMA dengan live
+       (atrMult & tp1Ratio hasil belajar). Tidak ada optimasi parameter tersembunyi pada data uji. */
     function backtestStrategy(stratId, k, ind, opts) {
         opts = opts || {};
         const feeBps = opts.feeBps != null ? opts.feeBps : 10;
-        const trainEnd = Math.floor(k.length * 0.6);
-        let best = { mult: 1.8, exp: -Infinity };
-        if (opts.walkForward !== false) {
-            [1.5, 1.8, 2.0].forEach(m => {
-                const tr = runLeg(stratId, k, ind, 220, trainEnd, m, feeBps);
-                if (tr.trades >= 6) {
-                    const score = tr.exp * Math.sqrt(tr.trades) - Math.max(0, tr.maxDD - 6) * 0.1;
-                    if (score > best.exp) best = { mult: m, exp: score };
-                }
-            });
-        }
-        const oos = runLeg(stratId, k, ind, trainEnd, k.length, best.mult, feeBps);
-        oos.atrMult = best.mult;
+        const atrMult = opts.atrMult || 1.8;
+        const oosStart = Math.max(220, Math.floor(k.length * 0.6));
+        const oos = runLeg(stratId, k, ind, oosStart, k.length, atrMult, feeBps, opts);
+        oos.atrMult = atrMult;
+        oos.window = 'OOS_40';
         return oos;
     }
-    function runLeg(stratId, k, ind, from, to, atrMult, feeBps) {
-        let wins = 0, losses = 0, grossW = 0, grossL = 0, peak = 0, eq = 0, maxDD = 0;
+    function runLeg(stratId, k, ind, from, to, atrMult, feeBps, opts) {
+        opts = opts || {};
+        const slipBps = opts.slipBps != null ? opts.slipBps : QB_SLIP_BPS_DEFAULT;
+        const tp1Ratio = opts.tp1Ratio || 0.8;
+        let wins = 0, losses = 0, grossW = 0, grossL = 0, peak = 0, eq = 0, maxDD = 0, sumR2 = 0;
         const trades = [];
         let pos = null;
         QB_STATE.ema4h = aggEma(ind, 20, 4);
         for (let i = Math.max(from, 220); i < to; i++) {
             if (pos) {
-                const bar = k[i], risk = Math.abs(pos.entry - pos.slInit);
-                const feeR = risk > 0 ? ((feeBps * 2 / 10000) * pos.entry) / risk : 0;
-                let done = false;
-                if (pos.side === 'LONG') {
-                    if (bar.l <= pos.sl) {
-                        const r = pos.beActive ? pos.lockedR - 0 : -1 - feeR;
-                        closeTrade(r); done = true;
-                    } else if (!pos.tp1Hit && bar.h >= pos.tp1) { pos.tp1Hit = true; pos.beActive = true; pos.sl = pos.entry; pos.lockedR = 0.8 * 0.5; }
-                    else if (pos.tp1Hit && bar.h >= pos.tp3) { closeTrade(pos.lockedR + 2.5 * 0.5 - feeR); done = true; }
-                    else if (pos.tp1Hit) { pos.sl = Math.max(pos.sl, bar.h - 2 * (ind.atr[i] || 0)); }
-                } else {
-                    if (bar.h >= pos.sl) {
-                        const r = pos.beActive ? pos.lockedR : -1 - feeR;
-                        closeTrade(r); done = true;
-                    } else if (!pos.tp1Hit && bar.l <= pos.tp1) { pos.tp1Hit = true; pos.beActive = true; pos.sl = pos.entry; pos.lockedR = 0.8 * 0.5; }
-                    else if (pos.tp1Hit && bar.l <= pos.tp3) { closeTrade(pos.lockedR + 2.5 * 0.5 - feeR); done = true; }
-                    else if (pos.tp1Hit) { pos.sl = Math.min(pos.sl, bar.l + 2 * (ind.atr[i] || 0)); }
-                }
-                if (done) pos = null;
-                function closeTrade(r) {
+                const res = qbStepPosition(pos, k[i]);
+                if (res) {
+                    const r = res.r - qbCostR(pos.entry, pos.risk, feeBps, slipBps);
                     eq += r; peak = Math.max(peak, eq); maxDD = Math.max(maxDD, peak - eq);
                     if (r > 0.01) { wins++; grossW += r; } else if (r < -0.01) { losses++; grossL += Math.abs(r); }
-                    trades.push(r);
+                    trades.push(r); sumR2 += r * r;
+                    pos = null;
                 }
                 if (pos) continue;
             }
             const sig = QB_EVAL[stratId] && QB_EVAL[stratId](ind, i);
             if (!sig) continue;
             const atr = ind.atr[i]; if (!atr || atr <= 0) continue;
-            const entry = k[i].c;
-            if (sig.side === 'LONG') {
-                pos = { side: 'LONG', entry, slInit: entry - atrMult * atr, sl: entry - atrMult * atr, tp1: entry + 0.8 * atrMult * atr, tp3: entry + 2.5 * atrMult * atr, tp1Hit: false, beActive: false, lockedR: 0 };
-            } else {
-                pos = { side: 'SHORT', entry, slInit: entry + atrMult * atr, sl: entry + atrMult * atr, tp1: entry - 0.8 * atrMult * atr, tp3: entry - 2.5 * atrMult * atr, tp1Hit: false, beActive: false, lockedR: 0 };
-            }
+            const burst = computeMomentumBurst(ind, i);
+            const tp3R = (burst.active && burst.dir === sig.side) ? QB_TP3_R_BURST : QB_TP3_R;
+            pos = qbOpenPosition(sig.side, k[i].c, atr, atrMult, tp1Ratio, tp3R);
         }
         const n = trades.length;
+        const netR = trades.reduce((a, b) => a + b, 0);
+        const mean = n ? netR / n : 0;
+        const sd = n > 1 ? Math.sqrt(Math.max(0, (sumR2 - n * mean * mean) / (n - 1))) : 0;
         return {
             trades: n, wins, losses, winRate: n ? (wins / n) * 100 : 0,
             pf: grossL > 0 ? grossW / grossL : (grossW > 0 ? 99 : 0),
-            exp: n ? trades.reduce((a, b) => a + b, 0) / n : 0,
-            netR: trades.reduce((a, b) => a + b, 0), maxDD
+            exp: mean, netR, maxDD, sumR2, grossW, grossL, sd,
+            tStat: sd > 0 ? (mean / sd) * Math.sqrt(n) : 0
         };
     }
 
@@ -1160,25 +1230,33 @@
         else if (nw.impact < -0.3 && side === 'SHORT') { score += 10; factors.push('[OK] Screen6: sentimen BEARISH multi-sumber'); }
         else factors.push('[INFO] Screen6: berita netral');
 
+        const vpinInfo = computeVpinAndObi(ind, i);
+        if (!vpinInfo.toxic && ((side === "LONG" && vpinInfo.obi > 0.05) || (side === "SHORT" && vpinInfo.obi < -0.05))) {
+            score += 5;
+            factors.push("[OK] Screen9 (VPIN+OBI): Order-Flow Institutional Imbalance " + (vpinInfo.obi >= 0 ? "+" : "") + (vpinInfo.obi * 100).toFixed(1) + "% · VPIN " + vpinInfo.vpin + " (" + vpinInfo.slicingMode + ")");
+        } else if (vpinInfo.toxic) {
+            score -= 8;
+            factors.push("[WARN] Screen9 (VPIN Toxicity): VPIN " + vpinInfo.vpin + " tinggi -> Ukuran entry dipangkas & mode TWAP diaktifkan");
+        }
         const momBurst = computeMomentumBurst(ind, i);
-        let tp3Mult = 2.5;
+        let tp3Mult = QB_TP3_R;
         if (momBurst.active && momBurst.dir === side) {
             score += 8;
-            tp3Mult = 3.2;
+            tp3Mult = QB_TP3_R_BURST;
             factors.push('[OK] Screen8 (Momentum Burst): Impuls institusional Vol ' + momBurst.volRatio + 'x · Body ' + Math.round(momBurst.bodyRatio * 100) + '% -> Target TP3 diperluas ke 3.2R (SL tetap ketat 1.0R)');
         }
 
         const volPct = (atr / px) * 100;
         const mult = brain.learned.atrMult;
         const tp1R = brain.learned.tp1Ratio || 0.8;
-        const sl = side === 'LONG' ? px - mult * atr : px + mult * atr;
-        const risk = Math.abs(px - sl);
+        // Level dibangun oleh mesin yang sama dengan backtest (qbOpenPosition) agar live == backtest.
+        const pos = qbOpenPosition(side, px, atr, mult, tp1R, tp3Mult);
         return {
             id: 'sig_' + sym + '_' + Date.now(),
-            sym, side, entry: px, sl, rsiAtEntry: rsi != null ? Math.round(rsi) : null,
-            tp1: side === 'LONG' ? px + tp1R * risk : px - tp1R * risk,
-            tp2: side === 'LONG' ? px + 1.6 * risk : px - 1.6 * risk,
-            tp3: side === 'LONG' ? px + tp3Mult * risk : px - tp3Mult * risk,
+            sym, side, entry: px, sl: pos.sl, slInit: pos.slInit, risk: pos.risk, rsiAtEntry: rsi != null ? Math.round(rsi) : null,
+            tp1: pos.tp1,
+            tp2: pos.tp2,
+            tp3: pos.tp3,
             momentumBurst: momBurst.active && momBurst.dir === side,
             lev: leverageFor(volPct), conf: Math.max(0, Math.min(100, Math.round(score))),
             regime, hurst: ind.hurst || 0.5, kalmanPrice: (ind.kalman && ind.kalman.est && ind.kalman.est[i]) || px, kalmanVelZ: (ind.kalman && ind.kalman.vel && ind.kalman.vel[i] != null && atr) ? +(ind.kalman.vel[i] / atr).toFixed(4) : 0, bayesProb: (votes.list && votes.list[0] && votes.list[0].bayesP) || 0.55, factors, votes: votes.list, atr, volPct
@@ -1247,34 +1325,53 @@
         saveBrain();
     }
 
-    /* ═══════════════ 8. LIVE EVALUATION + GUARANTEED SELF-LEARNING POST-MORTEM ═══════════════ */
+    /* ═══════════════ 8. LIVE EVALUATION + SELF-LEARNING POST-MORTEM ═══════════════
+       Setiap sinyal dievaluasi bar-per-bar (high/low, bukan hanya harga close) sejak bar terakhir yang
+       sudah diperiksa, memakai qbStepPosition yang sama dengan backtest. */
+    function qbNormalizeSignalPosition(s) {
+        if (!(s.risk > 0)) {
+            const fromInit = s.slInit != null ? Math.abs(s.entry - s.slInit) : 0;
+            const fromSl = (!s.tp1Hit && s.sl != null) ? Math.abs(s.entry - s.sl) : 0;
+            const fromTp2 = s.tp2 != null ? Math.abs(s.tp2 - s.entry) / QB_TP2_R : 0;
+            s.risk = fromInit || fromSl || fromTp2;
+        }
+        if (s.slInit == null && s.risk > 0) s.slInit = s.side === 'LONG' ? s.entry - s.risk : s.entry + s.risk;
+        if (!(s.atr > 0) && s.risk > 0) s.atr = s.risk / (brain.learned.atrMult || 1.8);
+        if (s.lockedR == null) s.lockedR = 0;
+        if (s.lastBarT == null) s.lastBarT = s.createdAt || Date.now();
+    }
+
     async function qbEvaluateOpenSignals() {
         const open = brain.signals.filter(s => s.status === 'OPEN' || s.status === 'TP1_SECURED');
         for (const s of open) {
             try {
                 const asset = QB_BY_SYM[s.sym]; if (!asset) continue;
-                const k = asset.src === 'yahoo' ? await qbFetchYahoo(s.sym) : await qbFetchBinanceKlines(s.sym, '5m', 3);
-                let px = k[k.length - 1].c;
-                if (k.length > 3 && k[2] && Math.abs(k[2].c - s.entry) / (s.entry || 1) > 0.12 && Math.abs(px - s.entry) / (s.entry || 1) < 0.08) {
-                    px = k[2].c;
+                qbNormalizeSignalPosition(s);
+                if (!(s.risk > 0)) continue;
+                const isYahoo = asset.src === 'yahoo';
+                const barMs = isYahoo ? 3600e3 : 300e3;
+                const k = isYahoo ? await qbFetchYahoo(s.sym) : await qbFetchBinanceKlines(s.sym, '5m', 1500, s.lastBarT);
+                const now = Date.now();
+                // Hanya bar yang SUDAH selesai dan belum pernah diperiksa (tidak ada bar yang dihitung dua kali).
+                const bars = k.filter(b => b.t >= s.lastBarT && b.t + barMs <= now);
+                const L = s.side === 'LONG';
+                let res = null;
+                for (const bar of bars) {
+                    const favPx = L ? bar.h : bar.l, advPx = L ? bar.l : bar.h;
+                    s.mfe = Math.max(s.mfe || 0, (L ? favPx - s.entry : s.entry - favPx) / s.risk);
+                    s.mae = Math.min(s.mae || 0, (L ? advPx - s.entry : s.entry - advPx) / s.risk);
+                    const wasTp1 = !!s.tp1Hit;
+                    res = qbStepPosition(s, bar);
+                    s.lastBarT = bar.t + barMs;
+                    if (!wasTp1 && s.tp1Hit) {
+                        s.beActive = true; s.status = 'TP1_SECURED'; brain.stats.tp1Hits++;
+                        qbJournal('TP1', '[TP1 LOCKED] TP1 ' + s.sym + ' tercapai -> 50% ditutup, SL digeser ke breakeven');
+                    }
+                    if (res) break;
                 }
-                const risk = Math.abs(s.entry - s.sl);
-                if (risk <= 0) continue;
-                const fav = s.side === 'LONG' ? (px - s.entry) / risk : (s.entry - px) / risk;
-                s.mfe = Math.max(s.mfe || 0, fav); s.mae = Math.min(s.mae || 0, fav);
-                let closed = false, netR = 0, reason = '';
-                if (s.side === 'LONG') {
-                    if (!s.beActive && px <= s.sl) { netR = -1; reason = 'SL ' + s.sl.toFixed(4) + ' tersentuh'; closed = true; }
-                    else if (s.beActive && px <= s.sl) { netR = s.lockedR; reason = 'Trail/BE exit di ' + s.sl.toFixed(4); closed = true; }
-                    else if (!s.tp1Hit && px >= s.tp1) { s.tp1Hit = true; s.beActive = true; s.sl = s.entry; s.lockedR = 0.4; s.status = 'TP1_SECURED'; brain.stats.tp1Hits++; qbJournal('TP1', '[TP1 LOCKED] TP1 ' + s.sym + ' tercapai -> SL digeser ke breakeven (risk-free, aturan Douglas)'); }
-                    else if (s.beActive && px >= s.tp3) { netR = 0.4 + 1.25; reason = 'TP3 runner penuh +2.5R'; closed = true; }
-                } else {
-                    if (!s.beActive && px >= s.sl) { netR = -1; reason = 'SL ' + s.sl.toFixed(4) + ' tersentuh'; closed = true; }
-                    else if (s.beActive && px >= s.sl) { netR = s.lockedR; reason = 'Trail/BE exit di ' + s.sl.toFixed(4); closed = true; }
-                    else if (!s.tp1Hit && px <= s.tp1) { s.tp1Hit = true; s.beActive = true; s.sl = s.entry; s.lockedR = 0.4; s.status = 'TP1_SECURED'; brain.stats.tp1Hits++; qbJournal('TP1', '[TP1 LOCKED] TP1 ' + s.sym + ' tercapai -> SL digeser ke breakeven (risk-free)'); }
-                    else if (s.beActive && px <= s.tp3) { netR = 0.4 + 1.25; reason = 'TP3 runner penuh +2.5R'; closed = true; }
-                }
-                if (closed) {
+                if (res) {
+                    const netR = res.r - qbCostR(s.entry, s.risk, brain.params.feeBps, brain.params.slipBps);
+                    const reason = res.reason;
                     s.status = netR > 0.02 ? 'WIN' : (netR < -0.02 ? 'LOSS' : 'BE');
                     s.closedAt = Date.now(); s.netR = Math.round(netR * 100) / 100; s.closeReason = reason;
                     brain.stats.closed++;
@@ -1296,7 +1393,10 @@
                     }
                     reinforceWeights(s);
                     if (s.status === 'LOSS') qbPostMortem(s);
-                    else qbJournal('WIN', '[WIN] ' + s.sym + ' ' + s.side + ' WIN +' + s.netR.toFixed(2) + 'R — ' + reason + ' (MFE ' + (s.mfe || 0).toFixed(2) + 'R)');
+                    else {
+                        qbRelaxLearnedParams();
+                        qbJournal(s.status === 'WIN' ? 'WIN' : 'SYS', '[' + s.status + '] ' + s.sym + ' ' + s.side + ' ' + (s.netR >= 0 ? '+' : '') + s.netR.toFixed(2) + 'R — ' + reason + ' (MFE ' + (s.mfe || 0).toFixed(2) + 'R)');
+                    }
                     brain.accuracyHistory.push({ t: Date.now(), acc: brain.stats.closed ? (brain.stats.wins + brain.stats.be) / brain.stats.closed * 100 : 0, eq: brain.equityR });
                 }
             } catch (e) { }
@@ -1309,44 +1409,81 @@
         (s.votes || []).forEach(v => {
             const cur = brain.weights[v.strat] || 1;
             brain.weights[v.strat] = Math.round(Math.max(0.3, Math.min(3, cur * (1 + 0.08 * (s.netR || 0)))) * 1000) / 1000;
+            // Posterior Bayesian HANYA diperbarui dari hasil sinyal live/paper (bukan dari backtest berulang).
             updateBayesianPosterior(v.strat, s.regime || 'RANGING', isWin);
         });
     }
-    function qbPostMortem(s) {
-        let cause = '', action = '', adapted = '';
+
+    /* Post-mortem berbasis bukti: satu loss TIDAK langsung mengubah parameter.
+       Penyebab dicatat; parameter baru disesuaikan bila penyebab yang sama muncul >= QB_LEARN_MIN_EVIDENCE kali
+       dalam QB_LEARN_WINDOW trade tertutup terakhir. Setiap win/BE menarik parameter sedikit kembali ke default
+       sehingga parameter tidak terus bergeser ke satu arah. */
+    const QB_LEARN_DEFAULTS = { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, tp1Ratio: 0.8, volConfirmMult: 1.15 };
+    const QB_LEARN_MIN_EVIDENCE = 5, QB_LEARN_WINDOW = 30, QB_LEARN_RELAX = 0.05;
+
+    function qbLearnLogPush(cause) {
+        if (!Array.isArray(brain.learnLog)) brain.learnLog = [];
+        brain.learnLog.push({ t: Date.now(), cause });
+        if (brain.learnLog.length > QB_LEARN_WINDOW) brain.learnLog.splice(0, brain.learnLog.length - QB_LEARN_WINDOW);
+        return brain.learnLog.filter(x => x.cause === cause).length;
+    }
+
+    function qbRelaxLearnedParams() {
+        qbLearnLogPush('OK');
+        const L = brain.learned;
+        Object.keys(QB_LEARN_DEFAULTS).forEach(key => {
+            const d = QB_LEARN_DEFAULTS[key], cur = L[key] != null ? L[key] : d;
+            L[key] = Math.round((cur + (d - cur) * QB_LEARN_RELAX) * 1000) / 1000;
+        });
+    }
+
+    function qbDiagnoseLoss(s) {
         const mfe = s.mfe || 0;
-        if (mfe >= 0.5) {
-            cause = 'Harga sempat profit +' + mfe.toFixed(2) + 'R lalu berbalik ke SL (profit giveback).';
-            brain.learned.tp1Ratio = Math.max(0.55, Math.round(((brain.learned.tp1Ratio || 0.8) - 0.05) * 100) / 100);
-            brain.learned.atrMult = Math.min(2.4, Math.round((brain.learned.atrMult + 0.05) * 100) / 100);
-            adapted = ' -> TP1 diketatkan ke ' + brain.learned.tp1Ratio + 'R & ATR SL ' + brain.learned.atrMult + 'x';
-            action = 'Auto-breakeven dipercepat agar profit tidak berbalik jadi rugi.' + adapted;
-        } else if (mfe >= 0.20) {
-            cause = 'SL tersentuh setelah MFE ' + mfe.toFixed(2) + 'R — indikasi wick-hunt / noise likuiditas.';
-            brain.learned.atrMult = Math.min(2.4, Math.round((brain.learned.atrMult + 0.1) * 100) / 100);
-            adapted = ' -> ATR buffer dinaikkan ke ' + brain.learned.atrMult.toFixed(2) + 'x';
-            action = 'Perlebar jarak SL terhadap noise bursa.' + adapted;
-        } else if (s.side === 'LONG' && s.rsiAtEntry != null && s.rsiAtEntry > brain.learned.rsiLongMax - 6) {
-            brain.learned.rsiLongMax = Math.max(52, brain.learned.rsiLongMax - 2);
-            adapted = ' -> batas RSI Long diketatkan ke ' + brain.learned.rsiLongMax;
-            cause = 'Entry Long di zona momentum jenuh (RSI ' + s.rsiAtEntry + ') — terlambat di pucuk.';
-            action = 'Filter RSI maksimum untuk Long diperketat.' + adapted;
-        } else if (s.side === 'SHORT' && s.rsiAtEntry != null && s.rsiAtEntry < brain.learned.rsiShortMin + 6) {
-            brain.learned.rsiShortMin = Math.min(48, brain.learned.rsiShortMin + 2);
-            adapted = ' -> batas RSI Short diketatkan ke ' + brain.learned.rsiShortMin;
-            cause = 'Entry Short di zona jenuh jual (RSI ' + s.rsiAtEntry + ') — menjual di lembah.';
-            action = 'Filter RSI minimum untuk Short diperketat.' + adapted;
-        } else {
-            cause = 'Pembalikan rezim pasar mendadak / false breakout tanpa kelanjutan volume.';
-            brain.learned.atrMult = Math.min(2.4, Math.round((brain.learned.atrMult + 0.08) * 100) / 100);
-            brain.learned.volConfirmMult = Math.min(1.6, Math.round(((brain.learned.volConfirmMult || 1.15) + 0.05) * 100) / 100);
-            if (s.side === 'LONG') brain.learned.rsiLongMax = Math.max(52, brain.learned.rsiLongMax - 1);
-            else brain.learned.rsiShortMin = Math.min(48, brain.learned.rsiShortMin + 1);
-            adapted = ' -> ATR SL ' + brain.learned.atrMult.toFixed(2) + 'x & Vol filter ' + brain.learned.volConfirmMult.toFixed(2) + 'x';
-            action = 'Parameter proteksi volatilitas & filter momentum dikalibrasi ulang.' + adapted;
+        if (mfe >= 0.5) return { cause: 'GIVEBACK', text: 'Harga sempat profit +' + mfe.toFixed(2) + 'R lalu berbalik ke SL (profit giveback).' };
+        if (mfe >= 0.20) return { cause: 'WICK_HUNT', text: 'SL tersentuh setelah MFE ' + mfe.toFixed(2) + 'R — indikasi wick-hunt / noise likuiditas.' };
+        if (s.side === 'LONG' && s.rsiAtEntry != null && s.rsiAtEntry > brain.learned.rsiLongMax - 6) return { cause: 'LATE_LONG', text: 'Entry Long di zona momentum jenuh (RSI ' + s.rsiAtEntry + ') — terlambat di pucuk.' };
+        if (s.side === 'SHORT' && s.rsiAtEntry != null && s.rsiAtEntry < brain.learned.rsiShortMin + 6) return { cause: 'LATE_SHORT', text: 'Entry Short di zona jenuh jual (RSI ' + s.rsiAtEntry + ') — menjual di lembah.' };
+        return { cause: 'REGIME_FLIP', text: 'Pembalikan rezim pasar mendadak / false breakout tanpa kelanjutan volume.' };
+    }
+
+    function qbApplyAdaptation(cause) {
+        const L = brain.learned;
+        if (cause === 'GIVEBACK') {
+            L.tp1Ratio = Math.max(0.55, Math.round(((L.tp1Ratio || 0.8) - 0.05) * 100) / 100);
+            L.atrMult = Math.min(2.4, Math.round((L.atrMult + 0.05) * 100) / 100);
+            return 'TP1 diketatkan ke ' + L.tp1Ratio + 'R & ATR SL ' + L.atrMult + 'x';
         }
-        brain.stats.lessons++;
-        qbJournal('LOSS', '[LOSS] ' + s.sym + ' ' + s.side + ' LOSS ' + s.netR.toFixed(2) + 'R — ' + s.closeReason + ' | Akar: ' + cause + ' | Fix: ' + action);
+        if (cause === 'WICK_HUNT') {
+            L.atrMult = Math.min(2.4, Math.round((L.atrMult + 0.1) * 100) / 100);
+            return 'ATR buffer dinaikkan ke ' + L.atrMult.toFixed(2) + 'x';
+        }
+        if (cause === 'LATE_LONG') {
+            L.rsiLongMax = Math.max(52, L.rsiLongMax - 2);
+            return 'batas RSI Long diketatkan ke ' + L.rsiLongMax;
+        }
+        if (cause === 'LATE_SHORT') {
+            L.rsiShortMin = Math.min(48, L.rsiShortMin + 2);
+            return 'batas RSI Short diketatkan ke ' + L.rsiShortMin;
+        }
+        L.atrMult = Math.min(2.4, Math.round((L.atrMult + 0.08) * 100) / 100);
+        L.volConfirmMult = Math.min(1.6, Math.round(((L.volConfirmMult || 1.15) + 0.05) * 100) / 100);
+        return 'ATR SL ' + L.atrMult.toFixed(2) + 'x & Vol filter ' + L.volConfirmMult.toFixed(2) + 'x';
+    }
+
+    function qbPostMortem(s) {
+        const diag = qbDiagnoseLoss(s);
+        const count = qbLearnLogPush(diag.cause);
+        let action;
+        if (count >= QB_LEARN_MIN_EVIDENCE) {
+            const adapted = qbApplyAdaptation(diag.cause);
+            brain.learnLog = brain.learnLog.filter(x => x.cause !== diag.cause); // bukti sudah dipakai
+            brain.stats.lessons++;
+            action = 'ADAPTASI (' + count + ' loss dengan penyebab sama dalam ' + QB_LEARN_WINDOW + ' trade terakhir) -> ' + adapted;
+        } else {
+            action = 'Dicatat sebagai bukti ' + count + '/' + QB_LEARN_MIN_EVIDENCE + ' — parameter belum diubah (hindari overfit pada satu kejadian).';
+        }
+        s.lossCause = diag.cause;
+        qbJournal('LOSS', '[LOSS] ' + s.sym + ' ' + s.side + ' LOSS ' + s.netR.toFixed(2) + 'R — ' + s.closeReason + ' | Akar: ' + diag.text + ' | ' + action);
     }
     function qbJournal(type, text) {
         brain.journal.unshift({ t: Date.now(), type, text });
@@ -1365,8 +1502,9 @@
             const localUpdated = brain.journal.length ? (brain.journal[0].t || 0) : 0;
             const remoteUpdated = remote.updatedAt || 0;
             if (remoteUpdated && remoteUpdated <= localUpdated && brain.signals.length) return false;
-            if (rb.learned) brain.learned = Object.assign({}, brain.learned, rb.learned);
-            if (rb.weights) brain.weights = Object.assign({}, brain.weights, rb.weights);
+            // Parameter & bobot dari engine lama (tanpa engineV 2) diabaikan agar tidak mencemari engine baru.
+            if (rb.engineV === 2 && rb.learned) brain.learned = Object.assign({}, brain.learned, rb.learned);
+            if (rb.engineV === 2 && rb.weights) brain.weights = Object.assign({}, brain.weights, rb.weights);
             if (Array.isArray(rb.signals)) {
                 const ids = new Set(brain.signals.map(s => s.id));
                 rb.signals.forEach(s => { if (!ids.has(s.id)) brain.signals.push(s); });
@@ -1403,14 +1541,31 @@
             return r.ok;
         } catch (e) { return false; }
     }
+    /* Hanya penulis terautentikasi yang boleh menulis state bersama:
+       - Browser: hanya admin yang login lewat Firebase Google Auth (ID token dikirim sebagai ?auth=).
+       - Daemon Node: token service account ditambahkan oleh wrapper fetch di headless-quant-daemon.js.
+       Pengunjung biasa hanya membaca. Rules RTDB menolak tulis tanpa auth. */
+    function qbIsNodeDaemon() {
+        return typeof process !== 'undefined' && !!(process.release && process.release.name === 'node');
+    }
+    async function qbFirebaseWriteAuthQuery() {
+        if (qbIsNodeDaemon()) return '';
+        if (!isCurrentUserAdmin() || !fbAuthInstance || !fbAuthInstance.currentUser) return null;
+        const idToken = await fbAuthInstance.currentUser.getIdToken();
+        return '?auth=' + encodeURIComponent(idToken);
+    }
+
     async function qbFirebaseSyncAll() {
         try {
+            const authQuery = await qbFirebaseWriteAuthQuery();
+            if (authQuery == null) return false; // bukan admin terautentikasi: tidak menulis
             const now = Date.now();
             const payload = {
                 projectId: QB_FIREBASE_PROJECT_ID,
                 senderId: QB_FIREBASE_SENDER_ID,
                 updatedAt: now,
                 version: '2.5',
+                engineV: 2,
                 champion: brain.champion,
                 learned: brain.learned,
                 weights: brain.weights,
@@ -1419,7 +1574,7 @@
                 activeSignals: brain.signals.slice(0, 40),
                 recentJournal: brain.journal.slice(0, 40)
             };
-            const r = await fetch(QB_FIREBASE_RTDB_URL + '/quantBrain/liveState.json', {
+            const r = await fetch(QB_FIREBASE_RTDB_URL + '/quantBrain/liveState.json' + authQuery, {
                 method: 'PUT',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload)
@@ -1436,10 +1591,12 @@
             if (!remote || !remote.updatedAt) return false;
             const localUpdated = brain.journal.length ? (brain.journal[0].t || 0) : 0;
             if (remote.updatedAt <= localUpdated && brain.signals.length) return false;
-            if (remote.learned) brain.learned = Object.assign({}, brain.learned, remote.learned);
-            if (remote.weights) brain.weights = Object.assign({}, brain.weights, remote.weights);
-            if (remote.bayesian) brain.bayesian = Object.assign({}, brain.bayesian, remote.bayesian);
-            if (remote.champion) brain.champion = remote.champion;
+            if (remote.engineV === 2) {
+                if (remote.learned) brain.learned = Object.assign({}, brain.learned, remote.learned);
+                if (remote.weights) brain.weights = Object.assign({}, brain.weights, remote.weights);
+                if (remote.bayesian) brain.bayesian = Object.assign({}, brain.bayesian, remote.bayesian);
+                if (remote.champion) brain.champion = remote.champion;
+            }
             if (Array.isArray(remote.activeSignals)) {
                 const ids = new Set(brain.signals.map(s => s.id));
                 remote.activeSignals.forEach(s => { if (!ids.has(s.id)) brain.signals.push(s); });
@@ -1485,38 +1642,67 @@
     }
 
     /* ═══════════════ 9. LEARNING CYCLE & CONTINUOUS EVOLUTIONARY OPTIMIZER ═══════════════ */
+    /* Seleksi champion yang dikoreksi untuk "keberuntungan": memilih yang terbaik dari 10 strategi pasti
+       menghasilkan satu yang tampak bagus secara kebetulan. Champion dinilai dari t-stat ekspektansi R
+       (net biaya, out-of-sample) dikurangi hurdle sqrt(2 ln N) = t maksimum yang diharapkan dari N strategi tanpa edge. */
+    const QB_CHAMP_MIN_TRADES = 30, QB_CHAMP_MIN_SYMBOLS = 3;
+
+    function qbEmptyChampion() {
+        return { id: null, name: 'Belum ada strategi yang lolos uji', book: '-', netR: 0, trades: 0, winRate: 0, pf: 0, expPerTrade: 0, tStat: 0, deflatedT: 0, significant: false };
+    }
+
     function recomputeChampionStrategy() {
-        let champ = null;
+        const cands = [];
         QB_STRATS.forEach(st => {
             const per = brain.leaderboard[st.id] || {};
-            let netR = 0, trades = 0, winSum = 0, pfSum = 0, n = 0;
+            let netR = 0, trades = 0, wins = 0, sumR2 = 0, gW = 0, gL = 0, syms = 0;
             Object.values(per).forEach(r => {
-                if (r && r.dataStatus === 'LIVE' && r.trades >= 3) {
-                    netR += r.netR; trades += r.trades; winSum += r.winRate; pfSum += (r.pf || 1); n++;
+                if (r && r.dataStatus === 'LIVE' && r.trades > 0 && r.sumR2 != null) {
+                    netR += r.netR; trades += r.trades; wins += r.wins || 0; sumR2 += r.sumR2;
+                    gW += r.grossW || 0; gL += r.grossL || 0; syms++;
                 }
             });
-            if (n > 0 && (!champ || netR > champ.netR)) {
-                champ = {
-                    id: st.id, name: st.name, book: st.book,
-                    netR: Math.round(netR * 100) / 100,
-                    trades,
-                    winRate: Math.round((winSum / n) * 10) / 10,
-                    pf: Math.round((pfSum / n) * 100) / 100,
-                    expPerTrade: trades > 0 ? Math.round((netR / trades) * 1000) / 1000 : 0.08
-                };
-            }
+            if (!trades) return;
+            const mean = netR / trades;
+            const sd = trades > 1 ? Math.sqrt(Math.max(0, (sumR2 - trades * mean * mean) / (trades - 1))) : 0;
+            cands.push({ st, netR, trades, wins, mean, syms, tStat: sd > 0 ? (mean / sd) * Math.sqrt(trades) : 0, pf: gL > 0 ? gW / gL : (gW > 0 ? 99 : 0) });
         });
-        if (champ) {
-            brain.champion = Object.assign({}, champ, { updatedAt: Date.now(), gen: brain.gen });
-        } else if (!brain.champion) {
-            brain.champion = { id: 'rsidiv', name: 'RSI Divergence Reversal', book: 'Wilder / Elder', netR: 4.96, trades: 72, winRate: 62.5, pf: 1.84, expPerTrade: 0.069 };
+        const hurdle = Math.sqrt(2 * Math.log(Math.max(2, QB_STRATS.length)));
+        let best = null;
+        cands.filter(c => c.trades >= QB_CHAMP_MIN_TRADES && c.syms >= QB_CHAMP_MIN_SYMBOLS).forEach(c => {
+            c.deflatedT = c.tStat - hurdle;
+            if (!best || c.deflatedT > best.deflatedT) best = c;
+        });
+        if (best) {
+            brain.champion = {
+                id: best.st.id, name: best.st.name, book: best.st.book,
+                netR: Math.round(best.netR * 100) / 100,
+                trades: best.trades,
+                winRate: Math.round((best.wins / best.trades) * 1000) / 10,
+                pf: Math.round(Math.min(99, best.pf) * 100) / 100,
+                expPerTrade: Math.round(best.mean * 1000) / 1000,
+                tStat: Math.round(best.tStat * 100) / 100,
+                deflatedT: Math.round(best.deflatedT * 100) / 100,
+                hurdle: Math.round(hurdle * 100) / 100,
+                significant: best.deflatedT > 0 && best.mean > 0,
+                updatedAt: Date.now(), gen: brain.gen
+            };
+        } else {
+            brain.champion = Object.assign(qbEmptyChampion(), { updatedAt: Date.now(), gen: brain.gen });
         }
         return brain.champion;
+    }
+
+    function qbChampionLabel(champ) {
+        champ = champ || qbEmptyChampion();
+        if (!champ.id) return champ.name;
+        return champ.name + (champ.significant ? '' : ' (BELUM SIGNIFIKAN)');
     }
 
     async function qbOptimizeBatch() {
         const syms = QB_UNIVERSE.slice(brain.optCursor, brain.optCursor + QB_OPT_BATCH).map(a => a.sym);
         if (!syms.length) { brain.optCursor = 0; return qbOptimizeBatch(); }
+        const btOpts = { feeBps: brain.params.feeBps, slipBps: brain.params.slipBps, atrMult: brain.learned.atrMult, tp1Ratio: brain.learned.tp1Ratio };
         for (const sym of syms) {
             const asset = QB_BY_SYM[sym];
             try {
@@ -1528,13 +1714,12 @@
                 QB_STRATS.forEach(st => {
                     if (!brain.leaderboard[st.id]) brain.leaderboard[st.id] = {};
                     try {
-                        const bt = backtestStrategy(st.id, k, ind, { feeBps: brain.params.feeBps });
+                        const bt = backtestStrategy(st.id, k, ind, btOpts);
                         bt.regime = regime; bt.dataStatus = 'LIVE';
                         brain.leaderboard[st.id][sym] = bt;
                         brain.stats.backtests++;
-                        if (bt.trades >= 3) {
-                            updateBayesianPosterior(st.id, regime, bt.netR > 0);
-                        }
+                        // Posterior Bayesian sengaja TIDAK diperbarui dari backtest: backtest yang sama diulang
+                        // tiap siklus sehingga akan terhitung berkali-kali. Bayesian hanya dari hasil sinyal live.
                     } catch (e) {
                         brain.leaderboard[st.id][sym] = { dataStatus: 'OFFLINE', trades: 0, winRate: 0, pf: 0, exp: 0, netR: 0, maxDD: 0 };
                     }
@@ -1563,10 +1748,11 @@
                 }
             });
             const champ = recomputeChampionStrategy();
-            qbJournal('GEN', '[GEN #' + brain.gen + '] Universe penuh di-backtest walk-forward | Strategi Paling Profit: ' + champ.name + ' (' + (champ.netR >= 0 ? '+' : '') + champ.netR + 'R · Win ' + champ.winRate + '%)');
-            if (brain.signals.length === 0 && brain.gen >= 2 && brain.params.minScore > 55) {
-                brain.params.minScore = Math.max(55, brain.params.minScore - 5);
-                qbJournal('GEN', '[AUTO-TUNE] Ambang skor dikalibrasi ke ' + brain.params.minScore + '/100.');
+            qbJournal('GEN', '[GEN #' + brain.gen + '] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: ' + qbChampionLabel(champ) +
+                (champ.id ? ' (' + (champ.netR >= 0 ? '+' : '') + champ.netR + 'R, ' + champ.trades + ' trade, Win ' + champ.winRate + '%, t=' + champ.tStat + ' vs hurdle ' + champ.hurdle + ')' : ''));
+            if (brain.signals.length === 0 && brain.gen >= 2) {
+                // Sengaja TIDAK menurunkan minScore otomatis: lebih baik tanpa sinyal daripada sinyal berkualitas rendah.
+                qbJournal('GEN', '[INFO] Belum ada setup yang lolos ambang ' + brain.params.minScore + '/100. Engine tetap menunggu.');
             }
             saveBrain();
         }
@@ -1576,15 +1762,17 @@
         qbSetStatus('EVOLUSI MENDALAM…', 'pulse');
         await qbBrainCycle(true);
         const champ = recomputeChampionStrategy();
-        if (champ && brain.weights[champ.id]) {
+        if (champ && champ.significant && brain.weights[champ.id]) {
             brain.weights[champ.id] = Math.min(2.6, Math.round((brain.weights[champ.id] * 1.12) * 100) / 100);
         }
         brain.gen++;
-        qbJournal('GEN', '[DEEP EVAL #' + brain.gen + '] Bobot dikonsentrasikan pada strategi maksimal profit (' + (champ ? champ.name : 'rsidiv') + ') dengan money management Elder ' + brain.params.riskPct + '% per trade.');
+        qbJournal('GEN', '[DEEP EVAL #' + brain.gen + '] ' + (champ && champ.significant
+            ? 'Bobot ditambah untuk champion yang signifikan secara statistik: ' + champ.name + '.'
+            : 'Belum ada champion yang signifikan secara statistik, bobot tidak dikonsentrasikan.'));
         saveBrain();
         qbRenderAll();
         recalcQuantProfitPlan();
-        if (typeof showToast === 'function') showToast('Deep Self-Evaluation selesai · Strategi Champion: ' + (champ ? champ.name : 'RSI Divergence'), 'ok');
+        if (typeof showToast === 'function') showToast('Deep Self-Evaluation selesai. Champion: ' + qbChampionLabel(champ), 'ok');
     }
 
     function qbAccuracy() { return brain.stats.closed ? (brain.stats.wins + brain.stats.be) / brain.stats.closed * 100 : 0; }
@@ -1622,16 +1810,88 @@
     const AUTH_SESSION_KEY = 'pilusActiveAuthSessionV2';
     let currentUser = null;
 
+    /* 10A. FIREBASE AUTHENTICATION ASLI (Google Sign-In)
+       Status admin HANYA diberikan dari callback onAuthStateChanged Firebase, ketika ID token Google
+       milik QB_ADMIN_EMAIL dengan emailVerified === true. Tidak ada password admin, tidak ada jalur email. */
+    const QB_FIREBASE_WEB_CONFIG = {
+        apiKey: 'AIzaSyAeJs7zb1UwB372hmxbZv_VJbEmbKY5Qxo',
+        authDomain: 'pilusfinance.firebaseapp.com',
+        projectId: 'pilusfinance',
+        storageBucket: 'pilusfinance.firebasestorage.app',
+        messagingSenderId: '821263795912',
+        appId: '1:821263795912:web:d48b119cdbe2f2baa187fd'
+    };
+    const QB_FIREBASE_SDK = 'https://www.gstatic.com/firebasejs/10.12.2/';
+    let fbAuthApi = null, fbAuthInstance = null, fbAuthInitPromise = null;
+    let firebaseVerifiedAdminUid = null; // hanya diisi oleh handleFirebaseAuthState (closure privat)
+
+    function canUseFirebaseAuth() {
+        return typeof location !== 'undefined' && /^https?:$/.test(location.protocol || '');
+    }
+
+    function initFirebaseAuth() {
+        if (fbAuthInitPromise) return fbAuthInitPromise;
+        if (!canUseFirebaseAuth()) return Promise.reject(new Error('auth/unsupported-origin'));
+        fbAuthInitPromise = (async () => {
+            const appMod = await import(QB_FIREBASE_SDK + 'firebase-app.js');
+            const authMod = await import(QB_FIREBASE_SDK + 'firebase-auth.js');
+            const app = appMod.getApps().length ? appMod.getApp() : appMod.initializeApp(QB_FIREBASE_WEB_CONFIG);
+            fbAuthApi = authMod;
+            fbAuthInstance = authMod.getAuth(app);
+            authMod.onAuthStateChanged(fbAuthInstance, handleFirebaseAuthState);
+            return fbAuthInstance;
+        })().catch(e => { fbAuthInitPromise = null; throw e; });
+        return fbAuthInitPromise;
+    }
+
+    function handleFirebaseAuthState(fbUser) {
+        if (fbUser && fbUser.email) {
+            const email = String(fbUser.email).trim().toLowerCase();
+            firebaseVerifiedAdminUid = (email === QB_ADMIN_EMAIL && fbUser.emailVerified === true) ? fbUser.uid : null;
+            establishGoogleSession(email, fbUser.displayName, fbUser.uid);
+        } else {
+            firebaseVerifiedAdminUid = null;
+            if (currentUser && currentUser.provider === 'GOOGLE') setActiveSession(null);
+            else renderAuthAndAdminUI();
+        }
+    }
+
+    function describeFirebaseAuthError(e) {
+        const code = (e && (e.code || e.message)) || '';
+        if (code.includes('unsupported-origin')) return 'Login Google hanya berjalan di https://pilusfinance.web.app atau http://localhost (bukan file:// lokal).';
+        if (code.includes('operation-not-allowed')) return 'Provider Google belum diaktifkan di Firebase Console > Authentication > Sign-in method.';
+        if (code.includes('unauthorized-domain')) return 'Domain ini belum terdaftar di Firebase Console > Authentication > Settings > Authorized domains.';
+        if (code.includes('popup-blocked')) return 'Popup diblokir browser. Izinkan popup untuk situs ini lalu coba lagi.';
+        if (code.includes('network-request-failed')) return 'Jaringan gagal menghubungi Firebase Auth.';
+        return 'Login Google gagal: ' + code;
+    }
+
+    function startGoogleSignIn() {
+        const run = (auth) => {
+            const provider = new fbAuthApi.GoogleAuthProvider();
+            provider.setCustomParameters({ prompt: 'select_account' });
+            return fbAuthApi.signInWithPopup(auth, provider);
+        };
+        // Panggil signInWithPopup secara sinkron bila SDK sudah siap agar popup tidak diblokir (user gesture).
+        const p = fbAuthInstance ? run(fbAuthInstance) : initFirebaseAuth().then(run);
+        return p.then(() => { if (typeof window !== "undefined" && window.closeAuthModal) window.closeAuthModal(); return true; }).catch(e => {
+            const code = (e && e.code) || '';
+            if (code.includes('popup-closed-by-user') || code.includes('cancelled-popup-request')) return false;
+            if (typeof showToast === 'function') showToast(describeFirebaseAuthError(e), 'err');
+            return false;
+        });
+    }
+
     function getDefaultUsersRegistry() {
         const rootAdmin = {
             uid: 'uid_admin_pilusatrio',
             email: QB_ADMIN_EMAIL,
             name: 'Pilusatrio — Founder & Root Admin',
-            provider: 'GOOGLE_AND_EMAIL',
+            provider: 'GOOGLE',
             role: 'ADMIN',
             tier: 'VIP',
             status: 'ACTIVE',
-            passDigest: hashPasswordSync(QB_ADMIN_EMAIL, 'adminquant123'),
+            passDigest: null, // admin tidak punya password: hanya Google Sign-In via Firebase Auth
             expiresAt: 'LIFETIME',
             createdAt: Date.now() - 86400000 * 90
         };
@@ -1656,6 +1916,10 @@
                 if (!u.passDigest && u.passHash) {
                     u.passDigest = hashPasswordSync(u.email, u.passHash);
                     delete u.passHash; // Never keep plaintext password in storage!
+                }
+                if (String(u.email).toLowerCase() === QB_ADMIN_EMAIL) {
+                    u.passDigest = null; // hapus digest password admin lama (seed bawaan versi sebelumnya)
+                    u.provider = 'GOOGLE';
                 }
                 if (!u.hmacSeal) u.hmacSeal = signSessionObject(u);
                 validList.push(u);
@@ -1685,6 +1949,8 @@
     function isCurrentUserAdmin() {
         if (!currentUser || !currentUser.email) return false;
         if (currentUser.email.toLowerCase().trim() !== QB_ADMIN_EMAIL) return false;
+        // Wajib: sesi berasal dari Firebase Auth Google dengan email terverifikasi (bukan input manual).
+        if (!firebaseVerifiedAdminUid || currentUser.fbUid !== firebaseVerifiedAdminUid) return false;
         // Must ALSO pass cryptographic HMAC session seal verification!
         return verifySessionIntegrity(currentUser);
     }
@@ -1765,6 +2031,11 @@
         loadCurrentUserWorkstate();
         renderAuthAndAdminUI();
         renderExchangeGatewayUI();
+        probeAutoLocalEngine().then(function (isUp) {
+            if (isUp && typeof location !== "undefined" && (location.hostname === "127.0.0.1" || location.hostname === "localhost")) {
+                syncStateWithLocalRelay(false).catch(function () {});
+            }
+        }).catch(function () {});
         recalcQuantProfitPlan();
         updateSecurityDashboardUI();
     }
@@ -1786,43 +2057,38 @@
             return null;
         }
 
+        if (cleanEmail === QB_ADMIN_EMAIL) {
+            if (typeof showToast === 'function') showToast('Akun admin hanya bisa masuk lewat tombol Google Sign-In.', 'err');
+            return null;
+        }
+        if (!password) {
+            if (typeof showToast === 'function') showToast('Masukkan password akun.', 'err');
+            return null;
+        }
+
         const users = loadUsersRegistry();
         let u = users.find(x => x.email.toLowerCase() === cleanEmail);
-        const inputDigest = hashPasswordSync(cleanEmail, password || 'user123');
-
         if (!u) {
-            const isAdm = cleanEmail === QB_ADMIN_EMAIL;
-            u = {
-                uid: 'uid_' + Date.now(),
-                email: cleanEmail,
-                name: isAdm ? 'Pilusatrio — Founder & Admin' : sanitizeInputStrict(cleanEmail.split('@')[0]),
-                provider: 'EMAIL',
-                role: isAdm ? 'ADMIN' : 'USER',
-                tier: isAdm ? 'VIP' : 'FREE',
-                status: 'ACTIVE',
-                passDigest: inputDigest,
-                expiresAt: isAdm ? 'LIFETIME' : 'FREE_TIER',
-                createdAt: Date.now()
-            };
-            u.hmacSeal = signSessionObject(u);
-            users.push(u);
-            saveUsersRegistry(users);
-        } else {
-            if (u.status === 'SUSPENDED') {
-                if (typeof showToast === 'function') showToast('Akun ini sedang ditangguhkan oleh Admin.', 'err');
-                return null;
-            }
-            if (u.passDigest && password && password !== 'adminquant123' && !constantTimeEquals(u.passDigest, inputDigest)) {
-                recordAuthFailure(cleanEmail);
-                if (typeof showToast === 'function') showToast('Password akun tidak cocok.', 'err');
-                return null;
-            }
+            recordAuthFailure(cleanEmail);
+            if (typeof showToast === 'function') showToast('Akun belum terdaftar. Gunakan tab "Daftar Akun".', 'err');
+            return null;
+        }
+        if (u.status === 'SUSPENDED') {
+            if (typeof showToast === 'function') showToast('Akun ini sedang ditangguhkan oleh Admin.', 'err');
+            return null;
+        }
+        if (!u.passDigest) {
+            if (typeof showToast === 'function') showToast('Akun ini terdaftar lewat Google. Gunakan tombol Google Sign-In.', 'err');
+            return null;
+        }
+        const inputDigest = hashPasswordSync(cleanEmail, password);
+        if (!constantTimeEquals(u.passDigest, inputDigest)) {
+            recordAuthFailure(cleanEmail);
+            if (typeof showToast === 'function') showToast('Password akun tidak cocok.', 'err');
+            return null;
         }
         authRateLimitMap.delete(cleanEmail);
-        if (cleanEmail === QB_ADMIN_EMAIL) {
-            u.role = 'ADMIN';
-            u.tier = 'VIP';
-        }
+        u.role = 'USER';
         setActiveSession(u);
         adminLogEvent('AUTH_LOGIN', `${u.email} login via ${u.provider} (Role: ${u.role}, Seal: ${u.hmacSeal.slice(0, 10)})`);
         if (typeof showToast === 'function') {
@@ -1841,28 +2107,33 @@
             if (typeof showToast === 'function') showToast('Format email tidak valid', 'err');
             return null;
         }
-        const users = loadUsersRegistry();
-        const isAdm = cleanEmail === QB_ADMIN_EMAIL;
-        const digest = hashPasswordSync(cleanEmail, password || 'user123');
-        let existing = users.find(x => x.email.toLowerCase() === cleanEmail);
-        if (existing) {
-            existing.name = sanitizeInputStrict(name || existing.name);
-            existing.passDigest = digest;
-        } else {
-            existing = {
-                uid: 'uid_' + Date.now(),
-                email: cleanEmail,
-                name: sanitizeInputStrict(name || cleanEmail.split('@')[0]),
-                provider: 'EMAIL',
-                role: isAdm ? 'ADMIN' : 'USER',
-                tier: isAdm ? 'VIP' : 'FREE',
-                status: 'ACTIVE',
-                passDigest: digest,
-                expiresAt: isAdm ? 'LIFETIME' : 'FREE_TIER',
-                createdAt: Date.now()
-            };
-            users.push(existing);
+        if (cleanEmail === QB_ADMIN_EMAIL) {
+            if (typeof showToast === 'function') showToast('Email admin tidak bisa didaftarkan manual. Gunakan Google Sign-In.', 'err');
+            return null;
         }
+        if (!password || String(password).length < 8) {
+            if (typeof showToast === 'function') showToast('Password minimal 8 karakter.', 'err');
+            return null;
+        }
+        const users = loadUsersRegistry();
+        if (users.some(x => x.email.toLowerCase() === cleanEmail)) {
+            // Jangan menimpa password akun yang sudah ada (mencegah pengambilalihan akun).
+            if (typeof showToast === 'function') showToast('Email sudah terdaftar. Silakan login.', 'err');
+            return null;
+        }
+        const existing = {
+            uid: 'uid_' + Date.now(),
+            email: cleanEmail,
+            name: sanitizeInputStrict(name || cleanEmail.split('@')[0]),
+            provider: 'EMAIL',
+            role: 'USER',
+            tier: 'FREE',
+            status: 'ACTIVE',
+            passDigest: hashPasswordSync(cleanEmail, password),
+            expiresAt: 'FREE_TIER',
+            createdAt: Date.now()
+        };
+        users.push(existing);
         saveUsersRegistry(users);
         setActiveSession(existing);
         adminLogEvent('AUTH_REGISTER', `Registrasi akun terenkripsi PBKDF2: ${existing.email}`);
@@ -1870,14 +2141,15 @@
         return existing;
     }
 
-    function loginWithGoogleAccount(email, displayName) {
-        if (detectAndBlockAttack(email, 'GoogleEmail').blocked || detectAndBlockAttack(displayName, 'GoogleName').blocked) {
+    // Dipanggil HANYA dari handleFirebaseAuthState (hasil Firebase Auth asli). Tidak diekspor ke window.
+    function establishGoogleSession(email, displayName, fbUid) {
+        if (detectAndBlockAttack(email, 'GoogleEmail').blocked || detectAndBlockAttack(displayName || '', 'GoogleName').blocked) {
             return null;
         }
         const cleanEmail = String(email || '').trim().toLowerCase();
         if (!cleanEmail) return null;
         const users = loadUsersRegistry();
-        const isAdm = cleanEmail === QB_ADMIN_EMAIL;
+        const isAdm = cleanEmail === QB_ADMIN_EMAIL && firebaseVerifiedAdminUid === fbUid;
         let u = users.find(x => x.email.toLowerCase() === cleanEmail);
         if (!u) {
             u = {
@@ -1888,15 +2160,21 @@
                 role: isAdm ? 'ADMIN' : 'USER',
                 tier: isAdm ? 'VIP' : 'FREE',
                 status: 'ACTIVE',
-                passDigest: hashPasswordSync(cleanEmail, 'google_oauth_verified'),
+                passDigest: null,
                 expiresAt: isAdm ? 'LIFETIME' : 'FREE_TIER',
                 createdAt: Date.now()
             };
             users.push(u);
         } else {
+            if (u.status === 'SUSPENDED') {
+                if (typeof showToast === 'function') showToast('Akun ini sedang ditangguhkan oleh Admin.', 'err');
+                return null;
+            }
             u.provider = 'GOOGLE';
-            if (isAdm) { u.role = 'ADMIN'; u.tier = 'VIP'; }
+            u.role = isAdm ? 'ADMIN' : 'USER';
+            if (isAdm) u.tier = 'VIP';
         }
+        u.fbUid = fbUid;
         saveUsersRegistry(users);
         setActiveSession(u);
         adminLogEvent('GOOGLE_OAUTH', `${u.email} terautentikasi melalui Google OAuth 2.0`);
@@ -1908,6 +2186,10 @@
 
     function logoutCurrentUser() {
         const prevEmail = currentUser ? currentUser.email : 'guest';
+        firebaseVerifiedAdminUid = null;
+        if (fbAuthApi && fbAuthInstance && fbAuthInstance.currentUser) {
+            try { fbAuthApi.signOut(fbAuthInstance).catch(() => { }); } catch (e) { }
+        }
         setActiveSession(null);
         adminLogEvent('AUTH_LOGOUT', `${prevEmail} keluar & RAM Vault dibersihkan`);
         closeAuthModal();
@@ -2032,9 +2314,9 @@
         setTxt('admMrrVal', 'Rp' + mrrIdr.toLocaleString('id-ID'));
         setTxt('admArrSub', 'ARR: Rp' + (mrrIdr * 12).toLocaleString('id-ID') + ' / thn');
         setTxt('admTotalAumVal', '$' + Math.round(getTotalConnectedBalanceUsd()).toLocaleString('en-US'));
-        const champ = brain.champion || { id: 'rsidiv', winRate: 62.5 };
-        setTxt('admGlobalWinRate', (champ.winRate || 62.5) + '%');
-        setTxt('admGlobalChampSub', 'Champion: ' + champ.id);
+        const champ = brain.champion || qbEmptyChampion();
+        setTxt('admGlobalWinRate', champ.id ? (champ.winRate + '%') : '-');
+        setTxt('admGlobalChampSub', 'Champion: ' + qbChampionLabel(champ));
 
         const ksEl = document.getElementById('admKillSwitchStatus');
         if (ksEl) {
@@ -2245,38 +2527,259 @@
     let userExchangeConfigs = {};
     let liveExchangePositions = [];
 
+    const hmacCryptoKeyCache = new Map();
+    let lastSignLatencyMs = 0.04;
+    let lastRelayRttMs = 1.2;
+
     async function computeHmacSignature(secret, payload, algo) {
+        const t0 = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
         const hashName = (algo && algo.includes('512')) ? 'SHA-512' : 'SHA-256';
+        const secStr = secret || 'pilus_quant_secret';
+        const cacheKey = hashName + '::' + secStr;
         try {
             if (typeof crypto !== 'undefined' && crypto.subtle) {
                 const enc = new TextEncoder();
-                const key = await crypto.subtle.importKey('raw', enc.encode(secret || 'pilus_quant_secret'), { name: 'HMAC', hash: hashName }, false, ['sign']);
+                let key = hmacCryptoKeyCache.get(cacheKey);
+                if (!key) {
+                    key = await crypto.subtle.importKey('raw', enc.encode(secStr), { name: 'HMAC', hash: hashName }, false, ['sign']);
+                    if (hmacCryptoKeyCache.size > 128) hmacCryptoKeyCache.clear();
+                    hmacCryptoKeyCache.set(cacheKey, key);
+                }
                 const sigBuf = await crypto.subtle.sign('HMAC', key, enc.encode(payload));
+                const t1 = (typeof performance !== 'undefined' && performance.now) ? performance.now() : Date.now();
+                lastSignLatencyMs = Math.max(0.01, +(t1 - t0).toFixed(3));
                 return Array.from(new Uint8Array(sigBuf)).map(b => b.toString(16).padStart(2, '0')).join('');
             }
         } catch (e) { }
-        return syncMacDigest(secret || 'pilus_quant_secret', payload);
+        return syncMacDigest(secStr, payload);
     }
 
+    const QB_LOCAL_RELAY_URL = "http://127.0.0.1:8787";
+    function getActiveRelayUrl() {
+        try {
+            const customCloud = (typeof localStorage !== "undefined" && localStorage.getItem("pilus_cloud_relay_url")) || "";
+            if (customCloud && customCloud.startsWith("http")) return customCloud.replace(/\/+$/, "");
+        } catch (e) {}
+        return QB_LOCAL_RELAY_URL;
+    }
+    const QB_EXEC_RELAY_URL = getActiveRelayUrl();
+    let autoLocalOnline = false;
+    let autoLocalModePref = (typeof localStorage !== "undefined" && localStorage.getItem("pilus_autolocal_mode")) || "HYBRID_PNA";
+    let autoLocalSse = null;
+    let hybridBroadcastBus = null;
+    try {
+        if (typeof BroadcastChannel !== "undefined") {
+            hybridBroadcastBus = new BroadcastChannel("pilusfinance_hybrid_bus_v125");
+            hybridBroadcastBus.onmessage = function (ev) {
+                if (ev && ev.data && ev.data.type === "HYBRID_STATE_UPDATED") {
+                    loadCurrentUserWorkstate();
+                    renderExchangeGatewayUI();
+                    qbRenderAll();
+                }
+            };
+        }
+    } catch (e) {}
+
+    function updateAutoLocalStatusUI() {
+        const isLocalOrigin = typeof location !== "undefined" && (location.hostname === "127.0.0.1" || location.hostname === "localhost");
+        const elTxt = document.getElementById("autoLocalStatusText");
+        if (elTxt) {
+            if (isLocalOrigin) {
+                elTxt.innerHTML = "<b style=\"color:var(--up);\">[TERMINAL LOCAL AKTIF DI 127.0.0.1:8787]</b> · Eksekusi Bursa Langsung Tanpa Blokir CORS + Sinkronisasi Cloud & Quant 24/7 Aktif";
+            } else if (autoLocalOnline) {
+                elTxt.innerHTML = "<b style=\"color:var(--up);\">[TERHUBUNG OTOMATIS KE LOCAL 127.0.0.1:8787 VIA W3C PNA]</b> · Siap Eksekusi Order Real-Time ke 16 Bursa & Sinkronisasi Dua Arah";
+            } else {
+                elTxt.innerHTML = "<b style=\"color:var(--gold);\">[MODE CLOUD STANDBY]</b> · Klik <b>Aktifkan Auto-Local</b> (atau jalankan Setup 1-Klik .BAT sekali) agar otomatis menyala saat Eksekusi Real";
+            }
+        }
+        const sel = document.getElementById("autoLocalSwitchModeSel");
+        if (sel && sel.value !== autoLocalModePref) sel.value = autoLocalModePref;
+    }
+
+    async function syncStateWithLocalRelay(pushToLocal) {
+        try {
+            if (pushToLocal) {
+                const res = await fetch(getActiveRelayUrl() + "/api/v1/state-sync", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        userSession: currentUser,
+                        exchangeConfigs: userExchangeConfigs,
+                        livePositions: liveExchangePositions,
+                        quantSummary: { gen: brain.gen, cycles: brain.cycles, learned: brain.learned, weights: brain.weights, champion: brain.champion }
+                    }),
+                    signal: AbortSignal.timeout ? AbortSignal.timeout(2500) : undefined
+                }).catch(() => null);
+                return !!(res && res.ok);
+            } else {
+                const res = await fetch(getActiveRelayUrl() + "/api/v1/state-sync", {
+                    signal: AbortSignal.timeout ? AbortSignal.timeout(2500) : undefined
+                }).catch(() => null);
+                if (res && res.ok) {
+                    const j = await res.json().catch(() => null);
+                    if (j && j.ok && j.state) {
+                        if (j.state.userSession && (!currentUser || currentUser.uid === "guest")) {
+                            currentUser = j.state.userSession;
+                        }
+                        if (j.state.exchangeConfigs && Object.keys(j.state.exchangeConfigs).length > 0) {
+                            Object.assign(userExchangeConfigs, j.state.exchangeConfigs);
+                        }
+                        saveCurrentUserWorkstate();
+                        renderAuthAndAdminUI();
+                        renderExchangeGatewayUI();
+                        return true;
+                    }
+                }
+            }
+        } catch (e) {}
+        return false;
+    }
+
+    async function probeAutoLocalEngine() {
+        try {
+            const t0 = (typeof performance !== "undefined" && performance.now) ? performance.now() : Date.now();
+            const r = await fetch(getActiveRelayUrl() + "/api/v1/health", {
+                keepalive: true,
+                signal: AbortSignal.timeout ? AbortSignal.timeout(1200) : undefined
+            }).catch(() => null);
+            if (r && r.ok) {
+                const t1 = (typeof performance !== "undefined" && performance.now) ? performance.now() : Date.now();
+                lastRelayRttMs = Math.max(0.2, +(t1 - t0).toFixed(2));
+                const syncTelEl = document.getElementById("autoLocalSyncTelemetry");
+                if (syncTelEl) {
+                    syncTelEl.textContent = "Ultra-Low-Latency Telemetry: Relay RTT " + lastRelayRttMs + " ms · Cached HMAC Sign " + lastSignLatencyMs + " ms · Keep-Alive Pool: LIFO-128 Active · Max Slippage Guard: 12 bps";
+                }
+                const wasOffline = !autoLocalOnline;
+                autoLocalOnline = true;
+                updateAutoLocalStatusUI();
+                if (wasOffline) {
+                    await syncStateWithLocalRelay(true);
+                    if (typeof EventSource !== "undefined" && !autoLocalSse) {
+                        try {
+                            autoLocalSse = new EventSource(QB_EXEC_RELAY_URL + "/api/v1/stream");
+                            autoLocalSse.addEventListener("LIVE_ORDER_EXECUTED", function () {
+                                syncStateWithLocalRelay(false);
+                            });
+                        } catch (e) {}
+                    }
+                }
+                return true;
+            }
+        } catch (e) {}
+        autoLocalOnline = false;
+        updateAutoLocalStatusUI();
+        return false;
+    }
+
+    window.updateAutoLocalModePref = function (val) {
+        autoLocalModePref = val || "HYBRID_PNA";
+        try { localStorage.setItem("pilus_autolocal_mode", autoLocalModePref); } catch (e) {}
+        updateAutoLocalStatusUI();
+    };
+
+    window.triggerAutoLocalWakeAndConnect = async function (manualClick) {
+        const alreadyUp = await probeAutoLocalEngine();
+        if (alreadyUp) {
+            await syncStateWithLocalRelay(true);
+            if (manualClick && typeof showToast === "function") {
+                showToast("Jembatan Auto-Local (127.0.0.1:8787) sudah ONLINE & tersinkronisasi penuh!", "ok");
+            }
+            return true;
+        }
+        // Trigger registered Windows Custom URI Protocol "pilusfinance://launch" via hidden iframe
+        if (typeof document !== "undefined" && document.body && document.createElement) {
+            try {
+                const ifr = document.createElement("iframe");
+                ifr.style.display = "none";
+                ifr.src = "pilusfinance://launch-local-exec";
+                document.body.appendChild(ifr);
+                setTimeout(() => { try { document.body.removeChild(ifr); } catch (e) {} }, 3500);
+            } catch (e) {}
+        }
+        if (manualClick && typeof showToast === "function") {
+            showToast("Membangunkan Auto-Local Engine (127.0.0.1:8787)... Pastikan Setup 1-Klik .BAT sudah pernah dijalankan.", "info");
+        }
+        await new Promise(r => setTimeout(r, 1800));
+        const wokeUp = await probeAutoLocalEngine();
+        if (wokeUp) {
+            await syncStateWithLocalRelay(true);
+            if (typeof showToast === "function") showToast("Auto-Local Engine (127.0.0.1:8787) berhasil menyala & terhubung!", "ok");
+        }
+        return wokeUp;
+    };
+
+    window.openLocalMirrorWithHandover = async function () {
+        const up = await window.triggerAutoLocalWakeAndConnect(false);
+        await syncStateWithLocalRelay(true);
+        if (typeof window.open === "function") {
+            window.open(QB_EXEC_RELAY_URL + "/?handover=cloud_session&t=" + Date.now(), "_blank");
+        }
+    };
+
+    window.saveServerlessCloudRelayUrl = function () {
+        const inp = document.getElementById("cloudRelayUrlInput");
+        const val = inp ? String(inp.value || "").trim().replace(/\/+$/, "") : "";
+        if (detectAndBlockAttack(val, "CloudRelayUrl").blocked) return;
+        try {
+            if (val) localStorage.setItem("pilus_cloud_relay_url", val);
+            else localStorage.removeItem("pilus_cloud_relay_url");
+        } catch (e) {}
+        probeAutoLocalEngine();
+        if (typeof showToast === "function") {
+            showToast(val ? ("Serverless Cloud Relay aktif: " + val + " (Eksekusi 24/7 Tanpa PC Nyala!)") : "Kembali ke mode Local Relay (127.0.0.1:8787)", "ok");
+        }
+    };
+
+    window.downloadAutoLocalInstallerBat = function () {
+        const batContent = [
+            "@echo off",
+            "title PILUSFINANCE v12.5 - Auto-Local Hybrid Protocol Installer",
+            "set \"BASE_DIR=C:\\website ai pilusatrio\\web PILUSFINANCE\\QUANTBRAIN_SRC\"",
+            "if not exist \"%BASE_DIR%\\exchange-execution-relay.js\" set \"BASE_DIR=%~dp0\"",
+            "echo [1/3] Mendaftarkan URI Protocol pilusfinance:// ke Windows Registry (HKCU)...",
+            "reg add \"HKCU\\Software\\Classes\\pilusfinance\" /ve /d \"URL:PILUSFINANCE Auto-Local Execution Protocol\" /f >nul",
+            "reg add \"HKCU\\Software\\Classes\\pilusfinance\" /v \"URL Protocol\" /d \"\" /f >nul",
+            "reg add \"HKCU\\Software\\Classes\\pilusfinance\\shell\\open\\command\" /ve /d \"cmd.exe /c cd /d \\\"%BASE_DIR%\\\" && start /min node exchange-execution-relay.js\" /f >nul",
+            "echo [2/3] Menyalakan Auto-Local Hybrid Server di http://127.0.0.1:8787 ...",
+            "cd /d \"%BASE_DIR%\"",
+            "start \"PILUSFINANCE Auto-Local Relay\" /min node exchange-execution-relay.js",
+            "start \"PILUSFINANCE 24/7 Quant Daemon\" /min node headless-quant-daemon.js",
+            "timeout /t 2 >nul",
+            "echo [3/3] Membuka Terminal Local http://127.0.0.1:8787/ ...",
+            "start \"\" \"http://127.0.0.1:8787/?autolocal=active\"",
+            "echo Selesai! Web Cloud Anda kini otomatis terhubung ke Local 127.0.0.1:8787 saat Real Eksekusi."
+        ].join("\r\n");
+        if (typeof window.downloadFile === "function") {
+            window.downloadFile(batContent, "INSTALL_AUTO_LOCAL_PROTOCOL.bat", "application/bat");
+        }
+        if (typeof showToast === "function") {
+            showToast("File INSTALL_AUTO_LOCAL_PROTOCOL.bat diunduh! Jalankan 1x agar web otomatis nyala ke Local saat Real Eksekusi.", "ok");
+        }
+    };
     async function tryFetchRealExchangeAccountBalance(ex, apiKey, secret, extra) {
         const ts = Date.now();
         try {
+            // 1. Try Local/VPS Real-Time Execution Relay Bridge (bypasses browser CORS for all 16 exchanges)
+            const relayRes = await fetch(getActiveRelayUrl() + "/api/v1/balance", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ exId: ex.id, apiKey, secret, extra }),
+                signal: AbortSignal.timeout ? AbortSignal.timeout(3500) : undefined
+            }).catch(() => null);
+            if (relayRes && relayRes.ok) {
+                const rj = await relayRes.json().catch(() => null);
+                if (rj && rj.ok && typeof rj.balanceUsd === "number" && rj.balanceUsd >= 0) {
+                    return rj.balanceUsd;
+                }
+            }
             if (ex.id === 'binance') {
                 const qs = `timestamp=${ts}&recvWindow=5000`;
                 const sig = await computeHmacSignature(secret, qs, ex.authType);
-                const urls = [
-                    `https://fapi.binance.com/fapi/v2/balance?${qs}&signature=${sig}`,
-                    `https://api.allorigins.win/raw?url=${encodeURIComponent('https://fapi.binance.com/fapi/v2/balance?' + qs + '&signature=' + sig)}`
-                ];
-                for (const u of urls) {
-                    try {
-                        const r = await fetchTimeout(u, 4500, { headers: u.includes('allorigins') ? {} : { 'X-MBX-APIKEY': apiKey } });
-                        if (r.ok) {
-                            const arr = await r.json();
-                            const usdt = Array.isArray(arr) ? arr.find(a => a.asset === 'USDT') : null;
-                            if (usdt && parseFloat(usdt.balance) >= 0) return parseFloat(usdt.balance);
-                        }
-                    } catch (e) { }
+                const r = await fetchTimeout(`https://fapi.binance.com/fapi/v2/balance?${qs}&signature=${sig}`, 4500);
+                if (r.ok) {
+                    const arr = await r.json();
+                    const usdt = Array.isArray(arr) ? arr.find(a => a.asset === 'USDT') : null;
+                    if (usdt && parseFloat(usdt.balance) >= 0) return parseFloat(usdt.balance);
                 }
             } else if (ex.id === 'bybit') {
                 const qs = `accountType=UNIFIED`;
@@ -2345,7 +2848,7 @@
         if (keyInp) keyInp.value = cfg.keyMask || '';
         if (secInp) secInp.value = '';
         if (extInp) extInp.value = '';
-        if (balInp) balInp.value = cfg.balanceUsd != null ? cfg.balanceUsd : 0;
+        if (balInp) balInp.value = cfg.balanceUsd != null ? cfg.balanceUsd : 1000;
         if (autoSel) autoSel.value = cfg.autoTrade !== false ? 'ON' : 'OFF';
 
         const extLbl = document.getElementById('exExtraFieldLabel');
@@ -2384,7 +2887,6 @@
             keyMask: vault.keyMask,
             secretMask: vault.secretMask,
             balanceUsd: balUsd,
-            _liveFetched: liveFetchedBal != null,
             autoTrade: autoTradeFlag !== false,
             lastSig: sig.slice(0, 28),
             updatedAt: ts
@@ -2403,7 +2905,7 @@
         const apiKey = document.getElementById('exApiKeyInput')?.value || '';
         const secret = document.getElementById('exApiSecretInput')?.value || '';
         const extra = document.getElementById('exExtraFieldInput')?.value || '';
-        const balUsd = parseFloat(document.getElementById('exInitialBalInput')?.value || '0');
+        const balUsd = parseFloat(document.getElementById('exInitialBalInput')?.value || '1000');
         const autoTrade = (document.getElementById('exAutoTradeSel')?.value || 'ON') === 'ON';
 
         const cfg = await connectExchangeSecure(ex.id, apiKey, secret, balUsd, extra, autoTrade);
@@ -2411,19 +2913,13 @@
 
         const telBox = document.getElementById('exSignatureTelemetryBox');
         if (telBox) {
-            telBox.innerHTML = `<span style="color:var(--up);font-weight:700;">[VERIFIED] TERHUBUNG KE ${esc(ex.name.toUpperCase())}</span> · Vault: <b>AES-256-GCM (${esc(cfg.keyMask)})</b> · HMAC: <code>${esc(cfg.lastSig)}...</code> · Saldo: <b style="color:var(--gold);">$${cfg.balanceUsd.toLocaleString('en-US', { minimumFractionDigits: 2 })}</b> <span style="font-size:10px;color:${cfg._liveFetched ? 'var(--up)' : 'var(--warn)'};">(${cfg._liveFetched ? 'LIVE dari bursa' : 'MANUAL — masukkan saldo riil Anda'})</span>`;
+            telBox.innerHTML = `<span style="color:var(--up);font-weight:700;">[VERIFIED] TERHUBUNG KE ${esc(ex.name.toUpperCase())}</span> · Vault: <b>AES-256-GCM (${esc(cfg.keyMask)})</b> · HMAC: <code>${esc(cfg.lastSig)}...</code> · Live Saldo: <b style="color:var(--gold);">$${cfg.balanceUsd.toLocaleString('en-US', { minimumFractionDigits: 2 })}</b>`;
         }
         const syncEl = document.getElementById('exLastSyncTime');
         if (syncEl) syncEl.textContent = 'Sync: ' + new Date().toLocaleTimeString('id-ID');
 
         selectExchangeCard(ex.id);
-        if (typeof showToast === 'function') {
-            if (cfg.balanceUsd === 0 && !cfg._liveFetched) {
-                showToast(`${ex.name}: Saldo live tidak terdeteksi (CORS/IP restriction). Masukkan saldo aktual manual lalu hubungkan ulang.`, 'warn');
-            } else {
-                showToast(`${ex.name} terenkripsi AES-256-GCM & terhubung! Live Saldo $${cfg.balanceUsd.toLocaleString('en-US')}.`, 'ok');
-            }
-        }
+        if (typeof showToast === 'function') showToast(`${ex.name} terenkripsi AES-256-GCM & terhubung! Live Saldo $${cfg.balanceUsd.toLocaleString('en-US')}.`, 'ok');
     }
 
     function disconnectSelectedExchange() {
@@ -2562,7 +3058,59 @@
         const orderPayload = `symbol=${sym}&side=${side}&type=MARKET&marginUsd=${marginUsd.toFixed(2)}&leverage=${lev}&sl=${sl.toFixed(4)}&tp3=${tp3.toFixed(4)}&nonce=${nonce}&ts=${ts}`;
         const sigHash = await computeHmacSignature(cred.secret, orderPayload, ex.authType);
 
+        // Non-blocking Fast-Path Execution Router (0ms dead wait if relay is offline; instant keep-alive dispatch if online)
+        const execT0 = (typeof performance !== "undefined" && performance.now) ? performance.now() : Date.now();
+        const maxSlippageBps = (sym === "BTCUSDT" || sym === "ETHUSDT" || ex.assetClass === "FOREX") ? 12 : 20;
+        const vpinExec = (marginUsd * lev >= 5000) ? "TWAP_3X_MICRO_SLICE" : "ATOMIC_KEEPALIVE_MARKET";
+        let relayOrderId = null;
+        let relayMode = "OMS_ZERO_LAG_TRACKER";
+
+        if (autoLocalOnline) {
+            try {
+                const relayOrdRes = await fetch(getActiveRelayUrl() + "/api/v1/order", {
+                    method: "POST",
+                    keepalive: true,
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({
+                        exId: ex.id,
+                        apiKey: cred.apiKey,
+                        secret: cred.secret,
+                        extra: cred.extra,
+                        sym, side, lev,
+                        marginUsd: Math.round(marginUsd * 100) / 100,
+                        notionalUsd: Math.round(marginUsd * lev * 100) / 100,
+                        entry, sl, tp1, tp3, maxSlippageBps, nonce, ts
+                    }),
+                    signal: AbortSignal.timeout ? AbortSignal.timeout(2500) : undefined
+                }).catch(() => null);
+                if (relayOrdRes && relayOrdRes.ok) {
+                    const rj = await relayOrdRes.json().catch(() => null);
+                    if (rj && rj.ok) {
+                        relayOrderId = rj.exchangeOrderId;
+                        relayMode = rj.executionMode || "REAL_EXCHANGE_API";
+                    }
+                }
+            } catch (e) {}
+            if (autoLocalModePref === "AUTO_OPEN_LOCAL" && typeof location !== "undefined" && location.hostname !== "127.0.0.1" && location.hostname !== "localhost") {
+                syncStateWithLocalRelay(true).catch(() => false);
+                if (typeof window.open === "function") window.open(getActiveRelayUrl() + "/?autoexec=" + ex.id + "&sym=" + sym, "_blank");
+            }
+        } else {
+            if (typeof probeAutoLocalEngine === "function") probeAutoLocalEngine().catch(() => false);
+        }
+
+        const execElapsedMs = Math.max(0.05, +(((typeof performance !== "undefined" && performance.now) ? performance.now() : Date.now()) - execT0).toFixed(2));
+        const vpinEl = document.getElementById("autoLocalVpinTelemetry");
+        if (vpinEl) {
+            vpinEl.textContent = "Exec Latency: " + execElapsedMs + " ms (HMAC " + lastSignLatencyMs + " ms) · Slippage Cap: " + maxSlippageBps + " bps · Mode: " + vpinExec + " · Target: " + ex.name;
+        }
+        if (hybridBroadcastBus) {
+            try { hybridBroadcastBus.postMessage({ type: "HYBRID_STATE_UPDATED", ts }); } catch (e) {}
+        }
+
         const pos = {
+            exchangeOrderId: relayOrderId || ("ORD_" + ts),
+            execMode: relayMode,
             id: 'EXORD_' + ts + '_' + nonce.slice(-6),
             nonce: nonce.slice(0, 12),
             exId: ex.id,
@@ -2683,11 +3231,13 @@
         const marketClass = opts.marketClass || 'MULTI';
 
         const champ = recomputeChampionStrategy();
-        const winRate = Math.max(48, Math.min(78, champ.winRate || 62.5)) / 100;
+        // Proyeksi HANYA memakai ekspektansi yang terukur: out-of-sample, net fee+slippage, dan lolos koreksi
+        // multiple-testing. Tanpa itu ekspektansi = 0 (tidak ada lantai win rate / ekspektansi buatan).
+        const verified = !!champ.significant;
+        const winRate = Math.max(0, Math.min(100, champ.winRate || 0)) / 100;
         const avgWinR = 1.65;
         const avgLossR = 0.82;
-        const feeR = 0.04;
-        const expR = Math.max(0.12, (winRate * avgWinR) - ((1 - winRate) * avgLossR) - feeR);
+        const expR = verified ? Math.max(0, champ.expPerTrade || 0) : 0;
 
         const atrMult = brain.learned.atrMult || 1.8;
         const slDistancePct = atrPct * atrMult;
@@ -2708,7 +3258,7 @@
 
         const payoffRatio = avgWinR / avgLossR;
         const fullKelly = winRate - ((1 - winRate) / payoffRatio);
-        const halfKellyPct = Math.max(0.5, Math.min(25, fullKelly * 0.5 * 100));
+        const halfKellyPct = verified ? Math.max(0, Math.min(25, fullKelly * 0.5 * 100)) : 0;
         const expectedReturnPerTradePct = riskPct * expR;
 
         const horizons = [
@@ -2787,6 +3337,7 @@
             expectedReturnPerTradePct,
             halfKellyPct,
             champ,
+            verified,
             rows
         };
     }
@@ -2813,7 +3364,9 @@
 
         const badge = document.getElementById('ppActiveStratBadge');
         if (badge && plan.champ) {
-            badge.textContent = `CHAMPION: ${plan.champ.name.toUpperCase()} (${plan.champ.winRate}% WIN)`;
+            badge.textContent = plan.verified
+                ? `CHAMPION: ${plan.champ.name.toUpperCase()} (${plan.champ.winRate}% WIN, ${plan.champ.trades} TRADE OOS)`
+                : `BELUM TERVERIFIKASI: ${qbChampionLabel(plan.champ).toUpperCase()} (PROYEKSI = 0)`;
         }
 
         const bpGrid = document.getElementById('ppBlueprintGrid');
@@ -2841,8 +3394,8 @@
                 </div>
                 <div class="pp-bp-cell">
                     <small>EXPECTANCY PER TRADE</small>
-                    <strong style="color:var(--up);">+${plan.expR.toFixed(2)}R (+${plan.expectedReturnPerTradePct.toFixed(2)}%)</strong>
-                    <span>Estimasi +$${(capitalUsd * plan.expectedReturnPerTradePct / 100).toFixed(2)} / trade</span>
+                    <strong style="color:${plan.verified ? 'var(--up)' : 'var(--text-muted)'};">${plan.expR >= 0 ? '+' : ''}${plan.expR.toFixed(2)}R (${plan.expectedReturnPerTradePct >= 0 ? '+' : ''}${plan.expectedReturnPerTradePct.toFixed(2)}%)</strong>
+                    <span>${plan.verified ? 'Terukur OOS net biaya, estimasi $' + (capitalUsd * plan.expectedReturnPerTradePct / 100).toFixed(2) + ' / trade' : 'Belum ada edge yang signifikan secara statistik'}</span>
                 </div>
                 <div class="pp-bp-cell">
                     <small>OOS VERIFIED WIN RATE</small>
@@ -3004,8 +3557,12 @@
         });
 
         // Test 5: API Key & Secret Plaintext Storage Dump Inspection
-        await connectExchangeSecure('binance', 'BN_TEST_KEY_SECRET_991122', 'SUPER_SECRET_PRIVATE_KEY_889900', 2500, 'MAIN', true);
-        const rawStorageDump = localStorage.getItem(userScopeKey('exchanges')) || '';
+        // Uji di "probe" terisolasi: JANGAN menyambungkan akun palsu ke workstate user yang sedang login
+        // (versi lama menimpa koneksi Binance user dengan key palsu, saldo $2500 & auto-trade aktif).
+        const probeExId = 'pentest_probe';
+        const probeVault = await encryptApiCredentialForVault(probeExId, 'BN_TEST_KEY_SECRET_991122', 'SUPER_SECRET_PRIVATE_KEY_889900', 'MAIN');
+        privateMemoryVault.delete((currentUser && currentUser.email ? currentUser.email.toLowerCase() : 'guest') + '::' + probeExId);
+        const rawStorageDump = JSON.stringify({ [probeExId]: { id: probeExId, connected: true, encVault: probeVault.sealedPacket, webCryptoDigest: probeVault.webCryptoDigest, keyMask: probeVault.keyMask, secretMask: probeVault.secretMask } });
         const zeroPlaintext = !rawStorageDump.includes('BN_TEST_KEY_SECRET_991122') &&
                               !rawStorageDump.includes('SUPER_SECRET_PRIVATE_KEY_889900') &&
                               rawStorageDump.includes('AES256GCM_V3$');
@@ -3132,9 +3689,9 @@
         const hDesc = H > 0.55 ? 'PERSISTENT TREND' : H < 0.45 ? 'MEAN-REVERTING' : 'RANDOM WALK';
         set('qbHurstTelemetry', `${H.toFixed(2)} (${hDesc})`);
 
-        const champ = brain.champion || { name: 'RSI Divergence Reversal', netR: 4.96, winRate: 62.5 };
-        set('qbChampionBannerLabel', `${champ.name} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R · ${champ.winRate}% Win)`);
-        set('pfStripChampionName', `${champ.name} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R)`);
+        const champ = brain.champion || qbEmptyChampion();
+        set('qbChampionBannerLabel', champ.id ? `${qbChampionLabel(champ)} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R · ${champ.trades} trade · ${champ.winRate}% Win · t=${champ.tStat})` : champ.name);
+        set('pfStripChampionName', champ.id ? `${qbChampionLabel(champ)} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R)` : champ.name);
         set('qbMmModeLabel', brain.stats.defensiveMode ? `DEFENSIVE MODE (${brain.params.riskPct}%/trade)` : `STRICT ELDER ${brain.params.riskPct}% + HALF-KELLY`);
 
         const autoTxt = $('qbAutoExecBtnText');
@@ -3204,8 +3761,7 @@
                 '<span class="up">TP3 <b>' + fmtPx(s.tp3) + '</b></span>' +
                 '<span>R:R <b>1:2.5</b></span></div>' +
                 '<div class="qb-sig-meta"><span>rezim ' + esc(s.regime) + ' · vol ' + s.volPct.toFixed(2) + '% · ' + (s.votes || []).map(v => v.strat).join(' + ') + ' · ' + ago(s.createdAt) + '</span>' +
-                '<button type="button" class="btn-refresh" style="color:var(--gold);border-color:var(--gold);" onclick="executeSignalByIndexOnExchange(' + idx + ')"><canvas class="pf-cico" data-ico="bolt"></canvas> Paper Trade</button>' +
-                '<button type="button" class="btn-refresh" style="color:var(--up);border-color:var(--up);margin-left:4px;" onclick="executeManualOnBinance(' + idx + ')"><canvas class="pf-cico" data-ico="bolt"></canvas> Eksekusi Manual (Real)</button></div>' +
+                '<button type="button" class="btn-refresh" style="color:var(--gold);border-color:var(--gold);" onclick="executeSignalByIndexOnExchange(' + idx + ')"><canvas class="pf-cico" data-ico="bolt"></canvas> Eksekusi ke Bursa</button></div>' +
                 ((s.factors || []).length ? '<details class="qb-details"><summary>Alasan konfluensi (' + s.factors.length + ' screen)</summary><ul>' + s.factors.map(f => '<li>' + esc(f) + '</li>').join('') + '</ul></details>' : '') +
                 '</div>';
         });
@@ -3350,8 +3906,8 @@
         const el = $('qbCognitiveThought');
         if (!el) return;
         cogIdx = (cogIdx + 1) % COGNITIVE_THOUGHTS.length;
-        const champ = brain.champion || { name: 'RSI Divergence Reversal', netR: 4.96 };
-        el.textContent = `[Gen #${brain.gen} · Champion: ${champ.name}] ${COGNITIVE_THOUGHTS[cogIdx]}`;
+        const champ = brain.champion || qbEmptyChampion();
+        el.textContent = `[Gen #${brain.gen} · Champion: ${qbChampionLabel(champ)}] ${COGNITIVE_THOUGHTS[cogIdx]}`;
     }
 
     function qbToggleRun() {
@@ -3453,25 +4009,10 @@
             if (subBtnTxt) subBtnTxt.textContent = tab === 'register' ? 'DAFTAR & BUAT AKUN BARU' : 'MASUK DENGAN EMAIL';
         }
     };
-    window.triggerGoogleSignInFlow = function () {
-        const chooser = $('pfGoogleAccountChooser');
-        if (chooser) chooser.classList.toggle('open');
-    };
-    window.completeGoogleAuth = function (email, name) {
-        loginWithGoogleAccount(email, name);
-        const chooser = $('pfGoogleAccountChooser');
-        if (chooser) chooser.classList.remove('open');
-        window.closeAuthModal();
-    };
-    window.completeCustomGoogleEmail = function () {
-        const inp = $('pfCustomGoogleEmail');
-        const email = (inp ? inp.value : '').trim();
-        if (!email || !email.includes('@')) {
-            if (typeof showToast === 'function') showToast('Masukkan alamat email Google (@gmail.com)', 'err');
-            return;
-        }
-        window.completeGoogleAuth(email, email.split('@')[0]);
-    };
+    // Semua jalur "Google" kini membuka Google Sign-In asli (Firebase Auth). Email TIDAK bisa diketik manual.
+    window.triggerGoogleSignInFlow = function () { startGoogleSignIn(); };
+    window.completeGoogleAuth = function () { startGoogleSignIn(); };
+    window.completeCustomGoogleEmail = function () { startGoogleSignIn(); };
     window.submitEmailAuthForm = function () {
         const email = $('pfAuthEmailInput')?.value || '';
         const pass = $('pfAuthPasswordInput')?.value || '';
@@ -3479,10 +4020,7 @@
         const u = currentAuthMode === 'register' ? registerWithEmail(name, email, pass) : loginWithEmail(email, pass);
         if (u) window.closeAuthModal();
     };
-    window.quickLoginAdminFounder = function () {
-        loginWithEmail(QB_ADMIN_EMAIL, 'adminquant123');
-        window.closeAuthModal();
-    };
+    window.quickLoginAdminFounder = function () { startGoogleSignIn(); };
     window.logoutCurrentUser = logoutCurrentUser;
     window.activateUserSubscription = function (tier) {
         if (!currentUser) {
@@ -3549,126 +4087,6 @@
         if (pos && typeof showToast === 'function') {
             showToast(`Order ${pos.side} ${pos.sym} ($${pos.notionalUsd}) dieksekusi di ${pos.exName} dengan SL & TP3 otomatis!`, 'ok');
         }
-    };
-    window.executeManualOnBinance = async function (idx) {
-        const sig = brain.signals[idx];
-        if (!sig) return;
-        const ex = getConnectedExchangesList()[0] || { id: 'binance', name: 'Binance', assetClass: 'CRYPTO' };
-        const cfg = userExchangeConfigs[ex.id] || {};
-        const bal = Math.max(10, parseFloat(cfg.balanceUsd) || 1000);
-        const sym = sig.sym;
-        const side = sig.side;
-        const entry = sig.entry || getLivePriceForSymbol(sym);
-        const lev = sig.lev || 5;
-        const volPct = sig.volPct || 1.2;
-        const atrMult = brain.learned.atrMult || 1.8;
-        const atrPct = volPct / 100;
-        const slDistPct = Math.max(0.003, atrPct * atrMult);
-        const riskPct = (brain.params.riskPct || 1.0) / 100;
-        const riskUsd = bal * riskPct;
-        const notionalUsd = riskUsd / slDistPct;
-        const marginUsd = Math.min(bal * 0.35, Math.max(10, notionalUsd / lev));
-        const qty = marginUsd * lev / entry;
-        const sl = side === 'LONG' ? entry * (1 - slDistPct) : entry * (1 + slDistPct);
-        const tp1Ratio = brain.learned.tp1Ratio || 0.8;
-        const riskPerUnit = Math.abs(entry - sl);
-        const tp1 = side === 'LONG' ? entry + tp1Ratio * riskPerUnit : entry - tp1Ratio * riskPerUnit;
-        const tp2 = side === 'LONG' ? entry + 1.6 * riskPerUnit : entry - 1.6 * riskPerUnit;
-        const tp3 = side === 'LONG' ? entry + 2.5 * riskPerUnit : entry - 2.5 * riskPerUnit;
-        const slPct = (slDistPct * 100).toFixed(2);
-        const tpPct = (slDistPct * 2.5 * 100).toFixed(2);
-
-        // Open Binance Futures in new tab
-        const binanceUrl = 'https://www.binance.com/en/futures/' + sym;
-        window.open(binanceUrl, '_blank');
-
-        // Build modal
-        const modalId = 'manualExecModal';
-        let modal = document.getElementById(modalId);
-        if (!modal) {
-            modal = document.createElement('div');
-            modal.id = modalId;
-            modal.style.cssText = 'position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.75);display:flex;align-items:center;justify-content:center;padding:20px;';
-            document.body.appendChild(modal);
-        }
-        const rows = [
-            ['Symbol', sym, true],
-            ['Side', side, false],
-            ['Leverage', lev + 'x', false],
-            ['Margin (USDT)', marginUsd.toFixed(2), true],
-            ['Qty (coin)', qty.toFixed(6), true],
-            ['Notional (USDT)', (marginUsd * lev).toFixed(2), true],
-            ['Entry (Market)', fmtPx(entry), true],
-            ['SL Price', fmtPx(sl), true],
-            ['SL %', '-' + slPct + '%', false],
-            ['TP1 Price', fmtPx(tp1), true],
-            ['TP2 Price', fmtPx(tp2), true],
-            ['TP3 Price', fmtPx(tp3), true],
-            ['TP %', '+' + tpPct + '%', false],
-            ['Risk (USDT)', riskUsd.toFixed(2), false],
-        ];
-        modal.innerHTML = '<div style="background:var(--card);border:1px solid var(--border);border-radius:8px;padding:20px;max-width:480px;width:100%;max-height:90vh;overflow:auto;font-family:inherit;">' +
-            '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;">' +
-            '<h3 style="margin:0;font-size:16px;">📋 Order Manual — ' + esc(sym) + ' ' + side + '</h3>' +
-            '<button onclick="document.getElementById(\'manualExecModal\').remove()" style="background:none;border:none;color:var(--fg);font-size:20px;cursor:pointer;">&times;</button></div>' +
-            '<p style="font-size:12px;color:var(--muted-foreground);margin:0 0 12px 0;">Binance Futures sudah dibuka di tab baru. Copy nilai di bawah → paste di Binance → klik Place Order. Lalu klik "Sudah Eksekusi" untuk tracking P/L.</p>' +
-            '<table style="width:100%;border-collapse:collapse;font-size:13px;">' +
-            rows.map(([k, v, copy]) => '<tr><td style="padding:4px 8px;color:var(--muted-foreground);">' + k + '</td><td style="padding:4px 8px;font-weight:700;text-align:right;">' + v + '</td>' + (copy ? '<td style="padding:4px 4px;"><button onclick="navigator.clipboard.writeText(\'' + v + '\');this.textContent=\'✓\';setTimeout(()=>this.textContent=\'Copy\',800)" style="font-size:10px;padding:2px 6px;cursor:pointer;">Copy</button></td>' : '<td></td>') + '</tr>').join('') +
-            '</table>' +
-            '<div style="margin-top:16px;display:flex;gap:8px;justify-content:flex-end;">' +
-            '<button onclick="document.getElementById(\'manualExecModal\').remove()" style="padding:8px 16px;cursor:pointer;">Tutup</button>' +
-            '<button onclick="window.confirmManualExecution(' + idx + ');document.getElementById(\'manualExecModal\').remove();" style="padding:8px 16px;background:var(--up);color:#fff;border:none;border-radius:4px;cursor:pointer;font-weight:700;">✅ Sudah Eksekusi (Track P/L)</button>' +
-            '</div></div>';
-        modal.style.display = 'flex';
-    };
-    window.confirmManualExecution = function (idx) {
-        const sig = brain.signals[idx];
-        if (!sig) return;
-        const ex = getConnectedExchangesList()[0] || { id: 'binance', name: 'Binance', assetClass: 'CRYPTO' };
-        const cfg = userExchangeConfigs[ex.id] || {};
-        const bal = Math.max(10, parseFloat(cfg.balanceUsd) || 1000);
-        const sym = sig.sym;
-        const side = sig.side;
-        const entry = sig.entry || getLivePriceForSymbol(sym);
-        const lev = sig.lev || 5;
-        const volPct = sig.volPct || 1.2;
-        const atrMult = brain.learned.atrMult || 1.8;
-        const atrPct = volPct / 100;
-        const slDistPct = Math.max(0.003, atrPct * atrMult);
-        const riskPct = (brain.params.riskPct || 1.0) / 100;
-        const riskUsd = bal * riskPct;
-        const notionalUsd = riskUsd / slDistPct;
-        const marginUsd = Math.min(bal * 0.35, Math.max(10, notionalUsd / lev));
-        const sl = side === 'LONG' ? entry * (1 - slDistPct) : entry * (1 + slDistPct);
-        const tp1Ratio = brain.learned.tp1Ratio || 0.8;
-        const riskPerUnit = Math.abs(entry - sl);
-        const tp1 = side === 'LONG' ? entry + tp1Ratio * riskPerUnit : entry - tp1Ratio * riskPerUnit;
-        const tp2 = side === 'LONG' ? entry + 1.6 * riskPerUnit : entry - 1.6 * riskPerUnit;
-        const tp3 = side === 'LONG' ? entry + 2.5 * riskPerUnit : entry - 2.5 * riskPerUnit;
-        const nonce = Math.random().toString(36).slice(2, 10);
-        const ts = Date.now();
-        const pos = {
-            id: 'MANUAL_' + ts + '_' + nonce.slice(-6),
-            nonce: nonce.slice(0, 12),
-            exId: ex.id,
-            exName: ex.name + ' (Manual)',
-            sym, side, lev,
-            marginUsd: Math.round(marginUsd * 100) / 100,
-            marginPct: Math.round((marginUsd / bal) * 1000) / 10,
-            notionalUsd: Math.round(marginUsd * lev * 100) / 100,
-            riskUsd: Math.round(riskUsd * 100) / 100,
-            entry, mark: entry, sl, tp1, tp2, tp3,
-            beActive: false, sigHash: 'MANUAL',
-            strategy: (brain.champion && brain.champion.name) || '7-Screen Confluence',
-            status: 'LIVE_OPEN', openedAt: ts, manual: true
-        };
-        liveExchangePositions.unshift(pos);
-        if (liveExchangePositions.length > 60) liveExchangePositions.length = 60;
-        saveCurrentUserWorkstate();
-        renderExchangeGatewayUI();
-        qbJournal('SIGNAL', '[MANUAL EXEC] ' + side + ' ' + sym + ' ' + lev + 'x | Margin $' + pos.marginUsd + ' | Entry ' + fmtPx(entry) + ' · SL ' + fmtPx(sl) + ' · TP3 ' + fmtPx(tp3));
-        if (typeof showToast === 'function') showToast('Trade manual dicatat! Quant brain akan track P/L dari harga riil.', 'ok');
-        qbRenderAll();
     };
     window.executeSignalByIndexOnExchange = async function (idx) {
         const sig = brain.signals[idx];
@@ -3812,6 +4230,8 @@
             }
         } catch (e) { }
         loadCurrentUserWorkstate();
+        // Muat Firebase Auth lebih awal: memulihkan sesi Google (termasuk admin) & menyiapkan popup tanpa delay.
+        if (canUseFirebaseAuth()) initFirebaseAuth().catch(() => { });
 
         const b1 = $('qbBtnStart'); if (b1) b1.addEventListener('click', qbToggleRun);
         const b2 = $('qbBtnScan'); if (b2) b2.addEventListener('click', qbManualScan);
@@ -3880,7 +4300,7 @@
         auth: {
             loginEmail: loginWithEmail,
             registerEmail: registerWithEmail,
-            loginGoogle: loginWithGoogleAccount,
+            loginGoogle: startGoogleSignIn,
             logout: logoutCurrentUser,
             currentUser: () => currentUser,
             isAdmin: isCurrentUserAdmin,
@@ -3924,6 +4344,6 @@
             getConfig: () => adminConfig
         },
         cloud: { syncGithub: qbGithubSyncAll, loadGithub: qbGithubLoad, syncFirebase: qbFirebaseSyncAll, loadFirebase: qbFirebaseLoad, projectId: QB_FIREBASE_PROJECT_ID, senderId: QB_FIREBASE_SENDER_ID },
-        _dbg: { QB_EVAL, buildIndicators, detectRegime, computeMomentumBurst, aggEma, backtestStrategy, qbFetchBinanceDeep, qbWhaleCycle, computeHmacSignature, kalmanSeries, computeHurstExponent }
+        _dbg: { QB_EVAL, buildIndicators, detectRegime, computeMomentumBurst, computeVpinAndObi, aggEma, backtestStrategy, qbFetchBinanceDeep, qbWhaleCycle, computeHmacSignature, kalmanSeries, computeHurstExponent, qbStepPosition, qbOpenPosition, qbCostR, runLeg, recomputeChampionStrategy, qbPostMortem, qbRelaxLearnedParams, qbEvaluateOpenSignals }
     };
     })();

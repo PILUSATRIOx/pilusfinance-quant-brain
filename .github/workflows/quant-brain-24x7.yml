@@ -34,7 +34,9 @@ jobs:
         env:
           GITHUB_ACTIONS: 'true'
           QUANT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          FIREBASE_RTDB_URL: 'https://pilusfinance-default-rtdb.firebaseio.com'
+          FIREBASE_RTDB_URL: 'https://pilusfinance-default-rtdb.asia-southeast1.firebasedatabase.app'
+          # JSON key service account Firebase (Settings > Secrets and variables > Actions > New repository secret)
+          FIREBASE_SERVICE_ACCOUNT_JSON: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_JSON }}
         run: |
           node headless-quant-daemon.js --once
 
