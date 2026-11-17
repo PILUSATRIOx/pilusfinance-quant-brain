@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794954778107,
+  "updatedAt": 1794955677957,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 16,
+    "cycles": 17,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1794951175975,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3743,6 +3743,16 @@
     ],
     "journal": [
       {
+        "t": 1794955677940,
+        "type": "CYCLE",
+        "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794955674901,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794954778091,
         "type": "CYCLE",
         "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4256,9 +4266,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 280,
+      "newsIngested": 310,
       "lessons": 1,
-      "backtests": 480,
+      "backtests": 510,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4271,7 +4281,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794954774956,
+      "fetchedAt": 1794955674901,
       "items": [
         {
           "source": "CoinDesk",
@@ -4345,6 +4355,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "CFTC halts some Kalshi Trump mention markets over manipulation concerns",
+          "link": "https://cointelegraph.com/news/cftc-kalshi-trump-mention-markets-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-17 22:20:04",
+          "summary": "    The CFTC stayed Kalshi’s Trump-related mention markets after raising concerns about manipulation risks, giving the platform until Dec. 11 to defend its contracts. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Maple Finance CEO targets up to $15B in assets by the end of 2027",
           "link": "https://cointelegraph.com/news/maple-finance-15b-assets-target-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 21:56:35",
@@ -4405,13 +4422,6 @@
           "link": "https://cointelegraph.com/news/ark-crypto-stock-purchases-nvidia-staking-etf-sales?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 13:12:10",
           "summary": "    ARK bought shares in Block, Circle and Coinbase worth about $39.9 million at Monday’s close while selling Nvidia and Solana and Ether staking ETFs. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Revolut plans four blockchain-based funds for private markets, chair says",
-          "link": "https://cointelegraph.com/news/revolut-four-blockchain-funds-private-markets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 12:24:20",
-          "summary": "    Citing a looming liquidity crunch, Martin Gilbert said blockchain could help bring more liquidity to private markets. "
         },
         {
           "source": "Decrypt",
@@ -4606,17 +4616,17 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1794954774956
+        "t": 1794955674901
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794952977123,
+      "fetchedAt": 1794955675557,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.79,
-        "ARB": 11.3,
+        "BTC": -14.52,
+        "ARB": 11.09,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -4633,35 +4643,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 953.24,
+          "pct": 942.46,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.79,
+          "pct": 14.52,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.3,
+          "pct": 11.09,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 40.37,
+          "pct": 39.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 201.41,
+          "pct": 197.72,
           "lev": 10
         },
         {
@@ -4675,63 +4685,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 24.02,
+          "pct": 23.58,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 212.29,
+          "pct": 208.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 35.15,
+          "pct": 34.51,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 109.4,
+          "pct": 107.4,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 55.85,
+          "pct": 54.83,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 95.19,
+          "pct": 90.54,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 266.16,
+          "pct": 253.16,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 83.23,
+          "pct": 79.17,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1214.06,
+          "pct": 1187.92,
           "lev": 10
         }
       ]
@@ -5060,17 +5070,17 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.48,
+            0.486,
             0.681,
             61
           ],
           [
-            0.56,
+            0.558,
             -1.608,
             10
           ],
           [
-            0.495,
+            0.502,
             0.257,
             61
           ],
@@ -5080,22 +5090,22 @@
             10
           ],
           [
-            0.489,
+            0.495,
             1.793,
             56
           ],
           [
-            0.586,
+            0.585,
             0.222,
             15
           ],
           [
-            0.558,
+            0.559,
             0.235,
             41
           ],
           [
-            0.513,
+            0.514,
             1.467,
             95
           ],
@@ -5110,29 +5120,29 @@
             27
           ],
           [
-            0.601,
+            0.6,
             -1.168,
             10
           ]
         ],
         "AAPL": [
           [
-            0.557,
+            0.555,
             0.164,
             10
           ],
           [
-            0.538,
+            0.537,
             1.365,
             10
           ],
           [
-            0.587,
+            0.586,
             0.142,
             10
           ],
           [
-            0.501,
+            0.506,
             -1.217,
             100
           ],
@@ -5147,59 +5157,59 @@
             10
           ],
           [
-            0.539,
+            0.538,
             -1.252,
             35
           ],
           [
-            0.549,
+            0.547,
             0.369,
             10
           ],
           [
-            0.551,
+            0.55,
             -1.239,
             35
           ],
           [
-            0.565,
+            0.563,
             0.298,
             10
           ],
           [
-            0.496,
+            0.502,
             -1.232,
             61
           ],
           [
-            0.521,
+            0.524,
             0.727,
             90
           ],
           [
-            0.606,
+            0.607,
             -1.248,
             35
           ],
           [
-            0.586,
+            0.585,
             -2.371,
             10
           ],
           [
-            0.558,
+            0.557,
             -1.207,
             10
           ],
           [
-            0.55,
+            0.549,
             0.143,
             10
           ]
         ],
         "TSLA": [
           [
-            0.556,
+            0.554,
             -1.13,
             15
           ],
@@ -5209,12 +5219,12 @@
             10
           ],
           [
-            0.484,
+            0.487,
             0.799,
             61
           ],
           [
-            0.578,
+            0.576,
             0.266,
             10
           ],
@@ -5229,37 +5239,37 @@
             35
           ],
           [
-            0.553,
+            0.552,
             1.496,
             35
           ],
           [
-            0.495,
+            0.501,
             -1.877,
             56
           ],
           [
-            0.532,
+            0.537,
             0.309,
             56
           ],
           [
-            0.558,
+            0.559,
             1.513,
             10
           ],
           [
-            0.573,
+            0.571,
             -1.109,
             10
           ],
           [
-            0.52,
+            0.523,
             0.261,
             95
           ],
           [
-            0.553,
+            0.551,
             1.521,
             10
           ],
@@ -5269,12 +5279,12 @@
             2
           ],
           [
-            0.586,
+            0.584,
             -1.116,
             2
           ],
           [
-            0.578,
+            0.581,
             0.294,
             49
           ]
@@ -8682,7 +8692,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794954776007
+        "updatedAt": 1794955675807
       }
     },
     "champion": {
@@ -8698,7 +8708,7 @@
       "deflatedT": -4.58,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794954778094,
+      "updatedAt": 1794955677943,
       "gen": 2
     },
     "factory": {
