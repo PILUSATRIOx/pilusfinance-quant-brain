@@ -1,33 +1,15 @@
 {
-  "updatedAt": 1794944031464,
-  "gen": 4,
-  "champion": {
-    "id": "wyckoff",
-    "name": "Wyckoff Spring & Upthrust",
-    "book": "Richard D. Wyckoff",
-    "netR": -3.49,
-    "trades": 33,
-    "winRate": 66.7,
-    "pf": 0.76,
-    "expPerTrade": -0.106,
-    "tStat": -0.59,
-    "deflatedT": -2.74,
-    "hurdle": 2.15,
-    "significant": false,
-    "updatedAt": 1794944031463,
-    "gen": 4
-  },
   "weights": {
-    "elder": 0.74,
-    "donchian": 0.74,
+    "elder": 0.62,
+    "donchian": 0.65,
     "bbrev": 0.9,
-    "wyckoff": 0.99,
-    "rsidiv": 0.82,
-    "macdm": 0.74,
-    "smc": 0.74,
-    "statarb": 0.77,
+    "wyckoff": 0.92,
+    "rsidiv": 0.71,
+    "macdm": 0.64,
+    "smc": 0.72,
+    "statarb": 0.67,
     "tsmom": 1,
-    "emax": 0.8
+    "emax": 0.79
   },
-  "bayesianCells": 10
+  "updatedAt": 1794950277390
 }
