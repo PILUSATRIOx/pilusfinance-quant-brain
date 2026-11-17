@@ -472,7 +472,7 @@
             v: 1, gen: 0, cycles: 0, firstBootAt: Date.now(), running: false,
             optCursor: 0, scanCursor: 0, lastOptAt: 0, autoExecBursa: false,
             engineV: 2, // v2: mesin exit bersama backtest/live, biaya+slippage, champion terkoreksi, Bayesian hanya dari live
-            params: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, minScore: 75, feeBps: 10, slipBps: 5, riskPct: 1.0, tp1Ratio: 0.8, volConfirmMult: 1.15, maxOpen: 6, maxCorrelated: 3, dailyLossLimitR: 3 },
+            params: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, minScore: 75, feeBps: 10, slipBps: 5, riskPct: 1.0, tp1Ratio: 0.8, volConfirmMult: 1.15, maxOpen: 6, maxCorrelated: 3, dailyLossLimitR: 3, maxDrawdownR: 10 },
             learned: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, tp1Ratio: 0.8, volConfirmMult: 1.15 },
             weights: w,
             bayesian: defaultBayesianMatrix(),
@@ -1519,9 +1519,12 @@
         return { ok: true };
     }
 
-    // 0 = belum ada edge terverifikasi (sinyal hanya dipantau/paper, tidak dieksekusi otomatis).
+    // 0 = belum ada edge terverifikasi ATAU drawdown ekuitas sinyal >= maxDrawdownR (sinyal tetap dipantau/paper
+    // sehingga engine terus belajar, tetapi tidak ada eksekusi otomatis).
     function qbRiskMultiplier(ev, st) {
         if (!st || !st.significant) return 0;
+        const ddR = (brain.stats.peakEquity || 0) - (brain.equityR || 0);
+        if (ddR >= (brain.params.maxDrawdownR || 10)) return 0;
         if (st.metaActive && st.taken && st.taken.mean > 0) return Math.round(Math.max(0.5, Math.min(1.5, ev / st.taken.mean)) * 100) / 100;
         return 1;
     }
@@ -1768,6 +1771,7 @@
             // Parameter & bobot dari engine lama (tanpa engineV 2) diabaikan agar tidak mencemari engine baru.
             if (rb.engineV === 2 && rb.learned) brain.learned = Object.assign({}, brain.learned, rb.learned);
             if (rb.engineV === 2 && rb.weights) brain.weights = Object.assign({}, brain.weights, rb.weights);
+            if (rb.engineV === 2 && rb.factory && (!brain.factory || (rb.factory.updatedAt || 0) > (brain.factory.updatedAt || 0))) brain.factory = rb.factory;
             if (Array.isArray(rb.signals)) {
                 const ids = new Set(brain.signals.map(s => s.id));
                 rb.signals.forEach(s => { if (!ids.has(s.id)) brain.signals.push(s); });
@@ -1831,6 +1835,7 @@
                 engineV: 2,
                 champion: brain.champion,
                 system: (brain.meta && brain.meta.status) || null,
+                factory: brain.factory || null,
                 learned: brain.learned,
                 weights: brain.weights,
                 bayesian: brain.bayesian,
@@ -1855,11 +1860,15 @@
             if (!remote || !remote.updatedAt) return false;
             const localUpdated = brain.journal.length ? (brain.journal[0].t || 0) : 0;
             if (remote.updatedAt <= localUpdated && brain.signals.length) return false;
+            brain.cloudUpdatedAt = remote.updatedAt;
+            brain.cloudHost = remote.host || null;
             if (remote.engineV === 2) {
                 if (remote.learned) brain.learned = Object.assign({}, brain.learned, remote.learned);
                 if (remote.weights) brain.weights = Object.assign({}, brain.weights, remote.weights);
                 if (remote.bayesian) brain.bayesian = Object.assign({}, brain.bayesian, remote.bayesian);
                 if (remote.champion) brain.champion = remote.champion;
+                if (remote.system && brain.meta) brain.meta.status = remote.system;
+                if (remote.factory && (!brain.factory || (remote.factory.updatedAt || 0) >= (brain.factory.updatedAt || 0))) brain.factory = remote.factory;
             }
             if (Array.isArray(remote.activeSignals)) {
                 const ids = new Set(brain.signals.map(s => s.id));
@@ -1868,6 +1877,15 @@
             saveBrain();
             return true;
         } catch (e) { return false; }
+    }
+
+    // Utamakan state dari host 24/7 di cloud (RTDB). Repo GitHub hanya dipakai bila state cloud tidak ada / lebih dari 6 jam.
+    async function qbLoadRemoteState() {
+        await qbFirebaseLoad().catch(() => false);
+        const fresh = brain.cloudUpdatedAt && (Date.now() - brain.cloudUpdatedAt) < 6 * 3600e3;
+        if (!fresh) await qbGithubLoad().catch(() => false);
+        try { if ($('quant-brain-section')) qbRenderAll(); } catch (e) { }
+        return !!fresh;
     }
 
     let qbSyncTimer = null;
@@ -4164,8 +4182,53 @@
         el.innerHTML = html;
     }
 
+    /* Panel Pabrik Strategi 24/7: ringkasan riset harian dari daemon (DSR, PBO, inkubasi, promosi, money management). */
+    function qbRenderFactory() {
+        const el = $('qbFactoryPanel'); if (!el) return;
+        const f = brain.factory;
+        const e = (typeof esc === 'function') ? esc : (x => String(x).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])));
+        const pct = (x, k) => (x == null ? '-' : (x * 100).toFixed(k == null ? 1 : k) + '%');
+        if (!f || !f.day) {
+            el.innerHTML = '<div class="panel-msg">Pabrik strategi belum berjalan di host 24/7. Ia berjalan sekali sehari (setelah 00:10 UTC) di daemon yang punya akses data Binance.' +
+                (f && f.lastError ? '<br><span style="color:var(--down);">Error terakhir: ' + e(f.lastError.message || '') + '</span>' : '') + '</div>';
+            return;
+        }
+        const pf = f.portfolio || {};
+        const tw = Object.entries(pf.targetWeights || {}).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]));
+        const row = (cells) => '<tr>' + cells.map(c => '<td style="padding:3px 6px;border-bottom:1px solid var(--border);">' + c + '</td>').join('') + '</tr>';
+        const head = (cells) => '<tr>' + cells.map(c => '<th style="padding:3px 6px;text-align:left;color:var(--text-muted);font-weight:600;border-bottom:1px solid var(--border);">' + c + '</th>').join('') + '</tr>';
+        const tag = s => '<span class="qb-tag ' + (s === 'PROMOSI' ? 'gold' : '') + '">' + e(s) + '</span>';
+        el.innerHTML =
+            '<div style="display:flex;flex-wrap:wrap;gap:0.4rem 1.2rem;font-family:var(--font-mono);font-size:0.6rem;padding:0.5rem 0.6rem;border-bottom:1px solid var(--border);">' +
+            '<span>Data s/d <b>' + e(f.dataUntil) + '</b> (' + e(f.universe) + ' koin)</span>' +
+            '<span>Percobaan total <b>' + e(f.nTrials) + '</b></span>' +
+            '<span>Syarat Sharpe (deflated) <b>' + e(f.hurdleSharpe) + '</b></span>' +
+            '<span>PBO <b style="color:' + (f.pbo != null && f.pbo <= 0.5 ? 'var(--up)' : 'var(--down)') + ';">' + (f.pbo == null ? '-' : e(f.pbo)) + '</b></span>' +
+            '<span>Inkubasi <b>' + f.incubating.length + '</b> · Promosi <b>' + f.promoted.length + '</b> · Pensiun ' + e(f.retiredCount) + '</span>' +
+            '<span>Risiko portofolio <b style="color:' + (pf.killSwitch ? 'var(--down)' : 'var(--up)') + ';">' + (pf.killSwitch ? 'KILL SWITCH' : 'x' + e(pf.riskScale)) + '</b> (DD ' + e(pf.ddPct) + '%)</span>' +
+            (f.lastError ? '<span style="color:var(--down);">Error terakhir: ' + e(f.lastError.message || '') + '</span>' : '') +
+            '</div>' +
+            '<div style="padding:0.5rem 0.6rem;overflow-x:auto;">' +
+            '<div style="font-size:0.6rem;color:var(--gold);font-weight:700;margin-bottom:0.3rem;">KANDIDAT TERBAIK (Deflated Sharpe, seluruh riwayat, net fee + slippage + funding)</div>' +
+            '<table style="width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:0.58rem;">' + head(['Strategi', 'Sharpe', 'CAGR', 'Max DD', 'DSR', 'Status']) +
+            (f.top || []).map(t => row([e(t.label) + '<br><span style="color:var(--text-muted);font-size:0.5rem;">' + e(t.source || '') + '</span>', e(t.sharpe), pct(t.cagr), pct(t.mdd), e(t.dsr), tag(t.status)])).join('') + '</table>' +
+            '<div style="font-size:0.6rem;color:var(--accent-teal);font-weight:700;margin:0.6rem 0 0.3rem;">INKUBASI (paper-trading ke depan, minimal ' + e(f.rules.minFwdDays) + ' hari sebelum boleh dipromosikan)</div>' +
+            (f.incubating.length ? '<table style="width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:0.58rem;">' + head(['Strategi', 'Sejak', 'Hari', 'Sharpe ke depan', 'Return', 'Max DD']) +
+                f.incubating.map(x => row([e(x.label), e(x.registeredAt), e(x.fwd.days || 0), x.fwd.sharpe == null ? '-' : e(x.fwd.sharpe), pct(x.fwd.ret), pct(x.fwd.mdd)])).join('') + '</table>'
+                : '<div class="panel-msg">Belum ada kandidat yang lolos DSR >= ' + e(f.rules.dsrMin) + ' dan PBO <= ' + e(f.rules.pboMax) + '. Ini hasil yang jujur: belum ada edge yang cukup kuat.</div>') +
+            '<div style="font-size:0.6rem;color:var(--up);font-weight:700;margin:0.6rem 0 0.3rem;">PORTOFOLIO TERPROMOSI & BOBOT TARGET (paper, belum dieksekusi otomatis)</div>' +
+            (f.promoted.length ? '<table style="width:100%;border-collapse:collapse;font-family:var(--font-mono);font-size:0.58rem;">' + head(['Strategi', 'Dipromosikan', 'Alokasi', 'Sharpe ke depan', 'Max DD']) +
+                f.promoted.map(x => row([e(x.label), e(x.promotedAt), pct(x.alloc), x.fwd.sharpe == null ? '-' : e(x.fwd.sharpe), pct(x.fwd.mdd)])).join('') + '</table>' +
+                '<div style="font-family:var(--font-mono);font-size:0.58rem;margin-top:0.3rem;">' + (tw.length ? tw.map(([s, w]) => e(s.replace('USDT', '')) + ' ' + (w > 0 ? '+' : '') + (w * 100).toFixed(1) + '%').join(' · ') : 'Semua kas') + ' (gross ' + e(pf.grossPct) + '%)</div>'
+                : '<div class="panel-msg">Belum ada strategi terpromosi: portofolio 100% kas.</div>') +
+            '<div style="font-size:0.52rem;color:var(--text-muted);margin-top:0.5rem;line-height:1.6;">Aturan: vol target ' + e(f.rules.targetVolPct) + '%/th, bobot per aset maks ' + e(f.rules.maxAssetPct) + '%, modal dinaikkan bertahap selama 1 tahun bukti ke depan, drawdown ' + e(f.rules.ddHalfPct) + '% -> risiko x0.5, ' + e(f.rules.ddKillPct) + '% -> kill switch (reset manual). Setiap percobaan dihitung; makin banyak dicoba, makin tinggi syarat lolos.</div>' +
+            '<div style="font-size:0.6rem;color:var(--text-muted);font-weight:700;margin:0.5rem 0 0.2rem;">LOG PABRIK</div>' +
+            '<div style="font-family:var(--font-mono);font-size:0.55rem;line-height:1.6;max-height:140px;overflow-y:auto;">' + (f.log || []).map(l => '<div><span style="color:var(--text-muted);">' + new Date(l.t).toISOString().slice(0, 10) + ' [' + e(l.type) + ']</span> ' + e(l.text) + '</div>').join('') + '</div>' +
+            '</div>';
+    }
+
     function qbRenderAll() {
-        qbRenderStats(); qbRenderLeaderboard(); qbRenderSignals(); qbRenderNews(); qbRenderJournal(); qbDrawAccChart(); qbRenderHeatmap(); qbRenderKnowledge(); qbRenderParams();
+        qbRenderStats(); qbRenderLeaderboard(); qbRenderSignals(); qbRenderNews(); qbRenderJournal(); qbDrawAccChart(); qbRenderHeatmap(); qbRenderKnowledge(); qbRenderParams(); qbRenderFactory();
         const btn = $('qbBtnStart'); if (btn) {
             btn.textContent = brain.running ? 'STOP AUTO-LEARNING' : '▶ START AUTO-LEARNING';
             btn.classList.toggle('qb-btn-stop', brain.running);
@@ -4493,7 +4556,7 @@
         brain = loadBrain();
         loadAdminConfig();
         verifyOriginAndAntiClone();
-        qbGithubLoad().catch(() => {});
+        qbLoadRemoteState().catch(() => {});
         if (!brain.journal.length) {
             qbJournal('SYS', '[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif.');
         }
@@ -4557,7 +4620,7 @@
                 if (typeof document.addEventListener === 'function') {
                     document.addEventListener('visibilitychange', function () {
                         if (!document.hidden && brain.running) {
-                            Promise.all([qbGithubLoad(), qbFirebaseLoad()]).then(function () {
+                            qbLoadRemoteState().then(function () {
                                 if (Date.now() >= nextCycleAt) qbBrainCycle();
                                 else qbRenderAll();
                             }).catch(function () {});
@@ -4624,6 +4687,6 @@
             getConfig: () => adminConfig
         },
         cloud: { syncGithub: qbGithubSyncAll, loadGithub: qbGithubLoad, syncFirebase: qbFirebaseSyncAll, loadFirebase: qbFirebaseLoad, projectId: QB_FIREBASE_PROJECT_ID, senderId: QB_FIREBASE_SENDER_ID },
-        _dbg: { QB_EVAL, buildIndicators, detectRegime, computeMomentumBurst, computeVpinAndObi, aggEma, backtestStrategy, qbFetchBinanceDeep, qbWhaleCycle, computeHmacSignature, kalmanSeries, computeHurstExponent, qbStepPosition, qbOpenPosition, qbCostR, runLeg, recomputeChampionStrategy, qbPostMortem, qbRelaxLearnedParams, qbEvaluateOpenSignals, qbEnsembleVotes, masterScore, qbMetaFeatures, qbMetaPredict, qbMetaEV, qbMetaTrain, qbEnsembleBacktest, qbMetaIngest, qbComputeSystemStatus, qbRiskGate, qbRiskMultiplier, qbDefaultMeta, QB_META_NF, qbScanSymbols, qbOptimizeBatch, QB_META_FEATURES, QB_BY_SYM, qbFetchBinanceDeep }
+        _dbg: { QB_EVAL, buildIndicators, detectRegime, computeMomentumBurst, computeVpinAndObi, aggEma, backtestStrategy, qbFetchBinanceDeep, qbWhaleCycle, computeHmacSignature, kalmanSeries, computeHurstExponent, qbStepPosition, qbOpenPosition, qbCostR, runLeg, recomputeChampionStrategy, qbPostMortem, qbRelaxLearnedParams, qbEvaluateOpenSignals, qbEnsembleVotes, masterScore, qbMetaFeatures, qbMetaPredict, qbMetaEV, qbMetaTrain, qbEnsembleBacktest, qbMetaIngest, qbComputeSystemStatus, qbRiskGate, qbRiskMultiplier, qbDefaultMeta, QB_META_NF, qbScanSymbols, qbOptimizeBatch, QB_META_FEATURES, QB_BY_SYM, qbFetchBinanceDeep, qbRenderFactory }
     };
     })();
