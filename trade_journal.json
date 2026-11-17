@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1794918771324,
+  "updatedAt": 1794942520775,
   "closedTrades": [
     {
       "id": "sig_AAPL_1794887289010",
@@ -105,11 +105,34 @@
       "tp1Hit": false,
       "beActive": false,
       "lockedR": 0,
-      "mfe": 0,
-      "mae": 0
+      "mfe": 0.7144705069436825,
+      "mae": -0.8797791346123942,
+      "risk": 3.569059559752759,
+      "slInit": 349.240937998841,
+      "lastBarT": 1794940200000
     }
   ],
   "recentJournal": [
+    {
+      "t": 1794942520772,
+      "type": "CYCLE",
+      "text": "[CYCLE #24] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794942520286,
+      "type": "GEN",
+      "text": "[GEN #4] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-3.49R, 33 trade, Win 66.7%, t=-0.59 vs hurdle 2.15)"
+    },
+    {
+      "t": 1794942519153,
+      "type": "CB",
+      "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence)"
+    },
+    {
+      "t": 1794942519151,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794918771321,
       "type": "CYCLE",
@@ -389,26 +412,6 @@
       "t": 1794450813762,
       "type": "CYCLE",
       "text": "[CYCLE #2] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1794450812189,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1794433767568,
-      "type": "CYCLE",
-      "text": "[CYCLE #1] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1794433765763,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 29 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1794433764774,
-      "type": "SYS",
-      "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
     }
   ]
 }
