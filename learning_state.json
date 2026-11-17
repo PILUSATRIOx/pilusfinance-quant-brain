@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794953879165,
+  "updatedAt": 1794954778107,
   "brain": {
     "v": 1,
     "gen": 2,
-    "cycles": 15,
+    "cycles": 16,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1794951175975,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.38,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -196,15 +196,15 @@
           "wins": 42,
           "losses": 35,
           "winRate": 54.54545454545454,
-          "pf": 0.7425372030429119,
-          "exp": -0.13130674477661172,
-          "netR": -10.110619347799103,
-          "maxDD": 14.389472234319225,
-          "sumR2": 74.9816034263499,
-          "grossW": 29.159595484382173,
+          "pf": 0.7463163913759358,
+          "exp": -0.12937934818272706,
+          "netR": -9.962209810069984,
+          "maxDD": 14.389472234319227,
+          "sumR2": 75.09643972372393,
+          "grossW": 29.308005022111292,
           "grossL": 39.270214832181296,
-          "sd": 0.9844448803908875,
-          "tStat": -1.1704180012411185,
+          "sd": 0.9854703359579754,
+          "tStat": -1.1520378963653042,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 95,
-          "wins": 53,
+          "trades": 96,
+          "wins": 54,
           "losses": 42,
-          "winRate": 55.78947368421052,
-          "pf": 0.721923887192795,
-          "exp": -0.13654634417706815,
-          "netR": -12.971902696821475,
+          "winRate": 56.25,
+          "pf": 0.7330959340052101,
+          "exp": -0.1296952155517277,
+          "netR": -12.450740692965859,
           "maxDD": 15.464976815975724,
-          "sumR2": 85.28806884647663,
-          "grossW": 33.6768459708324,
+          "sumR2": 85.55967868073944,
+          "grossW": 34.19800797468802,
           "grossL": 46.64874866765388,
-          "sd": 0.9425903814455515,
-          "tStat": -1.4119485636892897,
+          "sd": 0.9400161095080208,
+          "tStat": -1.3518368332997153,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3743,6 +3743,16 @@
     ],
     "journal": [
       {
+        "t": 1794954778091,
+        "type": "CYCLE",
+        "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794954774956,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794953879150,
         "type": "CYCLE",
         "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4246,9 +4256,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 250,
+      "newsIngested": 280,
       "lessons": 1,
-      "backtests": 450,
+      "backtests": 480,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4261,7 +4271,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794953874993,
+      "fetchedAt": 1794954774956,
       "items": [
         {
           "source": "CoinDesk",
@@ -4405,6 +4415,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Nvidia Shares Rise After Earnings Beat in First Report Since Jensen Huang&#39;s Exit",
+          "link": "https://decrypt.co/383505/nvidia-shares-rise-earnings-beat-first-report-jensen-huang-exit",
+          "pubDate": "2026-11-17 22:18:18",
+          "summary": "The chipmaker doubled quarterly revenue, forecast another record and rallied after hours, but its first report without Jensen Huang leaves leadership questions and a deeply bruised stock chart unresolved."
+        },
+        {
+          "source": "Decrypt",
           "title": "OpenAI&#39;s GPT 6.2 Astra Challenges Anthropic on Price, But Not Every Benchmark",
           "link": "https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark",
           "pubDate": "2026-11-17 21:46:02",
@@ -4465,13 +4482,6 @@
           "link": "https://decrypt.co/383434/standard-life-chair-wants-tokenized-gilts-to-open-uk-government-bonds-to-retail-savers",
           "pubDate": "2026-11-17 15:30:37",
           "summary": "Sir Nicholas Lyons told Solana&#39;s Breakpoint that tokenization should benefit ordinary investors, not just wholesale institutions."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: The CFTC Officially Greenlights Perps in the US, Starting with Backpack",
-          "link": "https://decrypt.co/383418/morning-minute-the-cftc-officially-greenlights-perps-in-the-us-starting-with-backpack",
-          "pubDate": "2026-11-17 12:56:24",
-          "summary": "CFTC chairman Mike Selig said he looks forward to building on this milestone, which begs the question—who’s next?"
         }
       ],
       "perCoin": {
@@ -4596,7 +4606,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1794953874993
+        "t": 1794954774956
       },
       "lastErrors": []
     },
@@ -4806,7 +4816,7 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.631,
+            0.632,
             0.998,
             10
           ],
@@ -4816,27 +4826,27 @@
             35
           ],
           [
-            0.62,
+            0.621,
             -1.075,
             35
           ],
           [
-            0.531,
+            0.541,
             -1.072,
             56
           ],
           [
-            0.625,
+            0.627,
             0.334,
             10
           ],
           [
-            0.549,
+            0.559,
             -1.087,
             56
           ],
           [
-            0.513,
+            0.515,
             0.452,
             61
           ],
@@ -4846,17 +4856,17 @@
             35
           ],
           [
-            0.592,
+            0.593,
             0.315,
             35
           ],
           [
-            0.576,
+            0.582,
             -1.077,
             94
           ],
           [
-            0.583,
+            0.581,
             0.286,
             2
           ],
@@ -4866,17 +4876,17 @@
             35
           ],
           [
-            0.643,
+            0.644,
             -1.119,
             10
           ],
           [
-            0.531,
+            0.541,
             -1.124,
             69
           ],
           [
-            0.606,
+            0.608,
             0.579,
             35
           ],
@@ -4886,27 +4896,27 @@
             35
           ],
           [
-            0.617,
+            0.616,
             -1.113,
             10
           ],
           [
-            0.604,
+            0.603,
             0.304,
             10
           ],
           [
-            0.539,
+            0.544,
             0.399,
             61
           ],
           [
-            0.602,
+            0.606,
             0.503,
             34
           ],
           [
-            0.526,
+            0.531,
             0.993,
             94
           ],
@@ -4916,12 +4926,12 @@
             10
           ],
           [
-            0.568,
+            0.567,
             -1.105,
             27
           ],
           [
-            0.577,
+            0.576,
             1.51,
             35
           ],
@@ -4941,12 +4951,12 @@
             16
           ],
           [
-            0.502,
+            0.506,
             -1.156,
             61
           ],
           [
-            0.631,
+            0.633,
             0.259,
             10
           ],
@@ -4956,37 +4966,37 @@
             10
           ],
           [
-            0.552,
+            0.551,
             0.447,
             10
           ],
           [
-            0.516,
+            0.519,
             0.163,
             90
           ],
           [
-            0.566,
+            0.567,
             -1.193,
             35
           ],
           [
-            0.617,
+            0.619,
             -1.153,
             41
           ],
           [
-            0.627,
+            0.629,
             0.842,
             10
           ],
           [
-            0.625,
+            0.627,
             0.917,
             15
           ],
           [
-            0.57,
+            0.575,
             0.172,
             69
           ],
@@ -4996,22 +5006,22 @@
             10
           ],
           [
-            0.563,
+            0.57,
             -1.142,
             56
           ],
           [
-            0.543,
+            0.547,
             -1.127,
             61
           ],
           [
-            0.571,
+            0.57,
             0.735,
             2
           ],
           [
-            0.57,
+            0.571,
             -1.132,
             41
           ],
@@ -5021,27 +5031,27 @@
             10
           ],
           [
-            0.639,
+            0.641,
             -1.127,
             35
           ],
           [
-            0.569,
+            0.576,
             -1.118,
             69
           ],
           [
-            0.598,
+            0.6,
             0.509,
             41
           ],
           [
-            0.52,
+            0.522,
             1.541,
             90
           ],
           [
-            0.573,
+            0.574,
             -1.109,
             46
           ]
@@ -8672,7 +8682,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794953876901
+        "updatedAt": 1794954776007
       }
     },
     "champion": {
@@ -8688,7 +8698,7 @@
       "deflatedT": -4.58,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794953879153,
+      "updatedAt": 1794954778094,
       "gen": 2
     },
     "factory": {
