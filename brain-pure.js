@@ -472,7 +472,7 @@
             v: 1, gen: 0, cycles: 0, firstBootAt: Date.now(), running: false,
             optCursor: 0, scanCursor: 0, lastOptAt: 0, autoExecBursa: false,
             engineV: 2, // v2: mesin exit bersama backtest/live, biaya+slippage, champion terkoreksi, Bayesian hanya dari live
-            params: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, minScore: 75, feeBps: 10, slipBps: 5, riskPct: 1.0, tp1Ratio: 0.8, volConfirmMult: 1.15 },
+            params: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, minScore: 75, feeBps: 10, slipBps: 5, riskPct: 1.0, tp1Ratio: 0.8, volConfirmMult: 1.15, maxOpen: 6, maxCorrelated: 3, dailyLossLimitR: 3 },
             learned: { atrMult: 1.8, rsiLongMax: 62, rsiShortMin: 38, tp1Ratio: 0.8, volConfirmMult: 1.15 },
             weights: w,
             bayesian: defaultBayesianMatrix(),
@@ -484,6 +484,7 @@
             derivatives: {},
             whale: { fetchedAt: 0, bias: {}, positions: [] },
             learnLog: [],
+            meta: qbDefaultMeta(),
             champion: qbEmptyChampion()
         };
     }
@@ -506,6 +507,7 @@
                 if (b.params && [55, 60, 65, 70].includes(b.params.minScore)) b.params.minScore = 75; // nilai hasil auto-turun lama
                 b.engineV = 2;
             }
+            if (!b.meta || b.meta.nf !== QB_META_NF || !Array.isArray(b.meta.w) || b.meta.w.length !== QB_META_NF) b.meta = qbDefaultMeta();
             const mergedWeights = Object.assign({}, d.weights, b.weights || {});
             const mergedBayes = Object.assign({}, d.bayesian, b.bayesian || {});
             return Object.assign(d, b, {
@@ -537,23 +539,23 @@
     }
     async function qbFetchBinanceDeep(sym, interval, target) {
         target = target || 4000;
-        const out = []; let startTime = null; let pages = 0;
+        let out = []; let endTime = null; let pages = 0;
         while (out.length < target && pages < 6) {
             pages++;
             const rem = Math.min(1500, target - out.length);
             let u = `https://fapi.binance.com/fapi/v1/klines?symbol=${sym}&interval=${interval}&limit=${rem}`;
-            if (startTime) u += `&startTime=${startTime}`;
+            if (endTime) u += `&endTime=${endTime}`;
             const r = await fetchTimeout(u, 15000);
             if (!r.ok) break;
             const raw = await r.json();
             if (!Array.isArray(raw) || !raw.length) break;
             const batch = raw.map(k => ({ t: k[0], o: +k[1], h: +k[2], l: +k[3], c: +k[4], v: +k[5] }));
-            const lastT = out.length ? out[out.length - 1].t : -1;
-            const filtered = batch.filter(b => b.t > lastT);
-            if (!filtered.length) break;
-            out.push(...filtered);
+            const firstT = out.length ? out[0].t : Infinity;
+            const older = batch.filter(b => b.t < firstT);
+            if (!older.length) break;
+            out = older.concat(out);
             if (raw.length < rem) break;
-            startTime = raw[raw.length - 1][0] + 1;
+            endTime = raw[0][0] - 1; // halaman berikutnya: data yang LEBIH LAMA
         }
         return out.length > 100 ? out.slice(-Math.min(target, out.length)) : out;
     }
@@ -877,11 +879,22 @@
         }
         return out.slice(-3);
     }
+    // EMA timeframe tinggi (default 4H dari bar 1H). Grup ditutup pada bar yang melewati batas waktu 4 jam UTC
+    // yang sebenarnya (versi lama memakai setiap 4 indeks bar sehingga tidak sejajar dengan candle 4H bursa,
+    // dan kacau untuk saham yang punya jeda sesi). Nilai hanya memakai bar yang sudah selesai: tanpa lookahead.
     function aggEma(ind, period, mult) {
         const step = mult || 4, out = new Array(ind.c.length).fill(null);
         const closes4 = []; const idxMap = [];
+        const k = ind.k || [];
+        const diffs = [];
+        for (let j = 1; j < Math.min(k.length, 60); j++) { const d = (k[j] && k[j - 1]) ? k[j].t - k[j - 1].t : 0; if (d > 0) diffs.push(d); }
+        diffs.sort((a, b) => a - b);
+        const barMs = diffs.length ? diffs[Math.floor(diffs.length / 2)] : 0;
+        const groupMs = barMs * step;
         for (let i = 0; i < ind.c.length; i++) {
-            if (i % step === step - 1) { closes4.push(ind.c[i]); idxMap.push(i); }
+            const t = k[i] && k[i].t;
+            const closesGroup = (groupMs > 0 && t) ? Math.floor((t + barMs) / groupMs) > Math.floor(t / groupMs) : (i % step === step - 1);
+            if (closesGroup) { closes4.push(ind.c[i]); idxMap.push(i); }
         }
         if (closes4.length < period) return out;
         const e = emaSeries(closes4, period);
@@ -1179,11 +1192,50 @@
         else cell.beta = Math.min(200, cell.beta + 1);
     }
 
-    function masterScore(sym, ind, votes, regime, deriv) {
-        const i = ind.c.length - 2;
+    /* ═══════════════ 7. SISTEM ENSEMBLE (SATU LOGIKA UNTUK LIVE & BACKTEST) ═══════════════
+       Voting 10 strategi + skor screen dipakai PERSIS sama oleh scan live dan backtest sistem, sehingga
+       yang diuji adalah yang benar-benar ditradingkan. */
+    const QB_HURST_TREND = ['elder', 'donchian', 'macdm', 'tsmom'];
+    const QB_HURST_REVERT = ['rsidiv', 'wyckoff', 'bbrev', 'statarb', 'smc'];
+
+    // neutral=true: bobot 1 & Bayesian 0.5 (dipakai backtest agar bobot hasil belajar tidak membocorkan data uji).
+    function qbEnsembleVotes(ind, i, regime, getHurst, neutral) {
+        const raw = [];
+        QB_STRATS.forEach(st => {
+            if (!st.fit.includes(regime)) return;
+            const baseW = neutral ? 1 : (brain.weights[st.id] || 1);
+            if (baseW < 0.45) return;
+            for (let b = i - 2; b <= i; b++) {
+                const sig = QB_EVAL[st.id](ind, b);
+                if (sig) { raw.push({ st, sig, b, baseW }); break; }
+            }
+        });
+        if (raw.length < 2) return null;
+        const H = getHurst ? getHurst() : 0.5;
+        let longW = 0, shortW = 0; const list = [];
+        raw.forEach(({ st, sig, b, baseW }) => {
+            const bayesP = neutral ? 0.5 : getBayesianPosteriorProb(st.id, regime);
+            const hurstMult = (H > 0.55 && QB_HURST_TREND.includes(st.id)) ? 1.15 : (H < 0.45 && QB_HURST_REVERT.includes(st.id)) ? 1.15 : 1.0;
+            const w = baseW * (0.7 + 0.6 * bayesP) * hurstMult;
+            const decay = 1 - (i - b) * 0.15;
+            if (sig.side === 'LONG') longW += w * decay; else shortW += w * decay;
+            list.push({ strat: st.id, side: sig.side, note: sig.note, w: Math.round(w * decay * 100) / 100, barAge: i - b });
+        });
+        const dir = longW > shortW * 1.4 ? 'LONG' : (shortW > longW * 1.4 ? 'SHORT' : null);
+        if (!dir) return null;
+        return { dir, list, longW, shortW, H };
+    }
+
+    // opts.i = indeks bar (default bar terakhir yang sudah selesai), opts.historical = abaikan data yang tidak
+    // tersedia secara historis (funding/OI, whale, berita), opts.hurst = Hurst pada bar tsb (tanpa lookahead).
+    function masterScore(sym, ind, votes, regime, deriv, opts) {
+        opts = opts || {};
+        const hist = !!opts.historical;
+        const i = opts.i != null ? opts.i : ind.c.length - 2;
         const px = ind.c[i], rsi = ind.rsi[i] != null ? ind.rsi[i] : 50, atr = ind.atr[i] || px * 0.01;
         const side = votes.dir; if (!side) return null;
-        let score = 0; const factors = [];
+        let score = 0, ext = 0; const factors = [];
+        const addExt = pts => { score += pts; ext += pts; };
         const e4h = QB_STATE.ema4h;
         if (e4h && e4h[i] != null) {
             if ((side === 'LONG' && px > e4h[i]) || (side === 'SHORT' && px < e4h[i])) { score += 30; factors.push('[OK] Screen1 (Elder): Tren 4H selaras arah ' + side); }
@@ -1192,58 +1244,57 @@
         if (side === 'LONG' && rsi >= 40 && rsi <= brain.learned.rsiLongMax) { score += 25; factors.push('[OK] Screen2: RSI ' + rsi.toFixed(0) + ' zona momentum sehat'); }
         else if (side === 'SHORT' && rsi <= 60 && rsi >= brain.learned.rsiShortMin) { score += 25; factors.push('[OK] Screen2: RSI ' + rsi.toFixed(0) + ' zona momentum sehat'); }
         else factors.push('[NO] Screen2: RSI ' + rsi.toFixed(0) + ' di luar zona sehat');
-        if (atr > 0) { score += 20; factors.push('[OK] Screen3 (Williams): SL ' + brain.learned.atrMult.toFixed(2) + 'x ATR kebal wick-hunt'); }
+        if (atr > 0) { score += 20; factors.push('[OK] Screen3 (Williams): SL ' + brain.learned.atrMult.toFixed(2) + 'x ATR'); }
         if (ind.bb.up[i] != null) {
             const nearBB = side === 'LONG' ? px <= ind.bb.mid[i] * 1.005 : px >= ind.bb.mid[i] * 0.995;
             if (nearBB) { score += 15; factors.push('[OK] Screen4: Entry di area of value (dekat mid-BB)'); }
         }
-        if (deriv && deriv.funding != null) {
+        if (!hist && deriv && deriv.funding != null) {
             const fr = deriv.funding * 100;
-            if (side === 'SHORT' && fr >= 0.015) { score += 10; factors.push('[OK] Screen5: Funding +' + fr.toFixed(3) + '% -> long squeeze risk'); }
-            else if (side === 'LONG' && fr <= -0.01) { score += 10; factors.push('[OK] Screen5: Funding ' + fr.toFixed(3) + '% -> short squeeze fuel'); }
+            if (side === 'SHORT' && fr >= 0.015) { addExt(10); factors.push('[OK] Screen5: Funding +' + fr.toFixed(3) + '% -> long squeeze risk'); }
+            else if (side === 'LONG' && fr <= -0.01) { addExt(10); factors.push('[OK] Screen5: Funding ' + fr.toFixed(3) + '% -> short squeeze fuel'); }
             if (deriv.oiChg != null) {
-                if (side === 'LONG' && deriv.oiChg > 2) { score += 5; factors.push('[OK] OI naik +' + deriv.oiChg.toFixed(1) + '% 24h -> akumulasi modal nyata'); }
-                if (side === 'SHORT' && deriv.oiChg > 2 && deriv.priceChg24h > 8) { score += 5; factors.push('[OK] OI naik saat rally -> fresh short institusi'); }
+                if (side === 'LONG' && deriv.oiChg > 2) { addExt(5); factors.push('[OK] OI naik +' + deriv.oiChg.toFixed(1) + '% 24h -> akumulasi modal nyata'); }
+                if (side === 'SHORT' && deriv.oiChg > 2 && deriv.priceChg24h > 8) { addExt(5); factors.push('[OK] OI naik saat rally -> fresh short institusi'); }
             }
         }
         const whaleCoin = sym.replace('USDT', '').replace('1000', '');
-        const wb = (brain.whale && brain.whale.bias) ? (brain.whale.bias[whaleCoin] || 0) : 0;
+        const wb = (!hist && brain.whale && brain.whale.bias) ? (brain.whale.bias[whaleCoin] || 0) : 0;
         if (wb) {
-            if (side === 'LONG' && wb >= 10) { score += 8; factors.push('[OK] Screen5b (Whales): smart money net LONG +' + wb.toFixed(1)); }
-            else if (side === 'SHORT' && wb <= -10) { score += 8; factors.push('[OK] Screen5b (Whales): smart money net SHORT ' + wb.toFixed(1)); }
-            else if ((side === 'LONG' && wb <= -10) || (side === 'SHORT' && wb >= 10)) { score -= 6; factors.push('[NO] Screen5b (Whales): smart money melawan arah'); }
+            if (side === 'LONG' && wb >= 10) { addExt(8); factors.push('[OK] Screen5b (Whales): smart money net LONG +' + wb.toFixed(1)); }
+            else if (side === 'SHORT' && wb <= -10) { addExt(8); factors.push('[OK] Screen5b (Whales): smart money net SHORT ' + wb.toFixed(1)); }
+            else if ((side === 'LONG' && wb <= -10) || (side === 'SHORT' && wb >= 10)) { addExt(-6); factors.push('[NO] Screen5b (Whales): smart money melawan arah'); }
         }
-        // Screen 7 — Kalman Filter Velocity & Hurst Exponent Fractal Efficiency
+        const H = opts.hurst != null ? opts.hurst : (ind.hurst || 0.50);
+        if (!hist) brain.lastHurst = H;
         if (ind.kalman && ind.kalman.vel[i] != null) {
             const kv = ind.kalman.vel[i];
-            const H = ind.hurst || 0.50;
-            brain.lastHurst = H;
             if ((side === 'LONG' && kv >= 0) || (side === 'SHORT' && kv <= 0)) {
                 score += 6;
                 factors.push('[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=' + H.toFixed(2) + ')');
             }
         }
-        const nw = newsForSymbol(sym);
-        if (nw.critical && side === 'LONG') { score -= 40; factors.push('[BREAKER] Screen6: CIRCUIT BREAKER — berita krisis'); }
-        else if (nw.critical && side === 'SHORT') { score += 10; factors.push('[OK] Screen6: krisis terverifikasi memperkuat Short'); }
-        else if (nw.impact > 0.3 && side === 'LONG') { score += 10; factors.push('[OK] Screen6: sentimen BULLISH multi-sumber'); }
-        else if (nw.impact < -0.3 && side === 'SHORT') { score += 10; factors.push('[OK] Screen6: sentimen BEARISH multi-sumber'); }
-        else factors.push('[INFO] Screen6: berita netral');
+        const nw = hist ? { critical: false, impact: 0 } : newsForSymbol(sym);
+        if (nw.critical && side === 'LONG') { addExt(-40); factors.push('[BREAKER] Screen6: CIRCUIT BREAKER — berita krisis'); }
+        else if (nw.critical && side === 'SHORT') { addExt(10); factors.push('[OK] Screen6: krisis terverifikasi memperkuat Short'); }
+        else if (nw.impact > 0.3 && side === 'LONG') { addExt(10); factors.push('[OK] Screen6: sentimen BULLISH multi-sumber'); }
+        else if (nw.impact < -0.3 && side === 'SHORT') { addExt(10); factors.push('[OK] Screen6: sentimen BEARISH multi-sumber'); }
+        else if (!hist) factors.push('[INFO] Screen6: berita netral');
 
         const vpinInfo = computeVpinAndObi(ind, i);
-        if (!vpinInfo.toxic && ((side === "LONG" && vpinInfo.obi > 0.05) || (side === "SHORT" && vpinInfo.obi < -0.05))) {
+        if (!vpinInfo.toxic && ((side === 'LONG' && vpinInfo.obi > 0.05) || (side === 'SHORT' && vpinInfo.obi < -0.05))) {
             score += 5;
-            factors.push("[OK] Screen9 (VPIN+OBI): Order-Flow Institutional Imbalance " + (vpinInfo.obi >= 0 ? "+" : "") + (vpinInfo.obi * 100).toFixed(1) + "% · VPIN " + vpinInfo.vpin + " (" + vpinInfo.slicingMode + ")");
+            factors.push('[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance ' + (vpinInfo.obi >= 0 ? '+' : '') + (vpinInfo.obi * 100).toFixed(1) + '% · VPIN ' + vpinInfo.vpin);
         } else if (vpinInfo.toxic) {
             score -= 8;
-            factors.push("[WARN] Screen9 (VPIN Toxicity): VPIN " + vpinInfo.vpin + " tinggi -> Ukuran entry dipangkas & mode TWAP diaktifkan");
+            factors.push('[WARN] Screen9 (VPIN Toxicity): VPIN ' + vpinInfo.vpin + ' tinggi');
         }
         const momBurst = computeMomentumBurst(ind, i);
         let tp3Mult = QB_TP3_R;
         if (momBurst.active && momBurst.dir === side) {
             score += 8;
             tp3Mult = QB_TP3_R_BURST;
-            factors.push('[OK] Screen8 (Momentum Burst): Impuls institusional Vol ' + momBurst.volRatio + 'x · Body ' + Math.round(momBurst.bodyRatio * 100) + '% -> Target TP3 diperluas ke 3.2R (SL tetap ketat 1.0R)');
+            factors.push('[OK] Screen8 (Momentum Burst): Vol ' + momBurst.volRatio + 'x · Body ' + Math.round(momBurst.bodyRatio * 100) + '% -> TP3 diperluas ke 3.2R');
         }
 
         const volPct = (atr / px) * 100;
@@ -1254,16 +1305,230 @@
         return {
             id: 'sig_' + sym + '_' + Date.now(),
             sym, side, entry: px, sl: pos.sl, slInit: pos.slInit, risk: pos.risk, rsiAtEntry: rsi != null ? Math.round(rsi) : null,
-            tp1: pos.tp1,
-            tp2: pos.tp2,
-            tp3: pos.tp3,
+            tp1: pos.tp1, tp2: pos.tp2, tp3: pos.tp3,
             momentumBurst: momBurst.active && momBurst.dir === side,
             lev: leverageFor(volPct), conf: Math.max(0, Math.min(100, Math.round(score))),
-            regime, hurst: ind.hurst || 0.5, kalmanPrice: (ind.kalman && ind.kalman.est && ind.kalman.est[i]) || px, kalmanVelZ: (ind.kalman && ind.kalman.vel && ind.kalman.vel[i] != null && atr) ? +(ind.kalman.vel[i] / atr).toFixed(4) : 0, bayesProb: (votes.list && votes.list[0] && votes.list[0].bayesP) || 0.55, factors, votes: votes.list, atr, volPct
+            techScore: Math.round(score - ext), extScore: ext,
+            regime, hurst: H, kalmanPrice: (ind.kalman && ind.kalman.est && ind.kalman.est[i]) || px,
+            kalmanVelZ: (ind.kalman && ind.kalman.vel && ind.kalman.vel[i] != null && atr) ? +(ind.kalman.vel[i] / atr).toFixed(4) : 0,
+            bayesProb: (votes.list && votes.list[0] && votes.list[0].bayesP) || 0.55, factors, votes: votes.list, atr, volPct
         };
     }
 
+    /* ═══════════════ 7b. META-LABELING (López de Prado): PROBABILITAS SINYAL MENANG ═══════════════
+       Sinyal ensemble = model primer (menentukan arah). Model meta = logistic regression yang memprediksi
+       peluang sinyal itu menutup profit (net biaya), dari fitur yang tersedia saat entry. Dilatih walk-forward:
+       hanya pada trade yang SUDAH selesai sebelum batas waktu uji (purging), dievaluasi pada periode sesudahnya. */
+    const QB_META_FEATURES = ['bias', 'side', 'rgUp', 'rgDown', 'rgRange', 'score', 'nVotes', 'voteMargin', 'rsiAdj', 'atrPct',
+        'distEma20', 'trendSlope', 'htfAlign', 'kalmanZ', 'hurst', 'vpin', 'obiAdj', 'burst', 'bbWidthPct', 'volRatio', 'hourSin', 'hourCos', 'costR'];
+    const QB_META_NF = QB_META_FEATURES.length;
+    const QB_META_TEST_DAYS = 60;
+    const QB_META_MIN_TRAIN = 200, QB_META_MIN_TAKEN = 40, QB_SYS_MIN_TRADES = 30, QB_SYS_MIN_T = 2.0;
+
+    function qbDefaultMeta() {
+        return { v: 1, nf: QB_META_NF, w: new Array(QB_META_NF).fill(0), g2: new Array(QB_META_NF).fill(0), nTrain: 0, sumWinR: 0, nWin: 0, sumLossR: 0, nLoss: 0, lastTrainT: {}, oosBySym: {}, status: null };
+    }
+
+    function qbMetaFeatures(ind, i, ms, votes) {
+        const clip = (x, lo, hi) => Math.max(lo, Math.min(hi, x));
+        const side = ms.side === 'LONG' ? 1 : -1;
+        const px = ind.c[i], atr = ind.atr[i] || px * 0.01;
+        const rsi = ind.rsi[i] != null ? ind.rsi[i] : 50;
+        const e20 = ind.ema20[i], e50 = ind.ema50[i];
+        const e4h = QB_STATE.ema4h ? QB_STATE.ema4h[i] : null;
+        const kv = (ind.kalman && ind.kalman.vel[i] != null) ? ind.kalman.vel[i] / atr : 0;
+        const vp = computeVpinAndObi(ind, i);
+        const ws = ind.bb.w.slice(Math.max(0, i - 200), i + 1).filter(x => x != null);
+        const curW = ind.bb.w[i];
+        const bbPct = (ws.length > 30 && curW != null) ? (ws.filter(x => x <= curW).length / ws.length) * 100 : 50;
+        const volRatio = (ind.volSma20[i] > 0) ? ind.k[i].v / ind.volSma20[i] : 1;
+        const hr = (ind.k[i] && ind.k[i].t) ? new Date(ind.k[i].t).getUTCHours() : 0;
+        const winW = side > 0 ? votes.longW : votes.shortW, loseW = side > 0 ? votes.shortW : votes.longW;
+        const H = ms.hurst != null ? ms.hurst : 0.5;
+        const x = [
+            1, side,
+            ms.regime === 'TREND_UP' ? 1 : 0, ms.regime === 'TREND_DOWN' ? 1 : 0, ms.regime === 'RANGING' ? 1 : 0,
+            clip(ms.techScore != null ? ms.techScore : ms.conf, -50, 150) / 100,
+            Math.min((votes.list || []).length, 6) / 6,
+            (winW - loseW) / (winW + loseW + 1e-9),
+            (side > 0 ? rsi : 100 - rsi) / 100 - 0.5,
+            clip((atr / px) * 100, 0, 10) / 5,
+            e20 != null ? clip(side * (px - e20) / atr, -5, 5) / 5 : 0,
+            (e20 != null && e50 != null) ? clip(side * (e20 - e50) / atr, -5, 5) / 5 : 0,
+            e4h != null ? (side * (px - e4h) > 0 ? 1 : -1) : 0,
+            clip(side * kv, -3, 3) / 3,
+            H - 0.5,
+            vp.vpin - 0.5,
+            side * vp.obi,
+            ms.momentumBurst ? 1 : 0,
+            bbPct / 100 - 0.5,
+            clip(volRatio, 0, 5) / 5,
+            Math.sin(2 * Math.PI * hr / 24), Math.cos(2 * Math.PI * hr / 24),
+            clip(qbCostR(px, ms.risk || atr * (brain.learned.atrMult || 1.8), brain.params.feeBps, brain.params.slipBps), 0, 1)
+        ];
+        return x.map(v => (Number.isFinite(v) ? Math.round(v * 10000) / 10000 : 0));
+    }
+
+    function qbSigmoid(z) { return 1 / (1 + Math.exp(-Math.max(-30, Math.min(30, z)))); }
+    function qbMetaPredict(meta, x) {
+        let z = 0;
+        for (let f = 0; f < x.length; f++) z += (meta.w[f] || 0) * x[f];
+        return qbSigmoid(z);
+    }
+    function qbMetaAvg(meta) {
+        return { win: meta.nWin ? meta.sumWinR / meta.nWin : 1, loss: meta.nLoss ? meta.sumLossR / meta.nLoss : 1 };
+    }
+    // Ekspektasi R per trade (sudah net biaya) menurut model: p x rata-rata menang - (1-p) x rata-rata kalah.
+    function qbMetaEV(meta, p) { const a = qbMetaAvg(meta); return p * a.win - (1 - p) * a.loss; }
+
+    // Logistic regression online (AdaGrad + L2), beberapa epoch atas sampel BARU saja.
+    function qbMetaTrain(meta, samples) {
+        if (!samples.length) return;
+        const lr = 0.05, l2 = 1e-3, epochs = 4;
+        samples.forEach(s => { if (s.r > 0) { meta.sumWinR += s.r; meta.nWin++; } else { meta.sumLossR += -s.r; meta.nLoss++; } });
+        const idx = samples.map((_, j) => j);
+        let seed = ((meta.nTrain + 1) * 2654435761) % 4294967296;
+        const rnd = () => (seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296;
+        for (let ep = 0; ep < epochs; ep++) {
+            for (let j = idx.length - 1; j > 0; j--) { const m = Math.floor(rnd() * (j + 1)); const tmp = idx[j]; idx[j] = idx[m]; idx[m] = tmp; }
+            idx.forEach(j => {
+                const s = samples[j], x = s.x, err = qbMetaPredict(meta, x) - (s.r > 0 ? 1 : 0);
+                for (let f = 0; f < x.length; f++) {
+                    const g = err * x[f] + (f === 0 ? 0 : l2 * meta.w[f]);
+                    meta.g2[f] += g * g;
+                    meta.w[f] -= lr * g / (Math.sqrt(meta.g2[f]) + 1e-8);
+                }
+            });
+        }
+        meta.nTrain += samples.length;
+    }
+
+    /* Backtest SISTEM: setiap bar disimulasikan seperti scan live (voting -> skor -> level), satu posisi
+       per simbol, exit memakai qbStepPosition. Menghasilkan sampel {t, exitT, x, r, score} untuk meta-labeling. */
+    function qbEnsembleBacktest(sym, k, ind, opts) {
+        opts = opts || {};
+        const feeBps = opts.feeBps != null ? opts.feeBps : 10;
+        const slipBps = opts.slipBps != null ? opts.slipBps : QB_SLIP_BPS_DEFAULT;
+        const atrMult = opts.atrMult || 1.8, tp1Ratio = opts.tp1Ratio || 0.8;
+        QB_STATE.ema4h = aggEma(ind, 20, 4);
+        const samples = [];
+        let pos = null, cur = null;
+        const end = k.length - 1; // bar terakhir = bar yang masih berjalan (live juga tidak memakainya)
+        for (let i = 222; i < end; i++) {
+            if (pos) {
+                const res = qbStepPosition(pos, k[i]);
+                if (res) {
+                    cur.r = Math.round((res.r - qbCostR(pos.entry, pos.risk, feeBps, slipBps)) * 1000) / 1000;
+                    cur.exitT = k[i].t;
+                    samples.push(cur);
+                    pos = null; cur = null;
+                }
+                if (pos) continue;
+            }
+            const regime = detectRegime(ind, i);
+            if (regime !== 'TREND_UP' && regime !== 'TREND_DOWN' && regime !== 'RANGING') continue;
+            const votes = qbEnsembleVotes(ind, i, regime, () => computeHurstExponent(ind.c, i, 64), true);
+            if (!votes) continue;
+            const atr = ind.atr[i]; if (!atr || atr <= 0) continue;
+            const ms = masterScore(sym, ind, votes, regime, null, { i, historical: true, hurst: votes.H });
+            if (!ms) continue;
+            const x = qbMetaFeatures(ind, i, ms, votes);
+            pos = qbOpenPosition(ms.side, k[i].c, atr, atrMult, tp1Ratio, ms.momentumBurst ? QB_TP3_R_BURST : QB_TP3_R);
+            cur = { t: k[i].t, x, score: ms.conf, side: ms.side };
+        }
+        return { samples };
+    }
+
+    // Evaluasi dulu (out-of-sample), BARU latih: sampel uji tidak pernah dipakai melatih model yang menilainya.
+    function qbMetaIngest(sym, ens, nowMs) {
+        const meta = brain.meta;
+        const splitT = (nowMs || Date.now()) - QB_META_TEST_DAYS * 86400000;
+        const r3 = v => Math.round(v * 1000) / 1000;
+        const test = ens.samples.filter(s => s.t >= splitT);
+        meta.oosBySym[sym] = test.map(s => [r3(qbMetaPredict(meta, s.x)), r3(s.r), Math.round(s.score)]);
+        const lastT = meta.lastTrainT[sym] || 0;
+        const train = ens.samples.filter(s => s.exitT < splitT && s.t > lastT); // purging: label harus selesai sebelum periode uji
+        if (train.length) {
+            qbMetaTrain(meta, train);
+            meta.lastTrainT[sym] = train.reduce((m, s) => Math.max(m, s.t), lastT);
+        }
+        return { test: test.length, train: train.length };
+    }
+
+    function qbRStats(rs) {
+        const n = rs.length;
+        if (!n) return { n: 0, mean: 0, sd: 0, t: 0, winRate: 0, sum: 0 };
+        const sum = rs.reduce((a, b) => a + b, 0), mean = sum / n;
+        const sd = n > 1 ? Math.sqrt(rs.reduce((a, b) => a + (b - mean) * (b - mean), 0) / (n - 1)) : 0;
+        return {
+            n, mean: Math.round(mean * 1000) / 1000, sd: Math.round(sd * 1000) / 1000,
+            t: sd > 0 ? Math.round((mean / sd) * Math.sqrt(n) * 100) / 100 : 0,
+            winRate: Math.round((rs.filter(r => r > 0).length / n) * 1000) / 10, sum: Math.round(sum * 100) / 100
+        };
+    }
+
+    /* Status sistem dari hasil out-of-sample:
+       - SCORE: kebijakan lama (ambil sinyal dengan skor >= minScore)
+       - META : ambil sinyal hanya bila ekspektasi model > 0; aktif HANYA jika terbukti lebih baik secara OOS
+       Sistem "terverifikasi" bila kebijakan terpilih punya >= 30 trade OOS, rata-rata > 0, dan t-stat >= 2. */
+    function qbComputeSystemStatus() {
+        const meta = brain.meta;
+        const rows = [];
+        Object.values(meta.oosBySym || {}).forEach(a => (a || []).forEach(r => rows.push(r)));
+        const minScore = brain.params.minScore;
+        const all = qbRStats(rows.map(r => r[1]));
+        const base = qbRStats(rows.filter(r => r[2] >= minScore).map(r => r[1]));
+        const taken = qbRStats(rows.filter(r => qbMetaEV(meta, r[0]) > 0).map(r => r[1]));
+        const metaActive = meta.nTrain >= QB_META_MIN_TRAIN && taken.n >= QB_META_MIN_TAKEN &&
+            taken.mean > base.mean && taken.mean > all.mean && taken.t >= QB_SYS_MIN_T;
+        const chosen = metaActive ? taken : base;
+        const significant = chosen.n >= QB_SYS_MIN_TRADES && chosen.mean > 0 && chosen.t >= QB_SYS_MIN_T;
+        meta.status = {
+            all, base, taken, metaActive, policy: metaActive ? 'META' : 'SCORE', chosen, significant,
+            symbols: Object.keys(meta.oosBySym || {}).length, nTrain: meta.nTrain, updatedAt: Date.now()
+        };
+        return meta.status;
+    }
+
+    function qbSystemLabel(st) {
+        st = st || (brain.meta && brain.meta.status);
+        if (!st || !st.chosen || !st.chosen.n) return 'Sistem: mengumpulkan data uji out-of-sample';
+        const c = st.chosen;
+        return 'Sistem ' + st.policy + (st.significant ? ' TERVERIFIKASI' : ' BELUM SIGNIFIKAN') + ' (' + c.n + ' trade OOS, ' +
+            (c.mean >= 0 ? '+' : '') + c.mean + 'R/trade, win ' + c.winRate + '%, t=' + c.t + ')';
+    }
+
+    /* ═══════════════ 7c. RISK ENGINE PORTOFOLIO ═══════════════ */
+    function qbOpenSignals() { return brain.signals.filter(s => s.status === 'OPEN' || s.status === 'TP1_SECURED'); }
+
+    function qbRealizedRToday(nowMs) {
+        const d = new Date(nowMs || Date.now()); d.setUTCHours(0, 0, 0, 0);
+        return brain.signals.filter(s => s.closedAt && s.closedAt >= d.getTime() && typeof s.netR === 'number').reduce((a, s) => a + s.netR, 0);
+    }
+
+    function qbRiskGate(asset, side) {
+        const open = qbOpenSignals();
+        const maxOpen = brain.params.maxOpen || 6, maxCorr = brain.params.maxCorrelated || 3, dayLimit = brain.params.dailyLossLimitR || 3;
+        const todayR = qbRealizedRToday();
+        if (todayR <= -dayLimit) return { ok: false, reason: 'Batas rugi harian tercapai (' + todayR.toFixed(2) + 'R). Sinyal baru dihentikan sampai 00:00 UTC.' };
+        if (open.length >= maxOpen) return { ok: false, reason: 'Batas ' + maxOpen + ' posisi terbuka tercapai.' };
+        if (asset && asset.cls === 'CRYPTO') {
+            const same = open.filter(s => QB_BY_SYM[s.sym] && QB_BY_SYM[s.sym].cls === 'CRYPTO' && s.side === side).length;
+            if (same >= maxCorr) return { ok: false, reason: 'Sudah ' + same + ' posisi kripto ' + side + ' (berkorelasi tinggi dengan BTC).' };
+        }
+        return { ok: true };
+    }
+
+    // 0 = belum ada edge terverifikasi (sinyal hanya dipantau/paper, tidak dieksekusi otomatis).
+    function qbRiskMultiplier(ev, st) {
+        if (!st || !st.significant) return 0;
+        if (st.metaActive && st.taken && st.taken.mean > 0) return Math.round(Math.max(0.5, Math.min(1.5, ev / st.taken.mean)) * 100) / 100;
+        return 1;
+    }
+
     async function qbScanSymbols(list) {
+        const gateNoted = new Set();
+        const st = (brain.meta && brain.meta.status) || null;
         for (const sym of list) {
             const asset = QB_BY_SYM[sym]; if (!asset) continue;
             if (brain.signals.some(s => s.sym === sym && (s.status === 'OPEN' || s.status === 'TP1_SECURED'))) continue;
@@ -1273,51 +1538,49 @@
                 QB_STATE.ema4h = aggEma(ind, 20, 4);
                 const i = ind.c.length - 2;
                 const regime = detectRegime(ind, i);
-                const H = ind.hurst || 0.50;
-                brain.lastHurst = H;
-
-                let longW = 0, shortW = 0; const votes = [];
-                QB_STRATS.forEach(st => {
-                    if (!st.fit.includes(regime)) return;
-                    const baseW = brain.weights[st.id] || 1;
-                    if (baseW < 0.45) return;
-                    // Adjust weight by Bayesian posterior & Hurst Fractal regime compatibility
-                    const bayesP = getBayesianPosteriorProb(st.id, regime);
-                    const hurstMult = (H > 0.55 && ['elder', 'donchian', 'macdm', 'tsmom'].includes(st.id)) ? 1.15
-                        : (H < 0.45 && ['rsidiv', 'wyckoff', 'bbrev', 'statarb', 'smc'].includes(st.id)) ? 1.15 : 1.0;
-                    const w = baseW * (0.7 + 0.6 * bayesP) * hurstMult;
-
-                    for (let b = i - 2; b <= i; b++) {
-                        const sig = QB_EVAL[st.id](ind, b);
-                        if (sig) {
-                            const decay = 1 - (i - b) * 0.15;
-                            if (sig.side === 'LONG') longW += w * decay; else shortW += w * decay;
-                            votes.push({ strat: st.id, side: sig.side, note: sig.note, w: Math.round(w * decay * 100) / 100, barAge: i - b });
-                            break;
-                        }
-                    }
-                });
-                if (votes.length < 2) continue;
-                const dir = longW > shortW * 1.4 ? 'LONG' : (shortW > longW * 1.4 ? 'SHORT' : null);
-                if (!dir) continue;
+                const votes = qbEnsembleVotes(ind, i, regime, () => ind.hurst || 0.50, false);
+                if (!votes) continue;
 
                 let deriv = null;
                 if (asset.src === 'binance') {
                     const f = await qbFetchFunding(sym); const oi = await qbFetchOIHist(sym);
                     if (f || oi) deriv = { funding: f ? f.rate : null, oiChg: oi ? oi.chgPct : null, priceChg24h: ((ind.c[i] - ind.c[i - 24]) / ind.c[i - 24]) * 100 };
                 }
-                const ms = masterScore(sym, ind, { dir, list: votes }, regime, deriv);
-                if (!ms || ms.conf < brain.params.minScore) continue;
+                const ms = masterScore(sym, ind, votes, regime, deriv);
+                if (!ms) continue;
+
+                // Meta-labeling: probabilitas & ekspektasi R sinyal ini menurut model yang dilatih walk-forward.
+                const x = qbMetaFeatures(ind, i, ms, votes);
+                ms.metaP = Math.round(qbMetaPredict(brain.meta, x) * 1000) / 1000;
+                ms.metaEV = Math.round(qbMetaEV(brain.meta, ms.metaP) * 1000) / 1000;
+                if (st && st.metaActive) {
+                    if (ms.metaEV <= 0) {
+                        qbJournal('SYS', '[META FILTER] ' + ms.side + ' ' + sym + ' dilewati: peluang menang ' + Math.round(ms.metaP * 100) + '%, ekspektasi ' + ms.metaEV + 'R (negatif).');
+                        continue;
+                    }
+                } else if (ms.conf < brain.params.minScore) continue;
+
                 const nw = newsForSymbol(sym);
                 if (nw.critical && ms.side === 'LONG') {
                     qbJournal('CB', '[BREAKER] Long ' + sym + ' DIBATALKAN circuit breaker: ' + (nw.critHead || '').slice(0, 70));
                     continue;
                 }
+                const gate = qbRiskGate(asset, ms.side);
+                if (!gate.ok) {
+                    if (!gateNoted.has(gate.reason)) { gateNoted.add(gate.reason); qbJournal('SYS', '[RISK] ' + ms.side + ' ' + sym + ' ditahan: ' + gate.reason); }
+                    continue;
+                }
+                ms.riskMult = qbRiskMultiplier(ms.metaEV, st);
+                ms.policy = st ? st.policy : 'SCORE';
+                ms.systemVerified = !!(st && st.significant);
+                ms.factors.push(ms.systemVerified
+                    ? '[OK] Sistem terverifikasi OOS (' + ms.policy + '), ukuran risiko x' + ms.riskMult
+                    : '[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis');
                 ms.status = 'OPEN'; ms.createdAt = Date.now(); ms.tp1Hit = false; ms.beActive = false; ms.lockedR = 0; ms.mfe = 0; ms.mae = 0; ms.rsiAtEntry = ind.rsi[i] != null ? Math.round(ind.rsi[i]) : null;
                 brain.signals.unshift(ms);
                 if (brain.signals.length > QB_MAX_SIGNALS) brain.signals.length = QB_MAX_SIGNALS;
-                qbJournal('SIGNAL', '[SIGNAL] ' + ms.side + ' ' + sym + ' @ ' + ms.entry.toFixed(4) + ' | Skor ' + ms.conf + '/100 | rezim ' + regime + ' (H=' + H.toFixed(2) + ') | ' + votes.length + ' strategi: ' + votes.map(v => v.strat).join('+'));
-                if (brain.autoExecBursa && !adminConfig.globalKillSwitch) {
+                qbJournal('SIGNAL', '[SIGNAL] ' + ms.side + ' ' + sym + ' @ ' + ms.entry.toFixed(4) + ' | Skor ' + ms.conf + '/100 | P(menang) ' + Math.round(ms.metaP * 100) + '% | EV ' + ms.metaEV + 'R | rezim ' + regime + ' (H=' + votes.H.toFixed(2) + ') | ' + votes.list.length + ' strategi: ' + votes.list.map(v => v.strat).join('+') + (ms.systemVerified ? ' | risiko x' + ms.riskMult : ' | PAPER'));
+                if (brain.autoExecBursa && !adminConfig.globalKillSwitch && ms.riskMult > 0) {
                     try { autoExecuteSignalAcrossConnectedExchanges(ms); } catch (e) { }
                 }
             } catch (e) { }
@@ -1567,6 +1830,7 @@
                 version: '2.5',
                 engineV: 2,
                 champion: brain.champion,
+                system: (brain.meta && brain.meta.status) || null,
                 learned: brain.learned,
                 weights: brain.weights,
                 bayesian: brain.bayesian,
@@ -1724,6 +1988,10 @@
                         brain.leaderboard[st.id][sym] = { dataStatus: 'OFFLINE', trades: 0, winRate: 0, pf: 0, exp: 0, netR: 0, maxDD: 0 };
                     }
                 });
+                try {
+                    const ens = qbEnsembleBacktest(sym, k, ind, btOpts);
+                    qbMetaIngest(sym, ens);
+                } catch (e) { }
             } catch (e) {
                 QB_STRATS.forEach(st => {
                     if (!brain.leaderboard[st.id]) brain.leaderboard[st.id] = {};
@@ -1733,6 +2001,7 @@
         }
         brain.optCursor += QB_OPT_BATCH;
         recomputeChampionStrategy();
+        qbComputeSystemStatus();
         if (brain.optCursor >= QB_UNIVERSE.length) {
             brain.optCursor = 0;
             brain.gen++;
@@ -1750,6 +2019,8 @@
             const champ = recomputeChampionStrategy();
             qbJournal('GEN', '[GEN #' + brain.gen + '] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: ' + qbChampionLabel(champ) +
                 (champ.id ? ' (' + (champ.netR >= 0 ? '+' : '') + champ.netR + 'R, ' + champ.trades + ' trade, Win ' + champ.winRate + '%, t=' + champ.tStat + ' vs hurdle ' + champ.hurdle + ')' : ''));
+            const sysSt = qbComputeSystemStatus();
+            qbJournal('GEN', '[SISTEM] ' + qbSystemLabel(sysSt) + ' | Meta-model ' + (sysSt.metaActive ? 'AKTIF' : 'belum aktif') + ' (' + sysSt.nTrain + ' sampel latih, ' + sysSt.taken.n + ' trade OOS lolos filter, ' + (sysSt.taken.mean >= 0 ? '+' : '') + sysSt.taken.mean + 'R/trade vs semua ' + (sysSt.all.mean >= 0 ? '+' : '') + sysSt.all.mean + 'R)');
             if (brain.signals.length === 0 && brain.gen >= 2) {
                 // Sengaja TIDAK menurunkan minScore otomatis: lebih baik tanpa sinyal daripada sinyal berkualitas rendah.
                 qbJournal('GEN', '[INFO] Belum ada setup yang lolos ambang ' + brain.params.minScore + '/100. Engine tetap menunggu.');
@@ -3038,9 +3309,13 @@
         const side = sigObj && sigObj.side ? sigObj.side : 'LONG';
         const atrPct = sigObj && sigObj.volPct ? (sigObj.volPct / 100) : 0.0125;
         const atrMult = brain.learned.atrMult || 1.8;
-        const slDistPct = Math.max(0.003, atrPct * atrMult);
+        // Pakai level dari sinyal engine bila ada (identik dengan backtest); fallback ke perhitungan ATR.
+        const hasSigLevels = !!(sigObj && sigObj.slInit && sigObj.tp1 && sigObj.tp3 && sigObj.entry === entry);
+        const slDistPct = hasSigLevels ? Math.max(0.003, Math.abs(entry - sigObj.slInit) / entry) : Math.max(0.003, atrPct * atrMult);
 
-        const riskPct = (brain.params.riskPct || 1.0) / 100;
+        // Pengali risiko dari risk engine. Sinyal engine yang edge-nya belum terverifikasi (riskMult 0) memakai setengah risiko.
+        const riskMult = (sigObj && typeof sigObj.riskMult === 'number') ? (sigObj.riskMult > 0 ? sigObj.riskMult : 0.5) : 1;
+        const riskPct = ((brain.params.riskPct || 1.0) / 100) * riskMult;
         const modalUsd = Math.max(10, parseFloat(cfg.balanceUsd) || 1000);
         const riskUsd = modalUsd * riskPct;
         const lev = sigObj && sigObj.lev ? sigObj.lev : leverageFor(atrPct * 100);
@@ -3048,12 +3323,12 @@
         const marginUsd = Math.min(modalUsd * 0.35, Math.max(10, notionalUsd / lev));
         const marginPctOfModal = (marginUsd / modalUsd) * 100;
 
-        const sl = side === 'LONG' ? entry * (1 - slDistPct) : entry * (1 + slDistPct);
+        const sl = hasSigLevels ? sigObj.slInit : (side === 'LONG' ? entry * (1 - slDistPct) : entry * (1 + slDistPct));
         const riskPerUnit = Math.abs(entry - sl);
         const tp1Ratio = brain.learned.tp1Ratio || 0.8;
-        const tp1 = side === 'LONG' ? entry + tp1Ratio * riskPerUnit : entry - tp1Ratio * riskPerUnit;
-        const tp2 = side === 'LONG' ? entry + 1.6 * riskPerUnit : entry - 1.6 * riskPerUnit;
-        const tp3 = side === 'LONG' ? entry + 2.5 * riskPerUnit : entry - 2.5 * riskPerUnit;
+        const tp1 = hasSigLevels ? sigObj.tp1 : (side === 'LONG' ? entry + tp1Ratio * riskPerUnit : entry - tp1Ratio * riskPerUnit);
+        const tp2 = hasSigLevels && sigObj.tp2 ? sigObj.tp2 : (side === 'LONG' ? entry + QB_TP2_R * riskPerUnit : entry - QB_TP2_R * riskPerUnit);
+        const tp3 = hasSigLevels ? sigObj.tp3 : (side === 'LONG' ? entry + QB_TP3_R * riskPerUnit : entry - QB_TP3_R * riskPerUnit);
 
         const orderPayload = `symbol=${sym}&side=${side}&type=MARKET&marginUsd=${marginUsd.toFixed(2)}&leverage=${lev}&sl=${sl.toFixed(4)}&tp3=${tp3.toFixed(4)}&nonce=${nonce}&ts=${ts}`;
         const sigHash = await computeHmacSignature(cred.secret, orderPayload, ex.authType);
@@ -3231,13 +3506,16 @@
         const marketClass = opts.marketClass || 'MULTI';
 
         const champ = recomputeChampionStrategy();
-        // Proyeksi HANYA memakai ekspektansi yang terukur: out-of-sample, net fee+slippage, dan lolos koreksi
-        // multiple-testing. Tanpa itu ekspektansi = 0 (tidak ada lantai win rate / ekspektansi buatan).
-        const verified = !!champ.significant;
-        const winRate = Math.max(0, Math.min(100, champ.winRate || 0)) / 100;
-        const avgWinR = 1.65;
-        const avgLossR = 0.82;
-        const expR = verified ? Math.max(0, champ.expPerTrade || 0) : 0;
+        // Proyeksi memakai statistik SISTEM yang benar-benar ditradingkan (voting ensemble + filter aktif):
+        // out-of-sample, net fee+slippage, t-stat >= 2. Tanpa sistem terverifikasi ekspektansi = 0.
+        const sys = (brain.meta && brain.meta.status) || null;
+        const chosen = (sys && sys.chosen) ? sys.chosen : { n: 0, mean: 0, winRate: 0, t: 0 };
+        const verified = !!(sys && sys.significant);
+        const winRate = Math.max(0, Math.min(100, chosen.winRate || 0)) / 100;
+        const mAvg = qbMetaAvg(brain.meta || qbDefaultMeta());
+        const avgWinR = Math.max(0.01, mAvg.win);
+        const avgLossR = Math.max(0.01, mAvg.loss);
+        const expR = verified ? Math.max(0, chosen.mean || 0) : 0;
 
         const atrMult = brain.learned.atrMult || 1.8;
         const slDistancePct = atrPct * atrMult;
@@ -3337,6 +3615,8 @@
             expectedReturnPerTradePct,
             halfKellyPct,
             champ,
+            system: sys,
+            systemLabel: qbSystemLabel(sys),
             verified,
             rows
         };
@@ -3365,8 +3645,8 @@
         const badge = document.getElementById('ppActiveStratBadge');
         if (badge && plan.champ) {
             badge.textContent = plan.verified
-                ? `CHAMPION: ${plan.champ.name.toUpperCase()} (${plan.champ.winRate}% WIN, ${plan.champ.trades} TRADE OOS)`
-                : `BELUM TERVERIFIKASI: ${qbChampionLabel(plan.champ).toUpperCase()} (PROYEKSI = 0)`;
+                ? plan.systemLabel.toUpperCase()
+                : `BELUM TERVERIFIKASI: ${plan.systemLabel.toUpperCase()} (PROYEKSI = 0)`;
         }
 
         const bpGrid = document.getElementById('ppBlueprintGrid');
@@ -3690,7 +3970,7 @@
         set('qbHurstTelemetry', `${H.toFixed(2)} (${hDesc})`);
 
         const champ = brain.champion || qbEmptyChampion();
-        set('qbChampionBannerLabel', champ.id ? `${qbChampionLabel(champ)} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R · ${champ.trades} trade · ${champ.winRate}% Win · t=${champ.tStat})` : champ.name);
+        set('qbChampionBannerLabel', (champ.id ? `${qbChampionLabel(champ)} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R · ${champ.trades} trade · ${champ.winRate}% Win · t=${champ.tStat})` : champ.name) + ' | ' + qbSystemLabel());
         set('pfStripChampionName', champ.id ? `${qbChampionLabel(champ)} (${champ.netR >= 0 ? '+' : ''}${champ.netR}R)` : champ.name);
         set('qbMmModeLabel', brain.stats.defensiveMode ? `DEFENSIVE MODE (${brain.params.riskPct}%/trade)` : `STRICT ELDER ${brain.params.riskPct}% + HALF-KELLY`);
 
@@ -4344,6 +4624,6 @@
             getConfig: () => adminConfig
         },
         cloud: { syncGithub: qbGithubSyncAll, loadGithub: qbGithubLoad, syncFirebase: qbFirebaseSyncAll, loadFirebase: qbFirebaseLoad, projectId: QB_FIREBASE_PROJECT_ID, senderId: QB_FIREBASE_SENDER_ID },
-        _dbg: { QB_EVAL, buildIndicators, detectRegime, computeMomentumBurst, computeVpinAndObi, aggEma, backtestStrategy, qbFetchBinanceDeep, qbWhaleCycle, computeHmacSignature, kalmanSeries, computeHurstExponent, qbStepPosition, qbOpenPosition, qbCostR, runLeg, recomputeChampionStrategy, qbPostMortem, qbRelaxLearnedParams, qbEvaluateOpenSignals }
+        _dbg: { QB_EVAL, buildIndicators, detectRegime, computeMomentumBurst, computeVpinAndObi, aggEma, backtestStrategy, qbFetchBinanceDeep, qbWhaleCycle, computeHmacSignature, kalmanSeries, computeHurstExponent, qbStepPosition, qbOpenPosition, qbCostR, runLeg, recomputeChampionStrategy, qbPostMortem, qbRelaxLearnedParams, qbEvaluateOpenSignals, qbEnsembleVotes, masterScore, qbMetaFeatures, qbMetaPredict, qbMetaEV, qbMetaTrain, qbEnsembleBacktest, qbMetaIngest, qbComputeSystemStatus, qbRiskGate, qbRiskMultiplier, qbDefaultMeta, QB_META_NF, qbScanSymbols, qbOptimizeBatch, QB_META_FEATURES, QB_BY_SYM, qbFetchBinanceDeep }
     };
     })();
