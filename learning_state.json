@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1794955677957,
+  "updatedAt": 1794956585851,
   "brain": {
     "v": 1,
-    "gen": 2,
-    "cycles": 17,
+    "gen": 3,
+    "cycles": 18,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1794951175975,
+    "lastOptAt": 1794956583727,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,16 +35,16 @@
       "volConfirmMult": 1.2
     },
     "weights": {
-      "elder": 0.59,
-      "donchian": 0.61,
-      "bbrev": 0.85,
-      "wyckoff": 0.87,
-      "rsidiv": 0.68,
-      "macdm": 0.59,
+      "elder": 0.57,
+      "donchian": 0.59,
+      "bbrev": 0.82,
+      "wyckoff": 0.84,
+      "rsidiv": 0.67,
+      "macdm": 0.56,
       "smc": 0.72,
-      "statarb": 0.64,
+      "statarb": 0.62,
       "tsmom": 1,
-      "emax": 0.72
+      "emax": 0.67
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3743,6 +3743,26 @@
     ],
     "journal": [
       {
+        "t": 1794956585831,
+        "type": "CYCLE",
+        "text": "[CYCLE #18] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794956583727,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (72 trade OOS, -0.065R/trade, win 59.7%, t=-0.55) | Meta-model belum aktif (1200 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.283R)"
+      },
+      {
+        "t": 1794956583727,
+        "type": "GEN",
+        "text": "[GEN #3] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-43.42R, 308 trade, Win 57.1%, t=-2.44 vs hurdle 2.15)"
+      },
+      {
+        "t": 1794956583342,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794955677940,
         "type": "CYCLE",
         "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4266,9 +4286,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 310,
+      "newsIngested": 330,
       "lessons": 1,
-      "backtests": 510,
+      "backtests": 540,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4281,7 +4301,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794955674901,
+      "fetchedAt": 1794956583342,
       "items": [
         {
           "source": "CoinDesk",
@@ -4355,6 +4375,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-17 22:37:51",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "CFTC halts some Kalshi Trump mention markets over manipulation concerns",
           "link": "https://cointelegraph.com/news/cftc-kalshi-trump-mention-markets-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 22:20:04",
@@ -4397,13 +4424,6 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 14:54:40",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
           "title": "Solana Foundation takes majority interest in crypto data firm CoinGecko",
           "link": "https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 14:45:49",
@@ -4425,108 +4445,43 @@
         },
         {
           "source": "Decrypt",
-          "title": "Nvidia Shares Rise After Earnings Beat in First Report Since Jensen Huang&#39;s Exit",
-          "link": "https://decrypt.co/383505/nvidia-shares-rise-earnings-beat-first-report-jensen-huang-exit",
-          "pubDate": "2026-11-17 22:18:18",
-          "summary": "The chipmaker doubled quarterly revenue, forecast another record and rallied after hours, but its first report without Jensen Huang leaves leadership questions and a deeply bruised stock chart unresolved."
-        },
-        {
-          "source": "Decrypt",
-          "title": "OpenAI&#39;s GPT 6.2 Astra Challenges Anthropic on Price, But Not Every Benchmark",
-          "link": "https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark",
-          "pubDate": "2026-11-17 21:46:02",
-          "summary": "OpenAI&#39;s latest models promise better professional work for less money, as the company battles Anthropic and Google for AI supremacy and faces tougher questions about increasingly capable systems and safety."
-        },
-        {
-          "source": "Decrypt",
-          "title": "World Bank Taps Circle and Citi to Test Stablecoins for Development Payments",
-          "link": "https://decrypt.co/383485/world-bank-circle-citi-test-stablecoins-development-payments",
-          "pubDate": "2026-11-17 20:56:03",
-          "summary": "The institution will test whether Circle’s USDC and blockchain rails can speed up and cut the cost of disbursing development funds."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Investors Are Capitulating—That’s Historically Been a Bottom Signal",
-          "link": "https://decrypt.co/383466/bitcoin-investors-capitulating-historical-bottom-signal",
-          "pubDate": "2026-11-17 20:36:03",
-          "summary": "Glassnode says Bitcoin’s realized losses have reached levels seen only near the 2018, 2020, 2022 and early 2023 lows, as buyers defend the $62,000 to $66,000 range."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Cathie Wood&#39;s ARK Sells $85 Million in Nvidia, Buys $40 Million in Crypto Stocks",
-          "link": "https://decrypt.co/383463/cathie-wood-ark-sells-85-million-nvidia-buys-crypto-stocks",
-          "pubDate": "2026-11-17 19:46:03",
-          "summary": "Cathie Wood&#39;s funds trimmed Nvidia ahead of earnings while buying Block, Circle and Coinbase during Monday&#39;s selloff."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Ethereum Devs Weigh a Scaling Upgrade That Could Break 15,000 Apps",
-          "link": "https://decrypt.co/383462/ethereum-devs-scaling-upgrade-could-break-15000-apps",
-          "pubDate": "2026-11-17 19:26:02",
-          "summary": "Developers warned on a core dev call that two scaling changes in the Glamsterdam upgrade break assumptions some contracts rely on—pitting a 3.3x capacity boost against the risk of disrupting thousands of apps."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Jensen Huang Says He&#39;d Be &#39;Honored&#39; to Return as Nvidia CEO, Despite Board&#39;s Resistance",
-          "link": "https://decrypt.co/383454/jensen-huang-honored-return-nvidia-ceo-board-resistance",
-          "pubDate": "2026-11-17 18:23:43",
-          "summary": "The ousted Nvidia founder apologized for his conduct, offered to return if directors ask, and addressed supporters as the chipmaker presses ahead with its search for new leadership this week."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence",
-          "link": "https://decrypt.co/383446/binance-hack-wallets-move-ethereum-after-two-weeks",
-          "pubDate": "2026-11-17 17:18:41",
-          "summary": "A wallet linked to October’s record Binance theft moved $63 million in ether, before analysts flagged a larger wave of transfers and reported Bitcoin swaps amid ongoing U.S. recovery efforts."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Former Robinhood Engineer Pleads Guilty to Crypto Insider Trading Scheme",
-          "link": "https://decrypt.co/383443/former-robinhood-engineer-pleads-guilty-crypto-insider-trading",
-          "pubDate": "2026-11-17 16:41:38",
-          "summary": "Huaisong Xiang admitted repeatedly trading perpetual futures on Hyperliquid using confidential Robinhood listing plans, pocketing $125,523."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Standard Life Chair Wants Tokenized Gilts to Open UK Government Bonds to Retail Savers",
-          "link": "https://decrypt.co/383434/standard-life-chair-wants-tokenized-gilts-to-open-uk-government-bonds-to-retail-savers",
-          "pubDate": "2026-11-17 15:30:37",
-          "summary": "Sir Nicholas Lyons told Solana&#39;s Breakpoint that tokenization should benefit ordinary investors, not just wholesale institutions."
+          "title": "[OFFLINE] Decrypt feed tidak terjangkau",
+          "link": "",
+          "pubDate": "",
+          "summary": "Periksa koneksi — engine tetap jalan dengan sumber lain.",
+          "offline": true
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.83,
+          "impact": -0.67,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence"
+          "critical": false,
+          "critHead": ""
         },
         "ETH": {
           "sentiment": "BULLISH",
-          "impact": 0.83,
+          "impact": 0.67,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence"
+          "critical": false,
+          "critHead": ""
         },
         "SOL": {
           "sentiment": "NEUTRAL",
           "impact": 0,
           "sources": [
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
-          "multiSourced": true,
+          "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
@@ -4603,20 +4558,11 @@
           "critHead": ""
         }
       },
-      "breaker": [
-        {
-          "coin": "BTC",
-          "head": "Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence"
-        },
-        {
-          "coin": "ETH",
-          "head": "Binance Hack Wallets Move $137 Million in Ethereum After Two Weeks of Silence"
-        }
-      ],
+      "breaker": [],
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1794955674901
+        "t": 1794956583342
       },
       "lastErrors": []
     },
@@ -5296,17 +5242,17 @@
             33
           ],
           [
-            0.491,
+            0.493,
             -1.197,
             88
           ],
           [
-            0.522,
+            0.532,
             -1.24,
             69
           ],
           [
-            0.549,
+            0.547,
             0.144,
             10
           ],
@@ -5316,27 +5262,27 @@
             40
           ],
           [
-            0.553,
+            0.552,
             -1.198,
             2
           ],
           [
-            0.567,
+            0.569,
             1.418,
             90
           ],
           [
-            0.545,
+            0.543,
             -1.247,
             10
           ],
           [
-            0.514,
+            0.523,
             -1.247,
             69
           ],
           [
-            0.498,
+            0.503,
             0.152,
             64
           ],
@@ -5346,7 +5292,7 @@
             15
           ],
           [
-            0.538,
+            0.537,
             -1.889,
             35
           ],
@@ -5361,64 +5307,64 @@
             10
           ],
           [
-            0.576,
+            0.577,
             1.495,
             35
           ],
           [
-            0.576,
+            0.577,
             -1.164,
             10
           ],
           [
-            0.506,
+            0.512,
             0.231,
             69
           ]
         ],
         "SPY": [
           [
-            0.53,
+            0.535,
             -0.08,
             96
           ],
           [
-            0.576,
+            0.575,
             1.168,
             2
           ],
           [
-            0.536,
+            0.535,
             -1.387,
             40
           ],
           [
-            0.573,
+            0.572,
             -1.695,
             10
           ],
           [
-            0.46,
+            0.463,
             -0.245,
             61
           ],
           [
-            0.552,
+            0.553,
             -1.546,
             46
           ],
           [
-            0.473,
+            0.476,
             -1.467,
             48
           ],
           [
-            0.545,
+            0.546,
             -0.207,
             41
           ],
           [
-            0.485,
+            0.49,
             -0.017,
             56
           ],
@@ -5428,74 +5374,74 @@
             35
           ],
           [
-            0.575,
+            0.574,
             -1.407,
             10
           ],
           [
-            0.557,
+            0.556,
             1.352,
             2
           ],
           [
-            0.52,
+            0.525,
             -1.322,
             48
           ]
         ],
         "QQQ": [
           [
-            0.536,
+            0.538,
             0.065,
             95
           ],
           [
-            0.529,
+            0.532,
             0.082,
             95
           ],
           [
-            0.539,
+            0.538,
             -1.716,
             10
           ],
           [
-            0.491,
+            0.493,
             1.184,
             48
           ],
           [
-            0.487,
+            0.493,
             1.606,
             69
           ],
           [
-            0.485,
+            0.489,
             -1.337,
             61
           ],
           [
-            0.546,
+            0.547,
             -1.24,
             41
           ],
           [
-            0.588,
+            0.587,
             0.656,
             10
           ],
           [
-            0.468,
+            0.471,
             1.359,
             96
           ],
           [
-            0.5,
+            0.507,
             0.246,
             56
           ],
           [
-            0.537,
+            0.542,
             -1.25,
             48
           ]
@@ -8692,7 +8638,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794955675807
+        "updatedAt": 1794956583727
       }
     },
     "champion": {
@@ -8708,8 +8654,8 @@
       "deflatedT": -4.58,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794955677943,
-      "gen": 2
+      "updatedAt": 1794956585835,
+      "gen": 3
     },
     "factory": {
       "updatedAt": 1794945253931,
