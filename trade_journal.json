@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1794942520775,
+  "updatedAt": 1794944031464,
   "closedTrades": [
     {
       "id": "sig_AAPL_1794887289010",
@@ -109,10 +109,20 @@
       "mae": -0.8797791346123942,
       "risk": 3.569059559752759,
       "slInit": 349.240937998841,
-      "lastBarT": 1794940200000
+      "lastBarT": 1794943800000
     }
   ],
   "recentJournal": [
+    {
+      "t": 1794944031461,
+      "type": "CYCLE",
+      "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+    },
+    {
+      "t": 1794944030910,
+      "type": "NEWS",
+      "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+    },
     {
       "t": 1794942520772,
       "type": "CYCLE",
@@ -402,16 +412,6 @@
       "t": 1794478362255,
       "type": "CYCLE",
       "text": "[CYCLE #3] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-    },
-    {
-      "t": 1794478360247,
-      "type": "NEWS",
-      "text": "[MACRO] Fear & Greed: 28 (Fear) — makro sentiment riil."
-    },
-    {
-      "t": 1794450813762,
-      "type": "CYCLE",
-      "text": "[CYCLE #2] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
     }
   ]
 }

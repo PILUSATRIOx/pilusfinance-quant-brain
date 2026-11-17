@@ -1,5 +1,5 @@
 {
-  "updatedAt": 1794942520775,
+  "updatedAt": 1794944031464,
   "gen": 4,
   "champion": {
     "id": "wyckoff",
@@ -14,7 +14,7 @@
     "deflatedT": -2.74,
     "hurdle": 2.15,
     "significant": false,
-    "updatedAt": 1794942520774,
+    "updatedAt": 1794944031463,
     "gen": 4
   },
   "weights": {

@@ -1,15 +1,49 @@
 {
+<<<<<<< Updated upstream
   "updatedAt": 1794944031465,
+=======
+  "updatedAt": 1794944031464,
+  "gen": 4,
+  "cycles": 25,
+>>>>>>> Stashed changes
   "totalSignals": 2,
   "closed": 1,
   "wins": 0,
   "losses": 1,
   "winRatePct": 0,
   "netR": -1,
+<<<<<<< Updated upstream
   "backtestOOS": {
     "trades": 0,
     "netR": 0,
     "winRatePct": null
   },
   "proof": "Accuracy computed only from real tracked signals vs real prices."
+=======
+  "championStrategy": {
+    "id": "wyckoff",
+    "name": "Wyckoff Spring & Upthrust",
+    "book": "Richard D. Wyckoff",
+    "netR": -3.49,
+    "trades": 33,
+    "winRate": 66.7,
+    "pf": 0.76,
+    "expPerTrade": -0.106,
+    "tStat": -0.59,
+    "deflatedT": -2.74,
+    "hurdle": 2.15,
+    "significant": false,
+    "updatedAt": 1794944031463,
+    "gen": 4
+  },
+  "learnedParameters": {
+    "atrMult": 1.88,
+    "rsiLongMax": 61,
+    "rsiShortMin": 38,
+    "tp1Ratio": 0.8,
+    "volConfirmMult": 1.2
+  },
+  "hurstExponent": 0.5,
+  "proof": "Verified 24/7 autonomous evaluation against real OHLCV market prices with strict 1.0% risk money management."
+>>>>>>> Stashed changes
 }
