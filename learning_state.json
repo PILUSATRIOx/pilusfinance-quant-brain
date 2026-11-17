@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794948479765,
+  "updatedAt": 1794949378245,
   "brain": {
     "v": 1,
     "gen": 1,
-    "cycles": 9,
+    "cycles": 10,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1794946622768,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.38,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -196,15 +196,15 @@
           "wins": 42,
           "losses": 35,
           "winRate": 54.54545454545454,
-          "pf": 0.7417172472200148,
-          "exp": -0.13172492453398923,
-          "netR": -10.142819189117171,
-          "maxDD": 14.389472234319229,
-          "sumR2": 74.96250343401593,
-          "grossW": 29.127395643064105,
+          "pf": 0.7425372030429119,
+          "exp": -0.13130674477661172,
+          "netR": -10.110619347799103,
+          "maxDD": 14.389472234319225,
+          "sumR2": 74.9816034263499,
+          "grossW": 29.159595484382173,
           "grossL": 39.270214832181296,
-          "sd": 0.9842606184457741,
-          "tStat": -1.1743653053425012,
+          "sd": 0.9844448803908875,
+          "tStat": -1.1704180012411185,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 94,
-          "wins": 52,
+          "trades": 95,
+          "wins": 53,
           "losses": 42,
-          "winRate": 55.319148936170215,
-          "pf": 0.7188201941219141,
-          "exp": -0.13928484690133608,
-          "netR": -13.092775608725592,
-          "maxDD": 15.464976815975723,
-          "sumR2": 85.04804160219494,
-          "grossW": 33.47093677395658,
-          "grossL": 46.56371238268218,
-          "sd": 0.945984247953717,
-          "tStat": -1.4275255602352466,
+          "winRate": 55.78947368421052,
+          "pf": 0.721923887192795,
+          "exp": -0.13654634417706815,
+          "netR": -12.971902696821475,
+          "maxDD": 15.464976815975724,
+          "sumR2": 85.28806884647663,
+          "grossW": 33.6768459708324,
+          "grossL": 46.64874866765388,
+          "sd": 0.9425903814455515,
+          "tStat": -1.4119485636892897,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3743,6 +3743,16 @@
     ],
     "journal": [
       {
+        "t": 1794949378227,
+        "type": "CYCLE",
+        "text": "[CYCLE #10] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794949375062,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794948479750,
         "type": "CYCLE",
         "text": "[CYCLE #9] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4176,9 +4186,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 70,
+      "newsIngested": 100,
       "lessons": 1,
-      "backtests": 270,
+      "backtests": 300,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4191,8 +4201,43 @@
       }
     },
     "news": {
-      "fetchedAt": 1794948474914,
+      "fetchedAt": 1794949375062,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Coinbase CEO says AI agents will account for &#39;99.9%&#39; of transactions within a decade",
+          "link": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
+          "pubDate": "2026-11-17 19:45:57",
+          "summary": "Brian Armstrong says Coinbase is building payment tools for AI agents and believes bitcoin has hit bottom despite the selloff."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
+          "link": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
+          "pubDate": "2026-11-17 19:16:00",
+          "summary": "The company confirmed that the Commodity Futures Trading Commission ordered it to stop &quot;mention&quot; contracts involving the U.S. president."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Druckenmiller says he is short copper, warns of economic weakness in 2027",
+          "link": "https://www.coindesk.com/business/2026/11/17/druckenmiller-says-he-is-short-copper-warns-of-economic-weakness-in-2027",
+          "pubDate": "2026-11-17 17:42:40",
+          "summary": "The billionaire investor is prioritizing capital preservation and shifting his AI focus from infrastructure to applications."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "U.S. Fed Governor Waller pitches keeping central bank at the center of tokenization",
+          "link": "https://www.coindesk.com/policy/2026/11/17/u-s-fed-governor-waller-pitches-keeping-central-bank-at-the-center-of-tokenization",
+          "pubDate": "2026-11-17 17:00:05",
+          "summary": "Waller suggested the Federal Reserve could provide trusted rails for emerging innovation tied to tokenized assets and agentic AI."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Hong Kong, Swift test tokenized deposits as banks chase stablecoin-style speed",
+          "link": "https://www.coindesk.com/business/2026/11/17/hong-kong-swift-test-tokenized-deposits-as-banks-chase-stablecoin-style-speed",
+          "pubDate": "2026-11-17 15:11:00",
+          "summary": "Hong Kong and Swift expanded their efforts to connect tokenized bank deposits across currencies, building on earlier work involving digital central bank money."
+        },
         {
           "source": "CoinDesk",
           "title": "Ethereum&#39;s Glamsterdam upgrade risks breaking up to 15,000 automated apps",
@@ -4227,41 +4272,6 @@
           "link": "https://www.coindesk.com/markets/2026/11/17/bitcoin-remains-penned-in-near-usd64-000-even-as-etf-outflow-streak-ends",
           "pubDate": "2026-11-17 11:36:07",
           "summary": "Bitcoin (BTC) is down a further 1.0% since midnight UTC at around $64,200, with its bounce from the weekend selloff stalled and pressure building on all fronts."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Solana Foundation takes majority stake in crypto data provider CoinGecko",
-          "link": "https://www.coindesk.com/business/2026/11/17/solana-foundation-takes-majority-stake-in-crypto-data-provider-coingecko",
-          "pubDate": "2026-11-17 11:29:51",
-          "summary": "The foundation plans Solana-powered trading on CoinGecko&#39;s website, GeckoTerminal and app."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "New DeFi-yield generation targets ‘scam-like’ bank accounts that keep all the interest",
-          "link": "https://www.coindesk.com/business/2026/11/16/new-defi-yield-generation-targets-scam-like-bank-accounts-that-keep-all-the-interest",
-          "pubDate": "2026-11-17 11:25:58",
-          "summary": "Crypto native firms like Animoca Brands are betting AI-based agentic commerce to style every area of finance with the so-called “DeFi mullet”"
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Fed Governor Michael Barr warns AI agents could trigger bank runs in minutes",
-          "link": "https://www.coindesk.com/business/2026/11/17/fed-governor-michael-barr-warns-ai-agents-could-trigger-bank-runs-in-minutes",
-          "pubDate": "2026-11-17 10:48:12",
-          "summary": "In a speech at an AI event in Italy, Barr said automated financial decisions could overwhelm banks and raises concerns about AI systems bypassing security controls."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Live updates: Bitcoin holds near $65,000 as tech flattens out ahead of Nvidia earnings",
-          "link": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings",
-          "pubDate": "2026-11-17 10:33:26",
-          "summary": "The Nasdaq and S&amp;amp;P 500 were little changed in early trading on Tuesday following Monday&#39;s rout."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Hackers plant crypto-stealing code on 178 major websites, including HSBC and Ledger",
-          "link": "https://www.coindesk.com/tech/2026/11/17/hackers-planted-crypto-stealing-code-on-178-organizations-sites-including-hsbc-bbc-and-ledger",
-          "pubDate": "2026-11-17 10:22:18",
-          "summary": "An Optimizely signup flaw let an attacker plant address-swapping code on websites including HSBC, the BBC and Ledger. The total stolen remains unknown, and investigators have not linked the attack to AI."
         },
         {
           "source": "CoinTelegraph",
@@ -4335,6 +4345,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "World Bank Taps Circle and Citi to Test Stablecoins for Development Payments",
+          "link": "https://decrypt.co/383485/world-bank-circle-citi-test-stablecoins-development-payments",
+          "pubDate": "2026-11-17 20:56:03",
+          "summary": "The institution will test whether Circle’s USDC and blockchain rails can speed up and cut the cost of disbursing development funds."
+        },
+        {
+          "source": "Decrypt",
           "title": "Bitcoin Investors Are Capitulating—That’s Historically Been a Bottom Signal",
           "link": "https://decrypt.co/383466/bitcoin-investors-capitulating-historical-bottom-signal",
           "pubDate": "2026-11-17 20:36:03",
@@ -4395,13 +4412,6 @@
           "link": "https://decrypt.co/383417/the-biggest-opportunity-in-crypto-is-already-underway-solana-bets-big-on-ai-agents",
           "pubDate": "2026-11-17 12:50:55",
           "summary": "The Solana Foundation&#39;s head of AI said agents now account for three-quarters of AI token use, and need blockchains to pay for things."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Optimizely Hack Hijacked Ledger, BBC and 176 Other Sites to Swap Crypto Wallet Addresses",
-          "link": "https://decrypt.co/383414/optimizely-hack-hijacked-ledger-bbc-and-176-other-sites-to-swap-crypto-wallet-addresses",
-          "pubDate": "2026-11-17 11:05:25",
-          "summary": "Malicious code served through the website testing platform replaced visitors&#39; wallet addresses with the attacker&#39;s and skimmed cards."
         }
       ],
       "perCoin": {
@@ -4433,7 +4443,6 @@
           "sentiment": "NEUTRAL",
           "impact": 0,
           "sources": [
-            "CoinDesk",
             "CoinTelegraph",
             "Decrypt"
           ],
@@ -4527,7 +4536,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1794948474913
+        "t": 1794949375062
       },
       "lastErrors": []
     },
@@ -4737,247 +4746,242 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.5,
-            -1.119,
-            10
-          ],
-          [
-            0.5,
+            0.631,
             0.998,
             10
           ],
           [
-            0.5,
+            0.567,
             -1.081,
             35
           ],
           [
-            0.5,
+            0.62,
             -1.075,
             35
           ],
           [
-            0.5,
+            0.531,
             -1.072,
             56
           ],
           [
-            0.5,
+            0.625,
             0.334,
             10
           ],
           [
-            0.5,
+            0.549,
             -1.087,
             56
           ],
           [
-            0.5,
+            0.513,
             0.452,
             61
           ],
           [
-            0.5,
+            0.561,
             0.317,
             35
           ],
           [
-            0.5,
+            0.592,
             0.315,
             35
           ],
           [
-            0.5,
+            0.576,
             -1.077,
             94
           ],
           [
-            0.5,
+            0.583,
             0.286,
             2
           ],
           [
-            0.5,
+            0.6,
             -1.127,
             35
           ],
           [
-            0.5,
+            0.643,
             -1.119,
             10
           ],
           [
-            0.5,
+            0.531,
             -1.124,
             69
           ],
           [
-            0.5,
+            0.606,
             0.579,
             35
           ],
           [
-            0.5,
+            0.584,
             -1.132,
             35
           ],
           [
-            0.5,
+            0.617,
             -1.113,
             10
           ],
           [
-            0.5,
+            0.604,
             0.304,
             10
           ],
           [
-            0.5,
+            0.539,
             0.399,
             61
           ],
           [
-            0.5,
+            0.602,
             0.503,
             34
           ],
           [
-            0.5,
+            0.526,
             0.993,
             94
           ],
           [
-            0.5,
+            0.63,
             1.516,
             10
           ],
           [
-            0.5,
+            0.568,
             -1.105,
             27
           ],
           [
-            0.5,
+            0.577,
             1.51,
             35
           ],
           [
-            0.5,
+            0.608,
             0.317,
             10
           ],
           [
-            0.5,
+            0.655,
             0.276,
             2
           ],
           [
-            0.5,
+            0.607,
             -1.127,
             16
           ],
           [
-            0.5,
+            0.502,
             -1.156,
             61
           ],
           [
-            0.5,
+            0.631,
             0.259,
             10
           ],
           [
-            0.5,
+            0.604,
             -1.164,
             10
           ],
           [
-            0.5,
+            0.552,
             0.447,
             10
           ],
           [
-            0.5,
+            0.516,
             0.163,
             90
           ],
           [
-            0.5,
+            0.566,
             -1.193,
             35
           ],
           [
-            0.5,
+            0.617,
             -1.153,
             41
           ],
           [
-            0.5,
+            0.627,
             0.842,
             10
           ],
           [
-            0.5,
+            0.625,
             0.917,
             15
           ],
           [
-            0.5,
+            0.57,
             0.172,
             69
           ],
           [
-            0.5,
+            0.592,
             0.184,
             10
           ],
           [
-            0.5,
+            0.563,
             -1.142,
             56
           ],
           [
-            0.5,
+            0.543,
             -1.127,
             61
           ],
           [
-            0.5,
+            0.571,
             0.735,
             2
           ],
           [
-            0.5,
+            0.57,
             -1.132,
             41
           ],
           [
-            0.5,
+            0.602,
             0.616,
             10
           ],
           [
-            0.5,
+            0.639,
             -1.127,
             35
           ],
           [
-            0.5,
+            0.569,
             -1.118,
             69
           ],
           [
-            0.5,
+            0.598,
             0.509,
             41
           ],
           [
-            0.5,
+            0.52,
             1.541,
             90
           ],
           [
-            0.5,
+            0.573,
             -1.109,
             46
           ]
@@ -8572,12 +8576,12 @@
       },
       "status": {
         "all": {
-          "n": 760,
-          "mean": -0.284,
+          "n": 759,
+          "mean": -0.283,
           "sd": 0.949,
-          "t": -8.26,
+          "t": -8.22,
           "winRate": 52,
-          "sum": -216.07
+          "sum": -214.95
         },
         "base": {
           "n": 72,
@@ -8608,7 +8612,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1199,
-        "updatedAt": 1794948477545
+        "updatedAt": 1794949376127
       }
     },
     "champion": {
@@ -8624,7 +8628,7 @@
       "deflatedT": -4.58,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794948479753,
+      "updatedAt": 1794949378230,
       "gen": 1
     },
     "factory": {
