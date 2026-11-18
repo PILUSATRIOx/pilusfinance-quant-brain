@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794970112052,
+  "updatedAt": 1794970234782,
   "brain": {
     "v": 1,
     "gen": 4,
-    "cycles": 24,
+    "cycles": 25,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1794969662514,
     "autoExecBursa": false,
@@ -371,23 +371,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 94,
-          "wins": 52,
-          "losses": 42,
-          "winRate": 55.319148936170215,
-          "pf": 0.5322325220874627,
-          "exp": -0.2487190099101109,
-          "netR": -23.379586931550424,
-          "maxDD": 26.323021436273365,
-          "sumR2": 83.85698872636353,
-          "grossW": 26.60162817105642,
-          "grossL": 49.98121510260684,
-          "sd": 0.9160577117838808,
-          "tStat": -2.6323890274333106,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 82,
@@ -685,23 +675,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 68,
-          "wins": 33,
-          "losses": 35,
-          "winRate": 48.529411764705884,
-          "pf": 0.44886249537743167,
-          "exp": -0.3383841601347606,
-          "netR": -23.010122889163718,
-          "maxDD": 27.412104354724356,
-          "sumR2": 67.2160578362861,
-          "grossW": 18.740116744630708,
-          "grossL": 41.75023963379441,
-          "sd": 0.9418130873269285,
-          "tStat": -2.9627824311327067,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 68,
@@ -999,23 +979,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 54,
-          "wins": 32,
-          "losses": 22,
-          "winRate": 59.25925925925925,
-          "pf": 0.6910214735118462,
-          "exp": -0.14530415755772413,
-          "netR": -7.846424508117103,
-          "maxDD": 11.875835515323342,
-          "sumR2": 46.41124990437034,
-          "grossW": 17.548299835025663,
-          "grossL": 25.394724343142762,
-          "sd": 0.9242144221657708,
-          "tStat": -1.155319701744137,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 51,
@@ -1313,23 +1283,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 45,
-          "wins": 28,
-          "losses": 17,
-          "winRate": 62.22222222222222,
-          "pf": 0.8672140805778711,
-          "exp": -0.05940460508582862,
-          "netR": -2.673207228862288,
-          "maxDD": 7.201590203269786,
-          "sumR2": 42.168589364797924,
-          "grossW": 17.458499811280355,
-          "grossL": 20.13170704014264,
-          "sd": 0.97712226536832,
-          "tStat": -0.4078283952470536,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 58,
@@ -1627,23 +1587,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 25,
-          "wins": 10,
-          "losses": 15,
-          "winRate": 40,
-          "pf": 0.3653950547888421,
-          "exp": -0.4477925601116317,
-          "netR": -11.194814002790793,
-          "maxDD": 11.87347874478935,
-          "sumR2": 26.928684264178298,
-          "grossW": 6.445789158701809,
-          "grossL": 17.640603161492596,
-          "sd": 0.955591654462805,
-          "tStat": -2.3430120910974397,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 18,
@@ -1941,23 +1891,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 41,
-          "wins": 24,
-          "losses": 17,
-          "winRate": 58.536585365853654,
-          "pf": 0.7004876970962968,
-          "exp": -0.14525210668014918,
-          "netR": -5.955336373886116,
-          "maxDD": 10.308104106084139,
-          "sumR2": 38.96125287153632,
-          "grossW": 13.928108533553377,
-          "grossL": 19.88344490743949,
-          "sd": 0.9759127486261315,
-          "tStat": -0.9530229891259984,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 45,
@@ -2255,23 +2195,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 22,
-          "wins": 14,
-          "losses": 8,
-          "winRate": 63.63636363636363,
-          "pf": 0.9416940209374294,
-          "exp": -0.025497896557317743,
-          "netR": -0.5609537242609903,
-          "maxDD": 4.016102675653205,
-          "sumR2": 20.573450380293966,
-          "grossW": 9.059907348305886,
-          "grossL": 9.620861072566871,
-          "sd": 0.9894478315913982,
-          "tStat": -0.12087118899683325,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 31,
@@ -2569,23 +2499,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 107,
-          "wins": 58,
-          "losses": 49,
-          "winRate": 54.20560747663551,
-          "pf": 0.5193603349916344,
-          "exp": -0.2598701121954531,
-          "netR": -27.80610200491348,
-          "maxDD": 28.806490855279687,
-          "sumR2": 95.25199531196952,
-          "grossW": 30.046181169488083,
-          "grossL": 57.85228317440155,
-          "sd": 0.9112816004523335,
-          "tStat": -2.9498207154553127,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 100,
@@ -2883,23 +2803,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 0,
@@ -3197,23 +3107,13 @@
           "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 26,
-          "wins": 12,
-          "losses": 14,
-          "winRate": 46.15384615384615,
-          "pf": 0.23911242549162132,
-          "exp": -0.4888265466557832,
-          "netR": -12.709490213050362,
-          "maxDD": 12.709490213050362,
-          "sumR2": 22.00473056153226,
-          "grossW": 3.9940158486199997,
-          "grossL": 16.703506061670364,
-          "sd": 0.7947828470955164,
-          "tStat": -3.136122161253011,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 28,
@@ -3504,6 +3404,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794970234754,
+        "type": "CYCLE",
+        "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
       {
         "t": 1794969781011,
         "type": "CYCLE",
@@ -8572,23 +8477,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794969662515
+        "updatedAt": 1794970118227
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -43.45,
-      "trades": 306,
-      "winRate": 56.9,
-      "pf": 0.73,
-      "expPerTrade": -0.142,
-      "tStat": -2.46,
-      "deflatedT": -4.61,
+      "netR": -15.16,
+      "trades": 233,
+      "winRate": 59.7,
+      "pf": 0.86,
+      "expPerTrade": -0.065,
+      "tStat": -0.99,
+      "deflatedT": -3.13,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794970074824,
+      "updatedAt": 1794970234759,
       "gen": 4
     },
     "factory": {
