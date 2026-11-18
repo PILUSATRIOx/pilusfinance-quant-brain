@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1794972039537,
+  "updatedAt": 1794972810230,
   "brain": {
     "v": 1,
     "gen": 4,
@@ -192,42 +192,22 @@
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 77,
-          "wins": 42,
-          "losses": 35,
-          "winRate": 54.54545454545454,
-          "pf": 0.7332950607369104,
-          "exp": -0.13602026313851132,
-          "netR": -10.473560261665371,
-          "maxDD": 14.389472234319227,
-          "sumR2": 73.83711015951002,
-          "grossW": 28.796654570515905,
-          "grossL": 39.270214832181296,
-          "sd": 0.9761126831570299,
-          "tStat": -1.2227819447482058,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -436,42 +416,22 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 80,
-          "wins": 43,
-          "losses": 37,
-          "winRate": 53.75,
-          "pf": 0.5226046696356936,
-          "exp": -0.24647301861476198,
-          "netR": -19.71784148918096,
-          "maxDD": 21.252551013972916,
-          "sumR2": 65.14063646094517,
-          "grossW": 21.58512113957795,
-          "grossL": 41.302962628758905,
-          "sd": 0.8735256696578132,
-          "tStat": -2.5237056832368694,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -680,42 +640,22 @@
       },
       "bbrev": {
         "SUIUSDT": {
-          "trades": 47,
-          "wins": 30,
-          "losses": 17,
-          "winRate": 63.829787234042556,
-          "pf": 0.8488496393217936,
-          "exp": -0.06098189340484921,
-          "netR": -2.866148990027913,
-          "maxDD": 8.419675756233707,
-          "sumR2": 35.22237223036556,
-          "grossW": 16.09608819662254,
-          "grossL": 18.96223718665045,
-          "sd": 0.8728711872467241,
-          "tStat": -0.47896047454703017,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -924,42 +864,22 @@
       },
       "wyckoff": {
         "SUIUSDT": {
-          "trades": 37,
-          "wins": 24,
-          "losses": 13,
-          "winRate": 64.86486486486487,
-          "pf": 1.0255280072702662,
-          "exp": 0.010122897351533999,
-          "netR": 0.37454720200675795,
-          "maxDD": 4.5760095321948215,
-          "sumR2": 31.04119513785895,
-          "grossW": 15.046558144396588,
-          "grossL": 14.672010942389836,
-          "sd": 0.9285203826366222,
-          "tStat": 0.06631537859526303,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -1168,42 +1088,22 @@
       },
       "rsidiv": {
         "SUIUSDT": {
-          "trades": 18,
-          "wins": 10,
-          "losses": 8,
-          "winRate": 55.55555555555556,
-          "pf": 0.5095172551407996,
-          "exp": -0.2413622054889913,
-          "netR": -4.344519698801843,
-          "maxDD": 5.54888923819461,
-          "sumR2": 13.342170735438161,
-          "grossW": 4.513120543056196,
-          "grossL": 8.85764024185804,
-          "sd": 0.8503828853607125,
-          "tStat": -1.2041788833815459,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -1412,42 +1312,22 @@
       },
       "macdm": {
         "SUIUSDT": {
-          "trades": 38,
-          "wins": 19,
-          "losses": 19,
-          "winRate": 50,
-          "pf": 0.5087105717826941,
-          "exp": -0.27488670133332616,
-          "netR": -10.445694650666393,
-          "maxDD": 12.153345733786395,
-          "sumR2": 33.07175899594668,
-          "grossW": 10.816099417587148,
-          "grossL": 21.261794068253533,
-          "sd": 0.903452483835411,
-          "tStat": -1.8755999471443257,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -1656,42 +1536,22 @@
       },
       "smc": {
         "SUIUSDT": {
-          "trades": 26,
-          "wins": 19,
-          "losses": 7,
-          "winRate": 73.07692307692307,
-          "pf": 1.8207309834021554,
-          "exp": 0.2537214162594857,
-          "netR": 6.596756822746628,
-          "maxDD": 2.4645543768597817,
-          "sumR2": 25.425009804404507,
-          "grossW": 14.634417098957059,
-          "grossL": 8.037660276210431,
-          "sd": 0.9747055210804504,
-          "tStat": 1.3273039133803501,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -1900,42 +1760,22 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 96,
-          "wins": 54,
-          "losses": 42,
-          "winRate": 56.25,
-          "pf": 0.7330959340052101,
-          "exp": -0.1296952155517277,
-          "netR": -12.450740692965859,
-          "maxDD": 15.464976815975724,
-          "sumR2": 85.55967868073944,
-          "grossW": 34.19800797468802,
-          "grossL": 46.64874866765388,
-          "sd": 0.9400161095080208,
-          "tStat": -1.3518368332997153,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -2144,42 +1984,22 @@
       },
       "tsmom": {
         "SUIUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -2388,42 +2208,22 @@
       },
       "emax": {
         "SUIUSDT": {
-          "trades": 30,
-          "wins": 16,
-          "losses": 14,
-          "winRate": 53.333333333333336,
-          "pf": 0.7178215288311856,
-          "exp": -0.14918115389859007,
-          "netR": -4.475434616957703,
-          "maxDD": 9.024348087789637,
-          "sumR2": 30.253538183357172,
-          "grossW": 11.384863294573101,
-          "grossL": 15.860297911530804,
-          "sd": 1.010051000470661,
-          "tStat": -0.8089678947581119,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
-        },
-        "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
+        },
+        "EURUSDT": {
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "GBPUSDT": {
           "trades": 0,
@@ -2804,6 +2604,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794972788020,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1794972039518,
         "type": "CYCLE",
@@ -3448,7 +3253,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 540,
+      "newsIngested": 570,
       "lessons": 1,
       "backtests": 710,
       "netR": 0,
@@ -3463,7 +3268,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794971888532,
+      "fetchedAt": 1794972788020,
       "items": [
         {
           "source": "CoinDesk",
@@ -3796,7 +3601,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794971888532
+        "t": 1794972788020
       },
       "lastErrors": []
     },
@@ -7913,7 +7718,7 @@
       "deflatedT": -1.98,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794972039521,
+      "updatedAt": 1794972773731,
       "gen": 4
     },
     "factory": {
