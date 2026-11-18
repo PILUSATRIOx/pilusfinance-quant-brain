@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1794981936473,
+  "updatedAt": 1794982709494,
   "brain": {
     "v": 1,
     "gen": 6,
@@ -2605,6 +2605,11 @@
     ],
     "journal": [
       {
+        "t": 1794982686576,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794981936455,
         "type": "CYCLE",
         "text": "[CYCLE #38] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3378,7 +3383,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 870,
+      "newsIngested": 900,
       "lessons": 1,
       "backtests": 830,
       "netR": 0,
@@ -3393,7 +3398,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794981786957,
+      "fetchedAt": 1794982686576,
       "items": [
         {
           "source": "CoinDesk",
@@ -3467,6 +3472,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 06:00:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Ledger hardware implant saga reaches Dubai’s Virgin Megastore",
           "link": "https://cointelegraph.com/news/ledger-hardware-implant-saga-reaches-dubais-virgin-megastore?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-18 02:39:52",
@@ -3527,13 +3539,6 @@
           "link": "https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 14:45:49",
           "summary": "    Solana Foundation now holds a majority interest in CoinGecko, its product chief said, as the crypto data platform explores trading features. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin to $1M by 2030? ‘Almost certainly not,’ says Dragonfly’s Qureshi",
-          "link": "https://cointelegraph.com/magazine/bitcoin-to-1m-by-2030-almost-certainly-not-says-dragonflys-qureshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 13:30:00",
-          "summary": "    Dragonfly’s Haseeb Qureshi says Bitcoin could reach $400,000 by 2030 but doubts it will return to $100,000 by year-end with the rout in AI stocks weighing on crypto. "
         },
         {
           "source": "Decrypt",
@@ -3726,17 +3731,17 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794981786957
+        "t": 1794982686576
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794979988927,
+      "fetchedAt": 1794982687666,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.27,
-        "ARB": 10.9,
+        "BTC": -14.09,
+        "ARB": 10.77,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3753,35 +3758,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 953.92,
+          "pct": 933.08,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.27,
+          "pct": 14.09,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 10.9,
+          "pct": 10.77,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 38.95,
+          "pct": 38.46,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 194.32,
+          "pct": 191.91,
           "lev": 10
         },
         {
@@ -3795,63 +3800,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.18,
+          "pct": 22.89,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 204.81,
+          "pct": 202.27,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 33.91,
+          "pct": 33.49,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 105.55,
+          "pct": 104.24,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 53.89,
+          "pct": 53.22,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 95.11,
+          "pct": 97.01,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 265.92,
+          "pct": 271.25,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 83.16,
+          "pct": 84.83,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1229.12,
+          "pct": 1204.19,
           "lev": 10
         }
       ]
@@ -7843,7 +7848,7 @@
       "deflatedT": -3,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794981936458,
+      "updatedAt": 1794982672732,
       "gen": 6
     },
     "factory": {
