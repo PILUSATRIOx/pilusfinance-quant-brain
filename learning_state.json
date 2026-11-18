@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1794976538468,
+  "updatedAt": 1794977310915,
   "brain": {
     "v": 1,
     "gen": 5,
@@ -2605,6 +2605,11 @@
     ],
     "journal": [
       {
+        "t": 1794977288272,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794976538437,
         "type": "CYCLE",
         "text": "[CYCLE #32] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3308,7 +3313,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 690,
+      "newsIngested": 720,
       "lessons": 1,
       "backtests": 770,
       "netR": 0,
@@ -3323,7 +3328,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794976388364,
+      "fetchedAt": 1794977288272,
       "items": [
         {
           "source": "CoinDesk",
@@ -3656,17 +3661,17 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794976388364
+        "t": 1794977288272
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794974589099,
+      "fetchedAt": 1794977289289,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.55,
-        "ARB": 11.12,
+        "BTC": -14.36,
+        "ARB": 10.97,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3683,35 +3688,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 945.79,
+          "pct": 958.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.55,
+          "pct": 14.36,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.12,
+          "pct": 10.97,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 39.73,
+          "pct": 39.21,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 198.22,
+          "pct": 195.63,
           "lev": 10
         },
         {
@@ -3725,63 +3730,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.64,
+          "pct": 23.34,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 208.92,
+          "pct": 206.19,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 34.59,
+          "pct": 34.14,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 107.67,
+          "pct": 106.26,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 54.97,
+          "pct": 54.25,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 96.36,
+          "pct": 98.39,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 269.42,
+          "pct": 275.09,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 84.25,
+          "pct": 86.03,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1200.36,
+          "pct": 1217.62,
           "lev": 10
         }
       ]
@@ -7773,7 +7778,7 @@
       "deflatedT": -3,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794976538446,
+      "updatedAt": 1794977273753,
       "gen": 5
     },
     "factory": {
