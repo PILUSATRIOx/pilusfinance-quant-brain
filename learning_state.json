@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1794971139071,
+  "updatedAt": 1794971910710,
   "brain": {
     "v": 1,
     "gen": 4,
@@ -407,23 +407,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 81,
-          "wins": 48,
-          "losses": 33,
-          "winRate": 59.25925925925925,
-          "pf": 0.7066505974589326,
-          "exp": -0.1347702592303417,
-          "netR": -10.916390997657677,
-          "maxDD": 15.211434033209533,
-          "sumR2": 64.6439977583373,
-          "grossW": 26.296539736467242,
-          "grossL": 37.21293073412491,
-          "sd": 0.888628106364828,
-          "tStat": -1.3649493240033794,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 83,
@@ -681,23 +671,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 66,
-          "wins": 33,
-          "losses": 33,
-          "winRate": 50,
-          "pf": 0.5007893128322035,
-          "exp": -0.2833210957905889,
-          "netR": -18.699192322178867,
-          "maxDD": 19.729127036203067,
-          "sumR2": 61.312681884709825,
-          "grossW": 18.75832371832535,
-          "grossL": 37.457516040504224,
-          "sd": 0.9283136590746035,
-          "tStat": -2.47945448237912,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 77,
@@ -955,23 +935,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 47,
-          "wins": 25,
-          "losses": 22,
-          "winRate": 53.191489361702125,
-          "pf": 0.6871797416322797,
-          "exp": -0.165625381391806,
-          "netR": -7.784392925414881,
-          "maxDD": 8.064725323839417,
-          "sumR2": 46.118090746405,
-          "grossW": 17.100162077619245,
-          "grossL": 24.88455500303413,
-          "sd": 0.9871874596134375,
-          "tStat": -1.1502074877719164,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 47,
@@ -1229,23 +1199,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 50,
-          "wins": 35,
-          "losses": 15,
-          "winRate": 70,
-          "pf": 1.5657223919483672,
-          "exp": 0.1916691780707372,
-          "netR": 9.58345890353686,
-          "maxDD": 5.19910645233515,
-          "sumR2": 47.53955509077534,
-          "grossW": 26.52367382154831,
-          "grossL": 16.940214918011456,
-          "sd": 0.9657681874185909,
-          "tStat": 1.403344791471449,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 46,
@@ -1503,23 +1463,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 15,
-          "wins": 9,
-          "losses": 6,
-          "winRate": 60,
-          "pf": 1.2597344713151433,
-          "exp": 0.11533323616880374,
-          "netR": 1.729998542532056,
-          "maxDD": 3.358601199354734,
-          "sumR2": 18.321271783079386,
-          "grossW": 8.390641366614505,
-          "grossL": 6.660642824082448,
-          "sd": 1.1377215781866672,
-          "tStat": 0.39261249106123214,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 25,
@@ -1777,23 +1727,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 43,
-          "wins": 23,
-          "losses": 20,
-          "winRate": 53.48837209302325,
-          "pf": 0.5978864853348198,
-          "exp": -0.2114579455509987,
-          "netR": -9.092691658692944,
-          "maxDD": 11.926941027414262,
-          "sumR2": 39.237138120195816,
-          "grossW": 13.519559178645792,
-          "grossL": 22.612250837338735,
-          "sd": 0.9425701467204279,
-          "tStat": -1.4711079947211125,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 44,
@@ -2051,23 +1991,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 35,
-          "wins": 20,
-          "losses": 15,
-          "winRate": 57.14285714285714,
-          "pf": 0.8117014081459668,
-          "exp": -0.09058524077525455,
-          "netR": -3.1704834271339095,
-          "maxDD": 10.498825237341018,
-          "sumR2": 32.40389833056856,
-          "grossW": 13.667047835933776,
-          "grossL": 16.83753126306768,
-          "sd": 0.97190987427042,
-          "tStat": -0.5513983608819529,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 26,
@@ -2325,23 +2255,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 90,
-          "wins": 49,
-          "losses": 41,
-          "winRate": 54.44444444444444,
-          "pf": 0.6502898389151541,
-          "exp": -0.17996625253338827,
-          "netR": -16.196962728004944,
-          "maxDD": 18.752200717148174,
-          "sumR2": 79.76031834996967,
-          "grossW": 30.118427930819163,
-          "grossL": 46.31539065882411,
-          "sd": 0.929210197827127,
-          "tStat": -1.8373773597233993,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 95,
@@ -2599,23 +2519,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 0,
@@ -2873,23 +2783,13 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 23,
-          "wins": 13,
-          "losses": 10,
-          "winRate": 56.52173913043478,
-          "pf": 0.8121322421340214,
-          "exp": -0.09115342081592084,
-          "netR": -2.0965286787661794,
-          "maxDD": 5.486078745948971,
-          "sumR2": 21.855804837210727,
-          "grossW": 9.063069448027914,
-          "grossL": 11.159598126794096,
-          "sd": 0.9923502652404751,
-          "tStat": -0.44052635880623,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
           "trades": 28,
@@ -3104,6 +3004,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794971888532,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1794971138997,
         "type": "CYCLE",
@@ -3738,7 +3643,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 510,
+      "newsIngested": 540,
       "lessons": 1,
       "backtests": 710,
       "netR": 0,
@@ -3753,7 +3658,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794970989316,
+      "fetchedAt": 1794971888532,
       "items": [
         {
           "source": "CoinDesk",
@@ -4086,17 +3991,17 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794970989316
+        "t": 1794971888532
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794969649354,
+      "fetchedAt": 1794971889732,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.46,
-        "ARB": 11.05,
+        "BTC": -14.34,
+        "ARB": 10.96,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -4113,35 +4018,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 937.22,
+          "pct": 962.33,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.46,
+          "pct": 14.34,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.05,
+          "pct": 10.96,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 39.47,
+          "pct": 39.16,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 196.95,
+          "pct": 195.38,
           "lev": 10
         },
         {
@@ -4155,63 +4060,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.49,
+          "pct": 23.31,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 207.58,
+          "pct": 205.93,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 34.37,
+          "pct": 34.1,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 106.97,
+          "pct": 106.12,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 54.61,
+          "pct": 54.18,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 93.71,
+          "pct": 95.84,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 262.01,
+          "pct": 267.96,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 81.94,
+          "pct": 83.8,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1213.91,
+          "pct": 1219.03,
           "lev": 10
         }
       ]
@@ -8203,7 +8108,7 @@
       "deflatedT": -2.11,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794971139023,
+      "updatedAt": 1794971873862,
       "gen": 4
     },
     "factory": {
