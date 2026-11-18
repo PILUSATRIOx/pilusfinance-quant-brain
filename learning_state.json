@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794993825620,
+  "updatedAt": 1794994730721,
   "brain": {
     "v": 1,
     "gen": 8,
-    "cycles": 52,
+    "cycles": 53,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1794990777545,
     "autoExecBursa": false,
@@ -3692,7 +3692,7 @@
         "lockedR": 0,
         "mfe": 0.5302391359918109,
         "mae": -0.23312237875502173,
-        "lastBarT": 1794993600000
+        "lastBarT": 1794994500000
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3804,6 +3804,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794994730705,
+        "type": "CYCLE",
+        "text": "[CYCLE #53] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794994725381,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1794993825608,
         "type": "CYCLE",
@@ -4728,9 +4738,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1230,
+      "newsIngested": 1260,
       "lessons": 1,
-      "backtests": 1190,
+      "backtests": 1220,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4743,7 +4753,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794993478047,
+      "fetchedAt": 1794994725381,
       "items": [
         {
           "source": "CoinDesk",
@@ -4817,6 +4827,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "World Bank partners with Circle, Citi to explore stablecoins for payments",
+          "link": "https://cointelegraph.com/news/world-bank-circle-citi-explore-stablecoins-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 09:17:18",
+          "summary": "    The initiative builds on the World Bank’s existing blockchain platform, which aims to create more fund traceability for investments in developing countries. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "SOL comes out of Breakpoint 7% higher as Solana exits beta",
           "link": "https://cointelegraph.com/markets/solana-sol-gains-7-percent-breakpoint-beta-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-18 08:41:16",
@@ -4877,13 +4894,6 @@
           "link": "https://cointelegraph.com/news/lighter-incident-exposes-risks-beyond-withdrawal-controls?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 17:51:53",
           "summary": "    Crypto platforms need enforceable limits on every route an API key can use to transfer value, including trades, internal transfers and shared pools. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Fed’s Waller cites Binance hack in warning over tokenized finance",
-          "link": "https://cointelegraph.com/news/feds-waller-cites-binance-hack-in-warning-over-tokenized-finance?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 17:39:41",
-          "summary": "    Fed Governor Christopher Waller questioned who bears responsibility for fraud, compromised keys and failed transactions as traditional financial assets move onto blockchains. "
         },
         {
           "source": "Decrypt",
@@ -5080,17 +5090,17 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794993478047
+        "t": 1794994725381
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794992508268,
+      "fetchedAt": 1794994727096,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.08,
-        "ARB": 10.75,
+        "BTC": -14.16,
+        "ARB": 10.82,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -5107,35 +5117,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 976.11,
+          "pct": 943.43,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.08,
+          "pct": 14.16,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 10.75,
+          "pct": 10.82,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 38.42,
+          "pct": 38.64,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 191.71,
+          "pct": 192.81,
           "lev": 10
         },
         {
@@ -5149,63 +5159,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 22.87,
+          "pct": 23,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 202.07,
+          "pct": 203.22,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 33.46,
+          "pct": 33.65,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 104.13,
+          "pct": 104.73,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 53.16,
+          "pct": 53.47,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 98.36,
+          "pct": 97.6,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 275,
+          "pct": 272.9,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 86,
+          "pct": 85.34,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1244.62,
+          "pct": 1197.74,
           "lev": 10
         }
       ]
@@ -5539,221 +5549,221 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.486,
+            0.484,
             0.681,
             61
           ],
           [
-            0.558,
+            0.553,
             -1.608,
             10
           ],
           [
-            0.502,
+            0.5,
             0.257,
             61
           ],
           [
-            0.613,
+            0.609,
             -1.201,
             10
           ],
           [
-            0.495,
+            0.494,
             1.793,
             56
           ],
           [
-            0.585,
+            0.581,
             0.222,
             15
           ],
           [
-            0.559,
+            0.556,
             0.235,
             41
           ],
           [
-            0.514,
+            0.512,
             1.467,
             95
           ],
           [
-            0.576,
+            0.572,
             0.232,
             10
           ],
           [
-            0.545,
+            0.54,
             1.437,
             27
           ],
           [
-            0.6,
+            0.595,
             -1.168,
             10
           ]
         ],
         "AAPL": [
           [
-            0.555,
+            0.55,
             0.164,
             10
           ],
           [
-            0.537,
+            0.532,
             1.365,
             10
           ],
           [
-            0.586,
+            0.583,
             0.142,
             10
           ],
           [
-            0.506,
+            0.504,
             -1.217,
             100
           ],
           [
-            0.578,
+            0.574,
             -1.212,
             10
           ],
           [
-            0.594,
+            0.59,
             0.468,
             10
           ],
           [
-            0.538,
+            0.534,
             -1.252,
             35
           ],
           [
-            0.547,
+            0.542,
             0.369,
             10
           ],
           [
-            0.55,
+            0.544,
             -1.239,
             35
           ],
           [
-            0.563,
+            0.557,
             0.298,
             10
           ],
           [
-            0.502,
+            0.499,
             -1.232,
             61
           ],
           [
-            0.524,
+            0.523,
             0.727,
             90
           ],
           [
-            0.607,
+            0.604,
             -1.248,
             35
           ],
           [
-            0.585,
+            0.582,
             -2.371,
             10
           ],
           [
-            0.557,
+            0.551,
             -1.207,
             10
           ],
           [
-            0.549,
+            0.541,
             0.143,
             10
           ]
         ],
         "TSLA": [
           [
-            0.554,
+            0.549,
             -1.13,
             15
           ],
           [
-            0.544,
+            0.537,
             -1.164,
             10
           ],
           [
-            0.487,
+            0.484,
             0.799,
             61
           ],
           [
-            0.576,
+            0.571,
             0.266,
             10
           ],
           [
-            0.563,
+            0.555,
             0.243,
             10
           ],
           [
-            0.559,
+            0.555,
             -1.521,
             35
           ],
           [
-            0.552,
+            0.547,
             1.496,
             35
           ],
           [
-            0.501,
+            0.499,
             -1.877,
             56
           ],
           [
-            0.537,
+            0.535,
             0.309,
             56
           ],
           [
-            0.559,
+            0.551,
             1.513,
             10
           ],
           [
-            0.571,
+            0.565,
             -1.109,
             10
           ],
           [
-            0.523,
+            0.522,
             0.261,
             95
           ],
           [
-            0.551,
+            0.546,
             1.521,
             10
           ],
           [
-            0.613,
+            0.609,
             -0.105,
             2
           ],
           [
-            0.584,
+            0.578,
             -1.116,
             2
           ],
           [
-            0.581,
+            0.576,
             0.294,
             49
           ]
@@ -9166,7 +9176,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1201,
-        "updatedAt": 1794993823445
+        "updatedAt": 1794994727779
       }
     },
     "champion": {
@@ -9182,7 +9192,7 @@
       "deflatedT": -4.58,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794993823444,
+      "updatedAt": 1794994727779,
       "gen": 8
     },
     "factory": {
