@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795010939478,
+  "updatedAt": 1795011831875,
   "brain": {
     "v": 1,
     "gen": 11,
-    "cycles": 69,
+    "cycles": 70,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795008235098,
     "autoExecBursa": false,
@@ -192,19 +192,19 @@
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 77,
-          "wins": 42,
+          "trades": 78,
+          "wins": 43,
           "losses": 35,
-          "winRate": 54.54545454545454,
-          "pf": 0.7157660486137454,
-          "exp": -0.1449601082277659,
-          "netR": -11.161928333537974,
+          "winRate": 55.12820512820513,
+          "pf": 0.718029537874251,
+          "exp": -0.14196205928214856,
+          "netR": -11.073040624007588,
           "maxDD": 14.389472234319229,
-          "sumR2": 73.0573003889738,
-          "grossW": 28.108286498643302,
+          "sumR2": 72.99942620944465,
+          "grossW": 28.197174208173692,
           "grossL": 39.270214832181296,
-          "sd": 0.969530991128901,
-          "tStat": -1.311994973786285,
+          "sd": 0.9631352655466178,
+          "tStat": -1.3017641493584249,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1916,15 +1916,15 @@
           "wins": 19,
           "losses": 19,
           "winRate": 50,
-          "pf": 0.5087105717826941,
-          "exp": -0.27488670133332616,
-          "netR": -10.445694650666393,
-          "maxDD": 12.153345733786395,
-          "sumR2": 33.07175899594668,
-          "grossW": 10.816099417587148,
+          "pf": 0.4939589516244898,
+          "exp": -0.2831405410695586,
+          "netR": -10.759340560643228,
+          "maxDD": 12.153345733786393,
+          "sumR2": 32.85078168781229,
+          "grossW": 10.50245350761031,
           "grossL": 21.261794068253533,
-          "sd": 0.903452483835411,
-          "tStat": -1.8755999471443257,
+          "sd": 0.8975097105538087,
+          "tStat": -1.9447093392453687,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 96,
-          "wins": 54,
+          "trades": 95,
+          "wins": 53,
           "losses": 42,
-          "winRate": 56.25,
-          "pf": 0.732938653884981,
-          "exp": -0.12977164181005044,
-          "netR": -12.458077613764843,
-          "maxDD": 15.464976815975724,
-          "sumR2": 85.55670997309039,
-          "grossW": 34.190671053889034,
+          "winRate": 55.78947368421052,
+          "pf": 0.7286803520229372,
+          "exp": -0.1332286533376666,
+          "netR": -12.656722067078325,
+          "maxDD": 15.464976815975723,
+          "sumR2": 85.51725035425818,
+          "grossW": 33.99202660057555,
           "grossL": 46.64874866765388,
-          "sd": 0.9399888285302291,
-          "tStat": -1.3526726951207744,
+          "sd": 0.9443618374195271,
+          "tStat": -1.3750579846241802,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3692,7 +3692,7 @@
         "lockedR": 0,
         "mfe": 0.6765120010930007,
         "mae": -0.23312237875502173,
-        "lastBarT": 1795010700000
+        "lastBarT": 1795011600000
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3804,6 +3804,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795011831786,
+        "type": "CYCLE",
+        "text": "[CYCLE #70] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795011826424,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795010939192,
         "type": "CYCLE",
@@ -4913,9 +4923,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1620,
+      "newsIngested": 1650,
       "lessons": 1,
-      "backtests": 1700,
+      "backtests": 1730,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4928,7 +4938,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795010930074,
+      "fetchedAt": 1795011826424,
       "items": [
         {
           "source": "CoinDesk",
@@ -5002,6 +5012,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Bitcoin Covenants Part 6: FE Covenants — Enforcing covenants through cryptographically restricted signing keys",
+          "link": "https://cointelegraph.com/research/bitcoin-covenants-part-6-fe-covenants-enforcing-covenants-through-cryptographically-restricted-signing-keys?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 14:04:50",
+          "summary": "    FE covenants encode spending constraints into the signing key, so only transactions that satisfy a predefined condition can be signed.  "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "CoinShares sells all treasury ETH, halves SOL holdings for buybacks",
           "link": "https://cointelegraph.com/news/coinshares-sells-eth-treasury-holdings-halves-sol-share-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-18 13:42:37",
@@ -5062,13 +5079,6 @@
           "link": "https://cointelegraph.com/markets/solana-sol-gains-7-percent-breakpoint-beta-tokenization?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-18 08:41:16",
           "summary": "    Solana’s token reached $75.12 on Tuesday, outpacing Bitcoin and Ether after the network retired the beta label it had used since its 2020 launch. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin ETFs lose $240M as CryptoQuant flags bearish market phase",
-          "link": "https://cointelegraph.com/markets/bitcoin-etf-240-million-outflow-bearish-phase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 08:09:23",
-          "summary": "    Bitcoin ETF outflows returned after a one-day pause as CryptoQuant warned that Bitcoin had returned to a bearish market phase. "
         },
         {
           "source": "Decrypt",
@@ -5144,7 +5154,7 @@
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.33,
+          "impact": -0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -5261,7 +5271,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795010930074
+        "t": 1795011826424
       },
       "lastErrors": []
     },
@@ -9352,7 +9362,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1203,
-        "updatedAt": 1795010936106
+        "updatedAt": 1795011828714
       }
     },
     "champion": {
@@ -9368,7 +9378,7 @@
       "deflatedT": -4.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795010936105,
+      "updatedAt": 1795011828711,
       "gen": 11
     },
     "factory": {
