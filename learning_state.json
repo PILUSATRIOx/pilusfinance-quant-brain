@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795006427891,
+  "updatedAt": 1795007335577,
   "brain": {
     "v": 1,
     "gen": 10,
-    "cycles": 64,
+    "cycles": 65,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795002824076,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3692,7 +3692,7 @@
         "lockedR": 0,
         "mfe": 0.6765120010930007,
         "mae": -0.23312237875502173,
-        "lastBarT": 1795006200000
+        "lastBarT": 1795007100000
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3804,6 +3804,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795007335373,
+        "type": "CYCLE",
+        "text": "[CYCLE #65] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795007331616,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795006427870,
         "type": "CYCLE",
@@ -4853,9 +4863,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1470,
+      "newsIngested": 1500,
       "lessons": 1,
-      "backtests": 1550,
+      "backtests": 1580,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4868,7 +4878,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795006424165,
+      "fetchedAt": 1795007331617,
       "items": [
         {
           "source": "CoinDesk",
@@ -5012,6 +5022,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "&#39;Doomed From the Start&#39;: President Trump&#39;s Meme Coin Hits New Lows After Midterms",
+          "link": "https://decrypt.co/383524/doomed-from-the-start-president-trumps-meme-coin-hits-new-lows-after-midterms",
+          "pubDate": "2026-11-18 12:45:37",
+          "summary": "The TRUMP token has fallen almost 40% since election day, with analysts pointing to the Democrats’ subpoena plans, fading interest, and a heavy unlock schedule."
+        },
+        {
+          "source": "Decrypt",
           "title": "AI Will Make the Next 12 Months &#39;a Slaughterhouse&#39; for Crypto Security: Anchorage Exec",
           "link": "https://decrypt.co/383526/ai-will-make-the-next-12-months-a-slaughterhouse-for-crypto-security-anchorage-exec",
           "pubDate": "2026-11-18 12:10:27",
@@ -5072,13 +5089,6 @@
           "link": "https://decrypt.co/383463/cathie-wood-ark-sells-85-million-nvidia-buys-crypto-stocks",
           "pubDate": "2026-11-17 19:46:03",
           "summary": "Cathie Wood&#39;s funds trimmed Nvidia ahead of earnings while buying Block, Circle and Coinbase during Monday&#39;s selloff."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Ethereum Devs Weigh a Scaling Upgrade That Could Break 15,000 Apps",
-          "link": "https://decrypt.co/383462/ethereum-devs-scaling-upgrade-could-break-15000-apps",
-          "pubDate": "2026-11-17 19:26:02",
-          "summary": "Developers warned on a core dev call that two scaling changes in the Glamsterdam upgrade break assumptions some contracts rely on—pitting a 3.3x capacity boost against the risk of disrupting thousands of apps."
         }
       ],
       "perCoin": {
@@ -5095,12 +5105,11 @@
           "critHead": ""
         },
         "ETH": {
-          "sentiment": "BULLISH",
-          "impact": 0.17,
+          "sentiment": "BEARISH",
+          "impact": -0.17,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
           "multiSourced": true,
           "critical": false,
@@ -5202,7 +5211,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795006424165
+        "t": 1795007331616
       },
       "lastErrors": []
     },
@@ -5666,7 +5675,7 @@
             61
           ],
           [
-            0.548,
+            0.551,
             -1.608,
             10
           ],
@@ -5676,7 +5685,7 @@
             61
           ],
           [
-            0.606,
+            0.607,
             -1.201,
             10
           ],
@@ -5686,12 +5695,12 @@
             56
           ],
           [
-            0.577,
+            0.579,
             0.222,
             15
           ],
           [
-            0.554,
+            0.555,
             0.235,
             41
           ],
@@ -5701,29 +5710,29 @@
             95
           ],
           [
-            0.568,
+            0.57,
             0.232,
             10
           ],
           [
-            0.536,
+            0.539,
             1.437,
             27
           ],
           [
-            0.591,
+            0.593,
             -1.168,
             10
           ]
         ],
         "AAPL": [
           [
-            0.544,
+            0.546,
             0.164,
             10
           ],
           [
-            0.527,
+            0.53,
             1.365,
             10
           ],
@@ -5738,37 +5747,37 @@
             100
           ],
           [
-            0.571,
+            0.572,
             -1.212,
             10
           ],
           [
-            0.586,
+            0.587,
             0.468,
             10
           ],
           [
-            0.531,
+            0.533,
             -1.252,
             35
           ],
           [
-            0.537,
+            0.54,
             0.369,
             10
           ],
           [
-            0.539,
+            0.542,
             -1.239,
             35
           ],
           [
-            0.551,
+            0.554,
             0.298,
             10
           ],
           [
-            0.498,
+            0.499,
             -1.232,
             61
           ],
@@ -5778,34 +5787,34 @@
             90
           ],
           [
-            0.6,
+            0.601,
             -1.248,
             35
           ],
           [
-            0.578,
+            0.579,
             -2.371,
             10
           ],
           [
-            0.545,
+            0.548,
             -1.207,
             10
           ],
           [
-            0.532,
+            0.537,
             0.143,
             10
           ]
         ],
         "TSLA": [
           [
-            0.545,
+            0.547,
             -1.13,
             15
           ],
           [
-            0.53,
+            0.534,
             -1.164,
             10
           ],
@@ -5815,22 +5824,22 @@
             61
           ],
           [
-            0.566,
+            0.568,
             0.266,
             10
           ],
           [
-            0.547,
+            0.551,
             0.243,
             10
           ],
           [
-            0.55,
+            0.552,
             -1.521,
             35
           ],
           [
-            0.542,
+            0.545,
             1.496,
             35
           ],
@@ -5840,42 +5849,42 @@
             56
           ],
           [
-            0.533,
+            0.534,
             0.309,
             56
           ],
           [
-            0.543,
+            0.548,
             1.513,
             10
           ],
           [
-            0.559,
+            0.562,
             -1.109,
             10
           ],
           [
-            0.524,
+            0.522,
             0.261,
             95
           ],
           [
-            0.541,
+            0.543,
             1.521,
             10
           ],
           [
-            0.605,
+            0.606,
             -0.105,
             2
           ],
           [
-            0.572,
+            0.575,
             -1.116,
             2
           ],
           [
-            0.571,
+            0.574,
             0.294,
             49
           ]
@@ -9288,7 +9297,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1203,
-        "updatedAt": 1795006425780
+        "updatedAt": 1795007332271
       }
     },
     "champion": {
@@ -9304,7 +9313,7 @@
       "deflatedT": -4.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795006425780,
+      "updatedAt": 1795007332269,
       "gen": 10
     },
     "factory": {
