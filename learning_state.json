@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1794963899437,
+  "updatedAt": 1794963932372,
   "brain": {
     "v": 1,
     "gen": 3,
@@ -8816,13 +8816,13 @@
       "gen": 3
     },
     "factory": {
-      "updatedAt": 1794945253931,
-      "day": "2026-11-17",
-      "dataUntil": "2026-11-16",
+      "updatedAt": 1794963883649,
+      "day": "2026-11-18",
+      "dataUntil": "2026-11-17",
       "universe": 20,
-      "nTrials": 47,
-      "hurdleSharpe": 2.38,
-      "pbo": 0.186,
+      "nTrials": 51,
+      "hurdleSharpe": 2.55,
+      "pbo": 0.171,
       "top": [
         {
           "id": "CARRY|thr=0.1",
@@ -8835,6 +8835,18 @@
           "dsr": 1,
           "years": 6.9,
           "status": "INKUBASI"
+        },
+        {
+          "id": "CARRY|thr=0.19",
+          "label": "Carry funding > 19%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 4.24,
+          "cagr": 0.0545,
+          "mdd": -0.0082,
+          "dsr": 1,
+          "years": 6.9,
+          "status": "KANDIDAT"
         },
         {
           "id": "CARRY|thr=0.2",
@@ -8854,8 +8866,8 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.03,
-          "cagr": 0.0572,
-          "mdd": -0.0755,
+          "cagr": 0.0571,
+          "mdd": -0.0757,
           "dsr": 1,
           "years": 6.9,
           "status": "KANDIDAT"
@@ -8873,14 +8885,26 @@
           "status": "KANDIDAT"
         },
         {
+          "id": "MAX|fast=9|mode=LF|slow=39",
+          "label": "Persilangan SMA 9/39 (long/flat)",
+          "family": "MAX",
+          "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
+          "sharpe": 1.1,
+          "cagr": 0.2948,
+          "mdd": -0.3307,
+          "dsr": 0.0001,
+          "years": 6.81,
+          "status": "KANDIDAT"
+        },
+        {
           "id": "XSMOM|L=14|frac=0.333|type=LO",
           "label": "Momentum lintas koin 14 hari, 33% teratas (long-only)",
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
           "sharpe": 1.06,
-          "cagr": 0.7074,
+          "cagr": 0.7119,
           "mdd": -0.7746,
-          "dsr": 0.0003,
+          "dsr": 0,
           "years": 6.88,
           "status": "KANDIDAT"
         },
@@ -8890,9 +8914,9 @@
           "family": "TSMOM",
           "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
           "sharpe": 1.02,
-          "cagr": 0.2684,
+          "cagr": 0.2683,
           "mdd": -0.3337,
-          "dsr": 0.0002,
+          "dsr": 0,
           "years": 6.84,
           "status": "KANDIDAT"
         },
@@ -8902,9 +8926,9 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.01,
-          "cagr": 0.266,
+          "cagr": 0.2659,
           "mdd": -0.299,
-          "dsr": 0.0002,
+          "dsr": 0,
           "years": 6.78,
           "status": "KANDIDAT"
         },
@@ -8914,34 +8938,10 @@
           "family": "DONCH",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.01,
-          "cagr": 0.2187,
+          "cagr": 0.2186,
           "mdd": -0.273,
-          "dsr": 0.0002,
+          "dsr": 0,
           "years": 6.84,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "XSMOM|L=28|frac=0.333|type=LO",
-          "label": "Momentum lintas koin 28 hari, 33% teratas (long-only)",
-          "family": "XSMOM",
-          "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
-          "sharpe": 1,
-          "cagr": 0.6233,
-          "mdd": -0.7895,
-          "dsr": 0.0002,
-          "years": 6.84,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "SMA|mode=LF|n=50",
-          "label": "Harga vs SMA 50 hari (long/flat)",
-          "family": "SMA",
-          "source": "Faber (2007), \"A Quantitative Approach to Tactical Asset Allocation\", Journal of Wealth Management",
-          "sharpe": 0.99,
-          "cagr": 0.2576,
-          "mdd": -0.3391,
-          "dsr": 0.0002,
-          "years": 6.78,
           "status": "KANDIDAT"
         }
       ],
@@ -8977,6 +8977,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1794963883649,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Trend TSMOM 26 hari (long/short); Carry funding > 19%/th (long spot + short perpetual); Harga vs SMA 79 hari (long/short); Persilangan SMA 9/39 (long/flat)"
+        },
         {
           "t": 1794945253931,
           "type": "INCUBATE",
