@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1794970234782,
+  "updatedAt": 1794971011956,
   "brain": {
     "v": 1,
     "gen": 4,
@@ -380,42 +380,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 82,
-          "wins": 41,
-          "losses": 41,
-          "winRate": 50,
-          "pf": 0.6068963855281639,
-          "exp": -0.23008063357383526,
-          "netR": -18.86661195305449,
-          "maxDD": 27.23938733379852,
-          "sumR2": 90.48301225884768,
-          "grossW": 29.127380619115545,
-          "grossL": 47.993992572170036,
-          "sd": 1.0312534038988923,
-          "tStat": -2.02032666458187,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 83,
-          "wins": 51,
-          "losses": 32,
-          "winRate": 61.44578313253012,
-          "pf": 0.7513940044065076,
-          "exp": -0.11162680363475294,
-          "netR": -9.265024701684494,
-          "maxDD": 11.813186264780798,
-          "sumR2": 69.2173979109429,
-          "grossW": 28.00288060191161,
-          "grossL": 37.267905303596116,
-          "sd": 0.911867373873705,
-          "tStat": -1.115259312158976,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 101,
@@ -684,42 +664,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 68,
-          "wins": 39,
-          "losses": 28,
-          "winRate": 57.35294117647059,
-          "pf": 0.6523867858875068,
-          "exp": -0.16807440433337204,
-          "netR": -11.429059494669298,
-          "maxDD": 14.036453310442369,
-          "sumR2": 60.33142328721256,
-          "grossW": 21.46499175181632,
-          "grossL": 32.902247893656146,
-          "sd": 0.9337014361928481,
-          "tStat": -1.4843899670003993,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 70,
-          "wins": 42,
-          "losses": 28,
-          "winRate": 60,
-          "pf": 0.6320917524690218,
-          "exp": -0.173353574796744,
-          "netR": -12.13475023577208,
-          "maxDD": 15.213509964682869,
-          "sumR2": 58.81059099439164,
-          "grossW": 20.848338121741104,
-          "grossL": 32.98308835751319,
-          "sd": 0.906554143660351,
-          "tStat": -1.5998824505242184,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 67,
@@ -988,42 +948,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 51,
-          "wins": 30,
-          "losses": 21,
-          "winRate": 58.82352941176471,
-          "pf": 0.8596094660130216,
-          "exp": -0.06702764167708698,
-          "netR": -3.4184097255314363,
-          "maxDD": 9.363559227791935,
-          "sumR2": 50.984560650619926,
-          "grossW": 20.93087956379132,
-          "grossL": 24.349289289322755,
-          "sd": 1.0075260066959217,
-          "tStat": -0.4750975186642496,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 58,
-          "wins": 31,
-          "losses": 27,
-          "winRate": 53.44827586206896,
-          "pf": 0.6087350670519481,
-          "exp": -0.20898113746194422,
-          "netR": -12.120905972792764,
-          "maxDD": 13.739616613676889,
-          "sumR2": 55.169199364540624,
-          "grossW": 18.85786302003709,
-          "grossL": 30.97876899282985,
-          "sd": 0.9609585733926264,
-          "tStat": -1.656213878915309,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 55,
@@ -1292,42 +1232,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 58,
-          "wins": 30,
-          "losses": 28,
-          "winRate": 51.724137931034484,
-          "pf": 0.6535189791064205,
-          "exp": -0.19956628788642333,
-          "netR": -11.574844697412553,
-          "maxDD": 14.169566774921622,
-          "sumR2": 64.54780275286609,
-          "grossW": 21.832020323825457,
-          "grossL": 33.40686502123801,
-          "sd": 1.044936445341287,
-          "tStat": -1.4544918735475034,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 50,
-          "wins": 30,
-          "losses": 20,
-          "winRate": 60,
-          "pf": 0.7197215665967752,
-          "exp": -0.13176256964741603,
-          "netR": -6.588128482370801,
-          "maxDD": 7.831965347751552,
-          "sumR2": 43.4882945432446,
-          "grossW": 16.917527669534177,
-          "grossL": 23.505656151904976,
-          "sd": 0.9326309702328959,
-          "tStat": -0.9990039949132963,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 49,
@@ -1596,42 +1516,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 18,
-          "wins": 9,
-          "losses": 9,
-          "winRate": 50,
-          "pf": 0.6011461991569075,
-          "exp": -0.23528224195643915,
-          "netR": -4.235080355215905,
-          "maxDD": 5.941448283594701,
-          "sumR2": 18.94517100901311,
-          "grossW": 6.383046753674224,
-          "grossL": 10.618127108890128,
-          "sd": 1.0275250621867558,
-          "tStat": -0.9714780197736955,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 20,
-          "wins": 12,
-          "losses": 8,
-          "winRate": 60,
-          "pf": 1.0128358664861867,
-          "exp": 0.005839353842351747,
-          "netR": 0.11678707684703493,
-          "maxDD": 5.1661606053014815,
-          "sumR2": 21.14783190479242,
-          "grossW": 9.215282840472822,
-          "grossL": 9.098495763625786,
-          "sd": 1.0549918918053725,
-          "tStat": 0.02475316111449683,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 23,
@@ -1900,42 +1800,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 45,
-          "wins": 24,
-          "losses": 21,
-          "winRate": 53.333333333333336,
-          "pf": 0.4643322865978105,
-          "exp": -0.2934534820507952,
-          "netR": -13.205406692285784,
-          "maxDD": 13.84792870281194,
-          "sumR2": 39.721783953202696,
-          "grossW": 11.446828941656399,
-          "grossL": 24.652235633942183,
-          "sd": 0.9026049596163137,
-          "tStat": -2.180960542401165,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 42,
-          "wins": 21,
-          "losses": 21,
-          "winRate": 50,
-          "pf": 0.38656229111749213,
-          "exp": -0.35380486281145657,
-          "netR": -14.859804238081175,
-          "maxDD": 17.224711483926768,
-          "sumR2": 35.24464217653049,
-          "grossW": 9.364015104800604,
-          "grossL": 24.223819342881782,
-          "sd": 0.8552160071836805,
-          "tStat": -2.681097587576317,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 41,
@@ -2204,42 +2084,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 31,
-          "wins": 15,
-          "losses": 16,
-          "winRate": 48.38709677419355,
-          "pf": 0.5342960426711708,
-          "exp": -0.28970106083889585,
-          "netR": -8.980732886005772,
-          "maxDD": 11.622605084816986,
-          "sumR2": 34.69210005906205,
-          "grossW": 10.303477060409955,
-          "grossL": 19.28420994641573,
-          "sd": 1.0342529061255668,
-          "tStat": -1.5595675224692347,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 31,
-          "wins": 21,
-          "losses": 10,
-          "winRate": 67.74193548387096,
-          "pf": 1.0630295540077124,
-          "exp": 0.024283722380103116,
-          "netR": 0.7527953937831966,
-          "maxDD": 4.836509853044073,
-          "sumR2": 27.29081204422562,
-          "grossW": 12.696325784163076,
-          "grossL": 11.943530390379873,
-          "sd": 0.9534591648286773,
-          "tStat": 0.14180580464512135,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 30,
@@ -2508,42 +2368,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 100,
-          "wins": 50,
-          "losses": 50,
-          "winRate": 50,
-          "pf": 0.5401299957587998,
-          "exp": -0.2699051609113342,
-          "netR": -26.99051609113342,
-          "maxDD": 28.13327433181721,
-          "sumR2": 102.37025902098668,
-          "grossW": 31.701105110968243,
-          "grossL": 58.691621202101636,
-          "sd": 0.9800297842945065,
-          "tStat": -2.754050593529978,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 103,
-          "wins": 52,
-          "losses": 51,
-          "winRate": 50.48543689320388,
-          "pf": 0.5744963919112132,
-          "exp": -0.24562897175443316,
-          "netR": -25.299784090706616,
-          "maxDD": 25.299784090706616,
-          "sumR2": 104.7926800548371,
-          "grossW": 34.158663757348954,
-          "grossL": 59.45844784805556,
-          "sd": 0.9830839835218221,
-          "tStat": -2.53575670173199,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 105,
@@ -2812,42 +2652,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "DOGEUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 0,
@@ -3116,42 +2936,22 @@
           "maxDD": 0
         },
         "XRPUSDT": {
-          "trades": 28,
-          "wins": 13,
-          "losses": 15,
-          "winRate": 46.42857142857143,
-          "pf": 0.39682580054926153,
-          "exp": -0.388280220117315,
-          "netR": -10.87184616328482,
-          "maxDD": 13.556146493238256,
-          "sumR2": 28.976650110480517,
-          "grossW": 7.152542434876247,
-          "grossL": 18.024388598161067,
-          "sd": 0.9575301424347241,
-          "tStat": -2.145713969533582,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "DOGEUSDT": {
-          "trades": 27,
-          "wins": 16,
-          "losses": 11,
-          "winRate": 59.25925925925925,
-          "pf": 0.570804601144832,
-          "exp": -0.20236768487829662,
-          "netR": -5.463927491714009,
-          "maxDD": 9.776945363494152,
-          "sumR2": 20.802980482353554,
-          "grossW": 7.2667017421697695,
-          "grossL": 12.73062923388378,
-          "sd": 0.8703946524314419,
-          "tStat": -1.2081109794510358,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "BNBUSDT": {
           "trades": 32,
@@ -3404,6 +3204,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794970989316,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1794970234754,
         "type": "CYCLE",
@@ -4028,7 +3833,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 480,
+      "newsIngested": 510,
       "lessons": 1,
       "backtests": 710,
       "netR": 0,
@@ -4043,8 +3848,22 @@
       }
     },
     "news": {
-      "fetchedAt": 1794969648533,
+      "fetchedAt": 1794970989316,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "CFTC nominee questions public benefit of prediction markets as legal fight grows",
+          "link": "https://www.coindesk.com/policy/2026/11/17/nominee-says-u-s-cftc-must-think-hard-about-public-benefit-of-prediction-markets",
+          "pubDate": "2026-11-18 00:46:25",
+          "summary": "One of the two picks to join the regulatory commission, Democratic nominee Matthew Rowland, said he hopes to have a say in prediction markets rulemaking."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Nvidia shares rise on earnings beat, raised outlook despite leadership uncertainty",
+          "link": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
+          "pubDate": "2026-11-17 21:25:50",
+          "summary": "Speaking on the earnings call, Chairman Harvey Jones said the board has no intention of reinstating Jensen Huang as CEO."
+        },
         {
           "source": "CoinDesk",
           "title": "Coinbase CEO says AI agents will account for &#39;99.9%&#39; of transactions within a decade",
@@ -4057,7 +3876,7 @@
           "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
           "link": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
           "pubDate": "2026-11-17 19:16:00",
-          "summary": "The company confirmed that the Commodity Futures Trading Commission ordered it to stop &quot;mention&quot; contracts involving the U.S. president."
+          "summary": "The Commodity Futures Trading Commission ordered it to stop &quot;mention&quot; contracts involving the U.S. president and is reviewing whether Kalshi followed policy."
         },
         {
           "source": "CoinDesk",
@@ -4102,18 +3921,11 @@
           "summary": "Your day-ahead look for Nov. 17, 2026"
         },
         {
-          "source": "CoinDesk",
-          "title": "Ex-OpenAI researcher fund dumps bitcoin miners, cuts IREN 94% after portfolio slump",
-          "link": "https://www.coindesk.com/business/2026/11/17/ex-openai-researcher-fund-dumps-bitcoin-miners-cuts-iren-94-after-portfolio-slump",
-          "pubDate": "2026-11-17 12:00:55",
-          "summary": "The fund swapped its common stock in Bloom Energy, Nebius and SanDisk for call options, keeping its bet on AI power, computing and memory."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin remains penned in near $64,000 even as ETF outflow streak ends",
-          "link": "https://www.coindesk.com/markets/2026/11/17/bitcoin-remains-penned-in-near-usd64-000-even-as-etf-outflow-streak-ends",
-          "pubDate": "2026-11-17 11:36:07",
-          "summary": "Bitcoin (BTC) is down a further 1.0% since midnight UTC at around $64,200, with its bounce from the weekend selloff stalled and pressure building on all fronts."
+          "source": "CoinTelegraph",
+          "title": "Ledger hardware implant saga reaches Dubai’s Virgin Megastore",
+          "link": "https://cointelegraph.com/news/ledger-hardware-implant-saga-reaches-dubais-virgin-megastore?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 02:39:52",
+          "summary": "    Two Ledger owners reported losing a combined $604,000 in crypto from hardware wallets they said were purchased at authorized retailer Virgin Megastore in Dubai. "
         },
         {
           "source": "CoinTelegraph",
@@ -4177,13 +3989,6 @@
           "link": "https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 14:45:49",
           "summary": "    Solana Foundation now holds a majority interest in CoinGecko, its product chief said, as the crypto data platform explores trading features. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin to $1M by 2030? ‘Almost certainly not,’ says Dragonfly’s Qureshi",
-          "link": "https://cointelegraph.com/magazine/bitcoin-to-1m-by-2030-almost-certainly-not-says-dragonflys-qureshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 13:30:00",
-          "summary": "    Dragonfly’s Haseeb Qureshi says Bitcoin could reach $400,000 by 2030 but doubts it will return to $100,000 by year-end with the rout in AI stocks weighing on crypto. "
         },
         {
           "source": "Decrypt",
@@ -4259,7 +4064,7 @@
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.83,
+          "impact": -0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -4376,7 +4181,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794969648533
+        "t": 1794970989316
       },
       "lastErrors": []
     },
@@ -8493,7 +8298,7 @@
       "deflatedT": -3.13,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794970234759,
+      "updatedAt": 1794970974588,
       "gen": 4
     },
     "factory": {
