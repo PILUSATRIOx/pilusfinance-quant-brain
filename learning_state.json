@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795009147522,
+  "updatedAt": 1795010041969,
   "brain": {
     "v": 1,
     "gen": 11,
-    "cycles": 67,
+    "cycles": 68,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795008235098,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.44,
+    "lastHurst": 0.41,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -424,15 +424,15 @@
           "wins": 42,
           "losses": 41,
           "winRate": 50.602409638554214,
-          "pf": 0.6232733651894728,
-          "exp": -0.21725564533147357,
-          "netR": -18.032218562512305,
+          "pf": 0.6240552053510436,
+          "exp": -0.21680476351651096,
+          "netR": -17.99479537187041,
           "maxDD": 26.161544144049998,
-          "sumR2": 90.68901826492939,
-          "grossW": 29.833307514722776,
+          "sumR2": 90.7432548337143,
+          "grossW": 29.87073070536467,
           "grossL": 47.86552607723508,
-          "sd": 1.0286826585514814,
-          "tStat": -1.924104688683702,
+          "sd": 1.029100349930308,
+          "tStat": -1.9193321601659374,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -443,15 +443,15 @@
           "wins": 51,
           "losses": 33,
           "winRate": 60.71428571428571,
-          "pf": 0.7588377416491021,
-          "exp": -0.11068075036350933,
-          "netR": -9.297183030534784,
+          "pf": 0.7593713048527915,
+          "exp": -0.110435873009339,
+          "netR": -9.276613332784477,
           "maxDD": 11.813186264780798,
-          "sumR2": 72.72333879108007,
-          "grossW": 29.254384259099435,
+          "sumR2": 72.75029774646757,
+          "grossW": 29.27495395684974,
           "grossL": 38.55156728963423,
-          "sd": 0.9294014111761981,
-          "tStat": -1.0914614727632168,
+          "sd": 0.929605609174305,
+          "tStat": -1.0888074308272258,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -462,15 +462,15 @@
           "wins": 58,
           "losses": 40,
           "winRate": 57.99999999999999,
-          "pf": 0.5609954344479483,
-          "exp": -0.20709221863163518,
-          "netR": -20.709221863163517,
+          "pf": 0.5474552702514837,
+          "exp": -0.21348232147995433,
+          "netR": -21.348232147995432,
           "maxDD": 24.23975257780259,
-          "sumR2": 83.64072790709808,
-          "grossW": 26.475443514162556,
+          "sumR2": 83.20166523035768,
+          "grossW": 25.83643322933064,
           "grossL": 47.193688020323926,
-          "sd": 0.8952851202373419,
-          "tStat": -2.3131426397071655,
+          "sd": 0.8912832371402358,
+          "tStat": -2.3952242405560322,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3692,7 +3692,7 @@
         "lockedR": 0,
         "mfe": 0.6765120010930007,
         "mae": -0.23312237875502173,
-        "lastBarT": 1795008900000
+        "lastBarT": 1795009800000
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3804,6 +3804,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795010041853,
+        "type": "CYCLE",
+        "text": "[CYCLE #68] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795010032450,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795009147450,
         "type": "CYCLE",
@@ -4893,9 +4903,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1560,
+      "newsIngested": 1590,
       "lessons": 1,
-      "backtests": 1640,
+      "backtests": 1670,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4908,7 +4918,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795009133258,
+      "fetchedAt": 1795010032450,
       "items": [
         {
           "source": "CoinDesk",
@@ -4982,6 +4992,34 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "CoinShares sells all treasury ETH, halves SOL holdings for buybacks",
+          "link": "https://cointelegraph.com/news/coinshares-sells-eth-treasury-holdings-halves-sol-share-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 13:42:37",
+          "summary": "    The October sales raised $19.3 million, nearly half the $40 million CoinShares can spend on buybacks before its next annual meeting. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 13:34:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Sanctions fears loom over Russia’s regulated crypto trading launch",
+          "link": "https://cointelegraph.com/news/sanctions-fears-russia-crypto-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 13:32:19",
+          "summary": "    Russia’s crypto trading rollout faces uncertainty as companies weigh sanctions exposure, while Moscow Exchange prepares to launch crypto trading in December. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "How to preserve wealth and access funds during a national emergency",
+          "link": "https://cointelegraph.com/magazine/how-to-preserve-wealth-and-access-it-during-a-national-emergency?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 13:30:00",
+          "summary": "    As geopolitical and technological threats multiply, the big question is whether you can hold on to your wealth and access funds when the system fails. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Tokenized Nvidia market cap surges 159% amid Jensen Huang’s exit",
           "link": "https://cointelegraph.com/news/tokenized-nvidia-cap-rises-158-stock-loses-750b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-18 12:53:12",
@@ -5023,32 +5061,11 @@
           "summary": "    Bitcoin ETF outflows returned after a one-day pause as CryptoQuant warned that Bitcoin had returned to a bearish market phase. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 06:00:00",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Ledger hardware implant saga reaches Dubai’s Virgin Megastore",
-          "link": "https://cointelegraph.com/news/ledger-hardware-implant-saga-reaches-dubais-virgin-megastore?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 02:39:52",
-          "summary": "    Two Ledger owners reported losing a combined $604,000 in crypto from hardware wallets they said were purchased at authorized retailer Virgin Megastore in Dubai. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Nvidia board rejects Huang comeback despite record $116B quarter",
-          "link": "https://cointelegraph.com/markets/nvidia-board-rejects-huang-comeback-amid-record-116b-quarter?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 00:16:43",
-          "summary": "    Nvidia beat Wall Street’s revenue expectations by 5.6% and issued a stronger-than-expected sales forecast, while its board resisted growing calls for Jensen Huang’s reinstatement. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "CFTC halts some Kalshi Trump mention markets over manipulation concerns",
-          "link": "https://cointelegraph.com/news/cftc-kalshi-trump-mention-markets-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 22:20:04",
-          "summary": "    The CFTC stayed Kalshi’s Trump-related mention markets after raising concerns about manipulation risks, giving the platform until Dec. 11 to defend its contracts. "
+          "source": "Decrypt",
+          "title": "Morning Minute: Nvidia Beats, Board Says ‘No’ on Jensen",
+          "link": "https://decrypt.co/383530/morning-minute-nvidia-beats-board-says-no-on-jensen",
+          "pubDate": "2026-11-18 13:37:20",
+          "summary": "Nvidia delivered its best earnings ever and raised forward guidance. And yet, the market mostly shrugged. What does it mean?"
         },
         {
           "source": "Decrypt",
@@ -5112,13 +5129,6 @@
           "link": "https://decrypt.co/383466/bitcoin-investors-capitulating-historical-bottom-signal",
           "pubDate": "2026-11-17 20:36:03",
           "summary": "Glassnode says Bitcoin’s realized losses have reached levels seen only near the 2018, 2020, 2022 and early 2023 lows, as buyers defend the $62,000 to $66,000 range."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Cathie Wood&#39;s ARK Sells $85 Million in Nvidia, Buys $40 Million in Crypto Stocks",
-          "link": "https://decrypt.co/383463/cathie-wood-ark-sells-85-million-nvidia-buys-crypto-stocks",
-          "pubDate": "2026-11-17 19:46:03",
-          "summary": "Cathie Wood&#39;s funds trimmed Nvidia ahead of earnings while buying Block, Circle and Coinbase during Monday&#39;s selloff."
         }
       ],
       "perCoin": {
@@ -5135,8 +5145,8 @@
           "critHead": ""
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
+          "sentiment": "BULLISH",
+          "impact": 0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph"
@@ -5147,7 +5157,7 @@
         },
         "SOL": {
           "sentiment": "BEARISH",
-          "impact": -0.67,
+          "impact": -0.33,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -5241,7 +5251,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795009133258
+        "t": 1795010032450
       },
       "lastErrors": []
     },
@@ -7273,122 +7283,122 @@
         ],
         "XRPUSDT": [
           [
-            0.594,
+            0.598,
             -1.143,
             41
           ],
           [
-            0.572,
+            0.576,
             -1.147,
             10
           ],
           [
-            0.567,
+            0.573,
             -1.131,
             2
           ],
           [
-            0.569,
+            0.573,
             -1.123,
             10
           ],
           [
-            0.584,
+            0.586,
             0.718,
             80
           ],
           [
-            0.546,
+            0.549,
             -1.092,
             10
           ],
           [
-            0.594,
+            0.599,
             1.551,
             10
           ],
           [
-            0.527,
+            0.528,
             -1.101,
             69
           ],
           [
-            0.576,
+            0.579,
             -1.103,
             35
           ],
           [
-            0.619,
+            0.62,
             0.223,
             2
           ],
           [
-            0.627,
+            0.63,
             -1.157,
             10
           ],
           [
-            0.581,
+            0.584,
             0.536,
             10
           ],
           [
-            0.631,
+            0.633,
             0.837,
             35
           ],
           [
-            0.577,
+            0.579,
             0.225,
             27
           ],
           [
-            0.578,
+            0.581,
             0.214,
             69
           ],
           [
-            0.54,
+            0.543,
             1.48,
             10
           ],
           [
-            0.527,
+            0.528,
             -1.281,
             90
           ],
           [
-            0.544,
+            0.548,
             -1.381,
             10
           ],
           [
-            0.595,
+            0.6,
             0.271,
             10
           ],
           [
-            0.517,
+            0.519,
             -1.268,
             61
           ],
           [
-            0.587,
+            0.588,
             0.187,
             10
           ],
           [
-            0.488,
+            0.489,
             1.416,
             96
           ],
           [
-            0.519,
+            0.521,
             1.452,
             61
           ],
           [
-            0.598,
+            0.601,
             -1.176,
             2
           ],
@@ -7398,202 +7408,202 @@
             56
           ],
           [
-            0.556,
+            0.559,
             0.186,
             90
           ],
           [
-            0.561,
+            0.563,
             0.461,
             2
           ],
           [
-            0.568,
+            0.569,
             -1.231,
             10
           ],
           [
-            0.584,
+            0.586,
             -1.204,
             10
           ],
           [
-            0.5,
+            0.501,
             1.444,
             96
           ],
           [
-            0.535,
+            0.537,
             0.26,
             86
           ],
           [
-            0.533,
+            0.536,
             1.455,
             35
           ],
           [
-            0.613,
+            0.615,
             -1.162,
             10
           ],
           [
-            0.622,
+            0.624,
             -1.222,
             27
           ],
           [
-            0.577,
+            0.579,
             -1.227,
             10
           ],
           [
-            0.618,
+            0.62,
             1.431,
             10
           ],
           [
-            0.552,
+            0.554,
             -1.168,
             35
           ],
           [
-            0.554,
+            0.555,
             1.081,
             56
           ],
           [
-            0.595,
+            0.596,
             -1.192,
             10
           ],
           [
-            0.636,
+            0.638,
             -1.196,
             10
           ],
           [
-            0.585,
+            0.586,
             1.45,
             10
           ],
           [
-            0.624,
+            0.627,
             0.201,
             10
           ],
           [
-            0.603,
+            0.606,
             0.215,
             35
           ],
           [
-            0.532,
+            0.534,
             -1.19,
             10
           ],
           [
-            0.547,
+            0.549,
             -1.215,
             80
           ],
           [
-            0.618,
+            0.621,
             0.208,
             10
           ],
           [
-            0.604,
+            0.606,
             -1.18,
             10
           ],
           [
-            0.638,
+            0.641,
             -1.127,
             2
           ],
           [
-            0.594,
+            0.595,
             0.39,
             35
           ],
           [
-            0.594,
+            0.595,
             1.424,
             35
           ],
           [
-            0.526,
+            0.527,
             -1.235,
             69
           ],
           [
-            0.619,
+            0.621,
             0.656,
             27
           ],
           [
-            0.51,
+            0.511,
             -1.198,
             61
           ],
           [
-            0.616,
+            0.618,
             -1.141,
             2
           ],
           [
-            0.587,
+            0.589,
             -1.144,
             10
           ],
           [
-            0.617,
+            0.62,
             0.247,
             10
           ],
           [
-            0.612,
+            0.614,
             -1.207,
             27
           ],
           [
-            0.564,
+            0.566,
             -1.143,
             35
           ],
           [
-            0.57,
+            0.572,
             -1.126,
             10
           ],
           [
-            0.592,
+            0.594,
             0.379,
             10
           ],
           [
-            0.628,
+            0.63,
             -1.144,
             35
           ],
           [
-            0.571,
+            0.573,
             -1.155,
             10
           ],
           [
-            0.563,
+            0.565,
             -1.135,
             69
           ],
           [
-            0.622,
+            0.625,
             -1.129,
             10
           ],
           [
-            0.57,
+            0.573,
             -1.133,
             10
           ],
@@ -7608,54 +7618,54 @@
             61
           ],
           [
-            0.543,
+            0.546,
             0.241,
             35
           ],
           [
-            0.499,
+            0.5,
             -1.137,
             100
           ]
         ],
         "DOGEUSDT": [
           [
-            0.557,
+            0.561,
             1.51,
             10
           ],
           [
-            0.598,
+            0.602,
             -1.131,
             35
           ],
           [
-            0.593,
+            0.596,
             -1.094,
             15
           ],
           [
-            0.602,
+            0.607,
             1.559,
             10
           ],
           [
-            0.589,
+            0.591,
             1.555,
             10
           ],
           [
-            0.537,
+            0.539,
             0.52,
             27
           ],
           [
-            0.635,
+            0.638,
             -1.138,
             35
           ],
           [
-            0.59,
+            0.593,
             0.274,
             10
           ],
@@ -7665,47 +7675,47 @@
             56
           ],
           [
-            0.632,
+            0.634,
             0.597,
             2
           ],
           [
-            0.496,
+            0.497,
             -1.124,
             81
           ],
           [
-            0.546,
+            0.549,
             -1.145,
             10
           ],
           [
-            0.555,
+            0.558,
             0.264,
             10
           ],
           [
-            0.549,
+            0.552,
             0.277,
             2
           ],
           [
-            0.542,
+            0.545,
             -1.114,
             33
           ],
           [
-            0.548,
+            0.552,
             0.249,
             10
           ],
           [
-            0.497,
+            0.498,
             -1.339,
             90
           ],
           [
-            0.538,
+            0.54,
             -1.327,
             10
           ],
@@ -7715,82 +7725,82 @@
             61
           ],
           [
-            0.594,
+            0.6,
             0.18,
             10
           ],
           [
-            0.545,
+            0.55,
             0.662,
             10
           ],
           [
-            0.562,
+            0.564,
             0.205,
             56
           ],
           [
-            0.541,
+            0.542,
             1.498,
             61
           ],
           [
-            0.604,
+            0.606,
             0.782,
             35
           ],
           [
-            0.581,
+            0.584,
             -1.232,
             69
           ],
           [
-            0.599,
+            0.601,
             -1.173,
             10
           ],
           [
-            0.559,
+            0.56,
             0.947,
             69
           ],
           [
-            0.62,
+            0.623,
             -1.127,
             33
           ],
           [
-            0.585,
+            0.586,
             -1.162,
             10
           ],
           [
-            0.605,
+            0.608,
             -1.12,
             10
           ],
           [
-            0.525,
+            0.526,
             -1.125,
             69
           ],
           [
-            0.601,
+            0.602,
             -1.113,
             26
           ],
           [
-            0.59,
+            0.592,
             0.176,
             10
           ],
           [
-            0.63,
+            0.632,
             -1.17,
             27
           ],
           [
-            0.588,
+            0.59,
             -1.188,
             10
           ],
@@ -7805,87 +7815,87 @@
             69
           ],
           [
-            0.552,
+            0.555,
             -1.164,
             35
           ],
           [
-            0.523,
+            0.525,
             -1.228,
             10
           ],
           [
-            0.548,
+            0.551,
             1.446,
             10
           ],
           [
-            0.621,
+            0.624,
             -1.192,
             10
           ],
           [
-            0.617,
+            0.619,
             0.626,
             10
           ],
           [
-            0.638,
+            0.64,
             0.224,
             10
           ],
           [
-            0.507,
+            0.508,
             -1.191,
             95
           ],
           [
-            0.555,
+            0.557,
             -1.215,
             35
           ],
           [
-            0.549,
+            0.555,
             0.152,
             10
           ],
           [
-            0.581,
+            0.584,
             0.854,
             10
           ],
           [
-            0.558,
+            0.561,
             1.491,
             35
           ],
           [
-            0.603,
+            0.604,
             0.059,
             10
           ],
           [
-            0.611,
+            0.613,
             0.098,
             41
           ],
           [
-            0.539,
+            0.541,
             0.137,
             95
           ],
           [
-            0.602,
+            0.604,
             0.395,
             10
           ],
           [
-            0.637,
+            0.64,
             1.465,
             10
           ],
           [
-            0.602,
+            0.605,
             0.258,
             10
           ],
@@ -7895,52 +7905,52 @@
             61
           ],
           [
-            0.545,
+            0.547,
             -1.315,
             41
           ],
           [
-            0.56,
+            0.561,
             -1.168,
             56
           ],
           [
-            0.539,
+            0.541,
             -1.145,
             61
           ],
           [
-            0.568,
+            0.569,
             -1.179,
             10
           ],
           [
-            0.595,
+            0.597,
             0.269,
             10
           ],
           [
-            0.63,
+            0.633,
             -1.145,
             10
           ],
           [
-            0.584,
+            0.586,
             0.253,
             10
           ],
           [
-            0.571,
+            0.573,
             -1.124,
             69
           ],
           [
-            0.633,
+            0.636,
             -1.122,
             10
           ],
           [
-            0.592,
+            0.593,
             0.6,
             35
           ]
@@ -9332,7 +9342,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1203,
-        "updatedAt": 1795009143583
+        "updatedAt": 1795010038764
       }
     },
     "champion": {
@@ -9348,7 +9358,7 @@
       "deflatedT": -4.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795009143582,
+      "updatedAt": 1795010038757,
       "gen": 11
     },
     "factory": {
