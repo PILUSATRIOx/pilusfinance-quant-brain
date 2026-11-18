@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794978335149,
+  "updatedAt": 1794979111151,
   "brain": {
     "v": 1,
     "gen": 5,
     "cycles": 34,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1794974589565,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2605,6 +2605,11 @@
     ],
     "journal": [
       {
+        "t": 1794979088259,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794978335129,
         "type": "CYCLE",
         "text": "[CYCLE #34] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3328,9 +3333,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 750,
+      "newsIngested": 780,
       "lessons": 1,
-      "backtests": 770,
+      "backtests": 800,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3343,7 +3348,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794978186296,
+      "fetchedAt": 1794979088259,
       "items": [
         {
           "source": "CoinDesk",
@@ -3431,13 +3436,6 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-17 22:37:51",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
           "title": "CFTC halts some Kalshi Trump mention markets over manipulation concerns",
           "link": "https://cointelegraph.com/news/cftc-kalshi-trump-mention-markets-review?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 22:20:04",
@@ -3484,6 +3482,13 @@
           "link": "https://cointelegraph.com/news/coingecko-solana-foundation-majority-stake?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-17 14:45:49",
           "summary": "    Solana Foundation now holds a majority interest in CoinGecko, its product chief said, as the crypto data platform explores trading features. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin to $1M by 2030? ‘Almost certainly not,’ says Dragonfly’s Qureshi",
+          "link": "https://cointelegraph.com/magazine/bitcoin-to-1m-by-2030-almost-certainly-not-says-dragonflys-qureshi?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-17 13:30:00",
+          "summary": "    Dragonfly’s Haseeb Qureshi says Bitcoin could reach $400,000 by 2030 but doubts it will return to $100,000 by year-end with the rout in AI stocks weighing on crypto. "
         },
         {
           "source": "Decrypt",
@@ -3676,7 +3681,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794978186296
+        "t": 1794979088259
       },
       "lastErrors": []
     },
@@ -7777,7 +7782,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794978217590
+        "updatedAt": 1794979088719
       }
     },
     "champion": {
@@ -7793,7 +7798,7 @@
       "deflatedT": -3,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794978335133,
+      "updatedAt": 1794979088718,
       "gen": 5
     },
     "factory": {
