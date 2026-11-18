@@ -1,15 +1,15 @@
 {
   "weights": {
-    "elder": 0.48,
-    "donchian": 0.55,
-    "bbrev": 0.85,
-    "wyckoff": 0.8,
-    "rsidiv": 0.6,
-    "macdm": 0.51,
-    "smc": 0.61,
-    "statarb": 0.56,
+    "elder": 0.44,
+    "donchian": 0.53,
+    "bbrev": 0.87,
+    "wyckoff": 0.79,
+    "rsidiv": 0.57,
+    "macdm": 0.49,
+    "smc": 0.55,
+    "statarb": 0.53,
     "tsmom": 1,
-    "emax": 0.69
+    "emax": 0.73
   },
-  "updatedAt": 1794979206237
+  "updatedAt": 1794980010782
 }
