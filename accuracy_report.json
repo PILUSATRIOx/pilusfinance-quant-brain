@@ -1,11 +1,11 @@
 {
-  "updatedAt": 1795014539922,
+  "updatedAt": 1795020827486,
   "totalSignals": 3,
-  "closed": 0,
-  "wins": 0,
+  "closed": 1,
+  "wins": 1,
   "losses": 0,
-  "winRatePct": null,
-  "netR": 0,
+  "winRatePct": 100,
+  "netR": 0.1,
   "backtestOOS": {
     "trades": 0,
     "netR": 0,
