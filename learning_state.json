@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794972937566,
+  "updatedAt": 1794973805900,
   "brain": {
     "v": 1,
     "gen": 4,
-    "cycles": 28,
+    "cycles": 29,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1794969662514,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.58,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2505,6 +2505,16 @@
     ],
     "journal": [
       {
+        "t": 1794973805856,
+        "type": "CYCLE",
+        "text": "[CYCLE #29] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1794973687557,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1794972937537,
         "type": "CYCLE",
         "text": "[CYCLE #28] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -3158,9 +3168,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 570,
+      "newsIngested": 600,
       "lessons": 1,
-      "backtests": 710,
+      "backtests": 740,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3173,7 +3183,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794972788020,
+      "fetchedAt": 1794973687557,
       "items": [
         {
           "source": "CoinDesk",
@@ -3506,7 +3516,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794972788020
+        "t": 1794973687556
       },
       "lastErrors": []
     },
@@ -7607,7 +7617,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794972819807
+        "updatedAt": 1794973688060
       }
     },
     "champion": {
@@ -7623,7 +7633,7 @@
       "deflatedT": -2.6,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794972937543,
+      "updatedAt": 1794973805860,
       "gen": 4
     },
     "factory": {
