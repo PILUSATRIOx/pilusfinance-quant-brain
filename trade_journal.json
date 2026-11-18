@@ -1,6 +1,63 @@
 {
   "trades": [
     {
+      "id": "sig_AAPL_1794918771126",
+      "sym": "AAPL",
+      "side": "LONG",
+      "entry": 352.80999755859375,
+      "sl": 352.80999755859375,
+      "rsiAtEntry": 45,
+      "tp1": 355.665245206396,
+      "tp2": 358.52049285419815,
+      "tp3": 361.73264645797565,
+      "momentumBurst": false,
+      "lev": 10,
+      "conf": 90,
+      "regime": "RANGING",
+      "hurst": 0.47,
+      "kalmanPrice": 352.80999755859375,
+      "kalmanVelZ": -0.0981,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 45 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.88x ATR kebal wick-hunt",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[INFO] Screen6: berita netral"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "LONG",
+          "note": "WYCKOFF SPRING: sweep bawah range lalu reclaim + volume",
+          "w": 0.99,
+          "barAge": 0
+        },
+        {
+          "strat": "statarb",
+          "side": "LONG",
+          "note": "D.E. Shaw Z-Score (-1.82 sigma) mean-reversion deceleration (RSI 41)",
+          "w": 0.37,
+          "barAge": 1
+        }
+      ],
+      "atr": 1.8984359360386933,
+      "volPct": 0.5380901757817693,
+      "status": "WIN",
+      "createdAt": 1794918771126,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.4000000000000032,
+      "mfe": 1.0114753785141941,
+      "mae": -0.8797791346123942,
+      "risk": 3.569059559752759,
+      "slInit": 349.240937998841,
+      "lastBarT": 1795019400000,
+      "closedAt": 1795019921978,
+      "netR": 0.1,
+      "closeReason": "Trail/BE exit di 352.8100"
+    },
+    {
       "id": "sig_AAPL_1794887289010",
       "sym": "AAPL",
       "side": "LONG",
@@ -55,5 +112,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795019027330
+  "updatedAt": 1795019928305
 }
