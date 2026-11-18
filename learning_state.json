@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795002057258,
+  "updatedAt": 1795002826016,
   "brain": {
     "v": 1,
-    "gen": 9,
-    "cycles": 59,
+    "gen": 10,
+    "cycles": 60,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1794994767580,
+    "lastOptAt": 1795002824076,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,16 +35,16 @@
       "volConfirmMult": 1.2
     },
     "weights": {
-      "elder": 0.5,
+      "elder": 0.52,
       "donchian": 0.54,
-      "bbrev": 0.81,
+      "bbrev": 0.79,
       "wyckoff": 0.78,
-      "rsidiv": 0.61,
-      "macdm": 0.49,
-      "smc": 0.63,
-      "statarb": 0.56,
+      "rsidiv": 0.62,
+      "macdm": 0.5,
+      "smc": 0.66,
+      "statarb": 0.57,
       "tsmom": 1,
-      "emax": 0.65
+      "emax": 0.63
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3692,7 +3692,7 @@
         "lockedR": 0,
         "mfe": 0.6033755685424058,
         "mae": -0.23312237875502173,
-        "lastBarT": 1795002000000
+        "lastBarT": 1795002600000
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3804,6 +3804,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795002825994,
+        "type": "CYCLE",
+        "text": "[CYCLE #60] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795002824077,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.12R/trade, win 56.6%, t=-1.05) | Meta-model belum aktif (1202 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.292R)"
+      },
+      {
+        "t": 1795002824076,
+        "type": "GEN",
+        "text": "[GEN #10] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-43.58R, 311 trade, Win 57.2%, t=-2.44 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795002823751,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795002057233,
         "type": "CYCLE",
@@ -4788,9 +4808,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 1320,
+      "newsIngested": 1350,
       "lessons": 1,
-      "backtests": 1400,
+      "backtests": 1430,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4803,7 +4823,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795001720500,
+      "fetchedAt": 1795002823751,
       "items": [
         {
           "source": "CoinDesk",
@@ -5131,7 +5151,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795001720500
+        "t": 1795002823751
       },
       "lastErrors": []
     },
@@ -5811,42 +5831,42 @@
         ],
         "MSFT": [
           [
-            0.537,
+            0.533,
             -1.205,
             33
           ],
           [
-            0.49,
+            0.488,
             -1.197,
             88
           ],
           [
-            0.529,
+            0.528,
             -1.24,
             69
           ],
           [
-            0.542,
+            0.536,
             0.144,
             10
           ],
           [
-            0.532,
+            0.528,
             -1.185,
             40
           ],
           [
-            0.547,
+            0.542,
             -1.198,
             2
           ],
           [
-            0.568,
+            0.566,
             1.418,
             90
           ],
           [
-            0.537,
+            0.532,
             -1.247,
             10
           ],
@@ -5861,104 +5881,104 @@
             64
           ],
           [
-            0.563,
+            0.56,
             0.158,
             15
           ],
           [
-            0.533,
+            0.529,
             -1.889,
             35
           ],
           [
-            0.588,
+            0.585,
             -1.203,
             27
           ],
           [
-            0.576,
+            0.574,
             -1.166,
             10
           ],
           [
-            0.573,
+            0.569,
             1.495,
             35
           ],
           [
-            0.573,
+            0.569,
             -1.164,
             10
           ],
           [
-            0.51,
+            0.509,
             0.231,
             69
           ]
         ],
         "SPY": [
           [
-            0.53,
+            0.527,
             -0.08,
             96
           ],
           [
-            0.572,
+            0.569,
             1.168,
             2
           ],
           [
-            0.53,
+            0.526,
             -1.387,
             40
           ],
           [
-            0.569,
+            0.567,
             -1.695,
             10
           ],
           [
-            0.461,
+            0.459,
             -0.245,
             61
           ],
           [
-            0.549,
+            0.545,
             -1.546,
             46
           ],
           [
-            0.473,
+            0.472,
             -1.467,
             48
           ],
           [
-            0.543,
+            0.541,
             -0.207,
             41
           ],
           [
-            0.488,
+            0.487,
             -0.017,
             56
           ],
           [
-            0.561,
+            0.555,
             1.107,
             35
           ],
           [
-            0.57,
+            0.567,
             -1.407,
             10
           ],
           [
-            0.551,
+            0.546,
             1.352,
             2
           ],
           [
-            0.522,
+            0.52,
             -1.322,
             48
           ]
@@ -5975,17 +5995,17 @@
             95
           ],
           [
-            0.532,
+            0.527,
             -1.716,
             10
           ],
           [
-            0.49,
+            0.488,
             1.184,
             48
           ],
           [
-            0.491,
+            0.49,
             1.606,
             69
           ],
@@ -5995,17 +6015,17 @@
             61
           ],
           [
-            0.543,
+            0.54,
             -1.24,
             41
           ],
           [
-            0.583,
+            0.578,
             0.656,
             10
           ],
           [
-            0.468,
+            0.466,
             1.359,
             96
           ],
@@ -6015,7 +6035,7 @@
             56
           ],
           [
-            0.539,
+            0.536,
             -1.25,
             48
           ]
@@ -9217,7 +9237,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1202,
-        "updatedAt": 1795002055268
+        "updatedAt": 1795002824077
       }
     },
     "champion": {
@@ -9233,8 +9253,8 @@
       "deflatedT": -4.59,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795002055268,
-      "gen": 9
+      "updatedAt": 1795002824076,
+      "gen": 10
     },
     "factory": {
       "updatedAt": 1794963883649,
