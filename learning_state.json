@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1794973805900,
+  "updatedAt": 1794974610737,
   "brain": {
     "v": 1,
-    "gen": 4,
+    "gen": 5,
     "cycles": 29,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1794969662514,
+    "lastOptAt": 1794974589565,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,16 +35,16 @@
       "volConfirmMult": 1.2
     },
     "weights": {
-      "elder": 0.55,
-      "donchian": 0.58,
-      "bbrev": 0.81,
-      "wyckoff": 0.82,
-      "rsidiv": 0.66,
-      "macdm": 0.54,
-      "smc": 0.71,
-      "statarb": 0.62,
+      "elder": 0.48,
+      "donchian": 0.55,
+      "bbrev": 0.85,
+      "wyckoff": 0.8,
+      "rsidiv": 0.6,
+      "macdm": 0.51,
+      "smc": 0.61,
+      "statarb": 0.56,
       "tsmom": 1,
-      "emax": 0.62
+      "emax": 0.69
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -314,13 +314,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 25,
+          "wins": 15,
+          "losses": 10,
+          "winRate": 60,
+          "pf": 1.0024913257506458,
+          "exp": 0.0011948557386721338,
+          "netR": 0.029871393466803342,
+          "maxDD": 6.623367142870421,
+          "sumR2": 36.110999942435015,
+          "grossW": 12.020031033995338,
+          "grossL": 11.990159640528535,
+          "sd": 1.2266309593494475,
+          "tStat": 0.004870477667161743,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -528,13 +538,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 15,
+          "wins": 9,
+          "losses": 6,
+          "winRate": 60,
+          "pf": 0.4411686709610474,
+          "exp": -0.36047494728833446,
+          "netR": -5.4071242093250165,
+          "maxDD": 5.5261442496821545,
+          "sumR2": 21.270126834021806,
+          "grossW": 4.26864722357566,
+          "grossL": 9.675771432900675,
+          "sd": 1.1747642322636456,
+          "tStat": -1.1884201350619554,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -742,13 +762,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 13,
+          "wins": 7,
+          "losses": 6,
+          "winRate": 53.84615384615385,
+          "pf": 0.46208755957423703,
+          "exp": -0.3702809363491486,
+          "netR": -4.813652172538932,
+          "maxDD": 6.380836033115748,
+          "sumR2": 17.9798007837909,
+          "grossW": 4.135113111136009,
+          "grossL": 8.948765283674943,
+          "sd": 1.161801659423991,
+          "tStat": -1.1491349590562514,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -956,13 +986,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 11,
+          "wins": 8,
+          "losses": 3,
+          "winRate": 72.72727272727273,
+          "pf": 0.6754946122513128,
+          "exp": -0.17820129108203064,
+          "netR": -1.960214201902337,
+          "maxDD": 5.8935092426353926,
+          "sumR2": 17.21935566487208,
+          "grossW": 4.080407235854566,
+          "grossL": 6.0406214377569025,
+          "sd": 1.298847295231266,
+          "tStat": -0.45503949682611944,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -1170,13 +1210,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 3,
+          "wins": 1,
+          "losses": 2,
+          "winRate": 33.33333333333333,
+          "pf": 0.42955981314940134,
+          "exp": -0.2556356123844731,
+          "netR": -0.7669068371534192,
+          "maxDD": 1.3444123587917487,
+          "sumR2": 1.8805876162890054,
+          "grossW": 0.5775055216383295,
+          "grossL": 1.3444123587917487,
+          "sd": 0.9177523950749058,
+          "tStat": -0.4824546045861884,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -1384,13 +1434,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 7,
+          "wins": 4,
+          "losses": 3,
+          "winRate": 57.14285714285714,
+          "pf": 0.3739903014256997,
+          "exp": -0.4468650357330012,
+          "netR": -3.128055250131008,
+          "maxDD": 4.996815955495524,
+          "sumR2": 10.710700459108065,
+          "grossW": 1.8687607053645168,
+          "grossL": 4.996815955495524,
+          "sd": 1.2458519132159775,
+          "tStat": -0.9489841783102465,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -1598,13 +1658,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 3,
+          "wins": 2,
+          "losses": 1,
+          "winRate": 66.66666666666666,
+          "pf": 0.5531583105067467,
+          "exp": -0.3628866690181814,
+          "netR": -1.0886600070545442,
+          "maxDD": 2.436343861042047,
+          "sumR2": 7.584250308539849,
+          "grossW": 1.3476838539875027,
+          "grossL": 2.436343861042047,
+          "sd": 1.8959417323439183,
+          "tStat": -0.3315176502559869,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -1812,13 +1882,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 32,
+          "wins": 15,
+          "losses": 17,
+          "winRate": 46.875,
+          "pf": 0.3973349892724783,
+          "exp": -0.4612688651915334,
+          "netR": -14.760603686129068,
+          "maxDD": 18.379765674351443,
+          "sumR2": 52.95651078846488,
+          "grossW": 9.731615744878626,
+          "grossL": 24.492219431007694,
+          "sd": 1.2200992011046474,
+          "tStat": -2.138621792272981,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -2026,13 +2106,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -2240,13 +2330,23 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 7,
+          "wins": 4,
+          "losses": 3,
+          "winRate": 57.14285714285714,
+          "pf": 1.2308284065466182,
+          "exp": 0.13995846572256707,
+          "netR": 0.9797092600579695,
+          "maxDD": 1.5392681720080261,
+          "sumR2": 12.907813558152545,
+          "grossW": 5.224027689991369,
+          "grossL": 4.244318429933399,
+          "sd": 1.458920545772378,
+          "tStat": 0.2538145721870204,
+          "atrMult": 1.88,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "dataStatus": "OFFLINE",
@@ -2504,6 +2604,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794974589565,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.12R/trade, win 56.6%, t=-1.05) | Meta-model belum aktif (1200 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
+      },
+      {
+        "t": 1794974589565,
+        "type": "GEN",
+        "text": "[GEN #5] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: EMA Cross Naive (CONTROL) (BELUM SIGNIFIKAN) (-5.16R, 39 trade, Win 59%, t=-0.85 vs hurdle 2.15)"
+      },
+      {
+        "t": 1794974588024,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1794973805856,
         "type": "CYCLE",
@@ -3168,9 +3283,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 0,
-      "newsIngested": 600,
+      "newsIngested": 630,
       "lessons": 1,
-      "backtests": 740,
+      "backtests": 770,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -3183,7 +3298,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1794973687557,
+      "fetchedAt": 1794974588024,
       "items": [
         {
           "source": "CoinDesk",
@@ -3516,17 +3631,17 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1794973687556
+        "t": 1794974588024
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1794971889732,
+      "fetchedAt": 1794974589099,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.34,
-        "ARB": 10.96,
+        "BTC": -14.55,
+        "ARB": 11.12,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -3543,35 +3658,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 962.33,
+          "pct": 945.79,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.34,
+          "pct": 14.55,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 10.96,
+          "pct": 11.12,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 39.16,
+          "pct": 39.73,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 195.38,
+          "pct": 198.22,
           "lev": 10
         },
         {
@@ -3585,63 +3700,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.31,
+          "pct": 23.64,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 205.93,
+          "pct": 208.92,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 34.1,
+          "pct": 34.59,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 106.12,
+          "pct": 107.67,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 54.18,
+          "pct": 54.97,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 95.84,
+          "pct": 96.36,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 267.96,
+          "pct": 269.42,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 83.8,
+          "pct": 84.25,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1219.03,
+          "pct": 1200.36,
           "lev": 10
         }
       ]
@@ -7617,24 +7732,24 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794973688060
+        "updatedAt": 1794974589565
       }
     },
     "champion": {
-      "id": "bbrev",
-      "name": "Bollinger Mean Reversion",
-      "book": "Bollinger / Chan",
-      "netR": -3.02,
-      "trades": 54,
-      "winRate": 63,
-      "pf": 0.86,
-      "expPerTrade": -0.056,
-      "tStat": -0.45,
-      "deflatedT": -2.6,
+      "id": "emax",
+      "name": "EMA Cross Naive (CONTROL)",
+      "book": "Baseline Penelitian",
+      "netR": -5.16,
+      "trades": 39,
+      "winRate": 59,
+      "pf": 0.71,
+      "expPerTrade": -0.132,
+      "tStat": -0.85,
+      "deflatedT": -3,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794973805860,
-      "gen": 4
+      "updatedAt": 1794974589565,
+      "gen": 5
     },
     "factory": {
       "updatedAt": 1794963883649,
