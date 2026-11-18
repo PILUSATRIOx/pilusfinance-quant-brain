@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1794972810230,
+  "updatedAt": 1794972937566,
   "brain": {
     "v": 1,
     "gen": 4,
-    "cycles": 27,
+    "cycles": 28,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1794969662514,
     "autoExecBursa": false,
@@ -210,23 +210,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 22,
@@ -434,23 +424,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 15,
@@ -658,23 +638,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 17,
@@ -882,23 +852,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 10,
@@ -1106,23 +1066,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 5,
@@ -1330,23 +1280,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 9,
@@ -1554,23 +1494,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 5,
@@ -1778,23 +1708,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 29,
@@ -2002,23 +1922,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 0,
@@ -2226,23 +2136,13 @@
           "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.88,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 3,
@@ -2604,6 +2504,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1794972937537,
+        "type": "CYCLE",
+        "text": "[CYCLE #28] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
       {
         "t": 1794972788020,
         "type": "NEWS",
@@ -7702,23 +7607,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1200,
-        "updatedAt": 1794971921535
+        "updatedAt": 1794972819807
       }
     },
     "champion": {
-      "id": "smc",
-      "name": "SMC Liquidity Sweep (SFP)",
-      "book": "Wyckoff / Citadel Microstructure",
-      "netR": 1.19,
-      "trades": 51,
-      "winRate": 60.8,
-      "pf": 1.05,
-      "expPerTrade": 0.023,
-      "tStat": 0.16,
-      "deflatedT": -1.98,
+      "id": "bbrev",
+      "name": "Bollinger Mean Reversion",
+      "book": "Bollinger / Chan",
+      "netR": -3.02,
+      "trades": 54,
+      "winRate": 63,
+      "pf": 0.86,
+      "expPerTrade": -0.056,
+      "tStat": -0.45,
+      "deflatedT": -2.6,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1794972773731,
+      "updatedAt": 1794972937543,
       "gen": 4
     },
     "factory": {
