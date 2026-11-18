@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795012734113,
+  "updatedAt": 1795013635135,
   "brain": {
     "v": 1,
-    "gen": 11,
-    "cycles": 71,
+    "gen": 12,
+    "cycles": 72,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795008235098,
+    "lastOptAt": 1795013632162,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,16 +35,16 @@
       "volConfirmMult": 1.2
     },
     "weights": {
-      "elder": 0.53,
+      "elder": 0.54,
       "donchian": 0.54,
       "bbrev": 0.78,
-      "wyckoff": 0.78,
-      "rsidiv": 0.63,
+      "wyckoff": 0.79,
+      "rsidiv": 0.64,
       "macdm": 0.5,
-      "smc": 0.68,
+      "smc": 0.69,
       "statarb": 0.58,
       "tsmom": 1,
-      "emax": 0.62
+      "emax": 0.61
     },
     "bayesian": {
       "elder": {
@@ -321,23 +321,23 @@
           "tStat": -1.9086229695767671,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 28,
-          "wins": 5,
+          "trades": 29,
+          "wins": 6,
           "losses": 23,
-          "winRate": 17.857142857142858,
-          "pf": 0.03247983102468158,
-          "exp": -1.0356865932579826,
-          "netR": -28.99922461122351,
+          "winRate": 20.689655172413794,
+          "pf": 0.0703965851052503,
+          "exp": -0.9607846837622249,
+          "netR": -27.862755829104522,
           "maxDD": 28.99922461122351,
-          "sumR2": 49.915877408277154,
-          "grossW": 0.9735093338848576,
+          "sumR2": 51.20743870100817,
+          "grossW": 2.1099781160038464,
           "grossL": 29.972733945108374,
-          "sd": 0.8581152746433017,
-          "tStat": -6.386482662491588,
+          "sd": 0.934217198151133,
+          "tStat": -5.538309374382942,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -665,7 +665,7 @@
           "tStat": -0.9114801814471238,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -688,19 +688,19 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 15,
-          "wins": 9,
+          "trades": 16,
+          "wins": 10,
           "losses": 6,
-          "winRate": 60,
-          "pf": 0.4411686709610474,
-          "exp": -0.36047494728833446,
-          "netR": -5.4071242093250165,
+          "winRate": 62.5,
+          "pf": 0.4761676358917603,
+          "exp": -0.31678013901670826,
+          "netR": -5.068482224267332,
           "maxDD": 5.5261442496821545,
-          "sumR2": 21.270126834021806,
-          "grossW": 4.26864722357566,
+          "sumR2": 21.384805228065616,
+          "grossW": 4.607289208633344,
           "grossL": 9.675771432900675,
-          "sd": 1.1747642322636456,
-          "tStat": -1.1884201350619554,
+          "sd": 1.1483092128417474,
+          "tStat": -1.1034663328451928,
           "atrMult": 1.88,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
@@ -1009,7 +1009,7 @@
           "tStat": 0.4663325865999269,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -1353,7 +1353,7 @@
           "tStat": -1.1711748859547364,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -1697,7 +1697,7 @@
           "tStat": -0.25341932412310453,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -2041,7 +2041,7 @@
           "tStat": -0.30449746632417285,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -2385,7 +2385,7 @@
           "tStat": -1.977945700708018,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -2729,7 +2729,7 @@
           "tStat": -1.2170099690744511,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -3073,7 +3073,7 @@
           "tStat": 0,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -3417,7 +3417,7 @@
           "tStat": -1.5536124116886114,
           "atrMult": 1.88,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "SPY": {
@@ -3637,7 +3637,7 @@
         "sym": "LINKUSDT",
         "side": "SHORT",
         "entry": 9.25,
-        "sl": 9.468769215861485,
+        "sl": 9.249733208363281,
         "slInit": 9.468769215861485,
         "risk": 0.21876921586148476,
         "rsiAtEntry": 55,
@@ -3685,14 +3685,14 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "OPEN",
+        "status": "TP1_SECURED",
         "createdAt": 1794963881588,
-        "tp1Hit": false,
-        "beActive": false,
-        "lockedR": 0,
-        "mfe": 0.6810830281274104,
+        "tp1Hit": true,
+        "beActive": true,
+        "lockedR": 0.40000000000000063,
+        "mfe": 1.0650492990180396,
         "mae": -0.23312237875502173,
-        "lastBarT": 1795012500000
+        "lastBarT": 1795013400000
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3804,6 +3804,31 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795013635079,
+        "type": "CYCLE",
+        "text": "[CYCLE #72] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795013632163,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.12R/trade, win 56.6%, t=-1.05) | Meta-model belum aktif (1203 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.288R)"
+      },
+      {
+        "t": 1795013632163,
+        "type": "GEN",
+        "text": "[GEN #12] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-42.5R, 313 trade, Win 57.5%, t=-2.38 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795013630509,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795013628512,
+        "type": "TP1",
+        "text": "[TP1 LOCKED] TP1 LINKUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
+      },
       {
         "t": 1795012734063,
         "type": "CYCLE",
@@ -4932,10 +4957,10 @@
       "wins": 0,
       "losses": 0,
       "be": 0,
-      "tp1Hits": 0,
-      "newsIngested": 1680,
+      "tp1Hits": 1,
+      "newsIngested": 1710,
       "lessons": 1,
-      "backtests": 1760,
+      "backtests": 1790,
       "netR": 0,
       "peakEquity": 0,
       "maxDrawdown": 0,
@@ -4948,8 +4973,64 @@
       }
     },
     "news": {
-      "fetchedAt": 1795012730215,
+      "fetchedAt": 1795013630509,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin miner MARA raises $185 million in debt after selling $1 billion BTC to repay loans",
+          "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-miner-mara-raises-usd185-million-in-debt-after-selling-usd1-billion-btc-to-repay-loans",
+          "pubDate": "2026-11-18 12:53:34",
+          "summary": "The bitcoin miner is taking on borrowing tied to an Ohio power plant as it shifts more of its business toward AI infrastructure."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bullish beats revenue estimates as institutional services offset sluggish spot crypto volumes",
+          "link": "https://www.coindesk.com/markets/2026/11/18/bullish-beats-revenue-estimates-as-institutional-services-offset-sluggish-spot-crypto-volumes",
+          "pubDate": "2026-11-18 12:41:09",
+          "summary": "The crypto platform reported net income of $576.3 million for the third quarter thanks to a sharp rise in the price of bitcoin."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Circle turns to DBS as banks build rival digital payment systems across Asia",
+          "link": "https://www.coindesk.com/business/2026/11/18/circle-turns-to-dbs-as-banks-build-rival-digital-payment-systems-across-asia",
+          "pubDate": "2026-11-18 12:25:14",
+          "summary": "The Singapore bank will let institutional clients buy and redeem USDC directly as banks across Asia develop their own blockchain payment systems."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Blaming Anthropic’s IPO for bitcoin’s slide is &#39;easy to believe,&#39; but flawed, analysts say",
+          "link": "https://www.coindesk.com/daybook-us/2026/11/18/blaming-anthropic-s-ipo-for-bitcoin-s-slide-is-easy-to-believe-but-flawed-analysts-say",
+          "pubDate": "2026-11-18 12:15:00",
+          "summary": "Your day-ahead look for Nov. 18, 2026"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin drops as Nvidia earnings report drives stock index futures higher",
+          "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher",
+          "pubDate": "2026-11-18 11:42:52",
+          "summary": "Bitcoin (BTC) is down 1.1% since midnight UTC at around $64,100, failing to keep pace with rising stock index futures after Nvidia beat earnings."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin outpaces gold even as both assets tumble ahead of a likely Fed rate hike",
+          "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-outpaces-gold-even-as-both-assets-tumble-ahead-of-a-likely-fed-rate-hike",
+          "pubDate": "2026-11-18 10:58:36",
+          "summary": "Bitcoin held near $64,000 as gold fell 2%, lifting the ratio between the two above its 200-day moving average and extending a series of higher lows since March."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Strategy stock could plunge 76% to $23, chart analyst warns",
+          "link": "https://www.coindesk.com/markets/2026/11/18/strategy-stock-could-crash-76-to-usd23-chart-analyst-warns",
+          "pubDate": "2026-11-18 09:31:41",
+          "summary": "Aksel Kibar, who has tracked Bitcoin’s price action since at least 2018, made the bearish call, citing a still-active head-and-shoulders pattern on MicroStrategy’s (MSTR) daily chart."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Hyundai tests AI agent commerce on JPMorgan’s Kinexys blockchain",
+          "link": "https://www.coindesk.com/business/2026/11/18/hyundai-tests-ai-agent-commerce-on-jpmorgan-s-kinexys-blockchain",
+          "pubDate": "2026-11-18 09:14:15",
+          "summary": "The exploration of AI agents with JPMorgan builds on Hyundai’s recent stablecoin-based cross-border remittance pilot."
+        },
         {
           "source": "CoinDesk",
           "title": "Google finds self-running AI hacking tool with Russian comments in its files",
@@ -4959,66 +5040,10 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Live updates: Bitcoin stuck near $65,000 as popular &#39;basis trade&#39; returns dry up",
+          "title": "Live updates: Bitcoin slides towards $63,000 as U.S. stocks fall and Nvidia erases gains",
           "link": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up",
           "pubDate": "2026-11-18 07:27:48",
-          "summary": "XRP edged toward $1 and SOL rose 3%, while a Talos report showed crypto’s favorite carry trade now pays about what Treasuries do."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "U.S. judge says Ethereum has ‘no terms of use,’ clears MIT brothers of $25 million fraud",
-          "link": "https://www.coindesk.com/policy/2026/11/18/u-s-judge-says-ethereum-has-no-terms-of-use-clears-mit-brothers-of-usd25-million-fraud",
-          "pubDate": "2026-11-18 05:30:10",
-          "summary": "A federal judge acquitted Anton and James Peraire-Bueno, ruling that their 2023 trade against Ethereum trading bots involved no lie that anyone relied on, and closing the U.S. government’s first criminal case over the pr"
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin&#39;s 12% slide through key support looks scary, but history says give it 3 months.",
-          "link": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record",
-          "pubDate": "2026-11-18 04:34:21",
-          "summary": "Bitcoin broke below its 200-week average with a 12% drop. Only three similar crashes have occurred since 2013. Here’s what happened next."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "XRP whales moved $270 million during the selloff. The coins didn’t go to exchanges",
-          "link": "https://www.coindesk.com/markets/2026/11/18/xrp-whales-moved-usd270-million-during-the-selloff-the-coins-didn-t-go-to-exchanges",
-          "pubDate": "2026-11-18 04:28:37",
-          "summary": "A holder whose wallets trace back to a 2020 Bitstamp withdrawal has moved 281 million XRP into two vaults three weeks apart, a behavior indicative of custody rather than a large investor heading for the exit."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "CFTC nominee questions public benefit of prediction markets as legal fight grows",
-          "link": "https://www.coindesk.com/policy/2026/11/17/nominee-says-u-s-cftc-must-think-hard-about-public-benefit-of-prediction-markets",
-          "pubDate": "2026-11-18 00:46:25",
-          "summary": "One of the two picks to join the regulatory commission, Democratic nominee Matthew Rowland, said he hopes to have a say in prediction markets rulemaking."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Nvidia shares rise on earnings beat, raised outlook despite leadership uncertainty",
-          "link": "https://www.coindesk.com/markets/2026/11/17/nvidia-tops-estimates-issues-strong-guidance-adds-usd150-billion-to-buyback-authorization",
-          "pubDate": "2026-11-17 21:25:50",
-          "summary": "Speaking on the earnings call, Chairman Harvey Jones said the board has no intention of reinstating Jensen Huang as CEO."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Coinbase CEO says AI agents will account for &#39;99.9%&#39; of transactions within a decade",
-          "link": "https://www.coindesk.com/markets/2026/11/17/coinbase-ceo-says-ai-agents-will-account-for-99-9-of-transactions-within-a-decade",
-          "pubDate": "2026-11-17 19:45:57",
-          "summary": "Brian Armstrong says Coinbase is building payment tools for AI agents and believes bitcoin has hit bottom despite the selloff."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Predictions platform Kalshi complies with order to halt Trump mention contracts",
-          "link": "https://www.coindesk.com/policy/2026/11/17/predictions-platform-kalshi-complies-with-order-to-halt-trump-mention-contracts",
-          "pubDate": "2026-11-17 19:16:00",
-          "summary": "The Commodity Futures Trading Commission ordered it to stop &quot;mention&quot; contracts involving the U.S. president and is reviewing whether Kalshi followed policy."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Druckenmiller says he is short copper, warns of economic weakness in 2027",
-          "link": "https://www.coindesk.com/business/2026/11/17/druckenmiller-says-he-is-short-copper-warns-of-economic-weakness-in-2027",
-          "pubDate": "2026-11-17 17:42:40",
-          "summary": "The billionaire investor is prioritizing capital preservation and shifting his AI focus from infrastructure to applications."
+          "summary": "XRP edged toward $1, and SOL rose 3%, while a Talos report showed crypto’s favorite carry trade now pays about the same as U.S. Treasuries."
         },
         {
           "source": "CoinTelegraph",
@@ -5163,8 +5188,8 @@
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
+          "sentiment": "BULLISH",
+          "impact": 0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -5176,12 +5201,11 @@
         },
         "ETH": {
           "sentiment": "BULLISH",
-          "impact": 0.17,
+          "impact": 0.67,
           "sources": [
-            "CoinDesk",
             "CoinTelegraph"
           ],
-          "multiSourced": true,
+          "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
@@ -5281,17 +5305,17 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795012730215
+        "t": 1795013630509
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795010930839,
+      "fetchedAt": 1795013631376,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.44,
-        "ARB": 11.03,
+        "BTC": -14.73,
+        "ARB": 11.25,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -5308,35 +5332,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 972.68,
+          "pct": 1028.92,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.44,
+          "pct": 14.73,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.03,
+          "pct": 11.25,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 39.42,
+          "pct": 40.21,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 196.66,
+          "pct": 200.62,
           "lev": 10
         },
         {
@@ -5350,63 +5374,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.46,
+          "pct": 23.93,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 207.28,
+          "pct": 211.45,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 34.32,
+          "pct": 35.01,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 106.82,
+          "pct": 108.97,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 54.54,
+          "pct": 55.63,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 101.22,
+          "pct": 102.24,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 283.01,
+          "pct": 285.86,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 88.5,
+          "pct": 89.4,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1241.64,
+          "pct": 1335.4,
           "lev": 10
         }
       ]
@@ -9377,7 +9401,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1203,
-        "updatedAt": 1795012730791
+        "updatedAt": 1795013632163
       }
     },
     "champion": {
@@ -9393,8 +9417,8 @@
       "deflatedT": -4.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795012730790,
-      "gen": 11
+      "updatedAt": 1795013632163,
+      "gen": 12
     },
     "factory": {
       "updatedAt": 1794963883649,
