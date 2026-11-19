@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795087427149,
+  "updatedAt": 1795088324293,
   "brain": {
     "v": 1,
-    "gen": 14,
-    "cycles": 89,
+    "gen": 15,
+    "cycles": 90,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795083523678,
+    "lastOptAt": 1795088322133,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -36,15 +36,15 @@
     },
     "weights": {
       "elder": 0.54,
-      "donchian": 0.54,
+      "donchian": 0.53,
       "bbrev": 0.78,
-      "wyckoff": 0.82,
-      "rsidiv": 0.62,
+      "wyckoff": 0.81,
+      "rsidiv": 0.59,
       "macdm": 0.5,
       "smc": 0.71,
-      "statarb": 0.6,
+      "statarb": 0.59,
       "tsmom": 1,
-      "emax": 0.6
+      "emax": 0.59
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.51,
+    "lastHurst": 0.54,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3811,6 +3811,26 @@
     ],
     "journal": [
       {
+        "t": 1795088324279,
+        "type": "CYCLE",
+        "text": "[CYCLE #90] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795088322134,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.114R/trade, win 57.9%, t=-1) | Meta-model belum aktif (1208 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
+      },
+      {
+        "t": 1795088322134,
+        "type": "GEN",
+        "text": "[GEN #15] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-41.37R, 311 trade, Win 57.9%, t=-2.32 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795088321723,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795087427133,
         "type": "CYCLE",
         "text": "[CYCLE #89] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5180,9 +5200,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2160,
+      "newsIngested": 2190,
       "lessons": 1,
-      "backtests": 2300,
+      "backtests": 2330,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5195,7 +5215,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795087423833,
+      "fetchedAt": 1795088321723,
       "items": [
         {
           "source": "CoinDesk",
@@ -5339,6 +5359,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "GameStop CEO Says Digital-Only Games Have ‘Hurt Consumers’ as GTA 6 Skips Discs",
+          "link": "https://decrypt.co/383600/gamestop-ceo-says-digital-only-games-have-hurt-consumers-as-gta-6-skips-discs",
+          "pubDate": "2026-11-19 11:15:08",
+          "summary": "Ryan Cohen said publishers are cutting out trade-ins, as he backs a U.S. bill that would guarantee gamers keep access to games they buy."
+        },
+        {
+          "source": "Decrypt",
           "title": "Bitcoin Struggles to Hold $64,000 as ETF Outflows Hit $2.9B in November",
           "link": "https://decrypt.co/383597/bitcoin-struggles-to-hold-64000-as-etf-outflows-hit-2-9b-in-november",
           "pubDate": "2026-11-19 10:25:05",
@@ -5399,13 +5426,6 @@
           "link": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
           "pubDate": "2026-11-18 18:16:02",
           "summary": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scal"
-        },
-        {
-          "source": "Decrypt",
-          "title": "Lucky Trader Banks 66,000% Profit on GTA 6 Meme Coin Ticker Confusion",
-          "link": "https://decrypt.co/383536/lucky-trader-banks-66000-profit-on-gta-6-meme-coin-ticker-confusion",
-          "pubDate": "2026-11-18 17:32:13",
-          "summary": "The trader turned $300 into over $200,000 as early footage of GTA 6 sent degens flocking between different token tickers."
         }
       ],
       "perCoin": {
@@ -5531,7 +5551,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795087423833
+        "t": 1795088321723
       },
       "lastErrors": []
     },
@@ -6240,99 +6260,99 @@
         ],
         "MSFT": [
           [
-            0.535,
+            0.538,
             -1.205,
             33
           ],
           [
-            0.489,
+            0.491,
             -1.198,
             88
           ],
           [
-            0.531,
+            0.539,
             -1.246,
             69
           ],
           [
-            0.539,
+            0.542,
             0.143,
             10
           ],
           [
-            0.53,
+            0.535,
             -1.185,
             40
           ],
           [
-            0.544,
+            0.547,
             -1.198,
             2
           ],
           [
-            0.567,
+            0.566,
             1.417,
             90
           ],
           [
-            0.535,
+            0.538,
             -1.248,
             10
           ],
           [
-            0.521,
+            0.529,
             -1.248,
             69
           ],
           [
-            0.506,
+            0.511,
             0.155,
             64
           ],
           [
-            0.563,
+            0.566,
             0.159,
             2
           ],
           [
-            0.569,
+            0.572,
             0.119,
             35
           ],
           [
-            0.586,
+            0.588,
             -1.204,
             27
           ],
           [
-            0.575,
+            0.576,
             0.233,
             10
           ],
           [
-            0.571,
+            0.575,
             1.494,
             35
           ],
           [
-            0.572,
+            0.576,
             -1.164,
             10
           ],
           [
-            0.512,
+            0.519,
             0.23,
             69
           ],
           [
-            0.509,
+            0.518,
             -1.156,
             69
           ]
         ],
         "SPY": [
           [
-            0.528,
+            0.532,
             -0.082,
             96
           ],
@@ -6342,7 +6362,7 @@
             2
           ],
           [
-            0.528,
+            0.532,
             -1.389,
             40
           ],
@@ -6352,54 +6372,54 @@
             10
           ],
           [
-            0.459,
+            0.466,
             -0.248,
             61
           ],
           [
-            0.547,
+            0.551,
             -1.548,
             46
           ],
           [
-            0.472,
+            0.478,
             -1.469,
             48
           ],
           [
-            0.542,
+            0.544,
             -0.21,
             41
           ],
           [
-            0.487,
+            0.493,
             -0.019,
             56
           ],
           [
-            0.557,
+            0.562,
             1.104,
             35
           ],
           [
-            0.568,
+            0.57,
             -1.409,
             10
           ],
           [
-            0.548,
+            0.552,
             1.351,
             2
           ],
           [
-            0.527,
+            0.532,
             -1.344,
             61
           ]
         ],
         "QQQ": [
           [
-            0.536,
+            0.535,
             0.064,
             95
           ],
@@ -6409,47 +6429,47 @@
             95
           ],
           [
-            0.53,
+            0.534,
             -1.723,
             10
           ],
           [
-            0.488,
+            0.493,
             1.182,
             48
           ],
           [
-            0.49,
+            0.498,
             1.605,
             69
           ],
           [
-            0.486,
+            0.492,
             -1.343,
             61
           ],
           [
-            0.541,
+            0.546,
             -1.241,
             41
           ],
           [
-            0.58,
+            0.582,
             0.658,
             10
           ],
           [
-            0.467,
+            0.47,
             1.357,
             96
           ],
           [
-            0.504,
+            0.514,
             0.246,
             56
           ],
           [
-            0.521,
+            0.529,
             0.339,
             56
           ]
@@ -9681,7 +9701,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795087424900
+        "updatedAt": 1795088322134
       }
     },
     "champion": {
@@ -9697,8 +9717,8 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795087424899,
-      "gen": 14
+      "updatedAt": 1795088322134,
+      "gen": 15
     },
     "factory": {
       "updatedAt": 1795049968680,
