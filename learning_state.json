@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795049971502,
+  "updatedAt": 1795050037236,
   "brain": {
     "v": 1,
     "gen": 13,
@@ -9574,12 +9574,12 @@
       "gen": 13
     },
     "factory": {
-      "updatedAt": 1794963883649,
-      "day": "2026-11-18",
-      "dataUntil": "2026-11-17",
+      "updatedAt": 1795049968680,
+      "day": "2026-11-19",
+      "dataUntil": "2026-11-18",
       "universe": 20,
-      "nTrials": 51,
-      "hurdleSharpe": 2.55,
+      "nTrials": 55,
+      "hurdleSharpe": 2.52,
       "pbo": 0.171,
       "top": [
         {
@@ -9611,7 +9611,7 @@
           "label": "Carry funding > 20%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.22,
+          "sharpe": 4.21,
           "cagr": 0.0538,
           "mdd": -0.0087,
           "dsr": 1,
@@ -9625,7 +9625,7 @@
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.03,
           "cagr": 0.0571,
-          "mdd": -0.0757,
+          "mdd": -0.076,
           "dsr": 1,
           "years": 6.9,
           "status": "KANDIDAT"
@@ -9648,7 +9648,7 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2948,
+          "cagr": 0.2946,
           "mdd": -0.3307,
           "dsr": 0.0001,
           "years": 6.81,
@@ -9660,22 +9660,10 @@
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
           "sharpe": 1.06,
-          "cagr": 0.7119,
+          "cagr": 0.7049,
           "mdd": -0.7746,
-          "dsr": 0,
+          "dsr": 0.0001,
           "years": 6.88,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "TSMOM|L=28|mode=LF",
-          "label": "Trend TSMOM 28 hari (long/flat)",
-          "family": "TSMOM",
-          "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
-          "sharpe": 1.02,
-          "cagr": 0.2683,
-          "mdd": -0.3337,
-          "dsr": 0,
-          "years": 6.84,
           "status": "KANDIDAT"
         },
         {
@@ -9684,10 +9672,22 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.01,
-          "cagr": 0.2659,
+          "cagr": 0.2657,
           "mdd": -0.299,
-          "dsr": 0,
+          "dsr": 0.0001,
           "years": 6.78,
+          "status": "KANDIDAT"
+        },
+        {
+          "id": "TSMOM|L=28|mode=LF",
+          "label": "Trend TSMOM 28 hari (long/flat)",
+          "family": "TSMOM",
+          "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
+          "sharpe": 1.02,
+          "cagr": 0.2682,
+          "mdd": -0.3337,
+          "dsr": 0,
+          "years": 6.84,
           "status": "KANDIDAT"
         },
         {
@@ -9695,8 +9695,8 @@
           "label": "Breakout Donchian 20 hari (long/flat)",
           "family": "DONCH",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
-          "sharpe": 1.01,
-          "cagr": 0.2186,
+          "sharpe": 1,
+          "cagr": 0.2185,
           "mdd": -0.273,
           "dsr": 0,
           "years": 6.84,
@@ -9711,7 +9711,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 0
+            "days": 2,
+            "sharpe": 0,
+            "ret": 0,
+            "mdd": 0,
+            "z": -0.34
           }
         }
       ],
@@ -9735,6 +9739,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795049968680,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Harga vs SMA 56 hari (long/flat); Harga vs SMA 64 hari (long/short); Persilangan SMA 53/122 (long/short); Harga vs SMA 137 hari (long/flat)"
+        },
         {
           "t": 1794963883649,
           "type": "EXPLORE",
