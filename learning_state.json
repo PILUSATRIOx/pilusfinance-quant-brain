@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795108126483,
+  "updatedAt": 1795109025743,
   "brain": {
     "v": 1,
     "gen": 18,
-    "cycles": 112,
+    "cycles": 113,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795104524449,
     "autoExecBursa": false,
@@ -249,57 +249,57 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 22,
-          "wins": 15,
+          "trades": 23,
+          "wins": 16,
           "losses": 7,
-          "winRate": 68.18181818181817,
-          "pf": 1.2653210402919939,
-          "exp": 0.11647111089626394,
-          "netR": 2.5623644397178067,
+          "winRate": 69.56521739130434,
+          "pf": 1.298109715379905,
+          "exp": 0.1251749714533214,
+          "netR": 2.8790243434263925,
           "maxDD": 4.521333525773145,
-          "sumR2": 29.5316471964918,
-          "grossW": 12.219964292702896,
+          "sumR2": 29.63192069110853,
+          "grossW": 12.536624196411482,
           "grossL": 9.657599852985086,
-          "sd": 1.179854828916652,
-          "tStat": 0.4630213147608948,
+          "sd": 1.1534836346931197,
+          "tStat": 0.5204391774360293,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 33,
-          "wins": 17,
+          "trades": 34,
+          "wins": 18,
           "losses": 16,
-          "winRate": 51.515151515151516,
-          "pf": 0.33323505703253337,
-          "exp": -0.38438361506169555,
-          "netR": -12.684659297035953,
+          "winRate": 52.94117647058824,
+          "pf": 0.3416350157654197,
+          "exp": -0.3683781450664741,
+          "netR": -12.52485693226012,
           "maxDD": 12.893688377552289,
-          "sumR2": 26.7848517939994,
-          "grossW": 6.3395252087995235,
+          "sumR2": 26.81038858978735,
+          "grossW": 6.499327573575357,
           "grossL": 19.02418450583548,
-          "sd": 0.827441021266372,
-          "tStat": -2.6686080340145795,
+          "sd": 0.8201349671974434,
+          "tStat": -2.6190753094396904,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 24,
-          "wins": 7,
+          "trades": 25,
+          "wins": 8,
           "losses": 17,
-          "winRate": 29.166666666666668,
-          "pf": 0.23491448513399452,
-          "exp": -0.6637417311475186,
-          "netR": -15.929801547540446,
+          "winRate": 32,
+          "pf": 0.2483054108793057,
+          "exp": -0.6260395940785659,
+          "netR": -15.650989851964146,
           "maxDD": 15.929801547540446,
-          "sumR2": 35.873355336896545,
-          "grossW": 4.891140998117784,
+          "sumR2": 35.95109129848667,
+          "grossW": 5.169952693694084,
           "grossL": 20.82094254565823,
-          "sd": 1.0488105329143027,
-          "tStat": -3.1003284411825054,
+          "sd": 1.0438899998849511,
+          "tStat": -2.998589861707473,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -612,19 +612,19 @@
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 14,
-          "wins": 8,
+          "trades": 13,
+          "wins": 7,
           "losses": 6,
-          "winRate": 57.14285714285714,
-          "pf": 0.3495079494662343,
-          "exp": -0.4553349629900759,
-          "netR": -6.374689481861063,
-          "maxDD": 6.6935816176365055,
-          "sumR2": 22.379186491514897,
-          "grossW": 3.4251066518968645,
-          "grossL": 9.799796133757928,
-          "sd": 1.2240087824037131,
-          "tStat": -1.3919078459408678,
+          "winRate": 53.84615384615385,
+          "pf": 0.33107661856833953,
+          "exp": -0.5046113968696302,
+          "netR": -6.5599481593051925,
+          "maxDD": 6.700511248592157,
+          "sumR2": 22.36421223481757,
+          "grossW": 3.2467776054083863,
+          "grossL": 9.806725764713581,
+          "sd": 1.2600921801849199,
+          "tStat": -1.4438644205616458,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1281,19 +1281,19 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 10,
+          "trades": 9,
           "wins": 6,
-          "losses": 4,
-          "winRate": 60,
-          "pf": 0.3527192547489962,
-          "exp": -0.3334895818225273,
-          "netR": -3.3348958182252733,
-          "maxDD": 4.612665627131798,
-          "sumR2": 8.933422981810912,
+          "losses": 3,
+          "winRate": 66.66666666666666,
+          "pf": 0.4788548053548701,
+          "exp": -0.21975113626887546,
+          "netR": -1.9777602264198793,
+          "maxDD": 3.255530035326404,
+          "sumR2": 7.091605967265934,
           "grossW": 1.8172670457141766,
-          "grossL": 5.15216286393945,
-          "sd": 0.9322177839235058,
-          "tStat": -1.1312663979201756,
+          "grossL": 3.7950272721340554,
+          "sd": 0.9122082348786088,
+          "tStat": -0.7227005672606714,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1319,19 +1319,19 @@
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 16,
-          "wins": 10,
+          "trades": 17,
+          "wins": 11,
           "losses": 6,
-          "winRate": 62.5,
-          "pf": 0.9827806502621869,
-          "exp": -0.008119190372992868,
-          "netR": -0.12990704596788588,
+          "winRate": 64.70588235294117,
+          "pf": 1.0197375070773886,
+          "exp": 0.008759097035789028,
+          "netR": 0.1489046496084135,
           "maxDD": 3.431870215565133,
-          "sumR2": 18.83016568941696,
-          "grossW": 7.4143410206483535,
+          "sumR2": 18.90790165100709,
+          "grossW": 7.6931527162246525,
           "grossL": 7.544248066616239,
-          "sd": 1.120390138876631,
-          "tStat": -0.028987011189276067,
+          "sd": 1.0870429321309052,
+          "tStat": 0.03322286654566434,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1663,19 +1663,19 @@
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 7,
+          "trades": 8,
           "wins": 6,
-          "losses": 1,
-          "winRate": 85.71428571428571,
-          "pf": 3.0193371149338764,
-          "exp": 0.44034953580571623,
-          "netR": 3.0824467506400137,
+          "losses": 2,
+          "winRate": 75,
+          "pf": 1.7407535918076606,
+          "exp": 0.2451573057770389,
+          "netR": 1.9612584462163112,
           "maxDD": 1.5264646639949213,
-          "sumR2": 7.83344044626304,
+          "sumR2": 9.090503660239538,
           "grossW": 4.608911414634934,
-          "grossL": 1.5264646639949213,
-          "sd": 1.0389166192459713,
-          "tStat": 1.121413730516926,
+          "grossL": 2.647652968418624,
+          "sd": 1.1090334803417592,
+          "tStat": 0.6252377279681332,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2657,19 +2657,19 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 30,
+          "trades": 31,
           "wins": 12,
-          "losses": 18,
-          "winRate": 40,
-          "pf": 0.20008601559102732,
-          "exp": -0.6879301011602303,
-          "netR": -20.63790303480691,
-          "maxDD": 20.63790303480691,
-          "sumR2": 44.999448152480824,
+          "losses": 19,
+          "winRate": 38.70967741935484,
+          "pf": 0.1920979005201486,
+          "exp": -0.7003472678802412,
+          "netR": -21.710765304287477,
+          "maxDD": 21.710765304287477,
+          "sumR2": 46.150481601755814,
           "grossW": 5.162249777942707,
-          "grossL": 25.800152812749616,
-          "sd": 1.0306009868704342,
-          "tStat": -3.656069023730123,
+          "grossL": 26.873015082230182,
+          "sd": 1.0156345543108989,
+          "tStat": -3.839342156248979,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,9 +3699,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.5259894747304542,
+        "mfe": 0.57089101525622,
         "mae": -0.3399688068379742,
-        "lastBarT": 1795107900000
+        "lastBarT": 1795108800000
       },
       {
         "id": "sig_TSLA_1795102731020",
@@ -3835,7 +3835,7 @@
         "sym": "LINKUSDT",
         "side": "SHORT",
         "entry": 9.171,
-        "sl": 9.093987507140572,
+        "sl": 9.082987507140572,
         "slInit": 9.331044306683575,
         "risk": 0.16004430668357497,
         "rsiAtEntry": 52,
@@ -3889,9 +3889,9 @@
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.4000000000000013,
-        "mfe": 1.5495708978284517,
+        "mfe": 1.618301865070838,
         "mae": -0.14995847398340464,
-        "lastBarT": 1795107900000
+        "lastBarT": 1795108800000
       },
       {
         "id": "sig_AVAXUSDT_1795100946519",
@@ -3954,7 +3954,7 @@
         "lockedR": 0.40000000000000135,
         "mfe": 1.2888200329319408,
         "mae": -0.19015377535061534,
-        "lastBarT": 1795107900000
+        "lastBarT": 1795108800000
       },
       {
         "id": "sig_LINKUSDT_1794963881588",
@@ -4134,6 +4134,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795109025722,
+        "type": "CYCLE",
+        "text": "[CYCLE #113] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795109023975,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795108126460,
         "type": "CYCLE",
@@ -5623,16 +5633,6 @@
         "t": 1794674826084,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794653677112,
-        "type": "CYCLE",
-        "text": "[CYCLE #11] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794653675668,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2)"
       }
     ],
     "accuracyHistory": [
@@ -5654,9 +5654,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 4,
-      "newsIngested": 2850,
+      "newsIngested": 2880,
       "lessons": 1,
-      "backtests": 2990,
+      "backtests": 3020,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5669,7 +5669,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795108123812,
+      "fetchedAt": 1795109023975,
       "items": [
         {
           "source": "CoinDesk",
@@ -5743,10 +5743,10 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Anthropic shares expected to open at $110, 32.5% above $83 IPO price",
+          "title": "Anthropic shares open at $111.50, 34.3% above $83 IPO price",
           "link": "https://cointelegraph.com/markets/anthropic-shares-expected-to-open-above-83-ipo-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-19 16:07:51",
-          "summary": "    The AI giant’s $81.3 billion offering at an expected $110 per share would value the company at north of $2 trillion. "
+          "summary": "    The Claude chatbot maker began trading under the ticker ANT, with the company’s valuation at around $2 trillion at the opening price. "
         },
         {
           "source": "CoinTelegraph",
@@ -5813,7 +5813,7 @@
         },
         {
           "source": "Decrypt",
-          "title": "Anthropic Stock Indicated to Open 33% Above IPO Price as AI Stocks Rally",
+          "title": "Anthropic Stock Opens 33% Above IPO Price as AI Stocks Rally",
           "link": "https://decrypt.co/383631/anthropic-stock-indicated-open-33-above-ipo-price",
           "pubDate": "2026-11-19 16:55:10",
           "summary": "The Claude maker&#39;s shares could debut at $110, pushing its valuation toward $2 trillion as enthusiasm for its historic IPO lifts the broader technology sector."
@@ -6004,7 +6004,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795108123812
+        "t": 1795109023975
       },
       "lastErrors": []
     },
@@ -6482,206 +6482,206 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.49,
+            0.491,
             0.683,
             61
           ],
           [
-            0.563,
+            0.572,
             -1.615,
             10
           ],
           [
-            0.507,
+            0.508,
             0.256,
             61
           ],
           [
-            0.611,
+            0.615,
             -1.201,
             10
           ],
           [
-            0.503,
+            0.504,
             1.792,
             56
           ],
           [
-            0.587,
+            0.593,
             0.221,
             15
           ],
           [
-            0.564,
+            0.57,
             0.235,
             41
           ],
           [
-            0.515,
+            0.519,
             1.467,
             95
           ],
           [
-            0.58,
+            0.588,
             0.231,
             10
           ],
           [
-            0.55,
+            0.558,
             1.436,
             27
           ],
           [
-            0.601,
+            0.609,
             -1.169,
             10
           ]
         ],
         "AAPL": [
           [
-            0.559,
+            0.567,
             0.163,
             10
           ],
           [
-            0.542,
+            0.552,
             1.364,
             10
           ],
           [
-            0.588,
+            0.592,
             0.141,
             10
           ],
           [
-            0.51,
+            0.513,
             -1.218,
             96
           ],
           [
-            0.582,
+            0.589,
             -1.213,
             10
           ],
           [
-            0.596,
+            0.601,
             0.468,
             10
           ],
           [
-            0.543,
+            0.552,
             -1.253,
             35
           ],
           [
-            0.551,
+            0.558,
             0.369,
             10
           ],
           [
-            0.553,
+            0.562,
             -1.245,
             35
           ],
           [
-            0.566,
+            0.577,
             0.297,
             10
           ],
           [
-            0.505,
+            0.506,
             -1.233,
             61
           ],
           [
-            0.538,
+            0.54,
             0.174,
             90
           ],
           [
-            0.516,
+            0.517,
             0.431,
             73
           ],
           [
-            0.607,
+            0.609,
             -1.249,
             35
           ],
           [
-            0.587,
+            0.593,
             -3.468,
             10
           ],
           [
-            0.56,
+            0.568,
             -1.207,
             10
           ],
           [
-            0.552,
+            0.561,
             0.067,
             10
           ],
           [
-            0.542,
+            0.551,
             0.612,
             10
           ]
         ],
         "TSLA": [
           [
-            0.56,
+            0.568,
             -1.13,
             15
           ],
           [
-            0.551,
+            0.561,
             -1.164,
             10
           ],
           [
-            0.49,
+            0.491,
             0.8,
             61
           ],
           [
-            0.579,
+            0.587,
             0.266,
             10
           ],
           [
-            0.567,
+            0.577,
             0.242,
             10
           ],
           [
-            0.56,
+            0.565,
             -1.526,
             35
           ],
           [
-            0.557,
+            0.566,
             1.496,
             35
           ],
           [
-            0.509,
+            0.51,
             -1.884,
             56
           ],
           [
-            0.544,
+            0.545,
             0.309,
             56
           ],
           [
-            0.563,
+            0.574,
             1.515,
             10
           ],
           [
-            0.575,
+            0.583,
             -1.109,
             10
           ],
@@ -6691,32 +6691,32 @@
             95
           ],
           [
-            0.553,
+            0.562,
             1.52,
             10
           ],
           [
-            0.614,
+            0.619,
             -0.205,
             2
           ],
           [
-            0.528,
+            0.526,
             0.273,
             61
           ],
           [
-            0.598,
+            0.597,
             -1.128,
             69
           ],
           [
-            0.589,
+            0.597,
             0.294,
             49
           ],
           [
-            0.584,
+            0.588,
             0.29,
             35
           ]
@@ -10194,7 +10194,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795108124779
+        "updatedAt": 1795109024258
       }
     },
     "champion": {
@@ -10210,7 +10210,7 @@
       "deflatedT": -4.67,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795108124778,
+      "updatedAt": 1795109024257,
       "gen": 18
     },
     "factory": {
