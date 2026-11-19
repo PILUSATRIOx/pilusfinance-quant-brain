@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795107228125,
+  "updatedAt": 1795108126483,
   "brain": {
     "v": 1,
     "gen": 18,
-    "cycles": 111,
+    "cycles": 112,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795104524449,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.41,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -196,15 +196,15 @@
           "wins": 40,
           "losses": 35,
           "winRate": 53.333333333333336,
-          "pf": 0.6652799900986616,
-          "exp": -0.1753417990629898,
-          "netR": -13.150634929724236,
-          "maxDD": 14.691612613374486,
-          "sumR2": 70.50538472702233,
+          "pf": 0.6653396631964694,
+          "exp": -0.17529481625683108,
+          "netR": -13.147111219262332,
+          "maxDD": 14.688088902912583,
+          "sumR2": 70.49729368507984,
           "grossW": 26.13782868379113,
-          "grossL": 39.28846361351537,
-          "sd": 0.960007944362004,
-          "tStat": -1.5817624554631313,
+          "grossL": 39.28493990305346,
+          "sd": 0.959959692563092,
+          "tStat": -1.5814181075125051,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,9 +3699,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.08980308105154053,
+        "mfe": 0.5259894747304542,
         "mae": -0.3399688068379742,
-        "lastBarT": 1795107000000
+        "lastBarT": 1795107900000
       },
       {
         "id": "sig_TSLA_1795102731020",
@@ -3835,7 +3835,7 @@
         "sym": "LINKUSDT",
         "side": "SHORT",
         "entry": 9.171,
-        "sl": 9.13698750714057,
+        "sl": 9.093987507140572,
         "slInit": 9.331044306683575,
         "risk": 0.16004430668357497,
         "rsiAtEntry": 52,
@@ -3889,16 +3889,16 @@
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.4000000000000013,
-        "mfe": 1.2808952986081998,
+        "mfe": 1.5495708978284517,
         "mae": -0.14995847398340464,
-        "lastBarT": 1795107000000
+        "lastBarT": 1795107900000
       },
       {
         "id": "sig_AVAXUSDT_1795100946519",
         "sym": "AVAXUSDT",
         "side": "SHORT",
         "entry": 7.085,
-        "sl": 7.064699085610927,
+        "sl": 7.053699085610927,
         "slInit": 7.226990344131828,
         "risk": 0.14199034413182773,
         "rsiAtEntry": 51,
@@ -3952,9 +3952,9 @@
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.40000000000000135,
-        "mfe": 1.2113499763076157,
+        "mfe": 1.2888200329319408,
         "mae": -0.19015377535061534,
-        "lastBarT": 1795107000000
+        "lastBarT": 1795107900000
       },
       {
         "id": "sig_LINKUSDT_1794963881588",
@@ -4134,6 +4134,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795108126460,
+        "type": "CYCLE",
+        "text": "[CYCLE #112] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795108123812,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795107228110,
         "type": "CYCLE",
@@ -5623,16 +5633,6 @@
         "t": 1794653675668,
         "type": "CB",
         "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Satoshi-era wallet served in a $260 billion lawsuit moves 75 BTC it held since 2)"
-      },
-      {
-        "t": 1794653675665,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794627543854,
-        "type": "CYCLE",
-        "text": "[CYCLE #10] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5654,9 +5654,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 4,
-      "newsIngested": 2820,
+      "newsIngested": 2850,
       "lessons": 1,
-      "backtests": 2960,
+      "backtests": 2990,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5669,7 +5669,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795107223639,
+      "fetchedAt": 1795108123812,
       "items": [
         {
           "source": "CoinDesk",
@@ -5743,10 +5743,10 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Anthropic shares expected to open at $105, 26.5% above $83 IPO price",
+          "title": "Anthropic shares expected to open at $110, 32.5% above $83 IPO price",
           "link": "https://cointelegraph.com/markets/anthropic-shares-expected-to-open-above-83-ipo-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-19 16:07:51",
-          "summary": "    The Claude maker’s $81.3 billion offering comes as OKX reports a premium in its pre-IPO contract ahead of the Nasdaq debut. "
+          "summary": "    The AI giant’s $81.3 billion offering at an expected $110 per share would value the company at north of $2 trillion. "
         },
         {
           "source": "CoinTelegraph",
@@ -5813,6 +5813,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Anthropic Stock Indicated to Open 33% Above IPO Price as AI Stocks Rally",
+          "link": "https://decrypt.co/383631/anthropic-stock-indicated-open-33-above-ipo-price",
+          "pubDate": "2026-11-19 16:55:10",
+          "summary": "The Claude maker&#39;s shares could debut at $110, pushing its valuation toward $2 trillion as enthusiasm for its historic IPO lifts the broader technology sector."
+        },
+        {
+          "source": "Decrypt",
           "title": "Anthropic Tops SpaceX&#39;s Initial IPO With $81 Billion Deal: Where the Money Went",
           "link": "https://decrypt.co/383623/anthropic-tops-spacex-initial-ipo-81-billion-deal-where-the-money-went",
           "pubDate": "2026-11-19 15:54:03",
@@ -5873,13 +5880,6 @@
           "link": "https://decrypt.co/383584/chatgpt-claude-gemini-grok-help-plan-terror-attacks-government-tests",
           "pubDate": "2026-11-18 21:46:03",
           "summary": "Federal investigators bypassed safeguards on four popular chatbots, producing viable attack plans within hours."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Palmer Luckey Says He’s Building an Offshore Haven for Industry—And &#39;Illegal&#39; Medicine",
-          "link": "https://decrypt.co/383576/palmer-luckey-offshore-haven-industry-illegal-medicine",
-          "pubDate": "2026-11-18 21:16:02",
-          "summary": "The Oculus founder says his decade-old SLAB project aims to escape state restrictions on manufacturing and medical treatment."
         }
       ],
       "perCoin": {
@@ -6004,7 +6004,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795107223638
+        "t": 1795108123812
       },
       "lastErrors": []
     },
@@ -6223,182 +6223,182 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.634,
+            0.643,
             1.001,
             10
           ],
           [
-            0.571,
+            0.579,
             -1.082,
             35
           ],
           [
-            0.623,
+            0.63,
             -1.075,
             35
           ],
           [
-            0.55,
+            0.551,
             -1.072,
             56
           ],
           [
-            0.63,
+            0.64,
             0.333,
             10
           ],
           [
-            0.566,
+            0.567,
             -1.087,
             56
           ],
           [
-            0.518,
+            0.519,
             0.452,
             61
           ],
           [
-            0.566,
+            0.575,
             0.317,
             35
           ],
           [
-            0.597,
+            0.604,
             0.315,
             35
           ],
           [
-            0.584,
+            0.585,
             -1.077,
             94
           ],
           [
-            0.584,
+            0.592,
             0.286,
             2
           ],
           [
-            0.601,
+            0.604,
             -1.128,
             35
           ],
           [
-            0.643,
+            0.648,
             -1.12,
             10
           ],
           [
-            0.548,
+            0.55,
             -1.125,
             69
           ],
           [
-            0.608,
+            0.613,
             0.58,
             35
           ],
           [
-            0.587,
+            0.592,
             -1.132,
             35
           ],
           [
-            0.599,
+            0.605,
             -1.119,
             10
           ],
           [
-            0.604,
+            0.61,
             0.303,
             10
           ],
           [
-            0.546,
+            0.547,
             0.399,
             61
           ],
           [
-            0.613,
+            0.618,
             0.504,
             34
           ],
           [
-            0.537,
+            0.541,
             0.996,
             94
           ],
           [
-            0.629,
+            0.634,
             1.516,
             10
           ],
           [
-            0.572,
+            0.58,
             -1.106,
             27
           ],
           [
-            0.579,
+            0.586,
             1.51,
             35
           ],
           [
-            0.609,
+            0.615,
             0.316,
             10
           ],
           [
-            0.654,
+            0.659,
             0.275,
             2
           ],
           [
-            0.608,
+            0.612,
             -1.127,
             16
           ],
           [
-            0.511,
+            0.512,
             -1.157,
             61
           ],
           [
-            0.633,
+            0.639,
             0.258,
             10
           ],
           [
-            0.605,
+            0.61,
             -1.164,
             10
           ],
           [
-            0.557,
+            0.568,
             0.447,
             10
           ],
           [
-            0.521,
+            0.528,
             0.162,
             90
           ],
           [
-            0.571,
+            0.577,
             -1.194,
             35
           ],
           [
-            0.618,
+            0.621,
             -1.153,
             41
           ],
           [
-            0.63,
+            0.635,
             0.844,
             10
           ],
           [
-            0.628,
+            0.633,
             0.92,
             15
           ],
@@ -6408,7 +6408,7 @@
             69
           ],
           [
-            0.593,
+            0.599,
             0.183,
             10
           ],
@@ -6418,59 +6418,64 @@
             56
           ],
           [
-            0.548,
+            0.547,
             -1.127,
             61
           ],
           [
-            0.574,
+            0.582,
             0.736,
             2
           ],
           [
-            0.574,
+            0.579,
             -1.132,
             41
           ],
           [
-            0.603,
+            0.609,
             0.617,
             10
           ],
           [
-            0.64,
+            0.644,
             -1.127,
             35
           ],
           [
-            0.582,
+            0.583,
             -1.118,
             69
           ],
           [
-            0.603,
+            0.611,
             0.509,
             41
           ],
           [
-            0.524,
+            0.528,
             1.541,
             90
           ],
           [
-            0.579,
+            0.584,
             -1.109,
             46
           ],
           [
-            0.511,
+            0.515,
             -1.112,
             73
           ],
           [
-            0.603,
+            0.608,
             0.273,
             10
+          ],
+          [
+            0.608,
+            0.279,
+            35
           ]
         ],
         "EURUSDT": [],
@@ -10153,12 +10158,12 @@
       },
       "status": {
         "all": {
-          "n": 779,
-          "mean": -0.28,
+          "n": 780,
+          "mean": -0.279,
           "sd": 0.94,
-          "t": -8.3,
+          "t": -8.29,
           "winRate": 52.8,
-          "sum": -217.8
+          "sum": -217.52
         },
         "base": {
           "n": 76,
@@ -10189,7 +10194,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795107226373
+        "updatedAt": 1795108124779
       }
     },
     "champion": {
@@ -10205,7 +10210,7 @@
       "deflatedT": -4.67,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795107226372,
+      "updatedAt": 1795108124778,
       "gen": 18
     },
     "factory": {
