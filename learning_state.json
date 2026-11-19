@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795098227338,
+  "updatedAt": 1795099128250,
   "brain": {
     "v": 1,
-    "gen": 16,
-    "cycles": 101,
+    "gen": 17,
+    "cycles": 102,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795093722881,
+    "lastOptAt": 1795099125523,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,11 +35,11 @@
       "volConfirmMult": 1.196
     },
     "weights": {
-      "elder": 0.54,
+      "elder": 0.53,
       "donchian": 0.53,
       "bbrev": 0.78,
-      "wyckoff": 0.8,
-      "rsidiv": 0.57,
+      "wyckoff": 0.79,
+      "rsidiv": 0.56,
       "macdm": 0.5,
       "smc": 0.71,
       "statarb": 0.59,
@@ -306,19 +306,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 31,
+          "trades": 32,
           "wins": 17,
-          "losses": 14,
-          "winRate": 54.83870967741935,
-          "pf": 0.3953547597061429,
-          "exp": -0.40346058655551575,
-          "netR": -12.507278183220988,
+          "losses": 15,
+          "winRate": 53.125,
+          "pf": 0.3674416920290245,
+          "exp": -0.4399580779360001,
+          "netR": -14.078658493952004,
           "maxDD": 15.333316281288313,
-          "sumR2": 41.724331394046686,
+          "sumR2": 44.19356747499979,
           "grossW": 8.178038345761296,
-          "grossL": 20.68531652898228,
-          "sd": 1.1057145141194349,
-          "tStat": -2.0316034988644938,
+          "grossL": 22.256696839713296,
+          "sd": 1.10715485329017,
+          "tStat": -2.2479048123889562,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -329,18 +329,18 @@
           "wins": 6,
           "losses": 22,
           "winRate": 21.428571428571427,
-          "pf": 0.10543921278777835,
-          "exp": -0.905763917051473,
-          "netR": -25.36138967744124,
+          "pf": 0.10569372794736141,
+          "exp": -0.9055062144434575,
+          "netR": -25.35417400441681,
           "maxDD": 27.46496504525154,
-          "sumR2": 49.49237050497239,
-          "grossW": 2.9892713843705563,
+          "sumR2": 49.50626629536597,
+          "grossW": 2.996487057394989,
           "grossL": 28.3506610618118,
-          "sd": 0.9910887923906647,
-          "tStat": -4.835946263247253,
+          "sd": 0.9915925121160701,
+          "tStat": -4.8321144517890025,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -348,15 +348,15 @@
           "wins": 15,
           "losses": 10,
           "winRate": 60,
-          "pf": 1.0014167610607558,
-          "exp": 0.0006795202290240443,
-          "netR": 0.016988005725601107,
-          "maxDD": 6.619024683131778,
-          "sumR2": 36.118301227656644,
+          "pf": 0.8216806528404739,
+          "exp": -0.10423559226841472,
+          "netR": -2.605889806710368,
+          "maxDD": 7.958056712903814,
+          "sumR2": 44.00792490218512,
           "grossW": 12.007722503002226,
-          "grossL": 11.990734497276621,
-          "sd": 1.2267553695956648,
-          "tStat": 0.0027695832676404436,
+          "grossL": 14.61361230971259,
+          "sd": 1.3499428758716119,
+          "tStat": -0.3860740855464472,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -669,22 +669,22 @@
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 15,
-          "wins": 5,
+          "trades": 16,
+          "wins": 6,
           "losses": 10,
-          "winRate": 33.33333333333333,
-          "pf": 0.1105663207233845,
-          "exp": -0.8391653236726666,
-          "netR": -12.587479855089999,
+          "winRate": 37.5,
+          "pf": 0.14889857696691686,
+          "exp": -0.7528120327209589,
+          "netR": -12.044992523535342,
           "maxDD": 12.587479855089999,
-          "sumR2": 27.61550161788834,
-          "grossW": 1.5647612263670365,
+          "sumR2": 27.909794122785634,
+          "grossW": 2.107248557921693,
           "grossL": 14.152241081457035,
-          "sd": 1.1036473625169465,
-          "tStat": -2.944847633112601,
+          "sd": 1.1207788606451095,
+          "tStat": -2.6867460090660438,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1028,7 +1028,7 @@
           "tStat": -1.0165755975428532,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1372,7 +1372,7 @@
           "tStat": 1.7567750317905257,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1716,7 +1716,7 @@
           "tStat": 0.16096092271912035,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2060,7 +2060,7 @@
           "tStat": -2.362303114805264,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2404,7 +2404,7 @@
           "tStat": 2.9097745166208715,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2718,15 +2718,15 @@
           "wins": 17,
           "losses": 10,
           "winRate": 62.96296296296296,
-          "pf": 0.6393410594358016,
-          "exp": -0.1652663750476165,
-          "netR": -4.462192126285645,
-          "maxDD": 4.73807374581041,
-          "sumR2": 22.735829910003787,
+          "pf": 0.6389320377295566,
+          "exp": -0.1655597205875189,
+          "netR": -4.47011245586301,
+          "maxDD": 4.738073745810411,
+          "sumR2": 22.75545541484817,
           "grossW": 7.91013980400061,
-          "grossL": 12.372331930286256,
-          "sd": 0.9198323340639218,
-          "tStat": -0.9335932683531195,
+          "grossL": 12.380252259863619,
+          "sd": 0.9201877911529528,
+          "tStat": -0.9348891079673926,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2748,7 +2748,7 @@
           "tStat": -1.9238950686564522,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -3092,7 +3092,7 @@
           "tStat": 0,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -3421,22 +3421,22 @@
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 8,
-          "wins": 2,
+          "trades": 9,
+          "wins": 3,
           "losses": 6,
-          "winRate": 25,
-          "pf": 0.14087876294159082,
-          "exp": -0.5735428830557568,
-          "netR": -4.588343064446055,
+          "winRate": 33.33333333333333,
+          "pf": 0.2424540769117155,
+          "exp": -0.449539525876822,
+          "netR": -4.045855732891398,
           "maxDD": 4.588343064446055,
-          "sumR2": 7.353302738906331,
-          "grossW": 0.7523968294440395,
+          "sumR2": 7.647595243803623,
+          "grossW": 1.2948841609986963,
           "grossL": 5.3407398938900945,
-          "sd": 0.8212961210597947,
-          "tStat": -1.9752001818135074,
+          "sd": 0.8535823902730189,
+          "tStat": -1.5799512653946732,
           "atrMult": 1.872,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -3810,6 +3810,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795099128221,
+        "type": "CYCLE",
+        "text": "[CYCLE #102] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795099125523,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.114R/trade, win 57.9%, t=-1) | Meta-model belum aktif (1208 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
+      },
+      {
+        "t": 1795099125523,
+        "type": "GEN",
+        "text": "[GEN #17] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-41.37R, 311 trade, Win 57.9%, t=-2.32 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795099125111,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795098227322,
         "type": "CYCLE",
@@ -5289,16 +5309,6 @@
         "t": 1793623211992,
         "type": "CYCLE",
         "text": "[CYCLE #1] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793623211127,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 65 (Greed) — makro sentiment riil."
-      },
-      {
-        "t": 1793623210937,
-        "type": "SYS",
-        "text": "[QUANT BRAIN v2.5] Online — 18 sumber pengetahuan institusional, Kalman Filter, Hurst Fractal, Bayesian Matrix, & AES-256-GCM Security Shield aktif."
       }
     ],
     "accuracyHistory": [
@@ -5320,9 +5330,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2520,
+      "newsIngested": 2550,
       "lessons": 1,
-      "backtests": 2660,
+      "backtests": 2690,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5335,7 +5345,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795098224544,
+      "fetchedAt": 1795099125111,
       "items": [
         {
           "source": "CoinDesk",
@@ -5670,7 +5680,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795098224544
+        "t": 1795099125111
       },
       "lastErrors": []
     },
@@ -9820,7 +9830,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795098225009
+        "updatedAt": 1795099125523
       }
     },
     "champion": {
@@ -9836,8 +9846,8 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795098225008,
-      "gen": 16
+      "updatedAt": 1795099125523,
+      "gen": 17
     },
     "factory": {
       "updatedAt": 1795049968680,
