@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795095537180,
+  "updatedAt": 1795096427749,
   "brain": {
     "v": 1,
     "gen": 16,
-    "cycles": 98,
+    "cycles": 99,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795093722881,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.52,
+    "lastHurst": 0.49,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -477,19 +477,19 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 80,
+          "trades": 81,
           "wins": 47,
-          "losses": 33,
-          "winRate": 58.75,
-          "pf": 0.7138642285140046,
-          "exp": -0.13313594268425427,
-          "netR": -10.65087541474034,
-          "maxDD": 15.227217324561153,
-          "sumR2": 65.02521018566937,
-          "grossW": 26.572276935023233,
-          "grossL": 37.22315234976358,
-          "sd": 0.8973039495115661,
-          "tStat": -1.327091085479151,
+          "losses": 34,
+          "winRate": 58.0246913580247,
+          "pf": 0.6853539352629899,
+          "exp": -0.14902059573040263,
+          "netR": -12.070668254162612,
+          "maxDD": 15.815730575482375,
+          "sumR2": 66.11018345423201,
+          "grossW": 26.292017973143672,
+          "grossL": 38.36268622730629,
+          "sd": 0.8966005610090025,
+          "tStat": -1.495856036565827,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -515,19 +515,19 @@
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 86,
+          "trades": 87,
           "wins": 46,
-          "losses": 40,
-          "winRate": 53.48837209302325,
-          "pf": 0.6201495730812403,
-          "exp": -0.2030897058951463,
-          "netR": -17.46571470698258,
-          "maxDD": 23.330799933887974,
-          "sumR2": 81.35192491470283,
-          "grossW": 28.51479095852259,
-          "grossL": 45.98050566550518,
-          "sd": 0.9567396723284836,
-          "tStat": -1.9685359636548865,
+          "losses": 41,
+          "winRate": 52.87356321839081,
+          "pf": 0.5954841232975421,
+          "exp": -0.21930405365325936,
+          "netR": -19.079452667833564,
+          "maxDD": 23.33079993388797,
+          "sumR2": 82.40042133257225,
+          "grossW": 28.086687814379154,
+          "grossL": 47.166140482212725,
+          "sd": 0.9536723391590547,
+          "tStat": -2.144900247507043,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3811,6 +3811,16 @@
     ],
     "journal": [
       {
+        "t": 1795096427718,
+        "type": "CYCLE",
+        "text": "[CYCLE #99] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795096423430,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795095537084,
         "type": "CYCLE",
         "text": "[CYCLE #98] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5290,9 +5300,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2430,
+      "newsIngested": 2460,
       "lessons": 1,
-      "backtests": 2570,
+      "backtests": 2600,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5305,7 +5315,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795095531854,
+      "fetchedAt": 1795096423430,
       "items": [
         {
           "source": "CoinDesk",
@@ -5379,6 +5389,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Ethereum’s new DeFi security tool raises questions over censorship",
+          "link": "https://cointelegraph.com/magazine/ethereums-new-defi-security-tool-raises-questions-over-censorship?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-19 13:30:00",
+          "summary": "    Phylax’s system lets decentralized protocols block potentially harmful transactions, but raises questions about potential censorship and Ethereum’s concentrated builder market. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Hong Kong adds Hyperliquid to list of ‘suspicious’ crypto platforms",
           "link": "https://cointelegraph.com/news/hyperliquid-hong-kong-regulators-alert-list?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-19 12:44:06",
@@ -5439,13 +5456,6 @@
           "link": "https://cointelegraph.com/markets/sygnum-bitcoin-carry-trades-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-19 06:00:00",
           "summary": "    Sygnum predicts that Bitcoin carry trades may offer higher returns than Treasury bills in 2027, following a sharp drop in funding rates that made the strategy less compelling in 2026. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 06:00:00",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "Decrypt",
@@ -5533,9 +5543,10 @@
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -0.5,
+          "impact": -1,
           "sources": [
             "CoinDesk",
+            "CoinTelegraph",
             "Decrypt"
           ],
           "multiSourced": true,
@@ -5641,7 +5652,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795095531853
+        "t": 1795096423430
       },
       "lastErrors": []
     },
@@ -9791,7 +9802,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795095534599
+        "updatedAt": 1795096425375
       }
     },
     "champion": {
@@ -9807,7 +9818,7 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795095534598,
+      "updatedAt": 1795096425374,
       "gen": 16
     },
     "factory": {
