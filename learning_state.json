@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795093725042,
+  "updatedAt": 1795094628347,
   "brain": {
     "v": 1,
     "gen": 16,
-    "cycles": 96,
+    "cycles": 97,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795093722881,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.54,
+    "lastHurst": 0.49,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -382,38 +382,38 @@
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 96,
+          "trades": 95,
           "wins": 45,
-          "losses": 50,
-          "winRate": 46.875,
-          "pf": 0.4147957758340677,
-          "exp": -0.37489435049033853,
-          "netR": -35.9898576470725,
-          "maxDD": 41.50808385832994,
-          "sumR2": 103.19984088919927,
+          "losses": 49,
+          "winRate": 47.368421052631575,
+          "pf": 0.423912528107494,
+          "exp": -0.36492015869019084,
+          "netR": -34.66741507556813,
+          "maxDD": 40.266699110274615,
+          "sumR2": 101.45098653427216,
           "grossW": 25.506287115812007,
-          "grossL": 61.49119302028617,
-          "sd": 0.9717452914181093,
-          "tStat": -3.7800023288544335,
+          "grossL": 60.1687504487818,
+          "sd": 0.9719477479362084,
+          "tStat": -3.6594577708325366,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 96,
+          "trades": 95,
           "wins": 52,
-          "losses": 44,
-          "winRate": 54.166666666666664,
-          "pf": 0.510399835171787,
-          "exp": -0.2670825722895549,
-          "netR": -25.63992693979727,
-          "maxDD": 26.580574932861797,
-          "sumR2": 86.7721118522625,
+          "losses": 43,
+          "winRate": 54.736842105263165,
+          "pf": 0.523337052729855,
+          "exp": -0.256266630036919,
+          "netR": -24.34532985350731,
+          "maxDD": 25.285977846571836,
+          "sumR2": 85.09613023643206,
           "grossW": 26.729187251154045,
-          "grossL": 52.369114190951315,
-          "sd": 0.917227712138251,
-          "tStat": -2.8530146337349356,
+          "grossL": 51.07451710466136,
+          "sd": 0.9159185286038003,
+          "tStat": -2.727074584040388,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3811,6 +3811,16 @@
     ],
     "journal": [
       {
+        "t": 1795094628312,
+        "type": "CYCLE",
+        "text": "[CYCLE #97] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795094623002,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795093725025,
         "type": "CYCLE",
         "text": "[CYCLE #96] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5270,9 +5280,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2370,
+      "newsIngested": 2400,
       "lessons": 1,
-      "backtests": 2510,
+      "backtests": 2540,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5285,7 +5295,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795093722490,
+      "fetchedAt": 1795094623002,
       "items": [
         {
           "source": "CoinDesk",
@@ -5429,6 +5439,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Morning Minute: Google’s Newest AI Model Tops Benchmarks Ahead of Anthropic IPO",
+          "link": "https://decrypt.co/383609/morning-minute-googles-newest-ai-model-tops-benchmarks-ahead-of-anthropic-ipo",
+          "pubDate": "2026-11-19 13:05:28",
+          "summary": "Anthropic bulls seem to be shrugging off the news, as ANT pops 25% over IPO price on Hyperliquid pre-debut."
+        },
+        {
+          "source": "Decrypt",
           "title": "Binance Wins $6.5B Freezing Order Over Hack That Can Be Served via the Blockchain",
           "link": "https://decrypt.co/383608/binance-wins-6-5b-freezing-order-over-hack-that-can-be-served-via-the-blockchain",
           "pubDate": "2026-11-19 12:59:14",
@@ -5489,13 +5506,6 @@
           "link": "https://decrypt.co/383551/bitcoin-tanks-ahead-anthropics-ipo-should-we-really-blame-ai",
           "pubDate": "2026-11-18 19:16:02",
           "summary": "Bitcoin slid toward $63,000 as Anthropic prepared its blockbuster debut. Analysts dispute whether the IPO is draining crypto liquidity, pointing instead to ETF outflows, forced selling and rising interest rates."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Miners Are Selling Their Stacks to Fund the AI Boom",
-          "link": "https://decrypt.co/383568/bitcoin-miners-selling-fund-ai-boom",
-          "pubDate": "2026-11-18 18:46:03",
-          "summary": "MARA sold 13,597 BTC after September and Riot sold 20,264 BTC through September to fund debt repayment and AI data center buildouts, as Glassnode flagged the pair as the main sellers among Bitcoin treasury firms."
         }
       ],
       "perCoin": {
@@ -5621,17 +5631,17 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795093722490
+        "t": 1795094623002
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795091924144,
+      "fetchedAt": 1795094623925,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.45,
-        "ARB": 11.04,
+        "BTC": -14.31,
+        "ARB": 10.93,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -5648,35 +5658,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 978.64,
+          "pct": 954.43,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.45,
+          "pct": 14.31,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.04,
+          "pct": 10.93,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 39.45,
+          "pct": 39.06,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 196.84,
+          "pct": 194.89,
           "lev": 10
         },
         {
@@ -5690,63 +5700,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.48,
+          "pct": 23.25,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 207.46,
+          "pct": 205.42,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 34.35,
+          "pct": 34.01,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 106.91,
+          "pct": 105.86,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 54.58,
+          "pct": 54.05,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 86.17,
+          "pct": 76.15,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 240.92,
+          "pct": 212.93,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 75.34,
+          "pct": 66.59,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1220.87,
+          "pct": 1218.17,
           "lev": 10
         }
       ]
@@ -9771,7 +9781,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795093722882
+        "updatedAt": 1795094626055
       }
     },
     "champion": {
@@ -9787,7 +9797,7 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795093722881,
+      "updatedAt": 1795094626055,
       "gen": 16
     },
     "factory": {
