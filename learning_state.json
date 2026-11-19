@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795099128250,
+  "updatedAt": 1795100029243,
   "brain": {
     "v": 1,
     "gen": 17,
-    "cycles": 102,
+    "cycles": 103,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795099125523,
     "autoExecBursa": false,
@@ -1437,15 +1437,15 @@
           "wins": 28,
           "losses": 16,
           "winRate": 63.63636363636363,
-          "pf": 0.9274725584795547,
-          "exp": -0.031009202011739786,
-          "netR": -1.3644048885165505,
+          "pf": 0.9262103796041345,
+          "exp": -0.03154884823256801,
+          "netR": -1.3881493222329926,
           "maxDD": 7.210357682770935,
-          "sumR2": 40.411602647948115,
-          "grossW": 17.447852374576435,
+          "sumR2": 40.37854535283872,
+          "grossW": 17.42410794085999,
           "grossL": 18.812257263092985,
-          "sd": 0.9689276443710227,
-          "tStat": -0.2122880665419282,
+          "sd": 0.9685130156110863,
+          "tStat": -0.216074932331756,
           "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3811,6 +3811,21 @@
     ],
     "journal": [
       {
+        "t": 1795100029203,
+        "type": "CYCLE",
+        "text": "[CYCLE #103] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795100023997,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: ETH, SOL — Long baru diblokir (Ethereum’s new DeFi security tool raises questions over censorship)"
+      },
+      {
+        "t": 1795100023995,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795099128221,
         "type": "CYCLE",
         "text": "[CYCLE #102] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5294,21 +5309,6 @@
         "t": 1793689108144,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 65 (Greed) — makro sentiment riil."
-      },
-      {
-        "t": 1793623254301,
-        "type": "CYCLE",
-        "text": "[CYCLE #2] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1793623253539,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 65 (Greed) — makro sentiment riil."
-      },
-      {
-        "t": 1793623211992,
-        "type": "CYCLE",
-        "text": "[CYCLE #1] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5330,9 +5330,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2550,
+      "newsIngested": 2580,
       "lessons": 1,
-      "backtests": 2690,
+      "backtests": 2720,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5345,77 +5345,77 @@
       }
     },
     "news": {
-      "fetchedAt": 1795099125111,
+      "fetchedAt": 1795100023995,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "Fed&#39;s rate hike push may be a mistake. Here&#39;s why",
-          "link": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue",
-          "pubDate": "2026-11-19 06:23:19",
-          "summary": "Experts argue that the Fed is looking at the wrong data as it pushes for more interest-rate hikes, with falling gasoline and energy prices suggesting inflation pressures are already easing."
+          "title": "Crypto traders vs. Wall Street: OKX’s Anthropic markets put IPO pricing to the test",
+          "link": "https://www.coindesk.com/markets/2026/11/19/crypto-traders-vs-wall-street-okx-s-anthropic-markets-put-ipo-pricing-to-the-test",
+          "pubDate": "2026-11-19 13:11:31",
+          "summary": "The crypto exchange plans to launch tokenized Anthropic shares as its pre-IPO futures trade about 24% above the company’s $83 offering price."
         },
         {
           "source": "CoinDesk",
-          "title": "Ethereum block builders received the most in a $3.4 million vault hack, data shows",
-          "link": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows",
-          "pubDate": "2026-11-19 05:39:06",
-          "summary": "An automated trading bot copied the attack on K3 Capital&#39;s sBOLD vault, taking more than half the funds and paying most of its proceeds to get its transactions processed first."
+          "title": "Trump Media wants to clear $884 million of debt without selling its bitcoin",
+          "link": "https://www.coindesk.com/markets/2026/11/19/trump-media-wants-to-clear-usd884-million-of-debt-without-selling-its-bitcoin",
+          "pubDate": "2026-11-19 12:40:12",
+          "summary": "The Truth Social owner bought back $100 million of convertible notes this week. Holders of the rest can demand cash on Nov. 30, and its bitcoin is worth just under $1 billion."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
-          "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal",
-          "pubDate": "2026-11-19 04:46:10",
-          "summary": "Hyperscale Data needs another $74.8 million to complete its Michigan data center project, even after selling its remaining bitcoin and raising fresh debt."
+          "title": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic&#39;s Nasdaq debut",
+          "link": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
+          "pubDate": "2026-11-19 12:20:39",
+          "summary": "Your day-ahead look for Nov. 19, 2026"
         },
         {
           "source": "CoinDesk",
-          "title": "CZ says tokenized Anthropic is coming to BNB Chain on IPO day",
-          "link": "https://www.coindesk.com/markets/2026/11/19/cz-says-tokenized-anthropic-is-coming-to-bnb-chain-on-ipo-day",
-          "pubDate": "2026-11-19 03:40:48",
-          "summary": "Changpeng Zhao says Anthropic-linked tokens from bStocks, Ondo and xStocks will hit BNB Chain on day one of the AI giant’s Nasdaq debut. This follows a $500 million pre-IPO rush that comes with notable fine print."
+          "title": "Bitcoin holds above $63,750 but Fed rate-hike threats loom large",
+          "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-holds-above-usd63-750-but-fed-rate-hike-threats-loom-large",
+          "pubDate": "2026-11-19 12:08:06",
+          "summary": "Bitcoin ETFs saw more than $300 million in outflows Wednesday, with attention now turning to Anthrophic&#39;s $100 billion IPO."
         },
         {
           "source": "CoinDesk",
-          "title": "Another U.S. appellate court goes against Kalshi, building the industry&#39;s legal headwinds",
-          "link": "https://www.coindesk.com/policy/2026/11/18/another-u-s-appellate-court-goes-against-kalshi-building-the-industry-s-legal-headwinds",
-          "pubDate": "2026-11-19 00:33:46",
-          "summary": "Despite a Commodity Futures Trading Commission demand that prediction markets return to operating in all 50 states, federal courts continue to get in the way."
+          "title": "North Korean hackers used Sky&#39;s stablecoin system, putting billions at freeze risk",
+          "link": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
+          "pubDate": "2026-11-19 11:30:00",
+          "summary": "Blockchain investigation traced $518 million in illicit-linked activity, including the 2025 Bybit hack, through a key reserve backing DAI and USDS tokens, putting Sky&#39;s institutional finance ambitions and open design on "
         },
         {
           "source": "CoinDesk",
-          "title": "Payward, the owner of crypto exchange Kraken, is buying its CEO’s venture capital business, Tribe",
-          "link": "https://www.coindesk.com/business/2026/11/18/payward-the-owner-of-crypto-exchange-kraken-is-buying-its-ceo-s-venture-capital-business-tribe",
-          "pubDate": "2026-11-18 22:30:00",
-          "summary": "Sethi, who was appointed co-CEO of Kraken in October 2024, is also the chairman of Tribe Capital."
+          "title": "Anthropic’s $107 billion sale set to top SpaceX’s IPO as tokenized stocks gain traction",
+          "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
+          "pubDate": "2026-11-19 11:06:13",
+          "summary": "The maker of Claude priced its Nasdaq debut at $83 a share for a $1.5 trillion fully diluted valuation, with the Nasdaq 100 down 14% from record highs."
         },
         {
           "source": "CoinDesk",
-          "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
-          "link": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
-          "pubDate": "2026-11-18 17:22:03",
-          "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange."
+          "title": "Financial firms must act now as quantum computers grow ‘highly advanced,’ IOSCO warns",
+          "link": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
+          "pubDate": "2026-11-19 10:55:29",
+          "summary": "No quantum computer can yet break widely used cryptography, but the securities watchdog says banks and blockchains face a yearslong security overhaul that many have barely begun."
         },
         {
           "source": "CoinDesk",
-          "title": "Crypto Long &amp;amp; Short: Crypto exchanges shouldn’t double as the vault",
-          "link": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
-          "pubDate": "2026-11-18 16:02:54",
-          "summary": "A single breach moved billions out of Binance in minutes, exposing how much client money sits with the venue that trades it. Darren Jordan of Komainu argues institutions should keep trading and custody separate, as tradi"
+          "title": "Live updates: Bitcoin nears $64,000 as Anthropic’s record IPO lifts tech",
+          "link": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
+          "pubDate": "2026-11-19 10:48:26",
+          "summary": "The Nasdaq was higher by about 2% early Thursday. One analyst said IPO money could flow back into crypto."
         },
         {
           "source": "CoinDesk",
-          "title": "German judge proposes dropping Movie2k case if operator hands over $2.56 billion in bitcoin",
-          "link": "https://www.coindesk.com/business/2026/11/18/german-judge-proposes-dropping-movie2k-case-if-operator-hands-over-usd2-56-billion-in-bitcoin",
-          "pubDate": "2026-11-18 15:38:38",
-          "summary": "Prosecutors estimate the defendant still holds 56,000 BTC, meaning the proposed deal would leave him with roughly $1 billion."
+          "title": "Singapore settles $77.5 million tokenized bill sale in local CBDC",
+          "link": "https://www.coindesk.com/business/2026/11/19/singapore-settles-usd77-5-million-tokenized-bill-sale-in-local-cbdc",
+          "pubDate": "2026-11-19 10:39:36",
+          "summary": "The central bank aims to expand this digital settlement network and test wider collateral use in 2027."
         },
         {
           "source": "CoinDesk",
-          "title": "Hong Kong wants banks to use AI to catch crypto crime before money disappears",
-          "link": "https://www.coindesk.com/business/2026/11/18/hong-kong-wants-banks-to-use-ai-to-catch-crypto-crime-before-money-disappears",
-          "pubDate": "2026-11-18 15:23:18",
-          "summary": "As Hong Kong pushes banks to use AI to combat crypto crime, experts say the technology must detect suspicious transfers without putting customer funds at risk."
+          "title": "Roundhill scraps Solana and XRP income ETFs as rival funds indicate low demand",
+          "link": "https://www.coindesk.com/markets/2026/11/19/roundhill-scraps-solana-and-xrp-income-etfs-as-rival-funds-attract-just-usd12-million",
+          "pubDate": "2026-11-19 10:22:12",
+          "summary": "Roundhill withdrew plans for two funds designed to generate income from SOL and XRP, highlighting the gap between billions invested in spot crypto ETFs and limited demand for more specialized strategies."
         },
         {
           "source": "CoinTelegraph",
@@ -5573,29 +5573,31 @@
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -1,
+          "impact": -0.5,
+          "sources": [
+            "CoinTelegraph"
+          ],
+          "multiSourced": false,
+          "critical": true,
+          "critHead": "Ethereum’s new DeFi security tool raises questions over censorship"
+        },
+        "SOL": {
+          "sentiment": "BULLISH",
+          "impact": 0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph"
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "Ethereum block builders received the most in a $3.4 million vault hack, data shows"
-        },
-        "SOL": {
-          "sentiment": "BEARISH",
-          "impact": -0.17,
-          "sources": [
-            "CoinTelegraph"
-          ],
-          "multiSourced": false,
-          "critical": true,
           "critHead": "IOSCO warns quantum upgrades could slow blockchains, leave security gaps"
         },
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -5611,9 +5613,7 @@
         "BNB": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -5670,7 +5670,7 @@
       "breaker": [
         {
           "coin": "ETH",
-          "head": "Ethereum block builders received the most in a $3.4 million vault hack, data shows"
+          "head": "Ethereum’s new DeFi security tool raises questions over censorship"
         },
         {
           "coin": "SOL",
@@ -5680,17 +5680,17 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795099125111
+        "t": 1795100023995
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795097326539,
+      "fetchedAt": 1795100024649,
       "bias": {
         "HYPE": -40,
-        "BTC": -14.17,
-        "ARB": 10.82,
+        "BTC": -14.66,
+        "ARB": 11.2,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -5707,35 +5707,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 951.06,
+          "pct": 908.54,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 14.17,
+          "pct": 14.66,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 10.82,
+          "pct": 11.2,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 38.67,
+          "pct": 40.03,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 192.96,
+          "pct": 199.73,
           "lev": 10
         },
         {
@@ -5749,63 +5749,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 23.02,
+          "pct": 23.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 203.38,
+          "pct": 210.51,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 33.68,
+          "pct": 34.86,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 104.81,
+          "pct": 108.49,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 53.51,
+          "pct": 55.39,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 77.48,
+          "pct": 74.62,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 216.62,
+          "pct": 208.64,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 67.74,
+          "pct": 65.25,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1189.41,
+          "pct": 1204.61,
           "lev": 10
         }
       ]
@@ -9830,7 +9830,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795099125523
+        "updatedAt": 1795100026820
       }
     },
     "champion": {
@@ -9846,7 +9846,7 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795099125523,
+      "updatedAt": 1795100026820,
       "gen": 17
     },
     "factory": {
