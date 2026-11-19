@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795109025743,
+  "updatedAt": 1795109927356,
   "brain": {
     "v": 1,
-    "gen": 18,
-    "cycles": 113,
+    "gen": 19,
+    "cycles": 114,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795104524449,
+    "lastOptAt": 1795109925441,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -28,23 +28,23 @@
       "maxDrawdownR": 10
     },
     "learned": {
-      "atrMult": 1.872,
-      "rsiLongMax": 61.098,
+      "atrMult": 1.859,
+      "rsiLongMax": 61.266,
       "rsiShortMin": 38,
       "tp1Ratio": 0.8,
-      "volConfirmMult": 1.196
+      "volConfirmMult": 1.188
     },
     "weights": {
-      "elder": 0.53,
+      "elder": 0.54,
       "donchian": 0.53,
       "bbrev": 0.78,
-      "wyckoff": 0.79,
+      "wyckoff": 0.84,
       "rsidiv": 0.56,
       "macdm": 0.5,
-      "smc": 0.71,
-      "statarb": 0.59,
+      "smc": 0.68,
+      "statarb": 0.62,
       "tsmom": 1,
-      "emax": 0.59
+      "emax": 0.58
     },
     "bayesian": {
       "elder": {
@@ -53,7 +53,7 @@
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 2,
+          "alpha": 3,
           "beta": 2
         },
         "RANGING": {
@@ -99,7 +99,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 4,
+          "alpha": 7,
           "beta": 2
         }
       },
@@ -113,7 +113,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 2,
+          "alpha": 3,
           "beta": 2
         }
       },
@@ -151,11 +151,11 @@
           "beta": 2
         },
         "TREND_DOWN": {
-          "alpha": 2,
+          "alpha": 3,
           "beta": 2
         },
         "RANGING": {
-          "alpha": 4,
+          "alpha": 6,
           "beta": 2
         }
       },
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.56,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -306,58 +306,58 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 32,
-          "wins": 17,
+          "trades": 33,
+          "wins": 18,
           "losses": 15,
-          "winRate": 53.125,
-          "pf": 0.36718657166828184,
-          "exp": -0.43992121612744084,
-          "netR": -14.077478916078107,
-          "maxDD": 15.322479415170188,
-          "sumR2": 44.163049478453054,
-          "grossW": 8.168381057517067,
-          "grossL": 22.245859973595174,
-          "sd": 1.1067253037049258,
-          "tStat": -2.248588870753668,
-          "atrMult": 1.872,
+          "winRate": 54.54545454545454,
+          "pf": 0.3766374710535814,
+          "exp": -0.4217047952427316,
+          "netR": -13.916258243010143,
+          "maxDD": 15.39501423625531,
+          "sumR2": 44.55441184401332,
+          "grossW": 8.40824410802277,
+          "grossL": 22.324502351032912,
+          "sd": 1.0995149358225504,
+          "tStat": -2.2032530306694533,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 27,
-          "wins": 5,
+          "trades": 28,
+          "wins": 6,
           "losses": 22,
-          "winRate": 18.51851851851852,
-          "pf": 0.07160290896779098,
-          "exp": -0.9748396762454143,
-          "netR": -26.320671258626188,
-          "maxDD": 27.464965045251535,
-          "sumR2": 48.572149352971685,
-          "grossW": 2.0299898031856065,
-          "grossL": 28.3506610618118,
-          "sd": 0.9387740513082137,
-          "tStat": -5.39577711848163,
-          "atrMult": 1.872,
+          "winRate": 21.428571428571427,
+          "pf": 0.09058575460656033,
+          "exp": -0.9251984408006445,
+          "netR": -25.905556342418045,
+          "maxDD": 27.60527948612747,
+          "sumR2": 49.326652116738835,
+          "grossW": 2.580424027518353,
+          "grossL": 28.485980369936396,
+          "sd": 0.9691323301581642,
+          "tStat": -5.051621768399218,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 25,
+          "trades": 26,
           "wins": 15,
-          "losses": 10,
-          "winRate": 60,
-          "pf": 0.8313083726529529,
-          "exp": -0.09746574515057052,
-          "netR": -2.436643628764263,
-          "maxDD": 7.788810534957709,
-          "sumR2": 43.05442201722682,
-          "grossW": 12.007722503002226,
-          "grossL": 14.444366131766486,
-          "sd": 1.3356791769589689,
-          "tStat": -0.3648546253916954,
-          "atrMult": 1.872,
+          "losses": 11,
+          "winRate": 57.692307692307686,
+          "pf": 0.9201648364609273,
+          "exp": -0.04000568792791481,
+          "netR": -1.0401478861257851,
+          "maxDD": 5.179935023700491,
+          "sumR2": 37.17124773327021,
+          "grossW": 11.988545737288936,
+          "grossL": 13.028693623414725,
+          "sd": 1.2186818436579578,
+          "tStat": -0.16738559326267755,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -654,35 +654,35 @@
           "wins": 8,
           "losses": 5,
           "winRate": 61.53846153846154,
-          "pf": 0.583391725638739,
-          "exp": -0.20720032974190644,
-          "netR": -2.6936042866447836,
-          "maxDD": 4.768835519784352,
-          "sumR2": 11.814678846575255,
-          "grossW": 3.771952094285448,
-          "grossL": 6.465556380930232,
-          "sd": 0.9685282283869446,
-          "tStat": -0.7713470720638834,
-          "atrMult": 1.872,
+          "pf": 0.5804825574161224,
+          "exp": -0.20942927233827205,
+          "netR": -2.7225805403975367,
+          "maxDD": 4.797988215726894,
+          "sumR2": 11.885594471680974,
+          "grossW": 3.7672105005391905,
+          "grossL": 6.489791040936726,
+          "sd": 0.9710564011350036,
+          "tStat": -0.7776149553374615,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 16,
+          "trades": 15,
           "wins": 6,
-          "losses": 10,
-          "winRate": 37.5,
-          "pf": 0.14889857696691686,
-          "exp": -0.7528120327209589,
-          "netR": -12.044992523535342,
-          "maxDD": 12.587479855089999,
-          "sumR2": 27.909794122785634,
-          "grossW": 2.107248557921693,
-          "grossL": 14.152241081457035,
-          "sd": 1.1207788606451095,
-          "tStat": -2.6867460090660438,
-          "atrMult": 1.872,
+          "losses": 9,
+          "winRate": 40,
+          "pf": 0.14991652214188736,
+          "exp": -0.7925148635562524,
+          "netR": -11.887722953343786,
+          "maxDD": 12.431206699804417,
+          "sumR2": 28.132061347378624,
+          "grossW": 2.09646008629878,
+          "grossL": 13.984183039642565,
+          "sd": 1.156066737230006,
+          "tStat": -2.655034323995549,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -692,16 +692,16 @@
           "wins": 10,
           "losses": 6,
           "winRate": 62.5,
-          "pf": 0.4740605178885275,
-          "exp": -0.3189818788775112,
-          "netR": -5.10371006204018,
-          "maxDD": 5.541213242052432,
-          "sumR2": 21.49130396355169,
-          "grossW": 4.600277251386981,
-          "grossL": 9.703987313427161,
-          "sd": 1.1507479578869868,
-          "tStat": -1.1087810382500385,
-          "atrMult": 1.872,
+          "pf": 0.4704188709445628,
+          "exp": -0.32274224166686544,
+          "netR": -5.163875866669847,
+          "maxDD": 5.565976971017855,
+          "sumR2": 21.667367727118794,
+          "grossW": 4.58699247692116,
+          "grossL": 9.750868343591005,
+          "sd": 1.154722675341583,
+          "tStat": -1.1179904874437279,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -998,16 +998,16 @@
           "wins": 7,
           "losses": 3,
           "winRate": 70,
-          "pf": 1.8551381548881396,
-          "exp": 0.30927950842360835,
-          "netR": 3.0927950842360836,
-          "maxDD": 2.186642856484853,
-          "sumR2": 13.045484911767069,
-          "grossW": 6.709514869871949,
-          "grossL": 3.6167197856358664,
-          "sd": 1.1589720909524182,
-          "tStat": 0.8438750923088345,
-          "atrMult": 1.872,
+          "pf": 1.850822680717209,
+          "exp": 0.3080856588321642,
+          "netR": 3.080856588321642,
+          "maxDD": 2.1907452540826586,
+          "sumR2": 13.03861079890574,
+          "grossW": 6.701889099731193,
+          "grossL": 3.6210325114095507,
+          "sd": 1.158995880882588,
+          "tStat": 0.8406003959231556,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1017,16 +1017,16 @@
           "wins": 6,
           "losses": 7,
           "winRate": 46.15384615384615,
-          "pf": 0.48191167806348795,
-          "exp": -0.2538593803091455,
-          "netR": -3.3001719440188917,
-          "maxDD": 4.740144973904396,
-          "sumR2": 11.343094388534155,
-          "grossW": 3.0697302604614167,
-          "grossL": 6.369902204480309,
-          "sd": 0.9356510560349538,
-          "tStat": -0.9782525296780553,
-          "atrMult": 1.872,
+          "pf": 0.4793958409420246,
+          "exp": -0.25609185580350713,
+          "netR": -3.329194125445593,
+          "maxDD": 4.759306826868757,
+          "sumR2": 11.383090985638214,
+          "grossW": 3.0656724301149954,
+          "grossL": 6.394866555560586,
+          "sd": 0.936772450301331,
+          "tStat": -0.9856740738172444,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -1036,16 +1036,16 @@
           "wins": 8,
           "losses": 6,
           "winRate": 57.14285714285714,
-          "pf": 0.48450377165960157,
-          "exp": -0.3301252703256536,
-          "netR": -4.62175378455915,
-          "maxDD": 6.399771229835368,
-          "sumR2": 18.07881689539031,
-          "grossW": 4.343886564427574,
-          "grossL": 8.965640348986724,
-          "sd": 1.1284113808592253,
-          "tStat": -1.0946501224882852,
-          "atrMult": 1.872,
+          "pf": 0.48195528947857635,
+          "exp": -0.33278348899925847,
+          "netR": -4.658968845989619,
+          "maxDD": 6.430888511162877,
+          "sumR2": 18.16634974834303,
+          "grossW": 4.334403253689308,
+          "grossL": 8.993372099678924,
+          "sd": 1.1305520040648542,
+          "tStat": -1.101375076364069,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1342,16 +1342,16 @@
           "wins": 10,
           "losses": 6,
           "winRate": 62.5,
-          "pf": 0.5797835273983881,
-          "exp": -0.20889592650889657,
-          "netR": -3.342334824142345,
-          "maxDD": 4.75450129848404,
-          "sumR2": 15.475777350475276,
-          "grossW": 4.611505736770317,
-          "grossL": 7.953840560912662,
-          "sd": 0.992558217291161,
-          "tStat": -0.8418485600935515,
-          "atrMult": 1.872,
+          "pf": 0.5725530437378344,
+          "exp": -0.21322896997303803,
+          "netR": -3.4116635195686085,
+          "maxDD": 4.79369361525664,
+          "sumR2": 15.471118959899687,
+          "grossW": 4.569826276035733,
+          "grossL": 7.981489795604343,
+          "sd": 0.9914182925394468,
+          "tStat": -0.860298711765212,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1361,16 +1361,16 @@
           "wins": 6,
           "losses": 2,
           "winRate": 75,
-          "pf": 5.51426844180421,
-          "exp": 0.39495752955726404,
-          "netR": 3.1596602364581123,
-          "maxDD": 0.5141425610369391,
-          "sumR2": 4.078388341567769,
-          "grossW": 3.859587650432479,
-          "grossL": 0.6999274139743663,
-          "sd": 0.635885966903765,
-          "tStat": 1.7567750317905257,
-          "atrMult": 1.872,
+          "pf": 5.4226112293026585,
+          "exp": 0.3927369528408824,
+          "netR": 3.141895622727059,
+          "maxDD": 0.5205351663588649,
+          "sumR2": 4.074757432710372,
+          "grossW": 3.8523120395963444,
+          "grossL": 0.7104164168692851,
+          "sd": 0.6370488790056448,
+          "tStat": 1.7437089788764455,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -1380,16 +1380,16 @@
           "wins": 7,
           "losses": 3,
           "winRate": 70,
-          "pf": 0.5516236590723197,
-          "exp": -0.2718130264515365,
-          "netR": -2.718130264515365,
-          "maxDD": 5.9178404786929075,
-          "sumR2": 15.945883999538468,
-          "grossW": 3.344032290474972,
-          "grossL": 6.062162554990337,
-          "sd": 1.2998743864975326,
-          "tStat": -0.6612548644846171,
-          "atrMult": 1.872,
+          "pf": 0.6349659956905347,
+          "exp": -0.22258175803902444,
+          "netR": -2.2258175803902445,
+          "maxDD": 5.957825377145296,
+          "sumR2": 17.429558626744544,
+          "grossW": 3.8717447127468647,
+          "grossL": 6.097562293137109,
+          "sd": 1.3717034112788828,
+          "tStat": -0.5131322961073448,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1686,16 +1686,16 @@
           "wins": 2,
           "losses": 5,
           "winRate": 28.57142857142857,
-          "pf": 0.4160365455478094,
-          "exp": -0.5684457262409045,
-          "netR": -3.9791200836863316,
-          "maxDD": 6.813988192838366,
-          "sumR2": 13.661060210924248,
-          "grossW": 2.8348681091520342,
-          "grossL": 6.813988192838366,
-          "sd": 1.3783532690106095,
-          "tStat": -1.091132483438366,
-          "atrMult": 1.872,
+          "pf": 0.41436254853589793,
+          "exp": -0.571721570480353,
+          "netR": -4.002050993362471,
+          "maxDD": 6.833666431949128,
+          "sumR2": 13.718024684688718,
+          "grossW": 2.831615438586657,
+          "grossL": 6.833666431949128,
+          "sd": 1.3802153096299306,
+          "tStat": -1.0959399479983125,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1705,16 +1705,16 @@
           "wins": 1,
           "losses": 2,
           "winRate": 33.33333333333333,
-          "pf": 1.307197679435025,
-          "exp": 0.029431218057871588,
-          "netR": 0.08829365417361476,
-          "maxDD": 0.2874164099676725,
-          "sumR2": 0.20319669073519853,
-          "grossW": 0.37571006414128727,
-          "grossL": 0.2874164099676725,
-          "sd": 0.31670025335172103,
-          "tStat": 0.16096092271912035,
-          "atrMult": 1.872,
+          "pf": 1.2729282329026415,
+          "exp": 0.02683982797435595,
+          "netR": 0.08051948392306785,
+          "maxDD": 0.2950207205268889,
+          "sumR2": 0.20557460756634233,
+          "grossW": 0.3755402044499567,
+          "grossL": 0.2950207205268889,
+          "sd": 0.3189149404380918,
+          "tStat": 0.14576910587548114,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -1724,16 +1724,16 @@
           "wins": 1,
           "losses": 2,
           "winRate": 33.33333333333333,
-          "pf": 0.4285024669342188,
-          "exp": -0.2570786461216843,
-          "netR": -0.7712359383650529,
-          "maxDD": 1.349500030608673,
-          "sumR2": 1.8891921793636117,
-          "grossW": 0.5782640922436202,
-          "grossL": 1.349500030608673,
-          "sd": 0.9194900457558899,
-          "tStat": -0.4842611169952675,
-          "atrMult": 1.872,
+          "pf": 0.42556811248164766,
+          "exp": -0.26074120075656887,
+          "netR": -0.7822236022697066,
+          "maxDD": 1.3617342965569883,
+          "sumR2": 1.913068725414934,
+          "grossW": 0.5795106942872817,
+          "grossL": 1.3617342965569883,
+          "sd": 0.9244216581460545,
+          "tStat": -0.48854005459220906,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2030,16 +2030,16 @@
           "wins": 6,
           "losses": 4,
           "winRate": 60,
-          "pf": 0.7953529449928448,
-          "exp": -0.09969472903062633,
-          "netR": -0.9969472903062633,
-          "maxDD": 2.478702417105425,
-          "sumR2": 9.622553117087925,
-          "grossW": 3.8745974786688198,
-          "grossL": 4.871544768975083,
-          "sd": 1.0286540681407712,
-          "tStat": -0.3064805012825225,
-          "atrMult": 1.872,
+          "pf": 0.7935434435788773,
+          "exp": -0.10084644042244899,
+          "netR": -1.00846440422449,
+          "maxDD": 2.489042993448816,
+          "sumR2": 9.65926395778143,
+          "grossW": 3.876168090407747,
+          "grossL": 4.884632494632236,
+          "sd": 1.030510332705901,
+          "tStat": -0.3094626376215332,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2049,16 +2049,16 @@
           "wins": 1,
           "losses": 7,
           "winRate": 12.5,
-          "pf": 0.03716843788216398,
-          "exp": -0.9535692590948848,
-          "netR": -7.628554072759078,
-          "maxDD": 7.923041135024049,
-          "sumR2": 16.39911077434237,
-          "grossW": 0.29448706226497134,
-          "grossL": 7.923041135024049,
-          "sd": 1.1417252683809103,
-          "tStat": -2.362303114805264,
-          "atrMult": 1.872,
+          "pf": 0.036876021438742,
+          "exp": -0.9590137993682746,
+          "netR": -7.672110394946197,
+          "maxDD": 7.965859604499738,
+          "sumR2": 16.56378812035509,
+          "grossW": 0.2937492095535412,
+          "grossL": 7.965859604499738,
+          "sd": 1.1468047773409948,
+          "tStat": -2.365268000913275,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -2068,16 +2068,16 @@
           "wins": 4,
           "losses": 3,
           "winRate": 57.14285714285714,
-          "pf": 0.3721971546949831,
-          "exp": -0.44929364088381124,
-          "netR": -3.1450554861866786,
-          "maxDD": 5.00962286123227,
-          "sumR2": 10.758697903912987,
-          "grossW": 1.864567375045591,
-          "grossL": 5.00962286123227,
-          "sd": 1.2480414305184055,
-          "tStat": -0.9524677709838225,
-          "atrMult": 1.872,
+          "pf": 0.3692702050572907,
+          "exp": -0.4532847053055783,
+          "netR": -3.172992937139048,
+          "maxDD": 5.030669174947187,
+          "sumR2": 10.838026932802306,
+          "grossW": 1.857676237808139,
+          "grossL": 5.030669174947187,
+          "sd": 1.2516494293767293,
+          "tStat": -0.9581585507892194,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2371,19 +2371,19 @@
         },
         "MSFT": {
           "trades": 8,
-          "wins": 3,
-          "losses": 5,
-          "winRate": 37.5,
-          "pf": 0.31375440615147965,
-          "exp": -0.524374103583546,
-          "netR": -4.194992828668368,
-          "maxDD": 5.879641539990865,
-          "sumR2": 9.610823833734758,
-          "grossW": 1.9179685750508337,
-          "grossL": 6.112961403719202,
-          "sd": 1.0289438572538054,
-          "tStat": -1.4414332984586995,
-          "atrMult": 1.872,
+          "wins": 2,
+          "losses": 6,
+          "winRate": 25,
+          "pf": 0.06812779553752321,
+          "exp": -0.8612963111419254,
+          "netR": -6.890370489135403,
+          "maxDD": 6.890370489135403,
+          "sumR2": 9.256956088571574,
+          "grossW": 0.5037447727420683,
+          "grossL": 7.394115261877472,
+          "sd": 0.6889231145032563,
+          "tStat": -3.53611861409847,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2393,16 +2393,16 @@
           "wins": 3,
           "losses": 1,
           "winRate": 75,
-          "pf": 254.10899787981091,
-          "exp": 0.8985620844656759,
-          "netR": 3.5942483378627035,
-          "maxDD": 0.014200397330676628,
-          "sumR2": 4.374004958267638,
-          "grossW": 3.60844873519338,
-          "grossL": 0.014200397330676628,
-          "sd": 0.6176162993613528,
-          "tStat": 2.9097745166208715,
-          "atrMult": 1.872,
+          "pf": 210.50988768602866,
+          "exp": 0.8954925885528502,
+          "netR": 3.5819703542114008,
+          "maxDD": 0.017096903605711145,
+          "sumR2": 4.35202676714981,
+          "grossW": 3.5990672578171115,
+          "grossL": 0.017096903605711145,
+          "sd": 0.6176295714362218,
+          "tStat": 2.8997723877452697,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -2412,16 +2412,16 @@
           "wins": 2,
           "losses": 1,
           "winRate": 66.66666666666666,
-          "pf": 0.5495777797032411,
-          "exp": -0.3673576946614103,
-          "netR": -1.1020730839842308,
-          "maxDD": 2.4467555869204984,
-          "sumR2": 7.6308790188934275,
-          "grossW": 1.344682502936268,
-          "grossL": 2.4467555869204984,
-          "sd": 1.9007924651855854,
-          "tStat": -0.3347457459764355,
-          "atrMult": 1.872,
+          "pf": 0.5437594171388643,
+          "exp": -0.37470518436766936,
+          "netR": -1.124115553103008,
+          "maxDD": 2.4638657658500125,
+          "sumR2": 7.7079971338475115,
+          "grossW": 1.3397502127470045,
+          "grossL": 2.4638657658500125,
+          "sd": 1.9087672996297222,
+          "tStat": -0.34001442570300033,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2718,16 +2718,16 @@
           "wins": 18,
           "losses": 10,
           "winRate": 64.28571428571429,
-          "pf": 0.7596233566261739,
-          "exp": -0.10628298151240154,
-          "netR": -2.975923482347243,
-          "maxDD": 4.738073745810411,
-          "sumR2": 24.988056103424274,
-          "grossW": 9.404328777516376,
-          "grossL": 12.380252259863619,
-          "sd": 0.9559127126385477,
-          "tStat": -0.588334758942823,
-          "atrMult": 1.872,
+          "pf": 0.7553899005329081,
+          "exp": -0.10853485031481758,
+          "netR": -3.038975808814892,
+          "maxDD": 4.781696639137783,
+          "sumR2": 25.081074752350787,
+          "grossW": 9.384778629107387,
+          "grossL": 12.42375443792228,
+          "sd": 0.9574510908663363,
+          "tStat": -0.5998347597197856,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2737,35 +2737,35 @@
           "wins": 15,
           "losses": 17,
           "winRate": 46.875,
-          "pf": 0.4237942410496199,
-          "exp": -0.34280798347310154,
-          "netR": -10.96985547113925,
-          "maxDD": 11.096069376039441,
-          "sumR2": 36.17868042279923,
-          "grossW": 8.06823170647245,
-          "grossL": 19.038087177611697,
-          "sd": 1.0226172365907351,
-          "tStat": -1.8963251632006548,
-          "atrMult": 1.872,
+          "pf": 0.4210103782099171,
+          "exp": -0.3458608365043817,
+          "netR": -11.067546768140215,
+          "maxDD": 11.191846084962782,
+          "sumR2": 36.34991402661227,
+          "grossW": 8.047729830293942,
+          "grossL": 19.115276598434157,
+          "sd": 1.02425556040019,
+          "tStat": -1.910152522821919,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 34,
-          "wins": 16,
+          "trades": 33,
+          "wins": 15,
           "losses": 18,
-          "winRate": 47.05882352941176,
-          "pf": 0.3375349741759857,
-          "exp": -0.5158359632441645,
-          "netR": -17.538422750301592,
-          "maxDD": 19.75764451293528,
-          "sumR2": 55.490036286635615,
-          "grossW": 8.93606581380975,
-          "grossL": 26.474488564111336,
-          "sd": 1.1863246922993316,
-          "tStat": -2.5354059532202546,
-          "atrMult": 1.872,
+          "winRate": 45.45454545454545,
+          "pf": 0.32731945810434626,
+          "exp": -0.5421252587814718,
+          "netR": -17.890133539788568,
+          "maxDD": 19.898257411627146,
+          "sumR2": 55.88873499847817,
+          "grossW": 8.70515564365222,
+          "grossL": 26.59528918344079,
+          "sd": 1.2014319805390723,
+          "tStat": -2.5921338550880404,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -3071,7 +3071,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.872,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -3090,7 +3090,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.872,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -3109,7 +3109,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.872,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -3406,35 +3406,35 @@
           "wins": 4,
           "losses": 3,
           "winRate": 57.14285714285714,
-          "pf": 0.284324657838066,
-          "exp": -0.4216615042211234,
-          "netR": -2.951630529547864,
-          "maxDD": 3.65367976342025,
-          "sumR2": 6.403572801357493,
-          "grossW": 1.172628552274751,
-          "grossL": 4.124259081822615,
-          "sd": 0.9272705315749147,
-          "tStat": -1.2031132659027823,
-          "atrMult": 1.872,
+          "pf": 0.28258219737980145,
+          "exp": -0.4242105856692197,
+          "netR": -2.969474099684538,
+          "maxDD": 3.673635565961625,
+          "sumR2": 6.452767732750923,
+          "grossW": 1.1696399407522025,
+          "grossL": 4.13911404043674,
+          "sd": 0.9303301730921633,
+          "tStat": -1.2064057962039565,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 9,
+          "trades": 8,
           "wins": 3,
-          "losses": 6,
-          "winRate": 33.33333333333333,
-          "pf": 0.2424540769117155,
-          "exp": -0.449539525876822,
-          "netR": -4.045855732891398,
-          "maxDD": 4.588343064446055,
-          "sumR2": 7.647595243803623,
-          "grossW": 1.2948841609986963,
-          "grossL": 5.3407398938900945,
-          "sd": 0.8535823902730189,
-          "tStat": -1.5799512653946732,
-          "atrMult": 1.872,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.2733098997914412,
+          "exp": -0.43058341415678203,
+          "netR": -3.4446673132542562,
+          "maxDD": 3.9881510597148875,
+          "sumR2": 7.299915951127365,
+          "grossW": 1.2955476866000732,
+          "grossL": 4.740214999854329,
+          "sd": 0.911568455132775,
+          "tStat": -1.3360201323437362,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
@@ -3444,16 +3444,16 @@
           "wins": 4,
           "losses": 3,
           "winRate": 57.14285714285714,
-          "pf": 1.2364994925204773,
-          "exp": 0.14300951189967973,
-          "netR": 1.001066583297758,
-          "maxDD": 1.5458462408382203,
-          "sumR2": 12.916598345153382,
-          "grossW": 5.233915341783275,
-          "grossL": 4.232848758485518,
-          "sd": 1.4590771228015382,
-          "tStat": 0.2593198109204745,
-          "atrMult": 1.872,
+          "pf": 1.2256714814224035,
+          "exp": 0.13741617182305157,
+          "netR": 0.961913202761361,
+          "maxDD": 1.5566563544105156,
+          "sumR2": 12.976786968295961,
+          "grossW": 5.224362302215309,
+          "grossL": 4.2624490994539475,
+          "sd": 1.4631361601224067,
+          "tStat": 0.24848611268817208,
+          "atrMult": 1.859,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -3700,15 +3700,15 @@
         "beActive": false,
         "lockedR": 0,
         "mfe": 0.57089101525622,
-        "mae": -0.3399688068379742,
-        "lastBarT": 1795108800000
+        "mae": -0.5452329920986331,
+        "lastBarT": 1795109700000
       },
       {
         "id": "sig_TSLA_1795102731020",
         "sym": "TSLA",
         "side": "SHORT",
         "entry": 379.0299072265625,
-        "sl": 388.2445657310964,
+        "sl": 379.0299072265625,
         "slInit": 388.2445657310964,
         "risk": 9.214658504533851,
         "rsiAtEntry": 43,
@@ -3758,21 +3758,24 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "OPEN",
+        "status": "WIN",
         "createdAt": 1795102731023,
-        "tp1Hit": false,
-        "beActive": false,
-        "lockedR": 0,
-        "mfe": 0,
-        "mae": 0,
-        "lastBarT": 1795102731023
+        "tp1Hit": true,
+        "beActive": true,
+        "lockedR": 0.4000000000000009,
+        "mfe": 0.8920471294649,
+        "mae": -0.5469654784468019,
+        "lastBarT": 1795109400000,
+        "closedAt": 1795109922535,
+        "netR": 0.28,
+        "closeReason": "TP1 lalu kembali ke breakeven di bar yang sama"
       },
       {
         "id": "sig_SPY_1795101833281",
         "sym": "SPY",
         "side": "SHORT",
         "entry": 731.5549926757812,
-        "sl": 739.7911633376211,
+        "sl": 731.5549926757812,
         "slInit": 739.7911633376211,
         "risk": 8.236170661839823,
         "rsiAtEntry": 38,
@@ -3821,14 +3824,17 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "OPEN",
+        "status": "WIN",
         "createdAt": 1795101833281,
-        "tp1Hit": false,
-        "beActive": false,
-        "lockedR": 0,
-        "mfe": 0.7145322756474289,
-        "mae": 0,
-        "lastBarT": 1795105800000
+        "tp1Hit": true,
+        "beActive": true,
+        "lockedR": 0.4000000000000013,
+        "mfe": 1.7016420887649235,
+        "mae": -0.021246256319033176,
+        "lastBarT": 1795109400000,
+        "closedAt": 1795109922597,
+        "netR": 0.13,
+        "closeReason": "TP1 lalu kembali ke breakeven di bar yang sama"
       },
       {
         "id": "sig_LINKUSDT_1795100946928",
@@ -3884,14 +3890,17 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "TP1_SECURED",
+        "status": "WIN",
         "createdAt": 1795100946928,
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.4000000000000013,
         "mfe": 1.618301865070838,
         "mae": -0.14995847398340464,
-        "lastBarT": 1795108800000
+        "lastBarT": 1795109700000,
+        "closedAt": 1795109922706,
+        "netR": 0.5,
+        "closeReason": "Trail/BE exit di 9.0830"
       },
       {
         "id": "sig_AVAXUSDT_1795100946519",
@@ -3947,14 +3956,17 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "TP1_SECURED",
+        "status": "WIN",
         "createdAt": 1795100946521,
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.40000000000000135,
         "mfe": 1.2888200329319408,
         "mae": -0.19015377535061534,
-        "lastBarT": 1795108800000
+        "lastBarT": 1795109700000,
+        "closedAt": 1795109922813,
+        "netR": 0.36,
+        "closeReason": "Trail/BE exit di 7.0537"
       },
       {
         "id": "sig_LINKUSDT_1794963881588",
@@ -4134,6 +4146,56 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795109927340,
+        "type": "CYCLE",
+        "text": "[CYCLE #114] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795109925442,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.114R/trade, win 57.9%, t=-1.01) | Meta-model belum aktif (1212 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.279R)"
+      },
+      {
+        "t": 1795109925442,
+        "type": "GEN",
+        "text": "[GEN #19] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-47.44R, 309 trade, Win 57.3%, t=-2.68 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795109924504,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795109922813,
+        "type": "WIN",
+        "text": "[WIN] AVAXUSDT SHORT +0.36R — Trail/BE exit di 7.0537 (MFE 1.29R)"
+      },
+      {
+        "t": 1795109922706,
+        "type": "WIN",
+        "text": "[WIN] LINKUSDT SHORT +0.50R — Trail/BE exit di 9.0830 (MFE 1.62R)"
+      },
+      {
+        "t": 1795109922597,
+        "type": "WIN",
+        "text": "[WIN] SPY SHORT +0.13R — TP1 lalu kembali ke breakeven di bar yang sama (MFE 1.70R)"
+      },
+      {
+        "t": 1795109922597,
+        "type": "TP1",
+        "text": "[TP1 LOCKED] TP1 SPY tercapai -> 50% ditutup, SL digeser ke breakeven"
+      },
+      {
+        "t": 1795109922535,
+        "type": "WIN",
+        "text": "[WIN] TSLA SHORT +0.28R — TP1 lalu kembali ke breakeven di bar yang sama (MFE 0.89R)"
+      },
+      {
+        "t": 1795109922535,
+        "type": "TP1",
+        "text": "[TP1 LOCKED] TP1 TSLA tercapai -> 50% ditutup, SL digeser ke breakeven"
+      },
       {
         "t": 1795109025722,
         "type": "CYCLE",
@@ -5583,56 +5645,6 @@
         "t": 1794754039952,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794726923409,
-        "type": "CYCLE",
-        "text": "[CYCLE #15] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794726922075,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794703654637,
-        "type": "CYCLE",
-        "text": "[CYCLE #14] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794703653098,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794689879697,
-        "type": "CYCLE",
-        "text": "[CYCLE #13] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794689878144,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794674828415,
-        "type": "CYCLE",
-        "text": "[CYCLE #12] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794674827542,
-        "type": "GEN",
-        "text": "[AUTO-TUNE] Ambang skor dikalibrasi ke 70/100."
-      },
-      {
-        "t": 1794674827542,
-        "type": "GEN",
-        "text": "[GEN #2] Universe penuh di-backtest walk-forward | Strategi Paling Profit: EMA Cross Naive (CONTROL) (+53.6R · Win 88.9%)"
-      },
-      {
-        "t": 1794674826084,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5645,20 +5657,40 @@
         "t": 1795049946494,
         "acc": 100,
         "eq": 0.69
+      },
+      {
+        "t": 1795109922535,
+        "acc": 100,
+        "eq": 0.97
+      },
+      {
+        "t": 1795109922597,
+        "acc": 100,
+        "eq": 1.1
+      },
+      {
+        "t": 1795109922706,
+        "acc": 100,
+        "eq": 1.6
+      },
+      {
+        "t": 1795109922813,
+        "acc": 100,
+        "eq": 1.96
       }
     ],
-    "equityR": 0.69,
+    "equityR": 1.96,
     "stats": {
-      "closed": 2,
-      "wins": 2,
+      "closed": 6,
+      "wins": 6,
       "losses": 0,
       "be": 0,
-      "tp1Hits": 4,
-      "newsIngested": 2880,
+      "tp1Hits": 6,
+      "newsIngested": 2910,
       "lessons": 1,
-      "backtests": 3020,
-      "netR": 0.69,
-      "peakEquity": 0.69,
+      "backtests": 3050,
+      "netR": 1.96,
+      "peakEquity": 1.96,
       "maxDrawdown": 0,
       "consecutiveLosses": 0,
       "defensiveMode": false,
@@ -5669,7 +5701,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795109023975,
+      "fetchedAt": 1795109924504,
       "items": [
         {
           "source": "CoinDesk",
@@ -5813,6 +5845,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "What Are Perpetual Futures? How Crypto&#39;s Most Popular Derivative Works",
+          "link": "https://decrypt.co/resources/what-are-perpetual-futures-how-cryptos-most-popular-derivative-works",
+          "pubDate": "2026-11-19 17:28:03",
+          "summary": "Perpetual futures let traders bet on prices with leverage and no expiry date. Here&#39;s how they work, and why they dominate crypto trading."
+        },
+        {
+          "source": "Decrypt",
           "title": "Anthropic Stock Opens 33% Above IPO Price as AI Stocks Rally",
           "link": "https://decrypt.co/383631/anthropic-stock-indicated-open-33-above-ipo-price",
           "pubDate": "2026-11-19 16:55:10",
@@ -5873,13 +5912,6 @@
           "link": "https://decrypt.co/383586/ledger-confirms-tampered-bitcoin-wallets-berlin-spreads-beyond-asia",
           "pubDate": "2026-11-18 22:16:02",
           "summary": "Ledger says its hardware implant investigation has confirmed tampered devices in Berlin and is examining two suspected units in Dubai, as the incident spreads beyond Southeast Asia."
-        },
-        {
-          "source": "Decrypt",
-          "title": "ChatGPT, Claude, Gemini and Grok Helped Plan Terror Attacks in Government Tests",
-          "link": "https://decrypt.co/383584/chatgpt-claude-gemini-grok-help-plan-terror-attacks-government-tests",
-          "pubDate": "2026-11-18 21:46:03",
-          "summary": "Federal investigators bypassed safeguards on four popular chatbots, producing viable attack plans within hours."
         }
       ],
       "perCoin": {
@@ -6004,17 +6036,17 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795109023975
+        "t": 1795109924504
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795107224344,
+      "fetchedAt": 1795109925168,
       "bias": {
         "HYPE": -40,
-        "BTC": -16.63,
-        "ARB": 12.7,
+        "BTC": -16.35,
+        "ARB": 12.49,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -6031,35 +6063,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 923.92,
+          "pct": 943.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 16.63,
+          "pct": 16.35,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 12.7,
+          "pct": 12.49,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 45.39,
+          "pct": 44.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 226.46,
+          "pct": 222.68,
           "lev": 10
         },
         {
@@ -6073,63 +6105,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 27.01,
+          "pct": 26.56,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 238.69,
+          "pct": 234.71,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 39.52,
+          "pct": 38.86,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 123,
+          "pct": 120.95,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 62.8,
+          "pct": 61.75,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 89.62,
+          "pct": 85.02,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 250.59,
+          "pct": 237.73,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 78.37,
+          "pct": 74.34,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1162.36,
+          "pct": 1226.16,
           "lev": 10
         }
       ]
@@ -6141,6 +6173,22 @@
       },
       {
         "t": 1795049946494,
+        "cause": "OK"
+      },
+      {
+        "t": 1795109922535,
+        "cause": "OK"
+      },
+      {
+        "t": 1795109922597,
+        "cause": "OK"
+      },
+      {
+        "t": 1795109922706,
+        "cause": "OK"
+      },
+      {
+        "t": 1795109922813,
         "cause": "OK"
       }
     ],
@@ -6723,216 +6771,216 @@
         ],
         "MSFT": [
           [
-            0.547,
-            -1.205,
+            0.555,
+            -1.207,
             33
           ],
           [
-            0.497,
-            -1.198,
+            0.502,
+            -1.199,
             88
           ],
           [
-            0.542,
-            -1.246,
+            0.543,
+            -1.254,
             69
           ],
           [
-            0.551,
-            0.143,
+            0.56,
+            0.142,
             10
           ],
           [
-            0.544,
-            -1.185,
+            0.553,
+            -1.187,
             40
           ],
           [
-            0.557,
-            -1.198,
+            0.567,
+            -1.2,
             2
           ],
           [
-            0.567,
-            1.417,
+            0.568,
+            1.416,
             90
           ],
           [
-            0.548,
-            -1.248,
+            0.559,
+            -1.249,
             10
           ],
           [
-            0.529,
-            -1.248,
-            69
-          ],
-          [
-            0.515,
-            0.155,
-            64
-          ],
-          [
-            0.572,
-            0.159,
-            2
-          ],
-          [
-            0.578,
-            0.119,
-            35
-          ],
-          [
-            0.593,
-            -1.204,
-            27
-          ],
-          [
-            0.583,
-            0.233,
-            10
-          ],
-          [
-            0.58,
-            1.494,
-            35
-          ],
-          [
-            0.581,
-            -1.164,
-            10
-          ],
-          [
-            0.521,
-            0.23,
+            0.528,
+            -1.249,
             69
           ],
           [
             0.518,
-            -1.156,
+            0.153,
+            64
+          ],
+          [
+            0.578,
+            0.157,
+            2
+          ],
+          [
+            0.584,
+            0.117,
+            35
+          ],
+          [
+            0.597,
+            -1.205,
+            27
+          ],
+          [
+            0.589,
+            0.232,
+            10
+          ],
+          [
+            0.586,
+            1.493,
+            35
+          ],
+          [
+            0.587,
+            -1.166,
+            10
+          ],
+          [
+            0.523,
+            0.229,
+            69
+          ],
+          [
+            0.518,
+            -1.157,
             69
           ]
         ],
         "SPY": [
           [
-            0.533,
-            -0.082,
+            0.536,
+            -0.086,
             96
           ],
           [
-            0.577,
-            1.166,
+            0.585,
+            1.162,
             2
           ],
           [
-            0.54,
-            -1.389,
+            0.548,
+            -1.392,
             40
           ],
           [
-            0.572,
-            -1.698,
+            0.577,
+            -1.703,
             10
           ],
           [
             0.467,
-            -0.248,
+            -0.252,
             61
           ],
           [
-            0.556,
-            -1.548,
+            0.562,
+            -1.552,
             46
           ],
           [
             0.479,
-            -1.469,
+            -1.472,
             48
           ],
           [
-            0.55,
-            -0.21,
+            0.556,
+            -0.214,
             41
           ],
           [
-            0.498,
-            -0.019,
+            0.502,
+            -0.022,
             56
           ],
           [
-            0.567,
-            1.104,
+            0.573,
+            1.1,
             35
           ],
           [
-            0.576,
-            -1.409,
+            0.582,
+            -1.411,
             10
           ],
           [
-            0.559,
-            1.351,
+            0.566,
+            1.349,
             2
           ],
           [
-            0.531,
-            -1.344,
+            0.53,
+            -1.346,
             61
           ]
         ],
         "QQQ": [
           [
-            0.538,
-            0.064,
+            0.54,
+            0.062,
             95
           ],
           [
             0.532,
-            0.08,
+            0.078,
             95
           ],
           [
-            0.542,
-            -1.723,
+            0.551,
+            -1.735,
             10
           ],
           [
-            0.495,
-            1.182,
+            0.496,
+            1.179,
             48
           ],
           [
-            0.499,
-            1.605,
+            0.5,
+            1.602,
             69
           ],
           [
-            0.491,
-            -1.343,
+            0.488,
+            -1.352,
             61
           ],
           [
-            0.552,
-            -1.241,
+            0.559,
+            -1.243,
             41
           ],
           [
-            0.588,
-            0.658,
+            0.595,
+            0.659,
             10
           ],
           [
-            0.476,
-            1.357,
+            0.481,
+            1.355,
             96
           ],
           [
             0.516,
-            0.246,
+            0.244,
             56
           ],
           [
-            0.531,
+            0.534,
             0.339,
             56
           ]
@@ -10163,15 +10211,15 @@
           "sd": 0.94,
           "t": -8.29,
           "winRate": 52.8,
-          "sum": -217.52
+          "sum": -217.63
         },
         "base": {
           "n": 76,
           "mean": -0.114,
           "sd": 0.988,
-          "t": -1,
+          "t": -1.01,
           "winRate": 57.9,
-          "sum": -8.65
+          "sum": -8.66
         },
         "taken": {
           "n": 0,
@@ -10187,31 +10235,31 @@
           "n": 76,
           "mean": -0.114,
           "sd": 0.988,
-          "t": -1,
+          "t": -1.01,
           "winRate": 57.9,
-          "sum": -8.65
+          "sum": -8.66
         },
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795109024258
+        "updatedAt": 1795109925442
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -44.71,
+      "netR": -47.44,
       "trades": 309,
-      "winRate": 57.6,
-      "pf": 0.72,
-      "expPerTrade": -0.145,
-      "tStat": -2.52,
-      "deflatedT": -4.67,
+      "winRate": 57.3,
+      "pf": 0.7,
+      "expPerTrade": -0.154,
+      "tStat": -2.68,
+      "deflatedT": -4.83,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795109024257,
-      "gen": 18
+      "updatedAt": 1795109925442,
+      "gen": 19
     },
     "factory": {
       "updatedAt": 1795049968680,
