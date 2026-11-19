@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795021729241,
+  "updatedAt": 1795049971502,
   "brain": {
     "v": 1,
     "gen": 13,
-    "cycles": 81,
+    "cycles": 82,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795019025026,
     "autoExecBursa": false,
@@ -28,21 +28,21 @@
       "maxDrawdownR": 10
     },
     "learned": {
-      "atrMult": 1.876,
-      "rsiLongMax": 61.05,
+      "atrMult": 1.872,
+      "rsiLongMax": 61.098,
       "rsiShortMin": 38,
       "tp1Ratio": 0.8,
-      "volConfirmMult": 1.198
+      "volConfirmMult": 1.196
     },
     "weights": {
       "elder": 0.54,
       "donchian": 0.54,
       "bbrev": 0.78,
-      "wyckoff": 0.796,
+      "wyckoff": 0.834,
       "rsidiv": 0.64,
       "macdm": 0.5,
       "smc": 0.7,
-      "statarb": 0.585,
+      "statarb": 0.613,
       "tsmom": 1,
       "emax": 0.6
     },
@@ -99,7 +99,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         }
       },
@@ -155,7 +155,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 3,
+          "alpha": 4,
           "beta": 2
         }
       },
@@ -193,19 +193,19 @@
       "elder": {
         "SUIUSDT": {
           "trades": 77,
-          "wins": 42,
-          "losses": 35,
-          "winRate": 54.54545454545454,
-          "pf": 0.7243961643408885,
-          "exp": -0.14055872512865558,
-          "netR": -10.823021834906479,
-          "maxDD": 14.38947223431923,
-          "sumR2": 73.51722914236784,
-          "grossW": 28.4471929972748,
-          "grossL": 39.270214832181296,
-          "sd": 0.9733012123101419,
-          "tStat": -1.2672313480568949,
-          "atrMult": 1.88,
+          "wins": 41,
+          "losses": 36,
+          "winRate": 53.246753246753244,
+          "pf": 0.6818292473335184,
+          "exp": -0.1672440963456144,
+          "netR": -12.87779541861231,
+          "maxDD": 14.691612613374485,
+          "sumR2": 74.04027436073036,
+          "grossW": 27.596683491494485,
+          "grossL": 40.474478910106804,
+          "sd": 0.9725613165828837,
+          "tStat": -1.5089650024233459,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -224,7 +224,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -243,7 +243,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -536,20 +536,20 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 80,
+          "trades": 79,
           "wins": 43,
-          "losses": 37,
-          "winRate": 53.75,
-          "pf": 0.5226046696356936,
-          "exp": -0.24647301861476198,
-          "netR": -19.71784148918096,
-          "maxDD": 21.252551013972916,
-          "sumR2": 65.14063646094517,
-          "grossW": 21.58512113957795,
-          "grossL": 41.302962628758905,
-          "sd": 0.8735256696578132,
-          "tStat": -2.5237056832368694,
-          "atrMult": 1.88,
+          "losses": 36,
+          "winRate": 54.43037974683544,
+          "pf": 0.5588001877773602,
+          "exp": -0.22414557190539408,
+          "netR": -17.707500180526132,
+          "maxDD": 20.42840507915895,
+          "sumR2": 66.1661776594122,
+          "grossW": 22.42737678444981,
+          "grossL": 40.13487696497595,
+          "sd": 0.892971988997281,
+          "tStat": -2.2310323788684925,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -568,7 +568,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -587,7 +587,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -884,16 +884,16 @@
           "wins": 30,
           "losses": 17,
           "winRate": 63.829787234042556,
-          "pf": 0.8488496393217936,
-          "exp": -0.06098189340484921,
-          "netR": -2.866148990027913,
-          "maxDD": 8.419675756233707,
-          "sumR2": 35.22237223036556,
-          "grossW": 16.09608819662254,
-          "grossL": 18.96223718665045,
-          "sd": 0.8728711872467241,
-          "tStat": -0.47896047454703017,
-          "atrMult": 1.88,
+          "pf": 0.8406165276962939,
+          "exp": -0.0643319943855899,
+          "netR": -3.023603736122725,
+          "maxDD": 8.08383587757702,
+          "sumR2": 35.12050147641725,
+          "grossW": 15.947019079530529,
+          "grossL": 18.970622815653254,
+          "sd": 0.8713556032667513,
+          "tStat": -0.5061514858102393,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -912,7 +912,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -931,7 +931,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1228,16 +1228,16 @@
           "wins": 25,
           "losses": 13,
           "winRate": 65.78947368421053,
-          "pf": 1.0518368780493614,
-          "exp": 0.02001450636735694,
-          "netR": 0.7605512419595638,
-          "maxDD": 4.5760095321948215,
-          "sumR2": 31.190194256718836,
-          "grossW": 15.432562184349393,
-          "grossL": 14.672010942389836,
-          "sd": 0.917914383910818,
-          "tStat": 0.13441090528268035,
-          "atrMult": 1.88,
+          "pf": 1.012345635285256,
+          "exp": 0.004769039732383985,
+          "netR": 0.18122350983059143,
+          "maxDD": 4.5821035900247145,
+          "sumR2": 30.569574783230248,
+          "grossW": 14.860379798128077,
+          "grossL": 14.679156288297484,
+          "sd": 0.9089451938568375,
+          "tStat": 0.03234335304891178,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1256,7 +1256,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1275,7 +1275,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1572,16 +1572,16 @@
           "wins": 10,
           "losses": 8,
           "winRate": 55.55555555555556,
-          "pf": 0.5095172551407996,
-          "exp": -0.2413622054889913,
-          "netR": -4.344519698801843,
-          "maxDD": 5.54888923819461,
-          "sumR2": 13.342170735438161,
-          "grossW": 4.513120543056196,
-          "grossL": 8.85764024185804,
-          "sd": 0.8503828853607125,
-          "tStat": -1.2041788833815459,
-          "atrMult": 1.88,
+          "pf": 0.5089511416972768,
+          "exp": -0.24174077141938025,
+          "netR": -4.351333885548844,
+          "maxDD": 5.5557220981868864,
+          "sumR2": 13.348404438446359,
+          "grossW": 4.509971485547902,
+          "grossL": 8.861305371096748,
+          "sd": 0.8504846240699715,
+          "tStat": -1.2059233095260347,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1600,7 +1600,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1619,7 +1619,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1912,20 +1912,20 @@
       },
       "macdm": {
         "SUIUSDT": {
-          "trades": 38,
-          "wins": 19,
+          "trades": 37,
+          "wins": 18,
           "losses": 19,
-          "winRate": 50,
-          "pf": 0.4939589516244898,
-          "exp": -0.2831405410695586,
-          "netR": -10.759340560643228,
-          "maxDD": 12.153345733786393,
-          "sumR2": 32.85078168781229,
-          "grossW": 10.50245350761031,
-          "grossL": 21.261794068253533,
-          "sd": 0.8975097105538087,
-          "tStat": -1.9447093392453687,
-          "atrMult": 1.88,
+          "winRate": 48.64864864864865,
+          "pf": 0.5242767321673584,
+          "exp": -0.2734953619926923,
+          "netR": -10.119328393729615,
+          "maxDD": 11.315741656749452,
+          "sumR2": 35.215065789155624,
+          "grossW": 11.152131461140408,
+          "grossL": 21.271459854870024,
+          "sd": 0.9493781064902671,
+          "tStat": -1.7523127284761666,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1944,7 +1944,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1963,7 +1963,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2256,20 +2256,20 @@
       },
       "smc": {
         "SUIUSDT": {
-          "trades": 26,
-          "wins": 19,
+          "trades": 27,
+          "wins": 20,
           "losses": 7,
-          "winRate": 73.07692307692307,
-          "pf": 1.8207309834021554,
-          "exp": 0.2537214162594857,
-          "netR": 6.596756822746628,
-          "maxDD": 2.4645543768597817,
-          "sumR2": 25.425009804404507,
-          "grossW": 14.634417098957059,
-          "grossL": 8.037660276210431,
-          "sd": 0.9747055210804504,
-          "tStat": 1.3273039133803501,
-          "atrMult": 1.88,
+          "winRate": 74.07407407407408,
+          "pf": 1.8541518099498528,
+          "exp": 0.2544136949053242,
+          "netR": 6.869169762443752,
+          "maxDD": 2.467394352829267,
+          "sumR2": 25.51629821974732,
+          "grossW": 14.91126448427902,
+          "grossL": 8.042094721835268,
+          "sd": 0.9561277545703268,
+          "tStat": 1.3826314850007944,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2288,7 +2288,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2307,7 +2307,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2600,20 +2600,20 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 95,
-          "wins": 53,
+          "trades": 96,
+          "wins": 54,
           "losses": 42,
-          "winRate": 55.78947368421052,
-          "pf": 0.7286803520229372,
-          "exp": -0.1332286533376666,
-          "netR": -12.656722067078325,
-          "maxDD": 15.464976815975723,
-          "sumR2": 85.51725035425818,
-          "grossW": 33.99202660057555,
-          "grossL": 46.64874866765388,
-          "sd": 0.9443618374195271,
-          "tStat": -1.3750579846241802,
-          "atrMult": 1.88,
+          "winRate": 56.25,
+          "pf": 0.7357235917050079,
+          "exp": -0.12821701055452359,
+          "netR": -12.308833013234263,
+          "maxDD": 16.59326559834225,
+          "sumR2": 85.42826072106824,
+          "grossW": 34.266769752998414,
+          "grossL": 46.575602766232684,
+          "sd": 0.9394850714407139,
+          "tStat": -1.3371846418889992,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2632,7 +2632,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2651,7 +2651,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2957,7 +2957,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2976,7 +2976,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2995,7 +2995,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -3292,16 +3292,16 @@
           "wins": 16,
           "losses": 15,
           "winRate": 51.61290322580645,
-          "pf": 0.6701797590533803,
-          "exp": -0.18073910355153422,
-          "netR": -5.602912210097561,
-          "maxDD": 9.024348087789637,
-          "sumR2": 31.52474390638962,
-          "grossW": 11.384863294573101,
-          "grossL": 16.98777550467066,
-          "sd": 1.0084985304279268,
-          "tStat": -0.9978326287665267,
-          "atrMult": 1.88,
+          "pf": 0.6698409960388534,
+          "exp": -0.18101521496731823,
+          "netR": -5.611471663986865,
+          "maxDD": 9.03064872064344,
+          "sumR2": 31.544425316562805,
+          "grossW": 11.384798607797778,
+          "grossL": 16.996270271784642,
+          "sd": 1.008772580367237,
+          "tStat": -0.9990855051374898,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -3320,7 +3320,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -3339,7 +3339,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.88,
+          "atrMult": 1.872,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -3685,14 +3685,17 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "TP1_SECURED",
+        "status": "WIN",
         "createdAt": 1794963881588,
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.40000000000000063,
         "mfe": 1.6958510297669196,
         "mae": -0.23312237875502173,
-        "lastBarT": 1795021500000
+        "lastBarT": 1795022700000,
+        "closedAt": 1795049946494,
+        "netR": 0.59,
+        "closeReason": "Trail/BE exit di 9.1117"
       },
       {
         "id": "sig_AAPL_1794918771126",
@@ -3807,6 +3810,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795049968425,
+        "type": "CYCLE",
+        "text": "[CYCLE #82] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795049948155,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795049946494,
+        "type": "WIN",
+        "text": "[WIN] LINKUSDT SHORT +0.59R — Trail/BE exit di 9.1117 (MFE 1.70R)"
+      },
       {
         "t": 1795021729215,
         "type": "CYCLE",
@@ -5068,20 +5086,25 @@
         "t": 1795019921978,
         "acc": 100,
         "eq": 0.1
+      },
+      {
+        "t": 1795049946494,
+        "acc": 100,
+        "eq": 0.69
       }
     ],
-    "equityR": 0.1,
+    "equityR": 0.69,
     "stats": {
-      "closed": 1,
-      "wins": 1,
+      "closed": 2,
+      "wins": 2,
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 1980,
+      "newsIngested": 2010,
       "lessons": 1,
-      "backtests": 2060,
-      "netR": 0.1,
-      "peakEquity": 0.1,
+      "backtests": 2090,
+      "netR": 0.69,
+      "peakEquity": 0.69,
       "maxDrawdown": 0,
       "consecutiveLosses": 0,
       "defensiveMode": false,
@@ -5092,8 +5115,36 @@
       }
     },
     "news": {
-      "fetchedAt": 1795021723339,
+      "fetchedAt": 1795049948155,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "A $1.5 billion crypto startup is taking on Hyperliquid with a Wall Street playbook",
+          "link": "https://www.coindesk.com/business/2026/11/18/a-usd1-5-billion-crypto-startup-is-taking-on-hyperliquid-with-a-wall-street-playbook",
+          "pubDate": "2026-11-18 17:22:03",
+          "summary": "Variational and its investors are betting that the future of onchain trading will look more like a traditional brokerage than a crypto exchange."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Crypto Long &amp;amp; Short: Crypto exchanges shouldn’t double as the vault",
+          "link": "https://www.coindesk.com/coindesk-indices/2026/11/18/crypto-long-and-short-crypto-exchanges-shouldn-t-double-as-the-vault",
+          "pubDate": "2026-11-18 16:02:54",
+          "summary": "A single breach moved billions out of Binance in minutes, exposing how much client money sits with the venue that trades it. Darren Jordan of Komainu argues institutions should keep trading and custody separate, as tradi"
+        },
+        {
+          "source": "CoinDesk",
+          "title": "German judge proposes dropping Movie2k case if operator hands over $2.56 billion in bitcoin",
+          "link": "https://www.coindesk.com/business/2026/11/18/german-judge-proposes-dropping-movie2k-case-if-operator-hands-over-usd2-56-billion-in-bitcoin",
+          "pubDate": "2026-11-18 15:38:38",
+          "summary": "Prosecutors estimate the defendant still holds 56,000 BTC, meaning the proposed deal would leave him with roughly $1 billion."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Hong Kong wants banks to use AI to catch crypto crime before money disappears",
+          "link": "https://www.coindesk.com/business/2026/11/18/hong-kong-wants-banks-to-use-ai-to-catch-crypto-crime-before-money-disappears",
+          "pubDate": "2026-11-18 15:23:18",
+          "summary": "As Hong Kong pushes banks to use AI to combat crypto crime, experts say the technology must detect suspicious transfers without putting customer funds at risk."
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin miner MARA raises $185 million in debt after selling $1 billion BTC to repay loans",
@@ -5106,7 +5157,7 @@
           "title": "Bullish beats revenue estimates as institutional services offset sluggish spot crypto volumes",
           "link": "https://www.coindesk.com/markets/2026/11/18/bullish-beats-revenue-estimates-as-institutional-services-offset-sluggish-spot-crypto-volumes",
           "pubDate": "2026-11-18 12:41:09",
-          "summary": "The crypto platform reported net income of $576.3 million for the third quarter thanks to a sharp rise in the price of bitcoin."
+          "summary": "Bullish’s institutional focus may have shielded the company from the decline in activity experienced by rivals catering to retail traders and offers some insight to its revenue beat."
         },
         {
           "source": "CoinDesk",
@@ -5137,32 +5188,60 @@
           "summary": "Bitcoin held near $64,000 as gold fell 2%, lifting the ratio between the two above its 200-day moving average and extending a series of higher lows since March."
         },
         {
-          "source": "CoinDesk",
-          "title": "Strategy stock could plunge 76% to $23, chart analyst warns",
-          "link": "https://www.coindesk.com/markets/2026/11/18/strategy-stock-could-crash-76-to-usd23-chart-analyst-warns",
-          "pubDate": "2026-11-18 09:31:41",
-          "summary": "Aksel Kibar, who has tracked Bitcoin’s price action since at least 2018, made the bearish call, citing a still-active head-and-shoulders pattern on MicroStrategy’s (MSTR) daily chart."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 22:09:15",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Hyundai tests AI agent commerce on JPMorgan’s Kinexys blockchain",
-          "link": "https://www.coindesk.com/business/2026/11/18/hyundai-tests-ai-agent-commerce-on-jpmorgan-s-kinexys-blockchain",
-          "pubDate": "2026-11-18 09:14:15",
-          "summary": "The exploration of AI agents with JPMorgan builds on Hyundai’s recent stablecoin-based cross-border remittance pilot."
+          "source": "CoinTelegraph",
+          "title": "Tether invokes The Big Short in swipe at S&amp;amp;P over USDT reserve risks",
+          "link": "https://cointelegraph.com/news/tether-usdt-sp-stability-assessment-reserve-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 21:57:35",
+          "summary": "    S&amp;amp;P Global made no downward adjustment in its latest Stablecoin Stability Assessment, as 5 is the lowest available score. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Google finds self-running AI hacking tool with Russian comments in its files",
-          "link": "https://www.coindesk.com/tech/2026/11/18/google-finds-self-running-ai-hacking-tool-with-russian-comments-in-its-files",
-          "pubDate": "2026-11-18 07:37:59",
-          "summary": "Google spots an AI that can find and exploit software flaws on its own, no human needed."
+          "source": "CoinTelegraph",
+          "title": "Ledger warns Berlin customers as hardware wallet tampering investigation expands",
+          "link": "https://cointelegraph.com/news/ledger-warns-berlin-customers-hardware-wallet-investigation?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 21:13:58",
+          "summary": "    Ledger advised customers who purchased devices in Berlin since January 2026 to contact support as it investigates suspected hardware implants in Germany and Dubai.\n "
         },
         {
-          "source": "CoinDesk",
-          "title": "Live updates: Bitcoin slides towards $63,000 as U.S. stocks fall and Nvidia erases gains",
-          "link": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up",
-          "pubDate": "2026-11-18 07:27:48",
-          "summary": "XRP edged toward $1, and SOL rose 3%, while a Talos report showed crypto’s favorite carry trade now pays about the same as U.S. Treasuries."
+          "source": "CoinTelegraph",
+          "title": "Bain Capital Crypto leads $110M Variational round at $1.5B valuation",
+          "link": "https://cointelegraph.com/news/variational-series-b-bain-capital-crypto?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 20:32:06",
+          "summary": "    Variational raised $110 million at a $1.5 billion valuation to expand Omni’s derivatives markets and increase trading limits. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Binance says it obtained $6.5B worldwide freezing order after hack",
+          "link": "https://cointelegraph.com/news/binance-says-won-65b-worldwide-freezing-order-after-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 20:20:37",
+          "summary": "    The court orders allow legal notices to be served via blockchain and provide for a continuously updated list of 26,000 wallet addresses linked to stolen assets, Binance’s lawyers said. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "MARA prices $185M debt offering after $1.1B Bitcoin sale",
+          "link": "https://cointelegraph.com/markets/mara-long-ridge-debt-offering-bitcoin-sales?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 18:27:52",
+          "summary": "    The Bitcoin miner is taking on new debt to finance its AI infrastructure expansion, with the Long Ridge acquisition adding nearly $69 million in annual interest costs. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "$25M Ethereum MEV acquittal tests criminal enforcement limits",
+          "link": "https://cointelegraph.com/news/25m-ethereum-mev-acquittal-tests-criminal-enforcement-limits?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 17:05:04",
+          "summary": "    BlackRock’s staked Ether ETF earns a cut of what traders pay for priority on Ethereum, the acquittal left the legal risk to that income unresolved. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Polymarket US takes rapid-fire crypto trading format to oil, natural gas",
+          "link": "https://cointelegraph.com/news/polymarket-us-takes-rapid-fire-crypto-trading-format-oil-natural-gas?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-18 17:00:00",
+          "summary": "    Polymarket US said it attracted more than 300,000 traders to its short-duration crypto markets in six weeks and is now expanding the format to energy commodities.  "
         },
         {
           "source": "CoinTelegraph",
@@ -5179,60 +5258,67 @@
           "summary": "    FE covenants encode spending constraints into the signing key, so only transactions that satisfy a predefined condition can be signed.  "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "CoinShares sells all treasury ETH, halves SOL holdings for buybacks",
-          "link": "https://cointelegraph.com/news/coinshares-sells-eth-treasury-holdings-halves-sol-share-buybacks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 13:42:37",
-          "summary": "    The October sales raised $19.3 million, nearly half the $40 million CoinShares can spend on buybacks before its next annual meeting. "
+          "source": "Decrypt",
+          "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
+          "link": "https://decrypt.co/383586/ledger-confirms-tampered-bitcoin-wallets-berlin-spreads-beyond-asia",
+          "pubDate": "2026-11-18 22:16:02",
+          "summary": "Ledger says its hardware implant investigation has confirmed tampered devices in Berlin and is examining two suspected units in Dubai, as the incident spreads beyond Southeast Asia."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 13:34:00",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "source": "Decrypt",
+          "title": "ChatGPT, Claude, Gemini and Grok Helped Plan Terror Attacks in Government Tests",
+          "link": "https://decrypt.co/383584/chatgpt-claude-gemini-grok-help-plan-terror-attacks-government-tests",
+          "pubDate": "2026-11-18 21:46:03",
+          "summary": "Federal investigators bypassed safeguards on four popular chatbots, producing viable attack plans within hours."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Sanctions fears loom over Russia’s regulated crypto trading launch",
-          "link": "https://cointelegraph.com/news/sanctions-fears-russia-crypto-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 13:32:19",
-          "summary": "    Russia’s crypto trading rollout faces uncertainty as companies weigh sanctions exposure, while Moscow Exchange prepares to launch crypto trading in December. "
+          "source": "Decrypt",
+          "title": "Palmer Luckey Says He’s Building an Offshore Haven for Industry—And &#39;Illegal&#39; Medicine",
+          "link": "https://decrypt.co/383576/palmer-luckey-offshore-haven-industry-illegal-medicine",
+          "pubDate": "2026-11-18 21:16:02",
+          "summary": "The Oculus founder says his decade-old SLAB project aims to escape state restrictions on manufacturing and medical treatment."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "How to preserve wealth and access funds during a national emergency",
-          "link": "https://cointelegraph.com/magazine/how-to-preserve-wealth-and-access-it-during-a-national-emergency?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 13:30:00",
-          "summary": "    As geopolitical and technological threats multiply, the big question is whether you can hold on to your wealth and access funds when the system fails. "
+          "source": "Decrypt",
+          "title": "Google&#39;s Genie 4 Is Here, Letting Ultra Subscribers Build AI Worlds in Real Time",
+          "link": "https://decrypt.co/383572/google-genie-4-ultra-subscribers-build-ai-worlds-real-time",
+          "pubDate": "2026-11-18 20:16:02",
+          "summary": "Google&#39;s Genie 4 lets Ultra subscribers reshape interactive scenes while exploring them, complete with sound and dialogue, as Project Genie adds longer sessions and new community creation and sharing tools."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Tokenized Nvidia market cap surges 159% amid Jensen Huang’s exit",
-          "link": "https://cointelegraph.com/news/tokenized-nvidia-cap-rises-158-stock-loses-750b?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 12:53:12",
-          "summary": "    Nvidia stock tokens reached $401.9 million in combined value as Jensen Huang stepped down and the chipmaker posted record quarterly revenue. "
+          "source": "Decrypt",
+          "title": "Why CoinShares Just Sold All Its Ethereum and Half Its Solana",
+          "link": "https://decrypt.co/383570/why-coinshares-just-sold-all-ethereum-half-solana",
+          "pubDate": "2026-11-18 19:46:02",
+          "summary": "The crypto asset manager sold $16.6 million in Ethereum and $2.7 million in Solana, freeing up $19.3 million. Here&#39;s why."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitwise seeks Texas Stock Exchange listing for Zcash ETF",
-          "link": "https://cointelegraph.com/news/bitwise-zcash-etf-texas-stock-exchange-listing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 10:33:07",
-          "summary": "    Coinbase Custody would safeguard the fund’s ZEC holdings, while Bitwise Investment Advisers would serve as its manager and sponsor. "
+          "source": "Decrypt",
+          "title": "Bitcoin Tanks Ahead of Anthropic’s IPO. Should We Really Blame AI?",
+          "link": "https://decrypt.co/383551/bitcoin-tanks-ahead-anthropics-ipo-should-we-really-blame-ai",
+          "pubDate": "2026-11-18 19:16:02",
+          "summary": "Bitcoin slid toward $63,000 as Anthropic prepared its blockbuster debut. Analysts dispute whether the IPO is draining crypto liquidity, pointing instead to ETF outflows, forced selling and rising interest rates."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin steadies after Nvidia’s earnings beat as $60K bids stand out",
-          "link": "https://cointelegraph.com/markets/bitcoin-60k-liquidity-stocks-gain-nvidia-1158b-earnings-beat?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 10:31:20",
-          "summary": "    Bitcoin halted downside as Nvidia confidence returned, with its stock gaining 3% premarket and South Korea’s tech-heavy KOSPI reclaiming 5,000 points. "
+          "source": "Decrypt",
+          "title": "Bitcoin Miners Are Selling Their Stacks to Fund the AI Boom",
+          "link": "https://decrypt.co/383568/bitcoin-miners-selling-fund-ai-boom",
+          "pubDate": "2026-11-18 18:46:03",
+          "summary": "MARA sold 13,597 BTC after September and Riot sold 20,264 BTC through September to fund debt repayment and AI data center buildouts, as Glassnode flagged the pair as the main sellers among Bitcoin treasury firms."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "World Bank partners with Circle, Citi to explore stablecoins for payments",
-          "link": "https://cointelegraph.com/news/world-bank-circle-citi-explore-stablecoins-payments?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-18 09:17:18",
-          "summary": "    The initiative builds on the World Bank’s existing blockchain platform, which aims to create more fund traceability for investments in developing countries. "
+          "source": "Decrypt",
+          "title": "Fed&#39;s Waller Calls for 50-Basis-Point Rate Hike, Says Tokenized Finance Still Needs Traditional Banks",
+          "link": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
+          "pubDate": "2026-11-18 18:16:02",
+          "summary": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scal"
+        },
+        {
+          "source": "Decrypt",
+          "title": "Lucky Trader Banks 66,000% Profit on GTA 6 Meme Coin Ticker Confusion",
+          "link": "https://decrypt.co/383536/lucky-trader-banks-66000-profit-on-gta-6-meme-coin-ticker-confusion",
+          "pubDate": "2026-11-18 17:32:13",
+          "summary": "The trader turned $300 into over $200,000 as early footage of GTA 6 sent degens flocking between different token tickers."
         },
         {
           "source": "Decrypt",
@@ -5240,75 +5326,12 @@
           "link": "https://decrypt.co/383539/speaks-tongues-only-6-2-astra-understands-why-early-testers-hate-openai-new-model",
           "pubDate": "2026-11-18 16:57:53",
           "summary": "OpenAI&#39;s flagship AI model is dazzling developers with 3D creations, but early testers say it stalls during long projects, gives baffling explanations, and hides failures."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Movie2K Defendant Could Hand Over 40,000 Bitcoin to End Trial—and Stay a Billionaire",
-          "link": "https://decrypt.co/383533/movie2k-defendant-could-hand-over-40000-bitcoin-to-end-trial-and-stay-a-billionaire",
-          "pubDate": "2026-11-18 14:20:52",
-          "summary": "A German judge has offered to drop the charges if the alleged operator of the piracy site gives up most of his remaining Bitcoin."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Nvidia Beats, Board Says ‘No’ on Jensen",
-          "link": "https://decrypt.co/383530/morning-minute-nvidia-beats-board-says-no-on-jensen",
-          "pubDate": "2026-11-18 13:37:20",
-          "summary": "Nvidia delivered its best earnings ever and raised forward guidance. And yet, the market mostly shrugged. What does it mean?"
-        },
-        {
-          "source": "Decrypt",
-          "title": "&#39;Doomed From the Start&#39;: President Trump&#39;s Meme Coin Hits New Lows After Midterms",
-          "link": "https://decrypt.co/383524/doomed-from-the-start-president-trumps-meme-coin-hits-new-lows-after-midterms",
-          "pubDate": "2026-11-18 12:45:37",
-          "summary": "The TRUMP token has fallen almost 40% since election day, with analysts pointing to the Democrats’ subpoena plans, fading interest, and a heavy unlock schedule."
-        },
-        {
-          "source": "Decrypt",
-          "title": "AI Will Make the Next 12 Months &#39;a Slaughterhouse&#39; for Crypto Security: Anchorage Exec",
-          "link": "https://decrypt.co/383526/ai-will-make-the-next-12-months-a-slaughterhouse-for-crypto-security-anchorage-exec",
-          "pubDate": "2026-11-18 12:10:27",
-          "summary": "Security chiefs at Solana&#39;s Breakpoint said AI is lowering the bar for hackers, as North Korea steps up its attacks on crypto firms."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Scattered Spider Hacker Sentenced to 6 Years Over $11.6M in Stolen Crypto",
-          "link": "https://decrypt.co/383522/scattered-spider-hacker-sentenced-to-6-years-over-11-6m-in-stolen-crypto",
-          "pubDate": "2026-11-18 10:17:17",
-          "summary": "Scotland&#39;s Tyler Buchanan is the last of five defendants sentenced in a phishing and SIM-swapping scheme that targeted crypto holders."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Why Microsoft Thinks Smaller, Cheaper AI Can Beat Claude and GPT",
-          "link": "https://decrypt.co/383468/why-microsoft-thinks-smaller-cheaper-ai-beat-claude-gpt",
-          "pubDate": "2026-11-17 23:16:03",
-          "summary": "Microsoft&#39;s new coding, cybersecurity and image models challenge bigger rivals on performance and price. The company&#39;s bet is that doing one job exceptionally well matters more than doing absolutely everything."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Nvidia Board Shuts Down Jensen Huang Comeback, Launches Search for New CEO",
-          "link": "https://decrypt.co/383513/nvidia-board-shuts-down-jensen-huang-comeback",
-          "pubDate": "2026-11-17 22:39:53",
-          "summary": "Nvidia&#39;s board rejected a comeback for its ousted co-founder as it hired a search firm, backed interim CEO Colette Kress, and tightened oversight of chip exports to China."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Nvidia Shares Rise After Earnings Beat in First Report Since Jensen Huang&#39;s Exit",
-          "link": "https://decrypt.co/383505/nvidia-shares-rise-earnings-beat-first-report-jensen-huang-exit",
-          "pubDate": "2026-11-17 22:18:18",
-          "summary": "The chipmaker doubled quarterly revenue, forecast another record and rallied after hours, but its first report without Jensen Huang leaves leadership questions and a deeply bruised stock chart unresolved."
-        },
-        {
-          "source": "Decrypt",
-          "title": "OpenAI&#39;s GPT 6.2 Astra Challenges Anthropic on Price, But Not Every Benchmark",
-          "link": "https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark",
-          "pubDate": "2026-11-17 21:46:02",
-          "summary": "OpenAI&#39;s latest models promise better professional work for less money, as the company battles Anthropic and Google for AI supremacy and faces tougher questions about increasingly capable systems and safety."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.17,
+          "impact": -1,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -5322,30 +5345,27 @@
           "sentiment": "NEUTRAL",
           "impact": 0,
           "sources": [
-            "CoinTelegraph"
+            "CoinTelegraph",
+            "Decrypt"
+          ],
+          "multiSourced": true,
+          "critical": false,
+          "critHead": ""
+        },
+        "SOL": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [
+            "Decrypt"
           ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
-        "SOL": {
-          "sentiment": "BEARISH",
-          "impact": -0.67,
-          "sources": [
-            "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
-          ],
-          "multiSourced": true,
-          "critical": true,
-          "critHead": "AI Will Make the Next 12 Months &#39;a Slaughterhouse&#39; for Crypto Security: Anchorage Exec"
-        },
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -5415,26 +5435,21 @@
           "critHead": ""
         }
       },
-      "breaker": [
-        {
-          "coin": "SOL",
-          "head": "AI Will Make the Next 12 Months &#39;a Slaughterhouse&#39; for Crypto Security: Anchorage Exec"
-        }
-      ],
+      "breaker": [],
       "fearGreed": {
-        "value": 11,
+        "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795021723339
+        "t": 1795049948155
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795021724005,
+      "fetchedAt": 1795049948871,
       "bias": {
         "HYPE": -40,
-        "BTC": -15.58,
-        "ARB": 11.9,
+        "BTC": -14.19,
+        "ARB": 10.84,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -5451,35 +5466,35 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1015.85,
+          "pct": 951.57,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 15.58,
+          "pct": 14.19,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 11.9,
+          "pct": 10.84,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 42.52,
+          "pct": 38.74,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 212.16,
+          "pct": 193.31,
           "lev": 10
         },
         {
@@ -5493,63 +5508,63 @@
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 25.31,
+          "pct": 23.06,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 223.61,
+          "pct": 203.75,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 37.03,
+          "pct": 33.74,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 115.24,
+          "pct": 105,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 58.83,
+          "pct": 53.61,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 108.39,
+          "pct": 95.18,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 303.07,
+          "pct": 266.13,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 94.78,
+          "pct": 83.23,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1286.8,
+          "pct": 1213.52,
           "lev": 10
         }
       ]
@@ -5557,6 +5572,10 @@
     "learnLog": [
       {
         "t": 1795019921978,
+        "cause": "OK"
+      },
+      {
+        "t": 1795049946494,
         "cause": "OK"
       }
     ],
@@ -5640,12 +5659,12 @@
         "SUIUSDT": [
           [
             0.622,
-            0.998,
+            1.001,
             10
           ],
           [
             0.56,
-            -1.081,
+            -1.082,
             35
           ],
           [
@@ -5660,7 +5679,7 @@
           ],
           [
             0.618,
-            0.334,
+            0.333,
             10
           ],
           [
@@ -5669,7 +5688,7 @@
             56
           ],
           [
-            0.511,
+            0.51,
             0.452,
             61
           ],
@@ -5695,22 +5714,22 @@
           ],
           [
             0.595,
-            -1.127,
+            -1.128,
             35
           ],
           [
             0.641,
-            -1.119,
+            -1.12,
             10
           ],
           [
             0.541,
-            -1.124,
+            -1.125,
             69
           ],
           [
             0.608,
-            0.579,
+            0.58,
             35
           ],
           [
@@ -5719,13 +5738,13 @@
             35
           ],
           [
-            0.609,
-            -1.113,
+            0.591,
+            -1.119,
             10
           ],
           [
             0.597,
-            0.304,
+            0.303,
             10
           ],
           [
@@ -5735,12 +5754,12 @@
           ],
           [
             0.6,
-            0.503,
+            0.504,
             34
           ],
           [
-            0.527,
-            0.993,
+            0.526,
+            0.996,
             94
           ],
           [
@@ -5750,7 +5769,7 @@
           ],
           [
             0.559,
-            -1.105,
+            -1.106,
             27
           ],
           [
@@ -5759,13 +5778,13 @@
             35
           ],
           [
-            0.601,
-            0.317,
+            0.6,
+            0.316,
             10
           ],
           [
             0.65,
-            0.276,
+            0.275,
             2
           ],
           [
@@ -5775,12 +5794,12 @@
           ],
           [
             0.509,
-            -1.156,
+            -1.157,
             61
           ],
           [
             0.63,
-            0.259,
+            0.258,
             10
           ],
           [
@@ -5795,12 +5814,12 @@
           ],
           [
             0.519,
-            0.163,
+            0.162,
             90
           ],
           [
             0.562,
-            -1.193,
+            -1.194,
             35
           ],
           [
@@ -5810,27 +5829,27 @@
           ],
           [
             0.627,
-            0.842,
+            0.844,
             10
           ],
           [
             0.625,
-            0.917,
+            0.92,
             15
           ],
           [
             0.572,
-            0.172,
+            0.171,
             69
           ],
           [
             0.585,
-            0.184,
+            0.183,
             10
           ],
           [
             0.568,
-            -1.142,
+            -1.143,
             56
           ],
           [
@@ -5840,7 +5859,7 @@
           ],
           [
             0.562,
-            0.735,
+            0.736,
             2
           ],
           [
@@ -5850,7 +5869,7 @@
           ],
           [
             0.595,
-            0.616,
+            0.617,
             10
           ],
           [
@@ -5880,8 +5899,13 @@
           ],
           [
             0.502,
-            -1.111,
+            -1.112,
             73
+          ],
+          [
+            0.596,
+            0.273,
+            10
           ]
         ],
         "EURUSDT": [],
@@ -9494,12 +9518,12 @@
       },
       "status": {
         "all": {
-          "n": 764,
-          "mean": -0.29,
-          "sd": 0.948,
-          "t": -8.45,
-          "winRate": 51.7,
-          "sum": -221.45
+          "n": 765,
+          "mean": -0.289,
+          "sd": 0.947,
+          "t": -8.44,
+          "winRate": 51.8,
+          "sum": -221.18
         },
         "base": {
           "n": 77,
@@ -9530,23 +9554,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1203,
-        "updatedAt": 1795021725995
+        "updatedAt": 1795049950755
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -43.84,
-      "trades": 315,
-      "winRate": 57.5,
+      "netR": -43.57,
+      "trades": 316,
+      "winRate": 57.6,
       "pf": 0.73,
-      "expPerTrade": -0.139,
-      "tStat": -2.45,
-      "deflatedT": -4.59,
+      "expPerTrade": -0.138,
+      "tStat": -2.43,
+      "deflatedT": -4.58,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795021725994,
+      "updatedAt": 1795049950753,
       "gen": 13
     },
     "factory": {
