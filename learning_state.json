@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795097330771,
+  "updatedAt": 1795098227338,
   "brain": {
     "v": 1,
     "gen": 16,
-    "cycles": 100,
+    "cycles": 101,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795093722881,
     "autoExecBursa": false,
@@ -3811,6 +3811,16 @@
     ],
     "journal": [
       {
+        "t": 1795098227322,
+        "type": "CYCLE",
+        "text": "[CYCLE #101] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795098224544,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795097330687,
         "type": "CYCLE",
         "text": "[CYCLE #100] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5310,9 +5320,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2490,
+      "newsIngested": 2520,
       "lessons": 1,
-      "backtests": 2630,
+      "backtests": 2660,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5325,7 +5335,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795097325906,
+      "fetchedAt": 1795098224544,
       "items": [
         {
           "source": "CoinDesk",
@@ -5660,7 +5670,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795097325906
+        "t": 1795098224544
       },
       "lastErrors": []
     },
@@ -9810,7 +9820,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795097327985
+        "updatedAt": 1795098225009
       }
     },
     "champion": {
@@ -9826,7 +9836,7 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795097327982,
+      "updatedAt": 1795098225008,
       "gen": 16
     },
     "factory": {
