@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795092824832,
+  "updatedAt": 1795093725042,
   "brain": {
     "v": 1,
-    "gen": 15,
-    "cycles": 95,
+    "gen": 16,
+    "cycles": 96,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795088322133,
+    "lastOptAt": 1795093722881,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -38,8 +38,8 @@
       "elder": 0.54,
       "donchian": 0.53,
       "bbrev": 0.78,
-      "wyckoff": 0.81,
-      "rsidiv": 0.59,
+      "wyckoff": 0.8,
+      "rsidiv": 0.57,
       "macdm": 0.5,
       "smc": 0.71,
       "statarb": 0.59,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.51,
+    "lastHurst": 0.54,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3811,6 +3811,26 @@
     ],
     "journal": [
       {
+        "t": 1795093725025,
+        "type": "CYCLE",
+        "text": "[CYCLE #96] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795093722882,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.114R/trade, win 57.9%, t=-1) | Meta-model belum aktif (1208 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
+      },
+      {
+        "t": 1795093722881,
+        "type": "GEN",
+        "text": "[GEN #16] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-41.37R, 311 trade, Win 57.9%, t=-2.32 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795093722490,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795092824814,
         "type": "CYCLE",
         "text": "[CYCLE #95] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5250,9 +5270,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 2,
-      "newsIngested": 2340,
+      "newsIngested": 2370,
       "lessons": 1,
-      "backtests": 2480,
+      "backtests": 2510,
       "netR": 0.69,
       "peakEquity": 0.69,
       "maxDrawdown": 0,
@@ -5265,7 +5285,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795092822308,
+      "fetchedAt": 1795093722490,
       "items": [
         {
           "source": "CoinDesk",
@@ -5339,6 +5359,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Hong Kong adds Hyperliquid to list of ‘suspicious’ crypto platforms",
+          "link": "https://cointelegraph.com/news/hyperliquid-hong-kong-regulators-alert-list?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-19 12:44:06",
+          "summary": "    Hong Kong’s securities regulator said Hyperliquid has no local license and may have promoted its trading services to investors in the city. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "GTA VI publisher racks up nearly 3x Nvidia’s tokenized stock volume",
           "link": "https://cointelegraph.com/news/gta-vi-launch-tokenized-ttwo-trade-triple-nvidia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-19 12:33:46",
@@ -5401,11 +5428,11 @@
           "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Senators warn GENIUS Act rules could push stablecoin firms toward federal oversight",
-          "link": "https://cointelegraph.com/news/us-senators-genius-act-rules-favor-federal-stablecoin-issuers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 05:27:45",
-          "summary": "    The lawmakers urged Treasury to extend safe harbor protections to stablecoin issuers in states expected to establish qualifying regulatory frameworks before January 2028. "
+          "source": "Decrypt",
+          "title": "Binance Wins $6.5B Freezing Order Over Hack That Can Be Served via the Blockchain",
+          "link": "https://decrypt.co/383608/binance-wins-6-5b-freezing-order-over-hack-that-can-be-served-via-the-blockchain",
+          "pubDate": "2026-11-19 12:59:14",
+          "summary": "An Abu Dhabi court&#39;s worldwide injunction targets the unknown hackers, backed by a &quot;living list&quot; of 26,000 wallets holding stolen funds."
         },
         {
           "source": "Decrypt",
@@ -5469,13 +5496,6 @@
           "link": "https://decrypt.co/383568/bitcoin-miners-selling-fund-ai-boom",
           "pubDate": "2026-11-18 18:46:03",
           "summary": "MARA sold 13,597 BTC after September and Riot sold 20,264 BTC through September to fund debt repayment and AI data center buildouts, as Glassnode flagged the pair as the main sellers among Bitcoin treasury firms."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Fed&#39;s Waller Calls for 50-Basis-Point Rate Hike, Says Tokenized Finance Still Needs Traditional Banks",
-          "link": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
-          "pubDate": "2026-11-18 18:16:02",
-          "summary": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scal"
         }
       ],
       "perCoin": {
@@ -5601,7 +5621,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795092822308
+        "t": 1795093722490
       },
       "lastErrors": []
     },
@@ -9751,7 +9771,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1208,
-        "updatedAt": 1795092822697
+        "updatedAt": 1795093722882
       }
     },
     "champion": {
@@ -9767,8 +9787,8 @@
       "deflatedT": -4.47,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795092822696,
-      "gen": 15
+      "updatedAt": 1795093722881,
+      "gen": 16
     },
     "factory": {
       "updatedAt": 1795049968680,
