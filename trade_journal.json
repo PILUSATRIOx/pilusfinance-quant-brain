@@ -1,6 +1,71 @@
 {
   "trades": [
     {
+      "id": "sig_LINKUSDT_1794963881588",
+      "sym": "LINKUSDT",
+      "side": "SHORT",
+      "entry": 9.25,
+      "sl": 9.111733208363281,
+      "slInit": 9.468769215861485,
+      "risk": 0.21876921586148476,
+      "rsiAtEntry": 55,
+      "tp1": 9.074984627310812,
+      "tp2": 8.899969254621624,
+      "tp3": 8.703076960346287,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 90,
+      "techScore": 90,
+      "extScore": 0,
+      "regime": "RANGING",
+      "hurst": 0.42,
+      "kalmanPrice": 9.25,
+      "kalmanVelZ": 0.0856,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+        "[OK] Screen2: RSI 55 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.88x ATR",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[INFO] Screen6: berita netral",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "SHORT",
+          "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+          "w": 0.82,
+          "barAge": 1
+        },
+        {
+          "strat": "statarb",
+          "side": "SHORT",
+          "note": "D.E. Shaw Z-Score (+1.69 sigma) mean-reversion deceleration (RSI 61)",
+          "w": 0.61,
+          "barAge": 1
+        }
+      ],
+      "atr": 0.11636660418164084,
+      "volPct": 1.2580173425042254,
+      "metaP": 0.562,
+      "metaEV": -0.229,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "WIN",
+      "createdAt": 1794963881588,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.40000000000000063,
+      "mfe": 1.6958510297669196,
+      "mae": -0.23312237875502173,
+      "lastBarT": 1795022700000,
+      "closedAt": 1795049946494,
+      "netR": 0.59,
+      "closeReason": "Trail/BE exit di 9.1117"
+    },
+    {
       "id": "sig_AAPL_1794918771126",
       "sym": "AAPL",
       "side": "LONG",
@@ -112,5 +177,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795021729241
+  "updatedAt": 1795050037236
 }
