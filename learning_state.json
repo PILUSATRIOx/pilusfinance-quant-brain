@@ -1,10 +1,10 @@
 {
   "version": "2.5",
-  "updatedAt": 1795181046680,
+  "updatedAt": 1795181107065,
   "brain": {
     "v": 1,
     "gen": 20,
-    "cycles": 120,
+    "cycles": 121,
     "firstBootAt": 1793623210734,
     "running": false,
     "optCursor": 3,
@@ -2647,6 +2647,11 @@
     ],
     "journal": [
       {
+        "t": 1795181079192,
+        "type": "CYCLE",
+        "text": "[CYCLE #121] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795181023404,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
@@ -4140,11 +4145,6 @@
         "t": 1794887289010,
         "type": "SIGNAL",
         "text": "[SIGNAL] LONG AAPL @ 352.8100 | Skor 90/100 | rezim RANGING (H=0.47) | 2 strategi: wyckoff+statarb"
-      },
-      {
-        "t": 1794887287388,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Hackers Redirected Bitcoin Miner Rewards via AI Attack, Luxor CEO Says)"
       }
     ],
     "accuracyHistory": [
@@ -8828,7 +8828,7 @@
         }
       ],
       "lastError": {
-        "at": 1795180279532,
+        "at": 1795181107060,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
