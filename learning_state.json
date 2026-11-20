@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795181107065,
+  "updatedAt": 1795181948179,
   "brain": {
     "v": 1,
     "gen": 20,
-    "cycles": 121,
+    "cycles": 122,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795180212347,
     "autoExecBursa": false,
@@ -2647,6 +2647,16 @@
     ],
     "journal": [
       {
+        "t": 1795181948109,
+        "type": "CYCLE",
+        "text": "[CYCLE #122] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795181924915,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795181079192,
         "type": "CYCLE",
         "text": "[CYCLE #121] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4135,16 +4145,6 @@
         "t": 1794918769170,
         "type": "LOSS",
         "text": "[LOSS] AAPL LONG LOSS -1.00R — SL 349.3928 tersentuh | Akar: Pembalikan rezim pasar mendadak / false breakout tanpa kelanjutan volume. | Fix: Parameter proteksi volatilitas & filter momentum dikalibrasi ulang. -> ATR SL 1.88x & Vol filter 1.20x"
-      },
-      {
-        "t": 1794887289414,
-        "type": "CYCLE",
-        "text": "[CYCLE #22] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794887289010,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] LONG AAPL @ 352.8100 | Skor 90/100 | rezim RANGING (H=0.47) | 2 strategi: wyckoff+statarb"
       }
     ],
     "accuracyHistory": [
@@ -4186,7 +4186,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 6,
-      "newsIngested": 3060,
+      "newsIngested": 3090,
       "lessons": 1,
       "backtests": 3080,
       "netR": 1.96,
@@ -4201,7 +4201,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795181023404,
+      "fetchedAt": 1795181924915,
       "items": [
         {
           "source": "CoinDesk",
@@ -4275,6 +4275,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Lagarde warns Europe could miss chance to unify tokenized markets",
+          "link": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 13:21:39",
+          "summary": "    The ECB president said Europe’s market for tokenized securities could split into platforms that cannot settle trades with one another. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
           "link": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 11:31:41",
@@ -4337,11 +4344,11 @@
           "summary": "    Guillemet helped establish Ledger’s Donjon security lab and says his departure has been planned for months. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Binance’s $6.5B freeze order, Hong Kong ‘suspicious’ of HYPE: Asia Express",
-          "link": "https://cointelegraph.com/magazine/binances-65b-freeze-order-hong-kong-suspicious-of-hype-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 22:25:18",
-          "summary": "    Binance obtains court orders freezing assets stolen in October’s hack. Hong Kong warns citizens about Hyperliquid, and Thai police arrest four foreigners linked to a crypto scam.  "
+          "source": "Decrypt",
+          "title": "Morning Minute: Anthropic IPO Pops, Sinks Markets",
+          "link": "https://decrypt.co/383691/morning-minute-anthropic-ipo-pops-sinks-markets",
+          "pubDate": "2026-11-20 13:23:01",
+          "summary": "A (brief) win for Anthropic&#39;s ANT stock on IPO day meant a loss for just about every other major asset class."
         },
         {
           "source": "Decrypt",
@@ -4405,13 +4412,6 @@
           "link": "https://decrypt.co/383655/bitcoin-enters-death-cross-anthropic-ipo",
           "pubDate": "2026-11-19 19:08:24",
           "summary": "Anthropic shares surged on their Nasdaq debut, but stocks slid and Bitcoin fell lower. Its daily chart shows deeply oversold momentum, a strong downtrend, and fragile support."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Protesters Arrested Outside Nasdaq as Activists Oppose Anthropic IPO Over AI Bubble Risks",
-          "link": "https://decrypt.co/383642/protesters-arrested-nasdaq-anthropic-ipo-ai-bubble-risks",
-          "pubDate": "2026-11-19 17:55:38",
-          "summary": "At least four people were arrested outside Nasdaq during Anthropic’s historic IPO, as protesters warned that AI valuations could leave retirement savers exposed to a potential market crash and broader economic losses."
         }
       ],
       "perCoin": {
@@ -4505,9 +4505,11 @@
           "critHead": ""
         },
         "EUR": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
+          "sentiment": "BEARISH",
+          "impact": -0.5,
+          "sources": [
+            "CoinTelegraph"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -4530,15 +4532,135 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795181023404
+        "t": 1795181924914
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795179841226,
-      "bias": {},
-      "positions": []
+      "fetchedAt": 1795181925642,
+      "bias": {
+        "HYPE": -40,
+        "BTC": -20,
+        "ARB": 17.53,
+        "LDO": 20,
+        "AAVE": 20,
+        "ZRO": 5,
+        "ETHFI": 20,
+        "ENA": 0,
+        "EIGEN": 20,
+        "WLFI": -20,
+        "MEGA": 20,
+        "GRASS": 20,
+        "AERO": 20
+      },
+      "positions": [
+        {
+          "whale": "0x37b81a",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 1049.64,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "BTC",
+          "side": "SHORT",
+          "pct": 22.95,
+          "lev": 20
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ARB",
+          "side": "LONG",
+          "pct": 17.53,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "LDO",
+          "side": "LONG",
+          "pct": 62.65,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "AAVE",
+          "side": "LONG",
+          "pct": 312.58,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ZRO",
+          "side": "LONG",
+          "pct": 4.6,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ETHFI",
+          "side": "LONG",
+          "pct": 37.28,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ENA",
+          "side": "SHORT",
+          "pct": 329.45,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "EIGEN",
+          "side": "LONG",
+          "pct": 54.55,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "WLFI",
+          "side": "SHORT",
+          "pct": 169.78,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "MEGA",
+          "side": "LONG",
+          "pct": 86.68,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "ENA",
+          "side": "LONG",
+          "pct": 122.06,
+          "lev": 10
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "GRASS",
+          "side": "LONG",
+          "pct": 341.28,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "AERO",
+          "side": "LONG",
+          "pct": 106.73,
+          "lev": 3
+        },
+        {
+          "whale": "0x03ef8f",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 1349.17,
+          "lev": 10
+        }
+      ]
     },
     "learnLog": [
       {
@@ -8621,7 +8743,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795181038686
+        "updatedAt": 1795181936872
       }
     },
     "champion": {
@@ -8637,7 +8759,7 @@
       "deflatedT": -2.55,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795181038685,
+      "updatedAt": 1795181936871,
       "gen": 20
     },
     "factory": {
