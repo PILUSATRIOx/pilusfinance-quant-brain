@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795180279561,
+  "updatedAt": 1795181046680,
   "brain": {
     "v": 1,
     "gen": 20,
     "cycles": 120,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795180212347,
     "autoExecBursa": false,
@@ -2647,6 +2647,11 @@
     ],
     "journal": [
       {
+        "t": 1795181023404,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795180253756,
         "type": "CYCLE",
         "text": "[CYCLE #120] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4140,11 +4145,6 @@
         "t": 1794887287388,
         "type": "CB",
         "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Hackers Redirected Bitcoin Miner Rewards via AI Attack, Luxor CEO Says)"
-      },
-      {
-        "t": 1794887287385,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -4186,7 +4186,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 6,
-      "newsIngested": 3030,
+      "newsIngested": 3060,
       "lessons": 1,
       "backtests": 3080,
       "netR": 1.96,
@@ -4201,7 +4201,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795180211456,
+      "fetchedAt": 1795181023404,
       "items": [
         {
           "source": "CoinDesk",
@@ -4530,7 +4530,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795180211456
+        "t": 1795181023404
       },
       "lastErrors": []
     },
@@ -8621,7 +8621,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795180212348
+        "updatedAt": 1795181038686
       }
     },
     "champion": {
@@ -8637,7 +8637,7 @@
       "deflatedT": -2.55,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795180212348,
+      "updatedAt": 1795181038685,
       "gen": 20
     },
     "factory": {
