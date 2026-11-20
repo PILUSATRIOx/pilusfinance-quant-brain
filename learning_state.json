@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795182880859,
+  "updatedAt": 1795183746119,
   "brain": {
     "v": 1,
     "gen": 20,
     "cycles": 123,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795180212347,
     "autoExecBursa": false,
@@ -2647,6 +2647,11 @@
     ],
     "journal": [
       {
+        "t": 1795183722897,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795182858850,
         "type": "CYCLE",
         "text": "[CYCLE #123] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4140,11 +4145,6 @@
         "t": 1794918771126,
         "type": "SIGNAL",
         "text": "[SIGNAL] LONG AAPL @ 352.8100 | Skor 90/100 | rezim RANGING (H=0.47) | 2 strategi: wyckoff+statarb"
-      },
-      {
-        "t": 1794918770058,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Hackers Redirected Bitcoin Miner Rewards via AI Attack, Luxor CEO Says)"
       }
     ],
     "accuracyHistory": [
@@ -4186,7 +4186,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 6,
-      "newsIngested": 3120,
+      "newsIngested": 3150,
       "lessons": 1,
       "backtests": 3080,
       "netR": 1.96,
@@ -4201,7 +4201,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795182834191,
+      "fetchedAt": 1795183722897,
       "items": [
         {
           "source": "CoinDesk",
@@ -4532,7 +4532,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795182834191
+        "t": 1795183722897
       },
       "lastErrors": []
     },
@@ -8743,7 +8743,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795182834339
+        "updatedAt": 1795183724067
       }
     },
     "champion": {
@@ -8759,7 +8759,7 @@
       "deflatedT": -2.55,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795182834338,
+      "updatedAt": 1795183724066,
       "gen": 20
     },
     "factory": {
