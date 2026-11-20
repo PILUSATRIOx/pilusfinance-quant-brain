@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795186502177,
+  "updatedAt": 1795187346676,
   "brain": {
     "v": 1,
     "gen": 21,
     "cycles": 127,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795185526655,
     "autoExecBursa": false,
@@ -2947,6 +2947,11 @@
     ],
     "journal": [
       {
+        "t": 1795187323410,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795186482313,
         "type": "CYCLE",
         "text": "[CYCLE #127] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4440,11 +4445,6 @@
         "t": 1794946622769,
         "type": "GEN",
         "text": "[GEN #1] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (+0.1R, 54 trade, Win 61.1%, t=0.01 vs hurdle 2.15)"
-      },
-      {
-        "t": 1794946243289,
-        "type": "CYCLE",
-        "text": "[CYCLE #5] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -4486,7 +4486,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 6,
-      "newsIngested": 3240,
+      "newsIngested": 3270,
       "lessons": 1,
       "backtests": 3140,
       "netR": 1.96,
@@ -4501,7 +4501,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795186433706,
+      "fetchedAt": 1795187323410,
       "items": [
         {
           "source": "CoinDesk",
@@ -4834,7 +4834,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795186433706
+        "t": 1795187323410
       },
       "lastErrors": []
     },
@@ -9040,7 +9040,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1214,
-        "updatedAt": 1795186436579
+        "updatedAt": 1795187325571
       }
     },
     "champion": {
@@ -9056,7 +9056,7 @@
       "deflatedT": -2.95,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795186436578,
+      "updatedAt": 1795187325570,
       "gen": 21
     },
     "factory": {
