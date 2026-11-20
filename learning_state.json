@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795207131341,
+  "updatedAt": 1795208028768,
   "brain": {
     "v": 1,
     "gen": 24,
-    "cycles": 147,
+    "cycles": 148,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795204427845,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.48,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 101,
+          "trades": 102,
           "wins": 52,
-          "losses": 49,
-          "winRate": 51.48514851485149,
-          "pf": 0.5916802642614389,
-          "exp": -0.220519644404206,
-          "netR": -22.272484084824804,
-          "maxDD": 22.272484084824804,
-          "sumR2": 91.82517260478431,
+          "losses": 50,
+          "winRate": 50.98039215686274,
+          "pf": 0.5800903313914266,
+          "exp": -0.22904216752337314,
+          "netR": -23.36230108738406,
+          "maxDD": 23.36230108738406,
+          "sumR2": 93.01286167235476,
           "grossW": 32.27419131537047,
-          "grossL": 54.546675400195284,
-          "sd": 0.9322749183282816,
-          "tStat": -2.3771904131563146,
+          "grossL": 55.63649240275454,
+          "sd": 0.9316328133660084,
+          "tStat": -2.4829658947260316,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -3288,19 +3288,19 @@
       },
       "emax": {
         "SUIUSDT": {
-          "trades": 32,
-          "wins": 16,
+          "trades": 31,
+          "wins": 15,
           "losses": 16,
-          "winRate": 50,
-          "pf": 0.6270215914427981,
-          "exp": -0.21177239462815425,
-          "netR": -6.776716628100936,
+          "winRate": 48.38709677419355,
+          "pf": 0.6096886214477137,
+          "exp": -0.22876266781717802,
+          "netR": -7.091642702332519,
           "maxDD": 9.838368410115772,
-          "sumR2": 32.92416021930492,
-          "grossW": 11.392476206185139,
+          "sumR2": 32.824981787074,
+          "grossW": 11.077550131953556,
           "grossL": 18.169192834286076,
-          "sd": 1.0078568560557428,
-          "tStat": -1.1886267015791323,
+          "sd": 1.0198476795300069,
+          "tStat": -1.2489086899774922,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4149,6 +4149,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795208028745,
+        "type": "CYCLE",
+        "text": "[CYCLE #148] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795208024915,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795207131312,
         "type": "CYCLE",
@@ -5638,16 +5648,6 @@
         "t": 1794971138997,
         "type": "CYCLE",
         "text": "[CYCLE #26] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794970989316,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794970234754,
-        "type": "CYCLE",
-        "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 3810,
+      "newsIngested": 3840,
       "lessons": 1,
-      "backtests": 3710,
+      "backtests": 3740,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,8 +5709,22 @@
       }
     },
     "news": {
-      "fetchedAt": 1795207125412,
+      "fetchedAt": 1795208024915,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
+          "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play",
+          "pubDate": "2026-11-20 18:13:52",
+          "summary": "Bitcoin is closing in on its $57,700 summer low as Delphi Digital strategist warns the Fed could make matters worse and STS Digital sees cash as the place to hide."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Former Point72 head of proprietary research says AI could turn data into a new asset class for Wall Street",
+          "link": "https://www.coindesk.com/markets/2026/11/20/former-point72-head-of-proprietary-research-says-ai-could-turn-data-into-a-new-asset-class-for-wall-street",
+          "pubDate": "2026-11-20 14:54:30",
+          "summary": "A former Point72 executive says AI could reshape Wall Street&#39;s data market, turning once-exclusive information into a source of revenue and financing."
+        },
         {
           "source": "CoinDesk",
           "title": "Hong Kong moves to extend crypto licensing rules to brokers, advisers and custodians",
@@ -5727,7 +5741,7 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Live news: Bitcoin hovers just above $61,000 as Anthropic slides after Nasdaq debut",
+          "title": "Live news: Bitcoin slips to fresh lows below $59,000 as Anthropic slides after Nasdaq debut",
           "link": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
           "pubDate": "2026-11-20 13:35:33",
           "summary": "BlackRock’s bitcoin ETF saw a record $541.1 million outflow as the U.S. tech selloff spread to Asia, sending South Korea’s Kospi down more than 5%."
@@ -5766,20 +5780,6 @@
           "link": "https://www.coindesk.com/business/2026/11/20/coinbase-targets-first-half-2027-for-its-own-prediction-market-contracts",
           "pubDate": "2026-11-20 10:48:04",
           "summary": "The move would reduce Coinbase&#39;s reliance on a partnership Kalshi, which brought in $200 million in annualized revenue in the third quarter."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "No special rules for Hyperliquid or other onchain trading platforms, CFTC says",
-          "link": "https://www.coindesk.com/markets/2026/11/20/cftc-tells-hyperliquid-and-crypto-rivals-no-special-rules-for-onchain-trading",
-          "pubDate": "2026-11-20 10:02:03",
-          "summary": "Hyperliquid and other onchain exchanges can offer derivatives to U.S. traders if they obtain the required licenses or work with a registered exchange, the CFTC chairman said."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Cathie Wood&#39;s Ark Invest piled into Anthropic IPO, buying $90 million worth of shares",
-          "link": "https://www.coindesk.com/markets/2026/11/20/cathie-wood-s-ark-invest-piled-into-anthropic-ipo-buying-usd90-million-worth-of-shares",
-          "pubDate": "2026-11-20 09:48:52",
-          "summary": "ARK Invest snapped up $90 million in Anthropic stock across six funds during the AI maker’s historic Nasdaq debut while offloading Nvidia shares amid leadership turmoil."
         },
         {
           "source": "CoinTelegraph",
@@ -5853,6 +5853,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Nvidia Shares Sink to 52-Week Low After Report SEC Is Probing Accounting",
+          "link": "https://decrypt.co/383744/nvidia-shares-sink-52-week-low-sec-probing-accounting",
+          "pubDate": "2026-11-20 20:36:54",
+          "summary": "Nvidia shares fell about 13% to a 52-week low after reports that SEC enforcement staff are examining potential accounting issues, adding to pressure on the chipmaker after Jensen Huang’s resignation."
+        },
+        {
+          "source": "Decrypt",
           "title": "SBF’s &#39;The Altruists&#39; Plot Twist: FTX’s Anthropic Shares Would Be Worth $43 Billion",
           "link": "https://decrypt.co/383739/sbf-altruists-ftx-anthropic-shares-worth-43-billion",
           "pubDate": "2026-11-20 19:36:03",
@@ -5913,13 +5920,6 @@
           "link": "https://decrypt.co/383685/bitcoin-etfs-shed-582m-in-a-day-as-btc-drops-below-62k",
           "pubDate": "2026-11-20 11:50:51",
           "summary": "Thursday&#39;s ETF outflow was the funds&#39; biggest in three weeks, as rising Treasury yields and Fed rate hike bets weigh on crypto."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Coinbase Targets In-House Prediction Markets by First Half of 2027: Report",
-          "link": "https://decrypt.co/383682/coinbase-targets-in-house-prediction-markets-by-first-half-of-2027-report",
-          "pubDate": "2026-11-20 11:23:00",
-          "summary": "The exchange offers event contracts through Kalshi, but running its own would give it more control and a bigger share of trading revenue."
         }
       ],
       "perCoin": {
@@ -6045,7 +6045,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795207125412
+        "t": 1795208024915
       },
       "lastErrors": []
     },
@@ -6292,27 +6292,27 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.568,
+            0.561,
             1.006,
             10
           ],
           [
-            0.516,
+            0.512,
             -1.082,
             35
           ],
           [
-            0.554,
+            0.55,
             -1.076,
             35
           ],
           [
-            0.553,
+            0.552,
             -1.073,
             56
           ],
           [
-            0.563,
+            0.556,
             0.333,
             10
           ],
@@ -6322,47 +6322,47 @@
             56
           ],
           [
-            0.501,
+            0.498,
             0.452,
             61
           ],
           [
-            0.512,
+            0.507,
             0.316,
             35
           ],
           [
-            0.512,
+            0.507,
             -1.077,
             46
           ],
           [
-            0.53,
+            0.525,
             0.54,
             10
           ],
           [
-            0.578,
+            0.576,
             -1.078,
             94
           ],
           [
-            0.522,
+            0.516,
             0.285,
             2
           ],
           [
-            0.584,
+            0.581,
             -1.129,
             35
           ],
           [
-            0.612,
+            0.61,
             -1.121,
             10
           ],
           [
-            0.552,
+            0.551,
             -1.126,
             69
           ],
@@ -6372,187 +6372,187 @@
             35
           ],
           [
-            0.556,
+            0.553,
             -1.133,
             35
           ],
           [
-            0.564,
+            0.561,
             -1.12,
             10
           ],
           [
-            0.567,
+            0.563,
             0.302,
             10
           ],
           [
-            0.526,
+            0.525,
             0.399,
             61
           ],
           [
-            0.578,
+            0.574,
             0.505,
             34
           ],
           [
-            0.511,
+            0.508,
             1.001,
             94
           ],
           [
-            0.588,
+            0.584,
             1.515,
             10
           ],
           [
-            0.514,
+            0.509,
             -1.107,
             27
           ],
           [
-            0.522,
+            0.517,
             1.509,
             35
           ],
           [
-            0.578,
+            0.573,
             0.316,
             10
           ],
           [
-            0.609,
+            0.605,
             0.274,
             2
           ],
           [
-            0.571,
+            0.567,
             -1.128,
             16
           ],
           [
-            0.498,
+            0.499,
             -1.158,
             61
           ],
           [
-            0.595,
+            0.593,
             0.257,
             10
           ],
           [
-            0.546,
+            0.541,
             -1.166,
             10
           ],
           [
-            0.498,
+            0.495,
             0.447,
             10
           ],
           [
-            0.487,
+            0.486,
             0.16,
             90
           ],
           [
-            0.538,
+            0.535,
             -1.195,
             35
           ],
           [
-            0.579,
+            0.576,
             -1.155,
             41
           ],
           [
-            0.596,
+            0.594,
             0.848,
             10
           ],
           [
-            0.586,
+            0.584,
             0.924,
             15
           ],
           [
-            0.561,
+            0.559,
             0.169,
             69
           ],
           [
-            0.562,
+            0.558,
             0.181,
             10
           ],
           [
-            0.554,
+            0.552,
             -1.144,
             56
           ],
           [
-            0.524,
+            0.523,
             -1.128,
             61
           ],
           [
-            0.514,
+            0.509,
             0.739,
             2
           ],
           [
-            0.546,
+            0.542,
             -1.133,
             41
           ],
           [
-            0.567,
+            0.562,
             0.619,
             10
           ],
           [
-            0.602,
+            0.6,
             -1.128,
             35
           ],
           [
-            0.558,
+            0.557,
             -1.119,
             69
           ],
           [
-            0.563,
+            0.561,
             0.51,
             41
           ],
           [
-            0.485,
+            0.481,
             1.54,
             90
           ],
           [
-            0.551,
+            0.548,
             -1.11,
             46
           ],
           [
-            0.478,
+            0.475,
             -1.113,
             73
           ],
           [
-            0.569,
+            0.565,
             0.272,
             10
           ],
           [
-            0.569,
+            0.565,
             0.278,
             35
           ],
           [
-            0.587,
+            0.584,
             -1.119,
             35
           ]
@@ -10288,7 +10288,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1237,
-        "updatedAt": 1795207128743
+        "updatedAt": 1795208026306
       }
     },
     "champion": {
@@ -10304,7 +10304,7 @@
       "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795207128742,
+      "updatedAt": 1795208026304,
       "gen": 24
     },
     "factory": {
