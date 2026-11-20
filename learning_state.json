@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795196329213,
+  "updatedAt": 1795197227264,
   "brain": {
     "v": 1,
     "gen": 22,
-    "cycles": 135,
+    "cycles": 136,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795193624571,
     "autoExecBursa": false,
@@ -196,18 +196,18 @@
           "wins": 40,
           "losses": 32,
           "winRate": 55.55555555555556,
-          "pf": 0.7578660051119064,
-          "exp": -0.12068815344724665,
-          "netR": -8.689547048201758,
+          "pf": 0.7604337458105003,
+          "exp": -0.1194083005972251,
+          "netR": -8.597397643000207,
           "maxDD": 13.883503030231587,
-          "sumR2": 68.51790595985011,
-          "grossW": 27.197801410315112,
+          "sumR2": 68.6687286026179,
+          "grossW": 27.289950815516665,
           "grossL": 35.88734845851687,
-          "sd": 0.9748180080947264,
-          "tStat": -1.0505273107733313,
+          "sd": 0.9760666102335424,
+          "tStat": -1.0380572579413243,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -551,7 +551,7 @@
           "tStat": -1.8025681501992492,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -895,7 +895,7 @@
           "tStat": -0.5574952517932298,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1239,7 +1239,7 @@
           "tStat": 0.08654161025021853,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1583,7 +1583,7 @@
           "tStat": -1.2094552988510867,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1927,7 +1927,7 @@
           "tStat": -1.24761491118081,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2271,7 +2271,7 @@
           "tStat": 1.1149823890684667,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2615,7 +2615,7 @@
           "tStat": -2.3771904131563146,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2959,7 +2959,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3303,7 +3303,7 @@
           "tStat": -1.1886267015791323,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -4149,6 +4149,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795197227245,
+        "type": "CYCLE",
+        "text": "[CYCLE #136] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795197222654,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795196329196,
         "type": "CYCLE",
@@ -5638,16 +5648,6 @@
         "t": 1794952981556,
         "type": "CYCLE",
         "text": "[CYCLE #14] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794952976380,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794952079336,
-        "type": "CYCLE",
-        "text": "[CYCLE #13] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 3450,
+      "newsIngested": 3480,
       "lessons": 1,
-      "backtests": 3350,
+      "backtests": 3380,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795196322596,
+      "fetchedAt": 1795197222654,
       "items": [
         {
           "source": "CoinDesk",
@@ -5853,6 +5853,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Wrapped Monero Token Collapses 99% After $13 Million Hack Blamed on Web Host",
+          "link": "https://decrypt.co/383732/wrapped-monero-token-collapses-99-after-13-million-hack-blamed-on-web-host",
+          "pubDate": "2026-11-20 17:41:45",
+          "summary": "Wagyu’s XMR1 token fell more than 99% after an attacker moved 5.2 million tokens out of its deployer account and sold a fraction of them for $13.5 million."
+        },
+        {
+          "source": "Decrypt",
           "title": "Bitcoin Breaks Below $60K as Crypto Fear Index Hits Worst Level Since February",
           "link": "https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest",
           "pubDate": "2026-11-20 16:35:59",
@@ -5913,13 +5920,6 @@
           "link": "https://decrypt.co/383669/nvidia-amd-micron-ai-stocks-sink-anthropic-ipo-price",
           "pubDate": "2026-11-19 21:12:06",
           "summary": "Anthropic shares opened 34% above their $83 IPO price before giving up much of the gain, while Nvidia, AMD and other AI stocks slid across Wall Street."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Meet SHRINCS: Bitcoin&#39;s Emerging Frontrunner for a Post-Quantum Signature",
-          "link": "https://decrypt.co/383666/meet-shrincs-bitcoin-emerging-frontrunner-post-quantum-signature",
-          "pubDate": "2026-11-19 20:46:02",
-          "summary": "A new post-quantum signature proposal aims to secure Bitcoin’s future, but balancing user safety and efficiency comes with hurdles."
         }
       ],
       "perCoin": {
@@ -6042,7 +6042,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795196322596
+        "t": 1795197222654
       },
       "lastErrors": []
     },
@@ -6281,267 +6281,267 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.623,
+            0.562,
             1.006,
             10
           ],
           [
-            0.561,
+            0.512,
             -1.082,
             35
           ],
           [
-            0.607,
+            0.551,
             -1.076,
             35
           ],
           [
-            0.562,
+            0.551,
             -1.073,
             56
           ],
           [
-            0.62,
+            0.557,
             0.333,
             10
           ],
           [
-            0.579,
+            0.568,
             -1.088,
             56
           ],
           [
-            0.515,
+            0.5,
             0.452,
             61
           ],
           [
-            0.557,
+            0.507,
             0.316,
             35
           ],
           [
-            0.553,
+            0.508,
             -1.077,
             46
           ],
           [
-            0.572,
+            0.526,
             0.54,
             10
           ],
           [
-            0.588,
+            0.578,
             -1.078,
             94
           ],
           [
-            0.57,
+            0.518,
             0.285,
             2
           ],
           [
-            0.599,
+            0.582,
             -1.129,
             35
           ],
           [
-            0.639,
+            0.61,
             -1.121,
             10
           ],
           [
-            0.56,
+            0.55,
             -1.126,
             69
           ],
           [
-            0.606,
+            0.577,
             0.581,
             35
           ],
           [
-            0.583,
+            0.554,
             -1.133,
             35
           ],
           [
-            0.593,
+            0.561,
             -1.12,
             10
           ],
           [
-            0.597,
+            0.564,
             0.302,
             10
           ],
           [
-            0.544,
+            0.525,
             0.399,
             61
           ],
           [
-            0.609,
+            0.575,
             0.505,
             34
           ],
           [
-            0.536,
+            0.51,
             1.001,
             94
           ],
           [
-            0.619,
+            0.586,
             1.515,
             10
           ],
           [
-            0.559,
+            0.51,
             -1.107,
             27
           ],
           [
-            0.567,
+            0.519,
             1.509,
             35
           ],
           [
-            0.603,
+            0.575,
             0.316,
             10
           ],
           [
-            0.644,
+            0.607,
             0.274,
             2
           ],
           [
-            0.599,
+            0.569,
             -1.128,
             16
           ],
           [
-            0.512,
+            0.497,
             -1.158,
             61
           ],
           [
-            0.627,
+            0.594,
             0.257,
             10
           ],
           [
-            0.59,
+            0.543,
             -1.166,
             10
           ],
           [
-            0.547,
+            0.493,
             0.447,
             10
           ],
           [
-            0.52,
+            0.484,
             0.16,
             90
           ],
           [
-            0.567,
+            0.536,
             -1.195,
             35
           ],
           [
-            0.609,
+            0.578,
             -1.155,
             41
           ],
           [
-            0.626,
+            0.594,
             0.848,
             10
           ],
           [
-            0.621,
+            0.584,
             0.924,
             15
           ],
           [
-            0.576,
+            0.561,
             0.169,
             69
           ],
           [
-            0.588,
+            0.559,
             0.181,
             10
           ],
           [
-            0.573,
+            0.555,
             -1.144,
             56
           ],
           [
-            0.543,
+            0.524,
             -1.128,
             61
           ],
           [
-            0.559,
+            0.51,
             0.739,
             2
           ],
           [
-            0.57,
+            0.543,
             -1.133,
             41
           ],
           [
-            0.597,
+            0.563,
             0.619,
             10
           ],
           [
-            0.633,
+            0.601,
             -1.128,
             35
           ],
           [
-            0.582,
+            0.557,
             -1.119,
             69
           ],
           [
-            0.599,
+            0.56,
             0.51,
             41
           ],
           [
-            0.517,
+            0.483,
             1.54,
             90
           ],
           [
-            0.576,
+            0.548,
             -1.11,
             46
           ],
           [
-            0.506,
+            0.476,
             -1.113,
             73
           ],
           [
-            0.597,
+            0.567,
             0.272,
             10
           ],
           [
-            0.597,
+            0.567,
             0.278,
             35
           ],
           [
-            0.624,
+            0.585,
             -1.119,
             35
           ]
@@ -10267,7 +10267,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1235,
-        "updatedAt": 1795196325455
+        "updatedAt": 1795197223740
       }
     },
     "champion": {
@@ -10283,7 +10283,7 @@
       "deflatedT": -5.5,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795196325454,
+      "updatedAt": 1795197223739,
       "gen": 22
     },
     "factory": {
