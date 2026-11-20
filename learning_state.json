@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795181968485,
+  "updatedAt": 1795182857474,
   "brain": {
     "v": 1,
     "gen": 20,
     "cycles": 122,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795180212347,
     "autoExecBursa": false,
@@ -2647,6 +2647,11 @@
     ],
     "journal": [
       {
+        "t": 1795182834191,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795181948109,
         "type": "CYCLE",
         "text": "[CYCLE #122] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4140,11 +4145,6 @@
         "t": 1794918770057,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794918769170,
-        "type": "LOSS",
-        "text": "[LOSS] AAPL LONG LOSS -1.00R — SL 349.3928 tersentuh | Akar: Pembalikan rezim pasar mendadak / false breakout tanpa kelanjutan volume. | Fix: Parameter proteksi volatilitas & filter momentum dikalibrasi ulang. -> ATR SL 1.88x & Vol filter 1.20x"
       }
     ],
     "accuracyHistory": [
@@ -4186,7 +4186,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 6,
-      "newsIngested": 3090,
+      "newsIngested": 3120,
       "lessons": 1,
       "backtests": 3080,
       "netR": 1.96,
@@ -4201,7 +4201,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795181924915,
+      "fetchedAt": 1795182834191,
       "items": [
         {
           "source": "CoinDesk",
@@ -4275,6 +4275,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 13:29:58",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Lagarde warns Europe could miss chance to unify tokenized markets",
           "link": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 13:21:39",
@@ -4321,13 +4328,6 @@
           "link": "https://cointelegraph.com/markets/anthropic-ipo-spacex-retail-buying-first-day-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 06:24:41",
           "summary": "    Retail investors traded $772 million in Anthropic shares on Thursday, the most Vanda Research has recorded for a market debut since 2012. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 06:00:00",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -4532,7 +4532,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795181924914
+        "t": 1795182834191
       },
       "lastErrors": []
     },
@@ -8743,7 +8743,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795181936872
+        "updatedAt": 1795182834339
       }
     },
     "champion": {
@@ -8759,7 +8759,7 @@
       "deflatedT": -2.55,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795181936871,
+      "updatedAt": 1795182834338,
       "gen": 20
     },
     "factory": {
