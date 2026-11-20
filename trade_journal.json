@@ -1,6 +1,80 @@
 {
   "trades": [
     {
+      "id": "sig_SOLUSDT_1795104525130",
+      "sym": "SOLUSDT",
+      "side": "SHORT",
+      "entry": 73.51,
+      "sl": 73.51,
+      "slInit": 75.06896655616583,
+      "risk": 1.5589665561658248,
+      "rsiAtEntry": 43,
+      "tp1": 72.26282675506735,
+      "tp2": 71.01565351013468,
+      "tp3": 68.52130702026936,
+      "momentumBurst": true,
+      "lev": 5,
+      "conf": 100,
+      "techScore": 94,
+      "extScore": 10,
+      "regime": "RANGING",
+      "hurst": 0.44,
+      "kalmanPrice": 73.51,
+      "kalmanVelZ": -0.3273,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+        "[OK] Screen2: RSI 43 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.87x ATR",
+        "[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=0.44)",
+        "[OK] Screen6: krisis terverifikasi memperkuat Short",
+        "[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance -10.2% · VPIN 0.624",
+        "[OK] Screen8 (Momentum Burst): Vol 3.16x · Body 71% -> TP3 diperluas ke 3.2R",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "SHORT",
+          "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+          "w": 0.85,
+          "barAge": 1
+        },
+        {
+          "strat": "smc",
+          "side": "SHORT",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity atas, wick reject + volume",
+          "w": 0.69,
+          "barAge": 1
+        },
+        {
+          "strat": "statarb",
+          "side": "SHORT",
+          "note": "D.E. Shaw Z-Score (+1.01 sigma) mean-reversion deceleration (RSI 58)",
+          "w": 0.63,
+          "barAge": 1
+        }
+      ],
+      "atr": 0.8327812800031115,
+      "volPct": 1.1328816215523214,
+      "metaP": 0.531,
+      "metaEV": -0.281,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "WIN",
+      "createdAt": 1795104525130,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.3999999999999981,
+      "mfe": 0.9301033394623821,
+      "mae": -0.737668165780503,
+      "lastBarT": 1795137000000,
+      "closedAt": 1795191412606,
+      "netR": 0.26,
+      "closeReason": "Trail/BE exit di 73.5100"
+    },
+    {
       "id": "sig_TSLA_1795102731020",
       "sym": "TSLA",
       "side": "SHORT",
@@ -442,5 +516,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795180234499
+  "updatedAt": 1795191462477
 }
