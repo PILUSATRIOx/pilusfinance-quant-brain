@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795109927356,
+  "updatedAt": 1795175463457,
   "brain": {
     "v": 1,
     "gen": 19,
-    "cycles": 114,
+    "cycles": 115,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795109925441,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.56,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -363,61 +363,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 96,
-          "wins": 52,
-          "losses": 44,
-          "winRate": 54.166666666666664,
-          "pf": 0.4589214095566381,
-          "exp": -0.2958338929578831,
-          "netR": -28.400053723956777,
-          "maxDD": 31.277841713417025,
-          "sumR2": 91.22935882381502,
-          "grossW": 24.08779965920086,
-          "grossL": 52.48785338315764,
-          "sd": 0.9337398509020417,
-          "tStat": -3.1042568684110843,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 95,
-          "wins": 44,
-          "losses": 50,
-          "winRate": 46.31578947368421,
-          "pf": 0.41318694162335917,
-          "exp": -0.37898807046306315,
-          "netR": -36.003866693991,
-          "maxDD": 40.33503753357185,
-          "sumR2": 102.8116757827904,
-          "grossW": 25.347564029460333,
-          "grossL": 61.346478980852986,
-          "sd": 0.9739513717994639,
-          "tStat": -3.7927137728802554,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 95,
-          "wins": 53,
-          "losses": 42,
-          "winRate": 55.78947368421052,
-          "pf": 0.5646421583807693,
-          "exp": -0.22844404755002265,
-          "netR": -21.702184517252153,
-          "maxDD": 23.706189549691757,
-          "sumR2": 85.60418036508457,
-          "grossW": 28.14688776897338,
-          "grossL": 49.84907228622554,
-          "sd": 0.9262509970321452,
-          "tStat": -2.4038809759991624,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 85,
@@ -707,61 +677,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 71,
-          "wins": 38,
-          "losses": 33,
-          "winRate": 53.52112676056338,
-          "pf": 0.38291439393449783,
-          "exp": -0.3478993857713505,
-          "netR": -24.700856389765885,
-          "maxDD": 28.208216002715666,
-          "sumR2": 66.63522441794196,
-          "grossW": 15.327392765577324,
-          "grossL": 40.02824915534322,
-          "sd": 0.9105870292753544,
-          "tStat": -3.2192994587659687,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 64,
-          "wins": 37,
-          "losses": 26,
-          "winRate": 57.8125,
-          "pf": 0.3986092210149778,
-          "exp": -0.277276619620694,
-          "netR": -17.745703655724416,
-          "maxDD": 19.353980727808988,
-          "sumR2": 43.5580495325935,
-          "grossW": 11.764779895517409,
-          "grossL": 29.514570349277857,
-          "sd": 0.7831314918290182,
-          "tStat": -2.832491069647671,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 67,
-          "wins": 32,
-          "losses": 35,
-          "winRate": 47.76119402985074,
-          "pf": 0.43870846729892865,
-          "exp": -0.3489746009240226,
-          "netR": -23.381298261909514,
-          "maxDD": 27.81580093823637,
-          "sumR2": 66.7834884555259,
-          "grossW": 18.274947912681835,
-          "grossL": 41.65624617459136,
-          "sd": 0.9424662137300112,
-          "tStat": -3.0308568894808445,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 68,
@@ -1051,61 +991,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 58,
-          "wins": 27,
-          "losses": 31,
-          "winRate": 46.55172413793103,
-          "pf": 0.3408367694371633,
-          "exp": -0.42238071821146816,
-          "netR": -24.498081656265153,
-          "maxDD": 25.3021862909307,
-          "sumR2": 58.947827553859554,
-          "grossW": 12.667343416591368,
-          "grossL": 37.16542507285653,
-          "sd": 0.9233834639860414,
-          "tStat": -3.4836618151080603,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 48,
-          "wins": 22,
-          "losses": 26,
-          "winRate": 45.83333333333333,
-          "pf": 0.44964879205153263,
-          "exp": -0.34220694470112,
-          "netR": -16.42593334565376,
-          "maxDD": 18.907049230861563,
-          "sumR2": 48.91882515900512,
-          "grossW": 13.420341375690755,
-          "grossL": 29.846274721344518,
-          "sd": 0.9598066814986556,
-          "tStat": -2.4701633208044433,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 53,
-          "wins": 31,
-          "losses": 22,
-          "winRate": 58.490566037735846,
-          "pf": 0.6736674753046616,
-          "exp": -0.15645016481487592,
-          "netR": -8.291858735188423,
-          "maxDD": 11.890048487611091,
-          "sumR2": 46.26001855638087,
-          "grossW": 17.117372976942157,
-          "grossL": 25.409231712130584,
-          "sd": 0.9298754661309696,
-          "tStat": -1.2248676661912539,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 51,
@@ -1395,61 +1305,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 49,
-          "wins": 23,
-          "losses": 26,
-          "winRate": 46.93877551020408,
-          "pf": 0.3517866505631534,
-          "exp": -0.44831145084948476,
-          "netR": -21.967261091624753,
-          "maxDD": 23.49773472279791,
-          "sumR2": 54.850578455156985,
-          "grossW": 11.92167549184645,
-          "grossL": 33.88893658347121,
-          "sd": 0.9682716965894832,
-          "tStat": -3.2410119669922386,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 53,
-          "wins": 24,
-          "losses": 28,
-          "winRate": 45.28301886792453,
-          "pf": 0.3425310224380617,
-          "exp": -0.41681689341631284,
-          "netR": -22.09129535106458,
-          "maxDD": 23.59737134666975,
-          "sumR2": 51.73507137926554,
-          "grossW": 11.51336691501129,
-          "grossL": 33.61262531218818,
-          "sd": 0.9043383288720902,
-          "tStat": -3.3554618784807464,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 45,
-          "wins": 28,
-          "losses": 17,
-          "winRate": 62.22222222222222,
-          "pf": 0.8470435822517981,
-          "exp": -0.06813207989128038,
-          "netR": -3.0659435951076173,
-          "maxDD": 7.210357682770934,
-          "sumR2": 41.48592762385055,
-          "grossW": 16.978613150166037,
-          "grossL": 20.044556745273653,
-          "sd": 0.9685631169873907,
-          "tStat": -0.471878268168659,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 59,
@@ -1739,61 +1619,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 18,
-          "wins": 9,
-          "losses": 9,
-          "winRate": 50,
-          "pf": 0.3719731985292751,
-          "exp": -0.3583386083585743,
-          "netR": -6.4500949504543375,
-          "maxDD": 6.85002956386071,
-          "sumR2": 15.907945853555493,
-          "grossW": 3.820318565894621,
-          "grossL": 10.270413516348958,
-          "sd": 0.8943162950554502,
-          "tStat": -1.6999600342667656,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 19,
-          "wins": 12,
-          "losses": 7,
-          "winRate": 63.1578947368421,
-          "pf": 0.5631867661196105,
-          "exp": -0.1917018541283829,
-          "netR": -3.6423352284392747,
-          "maxDD": 5.649256179891703,
-          "sumR2": 13.30190601484414,
-          "grossW": 4.696091691649502,
-          "grossL": 8.338426920088777,
-          "sd": 0.8367816520652607,
-          "tStat": -0.9985986276977155,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 25,
-          "wins": 10,
-          "losses": 15,
-          "winRate": 40,
-          "pf": 0.3651483379556546,
-          "exp": -0.448253212077921,
-          "netR": -11.206330301948025,
-          "maxDD": 11.88447651720299,
-          "sumR2": 26.955212907501505,
-          "grossW": 6.445557488439842,
-          "grossL": 17.651887790387867,
-          "sd": 0.9559449808533083,
-          "tStat": -2.3445554977327006,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 18,
@@ -2083,61 +1933,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 43,
-          "wins": 15,
-          "losses": 28,
-          "winRate": 34.883720930232556,
-          "pf": 0.2083460420146875,
-          "exp": -0.5747541679858424,
-          "netR": -24.714429223391225,
-          "maxDD": 26.19873051656452,
-          "sumR2": 49.15345089175509,
-          "grossW": 6.504298320505867,
-          "grossL": 31.218727543897096,
-          "sd": 0.9122020672946668,
-          "tStat": -4.131666939027054,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 38,
-          "wins": 23,
-          "losses": 15,
-          "winRate": 60.526315789473685,
-          "pf": 0.6254585553702731,
-          "exp": -0.17378560800168555,
-          "netR": -6.603853104064051,
-          "maxDD": 12.997947311433439,
-          "sumR2": 32.396301380905975,
-          "grossW": 11.027982300940716,
-          "grossL": 17.631835405004768,
-          "sd": 0.9189983788778218,
-          "tStat": -1.1657109088573183,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 40,
-          "wins": 24,
-          "losses": 16,
-          "winRate": 60,
-          "pf": 0.7460289395900463,
-          "exp": -0.11845621922060948,
-          "netR": -4.738248768824379,
-          "maxDD": 10.330360961238355,
-          "sumR2": 37.453136027856964,
-          "grossW": 13.918399595662576,
-          "grossL": 18.656648364486955,
-          "sd": 0.9725971178581776,
-          "tStat": -0.7702911079445823,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 43,
@@ -2427,61 +2247,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 27,
-          "wins": 11,
-          "losses": 16,
-          "winRate": 40.74074074074074,
-          "pf": 0.19952143607963108,
-          "exp": -0.6536769605490403,
-          "netR": -17.649277934824088,
-          "maxDD": 17.649277934824088,
-          "sumR2": 34.626460494970914,
-          "grossW": 4.399130018021264,
-          "grossL": 22.048407952845356,
-          "sd": 0.9423688265921613,
-          "tStat": -3.604326699247223,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 23,
-          "wins": 9,
-          "losses": 13,
-          "winRate": 39.130434782608695,
-          "pf": 0.26692302563276304,
-          "exp": -0.5379314195329078,
-          "netR": -12.37242264925688,
-          "maxDD": 12.510019028117728,
-          "sumR2": 25.770834317403228,
-          "grossW": 4.501383306191045,
-          "grossL": 16.86397528096403,
-          "sd": 0.9321363399746007,
-          "tStat": -2.767651413790578,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 23,
-          "wins": 15,
-          "losses": 8,
-          "winRate": 65.21739130434783,
-          "pf": 0.911731524312702,
-          "exp": -0.036949137214430675,
-          "netR": -0.8498301559319055,
-          "maxDD": 4.021299695634631,
-          "sumR2": 20.205350935924027,
-          "grossW": 8.777957673355337,
-          "grossL": 9.627787829287241,
-          "sd": 0.9575999934705024,
-          "tStat": -0.18504786781583477,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 31,
@@ -2771,61 +2561,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 102,
-          "wins": 46,
-          "losses": 54,
-          "winRate": 45.09803921568628,
-          "pf": 0.3045817825218984,
-          "exp": -0.4466607973984258,
-          "netR": -45.55940133463943,
-          "maxDD": 45.89508311478719,
-          "sumR2": 101.79697307137164,
-          "grossW": 19.948669889627254,
-          "grossL": 65.49528249672323,
-          "sd": 0.8980031452802019,
-          "tStat": -5.023426647008648,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 96,
-          "wins": 49,
-          "losses": 47,
-          "winRate": 51.041666666666664,
-          "pf": 0.4697449023686411,
-          "exp": -0.311405038571316,
-          "netR": -29.894883702846336,
-          "maxDD": 30.852334145017274,
-          "sumR2": 92.96193638011889,
-          "grossW": 26.483421449496962,
-          "grossL": 56.37830515234331,
-          "sd": 0.938377765741153,
-          "tStat": -3.2514983865968907,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 106,
-          "wins": 58,
-          "losses": 48,
-          "winRate": 54.71698113207547,
-          "pf": 0.5200430422274486,
-          "exp": -0.25615289897455573,
-          "netR": -27.152207291302908,
-          "maxDD": 28.853954491413344,
-          "sumR2": 92.89271641549522,
-          "grossW": 29.419964132806715,
-          "grossL": 56.57217142410965,
-          "sd": 0.9046841059006383,
-          "tStat": -2.9151120155451085,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 100,
@@ -3115,61 +2875,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "ETHUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "SOLUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 0,
@@ -3459,61 +3189,31 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 29,
-          "wins": 15,
-          "losses": 13,
-          "winRate": 51.724137931034484,
-          "pf": 0.2918029571458812,
-          "exp": -0.39489933979349323,
-          "netR": -11.452080854011303,
-          "maxDD": 13.721023556211088,
-          "sumR2": 25.317140244227858,
-          "grossW": 4.716427522343689,
-          "grossL": 16.16305594869555,
-          "sd": 0.8617822287834896,
-          "tStat": -2.467674495932135,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "ETHUSDT": {
-          "trades": 27,
-          "wins": 14,
-          "losses": 13,
-          "winRate": 51.85185185185185,
-          "pf": 0.4455236047520947,
-          "exp": -0.30541205269596533,
-          "netR": -8.246125422791064,
-          "maxDD": 10.151261987748383,
-          "sumR2": 24.900837424856807,
-          "grossW": 6.625788861502745,
-          "grossL": 14.871914284293807,
-          "sd": 0.9278256495014775,
-          "tStat": -1.7104157213077982,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "SOLUSDT": {
-          "trades": 25,
-          "wins": 12,
-          "losses": 13,
-          "winRate": 48,
-          "pf": 0.25866723624498383,
-          "exp": -0.45747446351144183,
-          "netR": -11.436861587786046,
-          "maxDD": 12.687276641810778,
-          "sumR2": 20.37842770410428,
-          "grossW": 3.9905714719046994,
-          "grossL": 15.427433059690745,
-          "sd": 0.7944168612095615,
-          "tStat": -2.8793098802995027,
-          "atrMult": 1.872,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "XRPUSDT": {
           "trades": 29,
@@ -4146,6 +3846,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795175455800,
+        "type": "CYCLE",
+        "text": "[CYCLE #115] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795175452685,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: ETH — Long baru diblokir (Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainf)"
+      },
+      {
+        "t": 1795175452661,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795109927340,
         "type": "CYCLE",
@@ -5630,21 +5345,6 @@
         "t": 1794772727957,
         "type": "CYCLE",
         "text": "[CYCLE #17] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794772726484,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794754041603,
-        "type": "CYCLE",
-        "text": "[CYCLE #16] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794754039952,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5686,7 +5386,7 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 6,
-      "newsIngested": 2910,
+      "newsIngested": 2940,
       "lessons": 1,
       "backtests": 3050,
       "netR": 1.96,
@@ -5701,147 +5401,203 @@
       }
     },
     "news": {
-      "fetchedAt": 1795109924504,
+      "fetchedAt": 1795175452661,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "Crypto traders vs. Wall Street: OKX’s Anthropic markets put IPO pricing to the test",
-          "link": "https://www.coindesk.com/markets/2026/11/19/crypto-traders-vs-wall-street-okx-s-anthropic-markets-put-ipo-pricing-to-the-test",
-          "pubDate": "2026-11-19 13:11:31",
-          "summary": "The crypto exchange plans to launch tokenized Anthropic shares as its pre-IPO futures trade about 24% above the company’s $83 offering price."
+          "title": "Wrapped Monero token plunges 99% as issuer-linked wallet sells $13.5 million",
+          "link": "https://www.coindesk.com/markets/2026/11/20/wrapped-monero-token-plunges-99-as-issuer-linked-wallet-sells-usd13-5-million",
+          "pubDate": "2026-11-20 08:04:40",
+          "summary": "The sell-off hit Wagyu’s XMR1 token, separate from Monero and Hyperliquid’s XMR futures market."
         },
         {
           "source": "CoinDesk",
-          "title": "Trump Media wants to clear $884 million of debt without selling its bitcoin",
-          "link": "https://www.coindesk.com/markets/2026/11/19/trump-media-wants-to-clear-usd884-million-of-debt-without-selling-its-bitcoin",
-          "pubDate": "2026-11-19 12:40:12",
-          "summary": "The Truth Social owner bought back $100 million of convertible notes this week. Holders of the rest can demand cash on Nov. 30, and its bitcoin is worth just under $1 billion."
+          "title": "Here&#39;s what&#39;s crashing gold and likely weighing on bitcoin too",
+          "link": "https://www.coindesk.com/markets/2026/11/20/here-s-what-s-crashing-gold-and-likely-weighing-on-bitcoin-too",
+          "pubDate": "2026-11-20 06:12:15",
+          "summary": "Gold fell to its lowest level since September 2025 on Friday, and the same catalyst driving its decline is likely also weighing on bitcoin."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin ETF outflows show waning crypto appetite ahead of Anthropic&#39;s Nasdaq debut",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/19/bitcoin-etf-outflows-show-waning-crypto-appetite-ahead-of-anthropic-s-nasdaq-debut",
-          "pubDate": "2026-11-19 12:20:39",
-          "summary": "Your day-ahead look for Nov. 19, 2026"
+          "title": "Anthropic shares may fall 5% at Friday’s open, crypto futures suggest",
+          "link": "https://www.coindesk.com/markets/2026/11/20/crypto-traders-have-anthropic-trading-below-its-first-nasdaq-close-on-hyperliquid",
+          "pubDate": "2026-11-20 06:08:28",
+          "summary": "About $1.7 billion traded through a Hyperliquid contract on the AI company’s shares in 24 hours, and the biggest position heading into Friday’s Nasdaq open is a $30 million short."
         },
         {
           "source": "CoinDesk",
-          "title": "Bitcoin holds above $63,750 but Fed rate-hike threats loom large",
-          "link": "https://www.coindesk.com/markets/2026/11/19/bitcoin-holds-above-usd63-750-but-fed-rate-hike-threats-loom-large",
-          "pubDate": "2026-11-19 12:08:06",
-          "summary": "Bitcoin ETFs saw more than $300 million in outflows Wednesday, with attention now turning to Anthrophic&#39;s $100 billion IPO."
+          "title": "This Bitcoin miner sold 267 BTC to clear $22 million debt. It still may not survive",
+          "link": "https://www.coindesk.com/markets/2026/11/20/this-bitcoin-miner-sold-267-btc-to-clear-usd22-million-debt-it-still-may-not-survive",
+          "pubDate": "2026-11-20 05:32:25",
+          "summary": "PowerCompute had its lender sell 267 pledged bitcoin in September, wiping out most of its debt, and ended the month with about $650,000 in cash and a going-concern warning."
         },
         {
           "source": "CoinDesk",
-          "title": "North Korean hackers used Sky&#39;s stablecoin system, putting billions at freeze risk",
-          "link": "https://www.coindesk.com/business/2026/11/19/north-korean-hackers-used-sky-s-stablecoin-system-putting-billions-at-freeze-risk",
-          "pubDate": "2026-11-19 11:30:00",
-          "summary": "Blockchain investigation traced $518 million in illicit-linked activity, including the 2025 Bybit hack, through a key reserve backing DAI and USDS tokens, putting Sky&#39;s institutional finance ambitions and open design on "
+          "title": "Big money bought a net $4 billion of bitcoin funds in Q3, ending 9 months of selling",
+          "link": "https://www.coindesk.com/markets/2026/11/20/big-money-bought-a-net-usd4-billion-of-bitcoin-funds-in-q3-ending-9-months-of-selling",
+          "pubDate": "2026-11-20 05:20:51",
+          "summary": "Wall Street piled into Bitcoin funds in the third quarter, ending a three-quarter selling streak, according to Galaxy Research. But the buying has given way to renewed selling this quarter."
         },
         {
           "source": "CoinDesk",
-          "title": "Anthropic’s $107 billion sale set to top SpaceX’s IPO as tokenized stocks gain traction",
-          "link": "https://www.coindesk.com/markets/2026/11/19/anthropic-s-usd107-billion-raise-set-to-surpass-spacex-s-ipo-haul",
-          "pubDate": "2026-11-19 11:06:13",
-          "summary": "The maker of Claude priced its Nasdaq debut at $83 a share for a $1.5 trillion fully diluted valuation, with the Nasdaq 100 down 14% from record highs."
+          "title": "Ethereum’s next big upgrade is pushed into 2027 by apps it would break",
+          "link": "https://www.coindesk.com/tech/2026/11/20/ethereum-s-next-big-upgrade-is-pushed-into-2027-by-apps-it-would-break",
+          "pubDate": "2026-11-20 04:58:08",
+          "summary": "Glamsterdam was originally targeted for December, but developers now say January is the earliest possible date as companies work to fix affected smart contracts."
         },
         {
           "source": "CoinDesk",
-          "title": "Financial firms must act now as quantum computers grow ‘highly advanced,’ IOSCO warns",
-          "link": "https://www.coindesk.com/tech/2026/11/19/banks-and-blockchains-lag-on-quantum-defense-as-encryption-risks-loom-watchdog-warns",
-          "pubDate": "2026-11-19 10:55:29",
-          "summary": "No quantum computer can yet break widely used cryptography, but the securities watchdog says banks and blockchains face a yearslong security overhaul that many have barely begun."
+          "title": "VanEck drops Gemini as custodian of its bitcoin, ether and SOL ETFs",
+          "link": "https://www.coindesk.com/markets/2026/11/20/vaneck-drops-gemini-as-custodian-of-its-bitcoin-ether-and-sol-etfs",
+          "pubDate": "2026-11-20 04:28:52",
+          "summary": "Coinbase Custody will continue serving all three funds after Gemini&#39;s contracts end in February."
         },
         {
           "source": "CoinDesk",
-          "title": "Live updates: Bitcoin nears $64,000 as Anthropic’s record IPO lifts tech",
-          "link": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
-          "pubDate": "2026-11-19 10:48:26",
-          "summary": "The Nasdaq was higher by about 2% early Thursday. One analyst said IPO money could flow back into crypto."
+          "title": "Bitcoin hits four-month low after Anthropic&#39;s IPO as tech stocks wilt",
+          "link": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt",
+          "pubDate": "2026-11-20 03:32:30",
+          "summary": "Bitcoin remains under pressure after Anthropic&#39;s IPO as Nasdaq futures dip below their 200-day average."
         },
         {
           "source": "CoinDesk",
-          "title": "Singapore settles $77.5 million tokenized bill sale in local CBDC",
-          "link": "https://www.coindesk.com/business/2026/11/19/singapore-settles-usd77-5-million-tokenized-bill-sale-in-local-cbdc",
-          "pubDate": "2026-11-19 10:39:36",
-          "summary": "The central bank aims to expand this digital settlement network and test wider collateral use in 2027."
+          "title": "Sky&#39;s USDS stablecoin shrinks 35% as $1.5 billion exits reserves after illicit-finance report",
+          "link": "https://www.coindesk.com/business/2026/11/19/sky-s-usds-stablecoin-shrinks-35-as-usd1-5-billion-exits-reserves-after-illicit-finance-report",
+          "pubDate": "2026-11-19 19:53:42",
+          "summary": "USDS held its $1 peg as a large holder linked to Poloniex withdrew much of decentralized protocol Sky&#39;s USDC liquidity backing its stablecoins."
         },
         {
           "source": "CoinDesk",
-          "title": "Roundhill scraps Solana and XRP income ETFs as rival funds indicate low demand",
-          "link": "https://www.coindesk.com/markets/2026/11/19/roundhill-scraps-solana-and-xrp-income-etfs-as-rival-funds-attract-just-usd12-million",
-          "pubDate": "2026-11-19 10:22:12",
-          "summary": "Roundhill withdrew plans for two funds designed to generate income from SOL and XRP, highlighting the gap between billions invested in spot crypto ETFs and limited demand for more specialized strategies."
+          "title": "Trump&#39;s Democratic SEC pick suggests tokenization policy deserves full rule process",
+          "link": "https://www.coindesk.com/policy/2026/11/19/trump-s-democratic-sec-pick-suggests-tokenization-policy-deserves-full-rule-process",
+          "pubDate": "2026-11-19 18:15:56",
+          "summary": "The U.S. Senate Banking Committee held a confirmation hearing for the two nominees — one from each party — as the administration rebuilds the markets regulators."
         },
         {
           "source": "CoinTelegraph",
-          "title": "Anthropic shares open at $111.50, 34.3% above $83 IPO price",
-          "link": "https://cointelegraph.com/markets/anthropic-shares-expected-to-open-above-83-ipo-price?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 16:07:51",
-          "summary": "    The Claude chatbot maker began trading under the ticker ANT, with the company’s valuation at around $2 trillion at the opening price. "
+          "title": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip",
+          "link": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 11:31:41",
+          "summary": "    OnChain Lens tracked nearly $600 million in ETH transfers over two days as the Binance hackers moved the stolen funds through fresh wallets and cross-chain protocols to obscure their trail. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "VanEck to end Gemini ETF custody deals, keeps Coinbase",
+          "link": "https://cointelegraph.com/news/vaneck-gemini-etf-custody-end-keep-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 10:54:38",
+          "summary": "    VanEck plans to end Gemini’s custody agreements for three crypto ETFs in February 2027, while Coinbase will continue serving as a custodian for the funds. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin nears repeat of chart pattern that preceded 2023’s $25K retest",
+          "link": "https://cointelegraph.com/markets/bitcoin-first-death-cross-repeat-2023-bottom-25k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 10:29:10",
+          "summary": "    Bitcoin’s 21-day moving average fell below its 200-day average, and analyst Keith Alan expects a second bearish crossover by Sunday. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "BlackRock’s IBIT loses record $541M amid Anthropic market debut",
+          "link": "https://cointelegraph.com/markets/blackrock-ibit-record-single-day-outflow?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 08:18:42",
+          "summary": "    BlackRock’s IBIT posted its largest daily outflow on record, taking three-session outflows near $900 million as BTC dipped amid a broader market selloff. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "SEC charges eight firms over fake crypto platforms tied to $37M fraud",
+          "link": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 08:03:34",
+          "summary": "    Fraudsters allegedly used social media ads, chat groups and forged SEC filings to defraud US investors of approximately $37 million.\n "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Anthropic’s $81B IPO draws half the net retail buying of SpaceX’s",
+          "link": "https://cointelegraph.com/markets/anthropic-ipo-spacex-retail-buying-first-day-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 06:24:41",
+          "summary": "    Retail investors traded $772 million in Anthropic shares on Thursday, the most Vanda Research has recorded for a market debut since 2012. "
         },
         {
           "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 13:48:14",
+          "pubDate": "2026-11-20 06:00:00",
           "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Ethereum’s new DeFi security tool raises questions over censorship",
-          "link": "https://cointelegraph.com/magazine/ethereums-new-defi-security-tool-raises-questions-over-censorship?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 13:30:00",
-          "summary": "    Phylax’s system lets decentralized protocols block potentially harmful transactions, but raises questions about potential censorship and Ethereum’s concentrated builder market. "
+          "title": "Institutions pile back into US Bitcoin ETFs in Q3 after selling streak",
+          "link": "https://cointelegraph.com/markets/institutional-bitcoin-etf-holdings-clock-record-quarter-after-selling-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 03:33:22",
+          "summary": "    Asset managers added the equivalent of 49,229 Bitcoin to their US Bitcoin ETF holdings in the third quarter, reversing three quarters of net selling. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "Hong Kong adds Hyperliquid to list of ‘suspicious’ crypto platforms",
-          "link": "https://cointelegraph.com/news/hyperliquid-hong-kong-regulators-alert-list?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 12:44:06",
-          "summary": "    Hong Kong’s securities regulator said Hyperliquid has no local license and may have promoted its trading services to investors in the city. "
+          "title": "Ledger CTO Charles Guillemet to leave after nine years at company",
+          "link": "https://cointelegraph.com/news/ledger-cto-charles-guillemet-to-leave-after-nine-years-at-company?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-19 23:44:02",
+          "summary": "    Guillemet helped establish Ledger’s Donjon security lab and says his departure has been planned for months. "
         },
         {
           "source": "CoinTelegraph",
-          "title": "GTA VI publisher racks up nearly 3x Nvidia’s tokenized stock volume",
-          "link": "https://cointelegraph.com/news/gta-vi-launch-tokenized-ttwo-trade-triple-nvidia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 12:33:46",
-          "summary": "    Tokenized Take-Two shares drew $249.5 million in DEX volume Wednesday, nearly three times the $88.1 million for tokenized Nvidia shares. "
+          "title": "Binance’s $6.5B freeze order, Hong Kong ‘suspicious’ of HYPE: Asia Express",
+          "link": "https://cointelegraph.com/magazine/binances-65b-freeze-order-hong-kong-suspicious-of-hype-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-19 22:25:18",
+          "summary": "    Binance obtains court orders freezing assets stolen in October’s hack. Hong Kong warns citizens about Hyperliquid, and Thai police arrest four foreigners linked to a crypto scam.  "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Sweden’s H100 could tap Bitcoin trading pool to fund share buybacks",
-          "link": "https://cointelegraph.com/news/swedens-h100-13m-q3-loss-share-buyback-approval?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 11:19:58",
-          "summary": "    Shareholders will vote Dec. 7 on whether H100 can buy back up to 10% of its shares, potentially using a Bitcoin pool that lost about 30 BTC in Q3. "
+          "source": "Decrypt",
+          "title": "Coinbase Targets In-House Prediction Markets by First Half of 2027: Report",
+          "link": "https://decrypt.co/383682/coinbase-targets-in-house-prediction-markets-by-first-half-of-2027-report",
+          "pubDate": "2026-11-20 11:23:00",
+          "summary": "The exchange offers event contracts through Kalshi, but running its own would give it more control and a bigger share of trading revenue."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "IOSCO warns quantum upgrades could slow blockchains, leave security gaps",
-          "link": "https://cointelegraph.com/news/iosco-quantum-blockchain-upgrades-security-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 10:32:05",
-          "summary": "    A Solana test network ran about 90% slower with quantum-resistant signatures, and wallets that keep using older keys could remain vulnerable. "
+          "source": "Decrypt",
+          "title": "CryptoUK Urges FCA Not to Treat DeFi Devs as Regulated by Default",
+          "link": "https://decrypt.co/383679/cryptouk-urges-fca-not-to-treat-defi-devs-as-regulated-by-default",
+          "pubDate": "2026-11-20 10:07:46",
+          "summary": "The UK crypto trade group broadly backed the regulator&#39;s proposed perimeter guidance, but warned that parts of it go further than the law."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Singapore settles $77.5M tokenized bill sale with wholesale CBDC",
-          "link": "https://cointelegraph.com/news/mas-issues-77m-tokenized-bills-singapore-dollar-test-network?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 08:54:58",
-          "summary": "    MAS issued the bills directly on its test network, which it plans to rename SG Digital Ledger and use for settlement beyond the trials. "
+          "source": "Decrypt",
+          "title": "Citi Says Customers Are Responsible When AI Banking Agents Go Rogue—Even After a Hack",
+          "link": "https://decrypt.co/383677/citi-customers-responsible-ai-banking-agents-rogue-hack",
+          "pubDate": "2026-11-19 22:36:02",
+          "summary": "Citibank’s updated terms put customers on the hook for outside AI agents, including leaked logins."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin ETF assets fall to three-month low as 2026 net outflows top $2.5B",
-          "link": "https://cointelegraph.com/markets/bitcoin-etf-assets-three-month-low-78-billion?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 08:26:19",
-          "summary": "    US spot Bitcoin ETFs lost $306.4 million Wednesday, pushing their combined assets to $77.7 billion as Bitcoin briefly traded below $63,000. "
+          "source": "Decrypt",
+          "title": "Nvidia, AMD, Micron Sink as Anthropic Closes 17% Above IPO Price",
+          "link": "https://decrypt.co/383669/nvidia-amd-micron-ai-stocks-sink-anthropic-ipo-price",
+          "pubDate": "2026-11-19 21:12:06",
+          "summary": "Anthropic shares opened 34% above their $83 IPO price before giving up much of the gain, while Nvidia, AMD and other AI stocks slid across Wall Street."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "BTCPay Server issues emergency update for 5 security flaws",
-          "link": "https://cointelegraph.com/news/btcpay-server-emergency-update-nginx-security-flaws?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 08:04:37",
-          "summary": "    The EU’s cybersecurity service said the flaws could let attackers to run malicious code remotely on vulnerable servers without logging in. "
+          "source": "Decrypt",
+          "title": "Meet SHRINCS: Bitcoin&#39;s Emerging Frontrunner for a Post-Quantum Signature",
+          "link": "https://decrypt.co/383666/meet-shrincs-bitcoin-emerging-frontrunner-post-quantum-signature",
+          "pubDate": "2026-11-19 20:46:02",
+          "summary": "A new post-quantum signature proposal aims to secure Bitcoin’s future, but balancing user safety and efficiency comes with hurdles."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Hackers Leak Visa, Mastercard and JPMorgan Customer Data",
+          "link": "https://decrypt.co/383663/hackers-leak-visa-mastercard-jpmorgan-data",
+          "pubDate": "2026-11-19 20:15:32",
+          "summary": "A ransomware group breached third-party vendors, not the companies’ own systems. Visa said no card data was affected while Mastercard cited a limited cardholder subset."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Bitcoin Enters Death Cross as Anthropic IPO Fails to Lift Wall Street",
+          "link": "https://decrypt.co/383655/bitcoin-enters-death-cross-anthropic-ipo",
+          "pubDate": "2026-11-19 19:08:24",
+          "summary": "Anthropic shares surged on their Nasdaq debut, but stocks slid and Bitcoin fell lower. Its daily chart shows deeply oversold momentum, a strong downtrend, and fragile support."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Protesters Arrested Outside Nasdaq as Activists Oppose Anthropic IPO Over AI Bubble Risks",
+          "link": "https://decrypt.co/383642/protesters-arrested-nasdaq-anthropic-ipo-ai-bubble-risks",
+          "pubDate": "2026-11-19 17:55:38",
+          "summary": "At least four people were arrested outside Nasdaq during Anthropic’s historic IPO, as protesters warned that AI valuations could leave retirement savers exposed to a potential market crash and broader economic losses."
         },
         {
           "source": "Decrypt",
@@ -5856,62 +5612,6 @@
           "link": "https://decrypt.co/383631/anthropic-stock-indicated-open-33-above-ipo-price",
           "pubDate": "2026-11-19 16:55:10",
           "summary": "The Claude maker&#39;s shares could debut at $110, pushing its valuation toward $2 trillion as enthusiasm for its historic IPO lifts the broader technology sector."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Anthropic Tops SpaceX&#39;s Initial IPO With $81 Billion Deal: Where the Money Went",
-          "link": "https://decrypt.co/383623/anthropic-tops-spacex-initial-ipo-81-billion-deal-where-the-money-went",
-          "pubDate": "2026-11-19 15:54:03",
-          "summary": "The Claude maker beat SpaceX&#39;s original share sale, though not its expanded final IPO. Here&#39;s who got the money and why the computing bill could be even bigger."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Gen Z Embraces Crypto While Most Americans Call It a &#39;Side Quest&#39;",
-          "link": "https://decrypt.co/383589/gen-z-embraces-crypto-most-americans-side-quest",
-          "pubDate": "2026-11-19 14:01:02",
-          "summary": "A SoFi and YouGov survey found that 21% of Gen Z adults own crypto, more than hold employer retirement plans, even as only 13% of all Americans own it and most remain skeptical."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Quantum Upgrade Could Be &#39;Particularly Challenging&#39; for Blockchains: IOSCO",
-          "link": "https://decrypt.co/383613/quantum-upgrade-could-be-particularly-challenging-for-blockchains-iosco",
-          "pubDate": "2026-11-19 13:47:00",
-          "summary": "The global securities watchdog said markets shouldn&#39;t wait for quantum computers to arrive, flagging bulkier signatures and harder upgrades."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Google’s Newest AI Model Tops Benchmarks Ahead of Anthropic IPO",
-          "link": "https://decrypt.co/383609/morning-minute-googles-newest-ai-model-tops-benchmarks-ahead-of-anthropic-ipo",
-          "pubDate": "2026-11-19 13:05:28",
-          "summary": "Anthropic bulls seem to be shrugging off the news, as ANT pops 25% over IPO price on Hyperliquid pre-debut."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Binance Wins $6.5B Freezing Order Over Hack That Can Be Served via the Blockchain",
-          "link": "https://decrypt.co/383608/binance-wins-6-5b-freezing-order-over-hack-that-can-be-served-via-the-blockchain",
-          "pubDate": "2026-11-19 12:59:14",
-          "summary": "An Abu Dhabi court&#39;s worldwide injunction targets the unknown hackers, backed by a &quot;living list&quot; of 26,000 wallets holding stolen funds."
-        },
-        {
-          "source": "Decrypt",
-          "title": "GameStop CEO Says Digital-Only Games Have ‘Hurt Consumers’ as GTA 6 Skips Discs",
-          "link": "https://decrypt.co/383600/gamestop-ceo-says-digital-only-games-have-hurt-consumers-as-gta-6-skips-discs",
-          "pubDate": "2026-11-19 11:15:08",
-          "summary": "Ryan Cohen said publishers are cutting out trade-ins, as he backs a U.S. bill that would guarantee gamers keep access to games they buy."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Struggles to Hold $64,000 as ETF Outflows Hit $2.9B in November",
-          "link": "https://decrypt.co/383597/bitcoin-struggles-to-hold-64000-as-etf-outflows-hit-2-9b-in-november",
-          "pubDate": "2026-11-19 10:25:05",
-          "summary": "Bitcoin is down 13% in a week as investors pull money from spot ETFs and brace for another Federal Reserve rate hike."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Ledger Confirms Tampered Bitcoin Wallets in Berlin as Spy Implant Probe Spreads Beyond Asia",
-          "link": "https://decrypt.co/383586/ledger-confirms-tampered-bitcoin-wallets-berlin-spreads-beyond-asia",
-          "pubDate": "2026-11-18 22:16:02",
-          "summary": "Ledger says its hardware implant investigation has confirmed tampered devices in Berlin and is examining two suspected units in Dubai, as the incident spreads beyond Southeast Asia."
         }
       ],
       "perCoin": {
@@ -5928,16 +5628,6 @@
           "critHead": ""
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.5,
-          "sources": [
-            "CoinTelegraph"
-          ],
-          "multiSourced": false,
-          "critical": true,
-          "critHead": "Ethereum’s new DeFi security tool raises questions over censorship"
-        },
-        "SOL": {
           "sentiment": "BULLISH",
           "impact": 0.17,
           "sources": [
@@ -5946,14 +5636,22 @@
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "IOSCO warns quantum upgrades could slow blockchains, leave security gaps"
+          "critHead": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip"
         },
-        "XRP": {
+        "SOL": {
           "sentiment": "NEUTRAL",
           "impact": 0,
           "sources": [
             "CoinDesk"
           ],
+          "multiSourced": false,
+          "critical": false,
+          "critHead": ""
+        },
+        "XRP": {
+          "sentiment": "NEUTRAL",
+          "impact": 0,
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6026,27 +5724,23 @@
       "breaker": [
         {
           "coin": "ETH",
-          "head": "Ethereum’s new DeFi security tool raises questions over censorship"
-        },
-        {
-          "coin": "SOL",
-          "head": "IOSCO warns quantum upgrades could slow blockchains, leave security gaps"
+          "head": "Binance hacker moves nearly $600M in ETH, routes funds through THORChain, Chainflip"
         }
       ],
       "fearGreed": {
-        "value": 10,
+        "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795109924504
+        "t": 1795175452661
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795109925168,
+      "fetchedAt": 1795175453503,
       "bias": {
         "HYPE": -40,
-        "BTC": -16.35,
-        "ARB": 12.49,
+        "BTC": -20,
+        "ARB": 16.87,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -6063,105 +5757,105 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 943.9,
+          "pct": 1035.31,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 16.35,
+          "pct": 22.07,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 12.49,
+          "pct": 16.87,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 44.63,
+          "pct": 60.26,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 222.68,
+          "pct": 300.66,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 0,
+          "pct": 4.43,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 26.56,
+          "pct": 35.86,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 234.71,
+          "pct": 316.89,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 38.86,
+          "pct": 52.47,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 120.95,
+          "pct": 163.31,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 61.75,
+          "pct": 83.37,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 85.02,
+          "pct": 116.41,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 237.73,
+          "pct": 325.49,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 74.34,
+          "pct": 101.79,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1226.16,
+          "pct": 1312.97,
           "lev": 10
         }
       ]
@@ -10242,23 +9936,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1212,
-        "updatedAt": 1795109925442
+        "updatedAt": 1795175453938
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -47.44,
-      "trades": 309,
-      "winRate": 57.3,
-      "pf": 0.7,
-      "expPerTrade": -0.154,
-      "tStat": -2.68,
-      "deflatedT": -4.83,
+      "netR": -16.57,
+      "trades": 236,
+      "winRate": 60.2,
+      "pf": 0.85,
+      "expPerTrade": -0.07,
+      "tStat": -1.07,
+      "deflatedT": -3.22,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795109925442,
+      "updatedAt": 1795175453936,
       "gen": 19
     },
     "factory": {
@@ -10448,7 +10142,10 @@
           "text": "4 kandidat baru diuji: Breakout Donchian 49 hari (long/short); Trend TSMOM 202 hari (long/flat); Momentum lintas koin 66 hari, 33% teratas vs terbawah (netral pasar); Carry funding > 24%/th (long spot + short perpetual)"
         }
       ],
-      "lastError": null
+      "lastError": {
+        "at": 1795175463375,
+        "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
+      }
     }
   }
 }
