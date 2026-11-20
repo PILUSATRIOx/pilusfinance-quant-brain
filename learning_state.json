@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795191437618,
+  "updatedAt": 1795191462477,
   "brain": {
     "v": 1,
     "gen": 21,
@@ -9377,12 +9377,12 @@
       "gen": 21
     },
     "factory": {
-      "updatedAt": 1795049968680,
-      "day": "2026-11-19",
-      "dataUntil": "2026-11-18",
+      "updatedAt": 1795191421281,
+      "day": "2026-11-20",
+      "dataUntil": "2026-11-19",
       "universe": 20,
-      "nTrials": 55,
-      "hurdleSharpe": 2.52,
+      "nTrials": 59,
+      "hurdleSharpe": 2.6,
       "pbo": 0.171,
       "top": [
         {
@@ -9391,7 +9391,7 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.67,
-          "cagr": 0.0641,
+          "cagr": 0.064,
           "mdd": -0.0311,
           "dsr": 1,
           "years": 6.9,
@@ -9415,7 +9415,7 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.21,
-          "cagr": 0.0538,
+          "cagr": 0.0537,
           "mdd": -0.0087,
           "dsr": 1,
           "years": 6.9,
@@ -9426,7 +9426,7 @@
           "label": "Carry funding > 5%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.03,
+          "sharpe": 4.02,
           "cagr": 0.0571,
           "mdd": -0.076,
           "dsr": 1,
@@ -9439,9 +9439,21 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.02,
-          "cagr": 0.05,
+          "cagr": 0.0499,
           "mdd": -0.0082,
           "dsr": 1,
+          "years": 6.9,
+          "status": "KANDIDAT"
+        },
+        {
+          "id": "CARRY|thr=0.3",
+          "label": "Carry funding > 30%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 3.69,
+          "cagr": 0.0442,
+          "mdd": -0.008,
+          "dsr": 0.9998,
           "years": 6.9,
           "status": "KANDIDAT"
         },
@@ -9451,10 +9463,10 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2946,
+          "cagr": 0.2945,
           "mdd": -0.3307,
           "dsr": 0.0001,
-          "years": 6.81,
+          "years": 6.82,
           "status": "KANDIDAT"
         },
         {
@@ -9462,23 +9474,11 @@
           "label": "Momentum lintas koin 14 hari, 33% teratas (long-only)",
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
-          "sharpe": 1.06,
-          "cagr": 0.7049,
+          "sharpe": 1.05,
+          "cagr": 0.6998,
           "mdd": -0.7746,
-          "dsr": 0.0001,
+          "dsr": 0,
           "years": 6.88,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "MAX|fast=10|mode=LF|slow=50",
-          "label": "Persilangan SMA 10/50 (long/flat)",
-          "family": "MAX",
-          "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
-          "sharpe": 1.01,
-          "cagr": 0.2657,
-          "mdd": -0.299,
-          "dsr": 0.0001,
-          "years": 6.78,
           "status": "KANDIDAT"
         },
         {
@@ -9487,22 +9487,22 @@
           "family": "TSMOM",
           "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
           "sharpe": 1.02,
-          "cagr": 0.2682,
+          "cagr": 0.2681,
           "mdd": -0.3337,
           "dsr": 0,
-          "years": 6.84,
+          "years": 6.85,
           "status": "KANDIDAT"
         },
         {
-          "id": "DONCH|mode=LF|n=20",
-          "label": "Breakout Donchian 20 hari (long/flat)",
-          "family": "DONCH",
+          "id": "MAX|fast=10|mode=LF|slow=50",
+          "label": "Persilangan SMA 10/50 (long/flat)",
+          "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
-          "sharpe": 1,
-          "cagr": 0.2185,
-          "mdd": -0.273,
+          "sharpe": 1.01,
+          "cagr": 0.2656,
+          "mdd": -0.299,
           "dsr": 0,
-          "years": 6.84,
+          "years": 6.79,
           "status": "KANDIDAT"
         }
       ],
@@ -9514,11 +9514,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 2,
+            "days": 3,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.34
+            "z": -0.42
           }
         }
       ],
@@ -9543,6 +9543,11 @@
       },
       "log": [
         {
+          "t": 1795191421281,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Breakout Donchian 88 hari (long/short); Carry funding > 30%/th (long spot + short perpetual); Momentum lintas koin 118 hari, 33% teratas (long-only); Breakout Donchian 104 hari (long/flat)"
+        },
+        {
           "t": 1795049968680,
           "type": "EXPLORE",
           "text": "4 kandidat baru diuji: Harga vs SMA 56 hari (long/flat); Harga vs SMA 64 hari (long/short); Persilangan SMA 53/122 (long/short); Harga vs SMA 137 hari (long/flat)"
@@ -9563,10 +9568,7 @@
           "text": "4 kandidat baru diuji: Breakout Donchian 49 hari (long/short); Trend TSMOM 202 hari (long/flat); Momentum lintas koin 66 hari, 33% teratas vs terbawah (netral pasar); Carry funding > 24%/th (long spot + short perpetual)"
         }
       ],
-      "lastError": {
-        "at": 1795187409159,
-        "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
-      }
+      "lastError": null
     }
   }
 }
