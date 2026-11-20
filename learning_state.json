@@ -1,10 +1,10 @@
 {
   "version": "2.5",
-  "updatedAt": 1795180234499,
+  "updatedAt": 1795180279561,
   "brain": {
     "v": 1,
     "gen": 20,
-    "cycles": 119,
+    "cycles": 120,
     "firstBootAt": 1793623210734,
     "running": false,
     "optCursor": 0,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2647,6 +2647,11 @@
     ],
     "journal": [
       {
+        "t": 1795180253756,
+        "type": "CYCLE",
+        "text": "[CYCLE #120] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795180212348,
         "type": "GEN",
         "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.114R/trade, win 57.9%, t=-1.01) | Meta-model belum aktif (1212 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.28R)"
@@ -4140,11 +4145,6 @@
         "t": 1794887287385,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794863444053,
-        "type": "CYCLE",
-        "text": "[CYCLE #21] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -8828,7 +8828,7 @@
         }
       ],
       "lastError": {
-        "at": 1795179848428,
+        "at": 1795180279532,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
