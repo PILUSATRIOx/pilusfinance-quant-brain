@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795181948179,
+  "updatedAt": 1795181968485,
   "brain": {
     "v": 1,
     "gen": 20,
@@ -8950,7 +8950,7 @@
         }
       ],
       "lastError": {
-        "at": 1795181107060,
+        "at": 1795181968479,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
