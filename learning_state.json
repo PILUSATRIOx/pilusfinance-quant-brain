@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795191462477,
+  "updatedAt": 1795191826948,
   "brain": {
     "v": 1,
     "gen": 21,
-    "cycles": 129,
+    "cycles": 130,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795185526655,
     "autoExecBursa": false,
@@ -192,31 +192,61 @@
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 72,
+          "wins": 40,
+          "losses": 32,
+          "winRate": 55.55555555555556,
+          "pf": 0.7578660051119064,
+          "exp": -0.12068815344724665,
+          "netR": -8.689547048201758,
+          "maxDD": 13.883503030231587,
+          "sumR2": 68.51790595985011,
+          "grossW": 27.197801410315112,
+          "grossL": 35.88734845851687,
+          "sd": 0.9748180080947264,
+          "tStat": -1.0505273107733313,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 23,
@@ -446,31 +476,61 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 79,
+          "wins": 44,
+          "losses": 35,
+          "winRate": 55.69620253164557,
+          "pf": 0.6230063512146925,
+          "exp": -0.18609870281946278,
+          "netR": -14.701797522737559,
+          "maxDD": 21.603372038631097,
+          "sumR2": 68.41475371461156,
+          "grossW": 24.295669861945115,
+          "grossL": 38.99746738468265,
+          "sd": 0.9176249182516544,
+          "tStat": -1.8025681501992492,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 15,
@@ -700,31 +760,61 @@
       },
       "bbrev": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 46,
+          "wins": 30,
+          "losses": 16,
+          "winRate": 65.21739130434783,
+          "pf": 0.8229709882749574,
+          "exp": -0.06870628590327303,
+          "netR": -3.1604891515505598,
+          "maxDD": 8.095334462728532,
+          "sumR2": 31.657030144557226,
+          "grossW": 14.692455519797228,
+          "grossL": 17.852944671347792,
+          "sd": 0.8358612946245807,
+          "tStat": -0.5574952517932298,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 18,
@@ -954,31 +1044,61 @@
       },
       "wyckoff": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 39,
+          "wins": 26,
+          "losses": 13,
+          "winRate": 66.66666666666666,
+          "pf": 1.0330921416723595,
+          "exp": 0.012432352228755193,
+          "netR": 0.4848617369214525,
+          "maxDD": 4.5944493106283595,
+          "sumR2": 30.590773542750657,
+          "grossW": 15.136731105848774,
+          "grossL": 14.651869368927326,
+          "sd": 0.8971408615980079,
+          "tStat": 0.08654161025021853,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 9,
@@ -1208,31 +1328,61 @@
       },
       "rsidiv": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 18,
+          "wins": 10,
+          "losses": 8,
+          "winRate": 55.55555555555556,
+          "pf": 0.5078057080812101,
+          "exp": -0.2425076937783604,
+          "netR": -4.365138488010487,
+          "maxDD": 5.56956453006782,
+          "sumR2": 13.361064164045045,
+          "grossW": 4.50359192938882,
+          "grossL": 8.868730417399306,
+          "sd": 0.8506912240087802,
+          "tStat": -1.2094552988510867,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 5,
@@ -1462,31 +1612,61 @@
       },
       "macdm": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 37,
+          "wins": 19,
+          "losses": 18,
+          "winRate": 51.35135135135135,
+          "pf": 0.62968350842189,
+          "exp": -0.20143194275655754,
+          "netR": -7.4529818819926295,
+          "maxDD": 9.188961496700545,
+          "sumR2": 36.2228737879183,
+          "grossW": 12.67299698065975,
+          "grossL": 20.125978862652378,
+          "sd": 0.9820840251461161,
+          "tStat": -1.24761491118081,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 9,
@@ -1716,31 +1896,61 @@
       },
       "smc": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 28,
+          "wins": 20,
+          "losses": 8,
+          "winRate": 71.42857142857143,
+          "pf": 1.6267687264497634,
+          "exp": 0.20525982029620912,
+          "netR": 5.747274968293856,
+          "maxDD": 2.4731477524226233,
+          "sumR2": 26.80054257168127,
+          "grossW": 14.916965040177969,
+          "grossL": 9.16969007188412,
+          "sd": 0.9741255897526646,
+          "tStat": 1.1149823890684667,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 4,
@@ -1970,31 +2180,61 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 101,
+          "wins": 52,
+          "losses": 49,
+          "winRate": 51.48514851485149,
+          "pf": 0.5916802642614389,
+          "exp": -0.220519644404206,
+          "netR": -22.272484084824804,
+          "maxDD": 22.272484084824804,
+          "sumR2": 91.82517260478431,
+          "grossW": 32.27419131537047,
+          "grossL": 54.546675400195284,
+          "sd": 0.9322749183282816,
+          "tStat": -2.3771904131563146,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 30,
@@ -2224,31 +2464,61 @@
       },
       "tsmom": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 0,
@@ -2478,31 +2748,61 @@
       },
       "emax": {
         "SUIUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 32,
+          "wins": 16,
+          "losses": 16,
+          "winRate": 50,
+          "pf": 0.6270215914427981,
+          "exp": -0.21177239462815425,
+          "netR": -6.776716628100936,
+          "maxDD": 9.838368410115772,
+          "sumR2": 32.92416021930492,
+          "grossW": 11.392476206185139,
+          "grossL": 18.169192834286076,
+          "sd": 1.0078568560557428,
+          "tStat": -1.1886267015791323,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "EURUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "GBPUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "UNKNOWN",
+          "dataStatus": "LIVE"
         },
         "NVDA": {
           "trades": 3,
@@ -3249,6 +3549,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795191826933,
+        "type": "CYCLE",
+        "text": "[CYCLE #130] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
       {
         "t": 1795191421219,
         "type": "CYCLE",
@@ -4743,11 +5048,6 @@
         "t": 1794948474914,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794947587512,
-        "type": "CYCLE",
-        "text": "[CYCLE #8] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -4796,7 +5096,7 @@
       "tp1Hits": 7,
       "newsIngested": 3300,
       "lessons": 1,
-      "backtests": 3170,
+      "backtests": 3200,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5381,258 +5681,268 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.643,
-            1.001,
+            0.623,
+            1.006,
             10
           ],
           [
-            0.579,
+            0.561,
             -1.082,
             35
           ],
           [
-            0.63,
-            -1.075,
+            0.607,
+            -1.076,
             35
           ],
           [
-            0.551,
-            -1.072,
+            0.562,
+            -1.073,
             56
           ],
           [
-            0.64,
+            0.62,
             0.333,
             10
           ],
           [
-            0.567,
-            -1.087,
+            0.579,
+            -1.088,
             56
           ],
           [
-            0.519,
+            0.515,
             0.452,
             61
           ],
           [
-            0.575,
-            0.317,
-            35
-          ],
-          [
-            0.604,
-            0.315,
-            35
-          ],
-          [
-            0.585,
-            -1.077,
-            94
-          ],
-          [
-            0.592,
-            0.286,
-            2
-          ],
-          [
-            0.604,
-            -1.128,
-            35
-          ],
-          [
-            0.648,
-            -1.12,
-            10
-          ],
-          [
-            0.55,
-            -1.125,
-            69
-          ],
-          [
-            0.613,
-            0.58,
-            35
-          ],
-          [
-            0.592,
-            -1.132,
-            35
-          ],
-          [
-            0.605,
-            -1.119,
-            10
-          ],
-          [
-            0.61,
-            0.303,
-            10
-          ],
-          [
-            0.547,
-            0.399,
-            61
-          ],
-          [
-            0.618,
-            0.504,
-            34
-          ],
-          [
-            0.541,
-            0.996,
-            94
-          ],
-          [
-            0.634,
-            1.516,
-            10
-          ],
-          [
-            0.58,
-            -1.106,
-            27
-          ],
-          [
-            0.586,
-            1.51,
-            35
-          ],
-          [
-            0.615,
+            0.557,
             0.316,
-            10
-          ],
-          [
-            0.659,
-            0.275,
-            2
-          ],
-          [
-            0.612,
-            -1.127,
-            16
-          ],
-          [
-            0.512,
-            -1.157,
-            61
-          ],
-          [
-            0.639,
-            0.258,
-            10
-          ],
-          [
-            0.61,
-            -1.164,
-            10
-          ],
-          [
-            0.568,
-            0.447,
-            10
-          ],
-          [
-            0.528,
-            0.162,
-            90
-          ],
-          [
-            0.577,
-            -1.194,
             35
           ],
           [
-            0.621,
-            -1.153,
-            41
+            0.553,
+            -1.077,
+            46
           ],
           [
-            0.635,
-            0.844,
+            0.572,
+            0.54,
             10
           ],
           [
-            0.633,
-            0.92,
-            15
+            0.588,
+            -1.078,
+            94
           ],
           [
-            0.577,
-            0.171,
-            69
+            0.57,
+            0.285,
+            2
           ],
           [
             0.599,
-            0.183,
+            -1.129,
+            35
+          ],
+          [
+            0.639,
+            -1.121,
             10
           ],
           [
-            0.576,
-            -1.143,
-            56
+            0.56,
+            -1.126,
+            69
           ],
           [
-            0.547,
-            -1.127,
-            61
-          ],
-          [
-            0.582,
-            0.736,
-            2
-          ],
-          [
-            0.579,
-            -1.132,
-            41
-          ],
-          [
-            0.609,
-            0.617,
-            10
-          ],
-          [
-            0.644,
-            -1.127,
+            0.606,
+            0.581,
             35
           ],
           [
             0.583,
-            -1.118,
-            69
+            -1.133,
+            35
           ],
           [
-            0.611,
-            0.509,
-            41
-          ],
-          [
-            0.528,
-            1.541,
-            90
-          ],
-          [
-            0.584,
-            -1.109,
-            46
-          ],
-          [
-            0.515,
-            -1.112,
-            73
-          ],
-          [
-            0.608,
-            0.273,
+            0.593,
+            -1.12,
             10
           ],
           [
-            0.608,
-            0.279,
+            0.597,
+            0.302,
+            10
+          ],
+          [
+            0.544,
+            0.399,
+            61
+          ],
+          [
+            0.609,
+            0.505,
+            34
+          ],
+          [
+            0.536,
+            1.001,
+            94
+          ],
+          [
+            0.619,
+            1.515,
+            10
+          ],
+          [
+            0.559,
+            -1.107,
+            27
+          ],
+          [
+            0.567,
+            1.509,
+            35
+          ],
+          [
+            0.603,
+            0.316,
+            10
+          ],
+          [
+            0.644,
+            0.274,
+            2
+          ],
+          [
+            0.599,
+            -1.128,
+            16
+          ],
+          [
+            0.512,
+            -1.158,
+            61
+          ],
+          [
+            0.627,
+            0.257,
+            10
+          ],
+          [
+            0.59,
+            -1.166,
+            10
+          ],
+          [
+            0.547,
+            0.447,
+            10
+          ],
+          [
+            0.52,
+            0.16,
+            90
+          ],
+          [
+            0.567,
+            -1.195,
+            35
+          ],
+          [
+            0.609,
+            -1.155,
+            41
+          ],
+          [
+            0.626,
+            0.848,
+            10
+          ],
+          [
+            0.621,
+            0.924,
+            15
+          ],
+          [
+            0.576,
+            0.169,
+            69
+          ],
+          [
+            0.588,
+            0.181,
+            10
+          ],
+          [
+            0.573,
+            -1.144,
+            56
+          ],
+          [
+            0.543,
+            -1.128,
+            61
+          ],
+          [
+            0.559,
+            0.739,
+            2
+          ],
+          [
+            0.57,
+            -1.133,
+            41
+          ],
+          [
+            0.597,
+            0.619,
+            10
+          ],
+          [
+            0.633,
+            -1.128,
+            35
+          ],
+          [
+            0.582,
+            -1.119,
+            69
+          ],
+          [
+            0.599,
+            0.51,
+            41
+          ],
+          [
+            0.517,
+            1.54,
+            90
+          ],
+          [
+            0.576,
+            -1.11,
+            46
+          ],
+          [
+            0.506,
+            -1.113,
+            73
+          ],
+          [
+            0.597,
+            0.272,
+            10
+          ],
+          [
+            0.597,
+            0.278,
+            35
+          ],
+          [
+            0.624,
+            -1.119,
             35
           ]
         ],
@@ -9321,12 +9631,12 @@
       },
       "status": {
         "all": {
-          "n": 781,
-          "mean": -0.282,
+          "n": 783,
+          "mean": -0.284,
           "sd": 0.941,
-          "t": -8.38,
-          "winRate": 52.6,
-          "sum": -220.52
+          "t": -8.45,
+          "winRate": 52.5,
+          "sum": -222.51
         },
         "base": {
           "n": 78,
@@ -9357,23 +9667,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1218,
-        "updatedAt": 1795191417702
+        "updatedAt": 1795191823519
       }
     },
     "champion": {
-      "id": "wyckoff",
-      "name": "Wyckoff Spring & Upthrust",
-      "book": "Richard D. Wyckoff",
-      "netR": -15.5,
-      "trades": 223,
-      "winRate": 61.4,
-      "pf": 0.85,
-      "expPerTrade": -0.07,
-      "tStat": -1.05,
-      "deflatedT": -3.19,
+      "id": "smc",
+      "name": "SMC Liquidity Sweep (SFP)",
+      "book": "Wyckoff / Citadel Microstructure",
+      "netR": -7.44,
+      "trades": 148,
+      "winRate": 59.5,
+      "pf": 0.89,
+      "expPerTrade": -0.05,
+      "tStat": -0.6,
+      "deflatedT": -2.75,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795191417701,
+      "updatedAt": 1795191823518,
       "gen": 21
     },
     "factory": {
