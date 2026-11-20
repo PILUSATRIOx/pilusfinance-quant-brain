@@ -3,13 +3,13 @@
     "elder": 0.42,
     "donchian": 0.47,
     "bbrev": 0.85,
-    "wyckoff": 0.85,
+    "wyckoff": 0.868,
     "rsidiv": 0.43,
     "macdm": 0.42,
-    "smc": 0.47,
-    "statarb": 0.55,
+    "smc": 0.48,
+    "statarb": 0.561,
     "tsmom": 1,
     "emax": 0.67
   },
-  "updatedAt": 1795187346676
+  "updatedAt": 1795191462477
 }
