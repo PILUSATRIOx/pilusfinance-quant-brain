@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795187409172,
+  "updatedAt": 1795191437618,
   "brain": {
     "v": 1,
     "gen": 21,
-    "cycles": 128,
+    "cycles": 129,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795185526655,
     "autoExecBursa": false,
@@ -28,21 +28,21 @@
       "maxDrawdownR": 10
     },
     "learned": {
-      "atrMult": 1.859,
-      "rsiLongMax": 61.266,
+      "atrMult": 1.856,
+      "rsiLongMax": 61.303,
       "rsiShortMin": 38,
       "tp1Ratio": 0.8,
-      "volConfirmMult": 1.188
+      "volConfirmMult": 1.186
     },
     "weights": {
       "elder": 0.42,
       "donchian": 0.47,
       "bbrev": 0.85,
-      "wyckoff": 0.85,
+      "wyckoff": 0.868,
       "rsidiv": 0.43,
       "macdm": 0.42,
-      "smc": 0.47,
-      "statarb": 0.55,
+      "smc": 0.48,
+      "statarb": 0.561,
       "tsmom": 1,
       "emax": 0.67
     },
@@ -99,7 +99,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 7,
+          "alpha": 8,
           "beta": 2
         }
       },
@@ -141,7 +141,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 2,
+          "alpha": 3,
           "beta": 2
         }
       },
@@ -155,7 +155,7 @@
           "beta": 2
         },
         "RANGING": {
-          "alpha": 6,
+          "alpha": 7,
           "beta": 2
         }
       },
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -387,31 +387,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 81,
+          "wins": 48,
+          "losses": 33,
+          "winRate": 59.25925925925925,
+          "pf": 0.7422606037088997,
+          "exp": -0.11861329717976786,
+          "netR": -9.607677071561197,
+          "maxDD": 17.01047954753014,
+          "sumR2": 67.18671627852869,
+          "grossW": 27.669034249318642,
+          "grossL": 37.27671132087983,
+          "sd": 0.9086192686078172,
+          "tStat": -1.1748811757575426,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 83,
+          "wins": 39,
+          "losses": 44,
+          "winRate": 46.98795180722892,
+          "pf": 0.5293749247135465,
+          "exp": -0.28254054533982714,
+          "netR": -23.450865263205653,
+          "maxDD": 28.36018187141347,
+          "sumR2": 84.73696510887169,
+          "grossW": 26.378322543950407,
+          "grossL": 49.82918780715606,
+          "sd": 0.9759994555221064,
+          "tStat": -2.637365069385944,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 84,
+          "wins": 45,
+          "losses": 39,
+          "winRate": 53.57142857142857,
+          "pf": 0.6069725832258073,
+          "exp": -0.20988990009040426,
+          "netR": -17.630751607593957,
+          "maxDD": 23.383651657455964,
+          "sumR2": 78.99241408534398,
+          "grossW": 27.228082293358586,
+          "grossL": 44.85883390095255,
+          "sd": 0.9524344039766738,
+          "tStat": -2.019742988609119,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "donchian": {
@@ -611,31 +641,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 65,
+          "wins": 34,
+          "losses": 31,
+          "winRate": 52.307692307692314,
+          "pf": 0.5376569799312313,
+          "exp": -0.2502351029126909,
+          "netR": -16.265281689324908,
+          "maxDD": 18.453211350643098,
+          "sumR2": 58.75887726130118,
+          "grossW": 18.914835633319242,
+          "grossL": 35.180117322644136,
+          "sd": 0.9243978853139777,
+          "tStat": -2.1824583649592446,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 76,
+          "wins": 39,
+          "losses": 37,
+          "winRate": 51.31578947368421,
+          "pf": 0.46807494497029317,
+          "exp": -0.29134896492868745,
+          "netR": -22.142521334580245,
+          "maxDD": 26.900877916465493,
+          "sumR2": 65.33437661378288,
+          "grossW": 19.484623552106157,
+          "grossL": 41.6271448866864,
+          "sd": 0.8860637745447864,
+          "tStat": -2.8665220990030083,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 65,
+          "wins": 35,
+          "losses": 30,
+          "winRate": 53.84615384615385,
+          "pf": 0.5542568786521961,
+          "exp": -0.23486708201701348,
+          "netR": -15.266360331105876,
+          "maxDD": 19.812218900616752,
+          "sumR2": 58.33524744937634,
+          "grossW": 18.982873364177223,
+          "grossL": 34.24923369528309,
+          "sd": 0.9249128501630337,
+          "tStat": -2.047283645673386,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "bbrev": {
@@ -835,31 +895,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 48,
+          "wins": 26,
+          "losses": 22,
+          "winRate": 54.166666666666664,
+          "pf": 0.7127492708729999,
+          "exp": -0.1490671827185834,
+          "netR": -7.155224770492004,
+          "maxDD": 7.434009743034099,
+          "sumR2": 46.744492928432244,
+          "grossW": 17.754110680936947,
+          "grossL": 24.909335451428944,
+          "sd": 0.985834604078953,
+          "tStat": -1.0476075120165365,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 46,
+          "wins": 26,
+          "losses": 20,
+          "winRate": 56.52173913043478,
+          "pf": 0.7446067216313356,
+          "exp": -0.12426149220415499,
+          "netR": -5.716028641391129,
+          "maxDD": 10.118578209005474,
+          "sumR2": 41.32090773824176,
+          "grossW": 16.66525201682552,
+          "grossL": 22.38128065821665,
+          "sd": 0.9499780756508811,
+          "tStat": -0.8871598891865916,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 46,
+          "wins": 27,
+          "losses": 19,
+          "winRate": 58.69565217391305,
+          "pf": 0.7450375240710512,
+          "exp": -0.12034891699421972,
+          "netR": -5.536050181734107,
+          "maxDD": 6.814953285868037,
+          "sumR2": 41.593352343536964,
+          "grossW": 16.17714569763462,
+          "grossL": 21.71319587936872,
+          "sd": 0.953672372110856,
+          "tStat": -0.855897782128126,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "wyckoff": {
@@ -1059,31 +1149,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 53,
+          "wins": 37,
+          "losses": 16,
+          "winRate": 69.81132075471697,
+          "pf": 1.4618267082689091,
+          "exp": 0.15759320557078188,
+          "netR": 8.35243989525144,
+          "maxDD": 5.209439725425698,
+          "sumR2": 48.223760999343604,
+          "grossW": 26.438097882766627,
+          "grossL": 18.085657987515184,
+          "sd": 0.9497719688057279,
+          "tStat": 1.2079697991107397,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 48,
+          "wins": 27,
+          "losses": 21,
+          "winRate": 56.25,
+          "pf": 0.7195977205699245,
+          "exp": -0.13953749609565919,
+          "netR": -6.697799812591641,
+          "maxDD": 7.504261840483703,
+          "sumR2": 44.974240005567104,
+          "grossW": 17.18859592643404,
+          "grossL": 23.886395739025684,
+          "sd": 0.9679947005126618,
+          "tStat": -0.9987080824745246,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 49,
+          "wins": 29,
+          "losses": 20,
+          "winRate": 59.183673469387756,
+          "pf": 0.7484833188322328,
+          "exp": -0.11864874040040492,
+          "netR": -5.813788279619841,
+          "maxDD": 7.46964892297418,
+          "sumR2": 43.96386862839899,
+          "grossW": 17.301132975809413,
+          "grossL": 23.11492125542926,
+          "sd": 0.949496247711423,
+          "tStat": -0.874717709316591,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "rsidiv": {
@@ -1283,31 +1403,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 16,
+          "wins": 9,
+          "losses": 7,
+          "winRate": 56.25,
+          "pf": 1.14922768368748,
+          "exp": 0.0723634583181267,
+          "netR": 1.1578153330900272,
+          "maxDD": 4.452769442084334,
+          "sumR2": 20.89250232032089,
+          "grossW": 8.916532110566662,
+          "grossL": 7.758716777476635,
+          "sd": 1.1778148920416072,
+          "tStat": 0.2457549443705638,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 24,
+          "wins": 12,
+          "losses": 12,
+          "winRate": 50,
+          "pf": 0.8183470480002966,
+          "exp": -0.10496344835622547,
+          "netR": -2.5191227605494113,
+          "maxDD": 7.283559477851085,
+          "sumR2": 30.874277712526496,
+          "grossW": 11.348654959647078,
+          "grossL": 13.867777720196488,
+          "sd": 1.153630599846426,
+          "tStat": -0.4457352122073613,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 22,
+          "wins": 11,
+          "losses": 11,
+          "winRate": 50,
+          "pf": 0.728397485810307,
+          "exp": -0.1552715251680208,
+          "netR": -3.415973553696458,
+          "maxDD": 7.2017189228922405,
+          "sumR2": 25.253506349986264,
+          "grossW": 9.161132235945345,
+          "grossL": 12.577105789641802,
+          "sd": 1.0850302371553697,
+          "tStat": -0.6712144821044455,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "macdm": {
@@ -1507,31 +1657,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 42,
+          "wins": 23,
+          "losses": 19,
+          "winRate": 54.761904761904766,
+          "pf": 0.6260181433806882,
+          "exp": -0.19128742674978388,
+          "netR": -8.034071923490924,
+          "maxDD": 11.95703078207909,
+          "sumR2": 37.915213858680225,
+          "grossW": 13.44844596151189,
+          "grossL": 21.482517885002814,
+          "sd": 0.941954337276999,
+          "tStat": -1.3160767593201124,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 44,
+          "wins": 25,
+          "losses": 19,
+          "winRate": 56.81818181818182,
+          "pf": 0.6105449631209523,
+          "exp": -0.19138263601612102,
+          "netR": -8.420835984709324,
+          "maxDD": 11.807074966502004,
+          "sumR2": 36.74962425477953,
+          "grossW": 13.201264610498953,
+          "grossL": 21.62210059520827,
+          "sd": 0.9039708585877998,
+          "tStat": -1.4043470296072171,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 33,
+          "wins": 18,
+          "losses": 15,
+          "winRate": 54.54545454545454,
+          "pf": 0.4509633587682639,
+          "exp": -0.2827691994718983,
+          "netR": -9.331383582572645,
+          "maxDD": 9.835470614856526,
+          "sumR2": 25.404721955114717,
+          "grossW": 7.664537785513381,
+          "grossL": 16.995921368086027,
+          "sd": 0.8434692882951014,
+          "tStat": -1.925838205871238,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "smc": {
@@ -1731,31 +1911,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 35,
+          "wins": 20,
+          "losses": 15,
+          "winRate": 57.14285714285714,
+          "pf": 0.7964046752661027,
+          "exp": -0.0980822945830057,
+          "netR": -3.4328803104051993,
+          "maxDD": 10.515620391272153,
+          "sumR2": 32.06505627044815,
+          "grossW": 13.428412132788354,
+          "grossL": 16.861292443193555,
+          "sd": 0.9660159463513741,
+          "tStat": -0.6006760884788531,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 28,
+          "wins": 20,
+          "losses": 8,
+          "winRate": 71.42857142857143,
+          "pf": 1.70951971857998,
+          "exp": 0.23359530264788506,
+          "netR": 6.540668474140782,
+          "maxDD": 3.4722267389100887,
+          "sumR2": 29.23559662084826,
+          "grossW": 15.759113434671495,
+          "grossL": 9.21844496053071,
+          "sd": 1.0130212821630422,
+          "tStat": 1.2201818246493683,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 30,
+          "wins": 15,
+          "losses": 15,
+          "winRate": 50,
+          "pf": 0.5421856972696628,
+          "exp": -0.2661510490467363,
+          "netR": -7.984531471402089,
+          "maxDD": 8.477156027162755,
+          "sumR2": 29.66222994615114,
+          "grossW": 9.456014670960691,
+          "grossL": 17.440546142362777,
+          "sd": 0.9744518975564708,
+          "tStat": -1.4959890132300075,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "statarb": {
@@ -1955,31 +2165,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 92,
+          "wins": 48,
+          "losses": 44,
+          "winRate": 52.17391304347826,
+          "pf": 0.5750853654155811,
+          "exp": -0.22956324957276927,
+          "netR": -21.119818960694772,
+          "maxDD": 21.119818960694772,
+          "sumR2": 82.04715876928493,
+          "grossW": 28.58385618184456,
+          "grossL": 49.703675142539325,
+          "sd": 0.9210530553395507,
+          "tStat": -2.3906259525719125,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 93,
+          "wins": 54,
+          "losses": 39,
+          "winRate": 58.06451612903226,
+          "pf": 0.8488400741014799,
+          "exp": -0.07089893891316054,
+          "netR": -6.59360131892393,
+          "maxDD": 14.786854584347655,
+          "sumR2": 87.98669870567069,
+          "grossW": 37.0264340821948,
+          "grossL": 43.62003540111873,
+          "sd": 0.9753439714795749,
+          "tStat": -0.7010086966204331,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 95,
+          "wins": 54,
+          "losses": 41,
+          "winRate": 56.84210526315789,
+          "pf": 0.9148988390967153,
+          "exp": -0.04188810999592366,
+          "netR": -3.9793704496127478,
+          "maxDD": 7.730864265418288,
+          "sumR2": 103.3295666079968,
+          "grossW": 42.781101527205635,
+          "grossL": 46.760471976818394,
+          "sd": 1.047605569254412,
+          "tStat": -0.38972186250744784,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "tsmom": {
@@ -2179,31 +2419,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       },
       "emax": {
@@ -2403,31 +2673,61 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 24,
+          "wins": 13,
+          "losses": 11,
+          "winRate": 54.166666666666664,
+          "pf": 0.7208751440731913,
+          "exp": -0.14351704283470432,
+          "netR": -3.444409028032904,
+          "maxDD": 5.616236466033604,
+          "sumR2": 23.131810426476296,
+          "grossW": 8.89562072888737,
+          "grossL": 12.340029756920272,
+          "sd": 0.9920878079226099,
+          "tStat": -0.7086943746931021,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 29,
+          "wins": 18,
+          "losses": 11,
+          "winRate": 62.06896551724138,
+          "pf": 0.6591974436052546,
+          "exp": -0.1449064344122657,
+          "netR": -4.202286597955705,
+          "maxDD": 6.900772943027558,
+          "sumR2": 19.100347055692783,
+          "grossW": 8.128274071572463,
+          "grossL": 12.330560669528166,
+          "sd": 0.8126545718552909,
+          "tStat": -0.9602419748193248,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 28,
+          "wins": 13,
+          "losses": 15,
+          "winRate": 46.42857142857143,
+          "pf": 0.34820134197307845,
+          "exp": -0.402024308506904,
+          "netR": -11.256680638193313,
+          "maxDD": 13.221134805618924,
+          "sumR2": 24.418406107842436,
+          "grossW": 6.013500114048084,
+          "grossL": 17.270180752241398,
+          "sd": 0.8583564583333559,
+          "tStat": -2.4783557716271987,
+          "atrMult": 1.856,
+          "window": "OOS_40",
+          "regime": "TREND_DOWN",
+          "dataStatus": "LIVE"
         }
       }
     },
@@ -2437,7 +2737,7 @@
         "sym": "SOLUSDT",
         "side": "SHORT",
         "entry": 73.51,
-        "sl": 75.06896655616583,
+        "sl": 73.51,
         "slInit": 75.06896655616583,
         "risk": 1.5589665561658248,
         "rsiAtEntry": 43,
@@ -2494,14 +2794,17 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "OPEN",
+        "status": "WIN",
         "createdAt": 1795104525130,
-        "tp1Hit": false,
-        "beActive": false,
-        "lockedR": 0,
-        "mfe": 0.57089101525622,
-        "mae": -0.5452329920986331,
-        "lastBarT": 1795109700000
+        "tp1Hit": true,
+        "beActive": true,
+        "lockedR": 0.3999999999999981,
+        "mfe": 0.9301033394623821,
+        "mae": -0.737668165780503,
+        "lastBarT": 1795137000000,
+        "closedAt": 1795191412606,
+        "netR": 0.26,
+        "closeReason": "Trail/BE exit di 73.5100"
       },
       {
         "id": "sig_TSLA_1795102731020",
@@ -2946,6 +3249,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795191421219,
+        "type": "CYCLE",
+        "text": "[CYCLE #129] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795191414356,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795191412606,
+        "type": "WIN",
+        "text": "[WIN] SOLUSDT SHORT +0.26R — Trail/BE exit di 73.5100 (MFE 0.93R)"
+      },
+      {
+        "t": 1795191412606,
+        "type": "TP1",
+        "text": "[TP1 LOCKED] TP1 SOLUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
+      },
       {
         "t": 1795187370538,
         "type": "CYCLE",
@@ -4425,26 +4748,6 @@
         "t": 1794947587512,
         "type": "CYCLE",
         "text": "[CYCLE #8] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794947582618,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794946676522,
-        "type": "CYCLE",
-        "text": "[CYCLE #7] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794946624739,
-        "type": "CYCLE",
-        "text": "[CYCLE #6] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794946622769,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (14 trade OOS, +0.322R/trade, win 71.4%, t=1.22) | Meta-model belum aktif (211 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.248R)"
       }
     ],
     "accuracyHistory": [
@@ -4477,20 +4780,25 @@
         "t": 1795109922813,
         "acc": 100,
         "eq": 1.96
+      },
+      {
+        "t": 1795191412606,
+        "acc": 100,
+        "eq": 2.22
       }
     ],
-    "equityR": 1.96,
+    "equityR": 2.22,
     "stats": {
-      "closed": 6,
-      "wins": 6,
+      "closed": 7,
+      "wins": 7,
       "losses": 0,
       "be": 0,
-      "tp1Hits": 6,
-      "newsIngested": 3270,
+      "tp1Hits": 7,
+      "newsIngested": 3300,
       "lessons": 1,
-      "backtests": 3140,
-      "netR": 1.96,
-      "peakEquity": 1.96,
+      "backtests": 3170,
+      "netR": 2.22,
+      "peakEquity": 2.22,
       "maxDrawdown": 0,
       "consecutiveLosses": 0,
       "defensiveMode": false,
@@ -4501,7 +4809,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795187323410,
+      "fetchedAt": 1795191414356,
       "items": [
         {
           "source": "CoinDesk",
@@ -4575,6 +4883,27 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "US Senate advances prediction market restrictions with DEATH BETS Act",
+          "link": "https://cointelegraph.com/news/us-senate-advances-prediction-market-restrictions-with-death-bets-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 15:55:22",
+          "summary": "    The Senate-approved bill would ban prediction market contracts tied to war, assassination and death amid concerns over potential insider trading on military events. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin price drops to $60K as Anthropic drops to $87 in tech sell-off",
+          "link": "https://cointelegraph.com/markets/bitcoin-hits-new-20-week-low-anthropic-drops-87-tech-sell-off?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 15:52:06",
+          "summary": "    Bitcoin price strength felt pressure from falling US equities as traders reassessed AI prospects after Anthropic’s IPO. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "DBS bets it can lose the deposit and keep the client",
+          "link": "https://cointelegraph.com/news/dbs-bets-it-can-lose-the-deposit-and-keep-the-client?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-20 15:32:30",
+          "summary": "    The Singapore bank earned a record $208 million in transaction services fees in the third quarter — now it’s helping companies turn deposits into stablecoins they can spend without it. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 13:29:58",
@@ -4617,31 +4946,17 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "SEC charges eight firms over fake crypto platforms tied to $37M fraud",
+          "title": "SEC charges 8 firms over fake crypto platforms tied to $37M fraud",
           "link": "https://cointelegraph.com/news/sec-charges-eight-fake-crypto-platforms-37m-fraud?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 08:03:34",
           "summary": "    Fraudsters allegedly used social media ads, chat groups and forged SEC filings to defraud US investors of approximately $37 million.\n "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Anthropic’s $81B IPO draws half the net retail buying of SpaceX’s",
-          "link": "https://cointelegraph.com/markets/anthropic-ipo-spacex-retail-buying-first-day-gains?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 06:24:41",
-          "summary": "    Retail investors traded $772 million in Anthropic shares on Thursday, the most Vanda Research has recorded for a market debut since 2012. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Institutions pile back into US Bitcoin ETFs in Q3 after selling streak",
-          "link": "https://cointelegraph.com/markets/institutional-bitcoin-etf-holdings-clock-record-quarter-after-selling-streak?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 03:33:22",
-          "summary": "    Asset managers added the equivalent of 49,229 Bitcoin to their US Bitcoin ETF holdings in the third quarter, reversing three quarters of net selling. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Ledger CTO Charles Guillemet to leave after nine years at company",
-          "link": "https://cointelegraph.com/news/ledger-cto-charles-guillemet-to-leave-after-nine-years-at-company?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-19 23:44:02",
-          "summary": "    Guillemet helped establish Ledger’s Donjon security lab and says his departure has been planned for months. "
+          "source": "Decrypt",
+          "title": "Senate Passes Bill Banning Prediction Market Bets on War, Terrorism and Death",
+          "link": "https://decrypt.co/383700/senate-passes-bill-banning-prediction-market-bets-on-war-terrorism-and-death",
+          "pubDate": "2026-11-20 15:42:51",
+          "summary": "Sen. Adam Schiff&#39;s DEATH BETS Act would bar U.S.-regulated exchanges from listing contracts tied to war, assassinations or deaths."
         },
         {
           "source": "Decrypt",
@@ -4705,13 +5020,6 @@
           "link": "https://decrypt.co/383663/hackers-leak-visa-mastercard-jpmorgan-data",
           "pubDate": "2026-11-19 20:15:32",
           "summary": "A ransomware group breached third-party vendors, not the companies’ own systems. Visa said no card data was affected while Mastercard cited a limited cardholder subset."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Enters Death Cross as Anthropic IPO Fails to Lift Wall Street",
-          "link": "https://decrypt.co/383655/bitcoin-enters-death-cross-anthropic-ipo",
-          "pubDate": "2026-11-19 19:08:24",
-          "summary": "Anthropic shares surged on their Nasdaq debut, but stocks slid and Bitcoin fell lower. Its daily chart shows deeply oversold momentum, a strong downtrend, and fragile support."
         }
       ],
       "perCoin": {
@@ -4834,20 +5142,20 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795187323410
+        "t": 1795191414356
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795186434378,
+      "fetchedAt": 1795191415058,
       "bias": {
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 17.34,
+        "ARB": 19.74,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5,
+        "ZRO": 5.18,
         "ETHFI": 20,
         "ENA": 0,
         "EIGEN": 20,
@@ -4861,105 +5169,105 @@
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1051.1,
+          "pct": 1023.18,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 22.7,
+          "pct": 25.84,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 17.34,
+          "pct": 19.74,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 61.96,
+          "pct": 70.53,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 309.16,
+          "pct": 351.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.55,
+          "pct": 5.18,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 36.88,
+          "pct": 41.98,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 325.85,
+          "pct": 370.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 53.96,
+          "pct": 61.42,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 167.92,
+          "pct": 191.14,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 85.73,
+          "pct": 97.58,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 115.05,
+          "pct": 114.02,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 321.68,
+          "pct": 318.8,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 100.6,
+          "pct": 99.7,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1355.86,
+          "pct": 1526.2,
           "lev": 10
         }
       ]
@@ -4988,66 +5296,70 @@
       {
         "t": 1795109922813,
         "cause": "OK"
+      },
+      {
+        "t": 1795191412606,
+        "cause": "OK"
       }
     ],
     "meta": {
       "v": 1,
       "nf": 23,
       "w": [
-        0.09213467268682976,
-        0.05624275569823951,
-        0.09236162246702667,
-        0.09183120294815128,
-        0.04049114643976691,
-        0.0016996778476538958,
-        0.026765761721327073,
-        0.08315620439802077,
-        -0.06250421734685377,
-        0.19048784618016532,
-        -0.08878380052420483,
-        0.07320675950554657,
-        -0.09387697252907747,
-        -0.08798352507743099,
-        0.10860017236289765,
-        0.16873145777018417,
-        -0.05631233084707266,
-        0.1445412204473532,
-        -0.0163645485144131,
-        0.016437001888473093,
-        -0.0057451090146221715,
-        0.12012547867205524,
-        -0.170928503360793
+        0.08414727831536269,
+        0.06892832727995951,
+        0.09235614419924804,
+        0.09182536384647885,
+        0.031059201651837592,
+        0.002150099449979363,
+        0.01920964559138953,
+        0.07420919765926795,
+        -0.05728334018591549,
+        0.1781853095288505,
+        -0.08353166462985642,
+        0.08390054573985327,
+        -0.08118794751793232,
+        -0.08478993010403502,
+        0.10328983311837475,
+        0.15460530400349298,
+        -0.050044857910902664,
+        0.14453065679394111,
+        -0.028856755229113722,
+        0.014105621523355986,
+        -0.00647344946549446,
+        0.11567949217343511,
+        -0.17451563908706383
       ],
       "g2": [
-        1200.3433798005465,
-        1200.3480317250912,
-        181.90825848990295,
-        158.28601872984336,
-        860.1577800943755,
-        246.70107457051765,
-        222.1368484457197,
-        956.4983939802016,
-        28.23331517394808,
-        41.54806469351943,
-        142.7812261675464,
-        49.311566598091176,
-        1200.3483694629913,
-        15.217561091080967,
-        2.971447567191212,
-        34.46307874816622,
-        53.256948171029876,
-        119.81339175473371,
-        73.45587537020111,
-        260.96144232507794,
-        491.2709321074546,
-        709.0406922058248,
-        76.50462956014087
+        1205.2938222206622,
+        1205.2973797172049,
+        181.90825862638607,
+        158.28601886476284,
+        865.108627436589,
+        247.4430678237536,
+        222.89427244367593,
+        961.4497165170386,
+        28.274446866611296,
+        41.98579429461102,
+        143.02913859927008,
+        49.45602132835832,
+        1205.30035979133,
+        15.235347483415582,
+        2.9845960132316565,
+        34.71282107685085,
+        53.361567447861475,
+        119.81339208898544,
+        73.8531707733397,
+        261.12682284341446,
+        494.7016013842386,
+        710.5608440180885,
+        76.56482075678502
       ],
-      "nTrain": 1214,
-      "sumWinR": 338.143,
-      "nWin": 655,
-      "sumLossR": 663.0580000000001,
-      "nLoss": 559,
+      "nTrain": 1218,
+      "sumWinR": 338.71799999999996,
+      "nWin": 656,
+      "sumLossR": 666.3910000000001,
+      "nLoss": 562,
       "lastTrainT": {
         "SUIUSDT": 1789765200000,
         "NVDA": 1789759800000,
@@ -5062,9 +5374,9 @@
         "XRPUSDT": 1789740000000,
         "DOGEUSDT": 1789837200000,
         "BNBUSDT": 1789808400000,
-        "ADAUSDT": 1789837200000,
+        "ADAUSDT": 1789959600000,
         "AVAXUSDT": 1789700400000,
-        "LINKUSDT": 1789808400000
+        "LINKUSDT": 1789963200000
       },
       "oosBySym": {
         "SUIUSDT": [
@@ -8027,997 +8339,1002 @@
         ],
         "ADAUSDT": [
           [
-            0.603,
-            -1.106,
-            27
-          ],
-          [
-            0.62,
-            -1.101,
-            2
-          ],
-          [
-            0.626,
-            -1.094,
+            0.623,
+            -1.095,
             10
           ],
           [
-            0.57,
+            0.565,
             -1.081,
             10
           ],
           [
-            0.621,
+            0.619,
             1.56,
             10
           ],
           [
-            0.624,
+            0.62,
             1.575,
             10
           ],
           [
-            0.61,
-            -1.099,
-            69
-          ],
-          [
-            0.635,
-            -1.115,
-            10
-          ],
-          [
-            0.628,
-            0.297,
-            10
-          ],
-          [
-            0.549,
-            -1.086,
-            69
-          ],
-          [
-            0.588,
-            0.564,
-            27
-          ],
-          [
-            0.572,
-            0.301,
-            35
-          ],
-          [
-            0.514,
-            -1.088,
-            100
-          ],
-          [
-            0.6,
-            0.896,
-            10
-          ],
-          [
-            0.594,
-            -1.211,
-            10
-          ],
-          [
-            0.549,
-            1.476,
-            61
-          ],
-          [
-            0.58,
-            -1.115,
-            2
-          ],
-          [
-            0.581,
-            1.543,
-            10
-          ],
-          [
-            0.607,
-            -1.123,
-            35
-          ],
-          [
-            0.597,
-            -1.118,
-            10
-          ],
-          [
-            0.518,
-            0.315,
-            69
-          ],
-          [
-            0.624,
-            -1.106,
-            10
-          ],
-          [
-            0.581,
-            0.671,
-            10
-          ],
-          [
-            0.592,
-            0.457,
-            2
-          ],
-          [
-            0.59,
-            -1.147,
-            10
-          ],
-          [
-            0.611,
-            -1.128,
-            10
-          ],
-          [
-            0.598,
-            -1.121,
-            10
-          ],
-          [
-            0.56,
-            0.295,
-            61
-          ],
-          [
-            0.52,
-            0.933,
-            95
-          ],
-          [
-            0.627,
-            0.25,
-            41
-          ],
-          [
-            0.579,
-            -1.129,
-            27
-          ],
-          [
-            0.555,
-            -1.173,
-            35
-          ],
-          [
-            0.586,
-            1.492,
-            10
-          ],
-          [
-            0.655,
-            0.272,
-            10
-          ],
-          [
-            0.491,
-            0.253,
-            48
-          ],
-          [
-            0.64,
-            0.243,
-            10
-          ],
-          [
-            0.518,
-            0.344,
-            95
-          ],
-          [
-            0.569,
-            0.241,
-            41
-          ],
-          [
-            0.598,
-            0.227,
-            10
-          ],
-          [
-            0.602,
-            0.24,
-            41
-          ],
-          [
-            0.552,
-            1.413,
-            95
-          ],
-          [
-            0.609,
-            0.355,
-            10
-          ],
-          [
-            0.634,
-            0.251,
-            10
-          ],
-          [
-            0.615,
-            1.507,
-            46
-          ],
-          [
-            0.593,
-            0.278,
-            10
-          ],
-          [
-            0.627,
-            -1.222,
-            41
-          ],
-          [
-            0.582,
-            -1.252,
-            10
-          ],
-          [
-            0.573,
-            -1.154,
-            56
-          ],
-          [
-            0.649,
-            0.262,
-            2
-          ],
-          [
-            0.586,
-            0.792,
-            2
-          ],
-          [
-            0.609,
-            0.62,
-            10
-          ],
-          [
-            0.642,
-            -1.128,
-            10
-          ],
-          [
-            0.597,
-            0.56,
-            10
-          ],
-          [
-            0.55,
-            0.269,
-            86
-          ],
-          [
-            0.629,
-            0.478,
-            10
-          ],
-          [
-            0.647,
-            -1.119,
-            10
-          ],
-          [
-            0.647,
-            -1.115,
-            10
-          ],
-          [
-            0.51,
-            0.261,
-            90
-          ],
-          [
-            0.508,
-            -1.117,
-            86
-          ]
-        ],
-        "AVAXUSDT": [
-          [
-            0.619,
-            0.347,
-            10
-          ],
-          [
-            0.625,
-            0.303,
-            10
-          ],
-          [
-            0.552,
-            -1.084,
-            65
-          ],
-          [
             0.618,
-            -1.069,
+            -1.1,
+            69
+          ],
+          [
+            0.633,
+            -1.116,
             10
           ],
           [
-            0.593,
-            0.546,
+            0.626,
+            0.296,
             10
           ],
           [
-            0.55,
-            0.315,
-            90
+            0.551,
+            -1.087,
+            69
           ],
           [
-            0.574,
-            0.311,
-            10
-          ],
-          [
-            0.517,
-            -1.084,
-            96
-          ],
-          [
+            0.583,
             0.565,
+            27
+          ],
+          [
+            0.567,
             0.3,
             35
           ],
           [
-            0.59,
-            -1.112,
+            0.513,
+            -1.089,
+            100
+          ],
+          [
+            0.595,
+            0.901,
+            10
+          ],
+          [
+            0.589,
+            -1.213,
+            10
+          ],
+          [
+            0.555,
+            1.475,
+            61
+          ],
+          [
+            0.575,
+            -1.116,
+            2
+          ],
+          [
+            0.575,
+            1.542,
+            10
+          ],
+          [
+            0.606,
+            -1.124,
             35
           ],
           [
             0.595,
-            1.543,
-            2
-          ],
-          [
-            0.625,
-            0.313,
+            -1.119,
             10
           ],
           [
-            0.608,
-            0.349,
-            10
-          ],
-          [
-            0.608,
-            0.311,
-            41
-          ],
-          [
-            0.639,
-            0.73,
-            10
-          ],
-          [
-            0.601,
-            1.475,
-            27
-          ],
-          [
-            0.6,
-            -1.172,
-            10
-          ],
-          [
-            0.532,
-            0.251,
+            0.522,
+            0.314,
             69
           ],
           [
-            0.563,
-            -1.137,
+            0.618,
+            -1.107,
             10
           ],
           [
-            0.619,
-            0.261,
+            0.577,
+            0.673,
             10
           ],
           [
-            0.634,
-            0.276,
-            34
+            0.586,
+            0.458,
+            2
           ],
           [
-            0.566,
-            -1.205,
+            0.588,
+            -1.148,
+            10
+          ],
+          [
+            0.607,
+            -1.129,
+            10
+          ],
+          [
+            0.595,
+            -1.122,
+            10
+          ],
+          [
+            0.561,
+            0.294,
+            61
+          ],
+          [
+            0.518,
+            0.938,
+            95
+          ],
+          [
+            0.625,
+            0.249,
+            41
+          ],
+          [
+            0.573,
+            -1.13,
+            27
+          ],
+          [
+            0.55,
+            -1.175,
+            35
+          ],
+          [
+            0.58,
+            1.491,
+            10
+          ],
+          [
+            0.652,
+            0.27,
+            10
+          ],
+          [
+            0.492,
+            0.252,
+            48
+          ],
+          [
+            0.638,
+            0.241,
+            10
+          ],
+          [
+            0.517,
+            0.344,
+            95
+          ],
+          [
+            0.568,
+            0.24,
+            41
+          ],
+          [
+            0.594,
+            0.226,
             10
           ],
           [
             0.599,
-            -1.172,
-            2
+            0.238,
+            41
           ],
           [
-            0.575,
-            1.488,
+            0.552,
+            1.411,
+            95
+          ],
+          [
+            0.605,
+            0.355,
             10
           ],
           [
-            0.624,
-            -1.124,
+            0.631,
+            0.25,
             10
           ],
           [
-            0.602,
-            -1.121,
+            0.613,
+            1.506,
+            46
+          ],
+          [
+            0.586,
+            0.277,
             10
           ],
           [
-            0.562,
-            -1.1,
-            61
+            0.625,
+            -1.224,
+            41
           ],
           [
-            0.549,
-            -1.139,
+            0.579,
+            -1.254,
+            10
+          ],
+          [
+            0.576,
+            -1.156,
             56
           ],
           [
-            0.612,
-            -1.114,
-            35
-          ],
-          [
-            0.536,
-            -1.164,
-            69
-          ],
-          [
-            0.645,
-            0.257,
+            0.646,
+            0.261,
             2
           ],
           [
-            0.604,
-            -1.155,
+            0.579,
+            0.796,
             2
           ],
           [
-            0.634,
-            0.899,
+            0.606,
+            0.622,
             10
           ],
           [
-            0.637,
-            0.246,
-            35
+            0.64,
+            -1.129,
+            10
           ],
           [
-            0.528,
-            -1.117,
-            82
+            0.593,
+            0.561,
+            10
+          ],
+          [
+            0.55,
+            0.268,
+            86
+          ],
+          [
+            0.627,
+            0.479,
+            10
+          ],
+          [
+            0.644,
+            -1.12,
+            10
+          ],
+          [
+            0.644,
+            -1.116,
+            10
+          ],
+          [
+            0.509,
+            0.259,
+            90
+          ],
+          [
+            0.508,
+            -1.118,
+            86
+          ],
+          [
+            0.635,
+            -1.12,
+            35
+          ]
+        ],
+        "AVAXUSDT": [
+          [
+            0.61,
+            0.302,
+            10
+          ],
+          [
+            0.553,
+            -1.085,
+            65
+          ],
+          [
+            0.608,
+            -1.069,
+            10
+          ],
+          [
+            0.586,
+            0.548,
+            10
+          ],
+          [
+            0.544,
+            0.314,
+            90
+          ],
+          [
+            0.56,
+            0.31,
+            10
+          ],
+          [
+            0.512,
+            -1.084,
+            96
+          ],
+          [
+            0.551,
+            0.299,
+            35
           ],
           [
             0.578,
-            1.507,
-            10
-          ],
-          [
-            0.656,
-            -1.125,
-            10
-          ],
-          [
-            0.628,
-            0.363,
-            10
-          ],
-          [
-            0.588,
-            -1.159,
-            10
-          ],
-          [
-            0.639,
-            -1.137,
+            -1.113,
             35
           ],
           [
-            0.603,
-            -1.158,
+            0.581,
+            1.542,
+            2
+          ],
+          [
+            0.617,
+            0.312,
             10
           ],
           [
             0.601,
+            0.348,
+            10
+          ],
+          [
+            0.602,
+            0.31,
+            41
+          ],
+          [
+            0.628,
+            0.733,
+            10
+          ],
+          [
+            0.594,
+            1.473,
+            27
+          ],
+          [
+            0.585,
+            -1.174,
+            10
+          ],
+          [
+            0.544,
+            0.25,
+            69
+          ],
+          [
+            0.546,
+            -1.138,
+            10
+          ],
+          [
+            0.608,
+            0.26,
+            10
+          ],
+          [
+            0.623,
+            0.275,
+            34
+          ],
+          [
+            0.552,
+            -1.206,
+            10
+          ],
+          [
+            0.581,
+            -1.174,
+            2
+          ],
+          [
+            0.564,
+            1.487,
+            10
+          ],
+          [
+            0.614,
+            -1.126,
+            10
+          ],
+          [
+            0.593,
+            -1.122,
+            10
+          ],
+          [
+            0.561,
+            -1.101,
+            61
+          ],
+          [
+            0.562,
+            -1.14,
+            56
+          ],
+          [
+            0.605,
+            -1.115,
+            35
+          ],
+          [
+            0.538,
+            -1.165,
+            69
+          ],
+          [
+            0.637,
+            0.255,
+            2
+          ],
+          [
+            0.595,
+            -1.157,
+            2
+          ],
+          [
+            0.626,
+            0.904,
+            10
+          ],
+          [
+            0.63,
+            0.244,
+            35
+          ],
+          [
+            0.521,
+            -1.118,
+            82
+          ],
+          [
+            0.563,
+            1.506,
+            10
+          ],
+          [
+            0.647,
+            -1.126,
+            10
+          ],
+          [
+            0.618,
+            0.363,
+            10
+          ],
+          [
+            0.58,
+            -1.16,
+            10
+          ],
+          [
+            0.632,
+            -1.138,
+            35
+          ],
+          [
+            0.595,
+            -1.16,
+            10
+          ],
+          [
+            0.591,
             0.32,
             2
           ],
           [
-            0.515,
-            0.527,
+            0.51,
+            0.528,
             100
           ],
           [
-            0.574,
-            0.208,
+            0.561,
+            0.206,
             41
           ],
           [
-            0.598,
-            1.498,
+            0.583,
+            1.496,
             35
-          ],
-          [
-            0.58,
-            1.519,
-            35
-          ],
-          [
-            0.604,
-            -1.196,
-            10
-          ],
-          [
-            0.575,
-            -1.167,
-            56
-          ],
-          [
-            0.592,
-            -1.171,
-            35
-          ],
-          [
-            0.533,
-            0.236,
-            69
-          ],
-          [
-            0.505,
-            -1.173,
-            95
-          ],
-          [
-            0.575,
-            0.867,
-            10
           ],
           [
             0.563,
-            -1.146,
+            1.518,
+            35
+          ],
+          [
+            0.596,
+            -1.197,
+            10
+          ],
+          [
+            0.586,
+            -1.168,
+            56
+          ],
+          [
+            0.588,
+            -1.173,
+            35
+          ],
+          [
+            0.535,
+            0.235,
+            69
+          ],
+          [
+            0.506,
+            -1.175,
+            95
+          ],
+          [
+            0.56,
+            0.871,
             10
           ],
           [
             0.549,
-            0.262,
+            -1.148,
+            10
+          ],
+          [
+            0.558,
+            0.261,
+            69
+          ],
+          [
+            0.622,
+            0.291,
+            2
+          ],
+          [
+            0.596,
+            -1.221,
+            27
+          ],
+          [
+            0.575,
+            0.122,
+            35
+          ],
+          [
+            0.567,
+            -1.149,
             69
           ],
           [
             0.631,
-            0.292,
-            2
+            -1.132,
+            35
           ],
           [
             0.603,
-            -1.219,
-            27
-          ],
-          [
-            0.581,
-            0.125,
+            -1.113,
             35
           ],
           [
-            0.566,
-            -1.147,
-            69
-          ],
-          [
-            0.639,
-            -1.13,
-            35
-          ],
-          [
-            0.607,
-            -1.112,
-            35
-          ],
-          [
-            0.56,
-            -1.103,
+            0.555,
+            -1.104,
             80
           ],
           [
-            0.56,
-            0.278,
+            0.545,
+            0.277,
             35
           ],
           [
-            0.578,
-            0.272,
+            0.579,
+            0.271,
             69
           ],
           [
-            0.575,
-            -1.112,
+            0.576,
+            -1.113,
             69
           ],
           [
-            0.611,
-            0.571,
+            0.605,
+            0.572,
             41
           ],
           [
-            0.521,
-            1.543,
+            0.514,
+            1.542,
             88
           ],
           [
-            0.582,
-            0.281,
+            0.575,
+            0.28,
             35
           ],
           [
-            0.58,
-            -1.11,
+            0.574,
+            -1.111,
             41
           ],
           [
-            0.598,
+            0.59,
             0.467,
             10
           ],
           [
-            0.611,
-            0.455,
+            0.602,
+            0.456,
+            10
+          ],
+          [
+            0.533,
+            0.269,
+            94
+          ],
+          [
+            0.58,
+            -1.122,
             10
           ]
         ],
         "LINKUSDT": [
           [
-            0.608,
-            -1.124,
-            27
-          ],
-          [
-            0.581,
-            0.283,
-            2
-          ],
-          [
-            0.6,
-            0.287,
+            0.582,
+            0.286,
             10
           ],
           [
-            0.56,
-            1.015,
+            0.547,
+            1.549,
             26
           ],
           [
-            0.493,
-            -1.09,
+            0.492,
+            -1.093,
             61
           ],
           [
-            0.587,
-            -1.091,
+            0.573,
+            -1.092,
             2
           ],
           [
-            0.57,
-            0.287,
+            0.554,
+            0.286,
             10
           ],
           [
-            0.574,
-            -1.13,
+            0.577,
+            -1.131,
             90
           ],
           [
-            0.601,
-            1.533,
+            0.594,
+            1.532,
             10
           ],
           [
-            0.585,
-            0.313,
+            0.568,
+            0.312,
             10
           ],
           [
-            0.574,
-            -1.076,
+            0.558,
+            -1.077,
             41
           ],
           [
-            0.585,
-            0.743,
+            0.569,
+            0.746,
             2
           ],
           [
-            0.603,
-            0.302,
+            0.595,
+            0.301,
             35
           ],
           [
-            0.64,
-            0.562,
+            0.629,
+            0.564,
             10
           ],
           [
             0.527,
-            -1.231,
+            -1.233,
             86
           ],
           [
-            0.506,
-            0.194,
+            0.5,
+            0.192,
             96
           ],
           [
-            0.57,
-            0.221,
-            69
-          ],
-          [
-            0.527,
-            1.484,
-            61
-          ],
-          [
-            0.513,
-            -1.225,
-            90
-          ],
-          [
-            0.525,
-            -1.21,
-            61
-          ],
-          [
-            0.596,
-            0.187,
-            2
-          ],
-          [
-            0.517,
-            0.261,
-            69
-          ],
-          [
-            0.605,
-            -1.129,
-            10
-          ],
-          [
-            0.605,
-            0.279,
-            10
-          ],
-          [
-            0.611,
-            0.409,
-            34
-          ],
-          [
-            0.601,
-            -1.146,
-            35
-          ],
-          [
-            0.503,
-            0.186,
-            69
-          ],
-          [
-            0.513,
-            -1.212,
+            0.573,
+            0.219,
             69
           ],
           [
             0.529,
-            0.19,
-            80
-          ],
-          [
-            0.538,
-            0.608,
+            1.482,
             61
           ],
           [
-            0.63,
-            0.226,
-            33
+            0.509,
+            -1.227,
+            90
           ],
           [
-            0.578,
-            0.238,
-            82
-          ],
-          [
-            0.578,
-            -1.138,
-            27
-          ],
-          [
-            0.553,
-            -1.186,
-            35
-          ],
-          [
-            0.526,
-            -1.166,
+            0.531,
+            -1.212,
             61
           ],
           [
-            0.611,
-            -1.154,
-            10
-          ],
-          [
-            0.619,
-            0.571,
-            10
-          ],
-          [
-            0.654,
-            0.245,
-            10
-          ],
-          [
-            0.6,
-            -1.176,
-            10
-          ],
-          [
-            0.61,
-            0.312,
+            0.577,
+            0.185,
             2
           ],
           [
-            0.518,
-            0.421,
-            95
+            0.519,
+            0.26,
+            69
           ],
           [
-            0.569,
-            0.925,
-            41
+            0.595,
+            -1.13,
+            10
+          ],
+          [
+            0.598,
+            0.278,
+            10
           ],
           [
             0.605,
-            0.813,
-            10
+            0.409,
+            34
           ],
           [
-            0.618,
-            0.597,
-            2
+            0.593,
+            -1.148,
+            35
           ],
           [
-            0.641,
-            -1.178,
-            10
+            0.507,
+            0.184,
+            69
           ],
           [
-            0.591,
-            -1.162,
-            10
+            0.516,
+            -1.214,
+            69
           ],
           [
-            0.615,
-            0.246,
-            10
+            0.527,
+            0.188,
+            80
           ],
           [
-            0.647,
+            0.537,
+            0.61,
+            61
+          ],
+          [
+            0.62,
+            0.224,
+            33
+          ],
+          [
+            0.571,
+            0.237,
+            82
+          ],
+          [
+            0.562,
+            -1.139,
+            27
+          ],
+          [
+            0.539,
+            -1.188,
+            35
+          ],
+          [
+            0.534,
+            -1.168,
+            61
+          ],
+          [
+            0.602,
             -1.156,
             10
           ],
           [
-            0.641,
-            0.255,
+            0.61,
+            0.573,
             10
           ],
           [
-            0.622,
-            1.511,
-            41
+            0.644,
+            0.243,
+            10
           ],
           [
-            0.543,
-            -1.136,
-            61
+            0.596,
+            -1.177,
+            10
           ],
           [
-            0.626,
-            -1.206,
-            35
-          ],
-          [
-            0.6,
-            -1.254,
-            41
-          ],
-          [
-            0.649,
-            0.258,
+            0.601,
+            0.311,
             2
           ],
           [
-            0.585,
-            -1.146,
+            0.513,
+            0.422,
+            95
+          ],
+          [
+            0.564,
+            0.93,
             41
           ],
           [
-            0.611,
+            0.588,
+            0.816,
+            10
+          ],
+          [
+            0.6,
+            0.599,
+            2
+          ],
+          [
+            0.632,
+            -1.179,
+            10
+          ],
+          [
+            0.584,
+            -1.163,
+            10
+          ],
+          [
+            0.606,
+            0.245,
+            10
+          ],
+          [
+            0.639,
+            -1.157,
+            10
+          ],
+          [
+            0.632,
+            0.254,
+            10
+          ],
+          [
+            0.615,
+            1.51,
+            41
+          ],
+          [
+            0.552,
+            -1.137,
+            61
+          ],
+          [
+            0.619,
+            -1.208,
+            35
+          ],
+          [
+            0.593,
+            -1.256,
+            41
+          ],
+          [
+            0.641,
+            0.257,
+            2
+          ],
+          [
+            0.577,
+            -1.147,
+            41
+          ],
+          [
+            0.601,
             0.37,
             10
           ],
           [
-            0.645,
-            -1.124,
+            0.636,
+            -1.125,
             10
           ],
           [
             0.486,
-            0.305,
+            0.304,
             61
           ],
           [
-            0.505,
-            0.531,
+            0.504,
+            0.532,
             80
           ],
           [
-            0.607,
-            0.283,
+            0.601,
+            0.282,
             41
           ],
           [
-            0.515,
-            1.533,
+            0.508,
+            1.532,
             100
           ],
           [
-            0.498,
-            0.246,
+            0.494,
+            0.245,
             90
           ],
           [
-            0.512,
-            -1.126,
+            0.506,
+            -1.127,
             86
           ],
           [
-            0.622,
-            0.739,
+            0.607,
+            0.742,
             10
           ],
           [
-            0.605,
-            0.277,
+            0.596,
+            0.276,
             35
+          ],
+          [
+            0.532,
+            0.251,
+            94
+          ],
+          [
+            0.628,
+            -1.124,
+            35
+          ],
+          [
+            0.579,
+            -1.133,
+            10
           ]
         ]
       },
       "status": {
         "all": {
-          "n": 780,
+          "n": 781,
           "mean": -0.282,
-          "sd": 0.94,
-          "t": -8.37,
-          "winRate": 52.7,
-          "sum": -219.64
+          "sd": 0.941,
+          "t": -8.38,
+          "winRate": 52.6,
+          "sum": -220.52
         },
         "base": {
-          "n": 76,
-          "mean": -0.114,
-          "sd": 0.988,
-          "t": -1.01,
-          "winRate": 57.9,
-          "sum": -8.66
+          "n": 78,
+          "mean": -0.105,
+          "sd": 0.977,
+          "t": -0.95,
+          "winRate": 59,
+          "sum": -8.16
         },
         "taken": {
           "n": 0,
@@ -9030,33 +9347,33 @@
         "metaActive": false,
         "policy": "SCORE",
         "chosen": {
-          "n": 76,
-          "mean": -0.114,
-          "sd": 0.988,
-          "t": -1.01,
-          "winRate": 57.9,
-          "sum": -8.66
+          "n": 78,
+          "mean": -0.105,
+          "sd": 0.977,
+          "t": -0.95,
+          "winRate": 59,
+          "sum": -8.16
         },
         "significant": false,
         "symbols": 18,
-        "nTrain": 1214,
-        "updatedAt": 1795187325571
+        "nTrain": 1218,
+        "updatedAt": 1795191417702
       }
     },
     "champion": {
-      "id": "emax",
-      "name": "EMA Cross Naive (CONTROL)",
-      "book": "Baseline Penelitian",
-      "netR": -4.97,
-      "trades": 39,
-      "winRate": 59,
-      "pf": 0.73,
-      "expPerTrade": -0.128,
-      "tStat": -0.81,
-      "deflatedT": -2.95,
+      "id": "wyckoff",
+      "name": "Wyckoff Spring & Upthrust",
+      "book": "Richard D. Wyckoff",
+      "netR": -15.5,
+      "trades": 223,
+      "winRate": 61.4,
+      "pf": 0.85,
+      "expPerTrade": -0.07,
+      "tStat": -1.05,
+      "deflatedT": -3.19,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795187325570,
+      "updatedAt": 1795191417701,
       "gen": 21
     },
     "factory": {
