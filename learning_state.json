@@ -1,10 +1,10 @@
 {
   "version": "2.5",
-  "updatedAt": 1795187346676,
+  "updatedAt": 1795187409172,
   "brain": {
     "v": 1,
     "gen": 21,
-    "cycles": 127,
+    "cycles": 128,
     "firstBootAt": 1793623210734,
     "running": false,
     "optCursor": 6,
@@ -2947,6 +2947,11 @@
     ],
     "journal": [
       {
+        "t": 1795187370538,
+        "type": "CYCLE",
+        "text": "[CYCLE #128] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795187323410,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
@@ -4440,11 +4445,6 @@
         "t": 1794946622769,
         "type": "GEN",
         "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (14 trade OOS, +0.322R/trade, win 71.4%, t=1.22) | Meta-model belum aktif (211 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.248R)"
-      },
-      {
-        "t": 1794946622769,
-        "type": "GEN",
-        "text": "[GEN #1] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (+0.1R, 54 trade, Win 61.1%, t=0.01 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -9247,7 +9247,7 @@
         }
       ],
       "lastError": {
-        "at": 1795186502174,
+        "at": 1795187409159,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
