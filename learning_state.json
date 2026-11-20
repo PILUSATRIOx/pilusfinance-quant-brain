@@ -1,10 +1,10 @@
 {
   "version": "2.5",
-  "updatedAt": 1795183746119,
+  "updatedAt": 1795183773443,
   "brain": {
     "v": 1,
     "gen": 20,
-    "cycles": 123,
+    "cycles": 124,
     "firstBootAt": 1793623210734,
     "running": false,
     "optCursor": 12,
@@ -2647,6 +2647,11 @@
     ],
     "journal": [
       {
+        "t": 1795183764194,
+        "type": "CYCLE",
+        "text": "[CYCLE #124] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795183722897,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
@@ -4140,11 +4145,6 @@
         "t": 1794918771321,
         "type": "CYCLE",
         "text": "[CYCLE #23] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794918771126,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] LONG AAPL @ 352.8100 | Skor 90/100 | rezim RANGING (H=0.47) | 2 strategi: wyckoff+statarb"
       }
     ],
     "accuracyHistory": [
@@ -8950,7 +8950,7 @@
         }
       ],
       "lastError": {
-        "at": 1795182880855,
+        "at": 1795183773440,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
