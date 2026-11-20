@@ -1,10 +1,10 @@
 {
   "version": "2.5",
-  "updatedAt": 1795185549518,
+  "updatedAt": 1795185627168,
   "brain": {
     "v": 1,
     "gen": 21,
-    "cycles": 125,
+    "cycles": 126,
     "firstBootAt": 1793623210734,
     "running": false,
     "optCursor": 0,
@@ -2947,6 +2947,11 @@
     ],
     "journal": [
       {
+        "t": 1795185584889,
+        "type": "CYCLE",
+        "text": "[CYCLE #126] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795185526656,
         "type": "GEN",
         "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.114R/trade, win 57.9%, t=-1.01) | Meta-model belum aktif (1214 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.282R)"
@@ -4440,11 +4445,6 @@
         "t": 1794944031461,
         "type": "CYCLE",
         "text": "[CYCLE #25] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794944030910,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -9245,7 +9245,7 @@
         }
       ],
       "lastError": {
-        "at": 1795184706467,
+        "at": 1795185627164,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
