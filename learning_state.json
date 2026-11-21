@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795249428032,
+  "updatedAt": 1795283419961,
   "brain": {
     "v": 1,
     "gen": 32,
-    "cycles": 194,
+    "cycles": 196,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795247622929,
     "autoExecBursa": false,
@@ -192,61 +192,31 @@
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 72,
-          "wins": 40,
-          "losses": 32,
-          "winRate": 55.55555555555556,
-          "pf": 0.780407568014691,
-          "exp": -0.10945264063208265,
-          "netR": -7.880590125509951,
-          "maxDD": 13.883503030231587,
-          "sumR2": 70.42180718158755,
-          "grossW": 28.00675833300692,
-          "grossL": 35.88734845851687,
-          "sd": 0.9898019134776936,
-          "tStat": -0.9383053722875722,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 23,
@@ -497,18 +467,18 @@
         },
         "AVAXUSDT": {
           "trades": 82,
-          "wins": 39,
-          "losses": 43,
-          "winRate": 47.5609756097561,
-          "pf": 0.54198186729638,
-          "exp": -0.2718443629579656,
-          "netR": -22.29123776255318,
+          "wins": 38,
+          "losses": 44,
+          "winRate": 46.34146341463415,
+          "pf": 0.524395591703525,
+          "exp": -0.2888710574345308,
+          "netR": -23.687426709631524,
           "maxDD": 28.36018187141347,
-          "sumR2": 83.39034745248392,
-          "grossW": 26.377660193453444,
-          "grossL": 48.66889795600663,
-          "sd": 0.9770868778953513,
-          "tStat": -2.5193823189176485,
+          "sumR2": 84.61313158416364,
+          "grossW": 26.11746638308687,
+          "grossL": 49.8048930927184,
+          "sd": 0.9798621695885262,
+          "tStat": -2.6695986042906017,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -530,67 +500,37 @@
           "tStat": -1.736005242024916,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 78,
-          "wins": 43,
-          "losses": 35,
-          "winRate": 55.12820512820513,
-          "pf": 0.629988132958899,
-          "exp": -0.18499391944719099,
-          "netR": -14.429525716880896,
-          "maxDD": 21.6033720386311,
-          "sumR2": 68.91870917459532,
-          "grossW": 24.56794166780178,
-          "grossL": 38.99746738468265,
-          "sd": 0.927567231829848,
-          "tStat": -1.7614055372128692,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 16,
@@ -874,67 +814,37 @@
           "tStat": -2.219106764327426,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "bbrev": {
         "SUIUSDT": {
-          "trades": 47,
-          "wins": 30,
-          "losses": 17,
-          "winRate": 63.829787234042556,
-          "pf": 0.7754995297083124,
-          "exp": -0.09049659586113623,
-          "netR": -4.253340005473403,
-          "maxDD": 8.095334462728532,
-          "sumR2": 32.85135313347711,
-          "grossW": 14.692455519797228,
-          "grossL": 18.945795525270636,
-          "sd": 0.8401143858704959,
-          "tStat": -0.7384868229499283,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 19,
@@ -1218,67 +1128,37 @@
           "tStat": -0.7573662180566259,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "wyckoff": {
         "SUIUSDT": {
-          "trades": 40,
-          "wins": 26,
-          "losses": 14,
-          "winRate": 65,
-          "pf": 0.9616572085629997,
-          "exp": -0.01508813428167342,
-          "netR": -0.6035253712669368,
-          "maxDD": 4.5944493106283595,
-          "sumR2": 31.775360040021344,
-          "grossW": 15.136731105848774,
-          "grossL": 15.740256477115715,
-          "sd": 0.902507247902955,
-          "tStat": -0.10573404276457848,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 9,
@@ -1562,67 +1442,37 @@
           "tStat": -0.874717709316591,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "rsidiv": {
         "SUIUSDT": {
-          "trades": 19,
-          "wins": 10,
-          "losses": 9,
-          "winRate": 52.63157894736842,
-          "pf": 0.45256875856176193,
-          "exp": -0.2867150163077141,
-          "netR": -5.447585309846568,
-          "maxDD": 5.738709976994445,
-          "sumR2": 14.532755286148078,
-          "grossW": 4.50359192938882,
-          "grossL": 9.951177239235387,
-          "sd": 0.8488832786928482,
-          "tStat": -1.4722421951877604,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 6,
@@ -1906,67 +1756,37 @@
           "tStat": -0.8718908668514354,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "macdm": {
         "SUIUSDT": {
-          "trades": 37,
-          "wins": 19,
-          "losses": 18,
-          "winRate": 51.35135135135135,
-          "pf": 0.62968350842189,
-          "exp": -0.20143194275655754,
-          "netR": -7.4529818819926295,
-          "maxDD": 9.188961496700545,
-          "sumR2": 36.2228737879183,
-          "grossW": 12.67299698065975,
-          "grossL": 20.125978862652378,
-          "sd": 0.9820840251461161,
-          "tStat": -1.24761491118081,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 10,
@@ -2250,67 +2070,37 @@
           "tStat": -1.925838205871238,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "smc": {
         "SUIUSDT": {
-          "trades": 28,
-          "wins": 20,
-          "losses": 8,
-          "winRate": 71.42857142857143,
-          "pf": 1.6267687264497634,
-          "exp": 0.20525982029620912,
-          "netR": 5.747274968293856,
-          "maxDD": 2.4731477524226233,
-          "sumR2": 26.80054257168127,
-          "grossW": 14.916965040177969,
-          "grossL": 9.16969007188412,
-          "sd": 0.9741255897526646,
-          "tStat": 1.1149823890684667,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 4,
@@ -2594,67 +2384,37 @@
           "tStat": -1.4959890132300075,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 103,
-          "wins": 54,
-          "losses": 49,
-          "winRate": 52.42718446601942,
-          "pf": 0.6044821198917483,
-          "exp": -0.20909484349864227,
-          "netR": -21.536768880360153,
-          "maxDD": 23.418011976299983,
-          "sumR2": 91.82056103367938,
-          "grossW": 32.91530513072026,
-          "grossL": 54.45207401108042,
-          "sd": 0.9252309394552453,
-          "tStat": -2.2935688842583244,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 33,
@@ -2938,67 +2698,37 @@
           "tStat": -0.21829843628495993,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "tsmom": {
         "SUIUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 0,
@@ -3282,67 +3012,37 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       },
       "emax": {
         "SUIUSDT": {
-          "trades": 31,
-          "wins": 15,
-          "losses": 16,
-          "winRate": 48.38709677419355,
-          "pf": 0.6096886214477137,
-          "exp": -0.22876266781717802,
-          "netR": -7.091642702332519,
-          "maxDD": 9.838368410115772,
-          "sumR2": 32.824981787074,
-          "grossW": 11.077550131953556,
-          "grossL": 18.169192834286076,
-          "sd": 1.0198476795300069,
-          "tStat": -1.2489086899774922,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.856,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 2,
@@ -3626,7 +3326,7 @@
           "tStat": -2.5505455822471608,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         }
       }
@@ -4149,6 +3849,31 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795283419938,
+        "type": "CYCLE",
+        "text": "[CYCLE #196] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795283416687,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: ETH, EUR — Long baru diblokir (Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated)"
+      },
+      {
+        "t": 1795283416684,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795250330376,
+        "type": "CYCLE",
+        "text": "[CYCLE #195] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795250323946,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795249428014,
         "type": "CYCLE",
@@ -5623,31 +5348,6 @@
         "t": 1795018123688,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795017234969,
-        "type": "CYCLE",
-        "text": "[CYCLE #76] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795017229421,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795016334844,
-        "type": "CYCLE",
-        "text": "[CYCLE #75] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795016325143,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795016323248,
-        "type": "TP1",
-        "text": "[TP1 LOCKED] TP1 AAPL tercapai -> 50% ditutup, SL digeser ke breakeven"
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5394,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 5220,
+      "newsIngested": 5280,
       "lessons": 1,
-      "backtests": 5120,
+      "backtests": 5150,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,8 +5409,36 @@
       }
     },
     "news": {
-      "fetchedAt": 1795249422600,
+      "fetchedAt": 1795283416684,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
+          "link": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated",
+          "pubDate": "2026-11-21 12:30:00",
+          "summary": "BTCS cut its reported Aave debt by about $10 million in ten days, but falling ether prices are keeping its collateral under pressure."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin nodes could be stalled by repeating one ID 50,000 times. AI found the bug",
+          "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-nodes-could-be-stalled-by-repeating-one-id-50-000-times-ai-found-the-bug",
+          "pubDate": "2026-11-21 06:16:42",
+          "summary": "Bitcoin Core shipped fixes on Friday for a bug flagged by Loupe, an open-source scanner from Block’s Spiral that uses AI agents to examine bitcoin code."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "XRP falls 10% as long bets unwind and ETF assets slip below $1 billion",
+          "link": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion",
+          "pubDate": "2026-11-21 05:59:19",
+          "summary": "The token broke its previous November lows during Saturday&#39;s crypto selloff, with long positions accounting for most XRP liquidations and technical indicators showing further weakness."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin tanks below $57,000 for the first time in two years, and its not alone",
+          "link": "https://www.coindesk.com/markets/2026/11/21/bitcoin-tanks-below-usd57-000-for-the-first-time-in-two-years-and-its-not-alone",
+          "pubDate": "2026-11-21 04:10:07",
+          "summary": "BTC&#39;s sell-off deepened on Saturday, with prices hitting two-year lows under $57,000."
+        },
         {
           "source": "CoinDesk",
           "title": "Kalshi races to get ahead of New York order that could shut down exchange",
@@ -5754,32 +5482,18 @@
           "summary": "The bill would ban bets on war, assassinations and military operations amid concerns that traders could profit from inside information, as has already occurred."
         },
         {
-          "source": "CoinDesk",
-          "title": "Live news: Bitcoin slips to fresh lows below $59,000 as Anthropic slides after Nasdaq debut",
-          "link": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
-          "pubDate": "2026-11-20 13:35:33",
-          "summary": "BlackRock’s bitcoin ETF saw a record $541.1 million outflow as the U.S. tech selloff spread to Asia, sending South Korea’s Kospi down more than 5%."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-21 11:18:52",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin bots pounced within seconds when researchers exposed their wallet keys",
-          "link": "https://www.coindesk.com/tech/2026/11/20/bitcoin-bots-pounced-within-seconds-when-researchers-exposed-their-keys",
-          "pubDate": "2026-11-20 13:30:22",
-          "summary": "University of Liège researchers put a few dollars into deliberately vulnerable bitcoin addresses and watched rival bots race for the money within seconds."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "ECB’s Lagarde warns Europe could lose control of growing tokenized asset market",
-          "link": "https://www.coindesk.com/policy/2026/11/20/ecb-s-largarde-warns-europe-could-lose-control-of-growing-tokenized-asset-market",
-          "pubDate": "2026-11-20 13:11:49",
-          "summary": "The ECB president called for common rules as the EU&#39;s new blockchain settlement system handled a 1 billion-euro ($1.1 billion) digital bond transaction."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin, stocks and gold traders getting nervous, and volatility gauges are surging",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/20/bitcoin-stocks-and-gold-traders-getting-nervous-and-volatility-gauges-are-surging",
-          "pubDate": "2026-11-20 12:15:08",
-          "summary": "Your day-ahead look for Nov. 20, 2026"
+          "source": "CoinTelegraph",
+          "title": "ECB seeks industry partners for tokenized deposits, securities experiments",
+          "link": "https://cointelegraph.com/news/ecb-tokenized-deposits-securities-experiments-appia?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-21 09:48:56",
+          "summary": "    Industry groups have until Dec. 11 to apply for the ECB’s first experimental exercises under its Appia initiative, with later submissions reviewed on a rolling basis. "
         },
         {
           "source": "CoinTelegraph",
@@ -5838,18 +5552,25 @@
           "summary": "    The Singapore bank earned a record $208 million in transaction services fees in the third quarter — now it’s helping companies turn deposits into stablecoins they can spend without it. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 13:29:58",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "source": "Decrypt",
+          "title": "Fraudsters Used Fake Crypto Exchanges to Steal $37 Million, SEC Alleges",
+          "link": "https://decrypt.co/383752/fraudsters-fake-crypto-exchanges-steal-37-million-sec",
+          "pubDate": "2026-11-21 17:01:02",
+          "summary": "The agency says eight Colorado-registered entities, likely run from overseas, posed as legitimate advisers and crypto platforms—even faking SEC certificates and filings—to defraud U.S. investors of more than $37 million."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Lagarde warns Europe could miss chance to unify tokenized markets",
-          "link": "https://cointelegraph.com/news/lagarde-europe-limited-window-tokenization-rules?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 13:21:39",
-          "summary": "    The ECB president said Europe’s market for tokenized securities could split into platforms that cannot settle trades with one another. "
+          "source": "Decrypt",
+          "title": "Signal Calls OS-Level AI an &#39;Existential Threat&#39; and Blocks Screenshots to Fight It",
+          "link": "https://decrypt.co/383750/signal-os-level-ai-existential-threat-blocks-screenshots",
+          "pubDate": "2026-11-21 16:01:02",
+          "summary": "The encrypted-messaging app will restrict screenshots on iOS 27 and auto-enable screen security on Android when it detects an AI assistant reading a chat."
+        },
+        {
+          "source": "Decrypt",
+          "title": "Is the AI Bubble Finally Popping? Nvidia Crashes 48% as Wall Street Experts Sound the Alarm",
+          "link": "https://decrypt.co/383754/ai-bubble-finally-popping-nvidia-crashes-48-wall-street-alarm",
+          "pubDate": "2026-11-21 14:01:06",
+          "summary": "Tech stocks are buckling after Anthropic’s historic IPO and Nvidia’s leadership crisis, while Bitcoin has slipped below $60,000. Experts disagree on whether AI faces a correction or a dot-com-style bust."
         },
         {
           "source": "Decrypt",
@@ -5899,27 +5620,6 @@
           "link": "https://decrypt.co/383702/bitcoin-breaks-below-60k-crypto-fear-greed-index-lowest",
           "pubDate": "2026-11-20 16:35:59",
           "summary": "Bitcoin broke below $60,000 Friday as crypto sentiment collapsed and AI-linked stocks sank after Anthropic’s IPO."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Senate Passes Bill Banning Prediction Market Bets on War, Terrorism and Death",
-          "link": "https://decrypt.co/383700/senate-passes-bill-banning-prediction-market-bets-on-war-terrorism-and-death",
-          "pubDate": "2026-11-20 15:42:51",
-          "summary": "Sen. Adam Schiff&#39;s DEATH BETS Act would bar U.S.-regulated exchanges from listing contracts tied to war, assassinations or deaths."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Anthropic IPO Pops, Sinks Markets",
-          "link": "https://decrypt.co/383691/morning-minute-anthropic-ipo-pops-sinks-markets",
-          "pubDate": "2026-11-20 13:23:01",
-          "summary": "A (brief) win for Anthropic&#39;s ANT stock on IPO day meant a loss for just about every other major asset class."
-        },
-        {
-          "source": "Decrypt",
-          "title": "MoonPay Applies for National Trust Bank Charter to Grow Custody and Stablecoin Business",
-          "link": "https://decrypt.co/383688/moonpay-applies-for-national-trust-bank-charter-to-grow-custody-and-stablecoin-business",
-          "pubDate": "2026-11-20 12:10:14",
-          "summary": "The crypto payments firm joins a rush of crypto companies seeking federal trust charters, which face growing political scrutiny."
         }
       ],
       "perCoin": {
@@ -5932,19 +5632,19 @@
             "Decrypt"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Bitcoin bots pounced within seconds when researchers exposed their wallet keys"
+          "critical": false,
+          "critHead": ""
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -0.17,
+          "impact": -0.33,
           "sources": [
             "CoinDesk",
             "Decrypt"
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment"
+          "critHead": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated"
         },
         "SOL": {
           "sentiment": "NEUTRAL",
@@ -5959,7 +5659,9 @@
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6016,12 +5718,11 @@
           "sentiment": "BEARISH",
           "impact": -0.5,
           "sources": [
-            "CoinDesk",
             "CoinTelegraph"
           ],
-          "multiSourced": true,
-          "critical": false,
-          "critHead": ""
+          "multiSourced": false,
+          "critical": true,
+          "critHead": "ECB seeks industry partners for tokenized deposits, securities experiments"
         },
         "GBP": {
           "sentiment": "NEUTRAL",
@@ -6034,33 +5735,34 @@
       },
       "breaker": [
         {
-          "coin": "BTC",
-          "head": "Bitcoin bots pounced within seconds when researchers exposed their wallet keys"
+          "coin": "ETH",
+          "head": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated"
         },
         {
-          "coin": "ETH",
-          "head": "Fairmint plans tokenized stock venue on Canton, Ethereum under SEC experiment"
+          "coin": "EUR",
+          "head": "ECB seeks industry partners for tokenized deposits, securities experiments"
         }
       ],
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795249422600
+        "t": 1795283416684
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795248523067,
+      "fetchedAt": 1795283417365,
       "bias": {
+        "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 19.66,
+        "ARB": 15.4,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5.16,
+        "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 0.99,
+        "ENA": 5.11,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6070,107 +5772,114 @@
       "positions": [
         {
           "whale": "0x37b81a",
+          "coin": "BTC",
+          "side": "SHORT",
+          "pct": 90.21,
+          "lev": 20
+        },
+        {
+          "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 565.55,
+          "pct": 492.84,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 494.81,
+          "pct": 431.2,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 19.66,
+          "pct": 15.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 70.25,
+          "pct": 55.03,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 350.51,
+          "pct": 274.58,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 5.16,
+          "pct": 4.04,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 41.81,
+          "pct": 32.75,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 19.01,
+          "pct": 14.89,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 61.17,
+          "pct": 47.92,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 190.38,
+          "pct": 149.14,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 97.2,
+          "pct": 76.14,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 121.79,
+          "pct": 95.41,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 340.53,
+          "pct": 266.77,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 46.15,
+          "pct": 36.15,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1256.69,
+          "pct": 1725.01,
           "lev": 10
         }
       ]
@@ -10300,23 +10009,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795249424856
+        "updatedAt": 1795283417568
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -57.77,
-      "trades": 317,
-      "winRate": 55.5,
-      "pf": 0.66,
-      "expPerTrade": -0.182,
-      "tStat": -3.21,
-      "deflatedT": -5.36,
+      "netR": -63.52,
+      "trades": 289,
+      "winRate": 54,
+      "pf": 0.61,
+      "expPerTrade": -0.22,
+      "tStat": -3.71,
+      "deflatedT": -5.86,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795249424855,
+      "updatedAt": 1795283417567,
       "gen": 32
     },
     "factory": {
