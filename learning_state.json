@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795226927556,
+  "updatedAt": 1795227828284,
   "brain": {
     "v": 1,
     "gen": 28,
-    "cycles": 169,
+    "cycles": 170,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795226023305,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.47,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -424,15 +424,15 @@
           "wins": 43,
           "losses": 43,
           "winRate": 50,
-          "pf": 0.6274070936000543,
-          "exp": -0.21733439357804493,
-          "netR": -18.690757847711865,
-          "maxDD": 24.176302913660475,
-          "sumR2": 96.41715678116552,
-          "grossW": 31.473261720736378,
+          "pf": 0.6272282651895393,
+          "exp": -0.21743870464646908,
+          "netR": -18.69972859959634,
+          "maxDD": 24.17630291366048,
+          "sumR2": 96.41275308706463,
+          "grossW": 31.46429096885191,
           "grossL": 50.16401956844827,
-          "sd": 1.0423672845912355,
-          "tStat": -1.9335567048068567,
+          "sd": 1.0423204222430997,
+          "tStat": -1.9345717017677597,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -462,15 +462,15 @@
           "wins": 58,
           "losses": 36,
           "winRate": 61.702127659574465,
-          "pf": 0.6944923066166115,
-          "exp": -0.13666004284502625,
-          "netR": -12.846044027432468,
+          "pf": 0.6942629033664552,
+          "exp": -0.1367626597632713,
+          "netR": -12.8556900177475,
           "maxDD": 17.717939505643407,
-          "sumR2": 81.62444792136579,
-          "grossW": 29.2021410286201,
+          "sumR2": 81.62287621029455,
+          "grossW": 29.192495038305072,
           "grossL": 42.048185056052596,
-          "sd": 0.9267175683833808,
-          "tStat": -1.4297433427730557,
+          "sd": 0.9266931487496382,
+          "tStat": -1.4308546294437072,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1835,18 +1835,18 @@
         },
         "BNBUSDT": {
           "trades": 25,
-          "wins": 12,
-          "losses": 13,
-          "winRate": 48,
-          "pf": 0.30839267362637734,
-          "exp": -0.47690096535139337,
-          "netR": -11.922524133784835,
-          "maxDD": 13.448883746334625,
-          "sumR2": 28.64181903797482,
-          "grossW": 5.316339133178309,
-          "grossL": 17.238863266963143,
-          "sd": 0.9780072377277248,
-          "tStat": -2.4381259511913838,
+          "wins": 11,
+          "losses": 14,
+          "winRate": 44,
+          "pf": 0.28175764733793274,
+          "exp": -0.5332868049639943,
+          "netR": -13.332170124099857,
+          "maxDD": 13.448883746334623,
+          "sumR2": 30.385636669905104,
+          "grossW": 5.230046479649542,
+          "grossL": 18.5622166037494,
+          "sd": 0.9847962196394463,
+          "tStat": -2.7075997771358287,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2851,15 +2851,15 @@
           "wins": 52,
           "losses": 53,
           "winRate": 49.523809523809526,
-          "pf": 0.5319447503131709,
-          "exp": -0.2750035343307104,
-          "netR": -28.875371104724593,
-          "maxDD": 28.875371104724593,
-          "sumR2": 104.9575144689469,
+          "pf": 0.5319681710438058,
+          "exp": -0.27497766674207813,
+          "netR": -28.872655007918205,
+          "maxDD": 28.872655007918205,
+          "sumR2": 104.95082107494942,
           "grossW": 32.816856733858145,
-          "grossL": 61.69222783858274,
-          "sd": 0.9658430223625925,
-          "tStat": -2.917604218808311,
+          "grossL": 61.68951174177635,
+          "sd": 0.9658171399242074,
+          "tStat": -2.9174079609579495,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4149,6 +4149,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795227828270,
+        "type": "CYCLE",
+        "text": "[CYCLE #170] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795227823049,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795226927541,
         "type": "CYCLE",
@@ -5638,16 +5648,6 @@
         "t": 1794990781129,
         "type": "CYCLE",
         "text": "[CYCLE #48] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794990777545,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.12R/trade, win 56.6%, t=-1.05) | Meta-model belum aktif (1200 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
-      },
-      {
-        "t": 1794990777545,
-        "type": "GEN",
-        "text": "[GEN #8] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-43.55R, 311 trade, Win 57.2%, t=-2.44 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4470,
+      "newsIngested": 4500,
       "lessons": 1,
-      "backtests": 4370,
+      "backtests": 4400,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795226922903,
+      "fetchedAt": 1795227823049,
       "items": [
         {
           "source": "CoinDesk",
@@ -6045,18 +6045,18 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795226922903
+        "t": 1795227823049
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795225123560,
+      "fetchedAt": 1795227823739,
       "bias": {
         "ETH": 20,
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 16.63,
+        "ARB": 16.39,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
@@ -6073,112 +6073,112 @@
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 554,
+          "pct": 556.17,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 484.71,
+          "pct": 486.61,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 21.77,
+          "pct": 21.45,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 16.63,
+          "pct": 16.39,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 59.42,
+          "pct": 58.55,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 296.47,
+          "pct": 292.13,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.37,
+          "pct": 4.3,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 35.36,
+          "pct": 34.85,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 312.47,
+          "pct": 307.91,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 51.74,
+          "pct": 50.98,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 161.03,
+          "pct": 158.68,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 82.21,
+          "pct": 81.01,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 106.27,
+          "pct": 106.3,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 297.13,
+          "pct": 297.22,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 92.92,
+          "pct": 92.95,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1117.37,
+          "pct": 1400.46,
           "lev": 10
         }
       ]
@@ -8198,11 +8198,6 @@
           ]
         ],
         "XRPUSDT": [
-          [
-            0.581,
-            0.722,
-            80
-          ],
           [
             0.501,
             -1.093,
@@ -10252,20 +10247,20 @@
       },
       "status": {
         "all": {
-          "n": 785,
-          "mean": -0.283,
+          "n": 784,
+          "mean": -0.284,
           "sd": 0.941,
-          "t": -8.42,
-          "winRate": 52.5,
-          "sum": -222.05
+          "t": -8.46,
+          "winRate": 52.4,
+          "sum": -222.77
         },
         "base": {
-          "n": 78,
-          "mean": -0.106,
-          "sd": 0.977,
-          "t": -0.95,
-          "winRate": 59,
-          "sum": -8.24
+          "n": 77,
+          "mean": -0.116,
+          "sd": 0.979,
+          "t": -1.04,
+          "winRate": 58.4,
+          "sum": -8.96
         },
         "taken": {
           "n": 0,
@@ -10278,17 +10273,17 @@
         "metaActive": false,
         "policy": "SCORE",
         "chosen": {
-          "n": 78,
-          "mean": -0.106,
-          "sd": 0.977,
-          "t": -0.95,
-          "winRate": 59,
-          "sum": -8.24
+          "n": 77,
+          "mean": -0.116,
+          "sd": 0.979,
+          "t": -1.04,
+          "winRate": 58.4,
+          "sum": -8.96
         },
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795226925196
+        "updatedAt": 1795227825811
       }
     },
     "champion": {
@@ -10304,7 +10299,7 @@
       "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795226925195,
+      "updatedAt": 1795227825810,
       "gen": 28
     },
     "factory": {
