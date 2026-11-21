@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795220646483,
+  "updatedAt": 1795220663493,
   "brain": {
     "v": 1,
     "gen": 27,
@@ -10323,12 +10323,12 @@
       "gen": 27
     },
     "factory": {
-      "updatedAt": 1795191421281,
-      "day": "2026-11-20",
-      "dataUntil": "2026-11-19",
+      "updatedAt": 1795220625733,
+      "day": "2026-11-21",
+      "dataUntil": "2026-11-20",
       "universe": 20,
-      "nTrials": 59,
-      "hurdleSharpe": 2.6,
+      "nTrials": 63,
+      "hurdleSharpe": 2.55,
       "pbo": 0.171,
       "top": [
         {
@@ -10340,7 +10340,7 @@
           "cagr": 0.064,
           "mdd": -0.0311,
           "dsr": 1,
-          "years": 6.9,
+          "years": 6.91,
           "status": "INKUBASI"
         },
         {
@@ -10349,10 +10349,10 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.24,
-          "cagr": 0.0545,
+          "cagr": 0.0544,
           "mdd": -0.0082,
           "dsr": 1,
-          "years": 6.9,
+          "years": 6.91,
           "status": "KANDIDAT"
         },
         {
@@ -10364,7 +10364,7 @@
           "cagr": 0.0537,
           "mdd": -0.0087,
           "dsr": 1,
-          "years": 6.9,
+          "years": 6.91,
           "status": "KANDIDAT"
         },
         {
@@ -10373,10 +10373,10 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.02,
-          "cagr": 0.0571,
+          "cagr": 0.057,
           "mdd": -0.076,
           "dsr": 1,
-          "years": 6.9,
+          "years": 6.91,
           "status": "KANDIDAT"
         },
         {
@@ -10388,7 +10388,7 @@
           "cagr": 0.0499,
           "mdd": -0.0082,
           "dsr": 1,
-          "years": 6.9,
+          "years": 6.91,
           "status": "KANDIDAT"
         },
         {
@@ -10396,11 +10396,11 @@
           "label": "Carry funding > 30%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 3.69,
+          "sharpe": 3.68,
           "cagr": 0.0442,
           "mdd": -0.008,
-          "dsr": 0.9998,
-          "years": 6.9,
+          "dsr": 0.9999,
+          "years": 6.91,
           "status": "KANDIDAT"
         },
         {
@@ -10409,7 +10409,7 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2945,
+          "cagr": 0.2944,
           "mdd": -0.3307,
           "dsr": 0.0001,
           "years": 6.82,
@@ -10420,11 +10420,11 @@
           "label": "Momentum lintas koin 14 hari, 33% teratas (long-only)",
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
-          "sharpe": 1.05,
-          "cagr": 0.6998,
+          "sharpe": 1.04,
+          "cagr": 0.6852,
           "mdd": -0.7746,
           "dsr": 0,
-          "years": 6.88,
+          "years": 6.89,
           "status": "KANDIDAT"
         },
         {
@@ -10433,7 +10433,7 @@
           "family": "TSMOM",
           "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
           "sharpe": 1.02,
-          "cagr": 0.2681,
+          "cagr": 0.2679,
           "mdd": -0.3337,
           "dsr": 0,
           "years": 6.85,
@@ -10445,7 +10445,7 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.01,
-          "cagr": 0.2656,
+          "cagr": 0.2655,
           "mdd": -0.299,
           "dsr": 0,
           "years": 6.79,
@@ -10460,11 +10460,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 3,
+            "days": 4,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.42
+            "z": -0.48
           }
         }
       ],
@@ -10488,6 +10488,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795220625733,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Momentum lintas koin 98 hari, 25% teratas (long-only); Trend TSMOM 118 hari (long/flat); Momentum lintas koin 91 hari, 33% teratas (long-only); Breakout Donchian 149 hari (long/short)"
+        },
         {
           "t": 1795191421281,
           "type": "EXPLORE",
