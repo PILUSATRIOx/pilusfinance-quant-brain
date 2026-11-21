@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795239526916,
+  "updatedAt": 1795240428800,
   "brain": {
     "v": 1,
     "gen": 30,
-    "cycles": 183,
+    "cycles": 184,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795236822406,
     "autoExecBursa": false,
@@ -188,23 +188,23 @@
         }
       }
     },
-    "lastHurst": 0.45,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 73,
-          "wins": 41,
+          "trades": 72,
+          "wins": 40,
           "losses": 32,
-          "winRate": 56.16438356164384,
-          "pf": 0.7874786237269953,
-          "exp": -0.10447710527661506,
-          "netR": -7.6268286851928995,
+          "winRate": 55.55555555555556,
+          "pf": 0.780407568014691,
+          "exp": -0.10945264063208265,
+          "netR": -7.880590125509951,
           "maxDD": 13.883503030231587,
-          "sumR2": 70.48620205017934,
-          "grossW": 28.26051977332397,
+          "sumR2": 70.42180718158755,
+          "grossW": 28.00675833300692,
           "grossL": 35.88734845851687,
-          "sd": 0.9838231341353268,
-          "tStat": -0.9073305432768435,
+          "sd": 0.9898019134776936,
+          "tStat": -0.9383053722875722,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795240428758,
+        "type": "CYCLE",
+        "text": "[CYCLE #184] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795240424086,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795239526900,
         "type": "CYCLE",
         "text": "[CYCLE #183] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795007335373,
         "type": "CYCLE",
         "text": "[CYCLE #65] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795007331616,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795006427870,
-        "type": "CYCLE",
-        "text": "[CYCLE #64] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4890,
+      "newsIngested": 4920,
       "lessons": 1,
-      "backtests": 4790,
+      "backtests": 4820,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795239522618,
+      "fetchedAt": 1795240424086,
       "items": [
         {
           "source": "CoinDesk",
@@ -5783,6 +5783,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Hong Kong pushes to bring crypto custodians, advisers under licensing rules",
+          "link": "https://cointelegraph.com/news/hong-kong-crypto-custody-advisory-licensing-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-21 05:40:35",
+          "summary": "    Hong Kong’s securities regulator says the proposal would strengthen investor protections, with the bill set for its first reading in the Legislative Council on Dec. 2. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
           "link": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 19:37:27",
@@ -5843,13 +5850,6 @@
           "link": "https://cointelegraph.com/news/binance-hacker-600m-eth-routes-thorchain-chainflip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 11:31:41",
           "summary": "    OnChain Lens tracked nearly $600 million in ETH transfers over two days as the Binance hackers moved the stolen funds through fresh wallets and cross-chain protocols to obscure their trail. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "VanEck to end Gemini ETF custody deals, keeps Coinbase",
-          "link": "https://cointelegraph.com/news/vaneck-gemini-etf-custody-end-keep-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 10:54:38",
-          "summary": "    VanEck plans to end Gemini’s custody agreements for three crypto ETFs in February 2027, while Coinbase will continue serving as a custodian for the funds. "
         },
         {
           "source": "Decrypt",
@@ -6046,20 +6046,20 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795239522618
+        "t": 1795240424086
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795237722673,
+      "fetchedAt": 1795240424821,
       "bias": {
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 18.86,
+        "ARB": 19.4,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5,
+        "ZRO": 5.09,
         "ETHFI": 20,
         "ENA": 0,
         "EIGEN": 20,
@@ -6073,105 +6073,105 @@
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 575.18,
+          "pct": 584.41,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 503.24,
+          "pct": 511.31,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 18.86,
+          "pct": 19.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 67.39,
+          "pct": 69.33,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 336.23,
+          "pct": 345.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.95,
+          "pct": 5.09,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 40.11,
+          "pct": 41.26,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 354.39,
+          "pct": 281.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 58.68,
+          "pct": 60.37,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 182.63,
+          "pct": 187.88,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 93.24,
+          "pct": 95.92,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 134,
+          "pct": 128.65,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 374.66,
+          "pct": 359.7,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 50.78,
+          "pct": 48.75,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1582.43,
+          "pct": 1617.3,
           "lev": 10
         }
       ]
@@ -10296,7 +10296,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795239524605
+        "updatedAt": 1795240426110
       }
     },
     "champion": {
@@ -10312,7 +10312,7 @@
       "deflatedT": -5.36,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795239524604,
+      "updatedAt": 1795240426109,
       "gen": 30
     },
     "factory": {
