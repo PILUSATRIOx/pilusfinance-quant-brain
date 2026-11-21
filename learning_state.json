@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795240428800,
+  "updatedAt": 1795241326465,
   "brain": {
     "v": 1,
     "gen": 30,
-    "cycles": 184,
+    "cycles": 185,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795236822406,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795241326432,
+        "type": "CYCLE",
+        "text": "[CYCLE #185] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795241323742,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795240428758,
         "type": "CYCLE",
         "text": "[CYCLE #184] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795008235099,
         "type": "GEN",
         "text": "[GEN #11] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-43.12R, 312 trade, Win 57.4%, t=-2.41 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795008233668,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795007335373,
-        "type": "CYCLE",
-        "text": "[CYCLE #65] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4920,
+      "newsIngested": 4950,
       "lessons": 1,
-      "backtests": 4820,
+      "backtests": 4850,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795240424086,
+      "fetchedAt": 1795241323742,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795240424086
+        "t": 1795241323742
       },
       "lastErrors": []
     },
@@ -10296,7 +10296,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795240426110
+        "updatedAt": 1795241324166
       }
     },
     "champion": {
@@ -10312,7 +10312,7 @@
       "deflatedT": -5.36,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795240426109,
+      "updatedAt": 1795241324165,
       "gen": 30
     },
     "factory": {
