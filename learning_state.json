@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795248528573,
+  "updatedAt": 1795249428032,
   "brain": {
     "v": 1,
     "gen": 32,
-    "cycles": 193,
+    "cycles": 194,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795247622929,
     "autoExecBursa": false,
@@ -435,7 +435,7 @@
           "tStat": -1.8533619179285166,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -454,23 +454,23 @@
           "tStat": -0.8727951985651838,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
           "trades": 92,
-          "wins": 58,
-          "losses": 34,
-          "winRate": 63.04347826086957,
-          "pf": 0.739993966460548,
-          "exp": -0.11170675109038185,
-          "netR": -10.27702110031513,
-          "maxDD": 16.24935849967626,
-          "sumR2": 78.45414858910297,
-          "grossW": 29.249065892415214,
-          "grossL": 39.526086992730356,
-          "sd": 0.9216929952454935,
-          "tStat": -1.1624841699125847,
+          "wins": 57,
+          "losses": 35,
+          "winRate": 61.95652173913043,
+          "pf": 0.7139789198849227,
+          "exp": -0.12678102965702037,
+          "netR": -11.663854728445875,
+          "maxDD": 16.449457553128045,
+          "sumR2": 80.00795503545557,
+          "grossW": 29.115848375091335,
+          "grossL": 40.77970310353722,
+          "sd": 0.9289554545395745,
+          "tStat": -1.309041150715975,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -779,7 +779,7 @@
           "tStat": -1.3565351663405372,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -798,7 +798,7 @@
           "tStat": -1.4545185722703926,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1123,7 +1123,7 @@
           "tStat": -0.6845509456013485,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -1142,7 +1142,7 @@
           "tStat": -1.8703162673918103,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1467,7 +1467,7 @@
           "tStat": -1.3882801911398883,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -1486,7 +1486,7 @@
           "tStat": -0.974631638517621,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1811,7 +1811,7 @@
           "tStat": -1.4365365185451666,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -1830,7 +1830,7 @@
           "tStat": -0.9451538380218856,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2155,7 +2155,7 @@
           "tStat": -1.9163372862974983,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -2174,7 +2174,7 @@
           "tStat": -3.106250931981072,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2499,7 +2499,7 @@
           "tStat": -1.9216254840022835,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -2518,7 +2518,7 @@
           "tStat": 0.12093675602791565,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2843,7 +2843,7 @@
           "tStat": -2.7604964558672282,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -2851,18 +2851,18 @@
           "wins": 53,
           "losses": 53,
           "winRate": 50,
-          "pf": 0.5381928391328343,
-          "exp": -0.26818299398449214,
-          "netR": -28.427397362356164,
-          "maxDD": 28.740000264582864,
-          "sumR2": 104.7395924528827,
+          "pf": 0.5382217841314239,
+          "exp": -0.2681517632043332,
+          "netR": -28.42408689965932,
+          "maxDD": 28.73668980188602,
+          "sumR2": 104.73189519597979,
           "grossW": 33.129459636084846,
-          "grossL": 61.556856998441,
-          "sd": 0.9617238882887985,
-          "tStat": -2.8710037774768584,
+          "grossL": 61.55354653574416,
+          "sd": 0.9616945667803709,
+          "tStat": -2.8707569648106825,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -3187,7 +3187,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -3206,7 +3206,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -3531,7 +3531,7 @@
           "tStat": -2.0341461882090055,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -3550,7 +3550,7 @@
           "tStat": -1.8361581250882852,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -4149,6 +4149,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795249428014,
+        "type": "CYCLE",
+        "text": "[CYCLE #194] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795249422600,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795248528554,
         "type": "CYCLE",
@@ -5638,16 +5648,6 @@
         "t": 1795016323248,
         "type": "TP1",
         "text": "[TP1 LOCKED] TP1 AAPL tercapai -> 50% ditutup, SL digeser ke breakeven"
-      },
-      {
-        "t": 1795015436491,
-        "type": "CYCLE",
-        "text": "[CYCLE #74] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795015426822,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 5190,
+      "newsIngested": 5220,
       "lessons": 1,
-      "backtests": 5090,
+      "backtests": 5120,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795248522359,
+      "fetchedAt": 1795249422600,
       "items": [
         {
           "source": "CoinDesk",
@@ -6045,7 +6045,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795248522358
+        "t": 1795249422600
       },
       "lastErrors": []
     },
@@ -10300,7 +10300,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795248525315
+        "updatedAt": 1795249424856
       }
     },
     "champion": {
@@ -10316,7 +10316,7 @@
       "deflatedT": -5.36,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795248525315,
+      "updatedAt": 1795249424855,
       "gen": 32
     },
     "factory": {
