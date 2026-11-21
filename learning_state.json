@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795219726298,
+  "updatedAt": 1795220646483,
   "brain": {
     "v": 1,
-    "gen": 26,
-    "cycles": 161,
+    "gen": 27,
+    "cycles": 162,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795215223546,
+    "lastOptAt": 1795220623526,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,16 +35,16 @@
       "volConfirmMult": 1.186
     },
     "weights": {
-      "elder": 0.58,
+      "elder": 0.59,
       "donchian": 0.56,
-      "bbrev": 0.73,
+      "bbrev": 0.72,
       "wyckoff": 0.73,
       "rsidiv": 0.48,
-      "macdm": 0.54,
+      "macdm": 0.55,
       "smc": 0.56,
       "statarb": 0.55,
       "tsmom": 1,
-      "emax": 0.58
+      "emax": 0.57
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795220625720,
+        "type": "CYCLE",
+        "text": "[CYCLE #162] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795220623527,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (79 trade OOS, -0.101R/trade, win 59.5%, t=-0.92) | Meta-model belum aktif (1238 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.282R)"
+      },
+      {
+        "t": 1795220623527,
+        "type": "GEN",
+        "text": "[GEN #27] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-61.66R, 319 trade, Win 54.9%, t=-3.42 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795220623114,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795219726282,
         "type": "CYCLE",
         "text": "[CYCLE #161] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1794984606213,
         "type": "CYCLE",
         "text": "[CYCLE #41] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794984487222,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794983737589,
-        "type": "CYCLE",
-        "text": "[CYCLE #40] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794983588026,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794982837189,
-        "type": "CYCLE",
-        "text": "[CYCLE #39] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4230,
+      "newsIngested": 4260,
       "lessons": 1,
-      "backtests": 4130,
+      "backtests": 4160,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795219722892,
+      "fetchedAt": 1795220623114,
       "items": [
         {
           "source": "CoinDesk",
@@ -6045,7 +6045,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795219722891
+        "t": 1795220623114
       },
       "lastErrors": []
     },
@@ -10303,7 +10303,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795219723993
+        "updatedAt": 1795220623527
       }
     },
     "champion": {
@@ -10319,8 +10319,8 @@
       "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795219723992,
-      "gen": 26
+      "updatedAt": 1795220623527,
+      "gen": 27
     },
     "factory": {
       "updatedAt": 1795191421281,
