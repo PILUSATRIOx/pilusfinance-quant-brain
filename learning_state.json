@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795223327209,
+  "updatedAt": 1795224226225,
   "brain": {
     "v": 1,
     "gen": 27,
-    "cycles": 165,
+    "cycles": 166,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795220623526,
     "autoExecBursa": false,
@@ -196,15 +196,15 @@
           "wins": 41,
           "losses": 32,
           "winRate": 56.16438356164384,
-          "pf": 0.7873840540803524,
-          "exp": -0.10452359642541881,
-          "netR": -7.630222539055573,
+          "pf": 0.7872322334624537,
+          "exp": -0.10459823258182593,
+          "netR": -7.635670978473293,
           "maxDD": 13.883503030231587,
-          "sumR2": 70.48449110993455,
-          "grossW": 28.2571259194613,
+          "sumR2": 70.48179257017273,
+          "grossW": 28.25167748004358,
           "grossL": 35.88734845851687,
-          "sd": 0.9838060502783322,
-          "tStat": -0.9077500581341009,
+          "sd": 0.9837789589218375,
+          "tStat": -0.908423261981678,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 103,
+          "trades": 102,
           "wins": 53,
-          "losses": 50,
-          "winRate": 51.45631067961165,
-          "pf": 0.5857154593053702,
-          "exp": -0.22379099049284293,
-          "netR": -23.05047202076282,
-          "maxDD": 23.365036694716885,
-          "sumR2": 93.11808103810569,
+          "losses": 49,
+          "winRate": 51.9607843137255,
+          "pf": 0.5980449762788389,
+          "exp": -0.21473914770834152,
+          "netR": -21.903393066250835,
+          "maxDD": 22.650129828417963,
+          "sumR2": 91.80229091022139,
           "grossW": 32.58875598932453,
-          "grossL": 55.63922801008736,
-          "sd": 0.9286274558177489,
-          "tStat": -2.445792961997233,
+          "grossL": 54.49214905557538,
+          "sd": 0.9286356166054888,
+          "tStat": -2.3354252668745206,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795224226210,
+        "type": "CYCLE",
+        "text": "[CYCLE #166] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795224222940,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795223327192,
         "type": "CYCLE",
         "text": "[CYCLE #165] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1794987180654,
         "type": "CYCLE",
         "text": "[CYCLE #44] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794987176332,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794986286160,
-        "type": "CYCLE",
-        "text": "[CYCLE #43] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4350,
+      "newsIngested": 4380,
       "lessons": 1,
-      "backtests": 4250,
+      "backtests": 4280,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795223322762,
+      "fetchedAt": 1795224222940,
       "items": [
         {
           "source": "CoinDesk",
@@ -6045,7 +6045,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795223322762
+        "t": 1795224222939
       },
       "lastErrors": []
     },
@@ -6291,11 +6291,6 @@
       },
       "oosBySym": {
         "SUIUSDT": [
-          [
-            0.568,
-            1.006,
-            10
-          ],
           [
             0.515,
             -1.082,
@@ -10262,12 +10257,12 @@
       },
       "status": {
         "all": {
-          "n": 787,
-          "mean": -0.281,
-          "sd": 0.941,
-          "t": -8.36,
-          "winRate": 52.6,
-          "sum": -220.78
+          "n": 786,
+          "mean": -0.282,
+          "sd": 0.94,
+          "t": -8.41,
+          "winRate": 52.5,
+          "sum": -221.79
         },
         "base": {
           "n": 79,
@@ -10298,7 +10293,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795223324720
+        "updatedAt": 1795224223942
       }
     },
     "champion": {
@@ -10314,7 +10309,7 @@
       "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795223324719,
+      "updatedAt": 1795224223941,
       "gen": 27
     },
     "factory": {
