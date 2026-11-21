@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795246725916,
+  "updatedAt": 1795247625777,
   "brain": {
     "v": 1,
-    "gen": 31,
-    "cycles": 191,
+    "gen": 32,
+    "cycles": 192,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795242225017,
+    "lastOptAt": 1795247622929,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -41,7 +41,7 @@
       "wyckoff": 0.72,
       "rsidiv": 0.46,
       "macdm": 0.56,
-      "smc": 0.57,
+      "smc": 0.58,
       "statarb": 0.55,
       "tsmom": 1,
       "emax": 0.57
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795247625749,
+        "type": "CYCLE",
+        "text": "[CYCLE #192] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795247622929,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1238 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
+      },
+      {
+        "t": 1795247622929,
+        "type": "GEN",
+        "text": "[GEN #32] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-57.77R, 317 trade, Win 55.5%, t=-3.21 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795247622545,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795246725898,
         "type": "CYCLE",
         "text": "[CYCLE #191] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1795014529763,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795013635079,
-        "type": "CYCLE",
-        "text": "[CYCLE #72] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795013632163,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.12R/trade, win 56.6%, t=-1.05) | Meta-model belum aktif (1203 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.288R)"
-      },
-      {
-        "t": 1795013632163,
-        "type": "GEN",
-        "text": "[GEN #12] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-42.5R, 313 trade, Win 57.5%, t=-2.38 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795013630509,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 5130,
+      "newsIngested": 5160,
       "lessons": 1,
-      "backtests": 5030,
+      "backtests": 5060,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795246722497,
+      "fetchedAt": 1795247622545,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795246722497
+        "t": 1795247622545
       },
       "lastErrors": []
     },
@@ -10296,7 +10296,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795246722920
+        "updatedAt": 1795247622929
       }
     },
     "champion": {
@@ -10312,8 +10312,8 @@
       "deflatedT": -5.36,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795246722919,
-      "gen": 31
+      "updatedAt": 1795247622929,
+      "gen": 32
     },
     "factory": {
       "updatedAt": 1795220625733,
