@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795225126102,
+  "updatedAt": 1795226025460,
   "brain": {
     "v": 1,
-    "gen": 27,
-    "cycles": 167,
+    "gen": 28,
+    "cycles": 168,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795220623526,
+    "lastOptAt": 1795226023305,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -37,10 +37,10 @@
     "weights": {
       "elder": 0.59,
       "donchian": 0.56,
-      "bbrev": 0.72,
+      "bbrev": 0.71,
       "wyckoff": 0.73,
       "rsidiv": 0.48,
-      "macdm": 0.55,
+      "macdm": 0.56,
       "smc": 0.56,
       "statarb": 0.55,
       "tsmom": 1,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795226025445,
+        "type": "CYCLE",
+        "text": "[CYCLE #168] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795226023305,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (79 trade OOS, -0.101R/trade, win 59.5%, t=-0.92) | Meta-model belum aktif (1238 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.282R)"
+      },
+      {
+        "t": 1795226023305,
+        "type": "GEN",
+        "text": "[GEN #28] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-61.66R, 319 trade, Win 54.9%, t=-3.42 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795226022901,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795225126085,
         "type": "CYCLE",
         "text": "[CYCLE #167] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1794989882071,
         "type": "CYCLE",
         "text": "[CYCLE #47] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794989878361,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794988980084,
-        "type": "CYCLE",
-        "text": "[CYCLE #46] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794988975604,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794988081697,
-        "type": "CYCLE",
-        "text": "[CYCLE #45] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4410,
+      "newsIngested": 4440,
       "lessons": 1,
-      "backtests": 4310,
+      "backtests": 4340,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795225122872,
+      "fetchedAt": 1795226022901,
       "items": [
         {
           "source": "CoinDesk",
@@ -6045,7 +6045,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795225122872
+        "t": 1795226022901
       },
       "lastErrors": []
     },
@@ -10293,7 +10293,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795225123948
+        "updatedAt": 1795226023305
       }
     },
     "champion": {
@@ -10309,8 +10309,8 @@
       "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795225123946,
-      "gen": 27
+      "updatedAt": 1795226023305,
+      "gen": 28
     },
     "factory": {
       "updatedAt": 1795220625733,
