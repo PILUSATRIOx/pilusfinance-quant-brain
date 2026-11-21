@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795238627256,
+  "updatedAt": 1795239526916,
   "brain": {
     "v": 1,
     "gen": 30,
-    "cycles": 182,
+    "cycles": 183,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795236822406,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.56,
+    "lastHurst": 0.45,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -477,57 +477,57 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 80,
-          "wins": 47,
+          "trades": 79,
+          "wins": 46,
           "losses": 33,
-          "winRate": 58.75,
-          "pf": 0.7353357610282916,
-          "exp": -0.12332265541385919,
-          "netR": -9.865812433108735,
+          "winRate": 58.22784810126582,
+          "pf": 0.7285564315086749,
+          "exp": -0.12808257648810886,
+          "netR": -10.1185235425606,
           "maxDD": 17.010479547530135,
-          "sumR2": 67.12008241364741,
-          "grossW": 27.410898887771104,
+          "sumR2": 67.05621950880702,
+          "grossW": 27.158187778319235,
           "grossL": 37.27671132087983,
-          "sd": 0.913356615274443,
-          "tStat": -1.207667787409905,
+          "sd": 0.9181936904151589,
+          "tStat": -1.23985042936014,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 83,
+          "trades": 82,
           "wins": 39,
-          "losses": 44,
-          "winRate": 46.98795180722892,
-          "pf": 0.5293491658759454,
-          "exp": -0.2825697592536647,
-          "netR": -23.45329001805417,
+          "losses": 43,
+          "winRate": 47.5609756097561,
+          "pf": 0.5419954766141328,
+          "exp": -0.2718362855128807,
+          "netR": -22.290575412056217,
           "maxDD": 28.36018187141347,
-          "sumR2": 84.74259782519228,
+          "sumR2": 83.3906925701913,
           "grossW": 26.378322543950407,
-          "grossL": 49.83161256200458,
-          "sd": 0.9760260849115959,
-          "tStat": -2.637565801725964,
+          "grossL": 48.66889795600663,
+          "sd": 0.9770913332104515,
+          "tStat": -2.519295971802085,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 83,
-          "wins": 45,
+          "trades": 82,
+          "wins": 44,
           "losses": 38,
-          "winRate": 54.21686746987952,
-          "pf": 0.6540927311291379,
-          "exp": -0.18207802388701294,
-          "netR": -15.112475982622074,
+          "winRate": 53.65853658536586,
+          "pf": 0.6488772219571259,
+          "exp": -0.18707729723047908,
+          "netR": -15.340338372899284,
           "maxDD": 23.383651657455964,
-          "sumR2": 80.0545296321053,
-          "grossW": 28.576909418134083,
+          "sumR2": 80.00260836320247,
+          "grossW": 28.349047027856873,
           "grossL": 43.68938540075616,
-          "sd": 0.9709366854665398,
-          "tStat": -1.7084633505710152,
+          "sd": 0.9758363258441605,
+          "tStat": -1.736005242024916,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1509,19 +1509,19 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 54,
+          "trades": 53,
           "wins": 38,
-          "losses": 16,
-          "winRate": 70.37037037037037,
-          "pf": 1.4788832709861528,
-          "exp": 0.16038738990737236,
-          "netR": 8.660919054998107,
-          "maxDD": 5.209439725425698,
-          "sumR2": 48.318920391341614,
+          "losses": 15,
+          "winRate": 71.69811320754717,
+          "pf": 1.5790526755791667,
+          "exp": 0.18506052727445735,
+          "netR": 9.80820794554624,
+          "maxDD": 4.0621508348775635,
+          "sumR2": 47.002648592966445,
           "grossW": 26.746577042513294,
-          "grossL": 18.085657987515184,
-          "sd": 0.9409932346909717,
-          "tStat": 1.2525082603135664,
+          "grossL": 16.93836909696705,
+          "sd": 0.9321969136126573,
+          "tStat": 1.4452536315584201,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2541,19 +2541,19 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 36,
+          "trades": 35,
           "wins": 21,
-          "losses": 15,
-          "winRate": 58.333333333333336,
-          "pf": 0.8157114788521037,
-          "exp": -0.08631507358328712,
-          "netR": -3.1073426489983365,
-          "maxDD": 10.515620391272153,
-          "sumR2": 32.171031039442404,
+          "losses": 14,
+          "winRate": 60,
+          "pf": 0.8752670666082272,
+          "exp": -0.05600153595572003,
+          "netR": -1.9600537584502011,
+          "maxDD": 9.368331500724018,
+          "sumR2": 30.854759241067228,
           "grossW": 13.753949794195217,
-          "grossL": 16.861292443193555,
-          "sd": 0.9547298874557681,
-          "tStat": -0.5424470819488367,
+          "grossL": 15.71400355264542,
+          "sd": 0.9509282341332141,
+          "tStat": -0.34840647569178057,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795239526900,
+        "type": "CYCLE",
+        "text": "[CYCLE #183] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795239522618,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795238627241,
         "type": "CYCLE",
         "text": "[CYCLE #182] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795006427870,
         "type": "CYCLE",
         "text": "[CYCLE #64] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795006424165,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795005525946,
-        "type": "CYCLE",
-        "text": "[CYCLE #63] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4860,
+      "newsIngested": 4890,
       "lessons": 1,
-      "backtests": 4760,
+      "backtests": 4790,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795238622770,
+      "fetchedAt": 1795239522618,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795238622770
+        "t": 1795239522618
       },
       "lastErrors": []
     },
@@ -10296,23 +10296,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795238624893
+        "updatedAt": 1795239524605
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -58.92,
-      "trades": 318,
-      "winRate": 55.3,
+      "netR": -57.77,
+      "trades": 317,
+      "winRate": 55.5,
       "pf": 0.66,
-      "expPerTrade": -0.185,
-      "tStat": -3.27,
-      "deflatedT": -5.42,
+      "expPerTrade": -0.182,
+      "tStat": -3.21,
+      "deflatedT": -5.36,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795238624892,
+      "updatedAt": 1795239524604,
       "gen": 30
     },
     "factory": {
