@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795231427323,
+  "updatedAt": 1795232330536,
   "brain": {
     "v": 1,
     "gen": 29,
-    "cycles": 174,
+    "cycles": 175,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795231424776,
     "autoExecBursa": false,
@@ -405,18 +405,18 @@
           "wins": 54,
           "losses": 41,
           "winRate": 56.84210526315789,
-          "pf": 0.559615345859008,
-          "exp": -0.22553403751438283,
-          "netR": -21.42573356386637,
-          "maxDD": 24.984818589275072,
-          "sumR2": 82.43908586838995,
-          "grossW": 27.226582910828,
+          "pf": 0.5594716154339683,
+          "exp": -0.22560764612623624,
+          "netR": -21.432726381992442,
+          "maxDD": 24.984818589275076,
+          "sumR2": 82.4367368876047,
+          "grossW": 27.219590092701928,
           "grossL": 48.652316474694366,
-          "sd": 0.9086279911424073,
-          "tStat": -2.419289195178002,
+          "sd": 0.908595771474556,
+          "tStat": -2.420164608338638,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -760,7 +760,7 @@
           "tStat": -2.7480523032081443,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1051,19 +1051,19 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 58,
+          "trades": 59,
           "wins": 27,
-          "losses": 31,
-          "winRate": 46.55172413793103,
-          "pf": 0.310721228177742,
-          "exp": -0.44048041537961613,
-          "netR": -25.547864092017736,
-          "maxDD": 25.68096560714772,
-          "sumR2": 56.89465988402509,
+          "losses": 32,
+          "winRate": 45.76271186440678,
+          "pf": 0.3016457239511854,
+          "exp": -0.45191549287244337,
+          "netR": -26.66301407947416,
+          "maxDD": 26.796115594604142,
+          "sumR2": 58.138219378549145,
           "grossW": 11.516768008106885,
-          "grossL": 37.064632100124626,
-          "sd": 0.8948323972904346,
-          "tStat": -3.7488572287566,
+          "grossL": 38.179782087581046,
+          "sd": 0.8914226350611071,
+          "tStat": -3.8940325609245514,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1089,22 +1089,22 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 52,
+          "trades": 53,
           "wins": 30,
-          "losses": 22,
-          "winRate": 57.692307692307686,
-          "pf": 0.6154811722073487,
-          "exp": -0.18810824949877605,
-          "netR": -9.781628973936355,
-          "maxDD": 11.91884200905597,
-          "sumR2": 44.24643220740359,
+          "losses": 23,
+          "winRate": 56.60377358490566,
+          "pf": 0.5899385663130035,
+          "exp": -0.2053405003462252,
+          "netR": -10.883046518349936,
+          "maxDD": 12.702419621244832,
+          "sumR2": 45.45955281454564,
           "grossW": 15.656992666747051,
-          "grossL": 25.438621640683408,
-          "sd": 0.911865434515486,
-          "tStat": -1.4875746206258726,
+          "grossL": 26.54003918509699,
+          "sd": 0.911727255492145,
+          "tStat": -1.6396366328145195,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1433,22 +1433,22 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 46,
+          "trades": 47,
           "wins": 28,
-          "losses": 18,
-          "winRate": 60.86956521739131,
-          "pf": 0.7440399128342139,
-          "exp": -0.11780508928247709,
-          "netR": -5.419034106993946,
+          "losses": 19,
+          "winRate": 59.57446808510638,
+          "pf": 0.7074360337689863,
+          "exp": -0.13860588436605947,
+          "netR": -6.514476565204795,
           "maxDD": 7.22811938693275,
-          "sumR2": 40.66540222175902,
+          "sumR2": 41.865396401010045,
           "grossW": 15.752368696459628,
-          "grossL": 21.171402803453574,
-          "sd": 0.9431273323359401,
-          "tStat": -0.8471740366450261,
+          "grossL": 22.266845261664425,
+          "sd": 0.9436567588895853,
+          "tStat": -1.0069700236291266,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1739,19 +1739,19 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 18,
+          "trades": 19,
           "wins": 9,
-          "losses": 9,
-          "winRate": 50,
-          "pf": 0.3702789450423957,
-          "exp": -0.3601106844842705,
-          "netR": -6.481992320716869,
-          "maxDD": 6.8711505083767666,
-          "sumR2": 15.952286828214197,
+          "losses": 10,
+          "winRate": 47.368421052631575,
+          "pf": 0.33386801033645896,
+          "exp": -0.4002406506616358,
+          "netR": -7.60457236257108,
+          "maxDD": 7.9937305502309774,
+          "sumR2": 17.212472778583596,
           "grossW": 3.8114420018075172,
-          "grossL": 10.293434322524387,
-          "sd": 0.8950206089240449,
-          "tStat": -1.7070224156022742,
+          "grossL": 11.416014364378597,
+          "sd": 0.8872183054726802,
+          "tStat": -1.9663802455040273,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1777,22 +1777,22 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 27,
+          "trades": 28,
           "wins": 11,
-          "losses": 16,
-          "winRate": 40.74074074074074,
-          "pf": 0.32280241009658833,
-          "exp": -0.4715972603014454,
-          "netR": -12.733126028139026,
-          "maxDD": 12.988020222849686,
-          "sumR2": 27.034833136106514,
+          "losses": 17,
+          "winRate": 39.285714285714285,
+          "pf": 0.3051049644675435,
+          "exp": -0.4937058869351652,
+          "netR": -13.823764834184626,
+          "maxDD": 14.078659028895286,
+          "sumR2": 28.224326141359086,
           "grossW": 6.069548727326578,
-          "grossL": 18.802674755465606,
-          "sd": 0.8993571590129321,
-          "tStat": -2.7247142273784126,
+          "grossL": 19.893313561511206,
+          "sd": 0.8902652967705088,
+          "tStat": -2.9344578573991886,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2136,7 +2136,7 @@
           "tStat": -1.4864663228810133,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2480,7 +2480,7 @@
           "tStat": -0.225224784634986,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2771,19 +2771,19 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 103,
+          "trades": 104,
           "wins": 46,
-          "losses": 56,
-          "winRate": 44.66019417475729,
-          "pf": 0.28054462754463566,
-          "exp": -0.46423988011624184,
-          "netR": -47.81670765197291,
-          "maxDD": 47.81670765197291,
-          "sumR2": 100.73122938537544,
+          "losses": 57,
+          "winRate": 44.230769230769226,
+          "pf": 0.2759272347284548,
+          "exp": -0.4704679994072572,
+          "netR": -48.928671938354746,
+          "maxDD": 48.928671938354746,
+          "sumR2": 101.9676939595641,
           "grossW": 18.641915753005136,
-          "grossL": 66.44902066441868,
-          "sd": 0.8774562541884429,
-          "tStat": -5.36952147870759,
+          "grossL": 67.56098495080052,
+          "sd": 0.875493312029549,
+          "tStat": -5.480168669563969,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2809,22 +2809,22 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 108,
+          "trades": 109,
           "wins": 58,
-          "losses": 50,
-          "winRate": 53.70370370370371,
-          "pf": 0.4803125846283266,
-          "exp": -0.2828683158668837,
-          "netR": -30.54977811362344,
-          "maxDD": 30.899877665459503,
-          "sumR2": 93.2945553708787,
+          "losses": 51,
+          "winRate": 53.21100917431193,
+          "pf": 0.47156364534737916,
+          "exp": -0.2902790543088903,
+          "netR": -31.64041691966904,
+          "maxDD": 31.990516471505103,
+          "sumR2": 94.48404837613127,
           "grossW": 28.23513221901306,
-          "grossL": 58.7849103326365,
-          "sd": 0.8894658225023204,
-          "tStat": -3.304965401961396,
+          "grossL": 59.8755491386821,
+          "sd": 0.8887126461116681,
+          "tStat": -3.4101037195331037,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -3168,7 +3168,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -3512,7 +3512,7 @@
           "tStat": -3.670715970664392,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -4149,6 +4149,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795232330520,
+        "type": "CYCLE",
+        "text": "[CYCLE #175] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795232324388,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795231427303,
         "type": "CYCLE",
@@ -5638,16 +5648,6 @@
         "t": 1794995461969,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1794995267636,
-        "type": "CYCLE",
-        "text": "[CYCLE #55] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1794994770336,
-        "type": "CYCLE",
-        "text": "[CYCLE #54] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 4620,
+      "newsIngested": 4650,
       "lessons": 1,
-      "backtests": 4520,
+      "backtests": 4550,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795231424346,
+      "fetchedAt": 1795232324388,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,21 +6046,21 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795231424346
+        "t": 1795232324388
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795230523949,
+      "fetchedAt": 1795232325300,
       "bias": {
         "ETH": 20,
         "HYPE": -40,
         "BTC": -20,
-        "ARB": 17.32,
+        "ARB": 19.8,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5,
+        "ZRO": 5.2,
         "ETHFI": 20,
         "ENA": 0,
         "EIGEN": 20,
@@ -6074,112 +6074,112 @@
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 566.17,
+          "pct": 573.02,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 495.35,
+          "pct": 501.35,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 22.67,
+          "pct": 25.91,
           "lev": 20
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 17.32,
+          "pct": 19.8,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 61.89,
+          "pct": 70.73,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 308.8,
+          "pct": 352.88,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.55,
+          "pct": 5.2,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 36.83,
+          "pct": 42.09,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 325.48,
+          "pct": 371.94,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 53.89,
+          "pct": 61.59,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 167.73,
+          "pct": 191.67,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 85.63,
+          "pct": 97.86,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 111.76,
+          "pct": 126.03,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 312.47,
+          "pct": 352.39,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 72.1,
+          "pct": 74.66,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1103.66,
+          "pct": 1439.7,
           "lev": 10
         }
       ]
@@ -10284,7 +10284,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1238,
-        "updatedAt": 1795231424776
+        "updatedAt": 1795232327875
       }
     },
     "champion": {
@@ -10300,7 +10300,7 @@
       "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795231424776,
+      "updatedAt": 1795232327874,
       "gen": 29
     },
     "factory": {
