@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795338529253,
+  "updatedAt": 1795339433637,
   "brain": {
     "v": 1,
-    "gen": 42,
-    "cycles": 257,
+    "gen": 43,
+    "cycles": 258,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795334024505,
+    "lastOptAt": 1795339430952,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795339433606,
+        "type": "CYCLE",
+        "text": "[CYCLE #258] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795339430953,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1248 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.294R)"
+      },
+      {
+        "t": 1795339430952,
+        "type": "GEN",
+        "text": "[GEN #43] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-59.74R, 313 trade, Win 55.6%, t=-3.38 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795339429667,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795338529233,
         "type": "CYCLE",
         "text": "[CYCLE #257] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1795192727121,
         "type": "CYCLE",
         "text": "[CYCLE #131] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795192723586,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795191826933,
-        "type": "CYCLE",
-        "text": "[CYCLE #130] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795191421219,
-        "type": "CYCLE",
-        "text": "[CYCLE #129] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795191414356,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7050,
+      "newsIngested": 7080,
       "lessons": 1,
-      "backtests": 6890,
+      "backtests": 6920,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795338526535,
+      "fetchedAt": 1795339429667,
       "items": [
         {
           "source": "CoinDesk",
@@ -6052,23 +6052,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795338526535
+        "t": 1795339429667
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795337625849,
+      "fetchedAt": 1795339430397,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 16.38,
+        "ARB": 16.3,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 4.17,
+        "ENA": 4.24,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6080,112 +6080,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 90.82,
+          "pct": 89.77,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 496.22,
+          "pct": 490.48,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 434.16,
+          "pct": 429.13,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 16.38,
+          "pct": 16.3,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 58.51,
+          "pct": 58.23,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 291.92,
+          "pct": 290.55,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.3,
+          "pct": 4.28,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 34.82,
+          "pct": 34.66,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 15.83,
+          "pct": 15.76,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 50.95,
+          "pct": 50.71,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 158.56,
+          "pct": 157.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 80.95,
+          "pct": 80.57,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 94.45,
+          "pct": 93.11,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 264.07,
+          "pct": 260.33,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 35.79,
+          "pct": 35.28,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1259.95,
+          "pct": 1373.88,
           "lev": 10
         }
       ]
@@ -6819,17 +6819,17 @@
         ],
         "MSFT": [
           [
-            0.457,
+            0.458,
             -1.199,
             88
           ],
           [
-            0.542,
+            0.547,
             -1.256,
             69
           ],
           [
-            0.479,
+            0.478,
             0.141,
             10
           ],
@@ -6839,27 +6839,27 @@
             40
           ],
           [
-            0.484,
+            0.483,
             -1.2,
             2
           ],
           [
-            0.552,
+            0.555,
             1.415,
             90
           ],
           [
-            0.471,
+            0.469,
             -1.25,
             10
           ],
           [
-            0.541,
+            0.546,
             -1.25,
             69
           ],
           [
-            0.499,
+            0.5,
             0.153,
             64
           ],
@@ -6874,7 +6874,7 @@
             35
           ],
           [
-            0.55,
+            0.551,
             -1.206,
             27
           ],
@@ -6894,29 +6894,29 @@
             10
           ],
           [
-            0.503,
+            0.505,
             0.229,
             69
           ],
           [
-            0.503,
+            0.505,
             -1.157,
             69
           ],
           [
-            0.537,
+            0.538,
             -1.132,
             10
           ]
         ],
         "SPY": [
           [
-            0.524,
+            0.528,
             -0.086,
             96
           ],
           [
-            0.53,
+            0.529,
             1.162,
             2
           ],
@@ -6931,17 +6931,17 @@
             10
           ],
           [
-            0.448,
+            0.45,
             -0.253,
             61
           ],
           [
-            0.508,
+            0.509,
             -1.553,
             46
           ],
           [
-            0.461,
+            0.462,
             -1.473,
             48
           ],
@@ -6951,12 +6951,12 @@
             41
           ],
           [
-            0.465,
+            0.466,
             -0.023,
             56
           ],
           [
-            0.493,
+            0.494,
             1.1,
             35
           ],
@@ -6971,44 +6971,44 @@
             2
           ],
           [
-            0.536,
+            0.541,
             -1.347,
             61
           ],
           [
-            0.491,
+            0.493,
             -1.219,
             61
           ]
         ],
         "QQQ": [
           [
-            0.522,
+            0.525,
             0.061,
             95
           ],
           [
-            0.52,
+            0.523,
             0.078,
             95
           ],
           [
-            0.47,
+            0.469,
             -1.738,
             10
           ],
           [
-            0.474,
+            0.475,
             1.178,
             48
           ],
           [
-            0.485,
+            0.487,
             1.601,
             69
           ],
           [
-            0.479,
+            0.481,
             -1.354,
             61
           ],
@@ -7023,17 +7023,17 @@
             10
           ],
           [
-            0.436,
+            0.437,
             1.355,
             96
           ],
           [
-            0.496,
+            0.499,
             0.244,
             56
           ],
           [
-            0.508,
+            0.509,
             0.339,
             56
           ]
@@ -10255,7 +10255,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795338526992
+        "updatedAt": 1795339430953
       }
     },
     "champion": {
@@ -10271,8 +10271,8 @@
       "deflatedT": -5.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795338526990,
-      "gen": 42
+      "updatedAt": 1795339430952,
+      "gen": 43
     },
     "factory": {
       "updatedAt": 1795307025362,
