@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795306127177,
+  "updatedAt": 1795307063135,
   "brain": {
     "v": 1,
-    "gen": 36,
-    "cycles": 221,
+    "gen": 37,
+    "cycles": 222,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795301623366,
+    "lastOptAt": 1795307023113,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -39,12 +39,12 @@
       "donchian": 0.56,
       "bbrev": 0.7,
       "wyckoff": 0.71,
-      "rsidiv": 0.41,
+      "rsidiv": 0.42,
       "macdm": 0.57,
-      "smc": 0.54,
+      "smc": 0.55,
       "statarb": 0.53,
       "tsmom": 1,
-      "emax": 0.59
+      "emax": 0.58
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795307025345,
+        "type": "CYCLE",
+        "text": "[CYCLE #222] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795307023113,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1243 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.283R)"
+      },
+      {
+        "t": 1795307023113,
+        "type": "GEN",
+        "text": "[GEN #37] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-58.35R, 314 trade, Win 55.7%, t=-3.28 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795307022691,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795306127156,
         "type": "CYCLE",
         "text": "[CYCLE #221] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1795099125111,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795098227322,
-        "type": "CYCLE",
-        "text": "[CYCLE #101] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795098224544,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795097330687,
-        "type": "CYCLE",
-        "text": "[CYCLE #100] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795097325906,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 5970,
+      "newsIngested": 6000,
       "lessons": 1,
-      "backtests": 5810,
+      "backtests": 5840,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795306123766,
+      "fetchedAt": 1795307022691,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795306123766
+        "t": 1795307022690
       },
       "lastErrors": []
     },
@@ -6818,37 +6818,37 @@
             88
           ],
           [
-            0.546,
+            0.547,
             -1.256,
             69
           ],
           [
-            0.488,
+            0.492,
             0.141,
             10
           ],
           [
-            0.48,
+            0.483,
             -1.187,
             40
           ],
           [
-            0.494,
+            0.497,
             -1.2,
             2
           ],
           [
-            0.556,
+            0.557,
             1.415,
             90
           ],
           [
-            0.48,
+            0.484,
             -1.25,
             10
           ],
           [
-            0.542,
+            0.541,
             -1.25,
             69
           ],
@@ -6858,32 +6858,32 @@
             64
           ],
           [
-            0.536,
+            0.538,
             0.157,
             2
           ],
           [
-            0.517,
+            0.52,
             0.117,
             35
           ],
           [
-            0.557,
+            0.559,
             -1.206,
             27
           ],
           [
-            0.547,
+            0.549,
             0.232,
             10
           ],
           [
-            0.54,
+            0.543,
             1.493,
             35
           ],
           [
-            0.542,
+            0.544,
             -1.166,
             10
           ],
@@ -6898,29 +6898,29 @@
             69
           ],
           [
-            0.545,
+            0.547,
             -1.132,
             10
           ]
         ],
         "SPY": [
           [
-            0.524,
+            0.527,
             -0.086,
             96
           ],
           [
-            0.537,
+            0.539,
             1.162,
             2
           ],
           [
-            0.478,
+            0.481,
             -1.392,
             40
           ],
           [
-            0.55,
+            0.551,
             -1.704,
             10
           ],
@@ -6930,7 +6930,7 @@
             61
           ],
           [
-            0.515,
+            0.517,
             -1.553,
             46
           ],
@@ -6940,7 +6940,7 @@
             48
           ],
           [
-            0.518,
+            0.519,
             -0.215,
             41
           ],
@@ -6950,27 +6950,27 @@
             56
           ],
           [
-            0.5,
+            0.504,
             1.1,
             35
           ],
           [
-            0.535,
+            0.537,
             -1.412,
             10
           ],
           [
-            0.495,
+            0.497,
             1.348,
             2
           ],
           [
-            0.535,
+            0.537,
             -1.347,
             61
           ],
           [
-            0.495,
+            0.496,
             -1.219,
             61
           ]
@@ -6987,12 +6987,12 @@
             95
           ],
           [
-            0.479,
+            0.482,
             -1.738,
             10
           ],
           [
-            0.478,
+            0.479,
             1.178,
             48
           ],
@@ -7007,17 +7007,17 @@
             61
           ],
           [
-            0.513,
+            0.515,
             -1.243,
             41
           ],
           [
-            0.544,
+            0.546,
             0.66,
             10
           ],
           [
-            0.444,
+            0.445,
             1.355,
             96
           ],
@@ -7027,7 +7027,7 @@
             56
           ],
           [
-            0.513,
+            0.514,
             0.339,
             56
           ]
@@ -10274,7 +10274,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1243,
-        "updatedAt": 1795306124936
+        "updatedAt": 1795307023113
       }
     },
     "champion": {
@@ -10290,17 +10290,17 @@
       "deflatedT": -5.43,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795306124935,
-      "gen": 36
+      "updatedAt": 1795307023113,
+      "gen": 37
     },
     "factory": {
-      "updatedAt": 1795220625733,
-      "day": "2026-11-21",
-      "dataUntil": "2026-11-20",
+      "updatedAt": 1795307025362,
+      "day": "2026-11-22",
+      "dataUntil": "2026-11-21",
       "universe": 20,
-      "nTrials": 63,
-      "hurdleSharpe": 2.55,
-      "pbo": 0.171,
+      "nTrials": 67,
+      "hurdleSharpe": 2.71,
+      "pbo": 0.214,
       "top": [
         {
           "id": "CARRY|thr=0.1",
@@ -10313,6 +10313,18 @@
           "dsr": 1,
           "years": 6.91,
           "status": "INKUBASI"
+        },
+        {
+          "id": "CARRY|thr=0.02",
+          "label": "Carry funding > 2%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 4.44,
+          "cagr": 0.0633,
+          "mdd": -0.0711,
+          "dsr": 1,
+          "years": 6.91,
+          "status": "KANDIDAT"
         },
         {
           "id": "CARRY|thr=0.19",
@@ -10370,7 +10382,7 @@
           "sharpe": 3.68,
           "cagr": 0.0442,
           "mdd": -0.008,
-          "dsr": 0.9999,
+          "dsr": 0.9993,
           "years": 6.91,
           "status": "KANDIDAT"
         },
@@ -10380,9 +10392,9 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2944,
+          "cagr": 0.2942,
           "mdd": -0.3307,
-          "dsr": 0.0001,
+          "dsr": 0,
           "years": 6.82,
           "status": "KANDIDAT"
         },
@@ -10392,7 +10404,7 @@
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
           "sharpe": 1.04,
-          "cagr": 0.6852,
+          "cagr": 0.6851,
           "mdd": -0.7746,
           "dsr": 0,
           "years": 6.89,
@@ -10404,22 +10416,10 @@
           "family": "TSMOM",
           "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
           "sharpe": 1.02,
-          "cagr": 0.2679,
+          "cagr": 0.2678,
           "mdd": -0.3337,
           "dsr": 0,
           "years": 6.85,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "MAX|fast=10|mode=LF|slow=50",
-          "label": "Persilangan SMA 10/50 (long/flat)",
-          "family": "MAX",
-          "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
-          "sharpe": 1.01,
-          "cagr": 0.2655,
-          "mdd": -0.299,
-          "dsr": 0,
-          "years": 6.79,
           "status": "KANDIDAT"
         }
       ],
@@ -10431,11 +10431,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 4,
+            "days": 5,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.48
+            "z": -0.54
           }
         }
       ],
@@ -10459,6 +10459,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795307025362,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Trend TSMOM 75 hari (long/short); Trend TSMOM 228 hari (long/flat); Carry funding > 2%/th (long spot + short perpetual); Trend TSMOM 78 hari (long/flat)"
+        },
         {
           "t": 1795220625733,
           "type": "EXPLORE",
