@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795344828945,
+  "updatedAt": 1795345732155,
   "brain": {
     "v": 1,
     "gen": 44,
-    "cycles": 264,
+    "cycles": 265,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795344826366,
     "autoExecBursa": false,
@@ -367,15 +367,15 @@
           "wins": 48,
           "losses": 47,
           "winRate": 48.484848484848484,
-          "pf": 0.4699585772074531,
-          "exp": -0.2870702645091613,
-          "netR": -28.419956186406967,
-          "maxDD": 32.56847500948986,
-          "sumR2": 94.06391879098585,
+          "pf": 0.4709659512413147,
+          "exp": -0.28591107586473796,
+          "netR": -28.305196510609058,
+          "maxDD": 31.296857667548533,
+          "sumR2": 93.78573370225014,
           "grossW": 25.214342709978443,
-          "grossL": 53.652266248240245,
-          "sd": 0.9362615327276143,
-          "tStat": -3.0507640949570907,
+          "grossL": 53.53750657244234,
+          "sd": 0.9351032056722733,
+          "tStat": -3.0422088908414384,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -386,34 +386,34 @@
           "wins": 44,
           "losses": 49,
           "winRate": 46.808510638297875,
-          "pf": 0.4289366512912808,
-          "exp": -0.3651119875994829,
-          "netR": -34.32052683435139,
+          "pf": 0.4289653195670797,
+          "exp": -0.36506926926142047,
+          "netR": -34.316511310573524,
           "maxDD": 40.40158944898551,
-          "sumR2": 101.65944268244213,
+          "sumR2": 101.65009005176715,
           "grossW": 25.77246552096819,
-          "grossL": 60.084549649422975,
-          "sd": 0.9789648192657973,
-          "tStat": -3.6159543083778547,
+          "grossL": 60.08053412564511,
+          "sd": 0.9789295577149059,
+          "tStat": -3.6156614727036125,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 94,
-          "wins": 52,
+          "trades": 95,
+          "wins": 53,
           "losses": 42,
-          "winRate": 55.319148936170215,
-          "pf": 0.5410246021799341,
-          "exp": -0.24282189975557963,
-          "netR": -22.825258577024485,
-          "maxDD": 24.984818589275076,
-          "sumR2": 83.55675299207414,
-          "grossW": 26.905639169204523,
-          "grossL": 49.730897746229,
-          "sd": 0.9158947698746562,
-          "tStat": -2.570432480023408,
+          "winRate": 55.78947368421052,
+          "pf": 0.5452739923700929,
+          "exp": -0.2380274006921358,
+          "netR": -22.6126030657529,
+          "maxDD": 24.98481858927508,
+          "sumR2": 83.58444146864935,
+          "grossW": 27.11537089292347,
+          "grossL": 49.72797395867636,
+          "sd": 0.9121054806607246,
+          "tStat": -2.543569984137237,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2083,19 +2083,19 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 47,
+          "trades": 48,
           "wins": 19,
-          "losses": 28,
-          "winRate": 40.42553191489361,
-          "pf": 0.19259162421307566,
-          "exp": -0.5378167809702338,
-          "netR": -25.277388705600988,
-          "maxDD": 26.45469320920866,
-          "sumR2": 46.36770583206548,
+          "losses": 29,
+          "winRate": 39.58333333333333,
+          "pf": 0.18573536584156497,
+          "exp": -0.5506885947845842,
+          "netR": -26.433052549660044,
+          "maxDD": 26.493481869545857,
+          "sumR2": 47.703264752530835,
           "grossW": 6.029431317122814,
-          "grossL": 31.306820022723798,
-          "sd": 0.8440727097143197,
-          "tStat": -4.368209096440726,
+          "grossL": 32.462483866782854,
+          "sd": 0.8397933406891103,
+          "tStat": -4.543120689825578,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2121,19 +2121,19 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 46,
+          "trades": 47,
           "wins": 25,
-          "losses": 21,
-          "winRate": 54.347826086956516,
-          "pf": 0.5629656987051187,
-          "exp": -0.23268179920923315,
-          "netR": -10.703362763624725,
-          "maxDD": 14.066656632366806,
-          "sumR2": 44.122110394454026,
+          "losses": 22,
+          "winRate": 53.191489361702125,
+          "pf": 0.5378507116757741,
+          "exp": -0.25206313749401255,
+          "netR": -11.84696746221859,
+          "maxDD": 14.253748445013626,
+          "sumR2": 45.429942101099996,
           "grossW": 13.787535849852341,
-          "grossL": 24.490898613477068,
-          "sd": 0.9618458260498083,
-          "tStat": -1.6407252602898894,
+          "grossL": 25.634503312070933,
+          "sd": 0.9605677477950181,
+          "tStat": -1.7989962833117208,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795345732134,
+        "type": "CYCLE",
+        "text": "[CYCLE #265] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795345725248,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795344828894,
         "type": "CYCLE",
         "text": "[CYCLE #264] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795199024456,
         "type": "GEN",
         "text": "[GEN #23] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-61.66R, 319 trade, Win 54.9%, t=-3.42 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795199023449,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795198127181,
-        "type": "CYCLE",
-        "text": "[CYCLE #137] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7260,
+      "newsIngested": 7290,
       "lessons": 1,
-      "backtests": 7100,
+      "backtests": 7130,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795344825291,
+      "fetchedAt": 1795345725248,
       "items": [
         {
           "source": "CoinDesk",
@@ -6052,7 +6052,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795344825291
+        "t": 1795345725248
       },
       "lastErrors": []
     },
@@ -10255,7 +10255,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795344826366
+        "updatedAt": 1795345728032
       }
     },
     "champion": {
@@ -10271,7 +10271,7 @@
       "deflatedT": -5.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795344826366,
+      "updatedAt": 1795345728031,
       "gen": 44
     },
     "factory": {
