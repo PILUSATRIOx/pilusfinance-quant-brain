@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795347556881,
+  "updatedAt": 1795348430287,
   "brain": {
     "v": 1,
     "gen": 44,
-    "cycles": 267,
+    "cycles": 268,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795344826366,
     "autoExecBursa": false,
@@ -540,15 +540,15 @@
           "wins": 43,
           "losses": 35,
           "winRate": 55.12820512820513,
-          "pf": 0.629988132958899,
-          "exp": -0.18499391944719099,
-          "netR": -14.429525716880896,
+          "pf": 0.6245521099620613,
+          "exp": -0.18771175444105714,
+          "netR": -14.641516846402457,
           "maxDD": 21.6033720386311,
-          "sumR2": 68.91870917459532,
-          "grossW": 24.56794166780178,
+          "sumR2": 67.82043546732646,
+          "grossW": 24.35595053828022,
           "grossL": 38.99746738468265,
-          "sd": 0.927567231829848,
-          "tStat": -1.7614055372128692,
+          "sd": 0.919288620028778,
+          "tStat": -1.8033784938732011,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795348430268,
+        "type": "CYCLE",
+        "text": "[CYCLE #268] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795348425856,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795347556841,
         "type": "CYCLE",
         "text": "[CYCLE #267] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795200829703,
         "type": "CYCLE",
         "text": "[CYCLE #140] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795200823753,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795199928877,
-        "type": "CYCLE",
-        "text": "[CYCLE #139] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7350,
+      "newsIngested": 7380,
       "lessons": 1,
-      "backtests": 7190,
+      "backtests": 7220,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795347545834,
+      "fetchedAt": 1795348425856,
       "items": [
         {
           "source": "CoinDesk",
@@ -5783,6 +5783,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-22 11:25:27",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Bitcoin briefly drops to $17K on Kraken, exchange upholds trades",
           "link": "https://cointelegraph.com/news/bitcoin-17k-kraken-canadian-dollar-market-trades-stand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-22 09:33:06",
@@ -5801,13 +5808,6 @@
           "link": "https://cointelegraph.com/news/chainflip-12m-crypto-hack-10-percent-bounty?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-22 05:28:43",
           "summary": "    Chainflip offered the attacker a 10% bounty to return 90% of the stolen funds by Nov. 23, promising to treat the return as a white-hat recovery and withdraw law enforcement complaints. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-21 11:18:52",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -6052,7 +6052,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795347545833
+        "t": 1795348425856
       },
       "lastErrors": []
     },
@@ -10255,7 +10255,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795347552390
+        "updatedAt": 1795348426901
       }
     },
     "champion": {
@@ -10271,7 +10271,7 @@
       "deflatedT": -6.1,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795347552388,
+      "updatedAt": 1795348426900,
       "gen": 44
     },
     "factory": {
