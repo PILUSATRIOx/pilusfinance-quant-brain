@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795312426285,
+  "updatedAt": 1795313329316,
   "brain": {
     "v": 1,
     "gen": 38,
-    "cycles": 228,
+    "cycles": 229,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795312423879,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.57,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -367,18 +367,18 @@
           "wins": 48,
           "losses": 47,
           "winRate": 48.484848484848484,
-          "pf": 0.46720823323630295,
-          "exp": -0.28856079165072085,
-          "netR": -28.567518373421365,
-          "maxDD": 32.568475009489866,
-          "sumR2": 93.99958633475907,
-          "grossW": 25.066780522964052,
+          "pf": 0.4669367029613114,
+          "exp": -0.2887079453336329,
+          "netR": -28.58208658802966,
+          "maxDD": 32.56847500948986,
+          "sumR2": 93.99559700347264,
+          "grossW": 25.05221230835575,
           "grossL": 53.652266248240245,
-          "sd": 0.9354477298491234,
-          "tStat": -3.0692721075961797,
+          "sd": 0.935380101236241,
+          "tStat": -3.071059328931336,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -386,34 +386,34 @@
           "wins": 44,
           "losses": 49,
           "winRate": 46.808510638297875,
-          "pf": 0.42783792142956045,
-          "exp": -0.36581429280084277,
-          "netR": -34.38654352327922,
-          "maxDD": 40.401589448985504,
-          "sumR2": 101.62764392803082,
-          "grossW": 25.70644883204035,
+          "pf": 0.4307555625975987,
+          "exp": -0.3639493443367983,
+          "netR": -34.21123836765904,
+          "maxDD": 40.40158944898552,
+          "sumR2": 101.73124331072732,
+          "grossW": 25.881753987660545,
           "grossL": 60.084549649422975,
-          "sd": 0.9785250851296174,
-          "tStat": -3.6245377981919455,
+          "sd": 0.9797963664772493,
+          "tStat": -3.6013807889587515,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
           "trades": 94,
-          "wins": 51,
-          "losses": 43,
-          "winRate": 54.25531914893617,
-          "pf": 0.52312927592143,
-          "exp": -0.25826041640614433,
-          "netR": -24.276479142177568,
-          "maxDD": 24.984818589275072,
-          "sumR2": 84.86684297153262,
-          "grossW": 26.631404098265882,
-          "grossL": 50.90788324044345,
-          "sd": 0.9193101045787716,
-          "tStat": -2.723702942770699,
+          "wins": 52,
+          "losses": 42,
+          "winRate": 55.319148936170215,
+          "pf": 0.5411726908812498,
+          "exp": -0.24274355311661683,
+          "netR": -22.81789399296198,
+          "maxDD": 24.98481858927508,
+          "sumR2": 83.56084648363817,
+          "grossW": 26.913003753267027,
+          "grossL": 49.730897746229,
+          "sd": 0.9159397889608215,
+          "tStat": -2.5694768305592808,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -722,7 +722,7 @@
           "tStat": -3.0748176784578254,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -741,7 +741,7 @@
           "tStat": -2.4938932272876992,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -1066,7 +1066,7 @@
           "tStat": -4.072860486036182,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -1085,7 +1085,7 @@
           "tStat": -3.1642238885763807,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -1410,7 +1410,7 @@
           "tStat": -3.913982695381217,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -1429,7 +1429,7 @@
           "tStat": -4.1536571635436,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -1754,7 +1754,7 @@
           "tStat": -2.3334763192342614,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -1773,7 +1773,7 @@
           "tStat": -2.2464145535117614,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -2098,7 +2098,7 @@
           "tStat": -4.368209096440726,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -2117,7 +2117,7 @@
           "tStat": -0.995200155803463,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -2442,7 +2442,7 @@
           "tStat": -3.5960222650715354,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -2461,7 +2461,7 @@
           "tStat": -2.8357165566471374,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -2786,7 +2786,7 @@
           "tStat": -5.343469611541358,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -2805,7 +2805,7 @@
           "tStat": -4.594124723762714,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -3130,7 +3130,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -3149,7 +3149,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -3474,7 +3474,7 @@
           "tStat": -2.513960142685958,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
@@ -3493,7 +3493,7 @@
           "tStat": -1.5374900122891102,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
@@ -4149,6 +4149,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795313329300,
+        "type": "CYCLE",
+        "text": "[CYCLE #229] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795313323846,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795312426265,
         "type": "CYCLE",
@@ -5638,16 +5648,6 @@
         "t": 1795102731023,
         "type": "SIGNAL",
         "text": "[SIGNAL] SHORT TSLA @ 379.0299 | Skor 100/100 | P(menang) 49% | EV -0.359R | rezim RANGING (H=0.49) | 2 strategi: wyckoff+rsidiv | PAPER"
-      },
-      {
-        "t": 1795102725663,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795102723389,
-        "type": "TP1",
-        "text": "[TP1 LOCKED] TP1 LINKUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 6180,
+      "newsIngested": 6210,
       "lessons": 1,
-      "backtests": 6020,
+      "backtests": 6050,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795312423412,
+      "fetchedAt": 1795313323846,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795312423412
+        "t": 1795313323845
       },
       "lastErrors": []
     },
@@ -10274,7 +10274,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1243,
-        "updatedAt": 1795312423879
+        "updatedAt": 1795313326012
       }
     },
     "champion": {
@@ -10290,7 +10290,7 @@
       "deflatedT": -5.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795312423879,
+      "updatedAt": 1795313326011,
       "gen": 38
     },
     "factory": {
