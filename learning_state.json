@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795310626395,
+  "updatedAt": 1795311526720,
   "brain": {
     "v": 1,
     "gen": 37,
-    "cycles": 226,
+    "cycles": 227,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795307023113,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795311526699,
+        "type": "CYCLE",
+        "text": "[CYCLE #227] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795311523460,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795310626376,
         "type": "CYCLE",
         "text": "[CYCLE #226] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795100947965,
         "type": "CYCLE",
         "text": "[CYCLE #104] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795100946928,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] SHORT LINKUSDT @ 9.1710 | Skor 96/100 | P(menang) 50% | EV -0.336R | rezim RANGING (H=0.47) | 2 strategi: wyckoff+statarb | PAPER"
-      },
-      {
-        "t": 1795100946521,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] SHORT AVAXUSDT @ 7.0850 | Skor 96/100 | P(menang) 50% | EV -0.336R | rezim RANGING (H=0.49) | 2 strategi: wyckoff+statarb | PAPER"
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 6120,
+      "newsIngested": 6150,
       "lessons": 1,
-      "backtests": 5960,
+      "backtests": 5990,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795310622790,
+      "fetchedAt": 1795311523460,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,23 +6046,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795310622790
+        "t": 1795311523460
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795308823861,
+      "fetchedAt": 1795311524085,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 16,
+        "ARB": 15.93,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 4.53,
+        "ENA": 4.6,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6074,112 +6074,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 89.5,
+          "pct": 89.59,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 488.97,
+          "pct": 489.5,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 427.81,
+          "pct": 428.28,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 16,
+          "pct": 15.93,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 57.16,
+          "pct": 56.92,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 285.22,
+          "pct": 283.98,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.2,
+          "pct": 4.18,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 34.02,
+          "pct": 33.87,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 15.47,
+          "pct": 15.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 49.78,
+          "pct": 49.56,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 154.92,
+          "pct": 154.25,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 79.09,
+          "pct": 78.75,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 95.48,
+          "pct": 94.55,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 266.96,
+          "pct": 264.37,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 36.18,
+          "pct": 35.83,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1351.64,
+          "pct": 1353.74,
           "lev": 10
         }
       ]
@@ -10274,7 +10274,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1243,
-        "updatedAt": 1795310623841
+        "updatedAt": 1795311524489
       }
     },
     "champion": {
@@ -10290,7 +10290,7 @@
       "deflatedT": -5.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795310623840,
+      "updatedAt": 1795311524488,
       "gen": 37
     },
     "factory": {
