@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795376328526,
+  "updatedAt": 1795377229410,
   "brain": {
     "v": 1,
     "gen": 49,
-    "cycles": 297,
+    "cycles": 298,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795373625303,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.52,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3288,19 +3288,19 @@
       },
       "emax": {
         "SUIUSDT": {
-          "trades": 31,
-          "wins": 15,
+          "trades": 30,
+          "wins": 14,
           "losses": 16,
-          "winRate": 48.38709677419355,
-          "pf": 0.6096886214477137,
-          "exp": -0.22876266781717802,
-          "netR": -7.091642702332519,
-          "maxDD": 9.838368410115772,
-          "sumR2": 32.824981787074,
-          "grossW": 11.077550131953556,
+          "winRate": 46.666666666666664,
+          "pf": 0.5253279728665141,
+          "exp": -0.28748025313432596,
+          "netR": -8.624407594029778,
+          "maxDD": 9.838368410115773,
+          "sumR2": 30.475613573854297,
+          "grossW": 9.544785240256298,
           "grossL": 18.169192834286076,
-          "sd": 1.0198476795300069,
-          "tStat": -1.2489086899774922,
+          "sd": 0.9825418600469136,
+          "tStat": -1.602572123201421,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3693,7 +3693,7 @@
         "lockedR": 0,
         "mfe": 0.20792767254309386,
         "mae": -0.3564474386453026,
-        "lastBarT": 1795376100000
+        "lastBarT": 1795377000000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.36109940884194663,
-        "lastBarT": 1795376100000
+        "lastBarT": 1795377000000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795376100000
+        "lastBarT": 1795377000000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795377229363,
+        "type": "CYCLE",
+        "text": "[CYCLE #298] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795377226435,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795376328502,
         "type": "CYCLE",
@@ -5840,16 +5850,6 @@
         "t": 1795231427303,
         "type": "CYCLE",
         "text": "[CYCLE #174] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795231424776,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1238 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.284R)"
-      },
-      {
-        "t": 1795231424776,
-        "type": "GEN",
-        "text": "[GEN #29] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-61.66R, 319 trade, Win 54.9%, t=-3.42 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 8220,
+      "newsIngested": 8250,
       "lessons": 1,
-      "backtests": 8090,
+      "backtests": 8120,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795376323547,
+      "fetchedAt": 1795377226435,
       "items": [
         {
           "source": "CoinDesk",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795376323547
+        "t": 1795377226435
       },
       "lastErrors": []
     },
@@ -10406,7 +10406,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1260,
-        "updatedAt": 1795376326477
+        "updatedAt": 1795377227507
       }
     },
     "champion": {
@@ -10422,7 +10422,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795376326476,
+      "updatedAt": 1795377227507,
       "gen": 49
     },
     "factory": {
