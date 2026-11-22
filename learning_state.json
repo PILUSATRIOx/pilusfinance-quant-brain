@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795311526720,
+  "updatedAt": 1795312426285,
   "brain": {
     "v": 1,
-    "gen": 37,
-    "cycles": 227,
+    "gen": 38,
+    "cycles": 228,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795307023113,
+    "lastOptAt": 1795312423879,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -38,13 +38,13 @@
       "elder": 0.58,
       "donchian": 0.56,
       "bbrev": 0.7,
-      "wyckoff": 0.71,
+      "wyckoff": 0.7,
       "rsidiv": 0.42,
       "macdm": 0.57,
-      "smc": 0.55,
+      "smc": 0.56,
       "statarb": 0.53,
       "tsmom": 1,
-      "emax": 0.58
+      "emax": 0.57
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795312426265,
+        "type": "CYCLE",
+        "text": "[CYCLE #228] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795312423879,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1243 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.283R)"
+      },
+      {
+        "t": 1795312423879,
+        "type": "GEN",
+        "text": "[GEN #38] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-59.74R, 313 trade, Win 55.6%, t=-3.38 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795312423412,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795311526699,
         "type": "CYCLE",
         "text": "[CYCLE #227] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1795102723389,
         "type": "TP1",
         "text": "[TP1 LOCKED] TP1 LINKUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
-      },
-      {
-        "t": 1795101833381,
-        "type": "CYCLE",
-        "text": "[CYCLE #105] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795101833281,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] SHORT SPY @ 731.5550 | Skor 95/100 | P(menang) 49% | EV -0.351R | rezim TREND_DOWN (H=0.56) | 2 strategi: elder+statarb | PAPER"
-      },
-      {
-        "t": 1795101825969,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795100947965,
-        "type": "CYCLE",
-        "text": "[CYCLE #104] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 6150,
+      "newsIngested": 6180,
       "lessons": 1,
-      "backtests": 5990,
+      "backtests": 6020,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795311523460,
+      "fetchedAt": 1795312423412,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795311523460
+        "t": 1795312423412
       },
       "lastErrors": []
     },
@@ -10274,7 +10274,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1243,
-        "updatedAt": 1795311524489
+        "updatedAt": 1795312423879
       }
     },
     "champion": {
@@ -10290,8 +10290,8 @@
       "deflatedT": -5.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795311524488,
-      "gen": 37
+      "updatedAt": 1795312423879,
+      "gen": 38
     },
     "factory": {
       "updatedAt": 1795307025362,
