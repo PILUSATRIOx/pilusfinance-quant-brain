@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795340331354,
+  "updatedAt": 1795341231306,
   "brain": {
     "v": 1,
     "gen": 43,
-    "cycles": 259,
+    "cycles": 260,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795339430952,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.52,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -458,19 +458,19 @@
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 91,
+          "trades": 92,
           "wins": 56,
-          "losses": 35,
-          "winRate": 61.53846153846154,
-          "pf": 0.7082231801154654,
-          "exp": -0.13031031112935476,
-          "netR": -11.858238312771284,
+          "losses": 36,
+          "winRate": 60.86956521739131,
+          "pf": 0.6887789591684783,
+          "exp": -0.14136463501701504,
+          "netR": -13.005546421565384,
           "maxDD": 16.249358499676262,
-          "sumR2": 79.5718319430982,
+          "sumR2": 80.88479666688048,
           "grossW": 28.783229770484862,
-          "grossL": 40.64146808325616,
-          "sd": 0.9311079494589881,
-          "tStat": -1.335055878401194,
+          "grossL": 41.78877619205026,
+          "sd": 0.9320087743290635,
+          "tStat": -1.4548381765702794,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1108,19 +1108,19 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 51,
-          "wins": 29,
+          "trades": 50,
+          "wins": 28,
           "losses": 22,
-          "winRate": 56.86274509803921,
-          "pf": 0.7238747332073171,
-          "exp": -0.1382223853755765,
-          "netR": -7.049341654154401,
+          "winRate": 56.00000000000001,
+          "pf": 0.7129591415206338,
+          "exp": -0.14656022635132898,
+          "netR": -7.328011317566449,
           "maxDD": 9.414812148840943,
-          "sumR2": 48.03677150200051,
-          "grossW": 18.480164341568567,
+          "sumR2": 47.95911472069433,
+          "grossW": 18.20149467815652,
           "grossL": 25.52950599572297,
-          "sd": 0.9701793100580519,
-          "tStat": -1.0174462206610886,
+          "sd": 0.9781815670039274,
+          "tStat": -1.059452901189703,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1471,19 +1471,19 @@
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 48,
-          "wins": 29,
+          "trades": 47,
+          "wins": 28,
           "losses": 19,
-          "winRate": 60.416666666666664,
-          "pf": 0.76192545516618,
-          "exp": -0.11023437992079954,
-          "netR": -5.291250236198378,
-          "maxDD": 7.274141278253626,
-          "sumR2": 42.01941838487682,
-          "grossW": 16.933932384193724,
+          "winRate": 59.57446808510638,
+          "pf": 0.7516625362012487,
+          "exp": -0.11743288264706946,
+          "netR": -5.5193454844122645,
+          "maxDD": 7.274141278253627,
+          "sumR2": 41.96739094261907,
+          "grossW": 16.70583713597984,
           "grossL": 22.2251826203921,
-          "sd": 0.9389462257287644,
-          "tStat": -0.8133865030044015,
+          "sd": 0.9477575168242902,
+          "tStat": -0.8494570265771846,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2178,19 +2178,19 @@
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 39,
+          "trades": 40,
           "wins": 18,
-          "losses": 21,
-          "winRate": 46.15384615384615,
-          "pf": 0.5156561441639628,
-          "exp": -0.2944013807154599,
-          "netR": -11.481653847902937,
+          "losses": 22,
+          "winRate": 45,
+          "pf": 0.49133263280327566,
+          "exp": -0.31638007711222677,
+          "netR": -12.65520308448907,
           "maxDD": 16.443936423064386,
-          "sumR2": 44.70393734237348,
+          "sumR2": 46.081155153065374,
           "grossW": 12.223929921884306,
-          "grossL": 23.705583769787243,
-          "sd": 1.0428165630265327,
-          "tStat": -1.7630483619840565,
+          "grossL": 24.879133006373376,
+          "sd": 1.0387035931850255,
+          "tStat": -1.9264045229814217,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2503,19 +2503,19 @@
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 34,
-          "wins": 23,
+          "trades": 33,
+          "wins": 22,
           "losses": 11,
-          "winRate": 67.64705882352942,
-          "pf": 1.0512881666059946,
-          "exp": 0.01970198278235167,
-          "netR": 0.6698674145999568,
-          "maxDD": 5.376877063947397,
-          "sumR2": 29.7912369134421,
-          "grossW": 13.730724507543092,
+          "winRate": 66.66666666666666,
+          "pf": 1.0338241329219322,
+          "exp": 0.013387035345032487,
+          "netR": 0.4417721663860721,
+          "maxDD": 5.376877063947398,
+          "sumR2": 29.739209471184346,
+          "grossW": 13.502629259329208,
           "grossL": 13.060857092943138,
-          "sd": 0.9499288521551303,
-          "tStat": 0.12093675602791565,
+          "sd": 0.9639323020118309,
+          "tStat": 0.07978014952964414,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795341231278,
+        "type": "CYCLE",
+        "text": "[CYCLE #260] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795341225826,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795340331308,
         "type": "CYCLE",
         "text": "[CYCLE #259] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795193628208,
         "type": "CYCLE",
         "text": "[CYCLE #132] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795193624571,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (78 trade OOS, -0.105R/trade, win 59%, t=-0.95) | Meta-model belum aktif (1218 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.282R)"
-      },
-      {
-        "t": 1795193624571,
-        "type": "GEN",
-        "text": "[GEN #22] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-8.98R, 149 trade, Win 59.1%, t=-0.72 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7110,
+      "newsIngested": 7140,
       "lessons": 1,
-      "backtests": 6950,
+      "backtests": 6980,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795340326022,
+      "fetchedAt": 1795341225826,
       "items": [
         {
           "source": "CoinDesk",
@@ -5783,6 +5783,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Bitcoin briefly drops to $17K on Kraken, exchange upholds trades",
+          "link": "https://cointelegraph.com/news/bitcoin-17k-kraken-canadian-dollar-market-trades-stand?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-22 09:33:06",
+          "summary": "    Kraken said all orders were processed correctly and found no evidence of a security breach or compromised accounts. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "South Korean exchanges halt CYBER transfers amid suspected bridge exploit",
           "link": "https://cointelegraph.com/news/upbit-bithumb-suspend-cyber-transfers-bridge-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-22 07:24:05",
@@ -5843,13 +5850,6 @@
           "link": "https://cointelegraph.com/markets/bitcoin-falls-below-60k-for-first-time-since-july-amid-broader-market-selloff?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-20 16:55:51",
           "summary": "    Bitcoin fell nearly 6% as US stocks declined, with the Nasdaq dropping more than 2% and Anthropic shares losing almost 10%. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "US Senate advances prediction market restrictions with DEATH BETS Act",
-          "link": "https://cointelegraph.com/news/us-senate-advances-prediction-market-restrictions-with-death-bets-act?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 15:55:22",
-          "summary": "    The Senate-approved bill would ban prediction market contracts tied to war, assassination and death amid concerns over potential insider trading on military events. "
         },
         {
           "source": "Decrypt",
@@ -5925,7 +5925,7 @@
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.67,
+          "impact": -1,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6052,7 +6052,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795340326022
+        "t": 1795341225826
       },
       "lastErrors": []
     },
@@ -10255,23 +10255,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795340328876
+        "updatedAt": 1795341228779
       }
     },
     "champion": {
       "id": "smc",
       "name": "SMC Liquidity Sweep (SFP)",
       "book": "Wyckoff / Citadel Microstructure",
-      "netR": -59.74,
-      "trades": 313,
-      "winRate": 55.6,
+      "netR": -59.97,
+      "trades": 312,
+      "winRate": 55.4,
       "pf": 0.65,
-      "expPerTrade": -0.191,
-      "tStat": -3.38,
-      "deflatedT": -5.52,
+      "expPerTrade": -0.192,
+      "tStat": -3.39,
+      "deflatedT": -5.54,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795340328875,
+      "updatedAt": 1795341228778,
       "gen": 43
     },
     "factory": {
