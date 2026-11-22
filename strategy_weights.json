@@ -1,6 +1,6 @@
 {
   "weights": {
-    "elder": 0.58,
+    "elder": 0.59,
     "donchian": 0.56,
     "bbrev": 0.7,
     "wyckoff": 0.7,
@@ -9,7 +9,7 @@
     "smc": 0.56,
     "statarb": 0.53,
     "tsmom": 1,
-    "emax": 0.57
+    "emax": 0.56
   },
-  "updatedAt": 1795316926579
+  "updatedAt": 1795317826167
 }
