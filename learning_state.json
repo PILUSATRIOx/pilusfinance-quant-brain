@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795363727016,
+  "updatedAt": 1795364628097,
   "brain": {
     "v": 1,
     "gen": 47,
-    "cycles": 285,
+    "cycles": 286,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795361025867,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2604,15 +2604,15 @@
           "wins": 53,
           "losses": 51,
           "winRate": 50.96153846153846,
-          "pf": 0.5530801564746671,
-          "exp": -0.2436647688063912,
-          "netR": -25.341135955864686,
-          "maxDD": 25.667685097260417,
-          "sumR2": 91.93430089192006,
+          "pf": 0.5531035403845789,
+          "exp": -0.24364171865445547,
+          "netR": -25.33873874006337,
+          "maxDD": 25.6652878814591,
+          "sumR2": 91.92887319211107,
           "grossW": 31.360611176176164,
-          "grossL": 56.70174713204086,
-          "sd": 0.9124785347013421,
-          "tStat": -2.723245235189061,
+          "grossL": 56.69934991623954,
+          "sd": 0.9124558738470153,
+          "tStat": -2.723055247606734,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3692,8 +3692,8 @@
         "beActive": false,
         "lockedR": 0,
         "mfe": 0.17822371932264716,
-        "mae": -0.17822371932264716,
-        "lastBarT": 1795363500000
+        "mae": -0.26733557898397897,
+        "lastBarT": 1795364400000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.2430476790282411,
-        "lastBarT": 1795363500000
+        "lastBarT": 1795364400000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795363500000
+        "lastBarT": 1795364400000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795364628074,
+        "type": "CYCLE",
+        "text": "[CYCLE #286] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795364623971,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795363726990,
         "type": "CYCLE",
@@ -5840,16 +5850,6 @@
         "t": 1795221527905,
         "type": "CYCLE",
         "text": "[CYCLE #163] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795221523514,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795220625720,
-        "type": "CYCLE",
-        "text": "[CYCLE #162] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7890,
+      "newsIngested": 7920,
       "lessons": 1,
-      "backtests": 7730,
+      "backtests": 7760,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795363722315,
+      "fetchedAt": 1795364623971,
       "items": [
         {
           "source": "CoinDesk",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795363722315
+        "t": 1795364623971
       },
       "lastErrors": []
     },
@@ -10411,7 +10411,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1259,
-        "updatedAt": 1795363725086
+        "updatedAt": 1795364625927
       }
     },
     "champion": {
@@ -10427,7 +10427,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795363725085,
+      "updatedAt": 1795364625925,
       "gen": 47
     },
     "factory": {
