@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795332228390,
+  "updatedAt": 1795333128120,
   "brain": {
     "v": 1,
     "gen": 41,
-    "cycles": 250,
+    "cycles": 251,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795328623554,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795333128060,
+        "type": "CYCLE",
+        "text": "[CYCLE #251] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795333125203,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795332228375,
         "type": "CYCLE",
         "text": "[CYCLE #250] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795183722897,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795182858850,
-        "type": "CYCLE",
-        "text": "[CYCLE #123] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795182834191,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 6840,
+      "newsIngested": 6870,
       "lessons": 1,
-      "backtests": 6680,
+      "backtests": 6710,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795332224378,
+      "fetchedAt": 1795333125203,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795332224377
+        "t": 1795333125203
       },
       "lastErrors": []
     },
@@ -10249,7 +10249,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1247,
-        "updatedAt": 1795332226122
+        "updatedAt": 1795333125631
       }
     },
     "champion": {
@@ -10265,7 +10265,7 @@
       "deflatedT": -5.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795332226121,
+      "updatedAt": 1795333125629,
       "gen": 41
     },
     "factory": {
