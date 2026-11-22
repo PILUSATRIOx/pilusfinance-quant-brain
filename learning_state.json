@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795359232886,
+  "updatedAt": 1795360126854,
   "brain": {
     "v": 1,
     "gen": 46,
-    "cycles": 280,
+    "cycles": 281,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795355623661,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.58,
+    "lastHurst": 0.56,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3693,7 +3693,7 @@
         "lockedR": 0,
         "mfe": 0.17822371932264716,
         "mae": -0.17822371932264716,
-        "lastBarT": 1795359000000
+        "lastBarT": 1795359900000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.22915924022662054,
-        "lastBarT": 1795359000000
+        "lastBarT": 1795359900000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795359000000
+        "lastBarT": 1795359900000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795360126835,
+        "type": "CYCLE",
+        "text": "[CYCLE #281] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795360125841,
+        "type": "SYS",
+        "text": "[RISK] SHORT AVAXUSDT ditahan: Sudah 3 posisi kripto SHORT (berkorelasi tinggi dengan BTC)."
+      },
+      {
+        "t": 1795360123463,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795359232845,
         "type": "CYCLE",
@@ -5835,21 +5850,6 @@
         "t": 1795216122898,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795215225913,
-        "type": "CYCLE",
-        "text": "[CYCLE #156] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795215223547,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (79 trade OOS, -0.101R/trade, win 59.5%, t=-0.92) | Meta-model belum aktif (1238 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.282R)"
-      },
-      {
-        "t": 1795215223547,
-        "type": "GEN",
-        "text": "[GEN #26] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-61.66R, 319 trade, Win 54.9%, t=-3.42 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7740,
+      "newsIngested": 7770,
       "lessons": 1,
-      "backtests": 7580,
+      "backtests": 7610,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795359227386,
+      "fetchedAt": 1795360123463,
       "items": [
         {
           "source": "CoinDesk",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795359227386
+        "t": 1795360123462
       },
       "lastErrors": []
     },
@@ -6774,17 +6774,17 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.49,
+            0.498,
             0.227,
             10
           ],
           [
-            0.516,
+            0.514,
             0.255,
             61
           ],
           [
-            0.569,
+            0.568,
             -1.203,
             10
           ],
@@ -6804,131 +6804,131 @@
             15
           ],
           [
-            0.524,
+            0.526,
             0.233,
             41
           ],
           [
-            0.48,
+            0.481,
             1.465,
             95
           ],
           [
-            0.53,
+            0.531,
             0.23,
             10
           ],
           [
-            0.481,
+            0.486,
             1.434,
             27
           ],
           [
-            0.546,
+            0.547,
             -1.17,
             10
           ],
           [
-            0.509,
+            0.508,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.47,
+            0.478,
             1.361,
             10
           ],
           [
-            0.563,
+            0.56,
             0.139,
             10
           ],
           [
-            0.502,
+            0.493,
             -1.22,
             96
           ],
           [
-            0.536,
+            0.534,
             -1.215,
             10
           ],
           [
-            0.563,
+            0.56,
             0.469,
             10
           ],
           [
-            0.477,
+            0.484,
             -1.256,
             35
           ],
           [
-            0.481,
+            0.488,
             0.368,
             10
           ],
           [
-            0.48,
+            0.487,
             -1.255,
             35
           ],
           [
-            0.484,
+            0.492,
             0.296,
             10
           ],
           [
-            0.521,
+            0.509,
             -1.235,
             61
           ],
           [
-            0.532,
+            0.523,
             0.172,
             90
           ],
           [
-            0.515,
+            0.505,
             0.431,
             73
           ],
           [
-            0.567,
+            0.566,
             -1.251,
             35
           ],
           [
-            0.542,
+            0.539,
             -3.498,
             10
           ],
           [
-            0.483,
+            0.49,
             -1.209,
             10
           ],
           [
-            0.489,
+            0.497,
             0.064,
             10
           ],
           [
-            0.479,
+            0.487,
             0.614,
             10
           ],
           [
-            0.551,
+            0.549,
             -1.23,
             35
           ]
         ],
         "TSLA": [
           [
-            0.479,
+            0.473,
             0.804,
             61
           ],
@@ -6938,32 +6938,32 @@
             10
           ],
           [
-            0.507,
+            0.51,
             0.241,
             10
           ],
           [
-            0.506,
+            0.51,
             -1.54,
             35
           ],
           [
-            0.49,
+            0.491,
             1.494,
             35
           ],
           [
-            0.504,
+            0.497,
             -1.901,
             56
           ],
           [
-            0.53,
+            0.523,
             0.308,
             56
           ],
           [
-            0.501,
+            0.505,
             1.513,
             10
           ],
@@ -6973,27 +6973,27 @@
             10
           ],
           [
-            0.529,
+            0.516,
             0.26,
             95
           ],
           [
-            0.487,
+            0.489,
             1.519,
             10
           ],
           [
-            0.572,
+            0.565,
             -0.21,
             2
           ],
           [
-            0.548,
+            0.537,
             0.272,
             61
           ],
           [
-            0.611,
+            0.603,
             -1.129,
             69
           ],
@@ -7003,17 +7003,17 @@
             49
           ],
           [
-            0.558,
+            0.551,
             0.289,
             35
           ],
           [
-            0.557,
+            0.551,
             -1.523,
             35
           ],
           [
-            0.575,
+            0.57,
             -1.1,
             10
           ]
@@ -10421,7 +10421,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1259,
-        "updatedAt": 1795359229128
+        "updatedAt": 1795360124011
       }
     },
     "champion": {
@@ -10437,7 +10437,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795359229127,
+      "updatedAt": 1795360124011,
       "gen": 46
     },
     "factory": {
