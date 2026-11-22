@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795316926579,
+  "updatedAt": 1795317826167,
   "brain": {
     "v": 1,
-    "gen": 38,
-    "cycles": 233,
+    "gen": 39,
+    "cycles": 234,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795312423879,
+    "lastOptAt": 1795317823845,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,7 +35,7 @@
       "volConfirmMult": 1.186
     },
     "weights": {
-      "elder": 0.58,
+      "elder": 0.59,
       "donchian": 0.56,
       "bbrev": 0.7,
       "wyckoff": 0.7,
@@ -44,7 +44,7 @@
       "smc": 0.56,
       "statarb": 0.53,
       "tsmom": 1,
-      "emax": 0.57
+      "emax": 0.56
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4150,6 +4150,26 @@
     ],
     "journal": [
       {
+        "t": 1795317826149,
+        "type": "CYCLE",
+        "text": "[CYCLE #234] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795317823846,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1244 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
+      },
+      {
+        "t": 1795317823845,
+        "type": "GEN",
+        "text": "[GEN #39] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-59.74R, 313 trade, Win 55.6%, t=-3.38 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795317823428,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795316926560,
         "type": "CYCLE",
         "text": "[CYCLE #233] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5628,26 +5648,6 @@
         "t": 1795106322918,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795105426431,
-        "type": "CYCLE",
-        "text": "[CYCLE #109] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795105422487,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795104526316,
-        "type": "CYCLE",
-        "text": "[CYCLE #108] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795104525130,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] SHORT SOLUSDT @ 73.5100 | Skor 100/100 | P(menang) 53% | EV -0.281R | rezim RANGING (H=0.44) | 3 strategi: wyckoff+smc+statarb | PAPER"
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 6330,
+      "newsIngested": 6360,
       "lessons": 1,
-      "backtests": 6170,
+      "backtests": 6200,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795316923230,
+      "fetchedAt": 1795317823428,
       "items": [
         {
           "source": "CoinDesk",
@@ -6046,7 +6046,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795316923230
+        "t": 1795317823428
       },
       "lastErrors": []
     },
@@ -6813,7 +6813,7 @@
         ],
         "MSFT": [
           [
-            0.466,
+            0.464,
             -1.199,
             88
           ],
@@ -6823,82 +6823,82 @@
             69
           ],
           [
-            0.492,
+            0.487,
             0.141,
             10
           ],
           [
-            0.483,
+            0.478,
             -1.187,
             40
           ],
           [
-            0.497,
+            0.493,
             -1.2,
             2
           ],
           [
-            0.557,
+            0.555,
             1.415,
             90
           ],
           [
-            0.484,
+            0.479,
             -1.25,
-            10
-          ],
-          [
-            0.541,
-            -1.25,
-            69
-          ],
-          [
-            0.505,
-            0.153,
-            64
-          ],
-          [
-            0.538,
-            0.157,
-            2
-          ],
-          [
-            0.52,
-            0.117,
-            35
-          ],
-          [
-            0.559,
-            -1.206,
-            27
-          ],
-          [
-            0.549,
-            0.232,
             10
           ],
           [
             0.543,
+            -1.25,
+            69
+          ],
+          [
+            0.504,
+            0.153,
+            64
+          ],
+          [
+            0.535,
+            0.157,
+            2
+          ],
+          [
+            0.515,
+            0.117,
+            35
+          ],
+          [
+            0.556,
+            -1.206,
+            27
+          ],
+          [
+            0.546,
+            0.232,
+            10
+          ],
+          [
+            0.54,
             1.493,
             35
           ],
           [
-            0.544,
+            0.542,
             -1.166,
             10
           ],
           [
-            0.509,
+            0.508,
             0.229,
             69
           ],
           [
-            0.508,
+            0.507,
             -1.157,
             69
           ],
           [
-            0.547,
+            0.544,
             -1.132,
             10
           ]
@@ -6910,57 +6910,57 @@
             96
           ],
           [
-            0.539,
+            0.536,
             1.162,
             2
           ],
           [
-            0.481,
+            0.477,
             -1.392,
             40
           ],
           [
-            0.551,
+            0.55,
             -1.704,
             10
           ],
           [
-            0.452,
+            0.451,
             -0.253,
             61
           ],
           [
-            0.517,
+            0.515,
             -1.553,
             46
           ],
           [
-            0.465,
+            0.464,
             -1.473,
             48
           ],
           [
-            0.519,
+            0.516,
             -0.215,
             41
           ],
           [
-            0.473,
+            0.471,
             -0.023,
             56
           ],
           [
-            0.504,
+            0.498,
             1.1,
             35
           ],
           [
-            0.537,
+            0.535,
             -1.412,
             10
           ],
           [
-            0.497,
+            0.494,
             1.348,
             2
           ],
@@ -6970,29 +6970,29 @@
             61
           ],
           [
-            0.496,
+            0.494,
             -1.219,
             61
           ]
         ],
         "QQQ": [
           [
-            0.529,
+            0.527,
             0.061,
             95
           ],
           [
-            0.526,
+            0.525,
             0.078,
             95
           ],
           [
-            0.482,
+            0.478,
             -1.738,
             10
           ],
           [
-            0.479,
+            0.477,
             1.178,
             48
           ],
@@ -7002,32 +7002,32 @@
             69
           ],
           [
-            0.482,
+            0.481,
             -1.354,
             61
           ],
           [
-            0.515,
+            0.512,
             -1.243,
             41
           ],
           [
-            0.546,
+            0.544,
             0.66,
             10
           ],
           [
-            0.445,
+            0.442,
             1.355,
             96
           ],
           [
-            0.502,
+            0.501,
             0.244,
             56
           ],
           [
-            0.514,
+            0.513,
             0.339,
             56
           ]
@@ -10269,7 +10269,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1244,
-        "updatedAt": 1795316924354
+        "updatedAt": 1795317823846
       }
     },
     "champion": {
@@ -10285,8 +10285,8 @@
       "deflatedT": -5.52,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795316924353,
-      "gen": 38
+      "updatedAt": 1795317823845,
+      "gen": 39
     },
     "factory": {
       "updatedAt": 1795307025362,
