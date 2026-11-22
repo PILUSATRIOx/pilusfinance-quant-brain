@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795352029794,
+  "updatedAt": 1795352929837,
   "brain": {
     "v": 1,
     "gen": 45,
-    "cycles": 272,
+    "cycles": 273,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795350225927,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.51,
+    "lastHurst": 0.58,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -477,38 +477,38 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 80,
+          "trades": 81,
           "wins": 46,
-          "losses": 34,
-          "winRate": 57.49999999999999,
-          "pf": 0.7234019706751935,
-          "exp": -0.13261465371099485,
-          "netR": -10.609172296879589,
+          "losses": 35,
+          "winRate": 56.79012345679012,
+          "pf": 0.7025870624574737,
+          "exp": -0.1450062755020889,
+          "netR": -11.7455083156692,
           "maxDD": 17.01047954753014,
-          "sumR2": 68.8784437865514,
+          "sumR2": 70.16961350164357,
           "grossW": 27.746749192428403,
-          "grossL": 38.35592148930799,
-          "sd": 0.9241589544645269,
-          "tStat": -1.2834821502419864,
+          "grossL": 39.4922575080976,
+          "sd": 0.9251110817552505,
+          "tStat": -1.4107024607711582,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 82,
+          "trades": 83,
           "wins": 38,
-          "losses": 44,
-          "winRate": 46.34146341463415,
-          "pf": 0.5247659843349042,
-          "exp": -0.28844235611328084,
-          "netR": -23.65227320128903,
+          "losses": 45,
+          "winRate": 45.78313253012048,
+          "pf": 0.5133273051709664,
+          "exp": -0.29832906459024194,
+          "netR": -24.761312360990082,
           "maxDD": 28.360181871413467,
-          "sumR2": 84.53689362254315,
+          "sumR2": 85.76686148029356,
           "grossW": 26.11746638308687,
-          "grossL": 49.76973958437591,
-          "sd": 0.9795096796383832,
-          "tStat": -2.666596031722555,
+          "grossL": 50.87877874407696,
+          "sd": 0.9776767030456449,
+          "tStat": -2.7799651144502695,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -519,18 +519,18 @@
           "wins": 42,
           "losses": 39,
           "winRate": 51.85185185185185,
-          "pf": 0.6210842653449753,
-          "exp": -0.20941894431986455,
-          "netR": -16.962934489909028,
+          "pf": 0.6210601687592187,
+          "exp": -0.2094403877946172,
+          "netR": -16.964671411363994,
           "maxDD": 23.383651657455964,
-          "sumR2": 81.01534765752734,
+          "sumR2": 81.01927864340139,
           "grossW": 27.8041019208448,
-          "grossL": 44.767036410753825,
-          "sd": 0.98401592863177,
-          "tStat": -1.9153861680872073,
+          "grossL": 44.768773332208795,
+          "sd": 0.9840362752726464,
+          "tStat": -1.9155426862991298,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -859,22 +859,22 @@
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 66,
-          "wins": 34,
+          "trades": 67,
+          "wins": 35,
           "losses": 32,
-          "winRate": 51.515151515151516,
-          "pf": 0.5139728092909134,
-          "exp": -0.2683139176496379,
-          "netR": -17.7087185648761,
+          "winRate": 52.23880597014925,
+          "pf": 0.5209547448385922,
+          "exp": -0.260512345923471,
+          "netR": -17.454327176872557,
           "maxDD": 21.998639225101684,
-          "sumR2": 60.65998568294113,
-          "grossW": 18.72693545489193,
+          "sumR2": 60.724700661231495,
+          "grossW": 18.981326842895474,
           "grossL": 36.435654019768016,
-          "sd": 0.9274322702058322,
-          "tStat": -2.350352302276705,
+          "sd": 0.9225921399486228,
+          "tStat": -2.311298092058779,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -1218,7 +1218,7 @@
           "tStat": -0.5940947699112592,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -1562,7 +1562,7 @@
           "tStat": -0.7559147312616042,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -1906,7 +1906,7 @@
           "tStat": -1.302698947950772,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -2250,7 +2250,7 @@
           "tStat": -2.3236404207225956,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -2594,7 +2594,7 @@
           "tStat": -1.5499721378203977,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -2923,22 +2923,22 @@
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 97,
+          "trades": 96,
           "wins": 55,
-          "losses": 42,
-          "winRate": 56.70103092783505,
-          "pf": 0.873499486571635,
-          "exp": -0.06250753581688022,
-          "netR": -6.063230974237381,
-          "maxDD": 8.039203798594944,
-          "sumR2": 102.53793003286478,
+          "losses": 41,
+          "winRate": 57.291666666666664,
+          "pf": 0.8948037732450369,
+          "exp": -0.051271450168871004,
+          "netR": -4.922059216211617,
+          "maxDD": 7.730864265418289,
+          "sumR2": 101.23568793952356,
           "grossW": 41.86725412747623,
-          "grossL": 47.9304851017136,
-          "sd": 1.031579151539727,
-          "tStat": -0.5967819637322535,
+          "grossL": 46.78931334368784,
+          "sd": 1.0310103722266115,
+          "tStat": -0.4872458887684768,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -3282,7 +3282,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -3626,12 +3626,81 @@
           "tStat": -2.5505455822471608,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       }
     },
     "signals": [
+      {
+        "id": "sig_SOLUSDT_1795352927006",
+        "sym": "SOLUSDT",
+        "side": "SHORT",
+        "entry": 70.19,
+        "sl": 71.630046666561,
+        "slInit": 71.630046666561,
+        "risk": 1.4400466665610085,
+        "rsiAtEntry": 54,
+        "tp1": 69.03796266675118,
+        "tp2": 67.88592533350239,
+        "tp3": 66.58988333359747,
+        "momentumBurst": false,
+        "lev": 5,
+        "conf": 100,
+        "techScore": 95,
+        "extScore": 10,
+        "regime": "RANGING",
+        "hurst": 0.51,
+        "kalmanPrice": 70.19,
+        "kalmanVelZ": 0.0259,
+        "bayesProb": 0.55,
+        "factors": [
+          "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+          "[OK] Screen2: RSI 54 zona momentum sehat",
+          "[OK] Screen3 (Williams): SL 1.86x ATR",
+          "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+          "[OK] Screen6: krisis terverifikasi memperkuat Short",
+          "[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance -5.5% · VPIN 0.61",
+          "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+        ],
+        "votes": [
+          {
+            "strat": "wyckoff",
+            "side": "SHORT",
+            "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+            "w": 0.81,
+            "barAge": 0
+          },
+          {
+            "strat": "smc",
+            "side": "SHORT",
+            "note": "SMC Swing-Failure Pattern: sweep liquidity atas, wick reject + volume",
+            "w": 0.58,
+            "barAge": 0
+          },
+          {
+            "strat": "statarb",
+            "side": "SHORT",
+            "note": "D.E. Shaw Z-Score (+0.85 sigma) mean-reversion deceleration (RSI 58)",
+            "w": 0.43,
+            "barAge": 2
+          }
+        ],
+        "atr": 0.7758872125867503,
+        "volPct": 1.1054099053807527,
+        "metaP": 0.461,
+        "metaEV": -0.402,
+        "riskMult": 0,
+        "policy": "SCORE",
+        "systemVerified": false,
+        "status": "OPEN",
+        "createdAt": 1795352927008,
+        "tp1Hit": false,
+        "beActive": false,
+        "lockedR": 0,
+        "mfe": 0,
+        "mae": 0
+      },
       {
         "id": "sig_DOGEUSDT_1795349327646",
         "sym": "DOGEUSDT",
@@ -3699,7 +3768,7 @@
         "lockedR": 0,
         "mfe": 0.4558027450833967,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795351800000
+        "lastBarT": 1795352700000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4218,6 +4287,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795352929820,
+        "type": "CYCLE",
+        "text": "[CYCLE #273] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795352927008,
+        "type": "SIGNAL",
+        "text": "[SIGNAL] SHORT SOLUSDT @ 70.1900 | Skor 100/100 | P(menang) 46% | EV -0.402R | rezim RANGING (H=0.51) | 3 strategi: wyckoff+smc+statarb | PAPER"
+      },
+      {
+        "t": 1795352924027,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795352029778,
         "type": "CYCLE",
@@ -5702,21 +5786,6 @@
         "t": 1795206231530,
         "type": "CYCLE",
         "text": "[CYCLE #146] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795206225218,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795205329440,
-        "type": "CYCLE",
-        "text": "[CYCLE #145] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795205324690,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5763,9 +5832,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7500,
+      "newsIngested": 7530,
       "lessons": 1,
-      "backtests": 7340,
+      "backtests": 7370,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5778,7 +5847,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795352023944,
+      "fetchedAt": 1795352924027,
       "items": [
         {
           "source": "CoinDesk",
@@ -6121,7 +6190,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795352023944
+        "t": 1795352924027
       },
       "lastErrors": []
     },
@@ -9603,11 +9672,6 @@
         ],
         "AVAXUSDT": [
           [
-            0.534,
-            -1.085,
-            65
-          ],
-          [
             0.562,
             -1.069,
             10
@@ -10288,12 +10352,12 @@
       },
       "status": {
         "all": {
-          "n": 777,
-          "mean": -0.294,
+          "n": 776,
+          "mean": -0.293,
           "sd": 0.932,
-          "t": -8.8,
+          "t": -8.76,
           "winRate": 52.3,
-          "sum": -228.45
+          "sum": -227.36
         },
         "base": {
           "n": 77,
@@ -10324,7 +10388,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795352026775
+        "updatedAt": 1795352925878
       }
     },
     "champion": {
@@ -10340,7 +10404,7 @@
       "deflatedT": -6.1,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795352026774,
+      "updatedAt": 1795352925878,
       "gen": 45
     },
     "factory": {
