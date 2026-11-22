@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795343027841,
+  "updatedAt": 1795343927382,
   "brain": {
     "v": 1,
     "gen": 43,
-    "cycles": 262,
+    "cycles": 263,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795339430952,
     "autoExecBursa": false,
@@ -4150,6 +4150,16 @@
     ],
     "journal": [
       {
+        "t": 1795343927356,
+        "type": "CYCLE",
+        "text": "[CYCLE #263] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795343924008,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795343027818,
         "type": "CYCLE",
         "text": "[CYCLE #262] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5638,16 +5648,6 @@
         "t": 1795196329196,
         "type": "CYCLE",
         "text": "[CYCLE #135] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795196322596,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795195428572,
-        "type": "CYCLE",
-        "text": "[CYCLE #134] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5694,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7200,
+      "newsIngested": 7230,
       "lessons": 1,
-      "backtests": 7040,
+      "backtests": 7070,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5709,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795343023937,
+      "fetchedAt": 1795343924008,
       "items": [
         {
           "source": "CoinDesk",
@@ -6052,7 +6052,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795343023937
+        "t": 1795343924008
       },
       "lastErrors": []
     },
@@ -10255,7 +10255,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795343024990
+        "updatedAt": 1795343924659
       }
     },
     "champion": {
@@ -10271,7 +10271,7 @@
       "deflatedT": -5.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795343024990,
+      "updatedAt": 1795343924657,
       "gen": 43
     },
     "factory": {
