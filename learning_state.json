@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795386229185,
+  "updatedAt": 1795387127633,
   "brain": {
     "v": 1,
     "gen": 51,
-    "cycles": 308,
+    "cycles": 309,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795384424931,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.58,
+    "lastHurst": 0.52,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3691,9 +3691,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.20792767254309386,
+        "mfe": 0.26733557898397897,
         "mae": -0.3564474386453026,
-        "lastBarT": 1795386000000
+        "lastBarT": 1795386900000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.36109940884194663,
-        "lastBarT": 1795386000000
+        "lastBarT": 1795386900000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795386000000
+        "lastBarT": 1795386900000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795387127608,
+        "type": "CYCLE",
+        "text": "[CYCLE #309] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795387123603,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795386229162,
         "type": "CYCLE",
@@ -5840,16 +5850,6 @@
         "t": 1795242225017,
         "type": "GEN",
         "text": "[GEN #31] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-57.77R, 317 trade, Win 55.5%, t=-3.21 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795242224548,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795241326432,
-        "type": "CYCLE",
-        "text": "[CYCLE #185] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 8550,
+      "newsIngested": 8580,
       "lessons": 1,
-      "backtests": 8420,
+      "backtests": 8450,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795386224423,
+      "fetchedAt": 1795387123603,
       "items": [
         {
           "source": "CoinDesk",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795386224423
+        "t": 1795387123603
       },
       "lastErrors": []
     },
@@ -10406,7 +10406,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1260,
-        "updatedAt": 1795386227313
+        "updatedAt": 1795387125685
       }
     },
     "champion": {
@@ -10422,7 +10422,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795386227312,
+      "updatedAt": 1795387125680,
       "gen": 51
     },
     "factory": {
