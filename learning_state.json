@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795348430287,
+  "updatedAt": 1795349329221,
   "brain": {
     "v": 1,
     "gen": 44,
-    "cycles": 268,
+    "cycles": 269,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795344826366,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.52,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3633,6 +3633,74 @@
     },
     "signals": [
       {
+        "id": "sig_DOGEUSDT_1795349327646",
+        "sym": "DOGEUSDT",
+        "side": "SHORT",
+        "entry": 0.05538,
+        "sl": 0.056476965749753257,
+        "slInit": 0.056476965749753257,
+        "risk": 0.0010969657497532559,
+        "rsiAtEntry": 58,
+        "tp1": 0.054502427400197395,
+        "tp2": 0.05362485480039479,
+        "tp3": 0.05263758562561686,
+        "momentumBurst": false,
+        "lev": 5,
+        "conf": 90,
+        "techScore": 90,
+        "extScore": 0,
+        "regime": "RANGING",
+        "hurst": 0.52,
+        "kalmanPrice": 0.05538,
+        "kalmanVelZ": 0.168,
+        "bayesProb": 0.55,
+        "factors": [
+          "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+          "[OK] Screen2: RSI 58 zona momentum sehat",
+          "[OK] Screen3 (Williams): SL 1.86x ATR",
+          "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+          "[INFO] Screen6: berita netral",
+          "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+        ],
+        "votes": [
+          {
+            "strat": "wyckoff",
+            "side": "SHORT",
+            "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+            "w": 0.58,
+            "barAge": 2
+          },
+          {
+            "strat": "smc",
+            "side": "SHORT",
+            "note": "SMC Swing-Failure Pattern: sweep liquidity atas, wick reject + volume",
+            "w": 0.5,
+            "barAge": 1
+          },
+          {
+            "strat": "statarb",
+            "side": "SHORT",
+            "note": "D.E. Shaw Z-Score (+1.35 sigma) mean-reversion deceleration (RSI 60)",
+            "w": 0.53,
+            "barAge": 1
+          }
+        ],
+        "atr": 0.0005910375806860215,
+        "volPct": 1.0672401240267633,
+        "metaP": 0.464,
+        "metaEV": -0.396,
+        "riskMult": 0,
+        "policy": "SCORE",
+        "systemVerified": false,
+        "status": "OPEN",
+        "createdAt": 1795349327647,
+        "tp1Hit": false,
+        "beActive": false,
+        "lockedR": 0,
+        "mfe": 0,
+        "mae": 0
+      },
+      {
         "id": "sig_SOLUSDT_1795104525130",
         "sym": "SOLUSDT",
         "side": "SHORT",
@@ -4149,6 +4217,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795349329203,
+        "type": "CYCLE",
+        "text": "[CYCLE #269] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795349327647,
+        "type": "SIGNAL",
+        "text": "[SIGNAL] SHORT DOGEUSDT @ 0.0554 | Skor 90/100 | P(menang) 46% | EV -0.396R | rezim RANGING (H=0.52) | 3 strategi: wyckoff+smc+statarb | PAPER"
+      },
+      {
+        "t": 1795349325003,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795348430268,
         "type": "CYCLE",
@@ -5633,21 +5716,6 @@
         "t": 1795202623843,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795201734383,
-        "type": "CYCLE",
-        "text": "[CYCLE #141] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795201729067,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795200829703,
-        "type": "CYCLE",
-        "text": "[CYCLE #140] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5694,9 +5762,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 7380,
+      "newsIngested": 7410,
       "lessons": 1,
-      "backtests": 7220,
+      "backtests": 7250,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5709,7 +5777,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795348425856,
+      "fetchedAt": 1795349325003,
       "items": [
         {
           "source": "CoinDesk",
@@ -6052,23 +6120,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795348425856
+        "t": 1795349325003
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795346627468,
+      "fetchedAt": 1795349325755,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 15.37,
+        "ARB": 15.16,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 5.14,
+        "ENA": 5.35,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6080,112 +6148,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 88.27,
+          "pct": 88.03,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 482.28,
+          "pct": 480.93,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 421.96,
+          "pct": 420.78,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 15.37,
+          "pct": 15.16,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 54.93,
+          "pct": 54.16,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 274.07,
+          "pct": 270.21,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.04,
+          "pct": 3.98,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 32.69,
+          "pct": 32.23,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 14.86,
+          "pct": 14.65,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 47.83,
+          "pct": 47.16,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 148.87,
+          "pct": 146.77,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 76,
+          "pct": 74.93,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 90.1,
+          "pct": 92.12,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 251.91,
+          "pct": 257.57,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 34.14,
+          "pct": 34.91,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1644.27,
+          "pct": 1720.97,
           "lev": 10
         }
       ]
@@ -10255,7 +10323,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1248,
-        "updatedAt": 1795348426901
+        "updatedAt": 1795349326167
       }
     },
     "champion": {
@@ -10271,7 +10339,7 @@
       "deflatedT": -6.1,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795348426900,
+      "updatedAt": 1795349326166,
       "gen": 44
     },
     "factory": {
