@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795394326482,
+  "updatedAt": 1795395226792,
   "brain": {
     "v": 1,
-    "gen": 52,
-    "cycles": 317,
+    "gen": 53,
+    "cycles": 318,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795389823668,
+    "lastOptAt": 1795395224958,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3691,9 +3691,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.26733557898397897,
+        "mfe": 0.38615139186574104,
         "mae": -0.3564474386453026,
-        "lastBarT": 1795394100000
+        "lastBarT": 1795395000000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.47915113865566206,
-        "lastBarT": 1795394100000
+        "lastBarT": 1795395000000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795394100000
+        "lastBarT": 1795395000000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795395226774,
+        "type": "CYCLE",
+        "text": "[CYCLE #318] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795395224959,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1260 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
+      },
+      {
+        "t": 1795395224959,
+        "type": "GEN",
+        "text": "[GEN #53] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-68.04R, 307 trade, Win 54.1%, t=-3.9 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795395224510,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795394326437,
         "type": "CYCLE",
@@ -5830,26 +5850,6 @@
         "t": 1795250330376,
         "type": "CYCLE",
         "text": "[CYCLE #195] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795250323946,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795249428014,
-        "type": "CYCLE",
-        "text": "[CYCLE #194] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795249422600,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795248528554,
-        "type": "CYCLE",
-        "text": "[CYCLE #193] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 8820,
+      "newsIngested": 8850,
       "lessons": 1,
-      "backtests": 8690,
+      "backtests": 8720,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795394323348,
+      "fetchedAt": 1795395224510,
       "items": [
         {
           "source": "CoinDesk",
@@ -5988,7 +5988,7 @@
           "title": "Will Bitcoin’s big rebound hold? More tampered Ledgers found: Hodler’s Digest",
           "link": "https://cointelegraph.com/magazine/will-bitcoins-big-rebound-hold-more-tampered-ledgers-found-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-22 22:47:09",
-          "summary": "    Bitcoin rebounds sharply from its new cycle low, but is $55,110 really the bottom? Ledger investigates new reports of tampered devices in Berlin and the UAE. "
+          "summary": "    Bitcoin rebounds sharply from its new cycle low, but is $55,111 really the bottom? Ledger investigates new reports of tampered devices in Berlin and the UAE. "
         },
         {
           "source": "CoinTelegraph",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795394323348
+        "t": 1795395224510
       },
       "lastErrors": []
     },
@@ -10406,7 +10406,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1260,
-        "updatedAt": 1795394324556
+        "updatedAt": 1795395224959
       }
     },
     "champion": {
@@ -10422,8 +10422,8 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795394324555,
-      "gen": 52
+      "updatedAt": 1795395224959,
+      "gen": 53
     },
     "factory": {
       "updatedAt": 1795393426615,
