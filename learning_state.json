@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795393446834,
+  "updatedAt": 1795393465630,
   "brain": {
     "v": 1,
     "gen": 52,
@@ -10426,13 +10426,13 @@
       "gen": 52
     },
     "factory": {
-      "updatedAt": 1795307025362,
-      "day": "2026-11-22",
-      "dataUntil": "2026-11-21",
+      "updatedAt": 1795393426615,
+      "day": "2026-11-23",
+      "dataUntil": "2026-11-22",
       "universe": 20,
-      "nTrials": 67,
-      "hurdleSharpe": 2.71,
-      "pbo": 0.214,
+      "nTrials": 71,
+      "hurdleSharpe": 2.68,
+      "pbo": 0.2,
       "top": [
         {
           "id": "CARRY|thr=0.1",
@@ -10452,8 +10452,8 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.44,
-          "cagr": 0.0633,
-          "mdd": -0.0711,
+          "cagr": 0.0632,
+          "mdd": -0.0713,
           "dsr": 1,
           "years": 6.91,
           "status": "KANDIDAT"
@@ -10489,7 +10489,7 @@
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.02,
           "cagr": 0.057,
-          "mdd": -0.076,
+          "mdd": -0.0761,
           "dsr": 1,
           "years": 6.91,
           "status": "KANDIDAT"
@@ -10514,7 +10514,7 @@
           "sharpe": 3.68,
           "cagr": 0.0442,
           "mdd": -0.008,
-          "dsr": 0.9993,
+          "dsr": 0.9995,
           "years": 6.91,
           "status": "KANDIDAT"
         },
@@ -10524,7 +10524,7 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2942,
+          "cagr": 0.2941,
           "mdd": -0.3307,
           "dsr": 0,
           "years": 6.82,
@@ -10535,8 +10535,8 @@
           "label": "Momentum lintas koin 14 hari, 33% teratas (long-only)",
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
-          "sharpe": 1.04,
-          "cagr": 0.6851,
+          "sharpe": 1.05,
+          "cagr": 0.6879,
           "mdd": -0.7746,
           "dsr": 0,
           "years": 6.89,
@@ -10548,7 +10548,7 @@
           "family": "TSMOM",
           "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
           "sharpe": 1.02,
-          "cagr": 0.2678,
+          "cagr": 0.2677,
           "mdd": -0.3337,
           "dsr": 0,
           "years": 6.85,
@@ -10563,11 +10563,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 5,
+            "days": 6,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.54
+            "z": -0.59
           }
         }
       ],
@@ -10591,6 +10591,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795393426615,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Trend TSMOM 68 hari (long/flat); Harga vs SMA 182 hari (long/short); Trend TSMOM 135 hari (long/flat); Breakout Donchian 124 hari (long/short)"
+        },
         {
           "t": 1795307025362,
           "type": "EXPLORE",
