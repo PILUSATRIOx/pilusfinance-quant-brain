@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795395226792,
+  "updatedAt": 1795397029482,
   "brain": {
     "v": 1,
     "gen": 53,
-    "cycles": 318,
+    "cycles": 320,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795395224958,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.57,
+    "lastHurst": 0.59,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -424,15 +424,15 @@
           "wins": 42,
           "losses": 41,
           "winRate": 50.602409638554214,
-          "pf": 0.6511636725898295,
-          "exp": -0.20152672847268574,
-          "netR": -16.726718463232917,
-          "maxDD": 20.87469680953919,
-          "sumR2": 93.90533547789937,
+          "pf": 0.6510759031692044,
+          "exp": -0.20160460786582066,
+          "netR": -16.733182452863115,
+          "maxDD": 20.88116079916939,
+          "sumR2": 93.92017560880615,
           "grossW": 31.223329020110825,
-          "grossL": 47.950047483343745,
-          "sd": 1.0507515001058236,
-          "tStat": -1.7473169193550941,
+          "grossL": 47.95651147297395,
+          "sd": 1.050822493898722,
+          "tStat": -1.7478740699549704,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -443,15 +443,15 @@
           "wins": 49,
           "losses": 30,
           "winRate": 62.0253164556962,
-          "pf": 0.7820238675452926,
-          "exp": -0.09617822962021526,
-          "netR": -7.5980801399970055,
-          "maxDD": 11.465197557179215,
-          "sumR2": 65.9944902365784,
+          "pf": 0.7819325480058825,
+          "exp": -0.0962297598711472,
+          "netR": -7.602151029820629,
+          "maxDD": 11.465197557179216,
+          "sumR2": 66.00416782176515,
           "grossW": 27.259314816195214,
-          "grossL": 34.857394956192216,
-          "sd": 0.9147209210113815,
-          "tStat": -0.9345482145882368,
+          "grossL": 34.86146584601584,
+          "sd": 0.9147832491883845,
+          "tStat": -0.9349852166895258,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -462,18 +462,18 @@
           "wins": 56,
           "losses": 35,
           "winRate": 61.53846153846154,
-          "pf": 0.7084867866083847,
-          "exp": -0.12993247138782327,
-          "netR": -11.823854896291916,
+          "pf": 0.7082108714571775,
+          "exp": -0.1300554515336375,
+          "netR": -11.835046089561015,
           "maxDD": 16.249358499676262,
-          "sumR2": 79.36266798825889,
-          "grossW": 28.736415970085243,
+          "sumR2": 79.36023249145879,
+          "grossW": 28.725224776816145,
           "grossL": 40.56027086637717,
-          "sd": 0.9299125723556111,
-          "tStat": -1.3328960342997815,
+          "sd": 0.9298806388657245,
+          "tStat": -1.3342034277351325,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -817,7 +817,7 @@
           "tStat": -3.4617347567073464,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1161,7 +1161,7 @@
           "tStat": -2.457056171013873,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1505,7 +1505,7 @@
           "tStat": -1.605725841982735,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -1739,19 +1739,19 @@
           "dataStatus": "LIVE"
         },
         "BTCUSDT": {
-          "trades": 20,
-          "wins": 9,
-          "losses": 11,
-          "winRate": 45,
-          "pf": 0.3255900577520133,
-          "exp": -0.4230844470503027,
-          "netR": -8.461688941006054,
-          "maxDD": 9.105209450561025,
-          "sumR2": 18.728964190817134,
-          "grossW": 4.085114436181723,
-          "grossL": 12.546803377187775,
-          "sd": 0.8929240907236925,
-          "tStat": -2.118983222998589,
+          "trades": 22,
+          "wins": 10,
+          "losses": 12,
+          "winRate": 45.45454545454545,
+          "pf": 0.303076607392846,
+          "exp": -0.43824380264834634,
+          "netR": -9.64136365826362,
+          "maxDD": 10.201387295606335,
+          "sumR2": 20.398517506877223,
+          "grossW": 4.192816339907744,
+          "grossL": 13.834179998171361,
+          "sd": 0.8775846081735124,
+          "tStat": -2.3422763109586566,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1762,15 +1762,15 @@
           "wins": 11,
           "losses": 11,
           "winRate": 50,
-          "pf": 0.31748892259006467,
-          "exp": -0.39965741722782705,
-          "netR": -8.792463179012195,
-          "maxDD": 8.792463179012195,
-          "sumR2": 18.115457904437555,
+          "pf": 0.3171735877436652,
+          "exp": -0.4002395916538484,
+          "netR": -8.805271016384665,
+          "maxDD": 8.805271016384665,
+          "sumR2": 18.14648815574646,
           "grossW": 4.090057662083538,
-          "grossL": 12.882520841095733,
-          "sd": 0.83385178479845,
-          "tStat": -2.2480727180416444,
+          "grossL": 12.895328678468207,
+          "sd": 0.8344450702269485,
+          "tStat": -2.249746754316528,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1849,7 +1849,7 @@
           "tStat": -3.041955228945633,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -2193,7 +2193,7 @@
           "tStat": -1.9264045229814217,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -2537,7 +2537,7 @@
           "tStat": -1.6423594752190864,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -2790,38 +2790,38 @@
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 100,
+          "trades": 99,
           "wins": 48,
-          "losses": 52,
-          "winRate": 48,
-          "pf": 0.34814233926870936,
-          "exp": -0.4052098284244886,
-          "netR": -40.52098284244886,
-          "maxDD": 40.8302826595405,
-          "sumR2": 92.24114255463307,
+          "losses": 51,
+          "winRate": 48.484848484848484,
+          "pf": 0.3549702662243485,
+          "exp": -0.3972250275504189,
+          "netR": -39.32527772749147,
+          "maxDD": 39.63457754458311,
+          "sumR2": 90.81122109698492,
           "grossW": 21.641334613466505,
-          "grossL": 62.16231745591538,
-          "sd": 0.8751429438764242,
-          "tStat": -4.6302130555909145,
+          "grossL": 60.96661234095797,
+          "sd": 0.8759265448203758,
+          "tStat": -4.512181009402421,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 111,
+          "trades": 110,
           "wins": 58,
-          "losses": 53,
-          "winRate": 52.25225225225225,
-          "pf": 0.43410381898549344,
-          "exp": -0.3173451370602991,
-          "netR": -35.2253102136932,
-          "maxDD": 35.534400502606104,
-          "sumR2": 95.07322864708577,
+          "losses": 52,
+          "winRate": 52.72727272727272,
+          "pf": 0.44246504672824916,
+          "exp": -0.3095366768455435,
+          "netR": -34.04903445300978,
+          "maxDD": 34.35812474192269,
+          "sumR2": 93.68951841329483,
           "grossW": 27.021637893543108,
-          "grossL": 62.24694810723629,
-          "sd": 0.87331472900839,
-          "tStat": -3.8284462326831843,
+          "grossL": 61.07067234655287,
+          "sd": 0.873409923194694,
+          "tStat": -3.716980960341385,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2870,18 +2870,18 @@
           "wins": 59,
           "losses": 51,
           "winRate": 53.63636363636364,
-          "pf": 0.4071297643063265,
-          "exp": -0.3444089213940219,
-          "netR": -37.88498135334241,
-          "maxDD": 38.173616904323126,
-          "sumR2": 106.56414583209455,
+          "pf": 0.4073166441151579,
+          "exp": -0.3441423920875668,
+          "netR": -37.85566312963235,
+          "maxDD": 38.14429868061306,
+          "sumR2": 106.48908239145307,
           "grossW": 26.01598562472828,
-          "grossL": 63.900966978070706,
-          "sd": 0.9262542712063725,
-          "tStat": -3.899783627192663,
+          "grossL": 63.87164875436064,
+          "sd": 0.9259824632652959,
+          "tStat": -3.897909519572313,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -3225,7 +3225,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -3497,19 +3497,19 @@
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 24,
-          "wins": 10,
+          "trades": 23,
+          "wins": 9,
           "losses": 14,
-          "winRate": 41.66666666666667,
-          "pf": 0.17771097074737494,
-          "exp": -0.5673301308835147,
-          "netR": -13.615923141204354,
-          "maxDD": 14.117339371481574,
-          "sumR2": 20.910606343038303,
-          "grossW": 2.9426379690901703,
+          "winRate": 39.130434782608695,
+          "pf": 0.1645756475663482,
+          "exp": -0.6014532692522111,
+          "netR": -13.833425192800854,
+          "maxDD": 14.117339371481576,
+          "sumR2": 20.863299200589616,
+          "grossW": 2.725135917493671,
           "grossL": 16.558561110294523,
-          "sd": 0.7571652764621175,
-          "tStat": -3.670715970664392,
+          "sd": 0.7550779728979121,
+          "tStat": -3.8200936221314348,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3569,7 +3569,7 @@
           "tStat": -4.161989434761113,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
@@ -3691,9 +3691,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.38615139186574104,
+        "mfe": 0.5049672047475113,
         "mae": -0.3564474386453026,
-        "lastBarT": 1795395000000
+        "lastBarT": 1795396800000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.47915113865566206,
-        "lastBarT": 1795395000000
+        "lastBarT": 1795396800000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795395000000
+        "lastBarT": 1795396800000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795397029448,
+        "type": "CYCLE",
+        "text": "[CYCLE #320] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795397024242,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795396132041,
+        "type": "CYCLE",
+        "text": "[CYCLE #319] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795396125486,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795395226774,
         "type": "CYCLE",
@@ -5830,26 +5850,6 @@
         "t": 1795283733762,
         "type": "CYCLE",
         "text": "[CYCLE #197] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795283419938,
-        "type": "CYCLE",
-        "text": "[CYCLE #196] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795283416687,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: ETH, EUR — Long baru diblokir (Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated)"
-      },
-      {
-        "t": 1795283416684,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795250330376,
-        "type": "CYCLE",
-        "text": "[CYCLE #195] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 8850,
+      "newsIngested": 8910,
       "lessons": 1,
-      "backtests": 8720,
+      "backtests": 8780,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795395224510,
+      "fetchedAt": 1795397024242,
       "items": [
         {
           "source": "CoinDesk",
@@ -5985,6 +5985,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Half of wallets on Trump’s dinner list got tokens from non-US exchanges",
+          "link": "https://cointelegraph.com/news/half-wallets-trumps-dinner-list-got-tokens-from-non-us-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 00:53:49",
+          "summary": "    Public Citizen traced 66 of 130 qualifying wallets to exchanges that restrict US users, raising questions over who is attending Trump’s memecoin dinner on Sunday.  "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Will Bitcoin’s big rebound hold? More tampered Ledgers found: Hodler’s Digest",
           "link": "https://cointelegraph.com/magazine/will-bitcoins-big-rebound-hold-more-tampered-ledgers-found-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-22 22:47:09",
@@ -6045,13 +6052,6 @@
           "link": "https://cointelegraph.com/news/hong-kong-crypto-custody-advisory-licensing-bill?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-21 05:40:35",
           "summary": "    Hong Kong’s securities regulator says the proposal would strengthen investor protections, with the bill set for its first reading in the Legislative Council on Dec. 2. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Wrapped Monero token crashes 99.8% amid suspected $13.5M exploit",
-          "link": "https://cointelegraph.com/news/wrapped-monero-token-crashes-998-amid-suspected-135m-exploit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-20 19:37:27",
-          "summary": "    Bitquery traced $13.5 million in suspicious sales of the wrapped Monero token, as its operator blamed a security breach and promised to reimburse affected traders. "
         },
         {
           "source": "Decrypt",
@@ -6258,23 +6258,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795395224510
+        "t": 1795397024242
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795394324086,
+      "fetchedAt": 1795396126336,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 15.87,
+        "ARB": 16.29,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 4.66,
+        "ENA": 4.26,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6286,112 +6286,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 87.95,
+          "pct": 87.98,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 480.49,
+          "pct": 480.7,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 420.39,
+          "pct": 420.58,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 15.87,
+          "pct": 16.29,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 56.7,
+          "pct": 58.18,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 282.91,
+          "pct": 290.3,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.17,
+          "pct": 4.28,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 33.75,
+          "pct": 34.63,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 15.34,
+          "pct": 15.74,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 49.37,
+          "pct": 50.66,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 153.67,
+          "pct": 157.68,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 78.45,
+          "pct": 80.5,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 90.98,
+          "pct": 93.08,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 254.39,
+          "pct": 260.26,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 34.48,
+          "pct": 35.27,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1696.65,
+          "pct": 1658.79,
           "lev": 10
         }
       ]
@@ -10406,7 +10406,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1260,
-        "updatedAt": 1795395224959
+        "updatedAt": 1795397027258
       }
     },
     "champion": {
@@ -10422,7 +10422,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795395224959,
+      "updatedAt": 1795397027257,
       "gen": 53
     },
     "factory": {
