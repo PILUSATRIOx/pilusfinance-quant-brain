@@ -1,6 +1,82 @@
 {
   "trades": [
     {
+      "id": "sig_ETHUSDT_1795444726674",
+      "sym": "ETHUSDT",
+      "side": "LONG",
+      "entry": 1810.29,
+      "sl": 1772.5140986758354,
+      "slInit": 1772.5140986758354,
+      "risk": 37.77590132416462,
+      "rsiAtEntry": 80,
+      "tp1": 1840.5107210593317,
+      "tp2": 1870.7314421186634,
+      "tp3": 1931.1728842373268,
+      "momentumBurst": true,
+      "lev": 5,
+      "conf": 77,
+      "techScore": 69,
+      "extScore": 8,
+      "regime": "TREND_UP",
+      "hurst": 0.45,
+      "kalmanPrice": 1810.29,
+      "kalmanVelZ": 0.9452,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[NO] Screen2: RSI 80 di luar zona sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[OK] Screen5b (Whales): smart money net LONG +20.0",
+        "[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=0.45)",
+        "[INFO] Screen6: berita netral",
+        "[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance +25.4% · VPIN 0.658",
+        "[OK] Screen8 (Momentum Burst): Vol 4.04x · Body 92% -> TP3 diperluas ke 3.2R",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "elder",
+          "side": "LONG",
+          "note": "Pullback ke EMA20 1H searah tren 4H (Layar 2 Elder), RSI 58",
+          "w": 0.44,
+          "barAge": 2
+        },
+        {
+          "strat": "donchian",
+          "side": "LONG",
+          "note": "Breakout Donchian-20 + volume 4.0x (Williams/Steidlmayer)",
+          "w": 0.61,
+          "barAge": 0
+        },
+        {
+          "strat": "macdm",
+          "side": "LONG",
+          "note": "MACD histogram flip positif dalam tren EMA bullish",
+          "w": 0.61,
+          "barAge": 0
+        }
+      ],
+      "atr": 20.419406121170066,
+      "volPct": 1.1279632611995905,
+      "metaP": 0.524,
+      "metaEV": -0.29,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "LOSS",
+      "createdAt": 1795444726675,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0,
+      "mae": -1.0586114056375688,
+      "lastBarT": 1795445700000,
+      "closedAt": 1795446522432,
+      "netR": -1.14,
+      "closeReason": "SL 1772.5141 tersentuh",
+      "lossCause": "LATE_LONG"
+    },
+    {
       "id": "sig_ETHUSDT_1795442930930",
       "sym": "ETHUSDT",
       "side": "LONG",
@@ -804,5 +880,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795445684056
+  "updatedAt": 1795447430509
 }
