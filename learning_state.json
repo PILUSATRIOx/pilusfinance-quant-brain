@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795391628743,
+  "updatedAt": 1795393446834,
   "brain": {
     "v": 1,
     "gen": 52,
-    "cycles": 314,
+    "cycles": 316,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795389823668,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.58,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -530,7 +530,7 @@
           "tStat": -1.7975687774196256,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -874,7 +874,7 @@
           "tStat": -2.311298092058779,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -1218,7 +1218,7 @@
           "tStat": -0.5940947699112592,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -1562,7 +1562,7 @@
           "tStat": -0.5910741351718347,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -1906,7 +1906,7 @@
           "tStat": -1.302698947950772,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -2250,7 +2250,7 @@
           "tStat": -2.3236404207225956,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -2594,25 +2594,25 @@
           "tStat": -1.5499721378203977,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 103,
+          "trades": 104,
           "wins": 53,
-          "losses": 50,
-          "winRate": 51.45631067961165,
-          "pf": 0.5642554366589837,
-          "exp": -0.2351275497987235,
-          "netR": -24.21813762926852,
-          "maxDD": 24.54468677066425,
-          "sumR2": 90.67288383363919,
+          "losses": 51,
+          "winRate": 50.96153846153846,
+          "pf": 0.5528572531826013,
+          "exp": -0.24388458848701156,
+          "netR": -25.3639972026492,
+          "maxDD": 25.690546344044932,
+          "sumR2": 91.98569647273658,
           "grossW": 31.360611176176164,
-          "grossL": 55.5787488054447,
-          "sd": 0.9127556449424586,
-          "tStat": -2.6143733211570552,
+          "grossL": 56.72460837882537,
+          "sd": 0.9126926366823618,
+          "tStat": -2.7250625802793893,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2889,15 +2889,15 @@
           "wins": 49,
           "losses": 41,
           "winRate": 54.44444444444444,
-          "pf": 0.6244918419040428,
-          "exp": -0.19333685125332373,
-          "netR": -17.400316612799134,
-          "maxDD": 18.02509946752909,
-          "sumR2": 78.39178342044444,
+          "pf": 0.6244604502853441,
+          "exp": -0.19336273362307696,
+          "netR": -17.402646026076926,
+          "maxDD": 18.02742888080688,
+          "sumR2": 78.39708673015365,
           "grossW": 28.937735537728777,
-          "grossL": 46.33805215052792,
-          "sd": 0.9181543589822714,
-          "tStat": -1.9976536612537754,
+          "grossL": 46.340381563805714,
+          "sd": 0.9181812966450178,
+          "tStat": -1.997862475786459,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2908,37 +2908,37 @@
           "wins": 54,
           "losses": 41,
           "winRate": 56.84210526315789,
-          "pf": 0.7796641167468217,
-          "exp": -0.10652621353898618,
-          "netR": -10.119990286203688,
-          "maxDD": 17.146985107421017,
-          "sumR2": 88.39816415927689,
+          "pf": 0.7796861124021827,
+          "exp": -0.10651257435565147,
+          "netR": -10.118694563786889,
+          "maxDD": 17.145689385004218,
+          "sumR2": 88.3951392903752,
           "grossW": 35.80984255257756,
-          "grossL": 45.92983283878126,
-          "sd": 0.9638140100057504,
-          "tStat": -1.077271221331912,
+          "grossL": 45.92853711636446,
+          "sd": 0.9637988394958183,
+          "tStat": -1.077150246335415,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 96,
+          "trades": 95,
           "wins": 55,
-          "losses": 41,
-          "winRate": 57.291666666666664,
-          "pf": 0.8946040767031661,
-          "exp": -0.05138024671542155,
-          "netR": -4.932503684680469,
+          "losses": 40,
+          "winRate": 57.89473684210527,
+          "pf": 0.9169590625380403,
+          "exp": -0.03991105146224046,
+          "netR": -3.7915498889128436,
           "maxDD": 7.730864265418289,
-          "sumR2": 101.25938582951608,
+          "sumR2": 99.95763660041402,
           "grossW": 41.86725412747623,
-          "grossL": 46.7997578121567,
-          "sd": 1.0311258669061056,
-          "tStat": -0.48822511916502837,
+          "grossL": 45.65880401638907,
+          "sd": 1.030421891790765,
+          "tStat": -0.3775199399262522,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -3282,7 +3282,7 @@
           "tStat": 0,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       },
@@ -3626,7 +3626,7 @@
           "tStat": -2.5505455822471608,
           "atrMult": 1.856,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         }
       }
@@ -3693,7 +3693,7 @@
         "lockedR": 0,
         "mfe": 0.26733557898397897,
         "mae": -0.3564474386453026,
-        "lastBarT": 1795391400000
+        "lastBarT": 1795393200000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3762,8 +3762,8 @@
         "beActive": false,
         "lockedR": 0,
         "mfe": 0.31943409243710474,
-        "mae": -0.38193206704436755,
-        "lastBarT": 1795391400000
+        "mae": -0.4027647252467885,
+        "lastBarT": 1795393200000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795391400000
+        "lastBarT": 1795393200000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795393426596,
+        "type": "CYCLE",
+        "text": "[CYCLE #316] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795393423607,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795392528152,
+        "type": "CYCLE",
+        "text": "[CYCLE #315] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795392524004,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795391628721,
         "type": "CYCLE",
@@ -5830,26 +5850,6 @@
         "t": 1795247625749,
         "type": "CYCLE",
         "text": "[CYCLE #192] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795247622929,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1238 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.285R)"
-      },
-      {
-        "t": 1795247622929,
-        "type": "GEN",
-        "text": "[GEN #32] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-57.77R, 317 trade, Win 55.5%, t=-3.21 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795247622545,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795246725898,
-        "type": "CYCLE",
-        "text": "[CYCLE #191] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 8730,
+      "newsIngested": 8790,
       "lessons": 1,
-      "backtests": 8600,
+      "backtests": 8660,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795391623474,
+      "fetchedAt": 1795393423607,
       "items": [
         {
           "source": "CoinDesk",
@@ -5988,7 +5988,7 @@
           "title": "Will Bitcoin’s big rebound hold? More tampered Ledgers found: Hodler’s Digest",
           "link": "https://cointelegraph.com/magazine/will-bitcoins-big-rebound-hold-more-tampered-ledgers-found-hodlers-digest?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-22 22:47:09",
-          "summary": "    Bitcoin rebounded sharply from its new cycle low, but is $55,110 really the bottom? Ledger investigates new reports of tampered devices in Berlin and the UAE. "
+          "summary": "    Bitcoin rebounds sharply from its new cycle low, but is $55,110 really the bottom? Ledger investigates new reports of tampered devices in Berlin and the UAE. "
         },
         {
           "source": "CoinTelegraph",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795391623474
+        "t": 1795393423607
       },
       "lastErrors": []
     },
@@ -10406,7 +10406,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1260,
-        "updatedAt": 1795391626819
+        "updatedAt": 1795393424657
       }
     },
     "champion": {
@@ -10422,7 +10422,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795391626818,
+      "updatedAt": 1795393424656,
       "gen": 52
     },
     "factory": {
