@@ -1,6 +1,148 @@
 {
   "trades": [
     {
+      "id": "sig_ETHUSDT_1795442930930",
+      "sym": "ETHUSDT",
+      "side": "LONG",
+      "entry": 1810.29,
+      "sl": 1810.29,
+      "slInit": 1772.452840457472,
+      "risk": 37.837159542528134,
+      "rsiAtEntry": 80,
+      "tp1": 1840.5597276340225,
+      "tp2": 1870.829455268045,
+      "tp3": 1931.36891053609,
+      "momentumBurst": true,
+      "lev": 5,
+      "conf": 77,
+      "techScore": 69,
+      "extScore": 8,
+      "regime": "TREND_UP",
+      "hurst": 0.45,
+      "kalmanPrice": 1810.29,
+      "kalmanVelZ": 0.9452,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[NO] Screen2: RSI 80 di luar zona sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[OK] Screen5b (Whales): smart money net LONG +20.0",
+        "[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=0.45)",
+        "[INFO] Screen6: berita netral",
+        "[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance +25.4% · VPIN 0.658",
+        "[OK] Screen8 (Momentum Burst): Vol 4.04x · Body 92% -> TP3 diperluas ke 3.2R",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "elder",
+          "side": "LONG",
+          "note": "Pullback ke EMA20 1H searah tren 4H (Layar 2 Elder), RSI 58",
+          "w": 0.41,
+          "barAge": 2
+        },
+        {
+          "strat": "donchian",
+          "side": "LONG",
+          "note": "Breakout Donchian-20 + volume 4.0x (Williams/Steidlmayer)",
+          "w": 0.56,
+          "barAge": 0
+        },
+        {
+          "strat": "macdm",
+          "side": "LONG",
+          "note": "MACD histogram flip positif dalam tren EMA bullish",
+          "w": 0.56,
+          "barAge": 0
+        }
+      ],
+      "atr": 20.419406121170066,
+      "volPct": 1.1279632611995905,
+      "metaP": 0.531,
+      "metaEV": -0.278,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "WIN",
+      "createdAt": 1795442930932,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.3999999999999999,
+      "mfe": 0.9173521590854821,
+      "mae": -0.6316541804132202,
+      "lastBarT": 1795444500000,
+      "closedAt": 1795444721951,
+      "netR": 0.26,
+      "closeReason": "Trail/BE exit di 1810.2900"
+    },
+    {
+      "id": "sig_ADAUSDT_1795356530842",
+      "sym": "ADAUSDT",
+      "side": "SHORT",
+      "entry": 0.1444,
+      "sl": 0.1477665552614452,
+      "slInit": 0.1477665552614452,
+      "risk": 0.0033665552614451947,
+      "rsiAtEntry": 54,
+      "tp1": 0.14170675579084385,
+      "tp2": 0.13901351158168768,
+      "tp3": 0.13598361184638702,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 96,
+      "techScore": 96,
+      "extScore": 0,
+      "regime": "RANGING",
+      "hurst": 0.52,
+      "kalmanPrice": 0.1444,
+      "kalmanVelZ": -0.0121,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+        "[OK] Screen2: RSI 54 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.86x ATR",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=0.52)",
+        "[INFO] Screen6: berita netral",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "SHORT",
+          "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+          "w": 0.69,
+          "barAge": 1
+        },
+        {
+          "strat": "smc",
+          "side": "SHORT",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity atas, wick reject + volume",
+          "w": 0.49,
+          "barAge": 1
+        }
+      ],
+      "atr": 0.001813876757244178,
+      "volPct": 1.2561473388117577,
+      "metaP": 0.466,
+      "metaEV": -0.392,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "LOSS",
+      "createdAt": 1795356530844,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0.7723027837314821,
+      "mae": -2.287204397974016,
+      "lastBarT": 1795442400000,
+      "closedAt": 1795442921855,
+      "netR": -1.13,
+      "closeReason": "SL 0.1478 tersentuh",
+      "lossCause": "GIVEBACK"
+    },
+    {
       "id": "sig_SOLUSDT_1795352927006",
       "sym": "SOLUSDT",
       "side": "SHORT",
@@ -662,5 +804,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795434830264
+  "updatedAt": 1795445684056
 }
