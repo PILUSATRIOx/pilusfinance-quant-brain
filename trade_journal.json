@@ -1,6 +1,152 @@
 {
   "trades": [
     {
+      "id": "sig_SOLUSDT_1795352927006",
+      "sym": "SOLUSDT",
+      "side": "SHORT",
+      "entry": 70.19,
+      "sl": 71.630046666561,
+      "slInit": 71.630046666561,
+      "risk": 1.4400466665610085,
+      "rsiAtEntry": 54,
+      "tp1": 69.03796266675118,
+      "tp2": 67.88592533350239,
+      "tp3": 66.58988333359747,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 100,
+      "techScore": 95,
+      "extScore": 10,
+      "regime": "RANGING",
+      "hurst": 0.51,
+      "kalmanPrice": 70.19,
+      "kalmanVelZ": 0.0259,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+        "[OK] Screen2: RSI 54 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.86x ATR",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[OK] Screen6: krisis terverifikasi memperkuat Short",
+        "[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance -5.5% · VPIN 0.61",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "SHORT",
+          "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+          "w": 0.81,
+          "barAge": 0
+        },
+        {
+          "strat": "smc",
+          "side": "SHORT",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity atas, wick reject + volume",
+          "w": 0.58,
+          "barAge": 0
+        },
+        {
+          "strat": "statarb",
+          "side": "SHORT",
+          "note": "D.E. Shaw Z-Score (+0.85 sigma) mean-reversion deceleration (RSI 58)",
+          "w": 0.43,
+          "barAge": 2
+        }
+      ],
+      "atr": 0.7758872125867503,
+      "volPct": 1.1054099053807527,
+      "metaP": 0.461,
+      "metaEV": -0.402,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "LOSS",
+      "createdAt": 1795352927008,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0.31943409243710474,
+      "mae": -1.0763540071250395,
+      "lastBarT": 1795404300000,
+      "closedAt": 1795433599696,
+      "netR": -1.15,
+      "closeReason": "SL 71.6300 tersentuh",
+      "lossCause": "WICK_HUNT"
+    },
+    {
+      "id": "sig_DOGEUSDT_1795349327646",
+      "sym": "DOGEUSDT",
+      "side": "SHORT",
+      "entry": 0.05538,
+      "sl": 0.05538,
+      "slInit": 0.056476965749753257,
+      "risk": 0.0010969657497532559,
+      "rsiAtEntry": 58,
+      "tp1": 0.054502427400197395,
+      "tp2": 0.05362485480039479,
+      "tp3": 0.05263758562561686,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 90,
+      "techScore": 90,
+      "extScore": 0,
+      "regime": "RANGING",
+      "hurst": 0.52,
+      "kalmanPrice": 0.05538,
+      "kalmanVelZ": 0.168,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah SHORT",
+        "[OK] Screen2: RSI 58 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.86x ATR",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[INFO] Screen6: berita netral",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "SHORT",
+          "note": "WYCKOFF UPTHRUST: sweep atas range lalu reject + volume",
+          "w": 0.58,
+          "barAge": 2
+        },
+        {
+          "strat": "smc",
+          "side": "SHORT",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity atas, wick reject + volume",
+          "w": 0.5,
+          "barAge": 1
+        },
+        {
+          "strat": "statarb",
+          "side": "SHORT",
+          "note": "D.E. Shaw Z-Score (+1.35 sigma) mean-reversion deceleration (RSI 60)",
+          "w": 0.53,
+          "barAge": 1
+        }
+      ],
+      "atr": 0.0005910375806860215,
+      "volPct": 1.0672401240267633,
+      "metaP": 0.464,
+      "metaEV": -0.396,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "WIN",
+      "createdAt": 1795349327647,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.39999999999999947,
+      "mfe": 0.9754178744784695,
+      "mae": -0.5378472391984078,
+      "lastBarT": 1795404300000,
+      "closedAt": 1795433599815,
+      "netR": 0.25,
+      "closeReason": "Trail/BE exit di 0.0554"
+    },
+    {
       "id": "sig_SOLUSDT_1795104525130",
       "sym": "SOLUSDT",
       "side": "SHORT",
@@ -516,5 +662,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795396132085
+  "updatedAt": 1795433930691
 }
