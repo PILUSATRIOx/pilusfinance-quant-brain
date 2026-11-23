@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795397029482,
+  "updatedAt": 1795397927259,
   "brain": {
     "v": 1,
     "gen": 53,
-    "cycles": 320,
+    "cycles": 321,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795395224958,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.59,
+    "lastHurst": 0.52,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -500,15 +500,15 @@
           "wins": 38,
           "losses": 44,
           "winRate": 46.34146341463415,
-          "pf": 0.5251915002083669,
-          "exp": -0.28795060019784036,
-          "netR": -23.611949216222907,
-          "maxDD": 28.36018187141347,
-          "sumR2": 84.44582584174447,
-          "grossW": 26.11746638308687,
+          "pf": 0.5252402141203382,
+          "exp": -0.28792105733962226,
+          "netR": -23.609526701849024,
+          "maxDD": 28.360181871413474,
+          "sumR2": 84.45301880640436,
+          "grossW": 26.119888897460758,
           "grossL": 49.72941559930979,
-          "sd": 0.9790821532832068,
-          "tStat": -2.663212251194035,
+          "sd": 0.9791362968662672,
+          "tStat": -2.6627917603856623,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2885,19 +2885,19 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 90,
+          "trades": 89,
           "wins": 49,
-          "losses": 41,
-          "winRate": 54.44444444444444,
-          "pf": 0.6244604502853441,
-          "exp": -0.19336273362307696,
-          "netR": -17.402646026076926,
-          "maxDD": 18.02742888080688,
-          "sumR2": 78.39708673015365,
+          "losses": 40,
+          "winRate": 55.0561797752809,
+          "pf": 0.6400571176602796,
+          "exp": -0.18284765514295034,
+          "netR": -16.27344130772258,
+          "maxDD": 16.898224162452536,
+          "sumR2": 77.12195331107752,
           "grossW": 28.937735537728777,
-          "grossL": 46.340381563805714,
-          "sd": 0.9181812966450178,
-          "tStat": -1.997862475786459,
+          "grossL": 45.21117684545137,
+          "sd": 0.9179175587291819,
+          "tStat": -1.8792333932990124,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2908,15 +2908,15 @@
           "wins": 54,
           "losses": 41,
           "winRate": 56.84210526315789,
-          "pf": 0.7796861124021827,
-          "exp": -0.10651257435565147,
-          "netR": -10.118694563786889,
-          "maxDD": 17.145689385004218,
-          "sumR2": 88.3951392903752,
+          "pf": 0.7796785983305141,
+          "exp": -0.10651723363476133,
+          "netR": -10.119137195302326,
+          "maxDD": 17.146132016519655,
+          "sumR2": 88.39617223772368,
           "grossW": 35.80984255257756,
-          "grossL": 45.92853711636446,
-          "sd": 0.9637988394958183,
-          "tStat": -1.077150246335415,
+          "grossL": 45.928979747879886,
+          "sd": 0.9638040198559695,
+          "tStat": -1.0771915752863692,
           "atrMult": 1.856,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3693,7 +3693,7 @@
         "lockedR": 0,
         "mfe": 0.5049672047475113,
         "mae": -0.3564474386453026,
-        "lastBarT": 1795396800000
+        "lastBarT": 1795397700000
       },
       {
         "id": "sig_SOLUSDT_1795352927006",
@@ -3763,7 +3763,7 @@
         "lockedR": 0,
         "mfe": 0.31943409243710474,
         "mae": -0.47915113865566206,
-        "lastBarT": 1795396800000
+        "lastBarT": 1795397700000
       },
       {
         "id": "sig_DOGEUSDT_1795349327646",
@@ -3832,7 +3832,7 @@
         "lockedR": 0,
         "mfe": 0.6290077882150834,
         "mae": -0.5378472391984078,
-        "lastBarT": 1795396800000
+        "lastBarT": 1795397700000
       },
       {
         "id": "sig_SOLUSDT_1795104525130",
@@ -4351,6 +4351,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795397927242,
+        "type": "CYCLE",
+        "text": "[CYCLE #321] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795397923234,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795397029448,
         "type": "CYCLE",
@@ -5840,16 +5850,6 @@
         "t": 1795284533038,
         "type": "GEN",
         "text": "[GEN #33] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-63.52R, 289 trade, Win 54%, t=-3.71 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795284531502,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795283733762,
-        "type": "CYCLE",
-        "text": "[CYCLE #197] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5896,9 +5896,9 @@
       "losses": 0,
       "be": 0,
       "tp1Hits": 7,
-      "newsIngested": 8910,
+      "newsIngested": 8940,
       "lessons": 1,
-      "backtests": 8780,
+      "backtests": 8810,
       "netR": 2.22,
       "peakEquity": 2.22,
       "maxDrawdown": 0,
@@ -5911,7 +5911,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795397024242,
+      "fetchedAt": 1795397923234,
       "items": [
         {
           "source": "CoinDesk",
@@ -6258,7 +6258,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795397024242
+        "t": 1795397923234
       },
       "lastErrors": []
     },
@@ -10406,7 +10406,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1260,
-        "updatedAt": 1795397027258
+        "updatedAt": 1795397925443
       }
     },
     "champion": {
@@ -10422,7 +10422,7 @@
       "deflatedT": -6.04,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795397027257,
+      "updatedAt": 1795397925442,
       "gen": 53
     },
     "factory": {
