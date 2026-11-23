@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795459126129,
+  "updatedAt": 1795460027905,
   "brain": {
     "v": 1,
     "gen": 59,
-    "cycles": 357,
+    "cycles": 358,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795453724003,
     "autoExecBursa": false,
@@ -536,19 +536,19 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 79,
-          "wins": 43,
+          "trades": 78,
+          "wins": 42,
           "losses": 36,
-          "winRate": 54.43037974683544,
-          "pf": 0.5757723374899295,
-          "exp": -0.21550847580432098,
-          "netR": -17.025169588541356,
+          "winRate": 53.84615384615385,
+          "pf": 0.565643246899858,
+          "exp": -0.2234829718583776,
+          "netR": -17.431671804953453,
           "maxDD": 21.62041000199964,
-          "sumR2": 66.84189093516686,
-          "grossW": 23.106983717555703,
+          "sumR2": 66.67410038172483,
+          "grossW": 22.70048150114361,
           "grossL": 40.13215330609705,
-          "sd": 0.8999488773716199,
-          "tStat": -2.128433380707679,
+          "sd": 0.9029419345520777,
+          "tStat": -2.1859081848143247,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -881,18 +881,18 @@
       "bbrev": {
         "SUIUSDT": {
           "trades": 46,
-          "wins": 30,
-          "losses": 16,
-          "winRate": 65.21739130434783,
-          "pf": 0.8649736081089323,
-          "exp": -0.052182733877147267,
-          "netR": -2.400405758348774,
-          "maxDD": 5.812867195016809,
-          "sumR2": 32.381914952793174,
-          "grossW": 15.376902253297592,
-          "grossL": 17.777308011646372,
-          "sd": 0.8466490184237844,
-          "tStat": -0.4180250763596469,
+          "wins": 31,
+          "losses": 15,
+          "winRate": 67.3913043478261,
+          "pf": 0.9420225651631028,
+          "exp": -0.020979102690323832,
+          "netR": -0.9650387237548963,
+          "maxDD": 4.958554200540083,
+          "sumR2": 31.19185223866053,
+          "grossW": 15.680035803425556,
+          "grossL": 16.64507452718046,
+          "sd": 0.832287431549338,
+          "tStat": -0.1709592044791229,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2601,18 +2601,18 @@
       "statarb": {
         "SUIUSDT": {
           "trades": 104,
-          "wins": 54,
-          "losses": 50,
-          "winRate": 51.92307692307693,
-          "pf": 0.5702112805146613,
-          "exp": -0.22978996308980143,
-          "netR": -23.898156161339347,
-          "maxDD": 25.807340768650164,
-          "sumR2": 91.04021698096217,
-          "grossW": 31.706272428496124,
-          "grossL": 55.60442858983547,
-          "sd": 0.9113558690147914,
-          "tStat": -2.571341329242367,
+          "wins": 55,
+          "losses": 49,
+          "winRate": 52.88461538461539,
+          "pf": 0.5876108428640191,
+          "exp": -0.21600395961057048,
+          "netR": -22.46441179949933,
+          "maxDD": 24.67672995693811,
+          "sumR2": 89.85382612261516,
+          "grossW": 32.00940597862409,
+          "grossL": 54.47381777812341,
+          "sd": 0.9084363191001352,
+          "tStat": -2.424844497980051,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4576,6 +4576,16 @@
     ],
     "journal": [
       {
+        "t": 1795460027872,
+        "type": "CYCLE",
+        "text": "[CYCLE #358] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795460023984,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795459126081,
         "type": "CYCLE",
         "text": "[CYCLE #357] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6064,16 +6074,6 @@
         "t": 1795322322947,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795321427949,
-        "type": "CYCLE",
-        "text": "[CYCLE #238] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795321423803,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6145,9 +6145,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 9870,
+      "newsIngested": 9900,
       "lessons": 1,
-      "backtests": 9830,
+      "backtests": 9860,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6160,7 +6160,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795458608385,
+      "fetchedAt": 1795460023984,
       "items": [
         {
           "source": "CoinDesk",
@@ -6304,6 +6304,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "GPU Jesus Has Risen: Jensen Huang’s Nvidia Comeback Gets a Meme Parade",
+          "link": "https://decrypt.co/383820/jensen-huang-returns-nvidia-memes-gpu-jesus",
+          "pubDate": "2026-11-23 18:45:21",
+          "summary": "Hollywood, WWE and GPU Jesus joined the celebration after Nvidia reinstated Jensen Huang on Monday, while viral AI memes cast Anthropic&#39;s Dario Amodei as the unlikely villain of the comeback."
+        },
+        {
+          "source": "Decrypt",
           "title": "Solo Bitcoin Miner Scores Again, Hitting $191,000 Jackpot Against the Odds",
           "link": "https://decrypt.co/383818/solo-bitcoin-miner-scores-again-191000-jackpot",
           "pubDate": "2026-11-23 18:16:25",
@@ -6364,13 +6371,6 @@
           "link": "https://decrypt.co/383775/czech-authorities-charge-15-over-12m-unlicensed-crypto-casino",
           "pubDate": "2026-11-23 13:08:23",
           "summary": "Investigators say &quot;decentralized&quot; casino BETFIN was run centrally, inflated its player numbers with bots and made $12 million illegally."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Solana Meme Coin for Fiona the Hippo Raises $100K for Cincinnati Zoo Charity",
-          "link": "https://decrypt.co/383762/solana-meme-coin-for-fiona-the-hippo-sends-100k-to-cincinnati-zoo-charity",
-          "pubDate": "2026-11-23 12:43:30",
-          "summary": "A meme coin honoring the Cincinnati Zoo&#39;s late pygmy hippo has sent its creator rewards to the zoo&#39;s nonprofit."
         }
       ],
       "perCoin": {
@@ -6493,7 +6493,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795458608385
+        "t": 1795460023983
       },
       "lastErrors": []
     },
@@ -6760,22 +6760,22 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.57,
+            0.572,
             -1.076,
             35
           ],
           [
-            0.53,
+            0.532,
             -1.073,
             56
           ],
           [
-            0.591,
+            0.593,
             0.332,
             10
           ],
           [
-            0.561,
+            0.562,
             -1.088,
             56
           ],
@@ -6785,152 +6785,152 @@
             61
           ],
           [
-            0.494,
+            0.499,
             0.316,
             35
           ],
           [
-            0.494,
+            0.498,
             -1.078,
             46
           ],
           [
-            0.518,
+            0.522,
             0.54,
             10
           ],
           [
-            0.553,
+            0.556,
             -1.078,
             94
           ],
           [
-            0.512,
+            0.516,
             0.285,
             2
           ],
           [
-            0.566,
+            0.571,
             -1.129,
             35
           ],
           [
-            0.619,
+            0.622,
             -1.121,
             10
           ],
           [
-            0.544,
+            0.545,
             -1.126,
             69
           ],
           [
-            0.589,
+            0.593,
             0.582,
             35
           ],
           [
-            0.542,
+            0.548,
             -1.134,
             35
           ],
           [
-            0.551,
+            0.556,
             -1.12,
             10
           ],
           [
-            0.559,
+            0.564,
             0.302,
             10
           ],
           [
-            0.52,
+            0.519,
             0.399,
             61
           ],
           [
-            0.56,
+            0.565,
             0.505,
             34
           ],
           [
-            0.481,
+            0.484,
             1.003,
             94
           ],
           [
-            0.592,
+            0.596,
             1.514,
             10
           ],
           [
-            0.499,
+            0.503,
             -1.107,
             27
           ],
           [
-            0.514,
+            0.518,
             1.508,
             35
           ],
           [
-            0.564,
+            0.568,
             0.315,
             10
           ],
           [
-            0.617,
+            0.621,
             0.274,
             2
           ],
           [
-            0.568,
+            0.572,
             -1.129,
             16
           ],
           [
-            0.486,
+            0.485,
             -1.159,
             61
           ],
           [
-            0.607,
+            0.611,
             0.257,
             10
           ],
           [
-            0.554,
+            0.556,
             -1.166,
             10
           ],
           [
-            0.499,
+            0.502,
             0.447,
             10
           ],
           [
-            0.484,
+            0.486,
             0.159,
             90
           ],
           [
-            0.524,
+            0.529,
             -1.196,
             35
           ],
           [
-            0.586,
+            0.589,
             -1.155,
             41
           ],
           [
-            0.606,
+            0.609,
             0.849,
             10
           ],
           [
-            0.598,
+            0.602,
             0.926,
             15
           ],
@@ -6940,7 +6940,7 @@
             69
           ],
           [
-            0.55,
+            0.556,
             0.181,
             10
           ],
@@ -6950,27 +6950,27 @@
             56
           ],
           [
-            0.517,
+            0.516,
             -1.129,
             61
           ],
           [
-            0.502,
+            0.506,
             0.74,
             2
           ],
           [
-            0.53,
+            0.535,
             -1.134,
             41
           ],
           [
-            0.553,
+            0.558,
             0.619,
             10
           ],
           [
-            0.611,
+            0.615,
             -1.129,
             35
           ],
@@ -6980,37 +6980,37 @@
             69
           ],
           [
-            0.571,
+            0.575,
             0.511,
             41
           ],
           [
-            0.464,
+            0.466,
             1.54,
             90
           ],
           [
-            0.534,
+            0.539,
             -1.111,
             46
           ],
           [
-            0.453,
+            0.455,
             -1.113,
             73
           ],
           [
-            0.558,
+            0.563,
             0.272,
             10
           ],
           [
-            0.559,
+            0.563,
             0.277,
             35
           ],
           [
-            0.601,
+            0.604,
             -1.119,
             35
           ],
@@ -7020,7 +7020,7 @@
             69
           ],
           [
-            0.54,
+            0.545,
             1.578,
             33
           ]
@@ -10726,7 +10726,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795459123404
+        "updatedAt": 1795460025301
       }
     },
     "champion": {
@@ -10742,7 +10742,7 @@
       "deflatedT": -6.02,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795459123404,
+      "updatedAt": 1795460025300,
       "gen": 59
     },
     "factory": {
