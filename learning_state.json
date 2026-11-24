@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795493225290,
+  "updatedAt": 1795496031526,
   "brain": {
     "v": 1,
     "gen": 61,
-    "cycles": 368,
+    "cycles": 371,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795480725559,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -387,61 +387,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 81,
-          "wins": 47,
-          "losses": 34,
-          "winRate": 58.0246913580247,
-          "pf": 0.6990954158227554,
-          "exp": -0.14242275378126767,
-          "netR": -11.536243056282682,
-          "maxDD": 15.688233350852364,
-          "sumR2": 66.73273600599103,
-          "grossW": 26.802299002908363,
-          "grossL": 38.33854205919105,
-          "sd": 0.9020096486569948,
-          "tStat": -1.4210544043956652,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 84,
-          "wins": 37,
-          "losses": 47,
-          "winRate": 44.047619047619044,
-          "pf": 0.462322838089846,
-          "exp": -0.34099826374683745,
-          "netR": -28.643854154734345,
-          "maxDD": 30.58951963252458,
-          "sumR2": 86.42364832377659,
-          "grossW": 24.62947821626328,
-          "grossL": 53.273332370997615,
-          "sd": 0.9610244520665506,
-          "tStat": -3.252051187892533,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 81,
-          "wins": 43,
-          "losses": 38,
-          "winRate": 53.086419753086425,
-          "pf": 0.6125078698590967,
-          "exp": -0.20883715677247353,
-          "netR": -16.915809698570357,
-          "maxDD": 23.40370674391258,
-          "sumR2": 77.65203282884521,
-          "grossW": 26.73877934410072,
-          "grossL": 43.65458904267107,
-          "sd": 0.9625446952407687,
-          "tStat": -1.9526723488742717,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "donchian": {
@@ -641,61 +611,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 64,
-          "wins": 32,
-          "losses": 32,
-          "winRate": 50,
-          "pf": 0.5264959340387318,
-          "exp": -0.26827826151679307,
-          "netR": -17.169808737074757,
-          "maxDD": 18.203646456416767,
-          "sumR2": 60.29608469874341,
-          "grossW": 19.091355572503144,
-          "grossL": 36.2611643095779,
-          "sd": 0.940194156410776,
-          "tStat": -2.2827477468352257,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 76,
-          "wins": 39,
-          "losses": 37,
-          "winRate": 51.31578947368421,
-          "pf": 0.5052454796252932,
-          "exp": -0.2710874060854157,
-          "netR": -20.602642862491592,
-          "maxDD": 26.920826709708074,
-          "sumR2": 67.6899537410799,
-          "grossW": 21.03950898058405,
-          "grossL": 41.64215184307566,
-          "sd": 0.9099804886478453,
-          "tStat": -2.5970724048132547,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 68,
-          "wins": 37,
-          "losses": 31,
-          "winRate": 54.41176470588235,
-          "pf": 0.5167274317095677,
-          "exp": -0.251432301077621,
-          "netR": -17.097396473278227,
-          "maxDD": 20.615661838804698,
-          "sumR2": 57.59664761833226,
-          "grossW": 18.280975060947174,
-          "grossL": 35.37837153422541,
-          "sd": 0.8919022926928369,
-          "tStat": -2.3246535938486623,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "bbrev": {
@@ -895,61 +835,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 46,
-          "wins": 26,
-          "losses": 20,
-          "winRate": 56.52173913043478,
-          "pf": 0.7847703104852966,
-          "exp": -0.10627340936334476,
-          "netR": -4.888576830713859,
-          "maxDD": 6.94763798450545,
-          "sumR2": 44.375041312363116,
-          "grossW": 17.824724674002102,
-          "grossL": 22.713301504715965,
-          "sd": 0.9872016070762683,
-          "tStat": -0.7301257671861482,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 48,
-          "wins": 27,
-          "losses": 21,
-          "winRate": 56.25,
-          "pf": 0.7515362596408388,
-          "exp": -0.12121269087481278,
-          "netR": -5.818209161991013,
-          "maxDD": 8.921156946944336,
-          "sumR2": 43.252801580903416,
-          "grossW": 17.59852421560618,
-          "grossL": 23.416733377597193,
-          "sd": 0.9514553331082481,
-          "tStat": -0.8826332958015184,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 47,
-          "wins": 29,
-          "losses": 18,
-          "winRate": 61.702127659574465,
-          "pf": 0.8154185749041188,
-          "exp": -0.0808559722642066,
-          "netR": -3.80023069641771,
-          "maxDD": 5.844824808055947,
-          "sumR2": 40.51015860659284,
-          "grossW": 16.78813941960926,
-          "grossL": 20.58837011602697,
-          "sd": 0.9348667338043626,
-          "tStat": -0.592940788434353,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "wyckoff": {
@@ -1149,61 +1059,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 51,
-          "wins": 37,
-          "losses": 14,
-          "winRate": 72.54901960784314,
-          "pf": 1.7518557697351411,
-          "exp": 0.23363721722080513,
-          "netR": 11.915498078261061,
-          "maxDD": 3.5247909805325746,
-          "sumR2": 48.135043202821656,
-          "grossW": 27.763614908512395,
-          "grossL": 15.848116830251334,
-          "sd": 0.9523774397791759,
-          "tStat": 1.751935099820475,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 48,
-          "wins": 27,
-          "losses": 21,
-          "winRate": 56.25,
-          "pf": 0.7223203146921741,
-          "exp": -0.13793708837309773,
-          "netR": -6.620980241908691,
-          "maxDD": 8.602116764189912,
-          "sumR2": 44.996109443665304,
-          "grossW": 17.222968711609127,
-          "grossL": 23.84394895351782,
-          "sd": 0.968469188065554,
-          "tStat": -0.9867698353420484,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 47,
-          "wins": 30,
-          "losses": 17,
-          "winRate": 63.829787234042556,
-          "pf": 0.955707016627741,
-          "exp": -0.01855387676653154,
-          "netR": -0.8720322080269824,
-          "maxDD": 4.418766191836908,
-          "sumR2": 42.4874954561146,
-          "grossW": 18.81578607908223,
-          "grossL": 19.687818287109213,
-          "sd": 0.9608795323080243,
-          "tStat": -0.13237764603458166,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "rsidiv": {
@@ -1403,61 +1283,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 18,
-          "wins": 10,
-          "losses": 8,
-          "winRate": 55.55555555555556,
-          "pf": 0.8890537900861499,
-          "exp": -0.054561005344727936,
-          "netR": -0.9820980962051028,
-          "maxDD": 5.545080647453751,
-          "sumR2": 19.82148580184246,
-          "grossW": 7.869922148269245,
-          "grossL": 8.852020244474346,
-          "sd": 1.078340269945557,
-          "tStat": -0.21466576706568005,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 24,
-          "wins": 13,
-          "losses": 11,
-          "winRate": 54.166666666666664,
-          "pf": 0.9324919596792993,
-          "exp": -0.035697727551281026,
-          "netR": -0.8567454612307447,
-          "maxDD": 7.2899926437251885,
-          "sumR2": 29.720770105837932,
-          "grossW": 11.834268189302255,
-          "grossL": 12.691013650533,
-          "sd": 1.1361679728804288,
-          "tStat": -0.1539230458254322,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 20,
-          "wins": 9,
-          "losses": 11,
-          "winRate": 45,
-          "pf": 0.5895099994736555,
-          "exp": -0.25698225572790007,
-          "netR": -5.139645114558001,
-          "maxDD": 7.203021795074587,
-          "sumR2": 22.74956574662351,
-          "grossW": 7.381110830697107,
-          "grossL": 12.520755945255107,
-          "sd": 1.0619933628359235,
-          "tStat": -1.0821720981086749,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "macdm": {
@@ -1657,61 +1507,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 44,
-          "wins": 23,
-          "losses": 21,
-          "winRate": 52.27272727272727,
-          "pf": 0.5140985005060061,
-          "exp": -0.26178133566354167,
-          "netR": -11.518378769195833,
-          "maxDD": 13.134166402926102,
-          "sumR2": 38.18840976004663,
-          "grossW": 12.186793536694974,
-          "grossL": 23.70517230589082,
-          "sd": 0.9044221228531685,
-          "tStat": -1.9199673373204433,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 44,
-          "wins": 25,
-          "losses": 19,
-          "winRate": 56.81818181818182,
-          "pf": 0.5527415609531123,
-          "exp": -0.21984498155124524,
-          "netR": -9.67317918825479,
-          "maxDD": 12.046966274785806,
-          "sumR2": 34.681874792948534,
-          "grossW": 11.95453835435533,
-          "grossL": 21.627717542610124,
-          "sd": 0.8701145994125191,
-          "tStat": -1.6759707660126284,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 37,
-          "wins": 20,
-          "losses": 17,
-          "winRate": 54.054054054054056,
-          "pf": 0.4224731099006504,
-          "exp": -0.3003595513135151,
-          "netR": -11.113303398600058,
-          "maxDD": 11.83533475719891,
-          "sumR2": 28.038792221837927,
-          "grossW": 8.129616003279708,
-          "grossL": 19.242919401879764,
-          "sd": 0.8283317471383782,
-          "tStat": -2.2056571303210237,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "smc": {
@@ -1911,61 +1731,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 32,
-          "wins": 20,
-          "losses": 12,
-          "winRate": 62.5,
-          "pf": 0.9998502951590246,
-          "exp": -0.0000631672095062711,
-          "netR": -0.002021350704200675,
-          "maxDD": 7.711829780930412,
-          "sumR2": 28.346168665174414,
-          "grossW": 13.500218730716888,
-          "grossL": 13.502240081421089,
-          "sd": 0.956238742923263,
-          "tStat": -0.0003736804225603315,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 28,
-          "wins": 20,
-          "losses": 8,
-          "winRate": 71.42857142857143,
-          "pf": 1.5699862653349215,
-          "exp": 0.18773712277152546,
-          "netR": 5.256639437602713,
-          "maxDD": 3.4737582850903364,
-          "sumR2": 26.93604979058653,
-          "grossW": 14.479036111518937,
-          "grossL": 9.222396673916226,
-          "sd": 0.9803473199184292,
-          "tStat": 1.013326050097401,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 27,
-          "wins": 13,
-          "losses": 14,
-          "winRate": 48.148148148148145,
-          "pf": 0.46842261962595333,
-          "exp": -0.3228202986782381,
-          "netR": -8.716148064312428,
-          "maxDD": 9.679309543171776,
-          "sumR2": 26.21089624872792,
-          "grossW": 7.680614450637463,
-          "grossL": 16.39676251494989,
-          "sd": 0.9486254575656545,
-          "tStat": -1.7682674059584897,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "statarb": {
@@ -2165,61 +1955,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 89,
-          "wins": 50,
-          "losses": 39,
-          "winRate": 56.17977528089888,
-          "pf": 0.6921039397373927,
-          "exp": -0.15251906813075958,
-          "netR": -13.574197063637603,
-          "maxDD": 15.771519139681082,
-          "sumR2": 78.34004177517261,
-          "grossW": 30.512749200176366,
-          "grossL": 44.08694626381396,
-          "sd": 0.9309679584394657,
-          "tStat": -1.5455548152659655,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 95,
-          "wins": 55,
-          "losses": 40,
-          "winRate": 57.89473684210527,
-          "pf": 0.8353086422011107,
-          "exp": -0.07758943371553048,
-          "netR": -7.3709962029753955,
-          "maxDD": 15.971847896414115,
-          "sumR2": 89.51001234828584,
-          "grossW": 37.385427579603366,
-          "grossL": 44.756423782578764,
-          "sd": 0.972702426162012,
-          "tStat": -0.7774713349275668,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 95,
-          "wins": 56,
-          "losses": 39,
-          "winRate": 58.94736842105262,
-          "pf": 0.9755071324410219,
-          "exp": -0.01147964786840976,
-          "netR": -1.0905665474989272,
-          "maxDD": 7.742802203576424,
-          "sumR2": 101.13932288135085,
-          "grossW": 43.43531613540329,
-          "grossL": 44.52588268290221,
-          "sd": 1.0372160137425184,
-          "tStat": -0.10787508623251006,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       },
       "tsmom": {
@@ -2419,61 +2179,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "AVAXUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "LINKUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         }
       },
       "emax": {
@@ -2673,61 +2403,31 @@
           "maxDD": 0
         },
         "ADAUSDT": {
-          "trades": 23,
-          "wins": 12,
-          "losses": 11,
-          "winRate": 52.17391304347826,
-          "pf": 0.5962317661725037,
-          "exp": -0.21670725279202585,
-          "netR": -4.9842668142165945,
-          "maxDD": 5.620505341058581,
-          "sumR2": 20.819332339969478,
-          "grossW": 7.360108985158561,
-          "grossL": 12.344375799375156,
-          "sd": 0.9472257475836316,
-          "tStat": -1.097195126844602,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "AVAXUSDT": {
-          "trades": 28,
-          "wins": 16,
-          "losses": 12,
-          "winRate": 57.14285714285714,
-          "pf": 0.4691802022893262,
-          "exp": -0.25592859483491265,
-          "netR": -7.1660006553775535,
-          "maxDD": 7.1660006553775535,
-          "sumR2": 18.11791300902452,
-          "grossW": 6.333873852474584,
-          "grossL": 13.499874507852137,
-          "sd": 0.7766005820885562,
-          "tStat": -1.7438138238381484,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "LINKUSDT": {
-          "trades": 27,
-          "wins": 12,
-          "losses": 15,
-          "winRate": 44.44444444444444,
-          "pf": 0.33626158552884705,
-          "exp": -0.42473219737268814,
-          "netR": -11.46776932906258,
-          "maxDD": 13.22833848606959,
-          "sumR2": 24.437190739052753,
-          "grossW": 5.809774171564482,
-          "grossL": 17.27754350062706,
-          "sd": 0.8674999417636177,
-          "tStat": -2.5440615383706575,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "RANGING",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         }
       }
     },
@@ -3675,6 +3375,41 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795496024193,
+        "type": "CYCLE",
+        "text": "[CYCLE #371] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795496022577,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795495368910,
+        "type": "CYCLE",
+        "text": "[CYCLE #370] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795495172298,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin)"
+      },
+      {
+        "t": 1795495172296,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795494663951,
+        "type": "CYCLE",
+        "text": "[CYCLE #369] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795494389665,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack)"
+      },
       {
         "t": 1795493217368,
         "type": "CYCLE",
@@ -5139,41 +4874,6 @@
         "t": 1795334024506,
         "type": "GEN",
         "text": "[GEN #42] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-59.74R, 313 trade, Win 55.6%, t=-3.38 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795334024047,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: ETH, SOL, EUR — Long baru diblokir (Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated)"
-      },
-      {
-        "t": 1795334024044,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795333128060,
-        "type": "CYCLE",
-        "text": "[CYCLE #251] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795333125203,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795332228375,
-        "type": "CYCLE",
-        "text": "[CYCLE #250] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795332224378,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795331327864,
-        "type": "CYCLE",
-        "text": "[CYCLE #249] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5245,9 +4945,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10170,
+      "newsIngested": 10250,
       "lessons": 1,
-      "backtests": 10070,
+      "backtests": 10100,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -5260,7 +4960,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795493214104,
+      "fetchedAt": 1795496022577,
       "items": [
         {
           "source": "CoinDesk",
@@ -5597,23 +5297,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795493214104
+        "t": 1795496022576
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795493214730,
+      "fetchedAt": 1795495178895,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 15.63,
+        "ARB": 15.02,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 4.89,
+        "ENA": 5.48,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -5625,112 +5325,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 88.19,
+          "pct": 87,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 481.86,
+          "pct": 475.36,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 421.59,
+          "pct": 415.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 15.63,
+          "pct": 15.02,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 55.86,
+          "pct": 53.65,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 278.71,
+          "pct": 267.68,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.1,
+          "pct": 3.94,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 33.24,
+          "pct": 31.93,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 15.11,
+          "pct": 14.52,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 48.64,
+          "pct": 46.72,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 151.38,
+          "pct": 145.39,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 77.29,
+          "pct": 74.23,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 96.57,
+          "pct": 91.93,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 271.07,
+          "pct": 258.47,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 36.6,
+          "pct": 34.84,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1266.03,
+          "pct": 1266.34,
           "lev": 10
         }
       ]
@@ -9830,23 +9530,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795493214912
+        "updatedAt": 1795496022994
       }
     },
     "champion": {
-      "id": "wyckoff",
-      "name": "Wyckoff Spring & Upthrust",
-      "book": "Richard D. Wyckoff",
-      "netR": -11.41,
-      "trades": 218,
-      "winRate": 61.9,
-      "pf": 0.88,
-      "expPerTrade": -0.052,
-      "tStat": -0.78,
-      "deflatedT": -2.92,
+      "id": "emax",
+      "name": "EMA Cross Naive (CONTROL)",
+      "book": "Baseline Penelitian",
+      "netR": -3.93,
+      "trades": 37,
+      "winRate": 59.5,
+      "pf": 0.77,
+      "expPerTrade": -0.106,
+      "tStat": -0.66,
+      "deflatedT": -2.81,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795493214910,
+      "updatedAt": 1795496022993,
       "gen": 61
     },
     "factory": {
@@ -10057,7 +9757,7 @@
         }
       ],
       "lastError": {
-        "at": 1795493225280,
+        "at": 1795496031523,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
