@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795505024839,
+  "updatedAt": 1795508263004,
   "brain": {
     "v": 1,
     "gen": 63,
-    "cycles": 380,
+    "cycles": 381,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795504493871,
     "autoExecBursa": false,
@@ -3676,6 +3676,16 @@
     ],
     "journal": [
       {
+        "t": 1795508262563,
+        "type": "CYCLE",
+        "text": "[CYCLE #381] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795508260272,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795505024815,
         "type": "CYCLE",
         "text": "[CYCLE #380] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5164,16 +5174,6 @@
         "t": 1795342125098,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795341231278,
-        "type": "CYCLE",
-        "text": "[CYCLE #260] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795341225826,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5245,7 +5245,7 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10400,
+      "newsIngested": 10430,
       "lessons": 1,
       "backtests": 10220,
       "netR": -0.69,
@@ -5260,7 +5260,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795504818093,
+      "fetchedAt": 1795508260272,
       "items": [
         {
           "source": "CoinDesk",
@@ -5334,6 +5334,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Bitcoin ETFs keep bleeding as BlackRock’s IBIT shares gain nearly 5%",
+          "link": "https://cointelegraph.com/markets/bitcoin-etfs-bleed-ibit-shares-gain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 07:41:50",
+          "summary": "    BlackRock’s IBIT shares gained 4.85% on Monday despite continued Bitcoin ETF withdrawals that pushed November’s net outflows to $4.71 billion. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 06:00:00",
@@ -5394,13 +5401,6 @@
           "link": "https://cointelegraph.com/interview/base-quantum-security-2027-priority-regulators-warn-risks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-23 19:16:46",
           "summary": "    Base creator Jesse Pollak says the upcoming Everest upgrade will help prepare wallets for future quantum threats, although further changes will be needed. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Cuomo says rivals urged companies to opt out of OKXICE tokenized stocks",
-          "link": "https://cointelegraph.com/news/cuomo-rivals-urged-companies-reject-okx-ice-tokenized-stocks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 17:42:18",
-          "summary": "    Former New York Gov. Andrew Cuomo said competitors encouraged companies to opt out of OKXICE’s rollout, while some issuers simply wanted more time. "
         },
         {
           "source": "Decrypt",
@@ -5597,15 +5597,143 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795504818092
+        "t": 1795508260272
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795504493823,
-      "bias": {},
-      "positions": []
+      "fetchedAt": 1795508261035,
+      "bias": {
+        "BTC": -20,
+        "ETH": 20,
+        "HYPE": -40,
+        "ARB": 16.4,
+        "LDO": 20,
+        "AAVE": 20,
+        "ZRO": 5,
+        "ETHFI": 20,
+        "ENA": 4.15,
+        "EIGEN": 20,
+        "WLFI": -20,
+        "MEGA": 20,
+        "GRASS": 20,
+        "AERO": 20
+      },
+      "positions": [
+        {
+          "whale": "0x37b81a",
+          "coin": "BTC",
+          "side": "SHORT",
+          "pct": 89.51,
+          "lev": 20
+        },
+        {
+          "whale": "0x37b81a",
+          "coin": "ETH",
+          "side": "LONG",
+          "pct": 489.07,
+          "lev": 20
+        },
+        {
+          "whale": "0x37b81a",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 427.9,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ARB",
+          "side": "LONG",
+          "pct": 16.4,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "LDO",
+          "side": "LONG",
+          "pct": 58.59,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "AAVE",
+          "side": "LONG",
+          "pct": 292.35,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ZRO",
+          "side": "LONG",
+          "pct": 4.31,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ETHFI",
+          "side": "LONG",
+          "pct": 34.87,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ENA",
+          "side": "SHORT",
+          "pct": 15.85,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "EIGEN",
+          "side": "LONG",
+          "pct": 51.02,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "WLFI",
+          "side": "SHORT",
+          "pct": 158.79,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "MEGA",
+          "side": "LONG",
+          "pct": 81.07,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "ENA",
+          "side": "LONG",
+          "pct": 113.51,
+          "lev": 10
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "GRASS",
+          "side": "LONG",
+          "pct": 265.64,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "AERO",
+          "side": "LONG",
+          "pct": 35.23,
+          "lev": 3
+        },
+        {
+          "whale": "0x03ef8f",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 1283.08,
+          "lev": 10
+        }
+      ]
     },
     "learnLog": [
       {
@@ -9702,7 +9830,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1272,
-        "updatedAt": 1795505022764
+        "updatedAt": 1795508261240
       }
     },
     "champion": {
@@ -9718,7 +9846,7 @@
       "deflatedT": -6.8,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795505022762,
+      "updatedAt": 1795508261230,
       "gen": 63
     },
     "factory": {
