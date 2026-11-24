@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795480163101,
+  "updatedAt": 1795480734717,
   "brain": {
     "v": 1,
-    "gen": 60,
-    "cycles": 365,
+    "gen": 61,
+    "cycles": 366,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795461823918,
+    "lastOptAt": 1795480725559,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -41,10 +41,10 @@
       "wyckoff": 0.72,
       "rsidiv": 0.44,
       "macdm": 0.54,
-      "smc": 0.52,
-      "statarb": 0.57,
+      "smc": 0.5,
+      "statarb": 0.58,
       "tsmom": 1,
-      "emax": 0.53
+      "emax": 0.52
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.51,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -276,19 +276,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 31,
-          "wins": 18,
+          "trades": 30,
+          "wins": 17,
           "losses": 13,
-          "winRate": 58.06451612903226,
-          "pf": 0.49248563463620953,
-          "exp": -0.32475716797000304,
-          "netR": -10.067472207070095,
+          "winRate": 56.666666666666664,
+          "pf": 0.4858148986599828,
+          "exp": -0.3399932803425544,
+          "netR": -10.199798410276632,
           "maxDD": 13.035381653074927,
-          "sumR2": 43.80975688948404,
-          "grossW": 9.76934994840455,
+          "sumR2": 43.79224666542898,
+          "grossW": 9.637023745198013,
           "grossL": 19.83682215547464,
-          "sd": 1.162472553466665,
-          "tStat": -1.5554529704849822,
+          "sd": 1.179192940620775,
+          "tStat": -1.5792325634663316,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -590,19 +590,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 14,
-          "wins": 8,
+          "trades": 13,
+          "wins": 7,
           "losses": 6,
-          "winRate": 57.14285714285714,
-          "pf": 0.4731126886429048,
-          "exp": -0.2001451284431422,
-          "netR": -2.802031798203991,
-          "maxDD": 3.4096314191755615,
-          "sumR2": 7.2637153509354855,
-          "grossW": 2.516053754068738,
+          "winRate": 53.84615384615385,
+          "pf": 0.4482303880657759,
+          "exp": -0.22571984626234828,
+          "netR": -2.9343580014105277,
+          "maxDD": 3.409631419175562,
+          "sumR2": 7.246205126880427,
+          "grossW": 2.3837275508622016,
           "grossL": 5.318085552272729,
-          "sd": 0.7180584043517404,
-          "tStat": -1.042915859946215,
+          "sd": 0.7407126236449234,
+          "tStat": -1.0987317531918819,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -628,19 +628,19 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 16,
+          "trades": 15,
           "wins": 10,
-          "losses": 6,
-          "winRate": 62.5,
-          "pf": 0.5146044487800899,
-          "exp": -0.26986605952168946,
-          "netR": -4.317856952347031,
-          "maxDD": 4.317856952347031,
-          "sumR2": 20.07731295212234,
+          "losses": 5,
+          "winRate": 66.66666666666666,
+          "pf": 0.6069167695987592,
+          "exp": -0.19765605133257627,
+          "netR": -2.964840769988644,
+          "maxDD": 2.964840769988644,
+          "sumR2": 18.24666016239868,
           "grossW": 4.577685953835912,
-          "grossL": 8.895542906182943,
-          "sd": 1.1228555831988998,
-          "tStat": -0.9613562547478061,
+          "grossL": 7.542526723824556,
+          "sd": 1.123153768984362,
+          "tStat": -0.6815795096164119,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -904,19 +904,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 10,
-          "wins": 7,
+          "trades": 11,
+          "wins": 8,
           "losses": 3,
-          "winRate": 70,
-          "pf": 1.8478056340598892,
-          "exp": 0.3072493187940525,
-          "netR": 3.072493187940525,
+          "winRate": 72.72727272727273,
+          "pf": 1.9361396599926821,
+          "exp": 0.30842004053933186,
+          "netR": 3.3926204459326503,
           "maxDD": 2.1936191499133058,
-          "sumR2": 13.033814961757267,
-          "grossW": 6.69654693859475,
+          "sumR2": 13.136296423066824,
+          "grossW": 7.016674196586876,
           "grossL": 3.624053750654225,
-          "sd": 1.1590126795760822,
-          "tStat": 0.8383063223085341,
+          "sd": 1.099542827160348,
+          "tStat": 0.9303080580652929,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1884,19 +1884,19 @@
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 8,
+          "trades": 7,
           "wins": 5,
-          "losses": 3,
-          "winRate": 62.5,
-          "pf": 0.6677992889735795,
-          "exp": -0.20951122204575046,
-          "netR": -1.6760897763660036,
-          "maxDD": 5.045412970933411,
-          "sumR2": 13.193629816764474,
+          "losses": 2,
+          "winRate": 71.42857142857143,
+          "pf": 0.9125030129461524,
+          "exp": -0.04615337057251675,
+          "netR": -0.32307359400761726,
+          "maxDD": 3.6923967885750244,
+          "sumR2": 11.362977027040813,
           "grossW": 3.369323194567407,
-          "grossL": 5.045412970933411,
-          "sd": 1.3544883166431545,
-          "tStat": -0.4374989552080737,
+          "grossL": 3.6923967885750244,
+          "sd": 1.3752615564402277,
+          "tStat": -0.08879063050257908,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2160,19 +2160,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 8,
+          "trades": 7,
           "wins": 2,
-          "losses": 6,
-          "winRate": 25,
-          "pf": 0.06782604006597832,
-          "exp": -0.8629323472501832,
-          "netR": -6.903458778001466,
-          "maxDD": 6.903458778001466,
-          "sumR2": 9.286015483361187,
+          "losses": 5,
+          "winRate": 28.57142857142857,
+          "pf": 0.08183386897876643,
+          "exp": -0.8051121401725725,
+          "netR": -5.635784981208007,
+          "maxDD": 5.90675079073669,
+          "sumR2": 7.679018628284445,
           "grossW": 0.5023035310959537,
-          "grossL": 7.405762309097419,
-          "sd": 0.689595906094442,
-          "tStat": -3.539378984435344,
+          "grossL": 6.138088512303961,
+          "sd": 0.723599765122454,
+          "tStat": -2.9437910335074844,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2474,19 +2474,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 29,
-          "wins": 17,
+          "trades": 30,
+          "wins": 18,
           "losses": 12,
-          "winRate": 58.620689655172406,
-          "pf": 0.5535366476106136,
-          "exp": -0.2229181458091781,
-          "netR": -6.464626228466165,
+          "winRate": 60,
+          "pf": 0.5993761823819598,
+          "exp": -0.19336288374407956,
+          "netR": -5.8008865123223865,
           "maxDD": 6.612994017155497,
-          "sumR2": 25.252992666607597,
-          "grossW": 8.015008424341783,
+          "sumR2": 25.69354307739422,
+          "grossW": 8.678748140485562,
           "grossL": 14.479634652807949,
-          "sd": 0.9221851025535673,
-          "tStat": -1.3017462007997822,
+          "sd": 0.920492127241604,
+          "tStat": -1.1505716352866002,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -4276,6 +4276,26 @@
     ],
     "journal": [
       {
+        "t": 1795480727246,
+        "type": "CYCLE",
+        "text": "[CYCLE #366] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795480725561,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (74 trade OOS, -0.108R/trade, win 59.5%, t=-0.94) | Meta-model belum aktif (1271 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.286R)"
+      },
+      {
+        "t": 1795480725560,
+        "type": "GEN",
+        "text": "[GEN #61] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-92R, 525 trade, Win 57%, t=-4.09 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795480725042,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795480155437,
         "type": "CYCLE",
         "text": "[CYCLE #365] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5754,26 +5774,6 @@
         "t": 1795329522896,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795328625708,
-        "type": "CYCLE",
-        "text": "[CYCLE #246] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795328623554,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (77 trade OOS, -0.116R/trade, win 58.4%, t=-1.04) | Meta-model belum aktif (1247 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.294R)"
-      },
-      {
-        "t": 1795328623554,
-        "type": "GEN",
-        "text": "[GEN #41] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-59.74R, 313 trade, Win 55.6%, t=-3.38 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795328623126,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -5845,9 +5845,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10080,
+      "newsIngested": 10110,
       "lessons": 1,
-      "backtests": 10040,
+      "backtests": 10070,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -5860,7 +5860,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795479720785,
+      "fetchedAt": 1795480725042,
       "items": [
         {
           "source": "CoinDesk",
@@ -6193,7 +6193,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795479720785
+        "t": 1795480725042
       },
       "lastErrors": []
     },
@@ -10426,7 +10426,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795480153086
+        "updatedAt": 1795480725561
       }
     },
     "champion": {
@@ -10442,8 +10442,8 @@
       "deflatedT": -6.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795480153078,
-      "gen": 60
+      "updatedAt": 1795480725560,
+      "gen": 61
     },
     "factory": {
       "updatedAt": 1795393426615,
@@ -10653,7 +10653,7 @@
         }
       ],
       "lastError": {
-        "at": 1795480163012,
+        "at": 1795480734708,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
