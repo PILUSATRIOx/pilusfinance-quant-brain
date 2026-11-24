@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795559926584,
+  "updatedAt": 1795560825537,
   "brain": {
     "v": 1,
-    "gen": 72,
-    "cycles": 437,
+    "gen": 73,
+    "cycles": 438,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795555423255,
+    "lastOptAt": 1795560823192,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -39,7 +39,7 @@
       "donchian": 0.53,
       "bbrev": 0.8,
       "wyckoff": 0.75,
-      "rsidiv": 0.45,
+      "rsidiv": 0.46,
       "macdm": 0.56,
       "smc": 0.54,
       "statarb": 0.61,
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795559700000
+        "lastBarT": 1795560600000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795560825518,
+        "type": "CYCLE",
+        "text": "[CYCLE #438] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795560823192,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (73 trade OOS, -0.095R/trade, win 60.3%, t=-0.82) | Meta-model belum aktif (1286 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.279R)"
+      },
+      {
+        "t": 1795560823192,
+        "type": "GEN",
+        "text": "[GEN #73] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-83.32R, 555 trade, Win 58.2%, t=-3.62 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795560822894,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795559926569,
         "type": "CYCLE",
@@ -6123,26 +6143,6 @@
         "t": 1795392524004,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795391628721,
-        "type": "CYCLE",
-        "text": "[CYCLE #314] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795391623474,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795390728072,
-        "type": "CYCLE",
-        "text": "[CYCLE #313] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795390723773,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12020,
+      "newsIngested": 12050,
       "lessons": 1,
-      "backtests": 11780,
+      "backtests": 11810,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795559923318,
+      "fetchedAt": 1795560822894,
       "items": [
         {
           "source": "CoinDesk",
@@ -6373,6 +6373,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "OpenAI and Anthropic Insiders Fear Their Next AI Models Are Too Dangerous to Release",
+          "link": "https://decrypt.co/383933/openai-and-anthropic-insiders-fear-next-ai-models-too-dangerous",
+          "pubDate": "2026-11-24 22:36:02",
+          "summary": "Employees at both AI labs reportedly question whether their strongest models should ever reach the public, as researchers struggle to keep increasingly capable systems under control during training and testing."
+        },
+        {
+          "source": "Decrypt",
           "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code",
           "link": "https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code",
           "pubDate": "2026-11-24 21:46:02",
@@ -6433,13 +6440,6 @@
           "link": "https://decrypt.co/383889/ansem-meme-coin-crashes-wallet-drain-bullpen-security-breach",
           "pubDate": "2026-11-24 17:43:03",
           "summary": "Bullpen identified unauthorized transfers from as many as 19 early accounts after millions moved from wallets linked to Ansem."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Europol Traces $28M in Crypto Behind Europe&#39;s Illegal Streaming Industry",
-          "link": "https://decrypt.co/383877/europol-traces-28m-in-crypto-behind-europes-illegal-streaming-industry",
-          "pubDate": "2026-11-24 16:00:44",
-          "summary": "Police from 11 countries worked with Binance, Coinbase and Chainalysis to follow crypto payments made to pirate TV services."
         }
       ],
       "perCoin": {
@@ -6555,7 +6555,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795559923318
+        "t": 1795560822894
       },
       "lastErrors": []
     },
@@ -10738,7 +10738,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795559924264
+        "updatedAt": 1795560823192
       }
     },
     "champion": {
@@ -10754,8 +10754,8 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795559924263,
-      "gen": 72
+      "updatedAt": 1795560823192,
+      "gen": 73
     },
     "factory": {
       "updatedAt": 1795504824611,
