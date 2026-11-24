@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795560825537,
+  "updatedAt": 1795561727249,
   "brain": {
     "v": 1,
     "gen": 73,
-    "cycles": 438,
+    "cycles": 439,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795560823192,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.59,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -405,18 +405,18 @@
           "wins": 51,
           "losses": 45,
           "winRate": 53.125,
-          "pf": 0.4784599544770086,
-          "exp": -0.2885105620831659,
-          "netR": -27.697013959983927,
+          "pf": 0.47839571364828437,
+          "exp": -0.28858484653301825,
+          "netR": -27.70414526716975,
           "maxDD": 28.817188333964072,
-          "sumR2": 85.15102364206004,
+          "sumR2": 85.1675486600145,
           "grossW": 25.40919369893101,
-          "grossL": 53.10620765891494,
-          "sd": 0.9012280660967116,
-          "tStat": -3.136625185534278,
+          "grossL": 53.11333896610077,
+          "sd": 0.9013005348983206,
+          "tStat": -3.137180525849937,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -760,7 +760,7 @@
           "tStat": -2.8737589236358607,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1104,7 +1104,7 @@
           "tStat": -1.757757051908978,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1448,7 +1448,7 @@
           "tStat": -0.9893449718666139,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -1792,7 +1792,7 @@
           "tStat": -3.3427363889298953,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2136,7 +2136,7 @@
           "tStat": -1.9930789288992592,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2480,7 +2480,7 @@
           "tStat": -0.4572246924180156,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -2790,19 +2790,19 @@
           "dataStatus": "LIVE"
         },
         "ETHUSDT": {
-          "trades": 100,
+          "trades": 99,
           "wins": 49,
-          "losses": 51,
-          "winRate": 49,
-          "pf": 0.388471717439963,
-          "exp": -0.3723360153767783,
-          "netR": -37.23360153767783,
-          "maxDD": 38.764930904228315,
-          "sumR2": 93.56914029476947,
-          "grossW": 23.652546494277523,
-          "grossL": 60.88614803195536,
-          "sd": 0.8972783171262343,
-          "tStat": -4.1496156573724035,
+          "losses": 50,
+          "winRate": 49.494949494949495,
+          "pf": 0.3933000484526655,
+          "exp": -0.3656824275678239,
+          "netR": -36.20256032921456,
+          "maxDD": 38.546808733085015,
+          "sumR2": 91.82252395726505,
+          "grossW": 23.468715788218994,
+          "grossL": 59.67127611743355,
+          "sd": 0.8954754968326186,
+          "tStat": -4.063197962284909,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2824,7 +2824,7 @@
           "tStat": -3.1313560547888573,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -3168,7 +3168,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -3512,7 +3512,7 @@
           "tStat": -3.67600768832729,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795560600000
+        "lastBarT": 1795561500000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795561727233,
+        "type": "CYCLE",
+        "text": "[CYCLE #439] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795561723075,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795560825518,
         "type": "CYCLE",
@@ -6133,16 +6143,6 @@
         "t": 1795393423607,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795392528152,
-        "type": "CYCLE",
-        "text": "[CYCLE #315] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795392524004,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12050,
+      "newsIngested": 12080,
       "lessons": 1,
-      "backtests": 11810,
+      "backtests": 11840,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795560822894,
+      "fetchedAt": 1795561723075,
       "items": [
         {
           "source": "CoinDesk",
@@ -6555,7 +6555,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795560822894
+        "t": 1795561723075
       },
       "lastErrors": []
     },
@@ -10738,7 +10738,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795560823192
+        "updatedAt": 1795561725284
       }
     },
     "champion": {
@@ -10754,7 +10754,7 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795560823192,
+      "updatedAt": 1795561725284,
       "gen": 73
     },
     "factory": {
