@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795557227910,
+  "updatedAt": 1795558126721,
   "brain": {
     "v": 1,
     "gen": 72,
-    "cycles": 434,
+    "cycles": 435,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795555423255,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -481,15 +481,15 @@
           "wins": 47,
           "losses": 35,
           "winRate": 57.3170731707317,
-          "pf": 0.6795568929237256,
-          "exp": -0.15412862623824575,
-          "netR": -12.63854735153615,
+          "pf": 0.6847265060133585,
+          "exp": -0.15164211507263425,
+          "netR": -12.434653435956008,
           "maxDD": 16.790537646105832,
-          "sumR2": 67.94781076532527,
-          "grossW": 26.802299002908363,
+          "sumR2": 68.11199639977335,
+          "grossW": 27.0061929184885,
           "grossL": 39.44084635444452,
-          "sd": 0.9026699000460854,
-          "tStat": -1.546184348595307,
+          "sd": 0.9042176841899571,
+          "tStat": -1.518636252258898,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1872,19 +1872,19 @@
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 24,
+          "trades": 23,
           "wins": 13,
-          "losses": 11,
-          "winRate": 54.166666666666664,
-          "pf": 0.9567376403504989,
-          "exp": -0.022793170132836882,
-          "netR": -0.5470360831880852,
+          "losses": 10,
+          "winRate": 56.52173913043478,
+          "pf": 1.047893393167372,
+          "exp": 0.02403971418751569,
+          "netR": 0.5529134263128609,
           "maxDD": 7.2899926437251885,
-          "sumR2": 29.9468934695938,
+          "sumR2": 28.73700454614243,
           "grossW": 12.097583572790224,
-          "grossL": 12.644619655978309,
-          "sd": 1.140831595678858,
-          "tStat": -0.09787883971196101,
+          "grossL": 11.544670146477364,
+          "sd": 1.1426387456116143,
+          "tStat": 0.10089839816363382,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2904,19 +2904,19 @@
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 92,
+          "trades": 91,
           "wins": 55,
-          "losses": 37,
-          "winRate": 59.78260869565217,
-          "pf": 0.918147589122109,
-          "exp": -0.03668029370376492,
-          "netR": -3.374587020746372,
-          "maxDD": 12.73436296593648,
-          "sumR2": 85.85457432651685,
+          "losses": 36,
+          "winRate": 60.43956043956044,
+          "pf": 0.9432815590967054,
+          "exp": -0.025011699493999166,
+          "netR": -2.276064653953924,
+          "maxDD": 11.635840599144032,
+          "sumR2": 84.64782293617355,
           "grossW": 37.85311763148015,
-          "grossL": 41.227704652226535,
-          "sd": 0.9706166244642888,
-          "tStat": -0.3624757796127302,
+          "grossL": 40.129182285434084,
+          "sd": 0.9694837955841353,
+          "tStat": -0.2461066471669104,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795557000000
+        "lastBarT": 1795557900000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795558126705,
+        "type": "CYCLE",
+        "text": "[CYCLE #435] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795558122387,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795557227895,
         "type": "CYCLE",
@@ -6133,16 +6143,6 @@
         "t": 1795389823225,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795388926939,
-        "type": "CYCLE",
-        "text": "[CYCLE #311] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795388923708,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11930,
+      "newsIngested": 11960,
       "lessons": 1,
-      "backtests": 11690,
+      "backtests": 11720,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795557223186,
+      "fetchedAt": 1795558122387,
       "items": [
         {
           "source": "CoinDesk",
@@ -6303,6 +6303,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Europol follows $28.5M crypto trail in streaming piracy crackdown",
+          "link": "https://cointelegraph.com/news/europol-crypto-trail-streaming-piracy-crackdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 21:50:25",
+          "summary": "    Authorities from 11 countries worked with Binance, Coinbase and Chainalysis to trace financial transactions and disrupt illegal streaming services. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Utah moves to dismiss criminal charges against Kalshi after trading halt",
           "link": "https://cointelegraph.com/news/utah-moves-to-dismiss-criminal-charges-against-kalshi-after-trading-halt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 20:48:27",
@@ -6363,13 +6370,6 @@
           "link": "https://cointelegraph.com/news/swiss-central-bank-ubs-six-explore-ledger-tokenized-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 13:57:56",
           "summary": "    The study will assess whether a shared ledger can bring central bank money, commercial bank money and securities onto the same platform. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Sky lender proposes buyback of up to $50M to fund stUSDS withdrawals",
-          "link": "https://cointelegraph.com/news/sky-community-proposes-50m-buybacks-stusds-liquidity-crisis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-24 13:43:46",
-          "summary": "    Borrowers would sell SKY to the protocol and use the proceeds to pay down their loans, freeing up funds for depositors in the stUSDS pool. "
         },
         {
           "source": "Decrypt",
@@ -6555,7 +6555,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795557223186
+        "t": 1795558122387
       },
       "lastErrors": []
     },
@@ -10738,7 +10738,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795557225903
+        "updatedAt": 1795558124421
       }
     },
     "champion": {
@@ -10754,7 +10754,7 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795557225902,
+      "updatedAt": 1795558124419,
       "gen": 72
     },
     "factory": {
