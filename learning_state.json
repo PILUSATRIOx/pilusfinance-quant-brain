@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795553626635,
+  "updatedAt": 1795554524563,
   "brain": {
     "v": 1,
     "gen": 71,
-    "cycles": 430,
+    "cycles": 431,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795550027820,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.47,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795553400000
+        "lastBarT": 1795554300000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795554524547,
+        "type": "CYCLE",
+        "text": "[CYCLE #431] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795554522276,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795553626619,
         "type": "CYCLE",
@@ -6133,16 +6143,6 @@
         "t": 1795384426796,
         "type": "CYCLE",
         "text": "[CYCLE #306] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795384424932,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1260 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
-      },
-      {
-        "t": 1795384424932,
-        "type": "GEN",
-        "text": "[GEN #51] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-68.04R, 307 trade, Win 54.1%, t=-3.9 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11810,
+      "newsIngested": 11840,
       "lessons": 1,
-      "backtests": 11570,
+      "backtests": 11600,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795553622418,
+      "fetchedAt": 1795554522276,
       "items": [
         {
           "source": "CoinDesk",
@@ -6303,6 +6303,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Utah moves to dismiss criminal charges against Kalshi after trading halt",
+          "link": "https://cointelegraph.com/news/utah-moves-to-dismiss-criminal-charges-against-kalshi-after-trading-halt?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 20:48:27",
+          "summary": "    Utah’s attorney general warned that the criminal charges could be refiled if Kalshi resumes operations in the state, while separate civil litigation remains unresolved. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Bitcoin sell-off driven by weak demand, forced liquidations: 21Shares",
           "link": "https://cointelegraph.com/news/bitcoin-selloff-weak-demand-forced-liquidations-21shares?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 19:44:23",
@@ -6363,13 +6370,6 @@
           "link": "https://cointelegraph.com/news/sky-community-proposes-50m-buybacks-stusds-liquidity-crisis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 13:43:46",
           "summary": "    Borrowers would sell SKY to the protocol and use the proceeds to pay down their loans, freeing up funds for depositors in the stUSDS pool. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Grayscale calls Bitcoin ‘oversold’ at $62K but warns of AI risks",
-          "link": "https://cointelegraph.com/markets/bitcoin-oversold-ai-risks-grayscale?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-24 13:11:44",
-          "summary": "    Grayscale said Bitcoin’s bear market was its longest on record at 411 days and counting, though the 56% drop was the smallest percentage decline. "
         },
         {
           "source": "Decrypt",
@@ -6550,7 +6550,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795553622418
+        "t": 1795554522276
       },
       "lastErrors": []
     },
@@ -7076,221 +7076,221 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.491,
+            0.497,
             0.227,
             10
           ],
           [
-            0.49,
+            0.492,
             0.254,
             61
           ],
           [
-            0.57,
+            0.574,
             -1.204,
             10
           ],
           [
-            0.451,
+            0.453,
             -1.21,
             56
           ],
           [
-            0.443,
+            0.446,
             1.44,
             61
           ],
           [
-            0.543,
+            0.546,
             0.219,
             15
           ],
           [
-            0.522,
+            0.527,
             0.233,
             41
           ],
           [
-            0.461,
+            0.465,
             1.465,
             95
           ],
           [
-            0.527,
+            0.531,
             0.229,
             10
           ],
           [
-            0.473,
+            0.479,
             1.434,
             27
           ],
           [
-            0.547,
+            0.551,
             -1.171,
             10
           ],
           [
-            0.476,
+            0.478,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.471,
+            0.477,
             1.36,
             10
           ],
           [
-            0.542,
+            0.547,
             0.144,
             10
           ],
           [
-            0.471,
+            0.474,
             -1.22,
             96
           ],
           [
-            0.531,
+            0.535,
             -1.215,
             10
           ],
           [
-            0.554,
+            0.556,
             0.469,
             10
           ],
           [
-            0.473,
+            0.479,
             -1.256,
             35
           ],
           [
-            0.482,
+            0.487,
             0.368,
             10
           ],
           [
-            0.479,
+            0.485,
             -1.259,
             35
           ],
           [
-            0.484,
+            0.49,
             0.296,
             10
           ],
           [
-            0.487,
+            0.489,
             -1.236,
             61
           ],
           [
-            0.512,
+            0.515,
             0.171,
             90
           ],
           [
-            0.489,
+            0.492,
             0.431,
             73
           ],
           [
-            0.564,
+            0.567,
             -1.251,
             35
           ],
           [
-            0.536,
+            0.54,
             -3.509,
             10
           ],
           [
-            0.482,
+            0.487,
             -1.21,
             10
           ],
           [
-            0.491,
+            0.495,
             0.063,
             10
           ],
           [
-            0.476,
+            0.481,
             0.615,
             10
           ],
           [
-            0.547,
+            0.551,
             -1.231,
             35
           ]
         ],
         "TSLA": [
           [
-            0.441,
+            0.443,
             0.805,
             61
           ],
           [
-            0.5,
+            0.506,
             0.264,
             10
           ],
           [
-            0.502,
+            0.506,
             0.241,
             10
           ],
           [
-            0.505,
+            0.509,
             -1.545,
             35
           ],
           [
-            0.48,
+            0.486,
             1.494,
             35
           ],
           [
-            0.456,
+            0.458,
             -1.907,
             56
           ],
           [
-            0.482,
+            0.485,
             0.308,
             56
           ],
           [
-            0.492,
+            0.497,
             1.513,
             10
           ],
           [
-            0.494,
+            0.499,
             -1.11,
             10
           ],
           [
-            0.5,
+            0.503,
             0.259,
             95
           ],
           [
-            0.48,
+            0.486,
             1.519,
             10
           ],
           [
-            0.563,
+            0.567,
             -0.212,
             2
           ],
           [
-            0.52,
+            0.519,
             0.272,
             61
           ],
@@ -7300,22 +7300,22 @@
             69
           ],
           [
-            0.503,
+            0.508,
             0.292,
             49
           ],
           [
-            0.549,
+            0.552,
             0.289,
             35
           ],
           [
-            0.55,
+            0.554,
             -1.528,
             35
           ],
           [
-            0.563,
+            0.566,
             -1.101,
             10
           ]
@@ -10733,7 +10733,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795553623470
+        "updatedAt": 1795554522548
       }
     },
     "champion": {
@@ -10749,7 +10749,7 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795553623469,
+      "updatedAt": 1795554522547,
       "gen": 71
     },
     "factory": {
