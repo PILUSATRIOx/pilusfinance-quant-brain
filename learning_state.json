@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795511338784,
+  "updatedAt": 1795512225960,
   "brain": {
     "v": 1,
     "gen": 64,
-    "cycles": 386,
+    "cycles": 387,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795509522637,
     "autoExecBursa": false,
@@ -3376,6 +3376,16 @@
     ],
     "journal": [
       {
+        "t": 1795512225922,
+        "type": "CYCLE",
+        "text": "[CYCLE #387] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795512224062,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795511338343,
         "type": "CYCLE",
         "text": "[CYCLE #386] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4864,16 +4874,6 @@
         "t": 1795346626613,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795345732134,
-        "type": "CYCLE",
-        "text": "[CYCLE #265] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795345725248,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -4945,7 +4945,7 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10520,
+      "newsIngested": 10550,
       "lessons": 1,
       "backtests": 10280,
       "netR": -0.69,
@@ -4960,7 +4960,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795511336361,
+      "fetchedAt": 1795512224062,
       "items": [
         {
           "source": "CoinDesk",
@@ -5297,7 +5297,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795511336361
+        "t": 1795512224062
       },
       "lastErrors": []
     },
@@ -9530,7 +9530,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1272,
-        "updatedAt": 1795511336582
+        "updatedAt": 1795512224406
       }
     },
     "champion": {
@@ -9546,7 +9546,7 @@
       "deflatedT": -2.81,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795511336581,
+      "updatedAt": 1795512224405,
       "gen": 64
     },
     "factory": {
