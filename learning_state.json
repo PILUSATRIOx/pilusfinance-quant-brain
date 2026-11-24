@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795520328465,
+  "updatedAt": 1795521228411,
   "brain": {
     "v": 1,
     "gen": 65,
-    "cycles": 393,
+    "cycles": 394,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795517629424,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.54,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -1572,15 +1572,15 @@
           "wins": 10,
           "losses": 9,
           "winRate": 52.63157894736842,
-          "pf": 0.5819869516068397,
-          "exp": -0.21881542663521275,
-          "netR": -4.157493106069042,
-          "maxDD": 5.735445695640609,
-          "sumR2": 16.92475046877497,
+          "pf": 0.5819360603608265,
+          "exp": -0.21886120454013197,
+          "netR": -4.158362886262507,
+          "maxDD": 5.736315475834074,
+          "sumR2": 16.926694492229185,
           "grossW": 5.788352178068429,
-          "grossL": 9.945845284137471,
-          "sd": 0.9432516702296229,
-          "tStat": -1.011176934103325,
+          "grossL": 9.946715064330936,
+          "sd": 0.9432977078675402,
+          "tStat": -1.0113391194479424,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -4576,6 +4576,16 @@
     ],
     "journal": [
       {
+        "t": 1795521228395,
+        "type": "CYCLE",
+        "text": "[CYCLE #394] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795521223738,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795520328428,
         "type": "CYCLE",
         "text": "[CYCLE #393] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6064,16 +6074,6 @@
         "t": 1795352029778,
         "type": "CYCLE",
         "text": "[CYCLE #272] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795352023944,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795351129127,
-        "type": "CYCLE",
-        "text": "[CYCLE #271] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6145,9 +6145,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10700,
+      "newsIngested": 10730,
       "lessons": 1,
-      "backtests": 10460,
+      "backtests": 10490,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6160,7 +6160,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795520323278,
+      "fetchedAt": 1795521223738,
       "items": [
         {
           "source": "CoinDesk",
@@ -6304,6 +6304,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Trump Says He &#39;Made the Deal&#39; to Reinstate Jensen Huang, Sparking Bipartisan Backlash",
+          "link": "https://decrypt.co/383853/trump-says-he-made-the-deal-to-reinstate-jensen-huang-sparking-bipartisan-backlash",
+          "pubDate": "2026-11-24 11:35:13",
+          "summary": "Lawmakers from both parties want to know what national security assurances the White House gave Nvidia&#39;s board before it brought Huang back."
+        },
+        {
+          "source": "Decrypt",
           "title": "China&#39;s Z.ai Says Its New AI Model Can Think Like One Four Times Its Size",
           "link": "https://decrypt.co/383851/chinas-zai-new-ai-model-glm-think-like-four-times-size",
           "pubDate": "2026-11-23 23:06:02",
@@ -6364,13 +6371,6 @@
           "link": "https://decrypt.co/383815/jensen-huang-fortune-37-billion-nvidia-soars-short-sellers-rekt",
           "pubDate": "2026-11-23 17:28:08",
           "summary": "Nvidia shares jumped more than 33% after the board reinstated Huang 11 days post-resignation, adding over $36 billion to his fortune while dealing short sellers their worst single-day loss since at least 2019."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Tom Lee Says Ethereum Is as Scarce as Bitcoin—And Bitmine Just Bought More",
-          "link": "https://decrypt.co/383800/tom-lee-ethereum-scarce-bitcoin-bitmine-buys-more",
-          "pubDate": "2026-11-23 16:46:03",
-          "summary": "Chairman Tom Lee argued ETH’s supply has grown just 0.90% annually since mid-2025—roughly matching Bitcoin’s 0.82% and far below Solana, XRP and Cardano."
         }
       ],
       "perCoin": {
@@ -6391,8 +6391,7 @@
           "impact": 0.17,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
           "multiSourced": true,
           "critical": true,
@@ -6401,9 +6400,7 @@
         "SOL": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "Decrypt"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6411,9 +6408,7 @@
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "Decrypt"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6437,9 +6432,7 @@
         "ADA": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "Decrypt"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6498,23 +6491,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795520323278
+        "t": 1795521223738
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795518526439,
+      "fetchedAt": 1795521224621,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 17.58,
+        "ARB": 17.17,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 3,
+        "ENA": 3.41,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6526,112 +6519,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 89.02,
+          "pct": 88.57,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 486.37,
+          "pct": 483.9,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 425.53,
+          "pct": 423.38,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 17.58,
+          "pct": 17.17,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 62.82,
+          "pct": 61.33,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 313.43,
+          "pct": 306.02,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.62,
+          "pct": 4.51,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 37.39,
+          "pct": 36.5,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 17,
+          "pct": 16.59,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 54.7,
+          "pct": 53.41,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 170.25,
+          "pct": 166.22,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 86.92,
+          "pct": 84.86,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 122.54,
+          "pct": 119.59,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 286.77,
+          "pct": 279.86,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 38.03,
+          "pct": 37.11,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1279.03,
+          "pct": 1285.14,
           "lev": 10
         }
       ]
@@ -6765,262 +6758,257 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.534,
-            -1.073,
-            56
-          ],
-          [
-            0.595,
+            0.584,
             0.332,
             10
           ],
           [
-            0.564,
+            0.563,
             -1.088,
             56
           ],
           [
-            0.476,
+            0.474,
             0.452,
             61
           ],
           [
-            0.503,
+            0.49,
             0.316,
             35
           ],
           [
-            0.502,
+            0.49,
             -1.078,
             46
           ],
           [
-            0.525,
+            0.514,
             0.54,
             10
           ],
           [
-            0.558,
+            0.557,
             -1.078,
             94
           ],
           [
-            0.519,
+            0.507,
             0.285,
             2
           ],
           [
-            0.574,
+            0.569,
             -1.129,
             35
           ],
           [
-            0.626,
+            0.618,
             -1.121,
             10
           ],
           [
-            0.547,
+            0.546,
             -1.126,
             69
           ],
           [
-            0.596,
+            0.588,
             0.582,
             35
           ],
           [
-            0.552,
+            0.544,
             -1.134,
             35
           ],
           [
-            0.561,
+            0.552,
             -1.12,
             10
           ],
           [
-            0.568,
+            0.56,
             0.302,
             10
           ],
           [
-            0.519,
+            0.515,
             0.399,
             61
           ],
           [
-            0.569,
+            0.561,
             0.505,
             34
           ],
           [
-            0.486,
+            0.481,
             1.003,
             94
           ],
           [
-            0.599,
+            0.592,
             1.514,
             10
           ],
           [
-            0.506,
+            0.495,
             -1.107,
             27
           ],
           [
-            0.521,
+            0.51,
             1.508,
             35
           ],
           [
-            0.572,
+            0.565,
             0.315,
             10
           ],
           [
-            0.625,
+            0.616,
             0.274,
             2
           ],
           [
-            0.576,
+            0.569,
             -1.129,
             16
           ],
           [
-            0.486,
+            0.483,
             -1.159,
             61
           ],
           [
-            0.615,
+            0.607,
             0.257,
             10
           ],
           [
-            0.558,
+            0.548,
             -1.166,
             10
           ],
           [
-            0.507,
+            0.493,
             0.447,
             10
           ],
           [
-            0.489,
+            0.482,
             0.159,
             90
           ],
           [
-            0.534,
+            0.525,
             -1.196,
             35
           ],
           [
-            0.592,
+            0.585,
             -1.155,
             41
           ],
           [
-            0.613,
+            0.605,
             0.849,
             10
           ],
           [
-            0.606,
+            0.596,
             0.926,
             15
           ],
           [
-            0.539,
+            0.538,
             0.168,
             69
           ],
           [
-            0.56,
+            0.553,
             0.181,
             10
           ],
           [
-            0.53,
+            0.527,
             -1.145,
             56
           ],
           [
-            0.515,
+            0.513,
             -1.129,
             61
           ],
           [
-            0.508,
+            0.497,
             0.74,
             2
           ],
           [
-            0.54,
+            0.532,
             -1.134,
             41
           ],
           [
-            0.563,
+            0.554,
             0.619,
             10
           ],
           [
-            0.618,
+            0.61,
             -1.129,
             35
           ],
           [
-            0.547,
+            0.543,
             -1.12,
             69
           ],
           [
-            0.58,
+            0.57,
             0.511,
             41
           ],
           [
-            0.468,
+            0.462,
             1.54,
             90
           ],
           [
-            0.544,
+            0.536,
             -1.111,
             46
           ],
           [
-            0.457,
+            0.451,
             -1.113,
             73
           ],
           [
-            0.567,
+            0.559,
             0.272,
             10
           ],
           [
-            0.567,
+            0.56,
             0.277,
             35
           ],
           [
-            0.608,
+            0.599,
             -1.119,
             35
           ],
           [
-            0.476,
+            0.475,
             0.307,
             69
           ],
           [
-            0.55,
+            0.54,
             1.578,
             33
           ]
@@ -10675,12 +10663,12 @@
       },
       "status": {
         "all": {
-          "n": 775,
-          "mean": -0.285,
+          "n": 774,
+          "mean": -0.284,
           "sd": 0.94,
-          "t": -8.44,
-          "winRate": 52.5,
-          "sum": -220.83
+          "t": -8.4,
+          "winRate": 52.6,
+          "sum": -219.75
         },
         "base": {
           "n": 74,
@@ -10711,7 +10699,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1278,
-        "updatedAt": 1795520325579
+        "updatedAt": 1795521225784
       }
     },
     "champion": {
@@ -10727,7 +10715,7 @@
       "deflatedT": -5.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795520325578,
+      "updatedAt": 1795521225783,
       "gen": 65
     },
     "factory": {
