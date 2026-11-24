@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795496945747,
+  "updatedAt": 1795497833431,
   "brain": {
     "v": 1,
     "gen": 62,
-    "cycles": 372,
+    "cycles": 373,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795496936025,
     "autoExecBursa": false,
@@ -3376,6 +3376,16 @@
     ],
     "journal": [
       {
+        "t": 1795497826069,
+        "type": "CYCLE",
+        "text": "[CYCLE #373] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795497823927,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795496938368,
         "type": "CYCLE",
         "text": "[CYCLE #372] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4864,16 +4874,6 @@
         "t": 1795335830400,
         "type": "CYCLE",
         "text": "[CYCLE #254] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795335824742,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795334933108,
-        "type": "CYCLE",
-        "text": "[CYCLE #253] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -4945,7 +4945,7 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10280,
+      "newsIngested": 10310,
       "lessons": 1,
       "backtests": 10130,
       "netR": -0.69,
@@ -4960,7 +4960,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795496935474,
+      "fetchedAt": 1795497823927,
       "items": [
         {
           "source": "CoinDesk",
@@ -5034,6 +5034,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Why 42 Macro says it’s waiting to buy the Bitcoin dip",
+          "link": "https://cointelegraph.com/markets/why-42-macro-says-its-waiting-to-buy-the-bitcoin-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 05:07:30",
+          "summary": "    The independent macro research company warns the Bitcoin sell-off may not have yet run its course.  "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Google wants to make you the star of your own AI slop movies",
           "link": "https://cointelegraph.com/news/google-wants-make-you-star-your-own-ai-slop-movies?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 03:13:22",
@@ -5094,13 +5101,6 @@
           "link": "https://cointelegraph.com/news/cuomo-rivals-urged-companies-reject-okx-ice-tokenized-stocks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-23 17:42:18",
           "summary": "    Former New York Gov. Andrew Cuomo said competitors encouraged companies to opt out of OKXICE’s rollout, while some issuers simply wanted more time. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin rebounds 17% from $55K lows as Nvidia rally sparks $500M crypto liquidations",
-          "link": "https://cointelegraph.com/markets/bitcoin-rebounds-lows-nvidia-rally-sparks-500m-crypto-liquidations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 16:51:17",
-          "summary": "    Bitcoin price upside hit $64,500 as risk assets surged on Nvidia CEO Jensen Huang’s reinstatement, while crypto liquidations topped $500 million four hours. "
         },
         {
           "source": "Decrypt",
@@ -5297,23 +5297,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795496935474
+        "t": 1795497823927
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795495178895,
+      "fetchedAt": 1795497824579,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 15.02,
+        "ARB": 14.95,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 5.48,
+        "ENA": 5.54,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -5325,112 +5325,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 87,
+          "pct": 88.52,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 475.36,
+          "pct": 483.64,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 415.9,
+          "pct": 423.15,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 15.02,
+          "pct": 14.95,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 53.65,
+          "pct": 53.43,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 267.68,
+          "pct": 266.58,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 3.94,
+          "pct": 3.93,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 31.93,
+          "pct": 31.8,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 14.52,
+          "pct": 14.46,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 46.72,
+          "pct": 46.53,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 145.39,
+          "pct": 144.8,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 74.23,
+          "pct": 73.92,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 91.93,
+          "pct": 89.03,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 258.47,
+          "pct": 250.69,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 34.84,
+          "pct": 33.74,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1266.34,
+          "pct": 1305.74,
           "lev": 10
         }
       ]
@@ -9530,7 +9530,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795496936028
+        "updatedAt": 1795497824842
       }
     },
     "champion": {
@@ -9546,7 +9546,7 @@
       "deflatedT": -2.81,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795496936026,
+      "updatedAt": 1795497824841,
       "gen": 62
     },
     "factory": {
@@ -9757,7 +9757,7 @@
         }
       ],
       "lastError": {
-        "at": 1795496945741,
+        "at": 1795497833427,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
