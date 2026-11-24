@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795479737111,
+  "updatedAt": 1795480163101,
   "brain": {
     "v": 1,
     "gen": 60,
-    "cycles": 364,
+    "cycles": 365,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795461823918,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.45,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -533,19 +533,19 @@
           "maxDD": 0
         },
         "NVDA": {
-          "trades": 17,
+          "trades": 16,
           "wins": 11,
-          "losses": 6,
-          "winRate": 64.70588235294117,
-          "pf": 1.0843753212461713,
-          "exp": 0.03986515612985796,
-          "netR": 0.6777076542075853,
-          "maxDD": 4.684468739257451,
-          "sumR2": 22.56587223555516,
+          "losses": 5,
+          "winRate": 68.75,
+          "pf": 1.2679210913869037,
+          "exp": 0.11502739148242974,
+          "netR": 1.8404382637188759,
+          "maxDD": 4.582793202174598,
+          "sumR2": 21.21392976526066,
           "grossW": 8.709767789781118,
-          "grossL": 8.032060135573534,
-          "sd": 1.1868776083201928,
-          "tStat": 0.138487952214194,
+          "grossL": 6.869329526062241,
+          "sd": 1.1832787485795735,
+          "tStat": 0.38884292182382363,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -851,15 +851,15 @@
           "wins": 13,
           "losses": 7,
           "winRate": 65,
-          "pf": 0.7979387931109735,
-          "exp": -0.0896192905177189,
-          "netR": -1.792385810354378,
-          "maxDD": 5.603430672052476,
-          "sumR2": 18.599359111515742,
-          "grossW": 7.078123467256586,
+          "pf": 0.7847796830418455,
+          "exp": -0.09545569091538406,
+          "netR": -1.909113818307681,
+          "maxDD": 5.603430672052477,
+          "sumR2": 18.494093280503854,
+          "grossW": 6.961395459303282,
           "grossL": 8.870509277610964,
-          "sd": 0.9851189286166565,
-          "tStat": -0.4068439248737698,
+          "sd": 0.9817239804478539,
+          "tStat": -0.4348379340364813,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1199,19 +1199,19 @@
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 18,
-          "wins": 11,
+          "trades": 17,
+          "wins": 10,
           "losses": 7,
-          "winRate": 61.111111111111114,
-          "pf": 0.8445562469347294,
-          "exp": -0.07860854238676136,
-          "netR": -1.4149537629617046,
+          "winRate": 58.82352941176471,
+          "pf": 0.8170773276808744,
+          "exp": -0.09794619991628147,
+          "netR": -1.6650853985767848,
           "maxDD": 3.669599165856148,
-          "sumR2": 21.34996158731033,
-          "grossW": 7.687719937714884,
+          "sumR2": 21.287395752174856,
+          "grossW": 7.437588302099802,
           "grossL": 9.102673700676588,
-          "sd": 1.1177375819158155,
-          "tStat": -0.2983775491502919,
+          "sd": 1.149029671202189,
+          "tStat": -0.35146396825433235,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1789,19 +1789,19 @@
           "maxDD": 0
         },
         "NVDA": {
-          "trades": 10,
+          "trades": 9,
           "wins": 7,
-          "losses": 3,
-          "winRate": 70,
-          "pf": 1.4178594968544047,
-          "exp": 0.1485686149397419,
-          "netR": 1.4856861493974192,
-          "maxDD": 2.3435016759260803,
-          "sumR2": 9.994409501805947,
+          "losses": 2,
+          "winRate": 77.77777777777779,
+          "pf": 2.106856338669829,
+          "exp": 0.29426852876763454,
+          "netR": 2.6484167589087106,
+          "maxDD": 1.2119665151321173,
+          "sumR2": 8.642467031511448,
           "grossW": 5.041154340455616,
-          "grossL": 3.5554681910581976,
-          "sd": 1.042096347025489,
-          "tStat": 0.45083663652321837,
+          "grossL": 2.392737581546906,
+          "sd": 0.9914081732757599,
+          "tStat": 0.8904562319533667,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4276,6 +4276,11 @@
     ],
     "journal": [
       {
+        "t": 1795480155437,
+        "type": "CYCLE",
+        "text": "[CYCLE #365] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795479728590,
         "type": "CYCLE",
         "text": "[CYCLE #364] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -5769,11 +5774,6 @@
         "t": 1795328623126,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795327726339,
-        "type": "CYCLE",
-        "text": "[CYCLE #245] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5847,7 +5847,7 @@
       "tp1Hits": 9,
       "newsIngested": 10080,
       "lessons": 1,
-      "backtests": 10010,
+      "backtests": 10040,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -10426,23 +10426,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795479721851
+        "updatedAt": 1795480153086
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -91.75,
-      "trades": 526,
+      "netR": -92,
+      "trades": 525,
       "winRate": 57,
       "pf": 0.66,
-      "expPerTrade": -0.174,
-      "tStat": -4.08,
-      "deflatedT": -6.23,
+      "expPerTrade": -0.175,
+      "tStat": -4.09,
+      "deflatedT": -6.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795479721848,
+      "updatedAt": 1795480153078,
       "gen": 60
     },
     "factory": {
@@ -10653,7 +10653,7 @@
         }
       ],
       "lastError": {
-        "at": 1795479737076,
+        "at": 1795480163012,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
