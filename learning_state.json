@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795500051450,
+  "updatedAt": 1795500368950,
   "brain": {
     "v": 1,
     "gen": 62,
-    "cycles": 375,
+    "cycles": 376,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795496936025,
     "autoExecBursa": false,
@@ -3376,6 +3376,11 @@
     ],
     "journal": [
       {
+        "t": 1795500361630,
+        "type": "CYCLE",
+        "text": "[CYCLE #376] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795500044103,
         "type": "CYCLE",
         "text": "[CYCLE #375] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4869,11 +4874,6 @@
         "t": 1795338526535,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795337630534,
-        "type": "CYCLE",
-        "text": "[CYCLE #256] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -9530,7 +9530,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795500042546
+        "updatedAt": 1795500360463
       }
     },
     "champion": {
@@ -9546,7 +9546,7 @@
       "deflatedT": -2.81,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795500042544,
+      "updatedAt": 1795500360462,
       "gen": 62
     },
     "factory": {
@@ -9757,7 +9757,7 @@
         }
       ],
       "lastError": {
-        "at": 1795500051441,
+        "at": 1795500368940,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
