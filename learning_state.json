@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795542829414,
+  "updatedAt": 1795544634471,
   "brain": {
     "v": 1,
-    "gen": 69,
-    "cycles": 418,
+    "gen": 70,
+    "cycles": 420,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795539222608,
+    "lastOptAt": 1795544630875,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -39,12 +39,12 @@
       "donchian": 0.53,
       "bbrev": 0.81,
       "wyckoff": 0.75,
-      "rsidiv": 0.44,
-      "macdm": 0.57,
-      "smc": 0.53,
+      "rsidiv": 0.45,
+      "macdm": 0.56,
+      "smc": 0.54,
       "statarb": 0.61,
       "tsmom": 1,
-      "emax": 0.54
+      "emax": 0.53
     },
     "bayesian": {
       "elder": {
@@ -3697,9 +3697,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.1153141015342637,
+        "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795542600000
+        "lastBarT": 1795544400000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,36 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795544633481,
+        "type": "CYCLE",
+        "text": "[CYCLE #420] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795544630875,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (73 trade OOS, -0.095R/trade, win 60.3%, t=-0.82) | Meta-model belum aktif (1284 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.28R)"
+      },
+      {
+        "t": 1795544630875,
+        "type": "GEN",
+        "text": "[GEN #70] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-83.02R, 556 trade, Win 58.3%, t=-3.61 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795544629639,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795543725573,
+        "type": "CYCLE",
+        "text": "[CYCLE #419] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795543722906,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795542829398,
         "type": "CYCLE",
@@ -6113,36 +6143,6 @@
         "t": 1795375423509,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795374527941,
-        "type": "CYCLE",
-        "text": "[CYCLE #295] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795374523810,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795373627728,
-        "type": "CYCLE",
-        "text": "[CYCLE #294] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795373625303,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1260 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
-      },
-      {
-        "t": 1795373625303,
-        "type": "GEN",
-        "text": "[GEN #49] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-68.04R, 307 trade, Win 54.1%, t=-3.9 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795373624075,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11450,
+      "newsIngested": 11510,
       "lessons": 1,
-      "backtests": 11210,
+      "backtests": 11270,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,8 +6229,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795542824036,
+      "fetchedAt": 1795544629639,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Utah moves to drop criminal pursuit of Kalshi after the firm halted services there",
+          "link": "https://www.coindesk.com/policy/2026/11/24/utah-moves-to-drop-criminal-pursuit-of-kalshi-after-the-firm-halted-services-there",
+          "pubDate": "2026-11-24 17:50:08",
+          "summary": "The state continues to hold the criminal charges in its back pocket with a vow to hit Kalshi and other prediction markets with gambling accusations if they return."
+        },
         {
           "source": "CoinDesk",
           "title": "&#39;AI trade never died&#39;: Traders see room for market recovery, but bitcoin&#39;s participation is another story",
@@ -6295,11 +6302,11 @@
           "summary": "Bitcoin’s supply in profit fell below its 2022 FTX collapse low, while entities holding 100 to 10,000 BTC continued to accumulate."
         },
         {
-          "source": "CoinDesk",
-          "title": "U.S. seeks $1.1 billion seized in Binance hack as North Korean funds keep moving",
-          "link": "https://www.coindesk.com/policy/2026/11/24/u-s-seeks-usd1-1-billion-seized-in-binance-hack-as-north-korean-funds-keep-moving",
-          "pubDate": "2026-11-24 10:58:51",
-          "summary": "U.S. seeks to recover $1.1 billion in frozen USDC as billions more from the Binance hack remain unaccounted for."
+          "source": "CoinTelegraph",
+          "title": "BlackRock launches tokenized money market fund accepting stablecoins in Hong Kong",
+          "link": "https://cointelegraph.com/news/blackrock-launches-tokenized-money-market-fund-stablecoins-hong-kong?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 18:07:22",
+          "summary": "    The tokenized fund launched with approximately $100 million in assets, with Standard Chartered and Ant International participating as seed investors. "
         },
         {
           "source": "CoinTelegraph",
@@ -6365,11 +6372,11 @@
           "summary": "    Bitcoin continued to threaten the loss of $60,000 support as gold attempted to bounce from a 60-day losing streak during which it fell nearly 25%. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Bitcoin ETFs keep bleeding as BlackRock’s IBIT shares gain nearly 5%",
-          "link": "https://cointelegraph.com/markets/bitcoin-etfs-bleed-ibit-shares-gain?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-24 07:41:50",
-          "summary": "    BlackRock’s IBIT shares gained 4.85% on Monday despite continued Bitcoin ETF withdrawals that pushed November’s net outflows to $4.71 billion. "
+          "source": "Decrypt",
+          "title": "Wall Street and Crypto Are in &#39;Extreme Fear&#39;. What&#39;s Spooking Investors?",
+          "link": "https://decrypt.co/383898/wall-street-crypto-extreme-whats-spooking-investors",
+          "pubDate": "2026-11-24 18:16:02",
+          "summary": "Fear and Greed indexes are flashing extreme fear across stocks and crypto as Nvidia’s relief rally fades, Bitcoin falls below $60,000, and investors brace for higher interest rates"
         },
         {
           "source": "Decrypt",
@@ -6433,19 +6440,12 @@
           "link": "https://decrypt.co/383853/trump-says-he-made-the-deal-to-reinstate-jensen-huang-sparking-bipartisan-backlash",
           "pubDate": "2026-11-24 11:35:13",
           "summary": "Lawmakers from both parties want to know what national security assurances the White House gave Nvidia&#39;s board before it brought Huang back."
-        },
-        {
-          "source": "Decrypt",
-          "title": "China&#39;s Z.ai Says Its New AI Model Can Think Like One Four Times Its Size",
-          "link": "https://decrypt.co/383851/chinas-zai-new-ai-model-glm-think-like-four-times-size",
-          "pubDate": "2026-11-23 23:06:02",
-          "summary": "GLM-5.4 uses a looping architecture to squeeze more reasoning power from fewer parameters, challenging the expensive approach favored by American AI giants."
         }
       ],
       "perCoin": {
         "BTC": {
-          "sentiment": "BEARISH",
-          "impact": -0.33,
+          "sentiment": "BULLISH",
+          "impact": 0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6548,23 +6548,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795542824036
+        "t": 1795544629639
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795542824910,
+      "fetchedAt": 1795544630368,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 18.9,
+        "ARB": 18.38,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 1.73,
+        "ENA": 2.23,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6576,112 +6576,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 89.04,
+          "pct": 90.14,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 486.49,
+          "pct": 492.47,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 425.64,
+          "pct": 430.88,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 18.9,
+          "pct": 18.38,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 67.52,
+          "pct": 65.67,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 336.89,
+          "pct": 327.68,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.96,
+          "pct": 4.83,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 40.19,
+          "pct": 39.09,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 18.27,
+          "pct": 17.77,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 58.8,
+          "pct": 57.19,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 182.99,
+          "pct": 177.98,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 93.42,
+          "pct": 90.87,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 131.12,
+          "pct": 129.52,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 306.86,
+          "pct": 303.12,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 40.69,
+          "pct": 40.2,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1207.29,
+          "pct": 1268.57,
           "lev": 10
         }
       ]
@@ -10736,7 +10736,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1284,
-        "updatedAt": 1795542825876
+        "updatedAt": 1795544630875
       }
     },
     "champion": {
@@ -10752,8 +10752,8 @@
       "deflatedT": -5.75,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795542825875,
-      "gen": 69
+      "updatedAt": 1795544630875,
+      "gen": 70
     },
     "factory": {
       "updatedAt": 1795504824611,
