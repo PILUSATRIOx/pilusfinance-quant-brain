@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795463632815,
+  "updatedAt": 1795479737111,
   "brain": {
     "v": 1,
     "gen": 60,
-    "cycles": 362,
+    "cycles": 364,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795461823918,
     "autoExecBursa": false,
@@ -188,65 +188,35 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.45,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 72,
-          "wins": 40,
-          "losses": 32,
-          "winRate": 55.55555555555556,
-          "pf": 0.743647296684114,
-          "exp": -0.12781525160159188,
-          "netR": -9.202698115314615,
-          "maxDD": 13.893665742762085,
-          "sumR2": 68.19916482593676,
-          "grossW": 26.695882224502405,
-          "grossL": 35.898580339817016,
-          "sd": 0.9715887935828073,
-          "tStat": -1.1162627450232827,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 22,
@@ -536,61 +506,31 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 78,
-          "wins": 42,
-          "losses": 36,
-          "winRate": 53.84615384615385,
-          "pf": 0.565643246899858,
-          "exp": -0.2234829718583776,
-          "netR": -17.431671804953453,
-          "maxDD": 21.62041000199964,
-          "sumR2": 66.67410038172483,
-          "grossW": 22.70048150114361,
-          "grossL": 40.13215330609705,
-          "sd": 0.9029419345520777,
-          "tStat": -2.1859081848143247,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 17,
@@ -840,38 +780,38 @@
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 75,
-          "wins": 38,
+          "trades": 76,
+          "wins": 39,
           "losses": 37,
-          "winRate": 50.66666666666667,
-          "pf": 0.4899070654578995,
-          "exp": -0.2832182324570957,
-          "netR": -21.24136743428218,
-          "maxDD": 26.92082670970807,
-          "sumR2": 66.55871179040398,
-          "grossW": 20.40078440879346,
+          "winRate": 51.31578947368421,
+          "pf": 0.5052454796252932,
+          "exp": -0.2710874060854157,
+          "netR": -20.602642862491592,
+          "maxDD": 26.920826709708074,
+          "sumR2": 67.6899537410799,
+          "grossW": 21.03950898058405,
           "grossL": 41.64215184307566,
-          "sd": 0.9045139746929262,
-          "tStat": -2.7116682658887563,
+          "sd": 0.9099804886478453,
+          "tStat": -2.5970724048132547,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 69,
-          "wins": 38,
+          "trades": 68,
+          "wins": 37,
           "losses": 31,
-          "winRate": 55.072463768115945,
-          "pf": 0.5234604303286671,
-          "exp": -0.24433614415351163,
-          "netR": -16.859193946592303,
+          "winRate": 54.41176470588235,
+          "pf": 0.5167274317095677,
+          "exp": -0.251432301077621,
+          "netR": -17.097396473278227,
           "maxDD": 20.615661838804698,
-          "sumR2": 57.65338806205181,
-          "grossW": 18.5191775876331,
+          "sumR2": 57.59664761833226,
+          "grossW": 18.280975060947174,
           "grossL": 35.37837153422541,
-          "sd": 0.887280027582688,
-          "tStat": -2.2874497143009407,
+          "sd": 0.8919022926928369,
+          "tStat": -2.3246535938486623,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -880,61 +820,31 @@
       },
       "bbrev": {
         "SUIUSDT": {
-          "trades": 46,
-          "wins": 31,
-          "losses": 15,
-          "winRate": 67.3913043478261,
-          "pf": 0.9420225651631028,
-          "exp": -0.020979102690323832,
-          "netR": -0.9650387237548963,
-          "maxDD": 4.958554200540083,
-          "sumR2": 31.19185223866053,
-          "grossW": 15.680035803425556,
-          "grossL": 16.64507452718046,
-          "sd": 0.832287431549338,
-          "tStat": -0.1709592044791229,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 20,
@@ -1165,19 +1075,19 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 47,
+          "trades": 46,
           "wins": 26,
-          "losses": 21,
-          "winRate": 55.319148936170215,
-          "pf": 0.7479550350954032,
-          "exp": -0.12779901550256914,
-          "netR": -6.00655372862075,
-          "maxDD": 6.947637984505449,
-          "sumR2": 45.624913656616634,
+          "losses": 20,
+          "winRate": 56.52173913043478,
+          "pf": 0.7847703104852966,
+          "exp": -0.10627340936334476,
+          "netR": -4.888576830713859,
+          "maxDD": 6.94763798450545,
+          "sumR2": 44.375041312363116,
           "grossW": 17.824724674002102,
-          "grossL": 23.831278402622857,
-          "sd": 0.9875010402144837,
-          "tStat": -0.8872354284979942,
+          "grossL": 22.713301504715965,
+          "sd": 0.9872016070762683,
+          "tStat": -0.7301257671861482,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -1188,15 +1098,15 @@
           "wins": 27,
           "losses": 21,
           "winRate": 56.25,
-          "pf": 0.7512733456665022,
-          "exp": -0.12138341730641594,
-          "netR": -5.826404030707965,
-          "maxDD": 8.929351815661288,
-          "sumR2": 43.27185654678577,
+          "pf": 0.7515362596408388,
+          "exp": -0.12121269087481278,
+          "netR": -5.818209161991013,
+          "maxDD": 8.921156946944336,
+          "sumR2": 43.252801580903416,
           "grossW": 17.59852421560618,
-          "grossL": 23.42492824631415,
-          "sd": 0.9516461405971319,
-          "tStat": -0.8836992533343392,
+          "grossL": 23.416733377597193,
+          "sd": 0.9514553331082481,
+          "tStat": -0.8826332958015184,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1207,15 +1117,15 @@
           "wins": 29,
           "losses": 18,
           "winRate": 61.702127659574465,
-          "pf": 0.8152536890220472,
-          "exp": -0.08094456840573323,
-          "netR": -3.8043947150694617,
+          "pf": 0.8154185749041188,
+          "exp": -0.0808559722642066,
+          "netR": -3.80023069641771,
           "maxDD": 5.844824808055947,
-          "sumR2": 40.519816760238385,
+          "sumR2": 40.51015860659284,
           "grossW": 16.78813941960926,
-          "grossL": 20.592534134678722,
-          "sd": 0.934971188488692,
-          "tStat": -0.593524174434979,
+          "grossL": 20.58837011602697,
+          "sd": 0.9348667338043626,
+          "tStat": -0.592940788434353,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1224,61 +1134,31 @@
       },
       "wyckoff": {
         "SUIUSDT": {
-          "trades": 40,
-          "wins": 26,
-          "losses": 14,
-          "winRate": 65,
-          "pf": 0.963142687761529,
-          "exp": -0.014508789328187166,
-          "netR": -0.5803515731274866,
-          "maxDD": 4.599134011095275,
-          "sumR2": 31.88345440689049,
-          "grossW": 15.165548979049156,
-          "grossL": 15.745900552176643,
-          "sd": 0.9040511984619595,
-          "tStat": -0.10150049122587658,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 9,
@@ -1568,61 +1448,31 @@
       },
       "rsidiv": {
         "SUIUSDT": {
-          "trades": 19,
-          "wins": 10,
-          "losses": 9,
-          "winRate": 52.63157894736842,
-          "pf": 0.5814948509086405,
-          "exp": -0.21925841896427614,
-          "netR": -4.165909960321247,
-          "maxDD": 5.743862549892813,
-          "sumR2": 16.943535268561774,
-          "grossW": 5.788352178068429,
-          "grossL": 9.954262138389675,
-          "sd": 0.94369617395037,
-          "tStat": -1.0127468110685,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 6,
@@ -1912,61 +1762,31 @@
       },
       "macdm": {
         "SUIUSDT": {
-          "trades": 37,
-          "wins": 19,
-          "losses": 18,
-          "winRate": 51.35135135135135,
-          "pf": 0.6289675010982797,
-          "exp": -0.20189055470370212,
-          "netR": -7.469950524036978,
-          "maxDD": 9.194277047500664,
-          "sumR2": 36.2342875532243,
-          "grossW": 12.662923405196988,
-          "grossL": 20.132873929233963,
-          "sd": 0.9821486521668995,
-          "tStat": -1.2503731473472668,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 10,
@@ -2256,61 +2076,31 @@
       },
       "smc": {
         "SUIUSDT": {
-          "trades": 28,
-          "wins": 19,
-          "losses": 9,
-          "winRate": 67.85714285714286,
-          "pf": 1.2940723681336097,
-          "exp": 0.10846715413593945,
-          "netR": 3.0370803158063047,
-          "maxDD": 2.4753309343223755,
-          "sumR2": 25.729975847364848,
-          "grossW": 13.364743316181873,
-          "grossL": 10.327663000375567,
-          "sd": 0.9699284507523119,
-          "tStat": 0.5917490409524886,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 4,
@@ -2600,61 +2390,31 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 104,
-          "wins": 55,
-          "losses": 49,
-          "winRate": 52.88461538461539,
-          "pf": 0.5876108428640191,
-          "exp": -0.21600395961057048,
-          "netR": -22.46441179949933,
-          "maxDD": 24.67672995693811,
-          "sumR2": 89.85382612261516,
-          "grossW": 32.00940597862409,
-          "grossL": 54.47381777812341,
-          "sd": 0.9084363191001352,
-          "tStat": -2.424844497980051,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 34,
@@ -2889,53 +2649,53 @@
           "wins": 50,
           "losses": 39,
           "winRate": 56.17977528089888,
-          "pf": 0.69206240018082,
-          "exp": -0.1525488009857571,
-          "netR": -13.576843287732382,
-          "maxDD": 15.774165363775861,
-          "sumR2": 78.34583054228221,
+          "pf": 0.6921039397373927,
+          "exp": -0.15251906813075958,
+          "netR": -13.574197063637603,
+          "maxDD": 15.771519139681082,
+          "sumR2": 78.34004177517261,
           "grossW": 30.512749200176366,
-          "grossL": 44.08959248790873,
-          "sd": 0.9309983606174361,
-          "tStat": -1.5458056330658347,
+          "grossL": 44.08694626381396,
+          "sd": 0.9309679584394657,
+          "tStat": -1.5455548152659655,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 94,
+          "trades": 95,
           "wins": 55,
-          "losses": 39,
-          "winRate": 58.51063829787234,
-          "pf": 0.8577684239824074,
-          "exp": -0.0659478233219532,
-          "netR": -6.199095392263601,
-          "maxDD": 14.799947085702321,
-          "sumR2": 88.13660918099856,
+          "losses": 40,
+          "winRate": 57.89473684210527,
+          "pf": 0.8353086422011107,
+          "exp": -0.07758943371553048,
+          "netR": -7.3709962029753955,
+          "maxDD": 15.971847896414115,
+          "sumR2": 89.51001234828584,
           "grossW": 37.385427579603366,
-          "grossL": 43.584522971866974,
-          "sd": 0.9712412650736515,
-          "tStat": -0.6583203293654131,
+          "grossL": 44.756423782578764,
+          "sd": 0.972702426162012,
+          "tStat": -0.7774713349275668,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 94,
+          "trades": 95,
           "wins": 56,
-          "losses": 38,
-          "winRate": 59.57446808510638,
-          "pf": 1.001834196297883,
-          "exp": 0.0008459897361294325,
-          "netR": 0.07952303519616666,
+          "losses": 39,
+          "winRate": 58.94736842105262,
+          "pf": 0.9755071324410219,
+          "exp": -0.01147964786840976,
+          "netR": -1.0905665474989272,
           "maxDD": 7.742802203576424,
-          "sumR2": 99.77021221868526,
+          "sumR2": 101.13932288135085,
           "grossW": 43.43531613540329,
-          "grossL": 43.355793100207116,
-          "sd": 1.0357592661674624,
-          "tStat": 0.007918997275477985,
+          "grossL": 44.52588268290221,
+          "sd": 1.0372160137425184,
+          "tStat": -0.10787508623251006,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2944,61 +2704,31 @@
       },
       "tsmom": {
         "SUIUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 0,
@@ -3288,61 +3018,31 @@
       },
       "emax": {
         "SUIUSDT": {
-          "trades": 31,
-          "wins": 15,
-          "losses": 16,
-          "winRate": 48.38709677419355,
-          "pf": 0.6077633868050796,
-          "exp": -0.2299800687958993,
-          "netR": -7.129382132672879,
-          "maxDD": 9.844006361716152,
-          "sumR2": 32.747617626240114,
-          "grossW": 11.046845921616288,
-          "grossL": 18.176228054289172,
-          "sd": 1.0182992656532057,
-          "tStat": -1.257464160480978,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "CHAOS",
-          "dataStatus": "LIVE"
+          "dataStatus": "OFFLINE",
+          "trades": 0,
+          "winRate": 0,
+          "pf": 0,
+          "exp": 0,
+          "netR": 0,
+          "maxDD": 0
         },
         "EURUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "GBPUSDT": {
+          "dataStatus": "OFFLINE",
           "trades": 0,
-          "wins": 0,
-          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0,
-          "sumR2": 0,
-          "grossW": 0,
-          "grossL": 0,
-          "sd": 0,
-          "tStat": 0,
-          "atrMult": 1.85,
-          "window": "OOS_40",
-          "regime": "UNKNOWN",
-          "dataStatus": "LIVE"
+          "maxDD": 0
         },
         "NVDA": {
           "trades": 2,
@@ -3692,7 +3392,7 @@
         "lockedR": 0,
         "mfe": 0.33200662366734146,
         "mae": -0.6130639650358001,
-        "lastBarT": 1795462200000
+        "lastBarT": 1795471200000
       },
       {
         "id": "sig_ETHUSDT_1795444726674",
@@ -4575,6 +4275,31 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795479728590,
+        "type": "CYCLE",
+        "text": "[CYCLE #364] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795479720807,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin)"
+      },
+      {
+        "t": 1795479720785,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795464529310,
+        "type": "CYCLE",
+        "text": "[CYCLE #363] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795464524966,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795463632708,
         "type": "CYCLE",
@@ -6049,31 +5774,6 @@
         "t": 1795327726339,
         "type": "CYCLE",
         "text": "[CYCLE #245] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795327723656,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795326827915,
-        "type": "CYCLE",
-        "text": "[CYCLE #244] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795326823577,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795325928173,
-        "type": "CYCLE",
-        "text": "[CYCLE #243] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795325923727,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6145,9 +5845,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10020,
+      "newsIngested": 10080,
       "lessons": 1,
-      "backtests": 9980,
+      "backtests": 10010,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6160,8 +5860,50 @@
       }
     },
     "news": {
-      "fetchedAt": 1795463626004,
+      "fetchedAt": 1795479720785,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "New York judge declines to block Kalshi from operating in the state for now",
+          "link": "https://www.coindesk.com/policy/2026/11/23/new-york-judge-declines-to-block-kalshi-from-operating-in-the-state-for-now",
+          "pubDate": "2026-11-23 18:22:03",
+          "summary": "Judge Melissa Crane did not shut down Kalshi&#39;s operations in a hearing Monday, but did say she wanted both parties to present their full arguments in an expedited fashion."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Nvidia&#39;s Jensen Huang faces Senate scrutiny despite Trump-backed return as CEO",
+          "link": "https://www.coindesk.com/business/2026/11/23/nvidia-s-jensen-huang-faces-senate-scrutiny-despite-trump-backed-return-as-ceo",
+          "pubDate": "2026-11-23 18:12:05",
+          "summary": "Congressional scrutiny will continue even as CEO returns to lead the company after his affair scandal and its national-security implications."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin rebound already losing steam as AI trade returns with a bang",
+          "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank",
+          "pubDate": "2026-11-23 17:31:27",
+          "summary": "Nvidia jumped more than 30% and has recovered most of its losses since CEO Jensen Huang stepped down, but bitcoin is lagging as U.S. selling persists, traders said."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Cathie Wood&#39;s ARK Invest pulls the plug on two planned crypto ETFs",
+          "link": "https://www.coindesk.com/business/2026/11/23/cathie-wood-s-ark-invest-pulls-the-plug-on-two-planned-crypto-etfs",
+          "pubDate": "2026-11-23 16:39:03",
+          "summary": "ProShares&#39; rival CoinDesk 20 Crypto ETF (KRYP) holds $1.81 million in assets nearly 10 months post-launch."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Binance hackers push $247 million through transactions designed to cloud the source",
+          "link": "https://www.coindesk.com/business/2026/11/23/binance-hackers-push-usd247-million-through-transactions-designed-to-cloud-the-source",
+          "pubDate": "2026-11-23 15:29:01",
+          "summary": "Elliptic found that nearly all the mixing transactions, known as coinjoins, were coordinated by an entity called Kruw during fixed daily hours, suggesting potential handoffs to China-based money launderers."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin",
+          "link": "https://www.coindesk.com/business/2026/11/23/eric-trump-backed-american-bitcoin-secures-usd150-million-loan-against-its-bitcoin",
+          "pubDate": "2026-11-23 15:02:32",
+          "summary": "The Nasdaq-listed crypto miner can borrow without selling its reserves or issuing new shares, but falling BTC prices could force it to pledge more collateral."
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin&#39;s 5-year return is nearly zero, great narratives are fading and what&#39;s left is the Fed",
@@ -6171,10 +5913,10 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Jensen Huang returns as Nvidia CEO as shares jump 27%",
+          "title": "Nvidia soars as Jensen Huang returns to lead company",
           "link": "https://www.coindesk.com/markets/2026/11/23/jensen-huang-returns-as-nvidia-ceo-as-shares-jump-27",
           "pubDate": "2026-11-23 14:13:44",
-          "summary": "Nasdaq futures rose nearly 7% and neocloud stocks gained as much as 16% after Nvidia’s board voted unanimously to reinstate Huang."
+          "summary": "The Nasdaq gained more than 6% as Nvidia rose as much as 35%. After a brief surge, crypto returned to a more muted advance."
         },
         {
           "source": "CoinDesk",
@@ -6185,52 +5927,45 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Live updates: Bitcoin climbs above $63,000 as Nasdaq soars 6% on Huang return",
+          "title": "Live updates: Bitcoin climbs only modestly as Nasdaq soars 6% on Huang return",
           "link": "https://www.coindesk.com/tech/2026/11/23/live-news-wall-street-rebounds-as-dollar-index-hits-highest-since-march-2025",
           "pubDate": "2026-11-23 13:01:20",
-          "summary": "The Nvidia board announced the reinstatement of Jensen Huang as president, CEO, and director."
+          "summary": "Nvidia is higher by 30% after the company board announced the reinstatement of Jensen Huang as president, CEO, and director."
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin&#39;s losing streak is second-longest ever, and some observers see more downside",
-          "link": "https://www.coindesk.com/daybook-us/2026/11/23/bitcoin-s-losing-streak-is-second-longest-ever-and-some-observers-see-more-downside",
-          "pubDate": "2026-11-23 12:30:25",
-          "summary": "Your day-ahead look for Nov. 23, 2026"
+          "source": "CoinTelegraph",
+          "title": "CFTC staff say exchanges can count Bitcoin toward operating reserves",
+          "link": "https://cointelegraph.com/news/cftc-staff-say-exchanges-can-count-bitcoin-toward-operating-reserves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 23:43:34",
+          "summary": "    The staff guidance allows Bitcoin, Ether and payment stablecoins to count towards operating reserves. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Ethereum wallets holding $72 billion ETH are under threat of a future quantum attack",
-          "link": "https://www.coindesk.com/markets/2026/11/23/ethereum-wallets-holding-usd72-billion-eth-are-under-threat-of-a-future-quantum-attack",
-          "pubDate": "2026-11-23 12:13:35",
-          "summary": "Researchers find that accounts with visible public keys hold nearly 55% of ether outside staking, and propose a way to move them to quantum-resistant security."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 21:40:44",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin rebounds from 2-year low as Wall Street futures recover",
-          "link": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebounds-from-2-year-low-as-wall-street-futures-recover",
-          "pubDate": "2026-11-23 11:51:09",
-          "summary": "Monday&#39;s market activity will show whether the weekend decline was seen as a dip and traders add to their holdings, or whether they abstain and the bounce fades."
+          "source": "CoinTelegraph",
+          "title": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack",
+          "link": "https://cointelegraph.com/news/us-seeks-11b-crypto-stolen-north-korea-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 21:04:03",
+          "summary": "    US prosecutors are seeking control of stolen USDC, while Elliptic says hackers have moved $247 million through Bitcoin mixers. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Japan to ramp up crypto tax audits after uncovering $24.5 million in hidden income",
-          "link": "https://www.coindesk.com/business/2026/11/23/japan-to-ramp-up-crypto-tax-audits-after-uncovering-usd24-5-million-in-hidden-income",
-          "pubDate": "2026-11-23 11:33:00",
-          "summary": "On-site audits of individual crypto traders averaged 12.58 million yen in extra tax per case, nearly triple the bureau&#39;s standard audit average."
+          "source": "CoinTelegraph",
+          "title": "Kalshi secures temporary win in New York gambling law dispute",
+          "link": "https://cointelegraph.com/news/kalshi-temporary-win-new-york-gambling-law-dispute?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 20:38:43",
+          "summary": "    The ruling allows Kalshi to continue operating as its legal battle with New York over sports-related event contracts moves toward a January hearing. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Live updates: Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
-          "link": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout",
-          "pubDate": "2026-11-23 11:29:09",
-          "summary": "Bitcoin is recovering from a weekend plunge to nearly $55,500, its lowest in more than two years, as Nasdaq futures jumped 3% and Nvidia rallied."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "South Korea to expand cryptocurrency account freezes and curb illicit transfers abroad",
-          "link": "https://www.coindesk.com/policy/2026/11/23/south-korea-to-expand-cryptocurrency-account-freezes-and-curb-illicit-transfers-abroad",
-          "pubDate": "2026-11-23 10:53:19",
-          "summary": "The proposed measures would also expand a June phishing-account suspension system, which has already frozen more than 11,500 accounts, to cover other serious financial crimes."
+          "source": "CoinTelegraph",
+          "title": "BTCS offloads $44M in ETH to reduce DeFi debt amid market downturn",
+          "link": "https://cointelegraph.com/news/btcs-offloads-44m-eth-reduce-defi-debt-market-downturn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 19:35:06",
+          "summary": "    BTCS sold more than half its Ether holdings to reduce leverage following the market sell-off, while BitMine added another 7,819 ETH to its treasury. "
         },
         {
           "source": "CoinTelegraph",
@@ -6268,39 +6003,39 @@
           "summary": "    Over 14 hours, Bitcoin traded on Kraken’s Canadian dollar market at an average 37.3% discount to a benchmark based on the exchange’s US dollar trades. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Nvidia reinstates Jensen Huang as CEO amid ongoing intelligence probe",
-          "link": "https://cointelegraph.com/news/nvidia-reinstates-jensen-huang-ceo-intelligence-probe?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 14:47:00",
-          "summary": "    Nvidia shares surged nearly 29% after the company’s board reinstated Jensen Huang as CEO following consultations with the US government. "
+          "source": "Decrypt",
+          "title": "China&#39;s Z.ai Says Its New AI Model Can Think Like One Four Times Its Size",
+          "link": "https://decrypt.co/383851/chinas-zai-new-ai-model-glm-think-like-four-times-size",
+          "pubDate": "2026-11-23 23:06:02",
+          "summary": "GLM-5.4 uses a looping architecture to squeeze more reasoning power from fewer parameters, challenging the expensive approach favored by American AI giants."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 14:06:36",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+          "source": "Decrypt",
+          "title": "OpenAI Will Pay You Up to $8K to Preach the AI Gospel to Small Businesses",
+          "link": "https://decrypt.co/383848/openai-will-pay-8k-preach-ai-gospel-small-businesses",
+          "pubDate": "2026-11-23 21:46:03",
+          "summary": "OpenAI wants local AI evangelists to bring ChatGPT to Main Street. Its new OpenWorks program pays up to $8,000 monthly, provided you can actually help businesses get things done locally."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "OKX, ICE launch 113 tokenized assets despite issuer objections",
-          "link": "https://cointelegraph.com/news/okxice-launch-113-tokenized-assets-objections?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 14:00:00",
-          "summary": "    The venture named Coinbase and Fidelity among the issuers and asset managers in the rollout after 67 companies objected to having their shares traded on the venue. "
+          "source": "Decrypt",
+          "title": "Why One Math Proof Has AI Experts Warning Humans Might Soon Lose Control",
+          "link": "https://decrypt.co/383846/why-one-math-proof-ai-experts-warning-humans-lose-control",
+          "pubDate": "2026-11-23 21:16:03",
+          "summary": "Alexandr Wang says Claude’s role in a verified Riemann Hypothesis proof signals a turning point, warning that powerful self-improving AI systems could advance faster than people can supervise them."
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Trump-linked American Bitcoin secures $150M credit line from FalconX",
-          "link": "https://cointelegraph.com/news/trumps-american-bitcoin-rises-150m-credit-falconx?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 13:44:16",
-          "summary": "    The miner can borrow against its Bitcoin to fund operations and expansion after selling about 465 BTC to cover expenses in the third quarter. "
+          "source": "Decrypt",
+          "title": "North Korea Moves $247 Million of Binance Hack Loot Through Bitcoin Mixers",
+          "link": "https://decrypt.co/383844/north-korea-247-million-binance-hack-bitcoin-mixers",
+          "pubDate": "2026-11-23 20:36:02",
+          "summary": "Roughly a month after the $6.4 billion hack, Elliptic says nearly all of the coinjoin mixing was coordinated by one person who “refuses to block funds such as these.&quot;"
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Strategy buys 457 Bitcoin, spends $212M on preferred share buybacks",
-          "link": "https://cointelegraph.com/news/strategy-buy-457-bitcoin-btc-treasury-losses?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 13:31:01",
-          "summary": "    Strategy raised its preferred stock buyback limit to $4 billion and authorized the transfer of up to $1 billion from its dollar reserve. "
+          "source": "Decrypt",
+          "title": "Why Nvidia Needed Jensen Huang Back—And What His Return Really Changes",
+          "link": "https://decrypt.co/383841/why-nvidia-needed-jensen-huang-back-what-return-changes",
+          "pubDate": "2026-11-23 19:57:21",
+          "summary": "Huang&#39;s 11-day absence exposed the importance of his customer ties, influence in Washington and hold on Silicon Valley. The stock is soaring, but the comeback brings risks of its own."
         },
         {
           "source": "Decrypt",
@@ -6336,41 +6071,6 @@
           "link": "https://decrypt.co/383800/tom-lee-ethereum-scarce-bitcoin-bitmine-buys-more",
           "pubDate": "2026-11-23 16:46:03",
           "summary": "Chairman Tom Lee argued ETH’s supply has grown just 0.90% annually since mid-2025—roughly matching Bitcoin’s 0.82% and far below Solana, XRP and Cardano."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Rallies, Anthropic Sinks as Nvidia Surges 35% on Jensen Huang’s Return",
-          "link": "https://decrypt.co/383801/bitcoin-rallies-anthropic-sinks-as-nvidia-surges-35-on-jensen-huangs-return",
-          "pubDate": "2026-11-23 16:32:04",
-          "summary": "Nvidia’s comeback sent chip shares soaring and gave Bitcoin a lift after a punishing selloff. Anthropic, fresh from its record IPO, missed the party."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Nvidia Reinstates Jensen Huang as CEO Days After Board Ruled Out His Return",
-          "link": "https://decrypt.co/383797/nvidia-reinstates-jensen-huang-as-ceo-days-after-board-ruled-out-his-return",
-          "pubDate": "2026-11-23 14:07:21",
-          "summary": "The board said senior U.S. officials&#39; input left it confident Huang&#39;s return poses no national security risk. Shares jumped 26% premarket."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Crypto Rebounds after NVDA Drives Friday Selloff",
-          "link": "https://decrypt.co/383778/morning-minute-crypto-rebounds-after-nvda-drives-friday-selloff",
-          "pubDate": "2026-11-23 13:34:13",
-          "summary": "The Nasdaq dropped 10% last week. Bitcoin lost 10% in a single day on Friday amidst cascading selloffs, though a relief rally is underway."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Strategy Buys $30M in Bitcoin, Moves $1B From USD Reserve to Cash Pot",
-          "link": "https://decrypt.co/383779/strategy-buys-30m-in-bitcoin-moves-1b-from-usd-reserve-to-cash-pot",
-          "pubDate": "2026-11-23 13:25:35",
-          "summary": "Michael Saylor&#39;s firm raised its preferred stock buyback program to $4 billion after repurchasing another $212 million of STRC last week."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Czech Authorities Charge 15 Over $12M Unlicensed Crypto Casino",
-          "link": "https://decrypt.co/383775/czech-authorities-charge-15-over-12m-unlicensed-crypto-casino",
-          "pubDate": "2026-11-23 13:08:23",
-          "summary": "Investigators say &quot;decentralized&quot; casino BETFIN was run centrally, inflated its player numbers with bots and made $12 million illegally."
         }
       ],
       "perCoin": {
@@ -6384,13 +6084,13 @@
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "Bitcoin&#39;s losing streak is second-longest ever, and some observers see more downside"
+          "critHead": "Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin"
         },
         "ETH": {
-          "sentiment": "BEARISH",
-          "impact": -0.5,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
-            "CoinDesk",
+            "CoinTelegraph",
             "Decrypt"
           ],
           "multiSourced": true,
@@ -6487,29 +6187,29 @@
       "breaker": [
         {
           "coin": "BTC",
-          "head": "Bitcoin&#39;s losing streak is second-longest ever, and some observers see more downside"
+          "head": "Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin"
         }
       ],
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795463626003
+        "t": 1795479720785
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795463626787,
+      "fetchedAt": 1795479721497,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 15.22,
+        "ARB": 15.44,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 5.29,
+        "ENA": 5.08,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6521,112 +6221,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 86.92,
+          "pct": 87.94,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 474.9,
+          "pct": 480.47,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 415.5,
+          "pct": 420.37,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 15.22,
+          "pct": 15.44,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 54.38,
+          "pct": 55.15,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 271.31,
+          "pct": 275.15,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4,
+          "pct": 4.05,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 32.36,
+          "pct": 32.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 14.71,
+          "pct": 14.92,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 47.35,
+          "pct": 48.02,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 147.36,
+          "pct": 149.45,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 75.23,
+          "pct": 76.3,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 90.93,
+          "pct": 87.48,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 254.24,
+          "pct": 244.6,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 34.46,
+          "pct": 33.15,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1286.58,
+          "pct": 1297.61,
           "lev": 10
         }
       ]
@@ -9723,72 +9423,72 @@
         ],
         "ADAUSDT": [
           [
-            0.613,
+            0.614,
             -1.1,
             69
           ],
           [
-            0.605,
+            0.609,
             -1.116,
             10
           ],
           [
-            0.589,
+            0.594,
             0.296,
             10
           ],
           [
-            0.49,
+            0.491,
             -1.087,
             69
           ],
           [
-            0.517,
+            0.521,
             0.566,
             27
           ],
           [
-            0.489,
+            0.493,
             0.3,
             35
           ],
           [
-            0.449,
+            0.451,
             -1.089,
             100
           ],
           [
-            0.539,
+            0.542,
             0.902,
             10
           ],
           [
-            0.528,
+            0.532,
             -1.213,
             10
           ],
           [
-            0.539,
+            0.54,
             1.474,
             61
           ],
           [
-            0.513,
+            0.517,
             -1.117,
             2
           ],
           [
-            0.499,
+            0.504,
             1.542,
             10
           ],
           [
-            0.573,
+            0.578,
             -1.125,
             35
           ],
           [
-            0.544,
+            0.55,
             -1.119,
             10
           ],
@@ -9798,32 +9498,32 @@
             69
           ],
           [
-            0.565,
+            0.567,
             -1.108,
             10
           ],
           [
-            0.514,
+            0.518,
             0.674,
             10
           ],
           [
-            0.516,
+            0.52,
             0.458,
             2
           ],
           [
-            0.542,
+            0.547,
             -1.149,
             10
           ],
           [
-            0.554,
+            0.56,
             -1.129,
             10
           ],
           [
-            0.545,
+            0.551,
             -1.122,
             10
           ],
@@ -9833,97 +9533,97 @@
             61
           ],
           [
-            0.466,
+            0.468,
             0.939,
             95
           ],
           [
-            0.589,
+            0.593,
             0.248,
             41
           ],
           [
-            0.499,
+            0.503,
             -1.13,
             27
           ],
           [
-            0.476,
+            0.48,
             -1.175,
             35
           ],
           [
-            0.518,
+            0.521,
             1.49,
             10
           ],
           [
-            0.613,
+            0.617,
             0.27,
             10
           ],
           [
-            0.448,
+            0.449,
             0.252,
             48
           ],
           [
-            0.61,
+            0.614,
             0.241,
             10
           ],
           [
-            0.46,
+            0.463,
             0.344,
             95
           ],
           [
-            0.523,
+            0.529,
             0.239,
             41
           ],
           [
-            0.548,
+            0.553,
             0.225,
             10
           ],
           [
-            0.554,
+            0.558,
             0.238,
             41
           ],
           [
-            0.514,
+            0.516,
             1.41,
             95
           ],
           [
-            0.558,
+            0.563,
             0.354,
             10
           ],
           [
-            0.595,
+            0.599,
             0.249,
             10
           ],
           [
-            0.577,
+            0.581,
             1.505,
             46
           ],
           [
-            0.506,
+            0.51,
             0.276,
             10
           ],
           [
-            0.594,
+            0.597,
             -1.225,
             41
           ],
           [
-            0.535,
+            0.541,
             -1.255,
             10
           ],
@@ -9933,174 +9633,174 @@
             56
           ],
           [
-            0.609,
+            0.613,
             0.26,
             2
           ],
           [
-            0.509,
+            0.512,
             0.797,
             2
           ],
           [
-            0.552,
+            0.558,
             0.623,
             10
           ],
           [
-            0.609,
+            0.613,
             -1.13,
             10
           ],
           [
-            0.543,
+            0.548,
             0.561,
             10
           ],
           [
-            0.512,
+            0.513,
             0.268,
             86
           ],
           [
-            0.6,
+            0.603,
             0.479,
             10
           ],
           [
-            0.612,
+            0.616,
             -1.121,
             10
           ],
           [
-            0.609,
+            0.613,
             -1.116,
             10
           ],
           [
-            0.454,
+            0.457,
             0.259,
             90
           ],
           [
-            0.451,
+            0.453,
             -1.118,
             86
           ],
           [
-            0.604,
+            0.607,
             -1.121,
             35
           ],
           [
-            0.571,
+            0.575,
             1.573,
             41
           ],
           [
-            0.485,
+            0.487,
             -1.122,
             61
           ]
         ],
         "AVAXUSDT": [
           [
-            0.496,
+            0.501,
             0.31,
             10
           ],
           [
-            0.456,
+            0.459,
             -1.085,
             96
           ],
           [
-            0.489,
+            0.494,
             0.299,
             35
           ],
           [
-            0.529,
+            0.533,
             -1.113,
             35
           ],
           [
-            0.525,
+            0.529,
             1.542,
             2
           ],
           [
-            0.581,
+            0.586,
             0.312,
             10
           ],
           [
-            0.563,
+            0.567,
             0.348,
             10
           ],
           [
-            0.565,
+            0.57,
             0.31,
             41
           ],
           [
-            0.594,
+            0.598,
             0.734,
             10
           ],
           [
-            0.552,
+            0.557,
             1.473,
             27
           ],
           [
-            0.537,
+            0.54,
             -1.174,
             10
           ],
           [
-            0.525,
+            0.526,
             0.25,
             69
           ],
           [
-            0.486,
+            0.49,
             -1.139,
             10
           ],
           [
-            0.575,
+            0.577,
             0.259,
             10
           ],
           [
-            0.577,
+            0.579,
             0.275,
             34
           ],
           [
-            0.491,
+            0.495,
             -1.207,
             10
           ],
           [
-            0.512,
+            0.517,
             -1.174,
             2
           ],
           [
-            0.516,
+            0.52,
             1.486,
             10
           ],
           [
-            0.573,
+            0.578,
             -1.126,
             10
           ],
           [
-            0.546,
+            0.552,
             -1.122,
             10
           ],
@@ -10110,112 +9810,112 @@
             61
           ],
           [
-            0.542,
+            0.544,
             -1.14,
             56
           ],
           [
-            0.567,
+            0.571,
             -1.115,
             35
           ],
           [
-            0.493,
+            0.494,
             -1.166,
             69
           ],
           [
-            0.611,
+            0.615,
             0.255,
             2
           ],
           [
-            0.548,
+            0.554,
             -1.157,
             2
           ],
           [
-            0.601,
+            0.604,
             0.905,
             10
           ],
           [
-            0.607,
+            0.611,
             0.244,
             35
           ],
           [
-            0.463,
+            0.465,
             -1.119,
             82
           ],
           [
-            0.504,
+            0.508,
             1.505,
             10
           ],
           [
-            0.619,
+            0.623,
             -1.127,
             10
           ],
           [
-            0.582,
+            0.586,
             0.362,
             10
           ],
           [
-            0.536,
+            0.541,
             -1.161,
             10
           ],
           [
-            0.606,
+            0.609,
             -1.138,
             35
           ],
           [
-            0.552,
+            0.558,
             -1.16,
             10
           ],
           [
-            0.539,
+            0.546,
             0.319,
             2
           ],
           [
-            0.461,
+            0.464,
             0.528,
             100
           ],
           [
-            0.511,
+            0.514,
             0.206,
             41
           ],
           [
-            0.532,
+            0.534,
             1.496,
             35
           ],
           [
-            0.503,
+            0.506,
             1.518,
             35
           ],
           [
-            0.565,
+            0.566,
             -1.198,
             10
           ],
           [
-            0.567,
+            0.568,
             -1.169,
             56
           ],
           [
-            0.553,
+            0.558,
             -1.173,
             35
           ],
@@ -10225,52 +9925,52 @@
             69
           ],
           [
-            0.472,
+            0.473,
             -1.175,
             95
           ],
           [
-            0.498,
+            0.502,
             0.873,
             10
           ],
           [
-            0.493,
+            0.497,
             -1.148,
             10
           ],
           [
-            0.531,
+            0.533,
             0.261,
             69
           ],
           [
-            0.577,
+            0.582,
             0.291,
             2
           ],
           [
-            0.558,
+            0.563,
             -1.222,
             27
           ],
           [
-            0.533,
+            0.539,
             0.121,
             35
           ],
           [
-            0.525,
+            0.524,
             -1.149,
             69
           ],
           [
-            0.605,
+            0.608,
             -1.132,
             35
           ],
           [
-            0.57,
+            0.574,
             -1.113,
             35
           ],
@@ -10280,7 +9980,7 @@
             80
           ],
           [
-            0.485,
+            0.488,
             0.277,
             35
           ],
@@ -10295,57 +9995,57 @@
             69
           ],
           [
-            0.572,
+            0.576,
             0.573,
             41
           ],
           [
-            0.46,
+            0.462,
             1.541,
             88
           ],
           [
-            0.534,
+            0.54,
             0.279,
             35
           ],
           [
-            0.532,
+            0.537,
             -1.111,
             41
           ],
           [
-            0.553,
+            0.557,
             0.467,
             10
           ],
           [
-            0.56,
+            0.565,
             0.456,
             10
           ],
           [
-            0.476,
+            0.478,
             0.268,
             94
           ],
           [
-            0.536,
+            0.542,
             -1.123,
             10
           ],
           [
-            0.571,
+            0.575,
             -1.091,
             10
           ],
           [
-            0.455,
+            0.457,
             0.263,
             65
           ],
           [
-            0.518,
+            0.52,
             0.262,
             56
           ]
@@ -10726,23 +10426,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795463630196
+        "updatedAt": 1795479721851
       }
     },
     "champion": {
-      "id": "smc",
-      "name": "SMC Liquidity Sweep (SFP)",
-      "book": "Wyckoff / Citadel Microstructure",
-      "netR": -67.63,
-      "trades": 309,
-      "winRate": 54.4,
-      "pf": 0.61,
-      "expPerTrade": -0.219,
-      "tStat": -3.87,
-      "deflatedT": -6.02,
+      "id": "wyckoff",
+      "name": "Wyckoff Spring & Upthrust",
+      "book": "Richard D. Wyckoff",
+      "netR": -91.75,
+      "trades": 526,
+      "winRate": 57,
+      "pf": 0.66,
+      "expPerTrade": -0.174,
+      "tStat": -4.08,
+      "deflatedT": -6.23,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795463630195,
+      "updatedAt": 1795479721848,
       "gen": 60
     },
     "factory": {
@@ -10952,7 +10652,10 @@
           "text": "4 kandidat baru diuji: Breakout Donchian 49 hari (long/short); Trend TSMOM 202 hari (long/flat); Momentum lintas koin 66 hari, 33% teratas vs terbawah (netral pasar); Carry funding > 24%/th (long spot + short perpetual)"
         }
       ],
-      "lastError": null
+      "lastError": {
+        "at": 1795479737076,
+        "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
+      }
     }
   }
 }
