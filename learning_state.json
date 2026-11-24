@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795497833431,
+  "updatedAt": 1795498732700,
   "brain": {
     "v": 1,
     "gen": 62,
-    "cycles": 373,
+    "cycles": 374,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795496936025,
     "autoExecBursa": false,
@@ -3376,6 +3376,16 @@
     ],
     "journal": [
       {
+        "t": 1795498725407,
+        "type": "CYCLE",
+        "text": "[CYCLE #374] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795498723940,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795497826069,
         "type": "CYCLE",
         "text": "[CYCLE #373] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -4864,16 +4874,6 @@
         "t": 1795336729689,
         "type": "CYCLE",
         "text": "[CYCLE #255] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795336725232,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795335830400,
-        "type": "CYCLE",
-        "text": "[CYCLE #254] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -4945,7 +4945,7 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10310,
+      "newsIngested": 10340,
       "lessons": 1,
       "backtests": 10130,
       "netR": -0.69,
@@ -4960,7 +4960,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795497823927,
+      "fetchedAt": 1795498723940,
       "items": [
         {
           "source": "CoinDesk",
@@ -5062,13 +5062,6 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 21:40:44",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
           "title": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack",
           "link": "https://cointelegraph.com/news/us-seeks-11b-crypto-stolen-north-korea-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-23 21:04:03",
@@ -5101,6 +5094,13 @@
           "link": "https://cointelegraph.com/news/cuomo-rivals-urged-companies-reject-okx-ice-tokenized-stocks?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-23 17:42:18",
           "summary": "    Former New York Gov. Andrew Cuomo said competitors encouraged companies to opt out of OKXICE’s rollout, while some issuers simply wanted more time. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Bitcoin rebounds 17% from $55K lows as Nvidia rally sparks $500M crypto liquidations",
+          "link": "https://cointelegraph.com/markets/bitcoin-rebounds-lows-nvidia-rally-sparks-500m-crypto-liquidations?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-23 16:51:17",
+          "summary": "    Bitcoin price upside hit $64,500 as risk assets surged on Nvidia CEO Jensen Huang’s reinstatement, while crypto liquidations topped $500 million four hours. "
         },
         {
           "source": "Decrypt",
@@ -5297,7 +5297,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795497823927
+        "t": 1795498723940
       },
       "lastErrors": []
     },
@@ -9530,7 +9530,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1271,
-        "updatedAt": 1795497824842
+        "updatedAt": 1795498724176
       }
     },
     "champion": {
@@ -9546,7 +9546,7 @@
       "deflatedT": -2.81,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795497824841,
+      "updatedAt": 1795498724175,
       "gen": 62
     },
     "factory": {
@@ -9757,7 +9757,7 @@
         }
       ],
       "lastError": {
-        "at": 1795497833427,
+        "at": 1795498732697,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
