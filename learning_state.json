@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795531128105,
+  "updatedAt": 1795532026466,
   "brain": {
     "v": 1,
     "gen": 67,
-    "cycles": 405,
+    "cycles": 406,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795528422904,
     "autoExecBursa": false,
@@ -1568,19 +1568,19 @@
       },
       "rsidiv": {
         "SUIUSDT": {
-          "trades": 18,
+          "trades": 19,
           "wins": 10,
-          "losses": 8,
-          "winRate": 55.55555555555556,
-          "pf": 0.654972811547279,
-          "exp": -0.16939964212281827,
-          "netR": -3.049193558210729,
-          "maxDD": 4.6271461477822955,
-          "sumR2": 15.69647974581912,
+          "losses": 9,
+          "winRate": 52.63157894736842,
+          "pf": 0.5815151539094944,
+          "exp": -0.21924012723905884,
+          "netR": -4.165562417542118,
+          "maxDD": 5.743515007113684,
+          "sumR2": 16.942844075628788,
           "grossW": 5.788352178068429,
-          "grossL": 8.837545736279159,
-          "sd": 0.9449540122110835,
-          "tStat": -0.7605680326940305,
+          "grossL": 9.953914595610547,
+          "sd": 0.9436803143127271,
+          "tStat": -1.0126793412025803,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2604,15 +2604,15 @@
           "wins": 56,
           "losses": 47,
           "winRate": 54.36893203883495,
-          "pf": 0.642462041436085,
-          "exp": -0.18138333418054728,
-          "netR": -18.68248342059637,
-          "maxDD": 22.456058937375154,
-          "sumR2": 89.82571015181568,
+          "pf": 0.6425272736037062,
+          "exp": -0.18133182964588637,
+          "netR": -18.677178453526295,
+          "maxDD": 22.45075397030508,
+          "sumR2": 89.81385146224672,
           "grossW": 33.57066333796409,
-          "grossL": 52.25314675856045,
-          "sd": 0.9205551341883551,
-          "tStat": -1.9997061793982722,
+          "grossL": 52.24784179149037,
+          "sd": 0.9205022314180176,
+          "tStat": -1.999253248458615,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -4576,6 +4576,16 @@
     ],
     "journal": [
       {
+        "t": 1795532026449,
+        "type": "CYCLE",
+        "text": "[CYCLE #406] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795532021909,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795531128064,
         "type": "CYCLE",
         "text": "[CYCLE #405] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6064,16 +6074,6 @@
         "t": 1795361025868,
         "type": "GEN",
         "text": "[GEN #47] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-67.98R, 307 trade, Win 54.1%, t=-3.89 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795361024609,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795360126835,
-        "type": "CYCLE",
-        "text": "[CYCLE #281] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6145,9 +6145,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11060,
+      "newsIngested": 11090,
       "lessons": 1,
-      "backtests": 10820,
+      "backtests": 10850,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6160,8 +6160,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795531123316,
+      "fetchedAt": 1795532021909,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "South Korea proposes ending 2017 ICO ban to boost jobs and onshore crypto investment",
+          "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-proposes-ending-2017-ico-ban-to-boost-jobs-and-onshore-crypto-investment",
+          "pubDate": "2026-11-24 14:40:53",
+          "summary": "Token issuers would have to disclose how they plan to spend investors&#39; money and could face criminal charges for misleading buyers."
+        },
         {
           "source": "CoinDesk",
           "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
@@ -6224,13 +6231,6 @@
           "link": "https://www.coindesk.com/policy/2026/11/24/south-korea-regulator-backs-bank-controlled-stablecoins-after-months-of-dispute",
           "pubDate": "2026-11-24 10:29:14",
           "summary": "Fintech firms could lead stablecoin ventures, but banks would need to own more than half of any issuer."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Bitcoin falls below $60,000 as rally on Jensen Huang’s Nvidia return fades",
-          "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades",
-          "pubDate": "2026-11-24 10:08:38",
-          "summary": "Nasdaq 100 futures fell about 1% after the index surged on Monday, while the Dollar Index held above 104, its highest level since March 2025."
         },
         {
           "source": "CoinTelegraph",
@@ -6376,7 +6376,7 @@
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.83,
+          "impact": -1,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6486,23 +6486,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795531123316
+        "t": 1795532021909
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795529323759,
+      "fetchedAt": 1795532022652,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 18.39,
+        "ARB": 17.75,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 2.22,
+        "ENA": 2.84,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6514,112 +6514,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 88.91,
+          "pct": 88.94,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 485.79,
+          "pct": 485.92,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 425.03,
+          "pct": 425.14,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 18.39,
+          "pct": 17.75,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 65.72,
+          "pct": 63.41,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 327.9,
+          "pct": 316.37,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.83,
+          "pct": 4.66,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 39.11,
+          "pct": 37.74,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 17.78,
+          "pct": 17.16,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 57.23,
+          "pct": 55.21,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 178.1,
+          "pct": 171.84,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 90.93,
+          "pct": 87.73,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 126.54,
+          "pct": 125.29,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 296.14,
+          "pct": 293.21,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 39.27,
+          "pct": 38.88,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1291.76,
+          "pct": 1265.89,
           "lev": 10
         }
       ]
@@ -6753,42 +6753,42 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.587,
+            0.585,
             0.332,
             10
           ],
           [
-            0.564,
+            0.569,
             -1.088,
             56
           ],
           [
-            0.476,
+            0.474,
             0.452,
             61
           ],
           [
-            0.496,
+            0.495,
             0.316,
             35
           ],
           [
-            0.496,
+            0.494,
             -1.078,
             46
           ],
           [
-            0.519,
+            0.517,
             0.54,
             10
           ],
           [
-            0.559,
+            0.561,
             -1.078,
             94
           ],
           [
-            0.513,
+            0.509,
             0.285,
             2
           ],
@@ -6803,17 +6803,17 @@
             10
           ],
           [
-            0.547,
+            0.551,
             -1.126,
             69
           ],
           [
-            0.591,
+            0.594,
             0.582,
             35
           ],
           [
-            0.548,
+            0.549,
             -1.134,
             35
           ],
@@ -6823,7 +6823,7 @@
             10
           ],
           [
-            0.564,
+            0.563,
             0.302,
             10
           ],
@@ -6833,7 +6833,7 @@
             61
           ],
           [
-            0.565,
+            0.566,
             0.505,
             34
           ],
@@ -6843,52 +6843,52 @@
             94
           ],
           [
-            0.595,
+            0.594,
             1.514,
             10
           ],
           [
-            0.5,
+            0.497,
             -1.107,
             27
           ],
           [
-            0.515,
+            0.512,
             1.508,
             35
           ],
           [
-            0.568,
+            0.567,
             0.315,
             10
           ],
           [
-            0.619,
+            0.618,
             0.274,
             2
           ],
           [
-            0.572,
+            0.57,
             -1.129,
             16
           ],
           [
-            0.485,
+            0.486,
             -1.159,
             61
           ],
           [
-            0.609,
+            0.61,
             0.257,
             10
           ],
           [
-            0.552,
+            0.55,
             -1.166,
             10
           ],
           [
-            0.499,
+            0.498,
             0.447,
             10
           ],
@@ -6903,17 +6903,17 @@
             35
           ],
           [
-            0.588,
+            0.587,
             -1.155,
             41
           ],
           [
-            0.607,
+            0.608,
             0.849,
             10
           ],
           [
-            0.599,
+            0.6,
             0.926,
             15
           ],
@@ -6923,22 +6923,22 @@
             69
           ],
           [
-            0.557,
+            0.556,
             0.181,
             10
           ],
           [
-            0.529,
+            0.528,
             -1.145,
             56
           ],
           [
-            0.514,
+            0.512,
             -1.129,
             61
           ],
           [
-            0.503,
+            0.5,
             0.74,
             2
           ],
@@ -6948,7 +6948,7 @@
             41
           ],
           [
-            0.558,
+            0.557,
             0.619,
             10
           ],
@@ -6958,17 +6958,17 @@
             35
           ],
           [
-            0.545,
+            0.547,
             -1.12,
             69
           ],
           [
-            0.573,
+            0.575,
             0.511,
             41
           ],
           [
-            0.466,
+            0.463,
             1.54,
             90
           ],
@@ -6978,7 +6978,7 @@
             46
           ],
           [
-            0.456,
+            0.453,
             -1.113,
             73
           ],
@@ -6988,12 +6988,12 @@
             10
           ],
           [
-            0.564,
+            0.563,
             0.277,
             35
           ],
           [
-            0.601,
+            0.602,
             -1.119,
             35
           ],
@@ -10664,7 +10664,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1283,
-        "updatedAt": 1795531125486
+        "updatedAt": 1795532023849
       }
     },
     "champion": {
@@ -10680,7 +10680,7 @@
       "deflatedT": -5.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795531125485,
+      "updatedAt": 1795532023848,
       "gen": 67
     },
     "factory": {
