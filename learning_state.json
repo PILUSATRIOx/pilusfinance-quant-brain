@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795556327779,
+  "updatedAt": 1795557227910,
   "brain": {
     "v": 1,
     "gen": 72,
-    "cycles": 433,
+    "cycles": 434,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795555423255,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.58,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -443,15 +443,15 @@
           "wins": 48,
           "losses": 32,
           "winRate": 60,
-          "pf": 0.6961598125239592,
-          "exp": -0.14072934950264115,
-          "netR": -11.258347960211292,
+          "pf": 0.7129403514247143,
+          "exp": -0.13295712442792731,
+          "netR": -10.636569954234185,
           "maxDD": 12.127165491860792,
-          "sumR2": 66.25708022173153,
-          "grossW": 25.795170383536654,
+          "sumR2": 67.72411137522236,
+          "grossW": 26.41694838951376,
           "grossL": 37.053518343747946,
-          "sd": 0.9047882487906093,
-          "tStat": -1.3911780677428174,
+          "sd": 0.916169126641901,
+          "tStat": -1.2980187158389072,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1819,15 +1819,15 @@
           "wins": 11,
           "losses": 8,
           "winRate": 57.89473684210527,
-          "pf": 0.8089434106965941,
-          "exp": -0.09166137558490349,
-          "netR": -1.7415661361131662,
-          "maxDD": 5.178533027107122,
-          "sumR2": 18.602616907135886,
+          "pf": 0.8082868208967645,
+          "exp": -0.09205109584517868,
+          "netR": -1.748970821058395,
+          "maxDD": 5.18593771205235,
+          "sumR2": 18.61975594542349,
           "grossW": 7.373880457291092,
-          "grossL": 9.11544659340426,
-          "sd": 1.0122302812060238,
-          "tStat": -0.39471519536491717,
+          "grossL": 9.122851278349488,
+          "sd": 1.012663190271184,
+          "tStat": -0.3962239649728564,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1838,15 +1838,15 @@
           "wins": 11,
           "losses": 13,
           "winRate": 45.83333333333333,
-          "pf": 0.25529084780287764,
-          "exp": -0.5352134511835916,
-          "netR": -12.8451228284062,
-          "maxDD": 13.467319157093732,
-          "sumR2": 26.96711231553066,
+          "pf": 0.25522018073932423,
+          "exp": -0.5354124462741581,
+          "netR": -12.849898710579794,
+          "maxDD": 13.472095039267325,
+          "sumR2": 26.97905243323946,
           "grossW": 4.403386593707272,
-          "grossL": 17.248509422113475,
-          "sd": 0.9346524533253276,
-          "tStat": -2.8053205321603505,
+          "grossL": 17.25328530428707,
+          "sd": 0.9348112278686277,
+          "tStat": -2.805886913226736,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795556100000
+        "lastBarT": 1795557000000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795557227895,
+        "type": "CYCLE",
+        "text": "[CYCLE #434] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795557223186,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795556327746,
         "type": "CYCLE",
@@ -6133,16 +6143,6 @@
         "t": 1795388923708,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795388026488,
-        "type": "CYCLE",
-        "text": "[CYCLE #310] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795388023724,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11900,
+      "newsIngested": 11930,
       "lessons": 1,
-      "backtests": 11660,
+      "backtests": 11690,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795556323725,
+      "fetchedAt": 1795557223186,
       "items": [
         {
           "source": "CoinDesk",
@@ -6373,6 +6373,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code",
+          "link": "https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code",
+          "pubDate": "2026-11-24 21:46:02",
+          "summary": "Anthropic’s new coding tools can review and repair software changes before approving them for release, leaving development teams to decide when a human still needs to check the AI’s work."
+        },
+        {
+          "source": "Decrypt",
           "title": "Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits",
           "link": "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
           "pubDate": "2026-11-24 21:16:02",
@@ -6433,13 +6440,6 @@
           "link": "https://decrypt.co/383877/europol-traces-28m-in-crypto-behind-europes-illegal-streaming-industry",
           "pubDate": "2026-11-24 16:00:44",
           "summary": "Police from 11 countries worked with Binance, Coinbase and Chainalysis to follow crypto payments made to pirate TV services."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Justice Department Moves to Forfeit $1.1B in USDC From North Korea&#39;s Binance Hack",
-          "link": "https://decrypt.co/383874/justice-department-moves-to-forfeit-1-1b-in-usdc-from-north-koreas-binance-hack",
-          "pubDate": "2026-11-24 14:13:03",
-          "summary": "U.S. authorities say they&#39;ve now helped freeze, seize or return more than $2.9 billion of the crypto stolen from Binance in October."
         }
       ],
       "perCoin": {
@@ -6555,23 +6555,23 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795556323725
+        "t": 1795557223186
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795555422936,
+      "fetchedAt": 1795557223833,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 19.36,
+        "ARB": 19.27,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5.08,
+        "ZRO": 5.06,
         "ETHFI": 20,
-        "ENA": 1.29,
+        "ENA": 1.38,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6583,112 +6583,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 90.28,
+          "pct": 90.74,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 493.27,
+          "pct": 495.77,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 431.57,
+          "pct": 433.76,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 19.36,
+          "pct": 19.27,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 69.15,
+          "pct": 68.83,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 345.04,
+          "pct": 343.44,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 5.08,
+          "pct": 5.06,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 41.16,
+          "pct": 40.97,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 18.71,
+          "pct": 18.62,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 60.22,
+          "pct": 59.94,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 187.41,
+          "pct": 186.54,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 95.68,
+          "pct": 95.24,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 131.18,
+          "pct": 131.85,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 307.01,
+          "pct": 308.56,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 40.71,
+          "pct": 40.92,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1373.88,
+          "pct": 1460.16,
           "lev": 10
         }
       ]
@@ -10738,7 +10738,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795556325797
+        "updatedAt": 1795557225903
       }
     },
     "champion": {
@@ -10754,7 +10754,7 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795556325796,
+      "updatedAt": 1795557225902,
       "gen": 72
     },
     "factory": {
