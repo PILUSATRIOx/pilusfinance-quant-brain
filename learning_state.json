@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795526627080,
+  "updatedAt": 1795528425377,
   "brain": {
     "v": 1,
-    "gen": 66,
-    "cycles": 400,
+    "gen": 67,
+    "cycles": 402,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795523023149,
+    "lastOptAt": 1795528422904,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -37,14 +37,14 @@
     "weights": {
       "elder": 0.58,
       "donchian": 0.55,
-      "bbrev": 0.83,
-      "wyckoff": 0.71,
-      "rsidiv": 0.4,
-      "macdm": 0.62,
-      "smc": 0.44,
-      "statarb": 0.58,
+      "bbrev": 0.82,
+      "wyckoff": 0.73,
+      "rsidiv": 0.42,
+      "macdm": 0.59,
+      "smc": 0.48,
+      "statarb": 0.59,
       "tsmom": 1,
-      "emax": 0.62
+      "emax": 0.58
     },
     "bayesian": {
       "elder": {
@@ -4576,6 +4576,41 @@
     ],
     "journal": [
       {
+        "t": 1795528425361,
+        "type": "CYCLE",
+        "text": "[CYCLE #402] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795528422905,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (73 trade OOS, -0.095R/trade, win 60.3%, t=-0.82) | Meta-model belum aktif (1281 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.281R)"
+      },
+      {
+        "t": 1795528422905,
+        "type": "GEN",
+        "text": "[GEN #67] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-81.9R, 555 trade, Win 58.4%, t=-3.56 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795528422609,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795527528967,
+        "type": "CYCLE",
+        "text": "[CYCLE #401] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795527524455,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (North Korea Moves $247 Million of Binance Hack Loot Through Bitcoin Mixers)"
+      },
+      {
+        "t": 1795527524453,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795526627061,
         "type": "CYCLE",
         "text": "[CYCLE #400] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6039,41 +6074,6 @@
         "t": 1795358363814,
         "type": "CYCLE",
         "text": "[CYCLE #279] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795358360557,
-        "type": "SYS",
-        "text": "[RISK] SHORT AVAXUSDT ditahan: Sudah 3 posisi kripto SHORT (berkorelasi tinggi dengan BTC)."
-      },
-      {
-        "t": 1795358350131,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795357429934,
-        "type": "CYCLE",
-        "text": "[CYCLE #278] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795357428503,
-        "type": "SYS",
-        "text": "[RISK] SHORT AVAXUSDT ditahan: Sudah 3 posisi kripto SHORT (berkorelasi tinggi dengan BTC)."
-      },
-      {
-        "t": 1795357424410,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795356532693,
-        "type": "CYCLE",
-        "text": "[CYCLE #277] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795356531277,
-        "type": "SYS",
-        "text": "[RISK] SHORT AVAXUSDT ditahan: Sudah 3 posisi kripto SHORT (berkorelasi tinggi dengan BTC)."
       }
     ],
     "accuracyHistory": [
@@ -6145,9 +6145,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10910,
+      "newsIngested": 10970,
       "lessons": 1,
-      "backtests": 10670,
+      "backtests": 10730,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6160,14 +6160,21 @@
       }
     },
     "news": {
-      "fetchedAt": 1795526622791,
+      "fetchedAt": 1795528422609,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "Live updates: Bitcoin pulls back to $60,000 as stock rally fails to budge crypto",
+          "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
+          "link": "https://www.coindesk.com/markets/2026/11/24/a-wallet-linked-to-popular-crypto-trader-ansem-sold-usd2-million-in-memecoins-as-his-namesake-token-cratered",
+          "pubDate": "2026-11-24 12:47:49",
+          "summary": "Ansem suspects someone broke into his account on Bullpen, the trading terminal he co-founded, where the wallet&#39;s private key had been imported."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Live updates: Bitcoin pulls back to $60,000, stock rally fades, as tariffs re-enter the picture",
           "link": "https://www.coindesk.com/tech/2026/11/24/live-updates-bitcoin-pulls-back-to-usd60-000-as-stock-rally-fails-to-budge-crypto",
           "pubDate": "2026-11-24 12:47:40",
-          "summary": "The red bars in bitcoin continue after yesterday&#39;s brief surge higher; U.S. equities are poised to give back some of Monday&#39;s massive gains."
+          "summary": "The Trump Administration could unveil tariff hikes against China, Japan, South Korea and other countries as soon as this week, according to a WSJ report."
         },
         {
           "source": "CoinDesk",
@@ -6226,11 +6233,18 @@
           "summary": "Nasdaq 100 futures fell about 1% after the index surged on Monday, while the Dollar Index held above 104, its highest level since March 2025."
         },
         {
-          "source": "CoinDesk",
-          "title": "U.S. CFTC sets policies on event contract data, using crypto to check financial boxes",
-          "link": "https://www.coindesk.com/policy/2026/11/23/u-s-cftc-sets-policies-on-event-contract-data-using-crypto-to-check-financial-boxes",
-          "pubDate": "2026-11-24 00:25:04",
-          "summary": "The derivatives regulator issues a rule on data reporting for event contracts and new guidance for how crypto assets can be used to meet regulatory requirements."
+          "source": "CoinTelegraph",
+          "title": "Sky lender proposes buyback of up to $50M to fund stUSDS withdrawals",
+          "link": "https://cointelegraph.com/news/sky-community-proposes-50m-buybacks-stusds-liquidity-crisis?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 13:43:46",
+          "summary": "    Borrowers would sell SKY to the protocol and use the proceeds to pay down their loans, freeing up funds for depositors in the stUSDS pool. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Grayscale calls Bitcoin ‘oversold’ at $62K but warns of AI risks",
+          "link": "https://cointelegraph.com/markets/bitcoin-oversold-ai-risks-grayscale?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 13:11:44",
+          "summary": "    Grayscale said Bitcoin’s bear market was its longest on record at 411 days and counting, though the 56% drop was the smallest percentage decline. "
         },
         {
           "source": "CoinTelegraph",
@@ -6289,18 +6303,11 @@
           "summary": "    The foundation said its next upgrade will be harder than the Merge, and the required pace of development will make it easier to ship bugs.  "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "CFTC staff say exchanges can count Bitcoin toward operating reserves",
-          "link": "https://cointelegraph.com/news/cftc-staff-say-exchanges-can-count-bitcoin-toward-operating-reserves?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 23:43:34",
-          "summary": "    The staff guidance allows Bitcoin, Ether and payment stablecoins to count towards operating reserves. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack",
-          "link": "https://cointelegraph.com/news/us-seeks-11b-crypto-stolen-north-korea-binance-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 21:04:03",
-          "summary": "    US prosecutors are seeking control of stolen USDC, while Elliptic says hackers have moved $247 million through Bitcoin mixers. "
+          "source": "Decrypt",
+          "title": "CertiK Trains Interpol Investigators to Trace and Freeze Stolen Crypto",
+          "link": "https://decrypt.co/383857/certik-trains-interpol-investigators-to-trace-and-freeze-stolen-crypto",
+          "pubDate": "2026-11-24 13:46:03",
+          "summary": "The blockchain security firm walked officers from across Asia and the South Pacific through a real wallet-theft case at a workshop in Hanoi."
         },
         {
           "source": "Decrypt",
@@ -6364,19 +6371,12 @@
           "link": "https://decrypt.co/383841/why-nvidia-needed-jensen-huang-back-what-return-changes",
           "pubDate": "2026-11-23 19:57:21",
           "summary": "Huang&#39;s 11-day absence exposed the importance of his customer ties, influence in Washington and hold on Silicon Valley. The stock is soaring, but the comeback brings risks of its own."
-        },
-        {
-          "source": "Decrypt",
-          "title": "GPU Jesus Has Risen: Jensen Huang’s Nvidia Comeback Gets a Meme Parade",
-          "link": "https://decrypt.co/383820/jensen-huang-returns-nvidia-memes-gpu-jesus",
-          "pubDate": "2026-11-23 18:45:21",
-          "summary": "Hollywood, WWE and GPU Jesus joined the celebration after Nvidia reinstated Jensen Huang on Monday, while viral AI memes cast Anthropic&#39;s Dario Amodei as the unlikely villain of the comeback."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -1,
+          "impact": -0.83,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6384,7 +6384,7 @@
           ],
           "multiSourced": true,
           "critical": true,
-          "critHead": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack"
+          "critHead": "North Korea Moves $247 Million of Binance Hack Loot Through Bitcoin Mixers"
         },
         "ETH": {
           "sentiment": "BEARISH",
@@ -6481,7 +6481,7 @@
       "breaker": [
         {
           "coin": "BTC",
-          "head": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack"
+          "head": "North Korea Moves $247 Million of Binance Hack Loot Through Bitcoin Mixers"
         },
         {
           "coin": "ETH",
@@ -6491,7 +6491,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795526622791
+        "t": 1795528422609
       },
       "lastErrors": []
     },
@@ -6683,66 +6683,66 @@
       "v": 1,
       "nf": 23,
       "w": [
-        0.05742655358004553,
-        0.10833122193885736,
-        0.09502313465621068,
-        0.07312146276550234,
-        0.005859406816381834,
-        -0.02012882229779679,
-        -0.01744072766387943,
-        0.04731045297185269,
-        -0.053208025973418345,
-        0.14974449221792838,
-        -0.07521005756114037,
-        0.07933667431035875,
-        -0.05894870054232112,
-        -0.08378389420223052,
-        0.10563678510432534,
-        0.11709373716306035,
-        -0.03967010439009681,
-        0.12407655374305084,
-        -0.04730649646002452,
-        -0.028818549218948008,
-        0.0016291611078114304,
-        0.1445062414467943,
-        -0.19261236122529393
+        0.052175506420581545,
+        0.11358102875024154,
+        0.0880096988697931,
+        0.07311917738719663,
+        0.0029250138374569295,
+        -0.025611253648284982,
+        -0.02150063522303727,
+        0.04142707096646213,
+        -0.04982800194619697,
+        0.14481615774449322,
+        -0.07292698165115107,
+        0.08310577482318678,
+        -0.05865743281092189,
+        -0.08303352378601189,
+        0.10744530446181447,
+        0.1143754167972855,
+        -0.0398605492052317,
+        0.12407209518893873,
+        -0.04575254928886142,
+        -0.03515535355322168,
+        0.0037559172505919718,
+        0.1510978594051165,
+        -0.19645282225798782
       ],
       "g2": [
-        1266.3077228120803,
-        1266.306486071928,
-        197.2816533102668,
-        163.78783611964053,
-        905.2486193359422,
-        254.7663728426043,
-        235.343070318931,
-        1008.7218345772751,
-        29.905157499644794,
-        46.48982878790571,
-        150.02311888189666,
-        52.34296412635226,
-        1266.3165010193154,
-        15.937247988028279,
-        3.1794079030525473,
-        36.28398292964301,
-        56.751855897051854,
-        123.90752640309503,
-        77.57174229548743,
-        273.5813596957613,
-        517.363160653734,
-        748.9068616632778,
-        78.2331703515942
+        1268.060291745961,
+        1268.0582279024225,
+        198.2547124598572,
+        163.78783616241338,
+        906.0285104812721,
+        255.37995628237618,
+        235.537713368395,
+        1010.4747380437093,
+        29.93831414718103,
+        46.54754402828116,
+        150.1021562365232,
+        52.41362785888228,
+        1268.069096704902,
+        15.939241756941923,
+        3.183597770968756,
+        36.32819613619733,
+        56.77396572055,
+        123.90752652625109,
+        77.65226262400004,
+        274.13629815215825,
+        517.4805382819226,
+        750.5408789703885,
+        78.29096917300603
       ],
-      "nTrain": 1279,
+      "nTrain": 1281,
       "sumWinR": 357.19699999999995,
       "nWin": 684,
-      "sumLossR": 704.4969999999998,
-      "nLoss": 595,
+      "sumLossR": 706.8629999999999,
+      "nLoss": 597,
       "lastTrainT": {
         "SUIUSDT": 1790298000000,
         "NVDA": 1789997400000,
         "AAPL": 1790094600000,
-        "TSLA": 1790001000000,
-        "MSFT": 1790083800000,
+        "TSLA": 1790170200000,
+        "MSFT": 1790170200000,
         "SPY": 1789587000000,
         "QQQ": 1789756200000,
         "BTCUSDT": 1790240400000,
@@ -7017,216 +7017,216 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.493,
+            0.499,
             0.227,
             10
           ],
           [
-            0.498,
+            0.499,
             0.254,
             61
           ],
           [
-            0.571,
+            0.575,
             -1.204,
             10
           ],
           [
-            0.459,
+            0.462,
             -1.21,
             56
           ],
           [
-            0.449,
+            0.451,
             1.44,
             61
           ],
           [
-            0.546,
+            0.55,
             0.219,
             15
           ],
           [
-            0.524,
+            0.529,
             0.233,
             41
           ],
           [
-            0.465,
+            0.469,
             1.465,
             95
           ],
           [
-            0.531,
+            0.535,
             0.229,
             10
           ],
           [
-            0.477,
+            0.483,
             1.434,
             27
           ],
           [
-            0.549,
+            0.554,
             -1.171,
             10
           ],
           [
-            0.484,
+            0.486,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.473,
+            0.479,
             1.36,
             10
           ],
           [
-            0.543,
+            0.548,
             0.144,
             10
           ],
           [
-            0.478,
+            0.481,
             -1.22,
             96
           ],
           [
-            0.534,
+            0.538,
             -1.215,
             10
           ],
           [
-            0.557,
+            0.56,
             0.469,
             10
           ],
           [
-            0.475,
+            0.481,
             -1.256,
             35
           ],
           [
-            0.484,
+            0.489,
             0.368,
             10
           ],
           [
-            0.482,
+            0.488,
             -1.259,
             35
           ],
           [
-            0.487,
+            0.493,
             0.296,
             10
           ],
           [
-            0.496,
+            0.497,
             -1.236,
             61
           ],
           [
-            0.516,
+            0.518,
             0.171,
             90
           ],
           [
-            0.494,
+            0.496,
             0.431,
             73
           ],
           [
-            0.567,
+            0.57,
             -1.251,
             35
           ],
           [
-            0.539,
+            0.543,
             -3.509,
             10
           ],
           [
-            0.486,
+            0.491,
             -1.21,
             10
           ],
           [
-            0.497,
+            0.501,
             0.063,
             10
           ],
           [
-            0.483,
+            0.487,
             0.615,
             10
           ],
           [
-            0.549,
+            0.553,
             -1.231,
             35
           ]
         ],
         "TSLA": [
           [
-            0.449,
+            0.451,
             0.805,
             61
           ],
           [
-            0.503,
+            0.509,
             0.264,
             10
           ],
           [
-            0.508,
+            0.513,
             0.241,
             10
           ],
           [
-            0.507,
+            0.511,
             -1.545,
             35
           ],
           [
-            0.483,
+            0.489,
             1.494,
             35
           ],
           [
-            0.464,
+            0.466,
             -1.907,
             56
           ],
           [
-            0.491,
+            0.494,
             0.308,
             56
           ],
           [
-            0.499,
+            0.504,
             1.513,
             10
           ],
           [
-            0.498,
+            0.504,
             -1.11,
             10
           ],
           [
-            0.504,
+            0.506,
             0.259,
             95
           ],
           [
-            0.483,
+            0.489,
             1.519,
             10
           ],
           [
-            0.566,
+            0.57,
             -0.212,
             2
           ],
@@ -7241,49 +7241,44 @@
             69
           ],
           [
-            0.509,
+            0.514,
             0.292,
             49
           ],
           [
-            0.55,
+            0.554,
             0.289,
             35
           ],
           [
-            0.551,
+            0.555,
             -1.528,
             35
           ],
           [
-            0.564,
+            0.568,
             -1.101,
             10
           ]
         ],
         "MSFT": [
           [
-            0.522,
-            -1.26,
-            69
-          ],
-          [
-            0.482,
+            0.483,
             0.14,
             10
           ],
           [
-            0.467,
+            0.468,
             -1.187,
             40
           ],
           [
-            0.483,
+            0.484,
             -1.201,
             2
           ],
           [
-            0.545,
+            0.547,
             1.414,
             90
           ],
@@ -7293,47 +7288,47 @@
             10
           ],
           [
-            0.518,
+            0.516,
             -1.251,
             69
           ],
           [
-            0.471,
+            0.472,
             0.152,
             64
           ],
           [
-            0.528,
+            0.529,
             0.156,
             2
           ],
           [
-            0.512,
+            0.513,
             0.116,
             35
           ],
           [
-            0.552,
+            0.553,
             -1.206,
             27
           ],
           [
-            0.539,
+            0.54,
             0.231,
             10
           ],
           [
-            0.533,
+            0.534,
             1.492,
             35
           ],
           [
-            0.534,
+            0.535,
             -1.166,
             10
           ],
           [
-            0.473,
+            0.474,
             0.228,
             69
           ],
@@ -7343,136 +7338,136 @@
             69
           ],
           [
-            0.537,
+            0.538,
             -1.132,
             10
           ]
         ],
         "SPY": [
           [
-            0.532,
+            0.531,
             1.16,
             2
           ],
           [
-            0.466,
+            0.463,
             -1.394,
             40
           ],
           [
-            0.538,
+            0.537,
             -1.707,
             10
           ],
           [
-            0.426,
+            0.422,
             -0.255,
             61
           ],
           [
-            0.506,
+            0.504,
             -1.555,
             46
           ],
           [
-            0.439,
+            0.435,
             -1.475,
             48
           ],
           [
-            0.509,
+            0.507,
             -0.217,
             41
           ],
           [
-            0.444,
+            0.44,
             -0.024,
             56
           ],
           [
-            0.498,
+            0.495,
             1.098,
             35
           ],
           [
-            0.529,
+            0.527,
             -1.413,
             10
           ],
           [
-            0.482,
+            0.48,
             1.347,
             2
           ],
           [
-            0.534,
+            0.53,
             -1.348,
             61
           ],
           [
-            0.469,
+            0.465,
             -1.219,
             61
           ]
         ],
         "QQQ": [
           [
-            0.508,
+            0.505,
             0.06,
             95
           ],
           [
-            0.506,
+            0.502,
             0.077,
             95
           ],
           [
-            0.47,
+            0.467,
             -1.744,
             10
           ],
           [
-            0.456,
+            0.452,
             1.177,
             48
           ],
           [
-            0.454,
+            0.45,
             1.6,
             69
           ],
           [
-            0.453,
+            0.45,
             -1.359,
             61
           ],
           [
-            0.507,
+            0.505,
             -1.244,
             41
           ],
           [
-            0.54,
+            0.538,
             0.661,
             10
           ],
           [
-            0.421,
+            0.416,
             1.354,
             96
           ],
           [
-            0.461,
+            0.456,
             0.244,
             56
           ],
           [
-            0.479,
+            0.475,
             0.339,
             56
           ],
           [
-            0.44,
+            0.436,
             -0.521,
             61
           ]
@@ -10648,12 +10643,12 @@
       },
       "status": {
         "all": {
-          "n": 771,
-          "mean": -0.283,
+          "n": 770,
+          "mean": -0.281,
           "sd": 0.941,
-          "t": -8.34,
+          "t": -8.3,
           "winRate": 52.7,
-          "sum": -217.89
+          "sum": -216.63
         },
         "base": {
           "n": 73,
@@ -10683,8 +10678,8 @@
         },
         "significant": false,
         "symbols": 18,
-        "nTrain": 1279,
-        "updatedAt": 1795526624548
+        "nTrain": 1281,
+        "updatedAt": 1795528422905
       }
     },
     "champion": {
@@ -10700,8 +10695,8 @@
       "deflatedT": -5.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795526624547,
-      "gen": 66
+      "updatedAt": 1795528422905,
+      "gen": 67
     },
     "factory": {
       "updatedAt": 1795504824611,
