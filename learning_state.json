@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795538325669,
+  "updatedAt": 1795539225486,
   "brain": {
     "v": 1,
-    "gen": 68,
-    "cycles": 413,
+    "gen": 69,
+    "cycles": 414,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795533822616,
+    "lastOptAt": 1795539222608,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -36,15 +36,15 @@
     },
     "weights": {
       "elder": 0.59,
-      "donchian": 0.54,
+      "donchian": 0.53,
       "bbrev": 0.81,
-      "wyckoff": 0.74,
-      "rsidiv": 0.43,
-      "macdm": 0.58,
-      "smc": 0.51,
-      "statarb": 0.6,
+      "wyckoff": 0.75,
+      "rsidiv": 0.44,
+      "macdm": 0.57,
+      "smc": 0.53,
+      "statarb": 0.61,
       "tsmom": 1,
-      "emax": 0.55
+      "emax": 0.54
     },
     "bayesian": {
       "elder": {
@@ -329,15 +329,15 @@
           "wins": 8,
           "losses": 19,
           "winRate": 29.629629629629626,
-          "pf": 0.15834444403535916,
-          "exp": -0.8133211559198462,
-          "netR": -21.959671209835847,
+          "pf": 0.16143554343709332,
+          "exp": -0.8103341186209595,
+          "netR": -21.879021202765905,
           "maxDD": 25.213841299848887,
-          "sumR2": 47.76685972045456,
-          "grossW": 4.13137168082429,
+          "sumR2": 47.774985292245944,
+          "grossW": 4.21202168789423,
           "grossL": 26.091042890660137,
-          "sd": 1.0724987815745475,
-          "tStat": -3.940462000867752,
+          "sd": 1.0749895872414004,
+          "tStat": -3.9168933761296074,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -348,15 +348,15 @@
           "wins": 16,
           "losses": 9,
           "winRate": 64,
-          "pf": 1.3285644428462982,
-          "exp": 0.13344696622593138,
-          "netR": 3.3361741556482847,
+          "pf": 1.3459039921272091,
+          "exp": 0.14048945149067138,
+          "netR": 3.5122362872667847,
           "maxDD": 3.3604627519771766,
-          "sumR2": 31.562076717398668,
-          "grossW": 13.489963551565786,
+          "sumR2": 31.61346678010529,
+          "grossW": 13.666025683184287,
           "grossL": 10.153789395917501,
-          "sd": 1.1386555375662353,
-          "tStat": 0.5859847944496068,
+          "sd": 1.138713357087023,
+          "tStat": 0.6168780343898912,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -654,15 +654,15 @@
           "wins": 7,
           "losses": 6,
           "winRate": 53.84615384615385,
-          "pf": 0.37195380922215443,
-          "exp": -0.3096106127350326,
-          "netR": -4.024937965555424,
-          "maxDD": 4.354059997488901,
-          "sumR2": 8.786850492953716,
+          "pf": 0.346824075348995,
+          "exp": -0.34532990993594015,
+          "netR": -4.489288829167222,
+          "maxDD": 4.818410861100698,
+          "sumR2": 10.164865213983642,
           "grossW": 2.3837275508622016,
-          "grossL": 6.408665516417626,
-          "sd": 0.7927109069104578,
-          "tStat": -1.4082270471019012,
+          "grossL": 6.873016380029423,
+          "sd": 0.8472789538148433,
+          "tStat": -1.469533371057258,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2718,15 +2718,15 @@
           "wins": 18,
           "losses": 12,
           "winRate": 60,
-          "pf": 0.5993761823819598,
-          "exp": -0.19336288374407956,
-          "netR": -5.8008865123223865,
+          "pf": 0.6855954940966642,
+          "exp": -0.15174874595589669,
+          "netR": -4.552462378676901,
           "maxDD": 6.612994017155497,
-          "sumR2": 25.69354307739422,
-          "grossW": 8.678748140485562,
+          "sumR2": 27.622557750973456,
+          "grossW": 9.927172274131047,
           "grossL": 14.479634652807949,
-          "sd": 0.920492127241604,
-          "tStat": -1.1505716352866002,
+          "sd": 0.963680575459092,
+          "tStat": -0.8624871492669588,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795538100000
+        "lastBarT": 1795539000000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795539225471,
+        "type": "CYCLE",
+        "text": "[CYCLE #414] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795539222608,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (73 trade OOS, -0.095R/trade, win 60.3%, t=-0.82) | Meta-model belum aktif (1284 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.281R)"
+      },
+      {
+        "t": 1795539222608,
+        "type": "GEN",
+        "text": "[GEN #69] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-83.02R, 556 trade, Win 58.3%, t=-3.61 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795539222294,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795538325652,
         "type": "CYCLE",
@@ -6123,26 +6143,6 @@
         "t": 1795370312919,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795369124517,
-        "type": "CYCLE",
-        "text": "[CYCLE #289] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795368594731,
-        "type": "CYCLE",
-        "text": "[CYCLE #288] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795368592837,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1259 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.288R)"
-      },
-      {
-        "t": 1795368592836,
-        "type": "GEN",
-        "text": "[GEN #48] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-68.01R, 307 trade, Win 54.1%, t=-3.9 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11300,
+      "newsIngested": 11330,
       "lessons": 1,
-      "backtests": 11060,
+      "backtests": 11090,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,11 +6229,11 @@
       }
     },
     "news": {
-      "fetchedAt": 1795538322691,
+      "fetchedAt": 1795539222294,
       "items": [
         {
           "source": "CoinDesk",
-          "title": "&#39;AI trade never died&#39;: Traders see room for market recovery, but bitcoin&#39;s participation another story",
+          "title": "&#39;AI trade never died&#39;: Traders see room for market recovery, but bitcoin&#39;s participation is another story",
           "link": "https://www.coindesk.com/markets/2026/11/24/ai-trade-never-died-traders-see-room-for-market-recovery-despite-bitcoin-s-weakness",
           "pubDate": "2026-11-24 16:00:25",
           "summary": "Monday&#39;s tech enthusiasm is quickly fading on Tuesday, while bitcoin remains near bear-market lows."
@@ -6303,6 +6303,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "How South Korea’s proposed 20% cap could change who runs Upbit",
+          "link": "https://cointelegraph.com/news/how-south-koreas-proposed-20-cap-could-change-who-runs-upbit?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 16:33:26",
+          "summary": "    Naver Financial agreed to buy every share in Upbit’s operator, but a proposed ownership cap could strip away its voting rights on four-fifths of them. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "USDT buyers face 22% VAT when Moscow Exchange opens crypto trading",
           "link": "https://cointelegraph.com/news/russia-usdt-buyer-face-22-tax-december-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 14:10:23",
@@ -6363,13 +6370,6 @@
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 06:00:00",
           "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Why 42 Macro says it’s waiting to buy the Bitcoin dip",
-          "link": "https://cointelegraph.com/markets/why-42-macro-says-its-waiting-to-buy-the-bitcoin-dip?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-24 05:07:30",
-          "summary": "    The independent macro research company warns the Bitcoin sell-off may not have yet run its course.  "
         },
         {
           "source": "Decrypt",
@@ -6548,7 +6548,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795538322691
+        "t": 1795539222294
       },
       "lastErrors": []
     },
@@ -7325,37 +7325,37 @@
             10
           ],
           [
-            0.47,
+            0.468,
             -1.187,
             40
           ],
           [
-            0.486,
+            0.485,
             -1.201,
             2
           ],
           [
-            0.547,
+            0.544,
             1.414,
             90
           ],
           [
-            0.477,
+            0.476,
             -1.251,
             10
           ],
           [
-            0.521,
+            0.508,
             -1.251,
             69
           ],
           [
-            0.475,
+            0.468,
             0.152,
             64
           ],
           [
-            0.532,
+            0.529,
             0.156,
             2
           ],
@@ -7365,49 +7365,49 @@
             35
           ],
           [
-            0.556,
+            0.554,
             -1.206,
             27
           ],
           [
-            0.543,
+            0.541,
             0.231,
             10
           ],
           [
-            0.536,
+            0.533,
             1.492,
             35
           ],
           [
-            0.538,
+            0.535,
             -1.166,
             10
           ],
           [
-            0.476,
+            0.468,
             0.228,
             69
           ],
           [
-            0.473,
+            0.464,
             -1.158,
             69
           ],
           [
-            0.541,
+            0.538,
             -1.132,
             10
           ]
         ],
         "SPY": [
           [
-            0.537,
+            0.536,
             1.16,
             2
           ],
           [
-            0.469,
+            0.467,
             -1.394,
             40
           ],
@@ -7417,27 +7417,27 @@
             10
           ],
           [
-            0.425,
+            0.42,
             -0.255,
             61
           ],
           [
-            0.51,
+            0.506,
             -1.555,
             46
           ],
           [
-            0.438,
+            0.433,
             -1.475,
             48
           ],
           [
-            0.514,
+            0.51,
             -0.217,
             41
           ],
           [
-            0.448,
+            0.44,
             -0.024,
             56
           ],
@@ -7447,34 +7447,34 @@
             35
           ],
           [
-            0.532,
+            0.531,
             -1.413,
             10
           ],
           [
-            0.485,
+            0.484,
             1.347,
             2
           ],
           [
-            0.533,
+            0.526,
             -1.348,
             61
           ],
           [
-            0.468,
+            0.464,
             -1.219,
             61
           ]
         ],
         "QQQ": [
           [
-            0.512,
+            0.507,
             0.06,
             95
           ],
           [
-            0.509,
+            0.504,
             0.077,
             95
           ],
@@ -7484,47 +7484,47 @@
             10
           ],
           [
-            0.456,
+            0.452,
             1.177,
             48
           ],
           [
-            0.457,
+            0.449,
             1.6,
             69
           ],
           [
-            0.452,
+            0.447,
             -1.359,
             61
           ],
           [
-            0.511,
+            0.507,
             -1.244,
             41
           ],
           [
-            0.543,
+            0.542,
             0.661,
             10
           ],
           [
-            0.424,
+            0.419,
             1.354,
             96
           ],
           [
-            0.463,
+            0.453,
             0.244,
             56
           ],
           [
-            0.482,
+            0.473,
             0.339,
             56
           ],
           [
-            0.441,
+            0.435,
             -0.521,
             61
           ]
@@ -10726,7 +10726,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1284,
-        "updatedAt": 1795538322953
+        "updatedAt": 1795539222608
       }
     },
     "champion": {
@@ -10742,8 +10742,8 @@
       "deflatedT": -5.75,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795538322952,
-      "gen": 68
+      "updatedAt": 1795539222608,
+      "gen": 69
     },
     "factory": {
       "updatedAt": 1795504824611,
