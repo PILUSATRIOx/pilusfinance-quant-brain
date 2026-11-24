@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795552727370,
+  "updatedAt": 1795553626635,
   "brain": {
     "v": 1,
     "gen": 71,
-    "cycles": 429,
+    "cycles": 430,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795550027820,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -207,7 +207,7 @@
           "tStat": -1.2396902402665153,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -551,7 +551,7 @@
           "tStat": -2.321251507197001,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -895,7 +895,7 @@
           "tStat": 0.18366112517107644,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1239,7 +1239,7 @@
           "tStat": -0.10150049122587658,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1572,18 +1572,18 @@
           "wins": 10,
           "losses": 8,
           "winRate": 55.55555555555556,
-          "pf": 0.6556258573609727,
-          "exp": -0.16891059946214648,
-          "netR": -3.0403907903186367,
-          "maxDD": 4.618343379890203,
-          "sumR2": 15.676832884920058,
+          "pf": 0.6558300690413517,
+          "exp": -0.16875787253194532,
+          "netR": -3.037641705575016,
+          "maxDD": 4.6155942951465825,
+          "sumR2": 15.670728971182461,
           "grossW": 5.788352178068429,
-          "grossL": 8.828742968387067,
-          "sd": 0.9444350522286465,
-          "tStat": -0.7587890560316867,
+          "grossL": 8.825993883643447,
+          "sd": 0.9442738579407525,
+          "tStat": -0.7582323816918,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1927,7 +1927,7 @@
           "tStat": -1.2503731473472668,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2271,7 +2271,7 @@
           "tStat": 0.5917490409524886,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2604,18 +2604,18 @@
           "wins": 56,
           "losses": 47,
           "winRate": 54.36893203883495,
-          "pf": 0.6425702913211109,
-          "exp": -0.18129787041460463,
-          "netR": -18.673680652704277,
-          "maxDD": 22.44725616948306,
-          "sumR2": 89.80606329091663,
+          "pf": 0.6426080382748157,
+          "exp": -0.18126807579738313,
+          "netR": -18.670611807130463,
+          "maxDD": 22.444187323909247,
+          "sumR2": 89.79925037944399,
           "grossW": 33.57066333796409,
-          "grossL": 52.244343990668355,
-          "sd": 0.9204675109867521,
-          "tStat": -1.9989542334280663,
+          "grossL": 52.24127514509454,
+          "sd": 0.9204371537226187,
+          "tStat": -1.9986916412926095,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2959,7 +2959,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3303,7 +3303,7 @@
           "tStat": -1.257464160480978,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795552500000
+        "lastBarT": 1795553400000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795553626619,
+        "type": "CYCLE",
+        "text": "[CYCLE #430] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795553622418,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795552727355,
         "type": "CYCLE",
@@ -6133,16 +6143,6 @@
         "t": 1795384424932,
         "type": "GEN",
         "text": "[GEN #51] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-68.04R, 307 trade, Win 54.1%, t=-3.9 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795384424458,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795383527439,
-        "type": "CYCLE",
-        "text": "[CYCLE #305] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11780,
+      "newsIngested": 11810,
       "lessons": 1,
-      "backtests": 11540,
+      "backtests": 11570,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795552722392,
+      "fetchedAt": 1795553622418,
       "items": [
         {
           "source": "CoinDesk",
@@ -6373,6 +6373,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Ethereum Foundation Says AI Is a More Urgent Threat Than Quantum Computing",
+          "link": "https://decrypt.co/383927/ethereum-foundation-ai-more-urgent-threat-quantum-computing",
+          "pubDate": "2026-11-24 20:36:02",
+          "summary": "The Ethereum Foundation has doubled its protocol security team and is prioritizing a cryptographic overhaul as advances in AI threaten the mathematical assumptions that keep billions in crypto safe."
+        },
+        {
+          "source": "Decrypt",
           "title": "Bitcoin Losses Are the Worst Since FTX. Is the Bottom Near?",
           "link": "https://decrypt.co/383909/bitcoin-losses-worst-since-ftx-is-bottom-near",
           "pubDate": "2026-11-24 19:35:32",
@@ -6433,13 +6440,6 @@
           "link": "https://decrypt.co/383857/certik-trains-interpol-investigators-to-trace-and-freeze-stolen-crypto",
           "pubDate": "2026-11-24 13:46:03",
           "summary": "The blockchain security firm walked officers from across Asia and the South Pacific through a real wallet-theft case at a workshop in Hanoi."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Jensen Returns, Markets Soar (Except Crypto)",
-          "link": "https://decrypt.co/383868/morning-minute-jensen-returns-markets-soar-except-crypto",
-          "pubDate": "2026-11-24 13:07:49",
-          "summary": "It was a very green Monday for most markets, but crypto couldn’t hold the pump as ETF sellers race for the exits."
         }
       ],
       "perCoin": {
@@ -6456,8 +6456,8 @@
           "critHead": ""
         },
         "ETH": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
+          "sentiment": "BEARISH",
+          "impact": -0.5,
           "sources": [
             "Decrypt"
           ],
@@ -6550,7 +6550,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795552722392
+        "t": 1795553622418
       },
       "lastErrors": []
     },
@@ -6817,257 +6817,257 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.58,
+            0.583,
             0.332,
             10
           ],
           [
-            0.556,
+            0.557,
             -1.088,
             56
           ],
           [
-            0.466,
+            0.469,
             0.452,
             61
           ],
           [
-            0.486,
+            0.493,
             0.316,
             35
           ],
           [
-            0.486,
+            0.493,
             -1.078,
             46
           ],
           [
-            0.51,
+            0.516,
             0.54,
             10
           ],
           [
-            0.55,
+            0.553,
             -1.078,
             94
           ],
           [
-            0.503,
+            0.508,
             0.285,
             2
           ],
           [
-            0.567,
+            0.57,
             -1.129,
             35
           ],
           [
-            0.618,
+            0.62,
             -1.121,
             10
           ],
           [
-            0.539,
+            0.54,
             -1.126,
             69
           ],
           [
-            0.591,
+            0.593,
             0.582,
             35
           ],
           [
-            0.542,
+            0.547,
             -1.134,
             35
           ],
           [
-            0.549,
+            0.554,
             -1.12,
             10
           ],
           [
-            0.558,
+            0.561,
             0.302,
             10
           ],
           [
-            0.51,
+            0.512,
             0.399,
             61
           ],
           [
-            0.555,
+            0.559,
             0.505,
             34
           ],
           [
-            0.474,
+            0.479,
             1.003,
             94
           ],
           [
-            0.59,
+            0.592,
             1.514,
             10
           ],
           [
-            0.49,
+            0.495,
             -1.107,
             27
           ],
           [
-            0.507,
+            0.512,
             1.508,
             35
           ],
           [
-            0.561,
+            0.564,
             0.315,
             10
           ],
           [
-            0.615,
+            0.618,
             0.274,
             2
           ],
           [
-            0.565,
+            0.568,
             -1.129,
             16
           ],
           [
-            0.48,
+            0.482,
             -1.159,
             61
           ],
           [
-            0.607,
+            0.61,
             0.257,
             10
           ],
           [
-            0.547,
+            0.551,
             -1.166,
             10
           ],
           [
-            0.493,
+            0.499,
             0.447,
             10
           ],
           [
-            0.481,
+            0.486,
             0.159,
             90
           ],
           [
-            0.522,
+            0.527,
             -1.196,
             35
           ],
           [
-            0.583,
+            0.585,
             -1.155,
             41
           ],
           [
-            0.605,
+            0.607,
             0.849,
             10
           ],
           [
-            0.596,
+            0.598,
             0.926,
             15
           ],
           [
-            0.532,
+            0.534,
             0.168,
             69
           ],
           [
-            0.551,
+            0.555,
             0.181,
             10
           ],
           [
-            0.518,
+            0.52,
             -1.145,
             56
           ],
           [
-            0.507,
+            0.508,
             -1.129,
             61
           ],
           [
-            0.493,
+            0.498,
             0.74,
             2
           ],
           [
-            0.529,
+            0.533,
             -1.134,
             41
           ],
           [
-            0.551,
+            0.555,
             0.619,
             10
           ],
           [
-            0.61,
+            0.612,
             -1.129,
             35
           ],
           [
-            0.538,
+            0.54,
             -1.12,
             69
           ],
           [
-            0.569,
+            0.572,
             0.511,
             41
           ],
           [
-            0.454,
+            0.458,
             1.54,
             90
           ],
           [
-            0.532,
+            0.536,
             -1.111,
             46
           ],
           [
-            0.444,
+            0.448,
             -1.113,
             73
           ],
           [
-            0.557,
+            0.561,
             0.272,
             10
           ],
           [
-            0.557,
+            0.56,
             0.277,
             35
           ],
           [
-            0.598,
+            0.601,
             -1.119,
             35
           ],
           [
-            0.465,
+            0.467,
             0.307,
             69
           ],
           [
-            0.536,
+            0.54,
             1.578,
             33
           ]
@@ -10733,7 +10733,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795552725223
+        "updatedAt": 1795553623470
       }
     },
     "champion": {
@@ -10749,7 +10749,7 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795552725223,
+      "updatedAt": 1795553623469,
       "gen": 71
     },
     "factory": {
