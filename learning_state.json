@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795521228411,
+  "updatedAt": 1795522127429,
   "brain": {
     "v": 1,
     "gen": 65,
-    "cycles": 394,
+    "cycles": 395,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795517629424,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.58,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4576,6 +4576,16 @@
     ],
     "journal": [
       {
+        "t": 1795522127394,
+        "type": "CYCLE",
+        "text": "[CYCLE #395] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795522124005,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795521228395,
         "type": "CYCLE",
         "text": "[CYCLE #394] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6064,16 +6074,6 @@
         "t": 1795352927008,
         "type": "SIGNAL",
         "text": "[SIGNAL] SHORT SOLUSDT @ 70.1900 | Skor 100/100 | P(menang) 46% | EV -0.402R | rezim RANGING (H=0.51) | 3 strategi: wyckoff+smc+statarb | PAPER"
-      },
-      {
-        "t": 1795352924027,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795352029778,
-        "type": "CYCLE",
-        "text": "[CYCLE #272] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6145,9 +6145,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 10730,
+      "newsIngested": 10760,
       "lessons": 1,
-      "backtests": 10490,
+      "backtests": 10520,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6160,8 +6160,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795521223738,
+      "fetchedAt": 1795522124005,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin hands back Monday&#39;s Nvidia-driven gains, liquidations triple",
+          "link": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple",
+          "pubDate": "2026-11-24 11:31:56",
+          "summary": "Bitcoin (BTC) has dropped 2.2% since midnight UTC to around $59,900, giving back Monday&#39;s jump and lagging the stock market&#39;s rebound from last week&#39;s selloff."
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin’s drop to $55,000 left a record 11.6 million BTC underwater",
@@ -6226,11 +6233,11 @@
           "summary": "Nvidia jumped more than 30% and has recovered most of its losses since CEO Jensen Huang stepped down, but bitcoin is lagging as U.S. selling persists, traders said."
         },
         {
-          "source": "CoinDesk",
-          "title": "Cathie Wood&#39;s ARK Invest pulls the plug on two planned crypto ETFs",
-          "link": "https://www.coindesk.com/business/2026/11/23/cathie-wood-s-ark-invest-pulls-the-plug-on-two-planned-crypto-etfs",
-          "pubDate": "2026-11-23 16:39:03",
-          "summary": "ProShares&#39; rival CoinDesk 20 Crypto ETF (KRYP) holds $1.81 million in assets nearly 10 months post-launch."
+          "source": "CoinTelegraph",
+          "title": "Bitcoin dipped on Huang’s Nvidia exit but jumped 5% on his return",
+          "link": "https://cointelegraph.com/markets/bitcoin-huangs-return-18-below-pre-resignation-levels?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 11:40:33",
+          "summary": "    Bitcoin rose about 5% on Jensen Huang’s return, more than the 3.5% it lost on news of his exit, but remained 19.2% below its pre-resignation price. "
         },
         {
           "source": "CoinTelegraph",
@@ -6294,13 +6301,6 @@
           "link": "https://cointelegraph.com/news/kalshi-temporary-win-new-york-gambling-law-dispute?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-23 20:38:43",
           "summary": "    The ruling allows Kalshi to continue operating as its legal battle with New York over sports-related event contracts moves toward a January hearing. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "BTCS offloads $44M in ETH to reduce DeFi debt amid market downturn",
-          "link": "https://cointelegraph.com/news/btcs-offloads-44m-eth-reduce-defi-debt-market-downturn?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-23 19:35:06",
-          "summary": "    BTCS sold more than half its Ether holdings to reduce leverage following the market sell-off, while BitMine added another 7,819 ETH to its treasury. "
         },
         {
           "source": "Decrypt",
@@ -6387,8 +6387,8 @@
           "critHead": "US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack"
         },
         "ETH": {
-          "sentiment": "BULLISH",
-          "impact": 0.17,
+          "sentiment": "BEARISH",
+          "impact": -0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph"
@@ -6491,7 +6491,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795521223738
+        "t": 1795522124005
       },
       "lastErrors": []
     },
@@ -7017,12 +7017,12 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.494,
+            0.493,
             0.227,
             10
           ],
           [
-            0.495,
+            0.498,
             0.254,
             61
           ],
@@ -7032,69 +7032,69 @@
             10
           ],
           [
-            0.458,
+            0.459,
             -1.21,
             56
           ],
           [
-            0.446,
+            0.449,
             1.44,
             61
           ],
           [
-            0.548,
+            0.546,
             0.219,
             15
           ],
           [
-            0.525,
+            0.524,
             0.233,
             41
           ],
           [
-            0.462,
+            0.465,
             1.465,
             95
           ],
           [
-            0.532,
+            0.531,
             0.229,
             10
           ],
           [
-            0.478,
+            0.477,
             1.434,
             27
           ],
           [
-            0.55,
+            0.549,
             -1.171,
             10
           ],
           [
-            0.48,
+            0.484,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.474,
+            0.473,
             1.36,
             10
           ],
           [
-            0.544,
+            0.543,
             0.144,
             10
           ],
           [
-            0.476,
+            0.478,
             -1.22,
             96
           ],
           [
-            0.535,
+            0.534,
             -1.215,
             10
           ],
@@ -7104,7 +7104,7 @@
             10
           ],
           [
-            0.476,
+            0.475,
             -1.256,
             35
           ],
@@ -7114,37 +7114,37 @@
             10
           ],
           [
-            0.483,
+            0.482,
             -1.259,
             35
           ],
           [
-            0.488,
+            0.487,
             0.296,
             10
           ],
           [
-            0.494,
+            0.496,
             -1.236,
             61
           ],
           [
-            0.512,
+            0.516,
             0.171,
             90
           ],
           [
-            0.491,
+            0.494,
             0.431,
             73
           ],
           [
-            0.566,
+            0.567,
             -1.251,
             35
           ],
           [
-            0.54,
+            0.539,
             -3.509,
             10
           ],
@@ -7159,7 +7159,7 @@
             10
           ],
           [
-            0.484,
+            0.483,
             0.615,
             10
           ],
@@ -7171,57 +7171,57 @@
         ],
         "TSLA": [
           [
-            0.446,
+            0.449,
             0.805,
             61
           ],
           [
-            0.504,
+            0.503,
             0.264,
             10
           ],
           [
-            0.509,
+            0.508,
             0.241,
             10
           ],
           [
-            0.506,
+            0.507,
             -1.545,
             35
           ],
           [
-            0.484,
+            0.483,
             1.494,
             35
           ],
           [
-            0.462,
+            0.464,
             -1.907,
             56
           ],
           [
-            0.488,
+            0.491,
             0.308,
             56
           ],
           [
-            0.5,
+            0.499,
             1.513,
             10
           ],
           [
-            0.499,
+            0.498,
             -1.11,
             10
           ],
           [
-            0.501,
+            0.504,
             0.259,
             95
           ],
           [
-            0.484,
+            0.483,
             1.519,
             10
           ],
@@ -7231,12 +7231,12 @@
             2
           ],
           [
-            0.525,
+            0.528,
             0.272,
             61
           ],
           [
-            0.584,
+            0.588,
             -1.13,
             69
           ],
@@ -7256,7 +7256,7 @@
             35
           ],
           [
-            0.565,
+            0.564,
             -1.101,
             10
           ]
@@ -10699,7 +10699,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1278,
-        "updatedAt": 1795521225784
+        "updatedAt": 1795522124409
       }
     },
     "champion": {
@@ -10715,7 +10715,7 @@
       "deflatedT": -5.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795521225783,
+      "updatedAt": 1795522124408,
       "gen": 65
     },
     "factory": {
