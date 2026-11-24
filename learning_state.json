@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795504841412,
+  "updatedAt": 1795504871916,
   "brain": {
     "v": 1,
     "gen": 63,
@@ -9422,24 +9422,36 @@
       "gen": 63
     },
     "factory": {
-      "updatedAt": 1795393426615,
-      "day": "2026-11-23",
-      "dataUntil": "2026-11-22",
+      "updatedAt": 1795504824611,
+      "day": "2026-11-24",
+      "dataUntil": "2026-11-23",
       "universe": 20,
-      "nTrials": 71,
-      "hurdleSharpe": 2.68,
-      "pbo": 0.2,
+      "nTrials": 75,
+      "hurdleSharpe": 2.86,
+      "pbo": 0.186,
       "top": [
+        {
+          "id": "CARRY|thr=0.11",
+          "label": "Carry funding > 11%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 4.84,
+          "cagr": 0.065,
+          "mdd": -0.0111,
+          "dsr": 1,
+          "years": 6.92,
+          "status": "KANDIDAT"
+        },
         {
           "id": "CARRY|thr=0.1",
           "label": "Carry funding > 10%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.67,
-          "cagr": 0.064,
+          "cagr": 0.0639,
           "mdd": -0.0311,
           "dsr": 1,
-          "years": 6.91,
+          "years": 6.92,
           "status": "INKUBASI"
         },
         {
@@ -9447,11 +9459,11 @@
           "label": "Carry funding > 2%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.44,
+          "sharpe": 4.43,
           "cagr": 0.0632,
-          "mdd": -0.0713,
+          "mdd": -0.0714,
           "dsr": 1,
-          "years": 6.91,
+          "years": 6.92,
           "status": "KANDIDAT"
         },
         {
@@ -9459,11 +9471,11 @@
           "label": "Carry funding > 19%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.24,
+          "sharpe": 4.23,
           "cagr": 0.0544,
           "mdd": -0.0082,
           "dsr": 1,
-          "years": 6.91,
+          "years": 6.92,
           "status": "KANDIDAT"
         },
         {
@@ -9475,19 +9487,7 @@
           "cagr": 0.0537,
           "mdd": -0.0087,
           "dsr": 1,
-          "years": 6.91,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "CARRY|thr=0.05",
-          "label": "Carry funding > 5%/th (long spot + short perpetual)",
-          "family": "CARRY",
-          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.02,
-          "cagr": 0.057,
-          "mdd": -0.0761,
-          "dsr": 1,
-          "years": 6.91,
+          "years": 6.92,
           "status": "KANDIDAT"
         },
         {
@@ -9498,8 +9498,20 @@
           "sharpe": 4.02,
           "cagr": 0.0499,
           "mdd": -0.0082,
-          "dsr": 1,
-          "years": 6.91,
+          "dsr": 0.9999,
+          "years": 6.92,
+          "status": "KANDIDAT"
+        },
+        {
+          "id": "CARRY|thr=0.05",
+          "label": "Carry funding > 5%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 4.02,
+          "cagr": 0.0569,
+          "mdd": -0.0761,
+          "dsr": 0.9998,
+          "years": 6.92,
           "status": "KANDIDAT"
         },
         {
@@ -9510,8 +9522,8 @@
           "sharpe": 3.68,
           "cagr": 0.0442,
           "mdd": -0.008,
-          "dsr": 0.9995,
-          "years": 6.91,
+          "dsr": 0.9966,
+          "years": 6.92,
           "status": "KANDIDAT"
         },
         {
@@ -9520,10 +9532,10 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2941,
+          "cagr": 0.294,
           "mdd": -0.3307,
           "dsr": 0,
-          "years": 6.82,
+          "years": 6.83,
           "status": "KANDIDAT"
         },
         {
@@ -9532,22 +9544,10 @@
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
           "sharpe": 1.05,
-          "cagr": 0.6879,
+          "cagr": 0.6947,
           "mdd": -0.7746,
           "dsr": 0,
-          "years": 6.89,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "TSMOM|L=28|mode=LF",
-          "label": "Trend TSMOM 28 hari (long/flat)",
-          "family": "TSMOM",
-          "source": "Moskowitz, Ooi & Pedersen (2012), \"Time Series Momentum\", Journal of Financial Economics",
-          "sharpe": 1.02,
-          "cagr": 0.2677,
-          "mdd": -0.3337,
-          "dsr": 0,
-          "years": 6.85,
+          "years": 6.9,
           "status": "KANDIDAT"
         }
       ],
@@ -9559,11 +9559,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 6,
+            "days": 7,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.59
+            "z": -0.64
           }
         }
       ],
@@ -9587,6 +9587,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795504824611,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Harga vs SMA 191 hari (long/flat); Carry funding > 11%/th (long spot + short perpetual); Persilangan SMA 24/74 (long/short); Persilangan SMA 5/20 (long/flat)"
+        },
         {
           "t": 1795393426615,
           "type": "EXPLORE",
@@ -9628,10 +9633,7 @@
           "text": "4 kandidat baru diuji: Breakout Donchian 49 hari (long/short); Trend TSMOM 202 hari (long/flat); Momentum lintas koin 66 hari, 33% teratas vs terbawah (netral pasar); Carry funding > 24%/th (long spot + short perpetual)"
         }
       ],
-      "lastError": {
-        "at": 1795504501077,
-        "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
-      }
+      "lastError": null
     }
   }
 }
