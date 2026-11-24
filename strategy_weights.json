@@ -4,12 +4,12 @@
     "donchian": 0.53,
     "bbrev": 0.81,
     "wyckoff": 0.75,
-    "rsidiv": 0.44,
-    "macdm": 0.57,
-    "smc": 0.53,
+    "rsidiv": 0.45,
+    "macdm": 0.56,
+    "smc": 0.54,
     "statarb": 0.61,
     "tsmom": 1,
-    "emax": 0.54
+    "emax": 0.53
   },
-  "updatedAt": 1795543725588
+  "updatedAt": 1795544634471
 }
