@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795558126721,
+  "updatedAt": 1795559025548,
   "brain": {
     "v": 1,
     "gen": 72,
-    "cycles": 435,
+    "cycles": 436,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795555423255,
     "autoExecBursa": false,
@@ -207,7 +207,7 @@
           "tStat": -1.2396902402665153,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -551,7 +551,7 @@
           "tStat": -2.321251507197001,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -895,7 +895,7 @@
           "tStat": 0.18366112517107644,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1239,7 +1239,7 @@
           "tStat": -0.10150049122587658,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1572,18 +1572,18 @@
           "wins": 10,
           "losses": 8,
           "winRate": 55.55555555555556,
-          "pf": 0.6558300690413517,
-          "exp": -0.16875787253194532,
-          "netR": -3.037641705575016,
-          "maxDD": 4.6155942951465825,
-          "sumR2": 15.670728971182461,
+          "pf": 0.6557935956038197,
+          "exp": -0.16878514350551002,
+          "netR": -3.0381325830991806,
+          "maxDD": 4.616085172670747,
+          "sumR2": 15.671817779630805,
           "grossW": 5.788352178068429,
-          "grossL": 8.825993883643447,
-          "sd": 0.9442738579407525,
-          "tStat": -0.7582323816918,
+          "grossL": 8.826484761167611,
+          "sd": 0.9443026102586982,
+          "tStat": -0.7583318201583337,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1927,7 +1927,7 @@
           "tStat": -1.2503731473472668,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2271,7 +2271,7 @@
           "tStat": 0.5917490409524886,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2615,7 +2615,7 @@
           "tStat": -1.9986916412926095,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2959,7 +2959,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3303,7 +3303,7 @@
           "tStat": -1.257464160480978,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.13453311845663815,
         "mae": -0.8456367445845693,
-        "lastBarT": 1795557900000
+        "lastBarT": 1795558800000
       },
       {
         "id": "sig_AAPL_1795447429924",
@@ -4644,6 +4644,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795559025530,
+        "type": "CYCLE",
+        "text": "[CYCLE #436] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795559022335,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795558126705,
         "type": "CYCLE",
@@ -6133,16 +6143,6 @@
         "t": 1795389823669,
         "type": "GEN",
         "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1260 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
-      },
-      {
-        "t": 1795389823669,
-        "type": "GEN",
-        "text": "[GEN #52] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-68.04R, 307 trade, Win 54.1%, t=-3.9 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795389823225,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6214,9 +6214,9 @@
       "losses": 3,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 11960,
+      "newsIngested": 11990,
       "lessons": 1,
-      "backtests": 11720,
+      "backtests": 11750,
       "netR": -0.69,
       "peakEquity": 2.22,
       "maxDrawdown": 2.91,
@@ -6229,7 +6229,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795558122387,
+      "fetchedAt": 1795559022335,
       "items": [
         {
           "source": "CoinDesk",
@@ -6303,6 +6303,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-24 22:12:10",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Europol follows $28.5M crypto trail in streaming piracy crackdown",
           "link": "https://cointelegraph.com/news/europol-crypto-trail-streaming-piracy-crackdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 21:50:25",
@@ -6363,13 +6370,6 @@
           "link": "https://cointelegraph.com/news/russia-usdt-buyer-face-22-tax-december-launch?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-24 14:10:23",
           "summary": "    Buyers will pay VAT on top of the trade price in December because Russia’s tax code has no explicit exemption for foreign digital instruments. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Swiss central bank, UBS and SIX study ledger for tokenized settlement",
-          "link": "https://cointelegraph.com/news/swiss-central-bank-ubs-six-explore-ledger-tokenized-settlement?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-24 13:57:56",
-          "summary": "    The study will assess whether a shared ledger can bring central bank money, commercial bank money and securities onto the same platform. "
         },
         {
           "source": "Decrypt",
@@ -6555,7 +6555,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795558122387
+        "t": 1795559022335
       },
       "lastErrors": []
     },
@@ -10738,7 +10738,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1286,
-        "updatedAt": 1795558124421
+        "updatedAt": 1795559023322
       }
     },
     "champion": {
@@ -10754,7 +10754,7 @@
       "deflatedT": -5.77,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795558124419,
+      "updatedAt": 1795559023322,
       "gen": 72
     },
     "factory": {
