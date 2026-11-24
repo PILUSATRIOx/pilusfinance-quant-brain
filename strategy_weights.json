@@ -6,10 +6,10 @@
     "wyckoff": 0.72,
     "rsidiv": 0.44,
     "macdm": 0.54,
-    "smc": 0.52,
-    "statarb": 0.57,
+    "smc": 0.5,
+    "statarb": 0.58,
     "tsmom": 1,
-    "emax": 0.53
+    "emax": 0.52
   },
-  "updatedAt": 1795464529326
+  "updatedAt": 1795493225290
 }
