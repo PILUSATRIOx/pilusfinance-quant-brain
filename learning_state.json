@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795616628419,
+  "updatedAt": 1795617528619,
   "brain": {
     "v": 1,
     "gen": 74,
-    "cycles": 448,
+    "cycles": 449,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795613756489,
     "autoExecBursa": false,
@@ -287,19 +287,19 @@
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 24,
-          "wins": 10,
+          "trades": 23,
+          "wins": 9,
           "losses": 14,
-          "winRate": 41.66666666666667,
-          "pf": 0.4446652821413501,
-          "exp": -0.3608577892160769,
-          "netR": -8.660586941185846,
+          "winRate": 39.130434782608695,
+          "pf": 0.4298033634857195,
+          "exp": -0.38662445057697586,
+          "netR": -8.892362363270445,
           "maxDD": 10.708976839710981,
-          "sumR2": 26.845345003316222,
-          "grossW": 6.93466878959351,
+          "sumR2": 26.79162515703373,
+          "grossW": 6.70289336750891,
           "grossL": 15.595255730779357,
-          "sd": 1.0155338015140924,
-          "tStat": -1.740793761803562,
+          "sd": 1.0303049072969286,
+          "tStat": -1.799647574837916,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -2661,15 +2661,15 @@
           "wins": 14,
           "losses": 20,
           "winRate": 41.17647058823529,
-          "pf": 0.2907939831138354,
-          "exp": -0.5625545944359329,
-          "netR": -19.126856210821717,
-          "maxDD": 21.10028023888815,
-          "sumR2": 47.63358247666028,
-          "grossW": 7.84253738626023,
+          "pf": 0.2863733884962077,
+          "exp": -0.5660610872646371,
+          "netR": -19.246076966997663,
+          "maxDD": 21.100280238888153,
+          "sumR2": 47.55594118389982,
+          "grossW": 7.723316630084287,
           "grossL": 26.969393597081954,
-          "sd": 1.0570639962013002,
-          "tStat": -3.10315060409594,
+          "sd": 1.0540180829105787,
+          "tStat": -3.1315164539391978,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -3383,19 +3383,19 @@
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 9,
+          "trades": 10,
           "wins": 6,
-          "losses": 3,
-          "winRate": 66.66666666666666,
-          "pf": 1.0770150108698648,
-          "exp": 0.031329937804044264,
-          "netR": 0.28196944023639836,
-          "maxDD": 1.3816295945927068,
-          "sumR2": 8.385288617524276,
+          "losses": 4,
+          "winRate": 60,
+          "pf": 0.7372862182263755,
+          "exp": -0.14050609299786596,
+          "netR": -1.4050609299786596,
+          "maxDD": 2.8136597941404267,
+          "sumR2": 11.231360087552233,
           "grossW": 3.9431964796359367,
-          "grossL": 3.661227039399538,
-          "sd": 1.0232579423402384,
-          "tStat": 0.09185349023255439,
+          "grossL": 5.348257409614596,
+          "sd": 1.1072458557588827,
+          "tStat": -0.4012833073104305,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -4648,6 +4648,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795617528590,
+        "type": "CYCLE",
+        "text": "[CYCLE #449] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795617524405,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795616628395,
         "type": "CYCLE",
@@ -6137,16 +6147,6 @@
         "t": 1795404760596,
         "type": "CYCLE",
         "text": "[CYCLE #324] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795404760543,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1260 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
-      },
-      {
-        "t": 1795404760543,
-        "type": "GEN",
-        "text": "[GEN #54] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-63.59R, 292 trade, Win 54.5%, t=-3.77 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12230,
+      "newsIngested": 12260,
       "lessons": 1,
-      "backtests": 12110,
+      "backtests": 12140,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,7 +6238,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795616623084,
+      "fetchedAt": 1795617524405,
       "items": [
         {
           "source": "CoinDesk",
@@ -6312,6 +6312,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Ex-FTX COO calls out Netflix over CZ’s ‘Asian mafia’ portrayal",
+          "link": "https://cointelegraph.com/news/ftx-coo-netflix-portrayal-binance-founder-racist?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-25 14:21:36",
+          "summary": "    Constance Waing said Netflix used racist stereotypes in its portrayal of CZ and misrepresented life at FTX before the exchange’s collapse. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Here’s what happened in crypto today",
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-25 13:26:05",
@@ -6372,13 +6379,6 @@
           "link": "https://cointelegraph.com/markets/stablecoin-cash-out-2022-bear-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-25 09:52:22",
           "summary": "    Crypto research firm Kaiko said the cash-out was smaller than in 2022 and has slowed, with stablecoin supply down just 0.4% since Nov. 13. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "EU seeks up to $55B for AI and quantum computing fund: Report",
-          "link": "https://cointelegraph.com/news/eu-55-billion-ai-quantum-computing-investment-fund?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-25 08:40:28",
-          "summary": "    Hackers already use AI to target crypto exchanges, while future quantum computers could break the cryptography that protects users’ funds. "
         },
         {
           "source": "Decrypt",
@@ -6576,7 +6576,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795616623084
+        "t": 1795617524405
       },
       "lastErrors": []
     },
@@ -7106,201 +7106,201 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.506,
+            0.501,
             0.227,
             10
           ],
           [
-            0.485,
+            0.483,
             0.254,
             61
           ],
           [
-            0.581,
+            0.578,
             -1.204,
             10
           ],
           [
-            0.447,
+            0.445,
             -1.21,
             56
           ],
           [
-            0.443,
+            0.442,
             1.44,
             61
           ],
           [
-            0.558,
+            0.553,
             0.219,
             15
           ],
           [
-            0.534,
+            0.53,
             0.233,
             41
           ],
           [
-            0.463,
+            0.461,
             1.465,
             95
           ],
           [
-            0.541,
+            0.536,
             0.229,
             10
           ],
           [
-            0.486,
+            0.481,
             1.434,
             27
           ],
           [
-            0.563,
+            0.558,
             -1.171,
             10
           ],
           [
-            0.475,
+            0.473,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.486,
+            0.481,
             1.36,
             10
           ],
           [
-            0.557,
+            0.553,
             0.144,
             10
           ],
           [
-            0.472,
+            0.47,
             -1.22,
             96
           ],
           [
-            0.545,
+            0.54,
             -1.215,
             10
           ],
           [
-            0.566,
+            0.563,
             0.469,
             10
           ],
           [
-            0.487,
+            0.483,
             -1.256,
             35
           ],
           [
-            0.495,
+            0.491,
             0.368,
             10
           ],
           [
-            0.493,
+            0.488,
             -1.259,
             35
           ],
           [
-            0.501,
+            0.495,
             0.296,
             10
           ],
           [
-            0.483,
+            0.48,
             -1.236,
             61
           ],
           [
-            0.514,
+            0.513,
             0.171,
             90
           ],
           [
-            0.489,
+            0.488,
             0.431,
             73
           ],
           [
-            0.571,
+            0.569,
             -1.251,
             35
           ],
           [
-            0.55,
+            0.545,
             -3.509,
             10
           ],
           [
-            0.496,
+            0.49,
             -1.21,
             10
           ],
           [
-            0.501,
+            0.494,
             0.063,
             10
           ],
           [
-            0.486,
+            0.479,
             0.615,
             10
           ],
           [
-            0.558,
+            0.555,
             -1.231,
             35
           ]
         ],
         "TSLA": [
           [
-            0.44,
+            0.438,
             0.805,
             61
           ],
           [
-            0.515,
+            0.51,
             0.264,
             10
           ],
           [
-            0.513,
+            0.505,
             0.241,
             10
           ],
           [
-            0.512,
+            0.509,
             -1.545,
             35
           ],
           [
-            0.493,
+            0.488,
             1.494,
             35
           ],
           [
-            0.452,
+            0.45,
             -1.907,
             56
           ],
           [
-            0.48,
+            0.477,
             0.308,
             56
           ],
           [
-            0.503,
+            0.496,
             1.513,
             10
           ],
           [
-            0.509,
+            0.503,
             -1.11,
             10
           ],
@@ -7310,42 +7310,42 @@
             95
           ],
           [
-            0.495,
+            0.49,
             1.519,
             10
           ],
           [
-            0.576,
+            0.572,
             -0.212,
             2
           ],
           [
-            0.511,
+            0.509,
             0.272,
             61
           ],
           [
-            0.568,
+            0.566,
             -1.13,
             69
           ],
           [
-            0.512,
+            0.507,
             0.292,
             49
           ],
           [
-            0.559,
+            0.557,
             0.289,
             35
           ],
           [
-            0.56,
+            0.558,
             -1.528,
             35
           ],
           [
-            0.577,
+            0.574,
             -1.101,
             10
           ]
@@ -10773,7 +10773,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795616624244
+        "updatedAt": 1795617524683
       }
     },
     "champion": {
@@ -10789,7 +10789,7 @@
       "deflatedT": -6.11,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795616624242,
+      "updatedAt": 1795617524683,
       "gen": 74
     },
     "factory": {
