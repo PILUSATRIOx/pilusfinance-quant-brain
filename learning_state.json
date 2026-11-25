@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795640024765,
+  "updatedAt": 1795640927454,
   "brain": {
     "v": 1,
     "gen": 79,
-    "cycles": 474,
+    "cycles": 475,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795640023091,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.43,
+    "lastHurst": 0.58,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2775,15 +2775,15 @@
           "wins": 48,
           "losses": 56,
           "winRate": 46.15384615384615,
-          "pf": 0.3039770072668134,
-          "exp": -0.4321739318156061,
-          "netR": -44.946088908823036,
-          "maxDD": 45.18926609258306,
-          "sumR2": 98.04418906387357,
-          "grossW": 19.629491751703593,
+          "pf": 0.30710450484775914,
+          "exp": -0.4302320090049911,
+          "netR": -44.744128936519076,
+          "maxDD": 45.18926609258307,
+          "sumR2": 98.18320100888086,
+          "grossW": 19.831451724007557,
           "grossL": 64.57558066052661,
-          "sd": 0.8736690910101724,
-          "tStat": -5.044617771806316,
+          "sd": 0.8754075030307669,
+          "tStat": -5.011977625719698,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2794,15 +2794,15 @@
           "wins": 49,
           "losses": 51,
           "winRate": 49,
-          "pf": 0.3884506629994588,
-          "exp": -0.37183434367095924,
-          "netR": -37.18343436709593,
-          "maxDD": 38.54755447749715,
-          "sumR2": 93.21907103749669,
-          "grossW": 23.618584566436212,
+          "pf": 0.3895772320657026,
+          "exp": -0.3711493669340024,
+          "netR": -37.11493669340024,
+          "maxDD": 38.54755447749716,
+          "sumR2": 93.32003246447371,
+          "grossW": 23.6870822401319,
           "grossL": 60.80201893353215,
-          "sd": 0.8955162899114237,
-          "tStat": -4.152178445662197,
+          "sd": 0.8963723027405692,
+          "tStat": -4.140571566069703,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3690,16 +3690,16 @@
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.4000000000000013,
-        "mfe": 0.8178023265997443,
+        "mfe": 0.8556635454238076,
         "mae": 0,
-        "lastBarT": 1795639800000
+        "lastBarT": 1795640700000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
         "sym": "LINKUSDT",
         "side": "LONG",
         "entry": 8.866,
-        "sl": 8.894026445394786,
+        "sl": 8.900026445394786,
         "slInit": 8.649574461990177,
         "risk": 0.2164255380098233,
         "rsiAtEntry": 57,
@@ -3754,9 +3754,9 @@
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.40000000000000024,
-        "mfe": 1.2105780233204668,
+        "mfe": 1.238301184159868,
         "mae": 0,
-        "lastBarT": 1795639800000
+        "lastBarT": 1795640700000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4774,6 +4774,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795640927438,
+        "type": "CYCLE",
+        "text": "[CYCLE #475] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795640922979,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795640024750,
         "type": "CYCLE",
@@ -6263,16 +6273,6 @@
         "t": 1795449229564,
         "type": "CYCLE",
         "text": "[CYCLE #349] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795449223320,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795448330270,
-        "type": "CYCLE",
-        "text": "[CYCLE #348] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6349,9 +6349,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13010,
+      "newsIngested": 13040,
       "lessons": 1,
-      "backtests": 12890,
+      "backtests": 12920,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795640022799,
+      "fetchedAt": 1795640922979,
       "items": [
         {
           "source": "CoinDesk",
@@ -6694,7 +6694,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795640022799
+        "t": 1795640922979
       },
       "lastErrors": []
     },
@@ -10961,7 +10961,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795640023092
+        "updatedAt": 1795640925025
       }
     },
     "champion": {
@@ -10977,7 +10977,7 @@
       "deflatedT": -5.99,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795640023091,
+      "updatedAt": 1795640925024,
       "gen": 79
     },
     "factory": {
