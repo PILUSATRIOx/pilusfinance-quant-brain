@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795630129134,
+  "updatedAt": 1795631928673,
   "brain": {
     "v": 1,
     "gen": 77,
-    "cycles": 463,
+    "cycles": 465,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795629229970,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.56,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -420,19 +420,19 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 83,
+          "trades": 84,
           "wins": 42,
-          "losses": 41,
-          "winRate": 50.602409638554214,
-          "pf": 0.657857868696914,
-          "exp": -0.1975193171967722,
-          "netR": -16.394103327332093,
+          "losses": 42,
+          "winRate": 50,
+          "pf": 0.6426526307759514,
+          "exp": -0.20866432207192256,
+          "netR": -17.527803054041495,
           "maxDD": 20.231908076992145,
-          "sumR2": 94.04208931273304,
+          "sumR2": 95.32736438307401,
           "grossW": 31.521957944903935,
-          "grossL": 47.91606127223603,
-          "sd": 1.052314158423171,
-          "tStat": -1.7100279469921313,
+          "grossL": 49.04976099894543,
+          "sd": 1.0509315273591793,
+          "tStat": -1.8197570932790565,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -454,7 +454,7 @@
           "tStat": -1.1211680323522641,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -462,34 +462,34 @@
           "wins": 56,
           "losses": 38,
           "winRate": 59.57446808510638,
-          "pf": 0.6533311841571582,
-          "exp": -0.16335237247069284,
-          "netR": -15.355123012245127,
-          "maxDD": 18.872555246517873,
-          "sumR2": 84.30570824910964,
+          "pf": 0.655113007280969,
+          "exp": -0.16207075317414502,
+          "netR": -15.234650798369632,
+          "maxDD": 17.94753142468204,
+          "sumR2": 84.0106232184993,
           "grossW": 28.938226462852104,
-          "grossL": 44.293349475097216,
-          "sd": 0.9378390424954689,
-          "tStat": -1.6887332896277312,
+          "grossL": 44.172877261221736,
+          "sd": 0.9363710084554842,
+          "tStat": -1.678110745727873,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 82,
+          "trades": 83,
           "wins": 47,
-          "losses": 35,
-          "winRate": 57.3170731707317,
-          "pf": 0.7108776766237034,
-          "exp": -0.1390637699259089,
-          "netR": -11.40322913392453,
+          "losses": 36,
+          "winRate": 56.62650602409639,
+          "pf": 0.6913054227914496,
+          "exp": -0.15084191824952856,
+          "netR": -12.51987921471087,
           "maxDD": 16.790537646105832,
-          "sumR2": 70.21668834746194,
+          "sumR2": 71.46359575038208,
           "grossW": 28.03761722051998,
-          "grossL": 39.44084635444452,
-          "sd": 0.9204864006396757,
-          "tStat": -1.3680549702476053,
+          "grossL": 40.55749643523086,
+          "sd": 0.921127842305573,
+          "tStat": -1.4919050473204112,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -500,34 +500,34 @@
           "wins": 38,
           "losses": 49,
           "winRate": 43.67816091954023,
-          "pf": 0.4586731140923065,
-          "exp": -0.3453190025012566,
-          "netR": -30.04275321760932,
+          "pf": 0.4586565217733082,
+          "exp": -0.3453295869432912,
+          "netR": -30.043674064066334,
           "maxDD": 32.814545092459035,
-          "sumR2": 89.58151804873776,
-          "grossW": 25.455604613322755,
+          "sumR2": 89.57857612602626,
+          "grossW": 25.45468376686574,
           "grossL": 55.498357830932065,
-          "sd": 0.9596946248510119,
-          "tStat": -3.356193884136611,
+          "sd": 0.9596729492034407,
+          "tStat": -3.3563725624862273,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 82,
+          "trades": 83,
           "wins": 43,
-          "losses": 39,
-          "winRate": 52.4390243902439,
-          "pf": 0.5918418154058906,
-          "exp": -0.22269217144395906,
-          "netR": -18.260758058404644,
+          "losses": 40,
+          "winRate": 51.80722891566265,
+          "pf": 0.5771808204263742,
+          "exp": -0.2337010343603173,
+          "netR": -19.397185851906336,
           "maxDD": 23.403706743912583,
-          "sumR2": 78.63009019734969,
+          "sumR2": 79.92155832719281,
           "grossW": 26.478656089480072,
-          "grossL": 44.73941414788471,
-          "sd": 0.9594466147637473,
-          "tStat": -2.1017984207174805,
+          "grossL": 45.875841941386405,
+          "sd": 0.9588383210816465,
+          "tStat": -2.2205179998596374,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -764,76 +764,76 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 64,
+          "trades": 63,
           "wins": 34,
-          "losses": 29,
-          "winRate": 53.125,
-          "pf": 0.6620864664300558,
-          "exp": -0.18000124028992792,
-          "netR": -11.520079378555387,
+          "losses": 28,
+          "winRate": 53.96825396825397,
+          "pf": 0.6848247936237635,
+          "exp": -0.16488799849122673,
+          "netR": -10.387943904947285,
           "maxDD": 15.000495470405054,
-          "sumR2": 66.4977814549368,
+          "sumR2": 65.21605072433495,
           "grossW": 22.575328208968667,
-          "grossL": 34.097250666810865,
-          "sd": 1.0112396359157205,
-          "tStat": -1.4240046287499728,
+          "grossL": 32.965115193202756,
+          "sd": 1.0120500070952207,
+          "tStat": -1.2931751448896547,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 70,
+          "trades": 69,
           "wins": 40,
-          "losses": 30,
-          "winRate": 57.14285714285714,
-          "pf": 0.6418336112665561,
-          "exp": -0.18008547832482313,
-          "netR": -12.605983482737619,
+          "losses": 29,
+          "winRate": 57.971014492753625,
+          "pf": 0.6629742260321998,
+          "exp": -0.16643004895953628,
+          "netR": -11.483673378208003,
           "maxDD": 16.1801402485133,
-          "sumR2": 64.99275513128086,
+          "sumR2": 63.73317516055159,
           "grossW": 22.589902784857667,
-          "grossL": 35.19588626759528,
-          "sd": 0.9534270798594067,
-          "tStat": -1.5803025134954862,
+          "grossL": 34.07357616306566,
+          "sd": 0.9534916239952682,
+          "tStat": -1.449904520819124,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 72,
+          "trades": 71,
           "wins": 37,
-          "losses": 34,
-          "winRate": 51.388888888888886,
-          "pf": 0.36651104524680644,
-          "exp": -0.35521218473011257,
-          "netR": -25.575277300568104,
-          "maxDD": 30.678608911564368,
-          "sumR2": 66.27377632264484,
+          "losses": 33,
+          "winRate": 52.112676056338024,
+          "pf": 0.37800081824767534,
+          "exp": -0.34293588334940794,
+          "netR": -24.348447717807964,
+          "maxDD": 30.135763888145018,
+          "sumR2": 64.76866549750942,
           "grossW": 14.792875364595787,
-          "grossL": 40.36133578084761,
-          "sd": 0.8974857384219915,
-          "tStat": -3.358354574293878,
+          "grossL": 39.13450619808747,
+          "sd": 0.897764756581717,
+          "tStat": -3.218692975541891,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 64,
+          "trades": 63,
           "wins": 32,
-          "losses": 32,
-          "winRate": 50,
-          "pf": 0.523165827182106,
-          "exp": -0.2701650357651768,
-          "netR": -17.290562288971316,
-          "maxDD": 18.203646456416767,
-          "sumR2": 60.06098696564867,
+          "losses": 31,
+          "winRate": 50.79365079365079,
+          "pf": 0.5395833153295294,
+          "exp": -0.25694081941424735,
+          "netR": -16.187271623097583,
+          "maxDD": 17.402775573934086,
+          "sumR2": 58.84373667224456,
           "grossW": 18.97060202060658,
-          "grossL": 36.2611643095779,
-          "sd": 0.9376573441417688,
-          "tStat": -2.305021444800452,
+          "grossL": 35.15787364370417,
+          "sd": 0.9391534094110854,
+          "tStat": -2.17153503257004,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -855,23 +855,23 @@
           "tStat": -3.005078585040994,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 68,
+          "trades": 67,
           "wins": 37,
-          "losses": 31,
-          "winRate": 54.41176470588235,
-          "pf": 0.4937413788620563,
-          "exp": -0.2633912586915121,
-          "netR": -17.910605591022822,
+          "losses": 30,
+          "winRate": 55.223880597014926,
+          "pf": 0.5100320398949407,
+          "exp": -0.25045677489016743,
+          "netR": -16.78060391764122,
           "maxDD": 20.615661838804698,
-          "sumR2": 55.81559931547534,
+          "sumR2": 54.53869553363012,
           "grossW": 17.467765943202576,
-          "grossL": 35.37837153422541,
-          "sd": 0.873303065523456,
-          "tStat": -2.487086152156239,
+          "grossL": 34.24836986084381,
+          "sd": 0.8733068431881306,
+          "tStat": -2.347487681531693,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1142,7 +1142,7 @@
           "tStat": -1.388571310051048,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1199,23 +1199,23 @@
           "tStat": -0.17134685031462807,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 45,
-          "wins": 29,
+          "trades": 44,
+          "wins": 28,
           "losses": 16,
-          "winRate": 64.44444444444444,
-          "pf": 0.9396212640929728,
-          "exp": -0.024535371516709332,
-          "netR": -1.1040917182519199,
-          "maxDD": 5.844824808055947,
-          "sumR2": 38.2091355328413,
-          "grossW": 17.182010196038416,
+          "winRate": 63.63636363636363,
+          "pf": 0.856498117686874,
+          "exp": -0.059638410110689,
+          "netR": -2.624090044870316,
+          "maxDD": 5.8448248080559475,
+          "sumR2": 35.89874061991858,
+          "grossW": 15.662011869420018,
           "grossL": 18.286101914290338,
-          "sd": 0.9315437606510236,
-          "tStat": -0.17668335363944418,
+          "sd": 0.9117099199734686,
+          "tStat": -0.4339060595858151,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1452,19 +1452,19 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 60,
-          "wins": 31,
+          "trades": 61,
+          "wins": 32,
           "losses": 29,
-          "winRate": 51.66666666666667,
-          "pf": 0.6834713865140152,
-          "exp": -0.1826115042204832,
-          "netR": -10.956690253228992,
+          "winRate": 52.459016393442624,
+          "pf": 0.6908997790976843,
+          "exp": -0.17540254453464357,
+          "netR": -10.699555216613257,
           "maxDD": 14.066131457009291,
-          "sumR2": 69.53822458667857,
-          "grossW": 23.65847496852157,
+          "sumR2": 69.60434301373394,
+          "grossW": 23.915610005137307,
           "grossL": 34.61516522175056,
-          "sd": 1.0699073846996712,
-          "tStat": -1.3220795085367996,
+          "sd": 1.06244696968328,
+          "tStat": -1.289417453949054,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1486,7 +1486,7 @@
           "tStat": -0.4923880149394119,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1528,22 +1528,22 @@
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 46,
-          "wins": 27,
+          "trades": 47,
+          "wins": 28,
           "losses": 19,
-          "winRate": 58.69565217391305,
-          "pf": 0.7967671363891848,
-          "exp": -0.09550205234210439,
-          "netR": -4.393094407736802,
+          "winRate": 59.57446808510638,
+          "pf": 0.8093997086841832,
+          "exp": -0.08766016867337062,
+          "netR": -4.120027927648419,
           "maxDD": 8.602116764189912,
-          "sumR2": 42.507198674759664,
-          "grossW": 17.222968711609127,
+          "sumR2": 42.581763977307524,
+          "grossW": 17.496035191697512,
           "grossL": 21.61606311934593,
-          "sd": 0.9670993186119703,
-          "tStat": -0.6697620612322455,
+          "sd": 0.9580392298656358,
+          "tStat": -0.6272893842998579,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -1830,7 +1830,7 @@
           "tStat": -0.4634373471048268,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1887,7 +1887,7 @@
           "tStat": 0.10089839816363382,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -2174,7 +2174,7 @@
           "tStat": -4.016345378198924,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2231,7 +2231,7 @@
           "tStat": -1.725544745341245,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -2484,57 +2484,57 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 31,
-          "wins": 13,
+          "trades": 32,
+          "wins": 14,
           "losses": 18,
-          "winRate": 41.935483870967744,
-          "pf": 0.365090797637267,
-          "exp": -0.44234858634841806,
-          "netR": -13.71280617680096,
+          "winRate": 43.75,
+          "pf": 0.3774206221767513,
+          "exp": -0.42020330948469875,
+          "netR": -13.44650590351036,
           "maxDD": 13.71280617680096,
-          "sumR2": 34.24935077461936,
-          "grossW": 7.88525245232351,
+          "sumR2": 34.32026661017401,
+          "grossW": 8.15155272561411,
           "grossL": 21.59805862912447,
-          "sd": 0.9692524670666152,
-          "tStat": -2.5410228796969263,
+          "sd": 0.9616853540917769,
+          "tStat": -2.4717324297344265,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 31,
-          "wins": 21,
+          "trades": 32,
+          "wins": 22,
           "losses": 10,
-          "winRate": 67.74193548387096,
-          "pf": 0.9015967508334459,
-          "exp": -0.03781829595153601,
-          "netR": -1.1723671744976163,
+          "winRate": 68.75,
+          "pf": 0.9240237079267045,
+          "exp": -0.028286702808719835,
+          "netR": -0.9051744898790347,
           "maxDD": 5.38409936793859,
-          "sumR2": 23.957891317054962,
-          "grossW": 10.741539982300711,
+          "sumR2": 24.029283247768646,
+          "grossW": 11.008732666919293,
           "grossL": 11.913907156798329,
-          "sd": 0.8928149190115113,
-          "tStat": -0.2358421168578235,
+          "sd": 0.879950124062821,
+          "tStat": -0.18184411890168814,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 29,
-          "wins": 14,
+          "trades": 30,
+          "wins": 15,
           "losses": 15,
-          "winRate": 48.275862068965516,
-          "pf": 0.38124993076888,
-          "exp": -0.4080459018430276,
-          "netR": -11.8333311534478,
+          "winRate": 50,
+          "pf": 0.3938046150081085,
+          "exp": -0.3864409390808706,
+          "netR": -11.59322817242612,
           "maxDD": 12.583743616700993,
-          "sumR2": 31.93299453654608,
-          "grossW": 7.291242308260741,
+          "sumR2": 31.990643978041575,
+          "grossW": 7.531345289282421,
           "grossL": 19.124573461708543,
-          "sd": 0.983878118435813,
-          "tStat": -2.2334010576370877,
+          "sd": 0.9739812714355732,
+          "tStat": -2.1731672434121703,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2575,7 +2575,7 @@
           "tStat": 1.013326050097401,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -2828,19 +2828,19 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 99,
-          "wins": 53,
+          "trades": 100,
+          "wins": 54,
           "losses": 46,
-          "winRate": 53.535353535353536,
-          "pf": 0.6044986357942981,
-          "exp": -0.21473589554596703,
-          "netR": -21.258853659050736,
+          "winRate": 54,
+          "pf": 0.609282395981824,
+          "exp": -0.21001718622435,
+          "netR": -21.001718622435,
           "maxDD": 28.241993529901436,
-          "sumR2": 96.32200220421733,
-          "grossW": 32.49280330867067,
+          "sumR2": 96.3881206312727,
+          "grossW": 32.74993834528641,
           "grossL": 53.751656967721416,
-          "sd": 0.9676236577910562,
-          "tStat": -2.2080848958553796,
+          "sd": 0.9638799894927684,
+          "tStat": -2.17887276957445,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2862,7 +2862,7 @@
           "tStat": -2.5915882040592733,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2904,22 +2904,22 @@
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 88,
-          "wins": 54,
+          "trades": 89,
+          "wins": 55,
           "losses": 34,
-          "winRate": 61.36363636363637,
-          "pf": 0.9852088274925779,
-          "exp": -0.006400730351352743,
-          "netR": -0.5632642709190414,
+          "winRate": 61.79775280898876,
+          "pf": 0.9921675806590357,
+          "exp": -0.003351317128249497,
+          "netR": -0.2982672244142052,
           "maxDD": 7.978166795373767,
-          "sumR2": 82.44871521512044,
-          "grossW": 37.517845974830465,
+          "sumR2": 82.51893864977673,
+          "grossW": 37.7828430213353,
           "grossL": 38.08111024574951,
-          "sd": 0.9734705653084252,
-          "tStat": -0.06168052242001411,
+          "sd": 0.9683511000531143,
+          "tStat": -0.03264958603724384,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -3206,7 +3206,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -3263,7 +3263,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -3550,7 +3550,7 @@
           "tStat": -2.085551770565236,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -3607,7 +3607,7 @@
           "tStat": -1.5012503463066065,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
@@ -3692,8 +3692,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0,
-        "mae": 0
+        "mfe": 0.4897758414960653,
+        "mae": 0,
+        "lastBarT": 1795631700000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -3826,9 +3827,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0.6429291219894065,
+        "mfe": 0.737788923155098,
         "mae": -0.98020007596162,
-        "lastBarT": 1795627800000
+        "lastBarT": 1795631400000
       },
       {
         "id": "sig_ETHUSDT_1795444726674",
@@ -4711,6 +4712,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795631928652,
+        "type": "CYCLE",
+        "text": "[CYCLE #465] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795631923421,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795631030584,
+        "type": "CYCLE",
+        "text": "[CYCLE #464] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795631023672,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795630129109,
         "type": "CYCLE",
@@ -6190,26 +6211,6 @@
         "t": 1795442026415,
         "type": "CYCLE",
         "text": "[CYCLE #341] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795442023405,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795441129100,
-        "type": "CYCLE",
-        "text": "[CYCLE #340] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795441125135,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795440229346,
-        "type": "CYCLE",
-        "text": "[CYCLE #339] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6286,9 +6287,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12680,
+      "newsIngested": 12740,
       "lessons": 1,
-      "backtests": 12560,
+      "backtests": 12620,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6301,8 +6302,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795630123359,
+      "fetchedAt": 1795631923421,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "French Senate blocks new crypto tax and wallet list critics called a kidnapping risk",
+          "link": "https://www.coindesk.com/business/2026/11/25/french-senate-blocks-new-crypto-tax-and-wallet-list-critics-called-a-kidnapping-risk",
+          "pubDate": "2026-11-25 18:24:47",
+          "summary": "The government opposed the measures citing existing EU data-sharing rules and non-legal tender status, leaving the 2027 budget open."
+        },
         {
           "source": "CoinDesk",
           "title": "&#39;This time actually seems different&#39;: Crypto veterans brace for more pain as bitcoin tumbles",
@@ -6365,13 +6373,6 @@
           "link": "https://www.coindesk.com/markets/2026/11/25/bitcoin-hasn-t-paid-its-holders-for-the-risk-it-carries-and-now-gold-is-doing-the-same",
           "pubDate": "2026-11-25 11:30:32",
           "summary": "Gold has lost the risk-adjusted advantage that made it this year&#39;s haven of choice over bitcoin. Both now offer negative one-year Sharpe ratios, leaving cash yields hard to beat."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "EU proposes $54.7 billion fund for AI, quantum startups alongside post-quantum security push",
-          "link": "https://www.coindesk.com/business/2026/11/25/eu-proposes-usd54-7-billion-fund-for-ai-quantum-startups-alongside-post-quantum-security-push",
-          "pubDate": "2026-11-25 11:00:27",
-          "summary": "Brussels wants tech firms to grow at home. EU scale-ups raise about half the capital of San Francisco peers by year 10, an EIB study found."
         },
         {
           "source": "CoinTelegraph",
@@ -6445,6 +6446,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Elon Musk’s SpaceX Gets FCC Approval to Launch AI Data Centers in Space",
+          "link": "https://decrypt.co/383991/elon-musk-spacex-fcc-approval-ai-data-centers-space",
+          "pubDate": "2026-11-25 18:18:10",
+          "summary": "The FCC authorized SpaceX’s solar-powered Starmind constellation, backing Elon Musk’s plans to move AI computing into orbit and reduce the industry’s dependence on increasingly strained power grids here on Earth."
+        },
+        {
+          "source": "Decrypt",
           "title": "OpenAI’s Changes to ChatGPT Could Drastically Cut Usage Limits for Paying Subscribers",
           "link": "https://decrypt.co/383963/openai-changes-chatgpt-drastically-cut-usage-limits",
           "pubDate": "2026-11-25 17:46:02",
@@ -6505,13 +6513,6 @@
           "link": "https://decrypt.co/383935/take-two-hits-gta-6-pc-port-leonida-with-dmca-taking-down-3007-github-repos",
           "pubDate": "2026-11-25 10:35:57",
           "summary": "Rockstar&#39;s parent said the project&#39;s &quot;bring your own files&quot; instruction was a misleading attempt to dodge responsibility for the leak."
-        },
-        {
-          "source": "Decrypt",
-          "title": "OpenAI and Anthropic Insiders Fear Their Next AI Models Are Too Dangerous to Release",
-          "link": "https://decrypt.co/383933/openai-and-anthropic-insiders-fear-next-ai-models-too-dangerous",
-          "pubDate": "2026-11-24 22:36:02",
-          "summary": "Employees at both AI labs reportedly question whether their strongest models should ever reach the public, as researchers struggle to keep increasingly capable systems under control during training and testing."
         }
       ],
       "perCoin": {
@@ -6630,23 +6631,23 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795630123359
+        "t": 1795631923421
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795628330272,
+      "fetchedAt": 1795631024426,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 20,
+        "ARB": 19.09,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5.29,
+        "ZRO": 5.01,
         "ETHFI": 20,
-        "ENA": 0.52,
+        "ENA": 1.55,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6658,112 +6659,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 91.19,
+          "pct": 90.78,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 498.22,
+          "pct": 495.97,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 435.91,
+          "pct": 433.94,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 20.16,
+          "pct": 19.09,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 72.01,
+          "pct": 68.19,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 359.31,
+          "pct": 340.22,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 5.29,
+          "pct": 5.01,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 42.86,
+          "pct": 40.58,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 19.48,
+          "pct": 18.45,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 62.71,
+          "pct": 59.38,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 195.17,
+          "pct": 184.79,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 99.64,
+          "pct": 94.34,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 119.91,
+          "pct": 114.8,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 280.62,
+          "pct": 268.66,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 37.21,
+          "pct": 35.63,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1318.02,
+          "pct": 1304.05,
           "lev": 10
         }
       ]
@@ -8788,11 +8789,6 @@
         ],
         "XRPUSDT": [
           [
-            0.603,
-            0.22,
-            2
-          ],
-          [
             0.615,
             -1.159,
             10
@@ -9875,6 +9871,11 @@
             0.461,
             0.211,
             69
+          ],
+          [
+            0.547,
+            0.24,
+            41
           ]
         ],
         "ADAUSDT": [
@@ -10499,6 +10500,11 @@
             0.623,
             -1.139,
             10
+          ],
+          [
+            0.574,
+            0.273,
+            10
           ]
         ],
         "LINKUSDT": [
@@ -10846,12 +10852,12 @@
       },
       "status": {
         "all": {
-          "n": 782,
-          "mean": -0.289,
-          "sd": 0.944,
-          "t": -8.57,
-          "winRate": 52,
-          "sum": -226.05
+          "n": 783,
+          "mean": -0.288,
+          "sd": 0.943,
+          "t": -8.55,
+          "winRate": 52.1,
+          "sum": -225.76
         },
         "base": {
           "n": 75,
@@ -10882,23 +10888,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795630125689
+        "updatedAt": 1795631925645
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -88.43,
-      "trades": 553,
-      "winRate": 57.7,
-      "pf": 0.68,
-      "expPerTrade": -0.16,
-      "tStat": -3.85,
-      "deflatedT": -5.99,
+      "netR": -87.9,
+      "trades": 555,
+      "winRate": 57.8,
+      "pf": 0.69,
+      "expPerTrade": -0.158,
+      "tStat": -3.82,
+      "deflatedT": -5.97,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795630125688,
+      "updatedAt": 1795631925645,
       "gen": 77
     },
     "factory": {
