@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795639125533,
+  "updatedAt": 1795640024765,
   "brain": {
     "v": 1,
-    "gen": 78,
-    "cycles": 473,
+    "gen": 79,
+    "cycles": 474,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795634622614,
+    "lastOptAt": 1795640023091,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -40,9 +40,9 @@
       "bbrev": 0.79,
       "wyckoff": 0.75,
       "rsidiv": 0.46,
-      "macdm": 0.56,
+      "macdm": 0.55,
       "smc": 0.5,
-      "statarb": 0.6,
+      "statarb": 0.61,
       "tsmom": 1,
       "emax": 0.54
     },
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.45,
+    "lastHurst": 0.43,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -310,15 +310,15 @@
           "wins": 18,
           "losses": 13,
           "winRate": 58.06451612903226,
-          "pf": 0.5224802935386444,
-          "exp": -0.30639339691419143,
-          "netR": -9.498195304339934,
-          "maxDD": 13.089247098172839,
-          "sumR2": 44.49861828414109,
+          "pf": 0.5206756481861273,
+          "exp": -0.30861728385068793,
+          "netR": -9.567135799371325,
+          "maxDD": 13.15818759320423,
+          "sumR2": 44.68068404349825,
           "grossW": 10.392492296232623,
-          "grossL": 19.890687600572555,
-          "sd": 1.1774044046162155,
-          "tStat": -1.4488872554382275,
+          "grossL": 19.959628095603946,
+          "sd": 1.1793797886864885,
+          "tStat": -1.4569592689823778,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2737,15 +2737,15 @@
           "wins": 17,
           "losses": 16,
           "winRate": 51.515151515151516,
-          "pf": 0.4961414215256835,
-          "exp": -0.29845311196758206,
-          "netR": -9.848952694930208,
-          "maxDD": 12.089950174639396,
-          "sumR2": 38.80009132764538,
+          "pf": 0.4952527542265988,
+          "exp": -0.2995159810020788,
+          "netR": -9.884027373068601,
+          "maxDD": 12.089950174639394,
+          "sumR2": 38.81404248156966,
           "grossW": 9.69810498294605,
-          "grossL": 19.547057677876253,
-          "sd": 1.0586052254355427,
-          "tStat": -1.6195674813966774,
+          "grossL": 19.582132356014647,
+          "sd": 1.0585015695352324,
+          "tStat": -1.6254943459944164,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2756,15 +2756,15 @@
           "wins": 14,
           "losses": 18,
           "winRate": 42.42424242424242,
-          "pf": 0.3868675128228742,
-          "exp": -0.4873750415699179,
-          "netR": -16.08337637180729,
+          "pf": 0.3876519342602248,
+          "exp": -0.4867511369350206,
+          "netR": -16.06278751885568,
           "maxDD": 18.93023646860903,
-          "sumR2": 56.75985981020562,
-          "grossW": 10.154182374424437,
+          "sumR2": 56.76192993077696,
+          "grossW": 10.17477122737605,
           "grossL": 26.24718291885494,
-          "sd": 1.2364417644799761,
-          "tStat": -2.2643658109001144,
+          "sd": 1.236721343962893,
+          "tStat": -2.260955883915539,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3692,7 +3692,7 @@
         "lockedR": 0.4000000000000013,
         "mfe": 0.8178023265997443,
         "mae": 0,
-        "lastBarT": 1795638900000
+        "lastBarT": 1795639800000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
@@ -3756,7 +3756,7 @@
         "lockedR": 0.40000000000000024,
         "mfe": 1.2105780233204668,
         "mae": 0,
-        "lastBarT": 1795638900000
+        "lastBarT": 1795639800000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4774,6 +4774,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795640024750,
+        "type": "CYCLE",
+        "text": "[CYCLE #474] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795640023092,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (75 trade OOS, -0.123R/trade, win 58.7%, t=-1.08) | Meta-model belum aktif (1292 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.287R)"
+      },
+      {
+        "t": 1795640023091,
+        "type": "GEN",
+        "text": "[GEN #79] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-88.55R, 555 trade, Win 57.7%, t=-3.84 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795640022799,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795639125517,
         "type": "CYCLE",
@@ -6253,26 +6273,6 @@
         "t": 1795448330270,
         "type": "CYCLE",
         "text": "[CYCLE #348] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795448326437,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1269 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.284R)"
-      },
-      {
-        "t": 1795448326437,
-        "type": "GEN",
-        "text": "[GEN #58] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-67.05R, 309 trade, Win 54.4%, t=-3.85 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795448325210,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795447430470,
-        "type": "CYCLE",
-        "text": "[CYCLE #347] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6349,9 +6349,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 12980,
+      "newsIngested": 13010,
       "lessons": 1,
-      "backtests": 12860,
+      "backtests": 12890,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795639122937,
+      "fetchedAt": 1795640022799,
       "items": [
         {
           "source": "CoinDesk",
@@ -6508,6 +6508,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Another Bitcoin Mining Firm Flags &#39;Hashrate Hijacking&#39; Attacks That Reroute Rewards",
+          "link": "https://decrypt.co/383999/another-bitcoin-mining-firm-hashrate-hijacking-attacks",
+          "pubDate": "2026-11-25 20:36:03",
+          "summary": "Braiins says an attacker exploited the unencrypted Stratum V1 protocol and internet route hijacking to impersonate mining pools, striking over 1,000 sites in a single second."
+        },
+        {
+          "source": "Decrypt",
           "title": "What Is Artex? The AI Hacking Tool Linked to the US Spy Agency Breach",
           "link": "https://decrypt.co/383997/what-is-artex-ai-hacking-tool-us-spy-agency-breach",
           "pubDate": "2026-11-25 20:06:03",
@@ -6568,19 +6575,12 @@
           "link": "https://decrypt.co/383944/french-senate-rejects-plan-to-make-crypto-holders-declare-self-custody-wallets",
           "pubDate": "2026-11-25 13:15:24",
           "summary": "Holders had warned that reporting wallets worth over €100,000 could expose them to risk in a country hit by a wave of crypto kidnappings."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Florida Man Jailed for Using AI to Pose as Streamer N3ON in $260K Crypto Scam",
-          "link": "https://decrypt.co/383941/florida-man-jailed-for-using-ai-to-pose-as-streamer-n3on-in-260k-crypto-scam",
-          "pubDate": "2026-11-25 11:52:06",
-          "summary": "David Anthony Sanchez posed as the streamer to persuade a meme coin project&#39;s organizers to pay him for a fake endorsement deal."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.17,
+          "impact": -1,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6694,7 +6694,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795639122937
+        "t": 1795640022799
       },
       "lastErrors": []
     },
@@ -10961,7 +10961,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795639123848
+        "updatedAt": 1795640023092
       }
     },
     "champion": {
@@ -10977,8 +10977,8 @@
       "deflatedT": -5.99,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795639123847,
-      "gen": 78
+      "updatedAt": 1795640023091,
+      "gen": 79
     },
     "factory": {
       "updatedAt": 1795608099102,
