@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795637327570,
+  "updatedAt": 1795638225599,
   "brain": {
     "v": 1,
     "gen": 78,
-    "cycles": 471,
+    "cycles": 472,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795634622614,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.59,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 101,
-          "wins": 54,
+          "trades": 102,
+          "wins": 55,
           "losses": 47,
-          "winRate": 53.46534653465347,
-          "pf": 0.6307286978607394,
-          "exp": -0.19110559633900048,
-          "netR": -19.30166523023905,
+          "winRate": 53.92156862745098,
+          "pf": 0.6597769492001762,
+          "exp": -0.17434631957443522,
+          "netR": -17.783324596592394,
           "maxDD": 22.41814619846025,
-          "sumR2": 89.68081137278205,
-          "grossW": 32.967940120679735,
+          "sumR2": 91.9850224507151,
+          "grossW": 34.486280754326394,
           "grossL": 52.26960535091878,
-          "sd": 0.9273195518731472,
-          "tStat": -2.0711171999205487,
+          "sd": 0.9381072436397258,
+          "tStat": -1.8769831780592137,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3692,7 +3692,7 @@
         "lockedR": 0.4000000000000013,
         "mfe": 0.8178023265997443,
         "mae": 0,
-        "lastBarT": 1795637100000
+        "lastBarT": 1795638000000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
@@ -3756,7 +3756,7 @@
         "lockedR": 0.40000000000000024,
         "mfe": 1.2105780233204668,
         "mae": 0,
-        "lastBarT": 1795637100000
+        "lastBarT": 1795638000000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4774,6 +4774,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795638225584,
+        "type": "CYCLE",
+        "text": "[CYCLE #472] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795638222577,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795637327554,
         "type": "CYCLE",
@@ -6263,16 +6273,6 @@
         "t": 1795447424961,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795446529296,
-        "type": "CYCLE",
-        "text": "[CYCLE #346] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795446524128,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6349,9 +6349,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 12920,
+      "newsIngested": 12950,
       "lessons": 1,
-      "backtests": 12800,
+      "backtests": 12830,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795637323684,
+      "fetchedAt": 1795638222577,
       "items": [
         {
           "source": "CoinDesk",
@@ -6508,6 +6508,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "What Is Artex? The AI Hacking Tool Linked to the US Spy Agency Breach",
+          "link": "https://decrypt.co/383997/what-is-artex-ai-hacking-tool-us-spy-agency-breach",
+          "pubDate": "2026-11-25 20:06:03",
+          "summary": "Microsoft says state-backed hackers and cybercriminals are using Artex to automate attacks with AI agents, exploiting familiar security flaws at speeds that leave defenders little time to respond or recover."
+        },
+        {
+          "source": "Decrypt",
           "title": "Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
           "link": "https://decrypt.co/383994/nvidia-290-million-settle-crypto-mining-disclosure-lawsuit",
           "pubDate": "2026-11-25 19:28:54",
@@ -6568,19 +6575,12 @@
           "link": "https://decrypt.co/383941/florida-man-jailed-for-using-ai-to-pose-as-streamer-n3on-in-260k-crypto-scam",
           "pubDate": "2026-11-25 11:52:06",
           "summary": "David Anthony Sanchez posed as the streamer to persuade a meme coin project&#39;s organizers to pay him for a fake endorsement deal."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Hyperliquid Leads Altcoin Losses as Bitcoin Slips Below $59K",
-          "link": "https://decrypt.co/383938/hyperliquid-leads-altcoin-losses-as-bitcoin-slips-below-59k",
-          "pubDate": "2026-11-25 11:23:57",
-          "summary": "HYPE fell more than 8% after Abraxas Capital pulled out of Hyperliquid, while U.S. Bitcoin ETFs&#39; November outflows passed $4.9 billion."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BEARISH",
-          "impact": -0.33,
+          "impact": -0.17,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6694,7 +6694,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795637323684
+        "t": 1795638222577
       },
       "lastErrors": []
     },
@@ -10961,7 +10961,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795637325694
+        "updatedAt": 1795638223587
       }
     },
     "champion": {
@@ -10977,7 +10977,7 @@
       "deflatedT": -5.92,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795637325693,
+      "updatedAt": 1795638223586,
       "gen": 78
     },
     "factory": {
