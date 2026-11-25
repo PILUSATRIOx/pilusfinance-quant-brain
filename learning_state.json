@@ -1,10 +1,10 @@
 {
   "version": "2.5",
-  "updatedAt": 1795608420878,
+  "updatedAt": 1795608453036,
   "brain": {
     "v": 1,
     "gen": 73,
-    "cycles": 440,
+    "cycles": 441,
     "firstBootAt": 1793623210734,
     "running": false,
     "optCursor": 9,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.54,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -4649,6 +4649,11 @@
     ],
     "journal": [
       {
+        "t": 1795608452920,
+        "type": "CYCLE",
+        "text": "[CYCLE #441] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795608098930,
         "type": "CYCLE",
         "text": "[CYCLE #440] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6142,11 +6147,6 @@
         "t": 1795395224510,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795394326437,
-        "type": "CYCLE",
-        "text": "[CYCLE #317] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
