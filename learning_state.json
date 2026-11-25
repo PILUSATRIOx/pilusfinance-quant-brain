@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795626578136,
+  "updatedAt": 1795628334889,
   "brain": {
     "v": 1,
     "gen": 76,
-    "cycles": 459,
+    "cycles": 461,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795623823876,
     "autoExecBursa": false,
@@ -192,19 +192,19 @@
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 73,
+          "trades": 74,
           "wins": 40,
-          "losses": 33,
-          "winRate": 54.794520547945204,
-          "pf": 0.7560623851772458,
-          "exp": -0.12358566853008612,
-          "netR": -9.021753802696287,
+          "losses": 34,
+          "winRate": 54.054054054054056,
+          "pf": 0.7339578349105107,
+          "exp": -0.1369674824534248,
+          "netR": -10.135593701553436,
           "maxDD": 13.893665742762085,
-          "sumR2": 71.71651493952959,
+          "sumR2": 72.9571542598157,
           "grossW": 27.96210294793856,
-          "grossL": 36.98385675063484,
-          "sd": 0.9902409601855999,
-          "tStat": -1.0663227004775861,
+          "grossL": 38.09769664949199,
+          "sd": 0.9901494802560247,
+          "tStat": -1.1899605651135166,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -272,34 +272,34 @@
           "wins": 18,
           "losses": 16,
           "winRate": 52.94117647058824,
-          "pf": 0.349900661710827,
-          "exp": -0.3652508942301387,
-          "netR": -12.418530403824715,
-          "maxDD": 13.56992637622503,
-          "sumR2": 27.138472429482242,
-          "grossW": 6.683981585351907,
+          "pf": 0.3490289819099018,
+          "exp": -0.3657406375786062,
+          "netR": -12.435181677672611,
+          "maxDD": 13.569926376225029,
+          "sumR2": 27.119897056850455,
+          "grossW": 6.66733031150401,
           "grossL": 19.102511989176623,
-          "sd": 0.8276032041192918,
-          "tStat": -2.573407622402319,
+          "sd": 0.8270400998239128,
+          "tStat": -2.5786126502994993,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 23,
-          "wins": 9,
-          "losses": 14,
-          "winRate": 39.130434782608695,
-          "pf": 0.4298033634857195,
-          "exp": -0.38662445057697586,
-          "netR": -8.892362363270445,
-          "maxDD": 10.708976839710981,
-          "sumR2": 26.79162515703373,
-          "grossW": 6.70289336750891,
-          "grossL": 15.595255730779357,
-          "sd": 1.0303049072969286,
-          "tStat": -1.799647574837916,
+          "trades": 25,
+          "wins": 10,
+          "losses": 15,
+          "winRate": 40,
+          "pf": 0.41245846490477417,
+          "exp": -0.39603579525743127,
+          "netR": -9.900894881435782,
+          "maxDD": 11.965116780611405,
+          "sumR2": 28.48220784631889,
+          "grossW": 6.950500790243997,
+          "grossL": 16.85139567167978,
+          "sd": 1.0116220281514328,
+          "tStat": -1.9574296735170909,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -1319,19 +1319,19 @@
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 17,
+          "trades": 16,
           "wins": 10,
-          "losses": 7,
-          "winRate": 58.82352941176471,
-          "pf": 0.8170773276808744,
-          "exp": -0.09794619991628147,
-          "netR": -1.6650853985767848,
+          "losses": 6,
+          "winRate": 62.5,
+          "pf": 0.9591618439533088,
+          "exp": -0.020370923287417894,
+          "netR": -0.3259347725986863,
           "maxDD": 3.669599165856148,
-          "sumR2": 21.287395752174856,
-          "grossW": 7.437588302099802,
-          "grossL": 9.102673700676588,
-          "sd": 1.149029671202189,
-          "tStat": -0.35146396825433235,
+          "sumR2": 20.181872070070252,
+          "grossW": 7.655198661193945,
+          "grossL": 7.981133433792633,
+          "sd": 1.15974803234211,
+          "tStat": -0.0702598244423104,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2355,15 +2355,15 @@
           "wins": 2,
           "losses": 4,
           "winRate": 33.33333333333333,
-          "pf": 0.3505650708832908,
-          "exp": -0.5362400567877733,
-          "netR": -3.21744034072664,
-          "maxDD": 3.4586389219647624,
-          "sumR2": 8.543177877066716,
-          "grossW": 1.7367747722526587,
+          "pf": 0.39448935639201577,
+          "exp": -0.4999716636054162,
+          "netR": -2.999829981632497,
+          "maxDD": 3.458638921964762,
+          "sumR2": 8.69550676520425,
+          "grossW": 1.9543851313468015,
           "grossL": 4.954215112979299,
-          "sd": 1.1677206417670443,
-          "tStat": -1.1248533868369868,
+          "sd": 1.1996396774660336,
+          "tStat": -1.0208694199499613,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2661,34 +2661,34 @@
           "wins": 14,
           "losses": 20,
           "winRate": 41.17647058823529,
-          "pf": 0.2863733884962077,
-          "exp": -0.5660610872646371,
-          "netR": -19.246076966997663,
-          "maxDD": 21.100280238888153,
-          "sumR2": 47.55594118389982,
-          "grossW": 7.723316630084287,
+          "pf": 0.2918577216401847,
+          "exp": -0.5617108184653007,
+          "netR": -19.098167827820223,
+          "maxDD": 21.10028023888815,
+          "sumR2": 47.65650876542179,
+          "grossW": 7.8712257692617245,
           "grossL": 26.969393597081954,
-          "sd": 1.0540180829105787,
-          "tStat": -3.1315164539391978,
+          "sd": 1.057854622590189,
+          "tStat": -3.09618041207369,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 25,
-          "wins": 16,
+          "trades": 26,
+          "wins": 17,
           "losses": 9,
-          "winRate": 64,
-          "pf": 0.6337566515225893,
-          "exp": -0.19116788924060304,
-          "netR": -4.779197231015076,
+          "winRate": 65.38461538461539,
+          "pf": 0.6636875045168066,
+          "exp": -0.168793167570469,
+          "netR": -4.388622356832194,
           "maxDD": 7.321671534547793,
-          "sumR2": 28.527875583635545,
-          "grossW": 8.270042436773318,
+          "sumR2": 28.68042431597852,
+          "grossW": 8.660617310956201,
           "grossL": 13.049239667788394,
-          "sd": 1.0726572638529874,
-          "tStat": -0.8910949269756843,
+          "sd": 1.0571594931153623,
+          "tStat": -0.8141436186384761,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2699,15 +2699,15 @@
           "wins": 16,
           "losses": 11,
           "winRate": 57.14285714285714,
-          "pf": 0.9216611388123535,
-          "exp": -0.03354444490898604,
-          "netR": -0.939244457451609,
+          "pf": 0.9219931630955498,
+          "exp": -0.03340233779347352,
+          "netR": -0.9352654582172586,
           "maxDD": 5.454464671473679,
-          "sumR2": 26.85312869474715,
-          "grossW": 11.045243228478554,
+          "sumR2": 26.8550639851222,
+          "grossW": 11.049222227712905,
           "grossL": 11.984060912789904,
-          "sd": 0.9966912345687734,
-          "tStat": -0.17808977548655233,
+          "sd": 0.9967321407769428,
+          "tStat": -0.17732804109400552,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3364,38 +3364,38 @@
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 6,
+          "trades": 7,
           "wins": 3,
-          "losses": 3,
-          "winRate": 50,
-          "pf": 0.2251703828146526,
-          "exp": -0.3729567431949527,
-          "netR": -2.237740459169716,
-          "maxDD": 2.359373506886331,
-          "sumR2": 3.22780257026334,
+          "losses": 4,
+          "winRate": 42.857142857142854,
+          "pf": 0.16011081373787575,
+          "exp": -0.48732428281237544,
+          "netR": -3.411269979686628,
+          "maxDD": 3.532903027403243,
+          "sumR2": 4.604974105787994,
           "grossW": 0.6503015174632255,
-          "grossL": 2.888041976632942,
-          "sd": 0.6918413367956304,
-          "tStat": -1.3204670903145526,
+          "grossL": 4.061571497149854,
+          "sd": 0.7003070052314938,
+          "tStat": -1.84110518748595,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "TSLA": {
-          "trades": 10,
+          "trades": 9,
           "wins": 6,
-          "losses": 4,
-          "winRate": 60,
-          "pf": 0.7372862182263755,
-          "exp": -0.14050609299786596,
-          "netR": -1.4050609299786596,
+          "losses": 3,
+          "winRate": 66.66666666666666,
+          "pf": 0.9940928828015534,
+          "exp": -0.002603481709550332,
+          "netR": -0.02343133538595299,
           "maxDD": 2.8136597941404267,
-          "sumR2": 11.231360087552233,
+          "sumR2": 9.322459750897824,
           "grossW": 3.9431964796359367,
-          "grossL": 5.348257409614596,
-          "sd": 1.1072458557588827,
-          "tStat": -0.4012833073104305,
+          "grossL": 3.966627815021889,
+          "sd": 1.0794905481200794,
+          "tStat": -0.0072353066381663075,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3765,7 +3765,7 @@
         "lockedR": 0,
         "mfe": 0.6429291219894065,
         "mae": -0.98020007596162,
-        "lastBarT": 1795624200000
+        "lastBarT": 1795627800000
       },
       {
         "id": "sig_ETHUSDT_1795444726674",
@@ -4648,6 +4648,31 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795628334856,
+        "type": "CYCLE",
+        "text": "[CYCLE #461] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795628329245,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: ETH — Long baru diblokir (Morning Minute: Ethereum Focuses on Security As AI Threats Rise)"
+      },
+      {
+        "t": 1795628329242,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795627430018,
+        "type": "CYCLE",
+        "text": "[CYCLE #460] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795627424847,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795626576481,
         "type": "CYCLE",
@@ -6122,31 +6147,6 @@
         "t": 1795437526244,
         "type": "GEN",
         "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1264 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.292R)"
-      },
-      {
-        "t": 1795437526244,
-        "type": "GEN",
-        "text": "[GEN #56] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-61.69R, 304 trade, Win 55.3%, t=-3.56 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795437524938,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795436625943,
-        "type": "CYCLE",
-        "text": "[CYCLE #335] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795436623412,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795435727647,
-        "type": "CYCLE",
-        "text": "[CYCLE #334] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12560,
+      "newsIngested": 12620,
       "lessons": 1,
-      "backtests": 12440,
+      "backtests": 12500,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,7 +6238,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795626561127,
+      "fetchedAt": 1795628329242,
       "items": [
         {
           "source": "CoinDesk",
@@ -6312,6 +6312,20 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Nvidia agrees to $290M settlement over crypto mining revenue disclosures",
+          "link": "https://cointelegraph.com/news/nvidia-agrees-290m-settlement-crypto-mining-revenue-disclosures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-25 17:19:33",
+          "summary": "    The proposed settlement would resolve a shareholder lawsuit dating back to 2018 that alleged Nvidia misled investors about its exposure to the cryptocurrency industry. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "FCC authorizes SpaceX to deploy 1M satellites for orbital AI data centers",
+          "link": "https://cointelegraph.com/news/fcc-authorizes-spacex-1m-satellites-orbital-ai-data-centers?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-25 17:10:53",
+          "summary": "    The planned Starmind constellation will process data in orbit for use on Earth, as demand for artificial intelligence computing power continues to grow. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Ex-FTX COO calls out Netflix over CZ’s ‘Asian mafia’ portrayal",
           "link": "https://cointelegraph.com/news/ftx-coo-netflix-portrayal-binance-founder-racist?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-25 14:21:36",
@@ -6367,18 +6381,11 @@
           "summary": "    HYPE traded below its price before Trump’s August remarks as wallets linked to Abraxas Capital reportedly exited the Hyperliquid platform. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "French Senate rejects 100K euro crypto wallet disclosure requirement",
-          "link": "https://cointelegraph.com/news/french-senate-rejects-disclosing-self-custodied-crypto-wallets-100k?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-25 09:58:12",
-          "summary": "    Senators also rejected stablecoin-swap and crypto exit-tax proposals, while the 2027 budget remains under parliamentary consideration. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Stablecoin redemptions hit $12B in 30 days, echoing 2022 bear market",
-          "link": "https://cointelegraph.com/markets/stablecoin-cash-out-2022-bear-market?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-25 09:52:22",
-          "summary": "    Crypto research firm Kaiko said the cash-out was smaller than in 2022 and has slowed, with stablecoin supply down just 0.4% since Nov. 13. "
+          "source": "Decrypt",
+          "title": "Elon Musk’s X Wins Court Judgment Against Alleged Bitcoin Bot Farm Operators",
+          "link": "https://decrypt.co/383985/elon-musk-x-court-judgment-bitcoin-bot-farm-operators",
+          "pubDate": "2026-11-25 17:16:02",
+          "summary": "London’s High Court entered a default judgment against Vivek Kumar Sen and Zamyang Sherpa after they failed to respond, though damages, which X estimates at over £207,000, won’t be set until a later hearing."
         },
         {
           "source": "Decrypt",
@@ -6442,13 +6449,6 @@
           "link": "https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code",
           "pubDate": "2026-11-24 21:46:02",
           "summary": "Anthropic’s new coding tools can review and repair software changes before approving them for release, leaving development teams to decide when a human still needs to check the AI’s work."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits",
-          "link": "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
-          "pubDate": "2026-11-24 21:16:02",
-          "summary": "Coinkite’s postmortem reveals a software random-number generator shipped in place of the hardware one for over five years, slipping past at least 15 reviews."
         }
       ],
       "perCoin": {
@@ -6461,8 +6461,8 @@
             "Decrypt"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits"
+          "critical": false,
+          "critHead": ""
         },
         "ETH": {
           "sentiment": "BEARISH",
@@ -6544,9 +6544,7 @@
         "EUR": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinTelegraph"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6562,10 +6560,6 @@
       },
       "breaker": [
         {
-          "coin": "BTC",
-          "head": "Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits"
-        },
-        {
           "coin": "ETH",
           "head": "Morning Minute: Ethereum Focuses on Security As AI Threats Rise"
         }
@@ -6573,13 +6567,13 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795626561124
+        "t": 1795628329242
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795625626793,
+      "fetchedAt": 1795628330272,
       "bias": {
         "BTC": -20,
         "ETH": 20,
@@ -6587,9 +6581,9 @@
         "ARB": 20,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 6.39,
+        "ZRO": 5.29,
         "ETHFI": 20,
-        "ENA": 0,
+        "ENA": 0.52,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6601,112 +6595,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 93.15,
+          "pct": 91.19,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 508.91,
+          "pct": 498.22,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 445.26,
+          "pct": 435.91,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 24.32,
+          "pct": 20.16,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 86.9,
+          "pct": 72.01,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 433.57,
+          "pct": 359.31,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 6.39,
+          "pct": 5.29,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 51.72,
+          "pct": 42.86,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 23.51,
+          "pct": 19.48,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 75.67,
+          "pct": 62.71,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 235.5,
+          "pct": 195.17,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 120.23,
+          "pct": 99.64,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 139.58,
+          "pct": 119.91,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 326.67,
+          "pct": 280.62,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 43.32,
+          "pct": 37.21,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1453.02,
+          "pct": 1318.02,
           "lev": 10
         }
       ]
@@ -10820,23 +10814,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795626568599
+        "updatedAt": 1795628330601
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -91.24,
-      "trades": 554,
-      "winRate": 57.4,
+      "netR": -89.9,
+      "trades": 553,
+      "winRate": 57.5,
       "pf": 0.68,
-      "expPerTrade": -0.165,
-      "tStat": -3.96,
-      "deflatedT": -6.11,
+      "expPerTrade": -0.163,
+      "tStat": -3.91,
+      "deflatedT": -6.05,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795626568592,
+      "updatedAt": 1795628330595,
       "gen": 76
     },
     "factory": {
