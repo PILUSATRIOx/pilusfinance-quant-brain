@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795625635001,
+  "updatedAt": 1795626578136,
   "brain": {
     "v": 1,
     "gen": 76,
-    "cycles": 458,
+    "cycles": 459,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795623823876,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.56,
+    "lastHurst": 0.52,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -477,22 +477,22 @@
           "dataStatus": "LIVE"
         },
         "ADAUSDT": {
-          "trades": 83,
+          "trades": 82,
           "wins": 47,
-          "losses": 36,
-          "winRate": 56.62650602409639,
-          "pf": 0.6911453178164904,
-          "exp": -0.15095511357774938,
-          "netR": -12.529274426953197,
-          "maxDD": 16.79053764610583,
-          "sumR2": 71.48466634941398,
+          "losses": 35,
+          "winRate": 57.3170731707317,
+          "pf": 0.7108776766237034,
+          "exp": -0.1390637699259089,
+          "netR": -11.40322913392453,
+          "maxDD": 16.790537646105832,
+          "sumR2": 70.21668834746194,
           "grossW": 28.03761722051998,
-          "grossL": 40.566891647473184,
-          "sd": 0.9212485450579004,
-          "tStat": -1.4928289906779,
+          "grossL": 39.44084635444452,
+          "sd": 0.9204864006396757,
+          "tStat": -1.3680549702476053,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
@@ -515,19 +515,19 @@
           "dataStatus": "LIVE"
         },
         "LINKUSDT": {
-          "trades": 83,
+          "trades": 82,
           "wins": 43,
-          "losses": 40,
-          "winRate": 51.80722891566265,
-          "pf": 0.5768938794170053,
-          "exp": -0.23397595202479302,
-          "netR": -19.42000401805782,
+          "losses": 39,
+          "winRate": 52.4390243902439,
+          "pf": 0.5918418154058906,
+          "exp": -0.22269217144395906,
+          "netR": -18.260758058404644,
           "maxDD": 23.403706743912583,
-          "sumR2": 79.9739413923219,
+          "sumR2": 78.63009019734969,
           "grossW": 26.478656089480072,
-          "grossL": 45.898660107537886,
-          "sd": 0.9591035414479216,
-          "tStat": -2.2225153780799327,
+          "grossL": 44.73941414788471,
+          "sd": 0.9594466147637473,
+          "tStat": -2.1017984207174805,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -836,23 +836,23 @@
           "tStat": -2.305021444800452,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
           "trades": 70,
-          "wins": 34,
-          "losses": 36,
-          "winRate": 48.57142857142857,
-          "pf": 0.41406395467382046,
-          "exp": -0.33922695790311697,
-          "netR": -23.745887053218187,
-          "maxDD": 26.920826709708074,
-          "sumR2": 60.30542733565718,
-          "grossW": 16.78052746357316,
-          "grossL": 40.52641451679137,
-          "sd": 0.8702005624882263,
-          "tStat": -3.2615197902050954,
+          "wins": 35,
+          "losses": 35,
+          "winRate": 50,
+          "pf": 0.44290306977656485,
+          "exp": -0.31405691755235093,
+          "netR": -21.983984228664564,
+          "maxDD": 25.85609836635776,
+          "sumR2": 59.65783314776477,
+          "grossW": 17.47770194477647,
+          "grossL": 39.46168617344106,
+          "sd": 0.8743826876293668,
+          "tStat": -3.005078585040994,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
@@ -1180,7 +1180,7 @@
           "tStat": -0.3849257878173599,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
@@ -1524,23 +1524,23 @@
           "tStat": 1.7080664954595646,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 47,
+          "trades": 46,
           "wins": 27,
-          "losses": 20,
-          "winRate": 57.446808510638306,
-          "pf": 0.7597211720110237,
-          "exp": -0.11589679603115494,
-          "netR": -5.447149413464282,
+          "losses": 19,
+          "winRate": 58.69565217391305,
+          "pf": 0.7967671363891848,
+          "exp": -0.09550205234210439,
+          "netR": -4.393094407736802,
           "maxDD": 8.602116764189912,
-          "sumR2": 43.61823062985882,
+          "sumR2": 42.507198674759664,
           "grossW": 17.222968711609127,
-          "grossL": 22.670118125073415,
-          "sd": 0.9666945413122708,
-          "tStat": -0.821922922833663,
+          "grossL": 21.61606311934593,
+          "sd": 0.9670993186119703,
+          "tStat": -0.6697620612322455,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
@@ -1868,7 +1868,7 @@
           "tStat": -0.0361143719438333,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
@@ -2212,7 +2212,7 @@
           "tStat": -1.7536885100354098,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
@@ -2556,7 +2556,7 @@
           "tStat": 0.21186934033729724,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
@@ -2900,23 +2900,23 @@
           "tStat": -1.409087517204881,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 90,
-          "wins": 55,
-          "losses": 35,
-          "winRate": 61.111111111111114,
-          "pf": 0.967240521107843,
-          "exp": -0.014244973555520398,
-          "netR": -1.2820476199968358,
-          "maxDD": 8.72083775759117,
-          "sumR2": 83.67215425397222,
-          "grossW": 37.85311763148015,
-          "grossL": 39.13516525147699,
-          "sd": 0.9695005752385917,
-          "tStat": -0.13939103120147908,
+          "trades": 88,
+          "wins": 54,
+          "losses": 34,
+          "winRate": 61.36363636363637,
+          "pf": 0.9852088274925779,
+          "exp": -0.006400730351352743,
+          "netR": -0.5632642709190414,
+          "maxDD": 7.978166795373767,
+          "sumR2": 82.44871521512044,
+          "grossW": 37.517845974830465,
+          "grossL": 38.08111024574951,
+          "sd": 0.9734705653084252,
+          "tStat": -0.06168052242001411,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
@@ -3244,7 +3244,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
@@ -3588,23 +3588,23 @@
           "tStat": -0.9190273137704099,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "AVAXUSDT": {
-          "trades": 28,
-          "wins": 16,
+          "trades": 29,
+          "wins": 17,
           "losses": 12,
-          "winRate": 57.14285714285714,
-          "pf": 0.4691802022893262,
-          "exp": -0.25592859483491265,
-          "netR": -7.1660006553775535,
+          "winRate": 58.620689655172406,
+          "pf": 0.5284501966969458,
+          "exp": -0.21951252306184796,
+          "netR": -6.365863168793591,
           "maxDD": 7.1660006553775535,
-          "sumR2": 18.11791300902452,
-          "grossW": 6.333873852474584,
+          "sumR2": 18.75813300646142,
+          "grossW": 7.134011339058547,
           "grossL": 13.499874507852137,
-          "sd": 0.7766005820885562,
-          "tStat": -1.7438138238381484,
+          "sd": 0.7874177127260675,
+          "tStat": -1.5012503463066065,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "TREND_DOWN",
@@ -4648,6 +4648,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795626576481,
+        "type": "CYCLE",
+        "text": "[CYCLE #459] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795626561126,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795625634932,
         "type": "CYCLE",
@@ -6137,16 +6147,6 @@
         "t": 1795435727647,
         "type": "CYCLE",
         "text": "[CYCLE #334] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795435723535,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, EUR — Long baru diblokir (Bitcoin&#39;s quantum security challenge extends to bridges, custodians and mill)"
-      },
-      {
-        "t": 1795435723533,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12530,
+      "newsIngested": 12560,
       "lessons": 1,
-      "backtests": 12410,
+      "backtests": 12440,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,7 +6238,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795625626143,
+      "fetchedAt": 1795626561127,
       "items": [
         {
           "source": "CoinDesk",
@@ -6382,6 +6382,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Bitcoin Falls Further as Inflation, Trump Tariffs and AI Selloff Rattle Markets",
+          "link": "https://decrypt.co/383967/bitcoin-sinks-inflation-trump-tariffs-ai-selloff",
+          "pubDate": "2026-11-25 16:52:50",
+          "summary": "Bitcoin fell below $58,000 as stronger U.S. growth, accelerating inflation and proposed tariffs coincided with a renewed AI stock selloff and bets on higher interest rates in December and beyond."
+        },
+        {
+          "source": "Decrypt",
           "title": "Ukraine Passes Law to Legalize and Tax Its Crypto Market From July 2027",
           "link": "https://decrypt.co/383962/ukraine-passes-law-to-legalize-and-tax-its-crypto-market-from-july-2027",
           "pubDate": "2026-11-25 16:07:35",
@@ -6442,13 +6449,6 @@
           "link": "https://decrypt.co/383930/coldcard-bitcoin-exploit-how-hidden-flaw-survived-years-audits",
           "pubDate": "2026-11-24 21:16:02",
           "summary": "Coinkite’s postmortem reveals a software random-number generator shipped in place of the hardware one for over five years, slipping past at least 15 reviews."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Ethereum Foundation Says AI Is a More Urgent Threat Than Quantum Computing",
-          "link": "https://decrypt.co/383927/ethereum-foundation-ai-more-urgent-threat-quantum-computing",
-          "pubDate": "2026-11-24 20:36:02",
-          "summary": "The Ethereum Foundation has doubled its protocol security team and is prioritizing a cryptographic overhaul as advances in AI threaten the mathematical assumptions that keep billions in crypto safe."
         }
       ],
       "perCoin": {
@@ -6466,7 +6466,7 @@
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -1,
+          "impact": -0.5,
           "sources": [
             "CoinDesk",
             "Decrypt"
@@ -6573,7 +6573,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795625626143
+        "t": 1795626561124
       },
       "lastErrors": []
     },
@@ -10820,23 +10820,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795625630188
+        "updatedAt": 1795626568599
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -92.29,
-      "trades": 555,
-      "winRate": 57.3,
-      "pf": 0.67,
-      "expPerTrade": -0.166,
-      "tStat": -4.01,
-      "deflatedT": -6.15,
+      "netR": -91.24,
+      "trades": 554,
+      "winRate": 57.4,
+      "pf": 0.68,
+      "expPerTrade": -0.165,
+      "tStat": -3.96,
+      "deflatedT": -6.11,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795625630186,
+      "updatedAt": 1795626568592,
       "gen": 76
     },
     "factory": {
