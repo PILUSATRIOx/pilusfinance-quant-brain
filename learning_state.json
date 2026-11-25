@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795642727340,
+  "updatedAt": 1795643626767,
   "brain": {
     "v": 1,
     "gen": 79,
-    "cycles": 477,
+    "cycles": 478,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795640023091,
     "autoExecBursa": false,
@@ -3692,7 +3692,7 @@
         "lockedR": 0.4000000000000013,
         "mfe": 0.8556635454238076,
         "mae": 0,
-        "lastBarT": 1795642500000
+        "lastBarT": 1795643400000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
@@ -3756,7 +3756,7 @@
         "lockedR": 0.40000000000000024,
         "mfe": 1.238301184159868,
         "mae": 0,
-        "lastBarT": 1795642500000
+        "lastBarT": 1795643400000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4774,6 +4774,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795643626733,
+        "type": "CYCLE",
+        "text": "[CYCLE #478] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795643623522,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795642727326,
         "type": "CYCLE",
@@ -6263,16 +6273,6 @@
         "t": 1795451928829,
         "type": "CYCLE",
         "text": "[CYCLE #352] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795451924287,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795451029846,
-        "type": "CYCLE",
-        "text": "[CYCLE #351] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6349,9 +6349,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13100,
+      "newsIngested": 13130,
       "lessons": 1,
-      "backtests": 12980,
+      "backtests": 13010,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795642723026,
+      "fetchedAt": 1795643623522,
       "items": [
         {
           "source": "CoinDesk",
@@ -6508,6 +6508,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "What Happened to Alice Huang, the Woman at the Center of Nvidia’s Scandal?",
+          "link": "https://decrypt.co/384001/what-happened-alice-huang-nvidia-spy-scandal",
+          "pubDate": "2026-11-25 21:46:02",
+          "summary": "U.S. intelligence found no evidence that Beijing directed Alice Huang to spy on Nvidia’s CEO, but the former Megaspeed executive still faces entry bans and scrutiny of business ties."
+        },
+        {
+          "source": "Decrypt",
           "title": "The 1Password Breach Didn’t Touch Your Vault. The Phishing Emails Might",
           "link": "https://decrypt.co/384002/1password-breach-vaults-phishing-emails",
           "pubDate": "2026-11-25 21:16:02",
@@ -6568,13 +6575,6 @@
           "link": "https://decrypt.co/383962/ukraine-passes-law-to-legalize-and-tax-its-crypto-market-from-july-2027",
           "pubDate": "2026-11-25 16:07:35",
           "summary": "The law taxes crypto profits at 18% plus a 5% military levy, cuts the rate for older holdings and puts stablecoins under the central bank."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Morning Minute: Ethereum Focuses on Security As AI Threats Rise",
-          "link": "https://decrypt.co/383945/morning-minute-ethereum-focuses-on-security-as-ai-threats-rise",
-          "pubDate": "2026-11-25 13:41:38",
-          "summary": "The Ethereum Foundation pulls its quantum-resistance deadline forward to end 2028, as AI labs say their next models are too dangerous."
         }
       ],
       "perCoin": {
@@ -6592,15 +6592,14 @@
         },
         "ETH": {
           "sentiment": "BEARISH",
-          "impact": -1,
+          "impact": -0.5,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph",
-            "Decrypt"
+            "CoinTelegraph"
           ],
           "multiSourced": true,
-          "critical": true,
-          "critHead": "Morning Minute: Ethereum Focuses on Security As AI Threats Rise"
+          "critical": false,
+          "critHead": ""
         },
         "SOL": {
           "sentiment": "NEUTRAL",
@@ -6685,16 +6684,11 @@
           "critHead": ""
         }
       },
-      "breaker": [
-        {
-          "coin": "ETH",
-          "head": "Morning Minute: Ethereum Focuses on Security As AI Threats Rise"
-        }
-      ],
+      "breaker": [],
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795642723026
+        "t": 1795643623522
       },
       "lastErrors": []
     },
@@ -6965,107 +6959,107 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.545,
+            0.543,
             -1.088,
             56
           ],
           [
-            0.463,
+            0.465,
             0.452,
             61
           ],
           [
-            0.496,
+            0.497,
             0.316,
             35
           ],
           [
-            0.494,
+            0.495,
             -1.078,
             46
           ],
           [
-            0.518,
+            0.52,
             0.54,
             10
           ],
           [
-            0.545,
+            0.544,
             -1.078,
             94
           ],
           [
-            0.511,
+            0.513,
             0.285,
             2
           ],
           [
-            0.575,
+            0.574,
             -1.129,
             35
           ],
           [
-            0.625,
+            0.624,
             -1.121,
             10
           ],
           [
-            0.528,
+            0.526,
             -1.126,
             69
           ],
           [
-            0.597,
+            0.594,
             0.582,
             35
           ],
           [
-            0.551,
+            0.55,
             -1.134,
             35
           ],
           [
-            0.559,
+            0.558,
             -1.12,
             10
           ],
           [
-            0.567,
+            0.566,
             0.302,
             10
           ],
           [
-            0.505,
+            0.506,
             0.399,
             61
           ],
           [
-            0.559,
+            0.558,
             0.505,
             34
           ],
           [
-            0.47,
+            0.471,
             1.003,
             94
           ],
           [
-            0.596,
+            0.595,
             1.514,
             10
           ],
           [
-            0.497,
+            0.5,
             -1.107,
             27
           ],
           [
-            0.512,
+            0.514,
             1.508,
             35
           ],
           [
-            0.57,
+            0.569,
             0.315,
             10
           ],
@@ -7075,27 +7069,27 @@
             2
           ],
           [
-            0.571,
+            0.57,
             -1.129,
             16
           ],
           [
-            0.476,
+            0.477,
             -1.159,
             61
           ],
           [
-            0.613,
+            0.611,
             0.257,
             10
           ],
           [
-            0.552,
+            0.553,
             -1.166,
             10
           ],
           [
-            0.502,
+            0.503,
             0.447,
             10
           ],
@@ -7105,122 +7099,122 @@
             90
           ],
           [
-            0.531,
+            0.53,
             -1.196,
             35
           ],
           [
-            0.587,
+            0.586,
             -1.155,
             41
           ],
           [
-            0.611,
+            0.609,
             0.849,
             10
           ],
           [
-            0.601,
+            0.599,
             0.926,
             15
           ],
           [
-            0.524,
+            0.526,
             0.168,
             69
           ],
           [
-            0.56,
+            0.559,
             0.181,
             10
           ],
           [
-            0.507,
+            0.509,
             -1.145,
             56
           ],
           [
-            0.501,
+            0.502,
             -1.129,
             61
           ],
           [
-            0.501,
+            0.503,
             0.74,
             2
           ],
           [
-            0.537,
+            0.535,
             -1.134,
             41
           ],
           [
-            0.56,
+            0.559,
             0.619,
             10
           ],
           [
-            0.614,
+            0.613,
             -1.129,
             35
           ],
           [
-            0.529,
+            0.53,
             -1.12,
             69
           ],
           [
-            0.575,
+            0.574,
             0.511,
             41
           ],
           [
-            0.453,
+            0.455,
             1.54,
             90
           ],
           [
-            0.539,
+            0.538,
             -1.111,
             46
           ],
           [
-            0.443,
+            0.445,
             -1.113,
             73
           ],
           [
-            0.565,
+            0.564,
             0.272,
             10
           ],
           [
-            0.563,
+            0.562,
             0.277,
             35
           ],
           [
-            0.603,
+            0.601,
             -1.119,
             35
           ],
           [
-            0.457,
+            0.459,
             0.307,
             69
           ],
           [
-            0.544,
+            0.543,
             1.578,
             33
           ],
           [
-            0.584,
+            0.582,
             -1.131,
             2
           ],
           [
-            0.463,
+            0.464,
             -1.124,
             69
           ]
@@ -10956,7 +10950,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1294,
-        "updatedAt": 1795642725078
+        "updatedAt": 1795643624469
       }
     },
     "champion": {
@@ -10972,7 +10966,7 @@
       "deflatedT": -5.99,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795642725077,
+      "updatedAt": 1795643624468,
       "gen": 79
     },
     "factory": {
