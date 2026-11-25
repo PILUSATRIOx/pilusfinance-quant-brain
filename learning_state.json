@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795634624870,
+  "updatedAt": 1795635526822,
   "brain": {
     "v": 1,
     "gen": 78,
-    "cycles": 468,
+    "cycles": 469,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795634622614,
     "autoExecBursa": false,
@@ -2775,15 +2775,15 @@
           "wins": 48,
           "losses": 56,
           "winRate": 46.15384615384615,
-          "pf": 0.3035999706918338,
-          "exp": -0.43240804100560193,
-          "netR": -44.9704362645826,
-          "maxDD": 45.18926609258307,
-          "sumR2": 98.03294041479484,
-          "grossW": 19.60514439594403,
+          "pf": 0.3039770072668134,
+          "exp": -0.4321739318156061,
+          "netR": -44.946088908823036,
+          "maxDD": 45.18926609258306,
+          "sumR2": 98.04418906387357,
+          "grossW": 19.629491751703593,
           "grossL": 64.57558066052661,
-          "sd": 0.8734896099573762,
-          "tStat": -5.04838755673255,
+          "sd": 0.8736690910101724,
+          "tStat": -5.044617771806316,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2794,34 +2794,34 @@
           "wins": 49,
           "losses": 51,
           "winRate": 49,
-          "pf": 0.3855732390834061,
-          "exp": -0.3735838755051957,
-          "netR": -37.358387550519566,
-          "maxDD": 38.54755447749716,
-          "sumR2": 93.0037931321078,
-          "grossW": 23.44363138301258,
+          "pf": 0.3884506629994588,
+          "exp": -0.37183434367095924,
+          "netR": -37.18343436709593,
+          "maxDD": 38.54755447749715,
+          "sumR2": 93.21907103749669,
+          "grossW": 23.618584566436212,
           "grossL": 60.80201893353215,
-          "sd": 0.8935645445271181,
-          "tStat": -4.180826978793115,
+          "sd": 0.8955162899114237,
+          "tStat": -4.152178445662197,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "SOLUSDT": {
-          "trades": 111,
+          "trades": 110,
           "wins": 60,
-          "losses": 51,
-          "winRate": 54.054054054054056,
-          "pf": 0.491415779880895,
-          "exp": -0.273974303380945,
-          "netR": -30.41114767528489,
-          "maxDD": 30.690111507049572,
-          "sumR2": 96.02164155472708,
-          "grossW": 29.384548833275538,
-          "grossL": 59.79569650856043,
-          "sd": 0.8928492113116193,
-          "tStat": -3.232906924295004,
+          "losses": 50,
+          "winRate": 54.54545454545454,
+          "pf": 0.5127675321695724,
+          "exp": -0.25963466315406303,
+          "netR": -28.55981294694693,
+          "maxDD": 29.510814423017333,
+          "sumR2": 95.40435727143415,
+          "grossW": 30.056586477581263,
+          "grossL": 58.61639942452819,
+          "sd": 0.898465765978292,
+          "tStat": -3.0308014208104774,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3637,7 +3637,7 @@
         "sym": "DOGEUSDT",
         "side": "LONG",
         "entry": 0.05518,
-        "sl": 0.05385938746947515,
+        "sl": 0.05518,
         "slInit": 0.05385938746947515,
         "risk": 0.0013206125305248494,
         "rsiAtEntry": 58,
@@ -3685,21 +3685,21 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "OPEN",
+        "status": "TP1_SECURED",
         "createdAt": 1795633724068,
-        "tp1Hit": false,
-        "beActive": false,
-        "lockedR": 0,
-        "mfe": 0.6284962324794325,
+        "tp1Hit": true,
+        "beActive": true,
+        "lockedR": 0.4000000000000013,
+        "mfe": 0.8178023265997443,
         "mae": 0,
-        "lastBarT": 1795634400000
+        "lastBarT": 1795635300000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
         "sym": "LINKUSDT",
         "side": "LONG",
         "entry": 8.866,
-        "sl": 8.866,
+        "sl": 8.894026445394786,
         "slInit": 8.649574461990177,
         "risk": 0.2164255380098233,
         "rsiAtEntry": 57,
@@ -3754,9 +3754,9 @@
         "tp1Hit": true,
         "beActive": true,
         "lockedR": 0.40000000000000024,
-        "mfe": 1.0534801118971973,
+        "mfe": 1.2105780233204668,
         "mae": 0,
-        "lastBarT": 1795634400000
+        "lastBarT": 1795635300000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -3836,7 +3836,7 @@
         "sym": "AAPL",
         "side": "LONG",
         "entry": 350.7099914550781,
-        "sl": 345.01728982292263,
+        "sl": 350.7099914550781,
         "slInit": 345.01728982292263,
         "risk": 5.692701632155465,
         "rsiAtEntry": 55,
@@ -3884,14 +3884,14 @@
         "riskMult": 0,
         "policy": "SCORE",
         "systemVerified": false,
-        "status": "OPEN",
+        "status": "TP1_SECURED",
         "createdAt": 1795447429924,
-        "tp1Hit": false,
-        "beActive": false,
-        "lockedR": 0,
-        "mfe": 0.737788923155098,
+        "tp1Hit": true,
+        "beActive": true,
+        "lockedR": 0.40000000000000174,
+        "mfe": 1.006553892436926,
         "mae": -0.98020007596162,
-        "lastBarT": 1795631400000
+        "lastBarT": 1795635000000
       },
       {
         "id": "sig_ETHUSDT_1795444726674",
@@ -4774,6 +4774,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795635526804,
+        "type": "CYCLE",
+        "text": "[CYCLE #469] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795635522318,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795635520663,
+        "type": "TP1",
+        "text": "[TP1 LOCKED] TP1 AAPL tercapai -> 50% ditutup, SL digeser ke breakeven"
+      },
+      {
+        "t": 1795635520367,
+        "type": "TP1",
+        "text": "[TP1 LOCKED] TP1 DOGEUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
+      },
       {
         "t": 1795634624850,
         "type": "CYCLE",
@@ -6253,26 +6273,6 @@
         "t": 1795445675968,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795444730385,
-        "type": "CYCLE",
-        "text": "[CYCLE #344] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795444726675,
-        "type": "SIGNAL",
-        "text": "[SIGNAL] LONG ETHUSDT @ 1810.2900 | Skor 77/100 | P(menang) 52% | EV -0.29R | rezim TREND_UP (H=0.45) | 3 strategi: elder+donchian+macdm | PAPER"
-      },
-      {
-        "t": 1795444723845,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795444721951,
-        "type": "WIN",
-        "text": "[WIN] ETHUSDT LONG +0.26R — Trail/BE exit di 1810.2900 (MFE 0.92R)"
       }
     ],
     "accuracyHistory": [
@@ -6348,10 +6348,10 @@
       "wins": 9,
       "losses": 4,
       "be": 0,
-      "tp1Hits": 10,
-      "newsIngested": 12830,
+      "tp1Hits": 12,
+      "newsIngested": 12860,
       "lessons": 1,
-      "backtests": 12710,
+      "backtests": 12740,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795634622301,
+      "fetchedAt": 1795635522318,
       "items": [
         {
           "source": "CoinDesk",
@@ -6694,7 +6694,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795634622301
+        "t": 1795635522318
       },
       "lastErrors": []
     },
@@ -10956,7 +10956,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795634622614
+        "updatedAt": 1795635524617
       }
     },
     "champion": {
@@ -10972,7 +10972,7 @@
       "deflatedT": -5.97,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795634622614,
+      "updatedAt": 1795635524616,
       "gen": 78
     },
     "factory": {
