@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795622927479,
+  "updatedAt": 1795623827919,
   "brain": {
     "v": 1,
-    "gen": 75,
-    "cycles": 455,
+    "gen": 76,
+    "cycles": 456,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795618424455,
+    "lastOptAt": 1795623823876,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -36,11 +36,11 @@
     },
     "weights": {
       "elder": 0.59,
-      "donchian": 0.53,
+      "donchian": 0.54,
       "bbrev": 0.8,
-      "wyckoff": 0.72,
+      "wyckoff": 0.73,
       "rsidiv": 0.47,
-      "macdm": 0.56,
+      "macdm": 0.57,
       "smc": 0.5,
       "statarb": 0.59,
       "tsmom": 1,
@@ -4649,6 +4649,26 @@
     ],
     "journal": [
       {
+        "t": 1795623827878,
+        "type": "CYCLE",
+        "text": "[CYCLE #456] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795623823877,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (75 trade OOS, -0.123R/trade, win 58.7%, t=-1.08) | Meta-model belum aktif (1292 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.289R)"
+      },
+      {
+        "t": 1795623823876,
+        "type": "GEN",
+        "text": "[GEN #76] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-92.29R, 555 trade, Win 57.3%, t=-4.01 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795623822855,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795622927430,
         "type": "CYCLE",
         "text": "[CYCLE #455] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6127,26 +6147,6 @@
         "t": 1795433930594,
         "type": "CYCLE",
         "text": "[CYCLE #332] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795433611294,
-        "type": "CYCLE",
-        "text": "[CYCLE #331] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795433601572,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795433599815,
-        "type": "WIN",
-        "text": "[WIN] DOGEUSDT SHORT +0.25R — Trail/BE exit di 0.0554 (MFE 0.98R)"
-      },
-      {
-        "t": 1795433599815,
-        "type": "TP1",
-        "text": "[TP1 LOCKED] TP1 DOGEUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12440,
+      "newsIngested": 12470,
       "lessons": 1,
-      "backtests": 12320,
+      "backtests": 12350,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,8 +6238,29 @@
       }
     },
     "news": {
-      "fetchedAt": 1795622922972,
+      "fetchedAt": 1795623822855,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "EU bank watchdog seeks European Commission rules for crypto firms offering DeFi lending",
+          "link": "https://www.coindesk.com/policy/2026/11/25/eu-bank-watchdog-seeks-european-commission-rules-for-crypto-firms-offering-defi-lending",
+          "pubDate": "2026-11-25 16:02:31",
+          "summary": "The EBA renewed its call for the commission to propose rules for crypto firms granting client access to DeFi, particularly lending protocols."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Ukrainian lawmakers pass crypto tax and regulation bill expected to bring in $330 million",
+          "link": "https://www.coindesk.com/business/2026/11/25/ukrainian-lawmakers-pass-crypto-tax-and-regulation-bill-expected-to-bring-in-usd330-million",
+          "pubDate": "2026-11-25 16:02:07",
+          "summary": "Lawmaker Yaroslav Zhelezniak said he expects roughly $330 million (15 billion hryvnias) in added budget revenue, though the time frame remains unclear."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Crypto Long &amp;amp; Short: Bitcoin investors can’t keep ignoring Japan",
+          "link": "https://www.coindesk.com/coindesk-indices/2026/11/25/crypto-long-and-short-bitcoin-investors-can-t-keep-ignoring-japan",
+          "pubDate": "2026-11-25 15:59:44",
+          "summary": "Yen-funded carry trades ran an estimated $250 billion before the August 2024 selloff, and the Bank of Japan&#39;s policy rate is now around 1.25%. Phillip Lord of Bitcoin Japan explains how yen funding conditions reach bitco"
+        },
         {
           "source": "CoinDesk",
           "title": "South Korean crypto exchange Bithumb warns of phishing after deeper October breach probe",
@@ -6284,31 +6305,10 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Live updates: Bitcoin tumbles under $58,000 alongside continuing tech rout",
+          "title": "Live updates: Bitcoin tumbles to $58,000 alongside continuing tech rout",
           "link": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower",
           "pubDate": "2026-11-25 08:35:47",
           "summary": "Nvidia led a 4% plunge in the Nasdaq in early action Wednesday as inflation data remained troubling and the Trump administration was set to unveil a sweeping new tariff regime."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Solana developers move to stop validators finishing work on blocks that already lost",
-          "link": "https://www.coindesk.com/tech/2026/11/25/solana-developers-move-to-stop-validators-finishing-work-on-blocks-that-already-lost",
-          "pubDate": "2026-11-25 06:33:10",
-          "summary": "The fix would stop the computers that run Solana from wasting effort on transactions the network has already thrown out, freeing up power its recent speed upgrade didn&#39;t touch."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Just 10 accounts drove all of the XRP Ledger&#39;s trading growth last quarter",
-          "link": "https://www.coindesk.com/markets/2026/11/25/ten-accounts-drove-all-of-the-xrp-ledger-s-trading-growth-last-quarter",
-          "pubDate": "2026-11-25 06:15:08",
-          "summary": "Data shows that the ten busiest accounts accounted for more than all of the exchange&#39;s quarterly growth, while trading by everyone else declined."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Crypto traders can now hedge Nvidia, Anthropic and oil bets on Derive",
-          "link": "https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive",
-          "pubDate": "2026-11-25 04:57:22",
-          "summary": "Derive’s new options on Nvidia, Anthropic, stock indices and oil bring hedging tools to onchain RWA markets."
         },
         {
           "source": "CoinTelegraph",
@@ -6382,6 +6382,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Ukraine Passes Law to Legalize and Tax Its Crypto Market From July 2027",
+          "link": "https://decrypt.co/383962/ukraine-passes-law-to-legalize-and-tax-its-crypto-market-from-july-2027",
+          "pubDate": "2026-11-25 16:07:35",
+          "summary": "The law taxes crypto profits at 18% plus a 5% military levy, cuts the rate for older holdings and puts stablecoins under the central bank."
+        },
+        {
+          "source": "Decrypt",
           "title": "Morning Minute: Ethereum Focuses on Security As AI Threats Rise",
           "link": "https://decrypt.co/383945/morning-minute-ethereum-focuses-on-security-as-ai-threats-rise",
           "pubDate": "2026-11-25 13:41:38",
@@ -6442,13 +6449,6 @@
           "link": "https://decrypt.co/383927/ethereum-foundation-ai-more-urgent-threat-quantum-computing",
           "pubDate": "2026-11-24 20:36:02",
           "summary": "The Ethereum Foundation has doubled its protocol security team and is prioritizing a cryptographic overhaul as advances in AI threaten the mathematical assumptions that keep billions in crypto safe."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Bitcoin Losses Are the Worst Since FTX. Is the Bottom Near?",
-          "link": "https://decrypt.co/383909/bitcoin-losses-worst-since-ftx-is-bottom-near",
-          "pubDate": "2026-11-24 19:35:32",
-          "summary": "Bitcoin slipped below $60,000 as realized losses nearly doubled in a week. Glassnode says the sell-off resembles past market bottoms, but another drop to $53,200 could be in the cards."
         }
       ],
       "perCoin": {
@@ -6476,22 +6476,19 @@
           "critHead": "Morning Minute: Ethereum Focuses on Security As AI Threats Rise"
         },
         "SOL": {
-          "sentiment": "BULLISH",
-          "impact": 0.67,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
-            "CoinDesk",
             "CoinTelegraph"
           ],
-          "multiSourced": true,
+          "multiSourced": false,
           "critical": false,
           "critHead": ""
         },
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6576,13 +6573,13 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795622922972
+        "t": 1795623822855
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795621124182,
+      "fetchedAt": 1795623823511,
       "bias": {
         "BTC": -20,
         "ETH": 20,
@@ -6590,7 +6587,7 @@
         "ARB": 20,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 6.2,
+        "ZRO": 6.27,
         "ETHFI": 20,
         "ENA": 0,
         "EIGEN": 20,
@@ -6604,112 +6601,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 93.08,
+          "pct": 94.39,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 508.57,
+          "pct": 515.69,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 444.96,
+          "pct": 451.19,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 23.62,
+          "pct": 23.86,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 84.38,
+          "pct": 85.26,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 421.04,
+          "pct": 425.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 6.2,
+          "pct": 6.27,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 50.22,
+          "pct": 50.74,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 22.83,
+          "pct": 23.07,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 73.48,
+          "pct": 74.24,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 228.69,
+          "pct": 231.06,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 116.76,
+          "pct": 117.97,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 145.1,
+          "pct": 140.01,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 339.57,
+          "pct": 327.65,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 45.03,
+          "pct": 43.45,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1302.01,
+          "pct": 1372.68,
           "lev": 10
         }
       ]
@@ -10808,7 +10805,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795622923271
+        "updatedAt": 1795623823877
       }
     },
     "champion": {
@@ -10824,8 +10821,8 @@
       "deflatedT": -6.15,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795622923268,
-      "gen": 75
+      "updatedAt": 1795623823876,
+      "gen": 76
     },
     "factory": {
       "updatedAt": 1795608099102,
