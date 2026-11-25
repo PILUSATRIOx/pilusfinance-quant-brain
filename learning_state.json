@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795615732275,
+  "updatedAt": 1795616628419,
   "brain": {
     "v": 1,
     "gen": 74,
-    "cycles": 447,
+    "cycles": 448,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795613756489,
     "autoExecBursa": false,
@@ -207,7 +207,7 @@
           "tStat": -1.2763737566037032,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -551,7 +551,7 @@
           "tStat": -2.4067213294144265,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -895,7 +895,7 @@
           "tStat": 0.33913790465010124,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1225,21 +1225,21 @@
       "wyckoff": {
         "SUIUSDT": {
           "trades": 39,
-          "wins": 26,
-          "losses": 13,
-          "winRate": 66.66666666666666,
-          "pf": 1.0354072541506227,
-          "exp": 0.013297640079014008,
-          "netR": 0.5186079630815463,
-          "maxDD": 3.8133581513288886,
-          "sumR2": 30.67574234466572,
-          "grossW": 15.165548979049156,
-          "grossL": 14.64694101596761,
-          "sd": 0.89837347295617,
-          "tStat": 0.09243787598002279,
+          "wins": 25,
+          "losses": 14,
+          "winRate": 64.1025641025641,
+          "pf": 0.9413395541091992,
+          "exp": -0.023731766550826226,
+          "netR": -0.9255388954822228,
+          "maxDD": 3.813358151328889,
+          "sumR2": 31.856736048789124,
+          "grossW": 14.852365302606508,
+          "grossL": 15.77790419808873,
+          "sd": 0.9152907414958925,
+          "tStat": -0.161921046383744,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1572,18 +1572,18 @@
           "wins": 9,
           "losses": 6,
           "winRate": 60,
-          "pf": 0.8285747681746471,
-          "exp": -0.07562241455377539,
-          "netR": -1.1343362183066308,
-          "maxDD": 4.5844460752155785,
-          "sumR2": 13.137673150144378,
-          "grossW": 5.482753962806768,
+          "pf": 0.8284694968871705,
+          "exp": -0.07566885386062303,
+          "netR": -1.1350328079093455,
+          "maxDD": 4.584446075215579,
+          "sumR2": 13.137237314395954,
+          "grossW": 5.482057373204054,
           "grossL": 6.617090181113399,
-          "sd": 0.9655454382442611,
-          "tStat": -0.3033356490185937,
+          "sd": 0.9655254188681507,
+          "tStat": -0.3035282190419637,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1927,7 +1927,7 @@
           "tStat": -1.3043173749458374,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2256,22 +2256,22 @@
       },
       "smc": {
         "SUIUSDT": {
-          "trades": 27,
+          "trades": 28,
           "wins": 19,
-          "losses": 8,
-          "winRate": 70.37037037037037,
-          "pf": 1.4481712808386216,
-          "exp": 0.15318666118575322,
-          "netR": 4.136039852015337,
-          "maxDD": 2.4753309343223755,
-          "sumR2": 24.522263785140076,
+          "losses": 9,
+          "winRate": 67.85714285714286,
+          "pf": 1.290074649358633,
+          "exp": 0.10732416678193624,
+          "netR": 3.0050766698942146,
+          "maxDD": 3.4041389828882425,
+          "sumR2": 25.80134150445361,
           "grossW": 13.364743316181873,
-          "grossL": 9.228703464166534,
-          "sd": 0.9585381026429826,
-          "tStat": 0.8304116846810033,
+          "grossL": 10.359666646287655,
+          "sd": 0.9714217178338718,
+          "tStat": 0.5846133553723636,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2615,7 +2615,7 @@
           "tStat": -1.9598559644052418,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2959,7 +2959,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3303,7 +3303,7 @@
           "tStat": -1.257464160480978,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_DOWN",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -4648,6 +4648,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795616628395,
+        "type": "CYCLE",
+        "text": "[CYCLE #448] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795616623084,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795615732231,
         "type": "CYCLE",
@@ -6137,16 +6147,6 @@
         "t": 1795404760543,
         "type": "GEN",
         "text": "[GEN #54] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: SMC Liquidity Sweep (SFP) (BELUM SIGNIFIKAN) (-63.59R, 292 trade, Win 54.5%, t=-3.77 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795399726026,
-        "type": "CYCLE",
-        "text": "[CYCLE #323] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795399723767,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12200,
+      "newsIngested": 12230,
       "lessons": 1,
-      "backtests": 12080,
+      "backtests": 12110,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,7 +6238,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795615724062,
+      "fetchedAt": 1795616623084,
       "items": [
         {
           "source": "CoinDesk",
@@ -6576,7 +6576,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795615724062
+        "t": 1795616623084
       },
       "lastErrors": []
     },
@@ -6847,52 +6847,52 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.546,
+            0.545,
             -1.088,
             56
           ],
           [
-            0.465,
+            0.463,
             0.452,
             61
           ],
           [
-            0.501,
+            0.496,
             0.316,
             35
           ],
           [
-            0.498,
+            0.494,
             -1.078,
             46
           ],
           [
-            0.523,
+            0.518,
             0.54,
             10
           ],
           [
-            0.546,
+            0.545,
             -1.078,
             94
           ],
           [
-            0.517,
+            0.511,
             0.285,
             2
           ],
           [
-            0.578,
+            0.575,
             -1.129,
             35
           ],
           [
-            0.627,
+            0.625,
             -1.121,
             10
           ],
           [
-            0.53,
+            0.528,
             -1.126,
             69
           ],
@@ -6902,17 +6902,17 @@
             35
           ],
           [
-            0.555,
+            0.551,
             -1.134,
             35
           ],
           [
-            0.563,
+            0.559,
             -1.12,
             10
           ],
           [
-            0.571,
+            0.567,
             0.302,
             10
           ],
@@ -6922,102 +6922,102 @@
             61
           ],
           [
-            0.563,
+            0.559,
             0.505,
             34
           ],
           [
-            0.473,
+            0.47,
             1.003,
             94
           ],
           [
-            0.599,
+            0.596,
             1.514,
             10
           ],
           [
-            0.503,
+            0.497,
             -1.107,
             27
           ],
           [
-            0.517,
+            0.512,
             1.508,
             35
           ],
           [
-            0.575,
+            0.57,
             0.315,
             10
           ],
           [
-            0.624,
+            0.621,
             0.274,
             2
           ],
           [
-            0.574,
+            0.571,
             -1.129,
             16
           ],
           [
-            0.477,
+            0.476,
             -1.159,
             61
           ],
           [
-            0.614,
+            0.613,
             0.257,
             10
           ],
           [
-            0.555,
+            0.552,
             -1.166,
             10
           ],
           [
-            0.506,
+            0.502,
             0.447,
             10
           ],
           [
-            0.483,
+            0.482,
             0.159,
             90
           ],
           [
-            0.535,
+            0.531,
             -1.196,
             35
           ],
           [
-            0.589,
+            0.587,
             -1.155,
             41
           ],
           [
-            0.613,
+            0.611,
             0.849,
             10
           ],
           [
-            0.603,
+            0.601,
             0.926,
             15
           ],
           [
-            0.525,
+            0.524,
             0.168,
             69
           ],
           [
-            0.564,
+            0.56,
             0.181,
             10
           ],
           [
-            0.509,
+            0.507,
             -1.145,
             56
           ],
@@ -7027,74 +7027,79 @@
             61
           ],
           [
-            0.506,
+            0.501,
             0.74,
             2
           ],
           [
-            0.54,
+            0.537,
             -1.134,
             41
           ],
           [
-            0.564,
+            0.56,
             0.619,
             10
           ],
           [
-            0.616,
+            0.614,
             -1.129,
             35
           ],
           [
-            0.53,
+            0.529,
             -1.12,
             69
           ],
           [
-            0.578,
+            0.575,
             0.511,
             41
           ],
           [
-            0.457,
+            0.453,
             1.54,
             90
           ],
           [
-            0.542,
+            0.539,
             -1.111,
             46
           ],
           [
-            0.446,
+            0.443,
             -1.113,
             73
           ],
           [
-            0.569,
+            0.565,
             0.272,
             10
           ],
           [
-            0.566,
+            0.563,
             0.277,
             35
           ],
           [
-            0.605,
+            0.603,
             -1.119,
             35
           ],
           [
-            0.459,
+            0.457,
             0.307,
             69
           ],
           [
-            0.549,
+            0.544,
             1.578,
             33
+          ],
+          [
+            0.584,
+            -1.131,
+            2
           ]
         ],
         "EURUSDT": [],
@@ -10732,12 +10737,12 @@
       },
       "status": {
         "all": {
-          "n": 770,
-          "mean": -0.282,
+          "n": 771,
+          "mean": -0.283,
           "sd": 0.945,
-          "t": -8.27,
-          "winRate": 52.5,
-          "sum": -216.89
+          "t": -8.31,
+          "winRate": 52.4,
+          "sum": -218.02
         },
         "base": {
           "n": 74,
@@ -10768,23 +10773,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795615727563
+        "updatedAt": 1795616624244
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -89.7,
+      "netR": -91.14,
       "trades": 554,
-      "winRate": 57.6,
+      "winRate": 57.4,
       "pf": 0.68,
-      "expPerTrade": -0.162,
-      "tStat": -3.9,
-      "deflatedT": -6.05,
+      "expPerTrade": -0.165,
+      "tStat": -3.96,
+      "deflatedT": -6.11,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795615727561,
+      "updatedAt": 1795616624242,
       "gen": 74
     },
     "factory": {
