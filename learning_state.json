@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795643626767,
+  "updatedAt": 1795644525736,
   "brain": {
     "v": 1,
     "gen": 79,
-    "cycles": 478,
+    "cycles": 479,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795640023091,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.58,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3692,7 +3692,7 @@
         "lockedR": 0.4000000000000013,
         "mfe": 0.8556635454238076,
         "mae": 0,
-        "lastBarT": 1795643400000
+        "lastBarT": 1795644300000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
@@ -3756,7 +3756,7 @@
         "lockedR": 0.40000000000000024,
         "mfe": 1.238301184159868,
         "mae": 0,
-        "lastBarT": 1795643400000
+        "lastBarT": 1795644300000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4774,6 +4774,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795644525722,
+        "type": "CYCLE",
+        "text": "[CYCLE #479] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795644522691,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795643626733,
         "type": "CYCLE",
@@ -6263,16 +6273,6 @@
         "t": 1795452826983,
         "type": "CYCLE",
         "text": "[CYCLE #353] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795452823727,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795451928829,
-        "type": "CYCLE",
-        "text": "[CYCLE #352] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6349,9 +6349,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13130,
+      "newsIngested": 13160,
       "lessons": 1,
-      "backtests": 13010,
+      "backtests": 13040,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795643623522,
+      "fetchedAt": 1795644522691,
       "items": [
         {
           "source": "CoinDesk",
@@ -6438,6 +6438,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Switzerland clears 57 jurisdictions for crypto tax data sharing",
+          "link": "https://cointelegraph.com/news/switzerland-clears-57-jurisdictions-crypto-tax-data-sharing?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-25 21:53:38",
+          "summary": "    The move paves the way for Switzerland to exchange crypto tax data with foreign authorities starting in 2028 as part of a global effort to combat tax evasion. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Braiins warns of Bitcoin mining attacks affecting over 1,000 sites",
           "link": "https://cointelegraph.com/news/braiins-warns-bitcoin-mining-attacks-affecting-1000-sites?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-25 21:22:19",
@@ -6498,13 +6505,6 @@
           "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-25 13:26:05",
           "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Ukraine passes bill to legalize crypto and tax profits at 23%",
-          "link": "https://cointelegraph.com/news/ukraine-passes-bill-crypto-regulation-tax?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-25 13:02:09",
-          "summary": "    Ukraine’s parliament passed a crypto regulation bill after three years of legislative work, with the new rules set to take effect in July 2027. "
         },
         {
           "source": "Decrypt",
@@ -6688,23 +6688,23 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795643623522
+        "t": 1795644522690
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795641824351,
+      "fetchedAt": 1795644523335,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 18.61,
+        "ARB": 18.87,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 2.01,
+        "ENA": 1.76,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6716,112 +6716,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 89.57,
+          "pct": 89.07,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 489.36,
+          "pct": 486.65,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 428.16,
+          "pct": 425.78,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 18.61,
+          "pct": 18.87,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 66.49,
+          "pct": 67.4,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 331.74,
+          "pct": 336.29,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.89,
+          "pct": 4.95,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 39.57,
+          "pct": 40.11,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 17.99,
+          "pct": 18.24,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 57.9,
+          "pct": 58.69,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 180.19,
+          "pct": 182.66,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 91.99,
+          "pct": 93.26,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 107.91,
+          "pct": 110.03,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 252.55,
+          "pct": 257.51,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 33.49,
+          "pct": 34.15,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1332.43,
+          "pct": 1314.04,
           "lev": 10
         }
       ]
@@ -7223,12 +7223,12 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.501,
+            0.503,
             0.227,
             10
           ],
           [
-            0.483,
+            0.481,
             0.254,
             61
           ],
@@ -7238,12 +7238,12 @@
             10
           ],
           [
-            0.445,
+            0.446,
             -1.21,
             56
           ],
           [
-            0.442,
+            0.443,
             1.44,
             61
           ],
@@ -7253,22 +7253,22 @@
             15
           ],
           [
-            0.53,
+            0.529,
             0.233,
             41
           ],
           [
-            0.461,
+            0.462,
             1.465,
             95
           ],
           [
-            0.536,
+            0.535,
             0.229,
             10
           ],
           [
-            0.481,
+            0.483,
             1.434,
             27
           ],
@@ -7278,74 +7278,74 @@
             10
           ],
           [
-            0.473,
+            0.475,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.481,
+            0.482,
             1.36,
             10
           ],
           [
-            0.553,
+            0.552,
             0.144,
             10
           ],
           [
-            0.47,
+            0.469,
             -1.22,
             96
           ],
           [
-            0.54,
+            0.539,
             -1.215,
             10
           ],
           [
-            0.563,
+            0.562,
             0.469,
             10
           ],
           [
-            0.483,
+            0.484,
             -1.256,
             35
           ],
           [
-            0.491,
+            0.492,
             0.368,
             10
           ],
           [
-            0.488,
+            0.49,
             -1.259,
             35
           ],
           [
-            0.495,
+            0.497,
             0.296,
             10
           ],
           [
-            0.48,
+            0.479,
             -1.236,
             61
           ],
           [
-            0.513,
+            0.511,
             0.171,
             90
           ],
           [
-            0.488,
+            0.486,
             0.431,
             73
           ],
           [
-            0.569,
+            0.568,
             -1.251,
             35
           ],
@@ -7355,84 +7355,84 @@
             10
           ],
           [
-            0.49,
+            0.492,
             -1.21,
             10
           ],
           [
-            0.494,
+            0.496,
             0.063,
             10
           ],
           [
-            0.479,
+            0.481,
             0.615,
             10
           ],
           [
-            0.555,
+            0.554,
             -1.231,
             35
           ],
           [
-            0.482,
+            0.481,
             -1.181,
             81
           ]
         ],
         "TSLA": [
           [
-            0.438,
+            0.44,
             0.805,
             61
           ],
           [
-            0.51,
+            0.512,
             0.264,
             10
           ],
           [
-            0.505,
+            0.507,
             0.241,
             10
           ],
           [
-            0.509,
+            0.511,
             -1.545,
             35
           ],
           [
-            0.488,
+            0.49,
             1.494,
             35
           ],
           [
-            0.45,
+            0.452,
             -1.907,
             56
           ],
           [
-            0.477,
+            0.479,
             0.308,
             56
           ],
           [
-            0.496,
+            0.498,
             1.513,
             10
           ],
           [
-            0.503,
+            0.505,
             -1.11,
             10
           ],
           [
-            0.501,
+            0.499,
             0.259,
             95
           ],
           [
-            0.49,
+            0.492,
             1.519,
             10
           ],
@@ -7442,32 +7442,32 @@
             2
           ],
           [
-            0.509,
+            0.508,
             0.272,
             61
           ],
           [
-            0.566,
+            0.565,
             -1.13,
             69
           ],
           [
-            0.507,
+            0.509,
             0.292,
             49
           ],
           [
-            0.557,
+            0.556,
             0.289,
             35
           ],
           [
-            0.558,
+            0.556,
             -1.528,
             35
           ],
           [
-            0.574,
+            0.573,
             -1.101,
             10
           ]
@@ -10950,7 +10950,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1294,
-        "updatedAt": 1795643624469
+        "updatedAt": 1795644523591
       }
     },
     "champion": {
@@ -10966,7 +10966,7 @@
       "deflatedT": -5.99,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795643624468,
+      "updatedAt": 1795644523590,
       "gen": 79
     },
     "factory": {
