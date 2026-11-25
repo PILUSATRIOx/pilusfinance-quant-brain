@@ -1,6 +1,79 @@
 {
   "trades": [
     {
+      "id": "sig_LINKUSDT_1795532931941",
+      "sym": "LINKUSDT",
+      "side": "LONG",
+      "entry": 8.904,
+      "sl": 8.695872809303642,
+      "slInit": 8.695872809303642,
+      "risk": 0.20812719069635816,
+      "rsiAtEntry": 44,
+      "tp1": 9.070501752557087,
+      "tp2": 9.237003505114172,
+      "tp3": 9.424317976740895,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 90,
+      "techScore": 90,
+      "extScore": 0,
+      "regime": "RANGING",
+      "hurst": 0.53,
+      "kalmanPrice": 8.904,
+      "kalmanVelZ": -0.1295,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 44 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[INFO] Screen6: berita netral",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "LONG",
+          "note": "WYCKOFF SPRING: sweep bawah range lalu reclaim + volume",
+          "w": 0.81,
+          "barAge": 0
+        },
+        {
+          "strat": "smc",
+          "side": "LONG",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity bawah, wick reject + volume",
+          "w": 0.48,
+          "barAge": 0
+        },
+        {
+          "strat": "statarb",
+          "side": "LONG",
+          "note": "D.E. Shaw Z-Score (-1.59 sigma) mean-reversion deceleration (RSI 44)",
+          "w": 0.67,
+          "barAge": 0
+        }
+      ],
+      "atr": 0.11250118416019358,
+      "volPct": 1.2634903881423358,
+      "metaP": 0.521,
+      "metaEV": -0.295,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "LOSS",
+      "createdAt": 1795532931943,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0.13453311845663815,
+      "mae": -1.1819695407261603,
+      "lastBarT": 1795592400000,
+      "closedAt": 1795608046770,
+      "netR": -1.13,
+      "closeReason": "SL 8.6959 tersentuh",
+      "lossCause": "REGIME_FLIP"
+    },
+    {
       "id": "sig_ETHUSDT_1795444726674",
       "sym": "ETHUSDT",
       "side": "LONG",
@@ -880,5 +953,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795561727249
+  "updatedAt": 1795608420878
 }
