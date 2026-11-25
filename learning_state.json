@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795628334889,
+  "updatedAt": 1795629234545,
   "brain": {
     "v": 1,
-    "gen": 76,
-    "cycles": 461,
+    "gen": 77,
+    "cycles": 462,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795623823876,
+    "lastOptAt": 1795629229970,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -38,13 +38,13 @@
       "elder": 0.59,
       "donchian": 0.54,
       "bbrev": 0.8,
-      "wyckoff": 0.73,
-      "rsidiv": 0.47,
+      "wyckoff": 0.74,
+      "rsidiv": 0.46,
       "macdm": 0.57,
-      "smc": 0.5,
-      "statarb": 0.59,
+      "smc": 0.49,
+      "statarb": 0.6,
       "tsmom": 1,
-      "emax": 0.53
+      "emax": 0.54
     },
     "bayesian": {
       "elder": {
@@ -310,15 +310,15 @@
           "wins": 17,
           "losses": 13,
           "winRate": 56.666666666666664,
-          "pf": 0.4858148986599828,
-          "exp": -0.3399932803425544,
-          "netR": -10.199798410276632,
-          "maxDD": 13.035381653074927,
-          "sumR2": 43.79224666542898,
+          "pf": 0.4844992761799049,
+          "exp": -0.34178879517915145,
+          "netR": -10.253663855374544,
+          "maxDD": 13.089247098172839,
+          "sumR2": 43.927885552538754,
           "grossW": 9.637023745198013,
-          "grossL": 19.83682215547464,
-          "sd": 1.179192940620775,
-          "tStat": -1.5792325634663316,
+          "grossL": 19.890687600572555,
+          "sd": 1.1806383156236127,
+          "tStat": -1.5856289817534204,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -329,34 +329,34 @@
           "wins": 6,
           "losses": 21,
           "winRate": 22.22222222222222,
-          "pf": 0.1176458394888773,
-          "exp": -0.8651842325109853,
-          "netR": -23.359974277796603,
-          "maxDD": 25.597399338440145,
-          "sumR2": 46.83373679981874,
+          "pf": 0.11136211556741712,
+          "exp": -0.9205122719742259,
+          "netR": -24.8538313433041,
+          "maxDD": 27.091256403947643,
+          "sumR2": 49.47618090935755,
           "grossW": 3.114626651454791,
-          "grossL": 26.47460092925139,
-          "sd": 1.0119108995210482,
-          "tStat": -4.442712444324278,
+          "grossL": 27.96845799475889,
+          "sd": 1.011433182558075,
+          "tStat": -4.72905393518214,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
-          "trades": 25,
+          "trades": 24,
           "wins": 15,
           "losses": 9,
-          "winRate": 60,
+          "winRate": 62.5,
           "pf": 1.3228609653181163,
-          "exp": 0.13120250361599173,
-          "netR": 3.2800625903997935,
+          "exp": 0.13659426025011573,
+          "netR": 3.2782622460027775,
           "maxDD": 3.3604627519771766,
-          "sumR2": 31.558726169359822,
+          "sumR2": 31.558722928119877,
           "grossW": 13.432051641920278,
           "grossL": 10.153789395917501,
-          "sd": 1.1388659151666738,
-          "tStat": 0.5760226110410467,
+          "sd": 1.1630344703426772,
+          "tStat": 0.5753677091051854,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "CHAOS",
@@ -684,7 +684,7 @@
           "tStat": -2.3043241074595775,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1028,7 +1028,7 @@
           "tStat": -1.057947878745027,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1372,7 +1372,7 @@
           "tStat": 1.7345699611213299,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -1716,7 +1716,7 @@
           "tStat": 0.1352516942145235,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2045,22 +2045,22 @@
           "dataStatus": "LIVE"
         },
         "SPY": {
-          "trades": 9,
+          "trades": 8,
           "wins": 1,
-          "losses": 8,
-          "winRate": 11.11111111111111,
-          "pf": 0.031820794325529665,
-          "exp": -0.9913204196823435,
-          "netR": -8.921883777141092,
-          "maxDD": 8.921883777141092,
-          "sumR2": 18.166371444760937,
+          "losses": 7,
+          "winRate": 12.5,
+          "pf": 0.038348742280499094,
+          "exp": -0.9191540798222394,
+          "netR": -7.353232638577915,
+          "maxDD": 7.353232638577915,
+          "sumR2": 15.705705050245381,
           "grossW": 0.29323231381623194,
-          "grossL": 9.215116090957324,
-          "sd": 1.079463169499563,
-          "tStat": -2.75503726581589,
+          "grossL": 7.6464649523941475,
+          "sd": 1.1305467242896523,
+          "tStat": -2.299560270561868,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2370,19 +2370,19 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "trades": 7,
-          "wins": 2,
+          "trades": 6,
+          "wins": 1,
           "losses": 5,
-          "winRate": 28.57142857142857,
-          "pf": 0.08183386897876643,
-          "exp": -0.8051121401725725,
-          "netR": -5.635784981208007,
-          "maxDD": 5.90675079073669,
-          "sumR2": 7.679018628284445,
-          "grossW": 0.5023035310959537,
+          "winRate": 16.666666666666664,
+          "pf": 0.037688886548890396,
+          "exp": -0.9844584651227816,
+          "netR": -5.906750790736689,
+          "maxDD": 5.906750790736689,
+          "sumR2": 7.605596158350911,
+          "grossW": 0.23133772156727142,
           "grossL": 6.138088512303961,
-          "sd": 0.723599765122454,
-          "tStat": -2.9437910335074844,
+          "sd": 0.5984388592061004,
+          "tStat": -4.029519265699688,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2404,7 +2404,7 @@
           "tStat": 2.892763221031647,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -2748,7 +2748,7 @@
           "tStat": -1.6195674813966774,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -3092,7 +3092,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -3436,7 +3436,7 @@
           "tStat": -1.3390272216553796,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "QQQ": {
@@ -4648,6 +4648,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795629234509,
+        "type": "CYCLE",
+        "text": "[CYCLE #462] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795629229971,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (75 trade OOS, -0.123R/trade, win 58.7%, t=-1.08) | Meta-model belum aktif (1292 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.29R)"
+      },
+      {
+        "t": 1795629229970,
+        "type": "GEN",
+        "text": "[GEN #77] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-89.9R, 553 trade, Win 57.5%, t=-3.91 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795629229650,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795628334856,
         "type": "CYCLE",
@@ -6127,26 +6147,6 @@
         "t": 1795439323279,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795438428962,
-        "type": "CYCLE",
-        "text": "[CYCLE #337] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795438424213,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795437529520,
-        "type": "CYCLE",
-        "text": "[CYCLE #336] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795437526244,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (76 trade OOS, -0.102R/trade, win 59.2%, t=-0.91) | Meta-model belum aktif (1264 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.292R)"
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12620,
+      "newsIngested": 12650,
       "lessons": 1,
-      "backtests": 12500,
+      "backtests": 12530,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,7 +6238,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795628329242,
+      "fetchedAt": 1795629229650,
       "items": [
         {
           "source": "CoinDesk",
@@ -6312,6 +6312,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Bitcoin falls toward $57K amid US tariff fears, hot PCE data as Nasdaq drops 4%",
+          "link": "https://cointelegraph.com/markets/bitcoin-falls-57k-us-tariff-pce-data-nasdaq-drops?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-25 17:33:22",
+          "summary": "    The prospect of higher US tariffs and hotter-than-expected PCE inflation weighed on Bitcoin, crypto and stocks on Wednesday. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Nvidia agrees to $290M settlement over crypto mining revenue disclosures",
           "link": "https://cointelegraph.com/news/nvidia-agrees-290m-settlement-crypto-mining-revenue-disclosures?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-25 17:19:33",
@@ -6374,11 +6381,11 @@
           "summary": "    Bitcoin price downside targets focused on the $53,200 realized price as research saw pointed to bear-market patterns continuing for BTC/USD. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "HYPE drops 8% as Trump bump gives way to 40% slide from peak",
-          "link": "https://cointelegraph.com/markets/hyperliquid-hype-price-falls-abraxas-capital-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-25 10:57:52",
-          "summary": "    HYPE traded below its price before Trump’s August remarks as wallets linked to Abraxas Capital reportedly exited the Hyperliquid platform. "
+          "source": "Decrypt",
+          "title": "OpenAI’s Changes to ChatGPT Could Drastically Cut Usage Limits for Paying Subscribers",
+          "link": "https://decrypt.co/383963/openai-changes-chatgpt-drastically-cut-usage-limits",
+          "pubDate": "2026-11-25 17:46:02",
+          "summary": "OpenAI is merging ChatGPT’s Chat and Work modes, forcing advanced conversations to compete with coding tasks for usage and leaving paying subscribers wondering how much AI they will actually get."
         },
         {
           "source": "Decrypt",
@@ -6442,13 +6449,6 @@
           "link": "https://decrypt.co/383933/openai-and-anthropic-insiders-fear-next-ai-models-too-dangerous",
           "pubDate": "2026-11-24 22:36:02",
           "summary": "Employees at both AI labs reportedly question whether their strongest models should ever reach the public, as researchers struggle to keep increasingly capable systems under control during training and testing."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Anthropic’s Claude Ship Lets AI Write, Review and Approve Its Own Code",
-          "link": "https://decrypt.co/383929/anthropic-claude-ship-ai-write-review-approve-own-code",
-          "pubDate": "2026-11-24 21:46:02",
-          "summary": "Anthropic’s new coding tools can review and repair software changes before approving them for release, leaving development teams to decide when a human still needs to check the AI’s work."
         }
       ],
       "perCoin": {
@@ -6567,7 +6567,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795628329242
+        "t": 1795629229650
       },
       "lastErrors": []
     },
@@ -10814,7 +10814,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795628330601
+        "updatedAt": 1795629229971
       }
     },
     "champion": {
@@ -10830,8 +10830,8 @@
       "deflatedT": -6.05,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795628330595,
-      "gen": 76
+      "updatedAt": 1795629229970,
+      "gen": 77
     },
     "factory": {
       "updatedAt": 1795608099102,
