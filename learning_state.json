@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795635526822,
+  "updatedAt": 1795636431646,
   "brain": {
     "v": 1,
     "gen": 78,
-    "cycles": 469,
+    "cycles": 470,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795634622614,
     "autoExecBursa": false,
@@ -439,19 +439,19 @@
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 78,
+          "trades": 79,
           "wins": 48,
-          "losses": 30,
-          "winRate": 61.53846153846154,
-          "pf": 0.7430259142329676,
-          "exp": -0.11461491974923668,
-          "netR": -8.939963740440461,
-          "maxDD": 10.916577312252283,
-          "sumR2": 63.79090933473052,
+          "losses": 31,
+          "winRate": 60.75949367088608,
+          "pf": 0.7198061499810023,
+          "exp": -0.12736976365727942,
+          "netR": -10.062211328925075,
+          "maxDD": 11.115782426931833,
+          "sumR2": 65.05034898459006,
           "grossW": 25.849395325692218,
-          "grossL": 34.78935906613268,
-          "sd": 0.9028544640314647,
-          "tStat": -1.1211680323522641,
+          "grossL": 35.911606654617295,
+          "sd": 0.9041834927354757,
+          "tStat": -1.2520547337670054,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2832,15 +2832,15 @@
           "wins": 54,
           "losses": 46,
           "winRate": 54,
-          "pf": 0.609282395981824,
-          "exp": -0.21001718622435,
-          "netR": -21.001718622435,
-          "maxDD": 28.241993529901436,
-          "sumR2": 96.3881206312727,
-          "grossW": 32.74993834528641,
+          "pf": 0.6105074471633639,
+          "exp": -0.20935870091556963,
+          "netR": -20.935870091556964,
+          "maxDD": 28.241993529901432,
+          "sumR2": 96.47499397485703,
+          "grossW": 32.815786876164445,
           "grossL": 53.751656967721416,
-          "sd": 0.9638799894927684,
-          "tStat": -2.17887276957445,
+          "sd": 0.9644796964939207,
+          "tStat": -2.170690598014981,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2848,18 +2848,18 @@
         },
         "DOGEUSDT": {
           "trades": 101,
-          "wins": 51,
-          "losses": 50,
-          "winRate": 50.495049504950494,
-          "pf": 0.5639434902477242,
-          "exp": -0.25060839503228344,
-          "netR": -25.311447898260628,
-          "maxDD": 26.711877432544888,
-          "sumR2": 100.78861887360307,
-          "grossW": 32.73480833729034,
-          "grossL": 58.04625623555097,
-          "sd": 0.9718300136334374,
-          "tStat": -2.5915882040592733,
+          "wins": 52,
+          "losses": 49,
+          "winRate": 51.48514851485149,
+          "pf": 0.6110192158642141,
+          "exp": -0.2191794937578292,
+          "netR": -22.13712886954075,
+          "maxDD": 25.57621876988865,
+          "sumR2": 102.35098301547919,
+          "grossW": 34.773468703353984,
+          "grossL": 56.91059757289473,
+          "sd": 0.9874157093980297,
+          "tStat": -2.230799682445098,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2870,15 +2870,15 @@
           "wins": 57,
           "losses": 48,
           "winRate": 53.271028037383175,
-          "pf": 0.45746667536452096,
-          "exp": -0.3044500951217778,
-          "netR": -32.57616017803022,
+          "pf": 0.4572433844986431,
+          "exp": -0.3045754732000067,
+          "netR": -32.58957563240072,
           "maxDD": 36.15192162136835,
-          "sumR2": 104.37970911561295,
-          "grossW": 27.484882936193724,
+          "sumR2": 104.34157019918224,
+          "grossW": 27.47146748182323,
           "grossL": 60.08062317171645,
-          "sd": 0.9440073854979191,
-          "tStat": -3.3360504590212785,
+          "sd": 0.9437759606803295,
+          "tStat": -3.3382426803543646,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3692,7 +3692,7 @@
         "lockedR": 0.4000000000000013,
         "mfe": 0.8178023265997443,
         "mae": 0,
-        "lastBarT": 1795635300000
+        "lastBarT": 1795636200000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
@@ -3756,7 +3756,7 @@
         "lockedR": 0.40000000000000024,
         "mfe": 1.2105780233204668,
         "mae": 0,
-        "lastBarT": 1795635300000
+        "lastBarT": 1795636200000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4774,6 +4774,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795636431629,
+        "type": "CYCLE",
+        "text": "[CYCLE #470] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795636426919,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795635526804,
         "type": "CYCLE",
@@ -6263,16 +6273,6 @@
         "t": 1795445683978,
         "type": "CYCLE",
         "text": "[CYCLE #345] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795445676068,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, EUR — Long baru diblokir (Bitcoin&#39;s losing streak is second-longest ever, and some observers see more )"
-      },
-      {
-        "t": 1795445675968,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6349,9 +6349,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 12860,
+      "newsIngested": 12890,
       "lessons": 1,
-      "backtests": 12740,
+      "backtests": 12770,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6364,7 +6364,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795635522318,
+      "fetchedAt": 1795636426919,
       "items": [
         {
           "source": "CoinDesk",
@@ -6508,6 +6508,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "Nvidia to Pay $290 Million to Settle Long-Running Crypto Mining Revenue Lawsuit",
+          "link": "https://decrypt.co/383994/nvidia-290-million-settle-crypto-mining-disclosure-lawsuit",
+          "pubDate": "2026-11-25 19:28:54",
+          "summary": "The proposed cash settlement would resolve a shareholder suit alleging the chipmaker hid how much of its 2017-2018 gaming revenue came from crypto miners."
+        },
+        {
+          "source": "Decrypt",
           "title": "Elon Musk’s SpaceX Gets FCC Approval to Launch AI Data Centers in Space",
           "link": "https://decrypt.co/383991/elon-musk-spacex-fcc-approval-ai-data-centers-space",
           "pubDate": "2026-11-25 18:18:10",
@@ -6568,13 +6575,6 @@
           "link": "https://decrypt.co/383938/hyperliquid-leads-altcoin-losses-as-bitcoin-slips-below-59k",
           "pubDate": "2026-11-25 11:23:57",
           "summary": "HYPE fell more than 8% after Abraxas Capital pulled out of Hyperliquid, while U.S. Bitcoin ETFs&#39; November outflows passed $4.9 billion."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Take-Two Hits GTA 6 PC Port Leonida With DMCA, Taking Down 3,007 GitHub Repos",
-          "link": "https://decrypt.co/383935/take-two-hits-gta-6-pc-port-leonida-with-dmca-taking-down-3007-github-repos",
-          "pubDate": "2026-11-25 10:35:57",
-          "summary": "Rockstar&#39;s parent said the project&#39;s &quot;bring your own files&quot; instruction was a misleading attempt to dodge responsibility for the leak."
         }
       ],
       "perCoin": {
@@ -6694,23 +6694,23 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795635522318
+        "t": 1795636426919
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795633722814,
+      "fetchedAt": 1795636427628,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 19.22,
+        "ARB": 18.59,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5.05,
+        "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 1.42,
+        "ENA": 2.03,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6722,112 +6722,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 90.28,
+          "pct": 90.41,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 493.23,
+          "pct": 493.98,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 431.54,
+          "pct": 432.2,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 19.22,
+          "pct": 18.59,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 68.67,
+          "pct": 66.42,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 342.6,
+          "pct": 331.41,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 5.05,
+          "pct": 4.88,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 40.87,
+          "pct": 39.53,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 18.58,
+          "pct": 17.97,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 59.79,
+          "pct": 57.84,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 186.09,
+          "pct": 180.01,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 95.01,
+          "pct": 91.9,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 114.47,
+          "pct": 111.32,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 267.89,
+          "pct": 260.52,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 35.53,
+          "pct": 34.55,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1290.87,
+          "pct": 1361.49,
           "lev": 10
         }
       ]
@@ -10956,7 +10956,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795635524617
+        "updatedAt": 1795636429595
       }
     },
     "champion": {
@@ -10972,7 +10972,7 @@
       "deflatedT": -5.97,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795635524616,
+      "updatedAt": 1795636429594,
       "gen": 78
     },
     "factory": {
