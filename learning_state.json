@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795621130385,
+  "updatedAt": 1795622927479,
   "brain": {
     "v": 1,
     "gen": 75,
-    "cycles": 453,
+    "cycles": 455,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795618424455,
     "autoExecBursa": false,
@@ -192,22 +192,22 @@
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
-          "trades": 72,
-          "wins": 39,
+          "trades": 73,
+          "wins": 40,
           "losses": 33,
-          "winRate": 54.166666666666664,
-          "pf": 0.7139647636923069,
-          "exp": -0.14692619729496828,
-          "netR": -10.578686205237716,
+          "winRate": 54.794520547945204,
+          "pf": 0.7560623851772458,
+          "exp": -0.12358566853008612,
+          "netR": -9.021753802696287,
           "maxDD": 13.893665742762085,
-          "sumR2": 69.29247643344617,
-          "grossW": 26.405170545397134,
+          "sumR2": 71.71651493952959,
+          "grossW": 27.96210294793856,
           "grossL": 36.98385675063484,
-          "sd": 0.9767594474929198,
-          "tStat": -1.2763737566037032,
+          "sd": 0.9902409601855999,
+          "tStat": -1.0663227004775861,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -268,19 +268,19 @@
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 33,
+          "trades": 34,
           "wins": 18,
-          "losses": 15,
-          "winRate": 54.54545454545454,
-          "pf": 0.372962690553565,
-          "exp": -0.340525232620858,
-          "netR": -11.237332676488313,
-          "maxDD": 12.970910617717797,
-          "sumR2": 25.743244358417563,
+          "losses": 16,
+          "winRate": 52.94117647058824,
+          "pf": 0.349900661710827,
+          "exp": -0.3652508942301387,
+          "netR": -12.418530403824715,
+          "maxDD": 13.56992637622503,
+          "sumR2": 27.138472429482242,
           "grossW": 6.683981585351907,
-          "grossL": 17.921314261840223,
-          "sd": 0.8275840031893743,
-          "tStat": -2.3637099363674237,
+          "grossL": 19.102511989176623,
+          "sd": 0.8276032041192918,
+          "tStat": -2.573407622402319,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -302,7 +302,7 @@
           "tStat": -1.799647574837916,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -536,22 +536,22 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 75,
-          "wins": 39,
+          "trades": 76,
+          "wins": 40,
           "losses": 36,
-          "winRate": 52,
-          "pf": 0.528724178811571,
-          "exp": -0.25217751340521094,
-          "netR": -18.91331350539082,
+          "winRate": 52.63157894736842,
+          "pf": 0.5447027183992164,
+          "exp": -0.2404218461191039,
+          "netR": -18.272060305051895,
           "maxDD": 21.620410001999645,
-          "sumR2": 65.70272627176223,
-          "grossW": 21.218839800706235,
+          "sumR2": 66.11393193870715,
+          "grossW": 21.86009300104516,
           "grossL": 40.13215330609705,
-          "sd": 0.907425925066447,
-          "tStat": -2.4067213294144265,
+          "sd": 0.9071635609066829,
+          "tStat": -2.3104422977599346,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -646,7 +646,7 @@
           "tStat": -1.3577723185517943,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -880,22 +880,22 @@
       },
       "bbrev": {
         "SUIUSDT": {
-          "trades": 41,
-          "wins": 29,
+          "trades": 42,
+          "wins": 30,
           "losses": 12,
-          "winRate": 70.73170731707317,
-          "pf": 1.1346479250110986,
-          "exp": 0.04369497028724908,
-          "netR": 1.791493781777212,
+          "winRate": 71.42857142857143,
+          "pf": 1.1554118777176232,
+          "exp": 0.04923234896852612,
+          "netR": 2.067758656678097,
           "maxDD": 3.103735128196716,
-          "sumR2": 27.302413637248094,
-          "grossW": 15.09651709817471,
+          "sumR2": 27.378735918352096,
+          "grossW": 15.372781973075595,
           "grossL": 13.3050233163975,
-          "sd": 0.8249868842848889,
-          "tStat": 0.33913790465010124,
+          "sd": 0.815653789877218,
+          "tStat": 0.39117342627265245,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -990,7 +990,7 @@
           "tStat": -1.070354955608484,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1239,7 +1239,7 @@
           "tStat": -0.161921046383744,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1334,7 +1334,7 @@
           "tStat": -0.35146396825433235,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1568,22 +1568,22 @@
       },
       "rsidiv": {
         "SUIUSDT": {
-          "trades": 15,
-          "wins": 9,
+          "trades": 14,
+          "wins": 8,
           "losses": 6,
-          "winRate": 60,
-          "pf": 0.8284694968871705,
-          "exp": -0.07566885386062303,
-          "netR": -1.1350328079093455,
-          "maxDD": 4.584446075215579,
-          "sumR2": 13.137237314395954,
-          "grossW": 5.482057373204054,
+          "winRate": 57.14285714285714,
+          "pf": 0.781245252047371,
+          "exp": -0.10339427819637696,
+          "netR": -1.4475198947492776,
+          "maxDD": 4.5844460752155785,
+          "sumR2": 13.039589134954246,
+          "grossW": 5.169570286364122,
           "grossL": 6.617090181113399,
-          "sd": 0.9655254188681507,
-          "tStat": -0.3035282190419637,
+          "sd": 0.9957573020749179,
+          "tStat": -0.3885143136359617,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1678,7 +1678,7 @@
           "tStat": 0.1141783222919566,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -1912,22 +1912,22 @@
       },
       "macdm": {
         "SUIUSDT": {
-          "trades": 36,
-          "wins": 18,
+          "trades": 37,
+          "wins": 19,
           "losses": 18,
-          "winRate": 50,
-          "pf": 0.6142370576445254,
-          "exp": -0.21573657458369785,
-          "netR": -7.766516685013123,
+          "winRate": 51.35135135135135,
+          "pf": 0.6458783198390181,
+          "exp": -0.19268884168350173,
+          "netR": -7.129487142289564,
           "maxDD": 9.194277047500664,
-          "sumR2": 36.14633606538818,
-          "grossW": 12.366357244220845,
+          "sumR2": 36.55214270369076,
+          "grossW": 13.003386786944404,
           "grossL": 20.132873929233963,
-          "sd": 0.9924114117976376,
-          "tStat": -1.3043173749458374,
+          "sd": 0.9885226081330435,
+          "tStat": -1.185689084453617,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2022,7 +2022,7 @@
           "tStat": -0.4158192898626238,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2271,7 +2271,7 @@
           "tStat": 0.5846133553723636,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2366,7 +2366,7 @@
           "tStat": -1.1248533868369868,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2600,22 +2600,22 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 100,
+          "trades": 101,
           "wins": 54,
-          "losses": 46,
-          "winRate": 54,
-          "pf": 0.6446779211498886,
-          "exp": -0.1817068125769168,
-          "netR": -18.17068125769168,
+          "losses": 47,
+          "winRate": 53.46534653465347,
+          "pf": 0.6307286978607394,
+          "exp": -0.19110559633900048,
+          "netR": -19.30166523023905,
           "maxDD": 22.41814619846025,
-          "sumR2": 88.40168662662302,
+          "sumR2": 89.68081137278205,
           "grossW": 32.967940120679735,
-          "grossL": 51.13862137837141,
-          "sd": 0.9271437078900817,
-          "tStat": -1.9598559644052418,
+          "grossL": 52.26960535091878,
+          "sd": 0.9273195518731472,
+          "tStat": -2.0711171999205487,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2710,7 +2710,7 @@
           "tStat": -0.17808977548655233,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -2959,7 +2959,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3054,7 +3054,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -3288,22 +3288,22 @@
       },
       "emax": {
         "SUIUSDT": {
-          "trades": 31,
-          "wins": 15,
+          "trades": 32,
+          "wins": 16,
           "losses": 16,
-          "winRate": 48.38709677419355,
-          "pf": 0.6077633868050796,
-          "exp": -0.2299800687958993,
-          "netR": -7.129382132672879,
+          "winRate": 50,
+          "pf": 0.643043159837395,
+          "exp": -0.20275402913543597,
+          "netR": -6.488128932333951,
           "maxDD": 9.844006361716152,
-          "sumR2": 32.747617626240114,
-          "grossW": 11.046845921616288,
+          "sumR2": 33.15882329318503,
+          "grossW": 11.688099121955215,
           "grossL": 18.176228054289172,
-          "sd": 1.0182992656532057,
-          "tStat": -1.257464160480978,
+          "sd": 1.0135108098251302,
+          "tStat": -1.1316603436271055,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "TREND_DOWN",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3364,19 +3364,19 @@
           "dataStatus": "LIVE"
         },
         "AAPL": {
-          "trades": 5,
+          "trades": 6,
           "wins": 3,
-          "losses": 2,
-          "winRate": 60,
-          "pf": 0.38606115063679514,
-          "exp": -0.20683011730756987,
-          "netR": -1.0341505865378493,
-          "maxDD": 1.5128093749363387,
-          "sumR2": 1.7791739887613467,
+          "losses": 3,
+          "winRate": 50,
+          "pf": 0.2251703828146526,
+          "exp": -0.3729567431949527,
+          "netR": -2.237740459169716,
+          "maxDD": 2.359373506886331,
+          "sumR2": 3.22780257026334,
           "grossW": 0.6503015174632255,
-          "grossL": 1.684452104001075,
-          "sd": 0.6255558531486279,
-          "tStat": -0.739320397636977,
+          "grossL": 2.888041976632942,
+          "sd": 0.6918413367956304,
+          "tStat": -1.3204670903145526,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3398,7 +3398,7 @@
           "tStat": -0.4012833073104305,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "CHAOS",
+          "regime": "RANGING",
           "dataStatus": "LIVE"
         },
         "MSFT": {
@@ -4648,6 +4648,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795622927430,
+        "type": "CYCLE",
+        "text": "[CYCLE #455] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795622922972,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795622028427,
+        "type": "CYCLE",
+        "text": "[CYCLE #454] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795622023387,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795621130361,
         "type": "CYCLE",
@@ -6127,26 +6147,6 @@
         "t": 1795433599815,
         "type": "TP1",
         "text": "[TP1 LOCKED] TP1 DOGEUSDT tercapai -> 50% ditutup, SL digeser ke breakeven"
-      },
-      {
-        "t": 1795433599697,
-        "type": "LOSS",
-        "text": "[LOSS] SOLUSDT SHORT LOSS -1.15R — SL 71.6300 tersentuh | Akar: SL tersentuh setelah MFE 0.32R — indikasi wick-hunt / noise likuiditas. | Dicatat sebagai bukti 1/5 — parameter belum diubah (hindari overfit pada satu kejadian)."
-      },
-      {
-        "t": 1795424031971,
-        "type": "CYCLE",
-        "text": "[CYCLE #330] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795424030725,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (29 trade OOS, -0.115R/trade, win 58.6%, t=-0.63) | Meta-model belum aktif (1260 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.363R)"
-      },
-      {
-        "t": 1795424030724,
-        "type": "GEN",
-        "text": "[GEN #55] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: EMA Cross Naive (CONTROL) (BELUM SIGNIFIKAN) (-3.64R, 37 trade, Win 59.5%, t=-0.61 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -6223,9 +6223,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 9,
-      "newsIngested": 12380,
+      "newsIngested": 12440,
       "lessons": 1,
-      "backtests": 12260,
+      "backtests": 12320,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6238,8 +6238,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795621123426,
+      "fetchedAt": 1795622922972,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "South Korean crypto exchange Bithumb warns of phishing after deeper October breach probe",
+          "link": "https://www.coindesk.com/tech/2026/11/25/south-korean-crypto-exchange-bithumb-warns-of-phishing-after-deeper-october-breach-probe",
+          "pubDate": "2026-11-25 14:47:17",
+          "summary": "South Korea&#39;s second-largest crypto exchange said its trading systems were not breached, but stolen customer records could already be being used in future scams."
+        },
         {
           "source": "CoinDesk",
           "title": "Fed’s preferred inflation gauge lands with a December rate increase already priced in",
@@ -6302,13 +6309,6 @@
           "link": "https://www.coindesk.com/markets/2026/11/25/crypto-traders-can-now-hedge-nvidia-and-oil-bets-on-derive",
           "pubDate": "2026-11-25 04:57:22",
           "summary": "Derive’s new options on Nvidia, Anthropic, stock indices and oil bring hedging tools to onchain RWA markets."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "A year after buying bitcoin, Czech central bank won&#39;t say what it&#39;s worth",
-          "link": "https://www.coindesk.com/markets/2026/11/23/a-year-after-buying-bitcoin-czech-central-bank-won-t-say-what-it-s-worth",
-          "pubDate": "2026-11-25 04:50:08",
-          "summary": "The Czech National Bank bought bitcoin a year ago as an experiment. The coin has fallen at least 40% since, and the bank&#39;s audited accounts carry it at cost rather than market value. The CNB told CoinDesk an outside cust"
         },
         {
           "source": "CoinTelegraph",
@@ -6576,7 +6576,7 @@
       "fearGreed": {
         "value": 13,
         "classification": "Extreme Fear",
-        "t": 1795621123426
+        "t": 1795622922972
       },
       "lastErrors": []
     },
@@ -7256,6 +7256,11 @@
             0.555,
             -1.231,
             35
+          ],
+          [
+            0.482,
+            -1.181,
+            81
           ]
         ],
         "TSLA": [
@@ -10767,20 +10772,20 @@
       },
       "status": {
         "all": {
-          "n": 777,
-          "mean": -0.288,
+          "n": 778,
+          "mean": -0.289,
           "sd": 0.944,
-          "t": -8.49,
+          "t": -8.53,
           "winRate": 52.1,
-          "sum": -223.55
+          "sum": -224.73
         },
         "base": {
-          "n": 74,
-          "mean": -0.109,
-          "sd": 0.99,
-          "t": -0.95,
-          "winRate": 59.5,
-          "sum": -8.06
+          "n": 75,
+          "mean": -0.123,
+          "sd": 0.991,
+          "t": -1.08,
+          "winRate": 58.7,
+          "sum": -9.24
         },
         "taken": {
           "n": 0,
@@ -10793,17 +10798,17 @@
         "metaActive": false,
         "policy": "SCORE",
         "chosen": {
-          "n": 74,
-          "mean": -0.109,
-          "sd": 0.99,
-          "t": -0.95,
-          "winRate": 59.5,
-          "sum": -8.06
+          "n": 75,
+          "mean": -0.123,
+          "sd": 0.991,
+          "t": -1.08,
+          "winRate": 58.7,
+          "sum": -9.24
         },
         "significant": false,
         "symbols": 18,
         "nTrain": 1292,
-        "updatedAt": 1795621126492
+        "updatedAt": 1795622923271
       }
     },
     "champion": {
@@ -10819,7 +10824,7 @@
       "deflatedT": -6.15,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795621126489,
+      "updatedAt": 1795622923268,
       "gen": 75
     },
     "factory": {
