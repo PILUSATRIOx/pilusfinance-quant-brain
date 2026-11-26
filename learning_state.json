@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795671528527,
+  "updatedAt": 1795672431565,
   "brain": {
     "v": 1,
     "gen": 81,
-    "cycles": 487,
+    "cycles": 488,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795671071642,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.6,
+    "lastHurst": 0.59,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -391,21 +391,21 @@
         },
         "XRPUSDT": {
           "trades": 84,
-          "wins": 42,
-          "losses": 42,
-          "winRate": 50,
-          "pf": 0.6426526307759514,
-          "exp": -0.20866432207192256,
-          "netR": -17.527803054041495,
-          "maxDD": 20.231908076992145,
-          "sumR2": 95.32736438307401,
-          "grossW": 31.521957944903935,
-          "grossL": 49.04976099894543,
-          "sd": 1.0509315273591793,
-          "tStat": -1.8197570932790565,
+          "wins": 43,
+          "losses": 41,
+          "winRate": 51.19047619047619,
+          "pf": 0.663033739952698,
+          "exp": -0.19204964959939705,
+          "netR": -16.13217056634935,
+          "maxDD": 20.23190807699215,
+          "sumR2": 93.99534685501477,
+          "grossW": 31.742564916321175,
+          "grossL": 47.87473548267053,
+          "sd": 1.0464925304419135,
+          "tStat": -1.6819652904877227,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -424,23 +424,23 @@
           "tStat": -1.2520547337670054,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
           "trades": 94,
-          "wins": 56,
-          "losses": 38,
-          "winRate": 59.57446808510638,
-          "pf": 0.655113007280969,
-          "exp": -0.16207075317414502,
-          "netR": -15.234650798369632,
-          "maxDD": 17.94753142468204,
-          "sumR2": 84.0106232184993,
-          "grossW": 28.938226462852104,
-          "grossL": 44.172877261221736,
-          "sd": 0.9363710084554842,
-          "tStat": -1.678110745727873,
+          "wins": 57,
+          "losses": 37,
+          "winRate": 60.63829787234043,
+          "pf": 0.6913052229867124,
+          "exp": -0.14094159611847176,
+          "netR": -13.248510035136345,
+          "maxDD": 17.947531424682037,
+          "sumR2": 82.96997824369242,
+          "grossW": 29.669320202613616,
+          "grossL": 42.917830237749975,
+          "sd": 0.9338480460142377,
+          "tStat": -1.4632781842651224,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -719,7 +719,7 @@
           "tStat": -1.2931751448896547,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -738,7 +738,7 @@
           "tStat": -1.449904520819124,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1033,7 +1033,7 @@
           "tStat": -0.9347590444453909,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -1052,7 +1052,7 @@
           "tStat": -1.388571310051048,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1332,22 +1332,22 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 61,
+          "trades": 62,
           "wins": 32,
-          "losses": 29,
-          "winRate": 52.459016393442624,
-          "pf": 0.6908997790976843,
-          "exp": -0.17540254453464357,
-          "netR": -10.699555216613257,
+          "losses": 30,
+          "winRate": 51.61290322580645,
+          "pf": 0.6689540088977449,
+          "exp": -0.1908894143466251,
+          "netR": -11.835143689490756,
           "maxDD": 14.066131457009291,
-          "sumR2": 69.60434301373394,
+          "sumR2": 70.89390419346618,
           "grossW": 23.915610005137307,
-          "grossL": 34.61516522175056,
-          "sd": 1.06244696968328,
-          "tStat": -1.289417453949054,
+          "grossL": 35.75075369462806,
+          "sd": 1.0607351343960234,
+          "tStat": -1.4170028906289278,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -1366,7 +1366,7 @@
           "tStat": -0.4923880149394119,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1661,26 +1661,26 @@
           "tStat": -1.1158604784728028,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 18,
-          "wins": 11,
+          "trades": 19,
+          "wins": 12,
           "losses": 7,
-          "winRate": 61.111111111111114,
-          "pf": 0.7689221548773691,
-          "exp": -0.10212396007749379,
-          "netR": -1.8382312813948882,
+          "winRate": 63.1578947368421,
+          "pf": 0.9595953526565094,
+          "exp": -0.01691685250987203,
+          "netR": -0.3214201976875686,
           "maxDD": 4.372840179157341,
-          "sumR2": 15.046901241283202,
-          "grossW": 6.116799112883523,
+          "sumR2": 17.347617104940575,
+          "grossW": 7.633610196590843,
           "grossL": 7.9550303942784115,
-          "sd": 0.9349165984598913,
-          "tStat": -0.4634373471048268,
+          "sd": 0.9815571440562807,
+          "tStat": -0.07512435825039092,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -1975,7 +1975,7 @@
           "tStat": -1.8404834225868192,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -1994,7 +1994,7 @@
           "tStat": -4.016345378198924,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2274,22 +2274,22 @@
           "dataStatus": "LIVE"
         },
         "XRPUSDT": {
-          "trades": 32,
+          "trades": 33,
           "wins": 14,
-          "losses": 18,
-          "winRate": 43.75,
-          "pf": 0.3774206221767513,
-          "exp": -0.42020330948469875,
-          "netR": -13.44650590351036,
-          "maxDD": 13.71280617680096,
-          "sumR2": 34.32026661017401,
+          "losses": 19,
+          "winRate": 42.42424242424242,
+          "pf": 0.35856775153759946,
+          "exp": -0.44188164776932903,
+          "netR": -14.582094376387857,
+          "maxDD": 14.582094376387857,
+          "sumR2": 35.609827789906255,
           "grossW": 8.15155272561411,
-          "grossL": 21.59805862912447,
-          "sd": 0.9616853540917769,
-          "tStat": -2.4717324297344265,
+          "grossL": 22.733647102001967,
+          "sd": 0.9546967433912608,
+          "tStat": -2.6588723859572747,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -2308,7 +2308,7 @@
           "tStat": -0.18184411890168814,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2592,18 +2592,18 @@
           "wins": 54,
           "losses": 47,
           "winRate": 53.46534653465347,
-          "pf": 0.5980101525340984,
-          "exp": -0.2184955946284229,
-          "netR": -22.068055057470715,
+          "pf": 0.600383861829001,
+          "exp": -0.21720540029358026,
+          "netR": -21.937745429651606,
           "maxDD": 28.241993529901436,
-          "sumR2": 97.80537048960181,
-          "grossW": 32.82899071765329,
+          "sumR2": 98.00628922030225,
+          "grossW": 32.9593003454724,
           "grossL": 54.897045775124006,
-          "sd": 0.9642800302688372,
-          "tStat": -2.2771948820368135,
+          "sd": 0.9656153087162409,
+          "tStat": -2.2606179059944123,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -2611,18 +2611,18 @@
           "wins": 52,
           "losses": 50,
           "winRate": 50.98039215686274,
-          "pf": 0.6111956462028186,
-          "exp": -0.2212611484902844,
-          "netR": -22.568637146009006,
-          "maxDD": 26.71187743254488,
-          "sumR2": 105.2725133555974,
-          "grossW": 35.47761908954197,
+          "pf": 0.5952119625646373,
+          "exp": -0.23035715825547903,
+          "netR": -23.496430142058863,
+          "maxDD": 26.71187743254489,
+          "sumR2": 103.32994485399388,
+          "grossW": 34.54982609349211,
           "grossL": 58.04625623555097,
-          "sd": 0.9964240557212127,
-          "tStat": -2.242647644860266,
+          "sd": 0.9846212217246301,
+          "tStat": -2.362830706932414,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -2630,15 +2630,15 @@
           "wins": 57,
           "losses": 49,
           "winRate": 52.77777777777778,
-          "pf": 0.4477710648033326,
-          "exp": -0.31338390724852155,
-          "netR": -33.84546198284033,
-          "maxDD": 37.39557880137296,
-          "sumR2": 105.85380057393364,
-          "grossW": 27.459238311388223,
-          "grossL": 61.32428035172105,
-          "sd": 0.9434831937897659,
-          "tStat": -3.4518697515867487,
+          "pf": 0.44888235728907333,
+          "exp": -0.31280223263021717,
+          "netR": -33.78264112406345,
+          "maxDD": 37.40524706955838,
+          "sumR2": 106.08653130075159,
+          "grossW": 27.531727438350522,
+          "grossL": 61.33394861990647,
+          "sd": 0.944829736592538,
+          "tStat": -3.4405523364904287,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2917,7 +2917,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
@@ -2936,7 +2936,7 @@
           "tStat": 0,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
@@ -3231,42 +3231,42 @@
           "tStat": -1.9877338864560998,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "DOGEUSDT": {
-          "trades": 30,
+          "trades": 29,
           "wins": 17,
-          "losses": 13,
-          "winRate": 56.666666666666664,
-          "pf": 0.3976490689034012,
-          "exp": -0.3032091363189641,
-          "netR": -9.096274089568924,
-          "maxDD": 10.176682910014268,
-          "sumR2": 21.147232470591245,
+          "losses": 12,
+          "winRate": 58.620689655172406,
+          "pf": 0.4303559172285864,
+          "exp": -0.27408908168516555,
+          "netR": -7.9485833688698015,
+          "maxDD": 9.278238259857275,
+          "sumR2": 19.83003848021237,
           "grossW": 6.005012585640281,
-          "grossL": 15.10128667520921,
-          "sd": 0.7963095711526993,
-          "tStat": -2.085551770565236,
+          "grossL": 13.953595954510087,
+          "sd": 0.793982245302142,
+          "tStat": -1.8590023712042643,
           "atrMult": 1.85,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "CHAOS",
           "dataStatus": "LIVE"
         },
         "BNBUSDT": {
-          "trades": 30,
+          "trades": 29,
           "wins": 12,
-          "losses": 18,
-          "winRate": 40,
-          "pf": 0.18624166222238767,
-          "exp": -0.6544587223089067,
-          "netR": -19.6337616692672,
-          "maxDD": 20.53857377249442,
-          "sumR2": 36.40781036512839,
+          "losses": 17,
+          "winRate": 41.37931034482759,
+          "pf": 0.1965333456189609,
+          "exp": -0.6334590056247954,
+          "netR": -18.370311163119066,
+          "maxDD": 19.414695660061792,
+          "sumR2": 34.81150318364241,
           "grossW": 4.493501619840635,
-          "grossL": 24.127263289107834,
-          "sd": 0.9013079344608836,
-          "tStat": -3.977129141540413,
+          "grossL": 22.863812782959698,
+          "sd": 0.9097618240356516,
+          "tStat": -3.7496419982988702,
           "atrMult": 1.85,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3392,7 +3392,7 @@
         "lockedR": 0.4000000000000013,
         "mfe": 1.5220209967273035,
         "mae": 0,
-        "lastBarT": 1795671300000
+        "lastBarT": 1795672200000
       },
       {
         "id": "sig_LINKUSDT_1795630128228",
@@ -3456,7 +3456,7 @@
         "lockedR": 0.40000000000000024,
         "mfe": 1.8158670349807002,
         "mae": 0,
-        "lastBarT": 1795671300000
+        "lastBarT": 1795672200000
       },
       {
         "id": "sig_LINKUSDT_1795532931941",
@@ -4474,6 +4474,21 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795672431541,
+        "type": "CYCLE",
+        "text": "[CYCLE #488] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795672425054,
+        "type": "CB",
+        "text": "[CIRCUIT BREAKER] AKTIF: XRP — Long baru diblokir (Ripple is worth $90 a share to one fund and $300 to another, SEC filings show)"
+      },
+      {
+        "t": 1795672425052,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795671528504,
         "type": "CYCLE",
@@ -5958,21 +5973,6 @@
         "t": 1795463632708,
         "type": "CYCLE",
         "text": "[CYCLE #362] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795463626003,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795462728793,
-        "type": "CYCLE",
-        "text": "[CYCLE #361] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795462723757,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6049,9 +6049,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13340,
+      "newsIngested": 13370,
       "lessons": 1,
-      "backtests": 13250,
+      "backtests": 13280,
       "netR": -1.82,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6064,8 +6064,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795671068429,
+      "fetchedAt": 1795672425052,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Ripple is worth $90 a share to one fund and $300 to another, SEC filings show",
+          "link": "https://www.coindesk.com/markets/2026/11/26/ripple-is-worth-usd90-a-share-to-one-fund-and-usd300-to-another-sec-filings-show",
+          "pubDate": "2026-11-26 05:30:38",
+          "summary": "Two SEC-registered funds open to ordinary investors marked Ripple stock 70% apart on Sept. 30, and the lower mark sits barely above what the other fund paid in 2018."
+        },
         {
           "source": "CoinDesk",
           "title": "Bill to lock up U.S. government bitcoin for 20 years advances to full House",
@@ -6130,11 +6137,11 @@
           "summary": "Bitcoin (BTC) is down 1.2% since midnight UTC as the stock selloff resumes, with ether (ETH) and DeFi tokens falling about twice as far."
         },
         {
-          "source": "CoinDesk",
-          "title": "Italy’s UniCredit launches six-year bitcoin certificate with gains capped at 65%",
-          "link": "https://www.coindesk.com/business/2026/11/25/italy-s-unicredit-debuts-six-year-bitcoin-certificate-with-100-capital-protection-and-65-cap",
-          "pubDate": "2026-11-25 11:51:54",
-          "summary": "UniCredit brings bitcoin investing to its roughly 8 million retail customers in Italy, offering them a six-year product that caps the redemption value but promises to return their capital."
+          "source": "CoinTelegraph",
+          "title": "Sky proposes emergency vote on $25M transfer amid liquidity stress",
+          "link": "https://cointelegraph.com/news/sky-emergency-vote-25m-transfer-stusds-liquidity-stress?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-26 05:29:26",
+          "summary": "    Sky’s Core Facilitator invoked the protocol’s emergency response process to expedite a vote rather than wait until the next scheduled vote on Dec. 3. "
         },
         {
           "source": "CoinTelegraph",
@@ -6156,13 +6163,6 @@
           "link": "https://cointelegraph.com/news/ai-labs-likely-sitting-on-cryptography-bombshells-computer-scientist-says?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-26 01:33:20",
           "summary": "    AI is driving a massive wave of mathematical breakthroughs which could have implications for cryptography.  "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-25 22:33:13",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -6310,12 +6310,14 @@
           "critHead": ""
         },
         "XRP": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
+          "sentiment": "BEARISH",
+          "impact": -0.5,
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
-          "critical": false,
-          "critHead": ""
+          "critical": true,
+          "critHead": "Ripple is worth $90 a share to one fund and $300 to another, SEC filings show"
         },
         "DOGE": {
           "sentiment": "NEUTRAL",
@@ -6384,11 +6386,16 @@
           "critHead": ""
         }
       },
-      "breaker": [],
+      "breaker": [
+        {
+          "coin": "XRP",
+          "head": "Ripple is worth $90 a share to one fund and $300 to another, SEC filings show"
+        }
+      ],
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795671068429
+        "t": 1795672425052
       },
       "lastErrors": []
     },
@@ -8771,6 +8778,11 @@
             0.465,
             -1.149,
             56
+          ],
+          [
+            0.552,
+            1.517,
+            10
           ]
         ],
         "DOGEUSDT": [
@@ -9113,6 +9125,11 @@
             0.511,
             0.703,
             69
+          ],
+          [
+            0.555,
+            1.517,
+            10
           ]
         ],
         "BNBUSDT": [
@@ -10491,12 +10508,12 @@
       },
       "status": {
         "all": {
-          "n": 785,
-          "mean": -0.283,
-          "sd": 0.946,
-          "t": -8.37,
-          "winRate": 52.2,
-          "sum": -221.94
+          "n": 787,
+          "mean": -0.278,
+          "sd": 0.95,
+          "t": -8.22,
+          "winRate": 52.4,
+          "sum": -218.91
         },
         "base": {
           "n": 75,
@@ -10527,23 +10544,23 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1294,
-        "updatedAt": 1795671525502
+        "updatedAt": 1795672428137
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -74.64,
-      "trades": 519,
-      "winRate": 58.4,
+      "netR": -75.77,
+      "trades": 520,
+      "winRate": 58.3,
       "pf": 0.71,
-      "expPerTrade": -0.144,
-      "tStat": -3.36,
-      "deflatedT": -5.51,
+      "expPerTrade": -0.146,
+      "tStat": -3.41,
+      "deflatedT": -5.56,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795671525500,
+      "updatedAt": 1795672428136,
       "gen": 81
     },
     "factory": {
