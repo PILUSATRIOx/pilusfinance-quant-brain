@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795671089110,
+  "updatedAt": 1795671155482,
   "brain": {
     "v": 1,
     "gen": 81,
@@ -10542,12 +10542,12 @@
       "gen": 81
     },
     "factory": {
-      "updatedAt": 1795608099102,
-      "day": "2026-11-25",
-      "dataUntil": "2026-11-24",
+      "updatedAt": 1795671082104,
+      "day": "2026-11-26",
+      "dataUntil": "2026-11-25",
       "universe": 20,
-      "nTrials": 79,
-      "hurdleSharpe": 2.83,
+      "nTrials": 83,
+      "hurdleSharpe": 2.8,
       "pbo": 0.186,
       "top": [
         {
@@ -10567,7 +10567,7 @@
           "label": "Carry funding > 10%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.67,
+          "sharpe": 4.66,
           "cagr": 0.0639,
           "mdd": -0.0311,
           "dsr": 1,
@@ -10581,7 +10581,7 @@
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.43,
           "cagr": 0.0631,
-          "mdd": -0.0715,
+          "mdd": -0.0716,
           "dsr": 1,
           "years": 6.92,
           "status": "KANDIDAT"
@@ -10615,7 +10615,7 @@
           "label": "Carry funding > 24%/th (long spot + short perpetual)",
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
-          "sharpe": 4.02,
+          "sharpe": 4.01,
           "cagr": 0.0498,
           "mdd": -0.0082,
           "dsr": 1,
@@ -10642,7 +10642,7 @@
           "sharpe": 3.68,
           "cagr": 0.0441,
           "mdd": -0.008,
-          "dsr": 0.9975,
+          "dsr": 0.9981,
           "years": 6.92,
           "status": "KANDIDAT"
         },
@@ -10652,7 +10652,7 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2938,
+          "cagr": 0.2937,
           "mdd": -0.3307,
           "dsr": 0,
           "years": 6.83,
@@ -10664,7 +10664,7 @@
           "family": "XSMOM",
           "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
           "sharpe": 1.05,
-          "cagr": 0.6875,
+          "cagr": 0.6907,
           "mdd": -0.7746,
           "dsr": 0,
           "years": 6.9,
@@ -10679,11 +10679,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 8,
+            "days": 9,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.68
+            "z": -0.72
           }
         }
       ],
@@ -10707,6 +10707,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795671082104,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Harga vs SMA 23 hari (long/short); Persilangan SMA 28/149 (long/short); Persilangan SMA 50/250 (long/flat); Persilangan SMA 27/86 (long/short)"
+        },
         {
           "t": 1795608099102,
           "type": "EXPLORE",
@@ -10758,10 +10763,7 @@
           "text": "4 kandidat baru diuji: Breakout Donchian 49 hari (long/short); Trend TSMOM 202 hari (long/flat); Momentum lintas koin 66 hari, 33% teratas vs terbawah (netral pasar); Carry funding > 24%/th (long spot + short perpetual)"
         }
       ],
-      "lastError": {
-        "at": 1795670711351,
-        "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
-      }
+      "lastError": null
     }
   }
 }
