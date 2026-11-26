@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795712024764,
+  "updatedAt": 1795712924248,
   "brain": {
     "v": 1,
-    "gen": 82,
-    "cycles": 497,
+    "gen": 83,
+    "cycles": 498,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795707522594,
+    "lastOptAt": 1795712921983,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -36,12 +36,12 @@
     },
     "weights": {
       "elder": 0.6,
-      "donchian": 0.54,
-      "bbrev": 0.78,
-      "wyckoff": 0.8,
-      "rsidiv": 0.49,
+      "donchian": 0.55,
+      "bbrev": 0.79,
+      "wyckoff": 0.78,
+      "rsidiv": 0.48,
       "macdm": 0.52,
-      "smc": 0.54,
+      "smc": 0.53,
       "statarb": 0.61,
       "tsmom": 1,
       "emax": 0.54
@@ -4781,6 +4781,26 @@
     ],
     "journal": [
       {
+        "t": 1795712924233,
+        "type": "CYCLE",
+        "text": "[CYCLE #498] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795712921983,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (75 trade OOS, -0.124R/trade, win 58.7%, t=-1.08) | Meta-model belum aktif (1304 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.277R)"
+      },
+      {
+        "t": 1795712921983,
+        "type": "GEN",
+        "text": "[GEN #83] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-87.46R, 556 trade, Win 57.7%, t=-3.78 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795712921687,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795712024750,
         "type": "CYCLE",
         "text": "[CYCLE #497] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6259,26 +6279,6 @@
         "t": 1795496936026,
         "type": "GEN",
         "text": "[GEN #62] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: EMA Cross Naive (CONTROL) (BELUM SIGNIFIKAN) (-3.93R, 37 trade, Win 59.5%, t=-0.66 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795496935474,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795496024193,
-        "type": "CYCLE",
-        "text": "[CYCLE #371] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795496022577,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795495368910,
-        "type": "CYCLE",
-        "text": "[CYCLE #370] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6365,9 +6365,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13600,
+      "newsIngested": 13630,
       "lessons": 1,
-      "backtests": 13550,
+      "backtests": 13580,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6380,7 +6380,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795712021770,
+      "fetchedAt": 1795712921687,
       "items": [
         {
           "source": "CoinDesk",
@@ -6454,6 +6454,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "BIS chief Pablo Hernández de Cos set to become next ECB president: FT",
+          "link": "https://cointelegraph.com/news/bis-chief-pablo-hernndez-de-cos-next-ecb-president?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-26 16:40:44",
+          "summary": "    The Spanish economist has questioned the viability of stablecoins for widespread payments while backing the development of a digital euro. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "How EU brokers could lose access to Kyrgyz crypto exchanges",
           "link": "https://cointelegraph.com/news/how-eu-brokers-could-lose-access-to-kyrgyz-crypto-exchanges?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-26 15:45:07",
@@ -6516,11 +6523,11 @@
           "summary": "    The Morgan Stanley Bitcoin Trust drew $114.1 million in monthly net inflows through Wednesday, while US spot Bitcoin ETF outflows reached $5.39 billion. "
         },
         {
-          "source": "CoinTelegraph",
-          "title": "Switzerland’s first spot Bitcoin ETF ticks up 0.6% in opening hour",
-          "link": "https://cointelegraph.com/markets/bit-debuts-switzerlands-first-spot-bitcoin-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 09:18:15",
-          "summary": "    The spot Bitcoin ETF will be backed by Bitcoin held in cold storage at a Swiss bank, unlike prior Bitcoin ETPs structured as debt securities. "
+          "source": "Decrypt",
+          "title": "Spain Lets Its Financial Intelligence Unit Freeze Crypto Accounts Without a Court Order",
+          "link": "https://decrypt.co/384063/spain-lets-its-financial-intelligence-unit-freeze-crypto-accounts-without-a-court-order",
+          "pubDate": "2026-11-26 16:43:02",
+          "summary": "Sepblac can now suspend crypto, bank and payment accounts for up to five working days, with courts deciding on any extension."
         },
         {
           "source": "Decrypt",
@@ -6584,19 +6591,12 @@
           "link": "https://decrypt.co/384001/what-happened-alice-huang-nvidia-spy-scandal",
           "pubDate": "2026-11-25 21:46:02",
           "summary": "U.S. intelligence found no evidence that Beijing directed Alice Huang to spy on Nvidia’s CEO, but the former Megaspeed executive still faces entry bans and scrutiny of business ties."
-        },
-        {
-          "source": "Decrypt",
-          "title": "The 1Password Breach Didn’t Touch Your Vault. The Phishing Emails Might",
-          "link": "https://decrypt.co/384002/1password-breach-vaults-phishing-emails",
-          "pubDate": "2026-11-25 21:16:02",
-          "summary": "An attacker compromised an employee’s GitHub account to reach 1Password’s backend and copy customer names and emails, but the company says vault contents, encryption keys and your Secret Key were never exposed."
         }
       ],
       "perCoin": {
         "BTC": {
           "sentiment": "BULLISH",
-          "impact": 0.17,
+          "impact": 0.83,
           "sources": [
             "CoinDesk",
             "CoinTelegraph",
@@ -6681,7 +6681,9 @@
         "EUR": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinTelegraph"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6699,7 +6701,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795712021770
+        "t": 1795712921687
       },
       "lastErrors": []
     },
@@ -7488,211 +7490,211 @@
         ],
         "MSFT": [
           [
-            0.499,
+            0.482,
             0.14,
             10
           ],
           [
-            0.481,
+            0.461,
             -1.188,
             40
           ],
           [
-            0.501,
+            0.481,
             -1.201,
             2
           ],
           [
-            0.543,
+            0.534,
             1.414,
             90
           ],
           [
-            0.492,
+            0.472,
             -1.251,
             10
           ],
           [
-            0.495,
+            0.49,
             -1.251,
             69
           ],
           [
-            0.466,
+            0.457,
             0.151,
             64
           ],
           [
-            0.539,
+            0.526,
             0.156,
             2
           ],
           [
-            0.525,
+            0.508,
             0.115,
             35
           ],
           [
-            0.562,
+            0.55,
             -1.207,
             27
           ],
           [
-            0.551,
+            0.537,
             0.231,
             10
           ],
           [
-            0.542,
+            0.53,
             1.492,
             35
           ],
           [
-            0.544,
+            0.531,
             -1.167,
             10
           ],
           [
-            0.464,
+            0.457,
             0.228,
             69
           ],
           [
-            0.458,
+            0.453,
             -1.158,
             69
           ],
           [
-            0.548,
+            0.535,
             -1.133,
             10
           ]
         ],
         "SPY": [
           [
-            0.548,
+            0.533,
             1.159,
             2
           ],
           [
-            0.479,
+            0.46,
             -1.394,
             40
           ],
           [
-            0.552,
+            0.543,
             -1.708,
             10
           ],
           [
-            0.417,
+            0.411,
             -0.257,
             61
           ],
           [
-            0.514,
+            0.5,
             -1.556,
             46
           ],
           [
-            0.432,
+            0.426,
             -1.476,
             48
           ],
           [
-            0.518,
+            0.505,
             -0.218,
             41
           ],
           [
-            0.438,
+            0.424,
             -0.025,
             56
           ],
           [
-            0.508,
+            0.49,
             1.097,
             35
           ],
           [
-            0.541,
+            0.528,
             -1.414,
             10
           ],
           [
-            0.497,
+            0.479,
             1.347,
             2
           ],
           [
-            0.515,
+            0.511,
             -1.349,
             61
           ],
           [
-            0.461,
+            0.457,
             -1.22,
             61
           ]
         ],
         "QQQ": [
           [
-            0.507,
+            0.496,
             0.059,
             95
           ],
           [
-            0.502,
+            0.492,
             0.076,
             95
           ],
           [
-            0.485,
+            0.467,
             -1.747,
             10
           ],
           [
-            0.451,
+            0.445,
             1.176,
             48
           ],
           [
-            0.444,
+            0.438,
             1.599,
             69
           ],
           [
-            0.443,
+            0.44,
             -1.362,
             61
           ],
           [
-            0.516,
+            0.503,
             -1.245,
             41
           ],
           [
-            0.553,
+            0.54,
             0.661,
             10
           ],
           [
-            0.421,
+            0.406,
             1.353,
             96
           ],
           [
-            0.447,
+            0.44,
             0.243,
             56
           ],
           [
-            0.471,
+            0.463,
             0.339,
             56
           ],
           [
-            0.433,
+            0.427,
             -0.523,
             61
           ]
@@ -10974,7 +10976,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1304,
-        "updatedAt": 1795712022036
+        "updatedAt": 1795712921983
       }
     },
     "champion": {
@@ -10990,8 +10992,8 @@
       "deflatedT": -5.93,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795712022036,
-      "gen": 82
+      "updatedAt": 1795712921983,
+      "gen": 83
     },
     "factory": {
       "updatedAt": 1795671082104,
