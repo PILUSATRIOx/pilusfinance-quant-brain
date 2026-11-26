@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795710226125,
+  "updatedAt": 1795711126049,
   "brain": {
     "v": 1,
     "gen": 82,
-    "cycles": 495,
+    "cycles": 496,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795707522594,
     "autoExecBursa": false,
@@ -196,16 +196,16 @@
           "wins": 39,
           "losses": 35,
           "winRate": 52.702702702702695,
-          "pf": 0.7048476762825063,
-          "exp": -0.15645543511640547,
-          "netR": -11.577702198614006,
-          "maxDD": 14.284968569837462,
-          "sumR2": 74.1323074932156,
-          "grossW": 27.648491425040646,
-          "grossL": 39.22619362365465,
-          "sd": 0.9953378517628203,
-          "tStat": -1.3521846278470617,
-          "atrMult": 1.85,
+          "pf": 0.7046582296801526,
+          "exp": -0.15659240627972737,
+          "netR": -11.587838064699826,
+          "maxDD": 14.294253442144786,
+          "sumR2": 74.15214955178759,
+          "grossW": 27.64751307493239,
+          "grossL": 39.235351139632215,
+          "sd": 0.9954525514906605,
+          "tStat": -1.3532124772295,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -224,7 +224,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -243,7 +243,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -536,20 +536,20 @@
       },
       "donchian": {
         "SUIUSDT": {
-          "trades": 76,
-          "wins": 41,
+          "trades": 77,
+          "wins": 42,
           "losses": 35,
-          "winRate": 53.94736842105263,
-          "pf": 0.5714223316466974,
-          "exp": -0.22025032156944635,
-          "netR": -16.739024439277923,
-          "maxDD": 21.62041000199964,
-          "sumR2": 65.16810910731934,
-          "grossW": 22.31813060007175,
-          "grossL": 39.057155039349674,
-          "sd": 0.905401079388279,
-          "tStat": -2.120715152343747,
-          "atrMult": 1.85,
+          "winRate": 54.54545454545454,
+          "pf": 0.5583427123707048,
+          "exp": -0.22407480351018394,
+          "netR": -17.253759870284163,
+          "maxDD": 21.63183017535173,
+          "sumR2": 63.86068131555772,
+          "grossW": 21.812186404253694,
+          "grossL": 39.06594627453785,
+          "sd": 0.8884829505725201,
+          "tStat": -2.213040126033641,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -568,7 +568,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -587,7 +587,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -880,20 +880,20 @@
       },
       "bbrev": {
         "SUIUSDT": {
-          "trades": 41,
+          "trades": 40,
           "wins": 29,
-          "losses": 12,
-          "winRate": 70.73170731707317,
-          "pf": 1.1282624776854375,
-          "exp": 0.0416228111274064,
-          "netR": 1.7065352562236624,
-          "maxDD": 3.103735128196716,
-          "sumR2": 27.24825357331623,
-          "grossW": 15.01155857262116,
-          "grossL": 13.3050233163975,
-          "sd": 0.8242757848357577,
-          "tStat": 0.32333356828272064,
-          "atrMult": 1.85,
+          "losses": 11,
+          "winRate": 72.5,
+          "pf": 1.2703497949937395,
+          "exp": 0.08273679862043029,
+          "netR": 3.3094719448172114,
+          "maxDD": 3.1035265369252065,
+          "sumR2": 27.53664130918064,
+          "grossW": 15.550916200004647,
+          "grossL": 12.241444255187435,
+          "sd": 0.8360902017854284,
+          "tStat": 0.6258576631863995,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -912,7 +912,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -931,7 +931,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1228,16 +1228,16 @@
           "wins": 25,
           "losses": 13,
           "winRate": 65.78947368421053,
-          "pf": 1.0095887745769567,
-          "exp": 0.003712193633674056,
-          "netR": 0.14106335807961412,
-          "maxDD": 3.0890839612314087,
-          "sumR2": 30.719095681485932,
-          "grossW": 14.852365302606508,
-          "grossL": 14.711301944526893,
-          "sd": 0.9111704979887301,
-          "tStat": 0.02511439787357522,
-          "atrMult": 1.85,
+          "pf": 1.0093126219866504,
+          "exp": 0.0036061927987579333,
+          "netR": 0.13703532635280147,
+          "maxDD": 3.0915521821658287,
+          "sumR2": 30.729364285230943,
+          "grossW": 14.852045400770326,
+          "grossL": 14.715010074417524,
+          "sd": 0.9113232154166829,
+          "tStat": 0.024393173585405773,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1256,7 +1256,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1275,7 +1275,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1572,16 +1572,16 @@
           "wins": 8,
           "losses": 6,
           "winRate": 57.14285714285714,
-          "pf": 0.781245252047371,
-          "exp": -0.10339427819637696,
-          "netR": -1.4475198947492776,
-          "maxDD": 4.5844460752155785,
-          "sumR2": 13.039589134954246,
-          "grossW": 5.169570286364122,
-          "grossL": 6.617090181113399,
-          "sd": 0.9957573020749179,
-          "tStat": -0.3885143136359617,
-          "atrMult": 1.85,
+          "pf": 0.7809137541778984,
+          "exp": -0.10357188536163729,
+          "netR": -1.450006395062922,
+          "maxDD": 4.586579219473895,
+          "sumR2": 13.041468939684652,
+          "grossW": 5.16842092620456,
+          "grossL": 6.618427321267481,
+          "sd": 0.9958100314495252,
+          "tStat": -0.389161082622732,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1600,7 +1600,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1619,7 +1619,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1916,16 +1916,16 @@
           "wins": 19,
           "losses": 17,
           "winRate": 52.77777777777778,
-          "pf": 0.6823104010768734,
-          "exp": -0.16818024654283847,
-          "netR": -6.0544888755421855,
-          "maxDD": 8.119278780753284,
-          "sumR2": 35.39652143018089,
-          "grossW": 13.003386786944404,
-          "grossL": 19.057875662486584,
-          "sd": 0.9910784313550471,
-          "tStat": -1.0181651091703905,
-          "atrMult": 1.85,
+          "pf": 0.6821568621305327,
+          "exp": -0.1683008971312299,
+          "netR": -6.058832296724276,
+          "maxDD": 8.122679168143865,
+          "sumR2": 35.40759669001813,
+          "grossW": 13.003502467956205,
+          "grossL": 19.062334764680482,
+          "sd": 0.9912169977055155,
+          "tStat": -1.0187530935455027,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -1944,7 +1944,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -1963,7 +1963,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2260,16 +2260,16 @@
           "wins": 19,
           "losses": 9,
           "winRate": 67.85714285714286,
-          "pf": 1.290074649358633,
-          "exp": 0.10732416678193624,
-          "netR": 3.0050766698942146,
-          "maxDD": 3.4041389828882425,
-          "sumR2": 25.80134150445361,
-          "grossW": 13.364743316181873,
-          "grossL": 10.359666646287655,
-          "sd": 0.9714217178338718,
-          "tStat": 0.5846133553723636,
-          "atrMult": 1.85,
+          "pf": 1.289867778464682,
+          "exp": 0.10727812721142807,
+          "netR": 3.003787561919986,
+          "maxDD": 3.4050146903267926,
+          "sumR2": 25.811935472231937,
+          "grossW": 13.366400398123753,
+          "grossL": 10.36261283620377,
+          "sd": 0.9716289256639952,
+          "tStat": 0.5842379497383204,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2288,7 +2288,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2307,7 +2307,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2604,16 +2604,16 @@
           "wins": 54,
           "losses": 47,
           "winRate": 53.46534653465347,
-          "pf": 0.6293525277652695,
-          "exp": -0.19195438331542933,
-          "netR": -19.38739271485836,
-          "maxDD": 21.348616020391123,
-          "sumR2": 89.6110122809998,
-          "grossW": 32.919432954197745,
-          "grossL": 52.3068256690561,
-          "sd": 0.9267659751432673,
-          "tStat": -2.0815585908306664,
-          "atrMult": 1.85,
+          "pf": 0.6292170776178584,
+          "exp": -0.1920667459880499,
+          "netR": -19.39874134479304,
+          "maxDD": 21.35825549172458,
+          "sumR2": 89.64043123355562,
+          "grossW": 32.919583404802715,
+          "grossL": 52.31832474959575,
+          "sd": 0.9269011711460795,
+          "tStat": -2.0824732649184607,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2632,7 +2632,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2651,7 +2651,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2957,7 +2957,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -2976,7 +2976,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -2995,7 +2995,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -3292,16 +3292,16 @@
           "wins": 16,
           "losses": 17,
           "winRate": 48.484848484848484,
-          "pf": 0.6058871869298361,
-          "exp": -0.23038740463252919,
-          "netR": -7.6027843528734635,
-          "maxDD": 9.844006361716152,
-          "sumR2": 34.401279999723144,
-          "grossW": 11.688099121955215,
-          "grossL": 19.290883474828686,
-          "sd": 1.0101004628978096,
-          "tStat": -1.310240839894322,
-          "atrMult": 1.85,
+          "pf": 0.5409828930975444,
+          "exp": -0.26839769941258557,
+          "netR": -8.857124080615323,
+          "maxDD": 10.150200275221444,
+          "sumR2": 32.05330375235687,
+          "grossW": 10.43872338874169,
+          "grossL": 19.295847469357017,
+          "sd": 0.9630042838966876,
+          "tStat": -1.6010597504545372,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
           "dataStatus": "LIVE"
@@ -3320,7 +3320,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -3339,7 +3339,7 @@
           "grossL": 0,
           "sd": 0,
           "tStat": 0,
-          "atrMult": 1.85,
+          "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "UNKNOWN",
           "dataStatus": "LIVE"
@@ -4780,6 +4780,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795711126031,
+        "type": "CYCLE",
+        "text": "[CYCLE #496] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795711121728,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795710226110,
         "type": "CYCLE",
@@ -6269,16 +6279,6 @@
         "t": 1795495172296,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795494663951,
-        "type": "CYCLE",
-        "text": "[CYCLE #369] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795494389665,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (US seeks to recover $1.1B in crypto stolen in North Korea-linked Binance hack)"
       }
     ],
     "accuracyHistory": [
@@ -6365,9 +6365,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13540,
+      "newsIngested": 13570,
       "lessons": 1,
-      "backtests": 13490,
+      "backtests": 13520,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6380,7 +6380,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795710221681,
+      "fetchedAt": 1795711121728,
       "items": [
         {
           "source": "CoinDesk",
@@ -6699,13 +6699,13 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795710221681
+        "t": 1795711121728
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795708423113,
+      "fetchedAt": 1795711122421,
       "bias": {
         "BTC": -20,
         "ETH": 20,
@@ -6713,9 +6713,9 @@
         "ARB": 20,
         "LDO": 20,
         "AAVE": 20,
-        "ZRO": 5.38,
+        "ZRO": 5.35,
         "ETHFI": 20,
-        "ENA": 0.2,
+        "ENA": 0.28,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6727,112 +6727,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 90.11,
+          "pct": 89.78,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 492.3,
+          "pct": 490.54,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 430.73,
+          "pct": 429.18,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 20.48,
+          "pct": 20.4,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 73.17,
+          "pct": 72.87,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 365.09,
+          "pct": 363.58,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 5.38,
+          "pct": 5.35,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 43.55,
+          "pct": 43.37,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 19.8,
+          "pct": 19.72,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 63.72,
+          "pct": 63.45,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 198.3,
+          "pct": 197.48,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 101.24,
+          "pct": 100.82,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 110.03,
+          "pct": 111.17,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 257.51,
+          "pct": 260.16,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 34.15,
+          "pct": 34.5,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1349.62,
+          "pct": 1324.42,
           "lev": 10
         }
       ]
@@ -6978,257 +6978,257 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.468,
-            0.452,
+            0.463,
+            0.453,
             61
           ],
           [
-            0.504,
+            0.486,
             0.316,
             35
           ],
           [
-            0.501,
+            0.485,
             -1.078,
             46
           ],
           [
-            0.526,
-            0.54,
+            0.512,
+            0.541,
             10
           ],
           [
-            0.547,
+            0.538,
             -1.078,
             94
           ],
           [
-            0.52,
-            0.285,
+            0.505,
+            0.284,
             2
           ],
           [
-            0.577,
-            -1.129,
+            0.572,
+            -1.13,
             35
           ],
           [
-            0.626,
+            0.619,
             -1.121,
             10
           ],
           [
-            0.526,
+            0.519,
             -1.126,
             69
           ],
           [
-            0.596,
+            0.586,
             0.582,
             35
           ],
           [
-            0.555,
+            0.542,
             -1.134,
             35
           ],
           [
-            0.563,
-            -1.12,
+            0.551,
+            -1.121,
             10
           ],
           [
-            0.571,
+            0.561,
             0.302,
             10
           ],
           [
-            0.506,
+            0.5,
             0.399,
             61
           ],
           [
-            0.563,
+            0.552,
             0.505,
             34
           ],
           [
-            0.476,
-            1.003,
+            0.462,
+            1.004,
             94
           ],
           [
-            0.599,
+            0.59,
             1.514,
             10
           ],
           [
-            0.506,
+            0.49,
             -1.107,
             27
           ],
           [
-            0.52,
+            0.505,
             1.508,
             35
           ],
           [
-            0.573,
+            0.568,
             0.315,
             10
           ],
           [
-            0.624,
-            0.274,
+            0.614,
+            0.273,
             2
           ],
           [
-            0.575,
+            0.566,
             -1.129,
             16
           ],
           [
-            0.477,
+            0.469,
             -1.159,
             61
           ],
           [
-            0.614,
-            0.257,
+            0.602,
+            0.256,
             10
           ],
           [
-            0.558,
-            -1.166,
+            0.544,
+            -1.167,
             10
           ],
           [
-            0.508,
+            0.49,
             0.447,
             10
           ],
           [
-            0.485,
+            0.468,
             0.159,
             90
           ],
           [
-            0.535,
+            0.522,
             -1.196,
             35
           ],
           [
-            0.589,
+            0.581,
             -1.155,
             41
           ],
           [
-            0.611,
-            0.849,
+            0.604,
+            0.85,
             10
           ],
           [
-            0.602,
-            0.926,
+            0.59,
+            0.927,
             15
           ],
           [
-            0.528,
-            0.168,
+            0.521,
+            0.167,
             69
           ],
           [
-            0.564,
-            0.181,
+            0.552,
+            0.18,
             10
           ],
           [
-            0.511,
+            0.503,
             -1.145,
             56
           ],
           [
-            0.503,
+            0.498,
             -1.129,
             61
           ],
           [
-            0.509,
-            0.74,
+            0.494,
+            0.741,
             2
           ],
           [
-            0.54,
+            0.529,
             -1.134,
             41
           ],
           [
-            0.564,
-            0.619,
+            0.553,
+            0.62,
             10
           ],
           [
-            0.615,
+            0.605,
             -1.129,
             35
           ],
           [
-            0.531,
+            0.522,
             -1.12,
             69
           ],
           [
-            0.577,
+            0.564,
             0.511,
             41
           ],
           [
-            0.459,
-            1.54,
+            0.447,
+            1.539,
             90
           ],
           [
-            0.542,
+            0.531,
             -1.111,
             46
           ],
           [
-            0.449,
+            0.435,
             -1.113,
             73
           ],
           [
-            0.569,
+            0.558,
             0.272,
             10
           ],
           [
-            0.567,
+            0.556,
             0.277,
             35
           ],
           [
-            0.604,
+            0.592,
             -1.119,
             35
           ],
           [
-            0.461,
+            0.457,
             0.307,
             69
           ],
           [
-            0.547,
+            0.536,
             1.578,
             33
           ],
           [
-            0.585,
+            0.572,
             -1.131,
             2
           ],
           [
-            0.466,
+            0.459,
             -1.124,
             69
           ]
@@ -10943,7 +10943,7 @@
           "sd": 0.946,
           "t": -8.2,
           "winRate": 52.7,
-          "sum": -217.43
+          "sum": -217.44
         },
         "base": {
           "n": 75,
@@ -10974,14 +10974,14 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1304,
-        "updatedAt": 1795710223579
+        "updatedAt": 1795711123437
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -87.45,
+      "netR": -87.46,
       "trades": 556,
       "winRate": 57.7,
       "pf": 0.69,
@@ -10990,7 +10990,7 @@
       "deflatedT": -5.93,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795710223578,
+      "updatedAt": 1795711123436,
       "gen": 82
     },
     "factory": {
