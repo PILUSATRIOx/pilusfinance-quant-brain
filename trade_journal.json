@@ -1,6 +1,138 @@
 {
   "trades": [
     {
+      "id": "sig_DOGEUSDT_1795633724067",
+      "sym": "DOGEUSDT",
+      "side": "LONG",
+      "entry": 0.05518,
+      "sl": 0.055842310777810975,
+      "slInit": 0.05385938746947515,
+      "risk": 0.0013206125305248494,
+      "rsiAtEntry": 58,
+      "tp1": 0.05623649002441988,
+      "tp2": 0.05729298004883976,
+      "tp3": 0.058481531326312126,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 81,
+      "techScore": 81,
+      "extScore": 0,
+      "regime": "RANGING",
+      "hurst": 0.61,
+      "kalmanPrice": 0.05518,
+      "kalmanVelZ": 0.3954,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 58 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=0.61)",
+        "[INFO] Screen6: berita netral",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "rsidiv",
+          "side": "LONG",
+          "note": "Bullish RSI divergence: harga lower-low, momentum higher-low",
+          "w": 0.34,
+          "barAge": 2
+        },
+        {
+          "strat": "smc",
+          "side": "LONG",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity bawah, wick reject + volume",
+          "w": 0.33,
+          "barAge": 2
+        }
+      ],
+      "atr": 0.0007138446110945131,
+      "volPct": 1.2936654786054969,
+      "metaP": 0.517,
+      "metaEV": -0.301,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "WIN",
+      "createdAt": 1795633724068,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.4000000000000013,
+      "mfe": 1.5825989468458062,
+      "mae": 0,
+      "lastBarT": 1795705800000,
+      "closedAt": 1795706748943,
+      "netR": 0.53,
+      "closeReason": "Trail/BE exit di 0.0558"
+    },
+    {
+      "id": "sig_LINKUSDT_1795630128228",
+      "sym": "LINKUSDT",
+      "side": "LONG",
+      "entry": 8.866,
+      "sl": 9.050026445394787,
+      "slInit": 8.649574461990177,
+      "risk": 0.2164255380098233,
+      "rsiAtEntry": 57,
+      "tp1": 9.039140430407858,
+      "tp2": 9.212280860815717,
+      "tp3": 9.558561721631435,
+      "momentumBurst": true,
+      "lev": 5,
+      "conf": 94,
+      "techScore": 89,
+      "extScore": 5,
+      "regime": "RANGING",
+      "hurst": 0.56,
+      "kalmanPrice": 8.866,
+      "kalmanVelZ": 0.3936,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 57 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[OK] OI naik +3.9% 24h -> akumulasi modal nyata",
+        "[OK] Screen7 (Kalman+Hurst): Fair-Value velocity searah (H=0.56)",
+        "[INFO] Screen6: berita netral",
+        "[OK] Screen8 (Momentum Burst): Vol 2.32x · Body 77% -> TP3 diperluas ke 3.2R",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "LONG",
+          "note": "WYCKOFF SPRING: sweep bawah range lalu reclaim + volume",
+          "w": 0.56,
+          "barAge": 2
+        },
+        {
+          "strat": "smc",
+          "side": "LONG",
+          "note": "SMC Swing-Failure Pattern: sweep liquidity bawah, wick reject + volume",
+          "w": 0.33,
+          "barAge": 2
+        }
+      ],
+      "atr": 0.11698677730260719,
+      "volPct": 1.3194989544620708,
+      "metaP": 0.537,
+      "metaEV": -0.267,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "WIN",
+      "createdAt": 1795630128229,
+      "tp1Hit": true,
+      "beActive": true,
+      "lockedR": 0.40000000000000024,
+      "mfe": 1.9313802051448683,
+      "mae": 0,
+      "lastBarT": 1795705800000,
+      "closedAt": 1795706749053,
+      "netR": 0.7,
+      "closeReason": "Trail/BE exit di 9.0500"
+    },
+    {
       "id": "sig_LINKUSDT_1795532931941",
       "sym": "LINKUSDT",
       "side": "LONG",
@@ -953,5 +1085,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795706489703
+  "updatedAt": 1795706752131
 }
