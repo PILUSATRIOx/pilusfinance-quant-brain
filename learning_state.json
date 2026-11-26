@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795711126049,
+  "updatedAt": 1795712024764,
   "brain": {
     "v": 1,
     "gen": 82,
-    "cycles": 496,
+    "cycles": 497,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795707522594,
     "autoExecBursa": false,
@@ -4781,6 +4781,16 @@
     ],
     "journal": [
       {
+        "t": 1795712024750,
+        "type": "CYCLE",
+        "text": "[CYCLE #497] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795712021770,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
+      },
+      {
         "t": 1795711126031,
         "type": "CYCLE",
         "text": "[CYCLE #496] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
@@ -6269,16 +6279,6 @@
         "t": 1795495368910,
         "type": "CYCLE",
         "text": "[CYCLE #370] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795495172298,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Eric Trump-backed American Bitcoin secures $150 million loan against its bitcoin)"
-      },
-      {
-        "t": 1795495172296,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6365,9 +6365,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13570,
+      "newsIngested": 13600,
       "lessons": 1,
-      "backtests": 13520,
+      "backtests": 13550,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6380,8 +6380,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795711121728,
+      "fetchedAt": 1795712021770,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin’s dormant supply rises, a behavior seen during previous bear-market bottoming phases",
+          "link": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases",
+          "pubDate": "2026-11-26 16:50:23",
+          "summary": "More bitcoin is sitting untouched onchain as the price holds around $60,000, some 50% below its peak,"
+        },
         {
           "source": "CoinDesk",
           "title": "Crypto for Advisors: Four questions to ask before trusting a crypto exchange",
@@ -6444,13 +6451,6 @@
           "link": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october",
           "pubDate": "2026-11-26 08:01:33",
           "summary": "Bitcoin options positioning has flipped bearish ahead of Friday’s $7 billion expiry, with traders piling into downside protection as volatility rises."
-        },
-        {
-          "source": "CoinDesk",
-          "title": "Zcash developers want to phase out older privacy system as a precaution against future attacks",
-          "link": "https://www.coindesk.com/tech/2026/11/26/zcash-developers-want-users-to-move-usd300-million-out-of-an-older-privacy-system",
-          "pubDate": "2026-11-26 07:09:25",
-          "summary": "Zakura is pushing to stop new payments into Sapling sooner, citing the possibility that AI-assisted discoveries could weaken the math protecting it."
         },
         {
           "source": "CoinTelegraph",
@@ -6699,7 +6699,7 @@
       "fearGreed": {
         "value": 11,
         "classification": "Extreme Fear",
-        "t": 1795711121728
+        "t": 1795712021770
       },
       "lastErrors": []
     },
@@ -7237,251 +7237,251 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.512,
+            0.493,
             0.226,
             10
           ],
           [
-            0.483,
+            0.474,
             0.254,
             61
           ],
           [
-            0.583,
+            0.572,
             -1.204,
             10
           ],
           [
-            0.448,
+            0.443,
             -1.211,
             56
           ],
           [
-            0.444,
+            0.438,
             1.439,
             61
           ],
           [
-            0.559,
+            0.551,
             0.218,
             15
           ],
           [
-            0.535,
+            0.521,
             0.232,
             41
           ],
           [
-            0.467,
+            0.452,
             1.464,
             95
           ],
           [
-            0.542,
+            0.529,
             0.229,
             10
           ],
           [
-            0.491,
+            0.473,
             1.433,
             27
           ],
           [
-            0.565,
+            0.55,
             -1.171,
             10
           ],
           [
-            0.478,
+            0.473,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.491,
+            0.472,
             1.36,
             10
           ],
           [
-            0.558,
+            0.544,
             0.143,
             10
           ],
           [
-            0.472,
+            0.462,
             -1.221,
             96
           ],
           [
-            0.546,
+            0.532,
             -1.216,
             10
           ],
           [
-            0.567,
+            0.56,
             0.469,
             10
           ],
           [
-            0.492,
+            0.472,
             -1.257,
             35
           ],
           [
-            0.501,
+            0.483,
             0.368,
             10
           ],
           [
-            0.499,
+            0.48,
             -1.262,
             35
           ],
           [
-            0.507,
+            0.487,
             0.296,
             10
           ],
           [
-            0.48,
+            0.473,
             -1.236,
             61
           ],
           [
-            0.514,
+            0.504,
             0.171,
             90
           ],
           [
-            0.488,
+            0.479,
             0.431,
             73
           ],
           [
-            0.573,
+            0.562,
             -1.252,
             35
           ],
           [
-            0.551,
+            0.538,
             -3.517,
             10
           ],
           [
-            0.501,
+            0.484,
             -1.21,
             10
           ],
           [
-            0.505,
+            0.489,
             0.062,
             10
           ],
           [
-            0.491,
+            0.473,
             0.615,
             10
           ],
           [
-            0.559,
+            0.547,
             -1.232,
             35
           ],
           [
-            0.484,
+            0.476,
             -1.182,
             81
           ]
         ],
         "TSLA": [
           [
-            0.442,
+            0.437,
             0.806,
             61
           ],
           [
-            0.521,
+            0.503,
             0.264,
             10
           ],
           [
-            0.517,
+            0.499,
             0.24,
             10
           ],
           [
-            0.517,
+            0.504,
             -1.548,
             35
           ],
           [
-            0.499,
+            0.48,
             1.493,
             35
           ],
           [
-            0.453,
+            0.448,
             -1.911,
             56
           ],
           [
-            0.482,
+            0.474,
             0.307,
             56
           ],
           [
-            0.508,
+            0.489,
             1.513,
             10
           ],
           [
-            0.515,
+            0.497,
             -1.11,
             10
           ],
           [
-            0.5,
+            0.492,
             0.259,
             95
           ],
           [
-            0.501,
+            0.483,
             1.518,
             10
           ],
           [
-            0.578,
+            0.566,
             -0.213,
             2
           ],
           [
-            0.509,
+            0.506,
             0.271,
             61
           ],
           [
-            0.567,
+            0.56,
             -1.13,
             69
           ],
           [
-            0.518,
+            0.499,
             0.292,
             49
           ],
           [
-            0.56,
+            0.551,
             0.289,
             35
           ],
           [
-            0.561,
+            0.551,
             -1.531,
             35
           ],
           [
-            0.578,
+            0.571,
             -1.101,
             10
           ]
@@ -10974,7 +10974,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1304,
-        "updatedAt": 1795711123437
+        "updatedAt": 1795712022036
       }
     },
     "champion": {
@@ -10990,7 +10990,7 @@
       "deflatedT": -5.93,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795711123436,
+      "updatedAt": 1795712022036,
       "gen": 82
     },
     "factory": {
