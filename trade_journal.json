@@ -1,6 +1,72 @@
 {
   "trades": [
     {
+      "id": "sig_LINKUSDT_1795781326759",
+      "sym": "LINKUSDT",
+      "side": "LONG",
+      "entry": 9.525,
+      "sl": 9.35461312392523,
+      "slInit": 9.35461312392523,
+      "risk": 0.17038687607477088,
+      "rsiAtEntry": 60,
+      "tp1": 9.661309500859817,
+      "tp2": 9.797619001719633,
+      "tp3": 9.950967190186928,
+      "momentumBurst": false,
+      "lev": 10,
+      "conf": 80,
+      "techScore": 80,
+      "extScore": 0,
+      "regime": "TREND_UP",
+      "hurst": 0.6,
+      "kalmanPrice": 9.525,
+      "kalmanVelZ": -0.0781,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 60 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[INFO] Screen6: berita netral",
+        "[OK] Screen9 (VPIN+OBI): Order-Flow Imbalance +27.3% · VPIN 0.719",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "elder",
+          "side": "LONG",
+          "note": "Pullback ke EMA20 1H searah tren 4H (Layar 2 Elder), RSI 60",
+          "w": 0.67,
+          "barAge": 0
+        },
+        {
+          "strat": "statarb",
+          "side": "SHORT",
+          "note": "D.E. Shaw Z-Score (+1.14 sigma) mean-reversion deceleration (RSI 65)",
+          "w": 0.43,
+          "barAge": 2
+        }
+      ],
+      "atr": 0.09230058292241108,
+      "volPct": 0.9690349913114025,
+      "metaP": 0.487,
+      "metaEV": -0.35,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "LOSS",
+      "createdAt": 1795781326760,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0.12911792566902852,
+      "mae": -1.1972753107491643,
+      "lastBarT": 1795790100000,
+      "closedAt": 1795790321652,
+      "netR": -1.17,
+      "closeReason": "SL 9.3546 tersentuh",
+      "lossCause": "LATE_LONG"
+    },
+    {
       "id": "sig_DOGEUSDT_1795633724067",
       "sym": "DOGEUSDT",
       "side": "LONG",
@@ -1085,5 +1151,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795787637707
+  "updatedAt": 1795792127949
 }
