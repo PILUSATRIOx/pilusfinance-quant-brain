@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795817327757,
+  "updatedAt": 1795818227200,
   "brain": {
     "v": 1,
     "gen": 93,
-    "cycles": 559,
+    "cycles": 560,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795816422650,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.51,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -424,15 +424,15 @@
           "wins": 42,
           "losses": 42,
           "winRate": 50,
-          "pf": 0.6154740472764482,
-          "exp": -0.2247045875326171,
-          "netR": -18.875185352739837,
-          "maxDD": 19.973901964454587,
-          "sumR2": 93.19700661269265,
-          "grossW": 30.211710392655583,
+          "pf": 0.6059278722318362,
+          "exp": -0.23028306490383338,
+          "netR": -19.343777451922005,
+          "maxDD": 19.97390196445459,
+          "sumR2": 92.7114346514879,
+          "grossW": 29.743118293473415,
           "grossL": 49.08689574539542,
-          "sd": 1.0352560120679977,
-          "tStat": -1.989316206558603,
+          "sd": 1.0311818596285562,
+          "tStat": -2.04675744891085,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -462,15 +462,15 @@
           "wins": 56,
           "losses": 36,
           "winRate": 60.86956521739131,
-          "pf": 0.6775107213355461,
-          "exp": -0.14637460675904918,
-          "netR": -13.466463821832523,
+          "pf": 0.6772402770148482,
+          "exp": -0.1464973586882181,
+          "netR": -13.477756999316064,
           "maxDD": 17.0030910973092,
-          "sumR2": 79.53937565691633,
-          "grossW": 28.29140136240577,
+          "sumR2": 79.53475858558494,
+          "grossW": 28.280108184922227,
           "grossL": 41.75786518423829,
-          "sd": 0.9232540832911886,
-          "tStat": -1.5206820441131985,
+          "sd": 0.9232069213377748,
+          "tStat": -1.522035059834553,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3698,8 +3698,8 @@
         "beActive": false,
         "lockedR": 0,
         "mfe": 0.41181150583683823,
-        "mae": -0.2941510755977393,
-        "lastBarT": 1795817100000
+        "mae": -0.4706417209563796,
+        "lastBarT": 1795818000000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795818227181,
+        "type": "CYCLE",
+        "text": "[CYCLE #560] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795818222251,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795817327724,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795556327746,
         "type": "CYCLE",
         "text": "[CYCLE #433] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795556323727,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC — Long baru diblokir (Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits)"
-      },
-      {
-        "t": 1795556323725,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 15310,
+      "newsIngested": 15340,
       "lessons": 1,
-      "backtests": 15160,
+      "backtests": 15190,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795817323523,
+      "fetchedAt": 1795818222251,
       "items": [
         {
           "source": "CoinDesk",
@@ -6594,6 +6594,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 22:12:51",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Franklin Templeton makes room for HYPE in crypto index ETF",
           "link": "https://cointelegraph.com/news/franklin-templeton-hype-crypto-index-etf?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 21:15:29",
@@ -6633,13 +6640,6 @@
           "link": "https://cointelegraph.com/news/binance-ipo-program-regulatory-approval-yi-he?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 13:44:00",
           "summary": "    Binance is hiring for equity capital markets roles, including an analyst to develop tokenized equity products and assess prospective issuers. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-27 13:28:26",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
           "source": "CoinTelegraph",
@@ -6843,23 +6843,23 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795817323522
+        "t": 1795818222251
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795815523858,
+      "fetchedAt": 1795818222955,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 17.43,
+        "ARB": 17.55,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 3.15,
+        "ENA": 3.03,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6871,112 +6871,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 92.19,
+          "pct": 90.11,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 503.68,
+          "pct": 492.33,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 457.05,
+          "pct": 446.75,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 17.43,
+          "pct": 17.55,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 62.29,
+          "pct": 62.71,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 310.77,
+          "pct": 312.9,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.58,
+          "pct": 4.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 37.07,
+          "pct": 37.32,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 16.85,
+          "pct": 16.97,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 54.24,
+          "pct": 54.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 168.8,
+          "pct": 169.96,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 86.18,
+          "pct": 86.77,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 112.11,
+          "pct": 114.95,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 263.29,
+          "pct": 269.96,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 34.79,
+          "pct": 35.67,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1252.77,
+          "pct": 1287.17,
           "lev": 10
         }
       ]
@@ -11082,7 +11082,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1336,
-        "updatedAt": 1795817325739
+        "updatedAt": 1795818225079
       }
     },
     "champion": {
@@ -11098,7 +11098,7 @@
       "deflatedT": -5.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795817325739,
+      "updatedAt": 1795818225079,
       "gen": 93
     },
     "factory": {
