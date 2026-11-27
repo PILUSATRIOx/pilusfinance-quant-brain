@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795798427141,
+  "updatedAt": 1795799325786,
   "brain": {
     "v": 1,
     "gen": 89,
-    "cycles": 538,
+    "cycles": 539,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795794822356,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.54,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -249,19 +249,19 @@
           "dataStatus": "LIVE"
         },
         "NVDA": {
-          "trades": 22,
-          "wins": 15,
+          "trades": 21,
+          "wins": 14,
           "losses": 7,
-          "winRate": 68.18181818181817,
-          "pf": 1.1336106711130345,
-          "exp": 0.05922213356014801,
-          "netR": 1.3028869383232562,
-          "maxDD": 4.577267800784016,
-          "sumR2": 27.77138188969248,
-          "grossW": 11.054255803322203,
-          "grossL": 9.751368864998945,
-          "sd": 1.1483781968999198,
-          "tStat": 0.24188584329687882,
+          "winRate": 66.66666666666666,
+          "pf": 1.3356743631352612,
+          "exp": 0.13015606053581352,
+          "netR": 2.733277271252084,
+          "maxDD": 4.577267800784015,
+          "sumR2": 24.308182593178383,
+          "grossW": 10.875922559151832,
+          "grossL": 8.142645287899748,
+          "sd": 1.0943589445698365,
+          "tStat": 0.5450222731053463,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -272,15 +272,15 @@
           "wins": 18,
           "losses": 17,
           "winRate": 51.42857142857142,
-          "pf": 0.3125005265712657,
-          "exp": -0.39853721882335963,
-          "netR": -13.948802658817588,
-          "maxDD": 14.757610246284745,
-          "sumR2": 28.27936483414515,
-          "grossW": 6.340380384845513,
+          "pf": 0.31601987560496386,
+          "exp": -0.39649708405938133,
+          "netR": -13.877397942078346,
+          "maxDD": 14.757610246284743,
+          "sumR2": 28.316449754829907,
+          "grossW": 6.411785101584754,
           "grossL": 20.289183043663098,
-          "sd": 0.8174610589139454,
-          "tStat": -2.884269479730447,
+          "sd": 0.8191477266838378,
+          "tStat": -2.863596280194544,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -291,15 +291,15 @@
           "wins": 10,
           "losses": 16,
           "winRate": 38.46153846153847,
-          "pf": 0.3940668733473916,
-          "exp": -0.4181418424495447,
-          "netR": -10.871687903688162,
-          "maxDD": 11.980582551375328,
-          "sumR2": 29.749897017884763,
+          "pf": 0.3939996292542103,
+          "exp": -0.41825961857430277,
+          "netR": -10.874750082931872,
+          "maxDD": 11.983644730619037,
+          "sumR2": 29.756931461317695,
           "grossW": 7.070371088443953,
-          "grossL": 17.94205899213211,
-          "sd": 1.0040714995915414,
-          "tStat": -2.1234677161608677,
+          "grossL": 17.94512117137582,
+          "sd": 1.0041605975049956,
+          "tStat": -2.1238773580215438,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.3529812907172888,
         "mae": -0.08824532267932016,
-        "lastBarT": 1795798200000
+        "lastBarT": 1795799100000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795799325769,
+        "type": "CYCLE",
+        "text": "[CYCLE #539] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795799322865,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795798427124,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795538325652,
         "type": "CYCLE",
         "text": "[CYCLE #413] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795538322691,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795537426645,
-        "type": "CYCLE",
-        "text": "[CYCLE #412] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 14680,
+      "newsIngested": 14710,
       "lessons": 1,
-      "backtests": 14530,
+      "backtests": 14560,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795798422486,
+      "fetchedAt": 1795799322865,
       "items": [
         {
           "source": "CoinDesk",
@@ -6594,6 +6594,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "Bitcoin price drops below $59K as Anthropic joins tech stock rebound",
+          "link": "https://cointelegraph.com/markets/bitcoin-price-below-59k-anthropic-tech-stock-rebound?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 16:48:51",
+          "summary": "    Bitcoin price volatility returned at the Wall Street open as BTC/USD dropped to local lows of $58,700 while stocks and gold headed higher. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "What was Coinbase worth while Nasdaq was closed?",
           "link": "https://cointelegraph.com/news/what-was-coinbase-worth-while-nasdaq-was-closed?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 14:40:54",
@@ -6654,13 +6661,6 @@
           "link": "https://cointelegraph.com/news/new-york-ag-137b-court-judgment-novatech?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 07:19:44",
           "summary": "    The judgment follows an August 2025 default ruling against the founders over a Ponzi scheme that targeted Haitian and other immigrant communities. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Japan’s crypto security group taps SEAL to speed up hack response",
-          "link": "https://cointelegraph.com/news/japans-crypto-security-group-taps-seal-to-speed-up-hack-response?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-27 05:22:36",
-          "summary": "    The partnership comes weeks after a third-party data breach exposed hundreds of thousands of customer email addresses belonging to two Japanese crypto exchanges. "
         },
         {
           "source": "Decrypt",
@@ -6845,7 +6845,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795798422486
+        "t": 1795799322865
       },
       "lastErrors": []
     },
@@ -7387,7 +7387,7 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.459,
+            0.454,
             0.254,
             61
           ],
@@ -7397,226 +7397,226 @@
             10
           ],
           [
-            0.443,
+            0.424,
             -1.211,
             56
           ],
           [
-            0.442,
+            0.429,
             1.439,
             61
           ],
           [
-            0.576,
+            0.57,
             0.218,
             15
           ],
           [
-            0.542,
+            0.539,
             0.232,
             41
           ],
           [
-            0.468,
+            0.46,
             1.464,
             95
           ],
           [
-            0.557,
+            0.553,
             0.229,
             10
           ],
           [
-            0.509,
+            0.5,
             1.433,
             27
           ],
           [
-            0.584,
+            0.582,
             -1.171,
             10
           ],
           [
-            0.477,
+            0.462,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.571,
+            0.57,
             0.143,
             10
           ],
           [
-            0.466,
+            0.46,
             -1.221,
             96
           ],
           [
-            0.559,
+            0.556,
             -1.216,
             10
           ],
           [
-            0.58,
+            0.574,
             0.469,
             10
           ],
           [
-            0.508,
+            0.501,
             -1.257,
             35
           ],
           [
-            0.519,
+            0.512,
             0.368,
             10
           ],
           [
-            0.518,
+            0.511,
             -1.262,
             35
           ],
           [
-            0.533,
+            0.527,
             0.296,
             10
           ],
           [
-            0.46,
+            0.455,
             -1.236,
             61
           ],
           [
-            0.507,
+            0.505,
             0.171,
             90
           ],
           [
-            0.479,
+            0.475,
             0.431,
             73
           ],
           [
-            0.573,
+            0.571,
             -1.252,
             35
           ],
           [
-            0.564,
+            0.562,
             -3.517,
             10
           ],
           [
-            0.522,
+            0.513,
             -1.21,
             10
           ],
           [
-            0.517,
+            0.509,
             0.062,
             10
           ],
           [
-            0.501,
+            0.493,
             0.615,
             10
           ],
           [
-            0.563,
+            0.561,
             -1.232,
             35
           ],
           [
-            0.48,
+            0.475,
             -1.182,
             81
           ]
         ],
         "TSLA": [
           [
-            0.544,
+            0.537,
             0.264,
             10
           ],
           [
-            0.529,
+            0.521,
             0.24,
             10
           ],
           [
-            0.525,
+            0.519,
             -1.548,
             35
           ],
           [
-            0.517,
+            0.509,
             1.493,
             35
           ],
           [
-            0.448,
+            0.429,
             -1.911,
             56
           ],
           [
-            0.478,
+            0.459,
             0.307,
             56
           ],
           [
-            0.522,
+            0.513,
             1.513,
             10
           ],
           [
-            0.539,
+            0.531,
             -1.11,
             10
           ],
           [
-            0.491,
+            0.488,
             0.259,
             95
           ],
           [
-            0.521,
+            0.514,
             1.518,
             10
           ],
           [
-            0.591,
+            0.588,
             -0.213,
             2
           ],
           [
-            0.484,
+            0.479,
             0.271,
             61
           ],
           [
-            0.534,
+            0.524,
             -1.13,
             69
           ],
           [
-            0.53,
+            0.515,
             0.292,
             49
           ],
           [
-            0.567,
+            0.566,
             0.289,
             35
           ],
           [
-            0.565,
+            0.563,
             -1.531,
             35
           ],
           [
-            0.592,
+            0.588,
             -1.101,
             10
           ]
@@ -11079,7 +11079,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1332,
-        "updatedAt": 1795798424156
+        "updatedAt": 1795799323135
       }
     },
     "champion": {
@@ -11095,7 +11095,7 @@
       "deflatedT": -5.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795798424155,
+      "updatedAt": 1795799323134,
       "gen": 89
     },
     "factory": {
