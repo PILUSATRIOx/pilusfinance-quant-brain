@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795786727751,
+  "updatedAt": 1795787637707,
   "brain": {
     "v": 1,
     "gen": 87,
-    "cycles": 525,
+    "cycles": 526,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795784023471,
     "autoExecBursa": false,
@@ -207,7 +207,7 @@
           "tStat": -1.3532124772295,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -551,7 +551,7 @@
           "tStat": -2.3270763295713075,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -895,7 +895,7 @@
           "tStat": 0.7819670610522456,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1239,7 +1239,7 @@
           "tStat": -0.06147837506915539,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1583,7 +1583,7 @@
           "tStat": -0.389161082622732,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -1927,7 +1927,7 @@
           "tStat": -1.0187530935455027,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2271,7 +2271,7 @@
           "tStat": 0.811654113665382,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2615,7 +2615,7 @@
           "tStat": -1.7544800807102499,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -2959,7 +2959,7 @@
           "tStat": 0,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3303,7 +3303,7 @@
           "tStat": -1.6010597504545372,
           "atrMult": 1.846,
           "window": "OOS_40",
-          "regime": "RANGING",
+          "regime": "TREND_UP",
           "dataStatus": "LIVE"
         },
         "EURUSDT": {
@@ -3692,7 +3692,7 @@
         "lockedR": 0,
         "mfe": 0.12911792566902852,
         "mae": -0.3638777905218105,
-        "lastBarT": 1795786500000
+        "lastBarT": 1795787400000
       },
       {
         "id": "sig_DOGEUSDT_1795633724067",
@@ -4842,6 +4842,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795787637661,
+        "type": "CYCLE",
+        "text": "[CYCLE #526] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795787628833,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795786727736,
         "type": "CYCLE",
@@ -6331,16 +6341,6 @@
         "t": 1795527524453,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795526627061,
-        "type": "CYCLE",
-        "text": "[CYCLE #400] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795526622791,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6427,9 +6427,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 14290,
+      "newsIngested": 14320,
       "lessons": 1,
-      "backtests": 14140,
+      "backtests": 14170,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6442,8 +6442,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795786722977,
+      "fetchedAt": 1795787628833,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Kalshi turns to small businesses as legal battles threaten forecasts on sports",
+          "link": "https://www.coindesk.com/business/2026/11/27/kalshi-turns-to-small-businesses-as-legal-battles-threaten-forecasts-on-sports",
+          "pubDate": "2026-11-27 13:19:10",
+          "summary": "The prediction market is pitching protection against tariffs, weather and other business risks as courts challenge its ability to offer sports wagers."
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin &#39;death cross&#39; is coming. Here&#39;s what happened after previous 13.",
@@ -6460,10 +6467,10 @@
         },
         {
           "source": "CoinDesk",
-          "title": "Live news: Bitcoin rebounds above $61,000 as AI stocks lead premarket gains",
+          "title": "Live updates: Bitcoin rebounds above $61,000 as AI stocks lead premarket gains",
           "link": "https://www.coindesk.com/tech/2026/11/27/live-news-bitcoin-rebounds-above-usd61-000-as-ai-stocks-lead-premarket-gains",
           "pubDate": "2026-11-27 11:34:37",
-          "summary": "Nasdaq 100 futures rose 3% ahead of Friday’s shortened U.S. trading session, with AI cloud stocks up 8% and silver jumping 7%."
+          "summary": "Nasdaq 100 futures rose 3% ahead of Friday’s shortened U.S. trading session, with some AI cloud stocks up double-digit percentages."
         },
         {
           "source": "CoinDesk",
@@ -6508,11 +6515,11 @@
           "summary": "Monero (XMR) crashed over 11% on Thursday, its biggest drop since early June. Back-to-back exchange delistings seem to have catalyzed the price slide."
         },
         {
-          "source": "CoinDesk",
-          "title": "Ripple&#39;s lending plan moves closer to tapping XRP Ledger&#39;s $800 million in stablecoins",
-          "link": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins",
-          "pubDate": "2026-11-27 05:06:32",
-          "summary": "The vaults that would hold lenders&#39; money are on track to switch on Dec. 9. The loan system that draws from them still needs one more validator to start its own two-week clock."
+          "source": "CoinTelegraph",
+          "title": "Binance to launch tokenized IPO program after regulatory approval: Yi He",
+          "link": "https://cointelegraph.com/news/binance-ipo-program-regulatory-approval-yi-he?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 13:44:00",
+          "summary": "    Binance is hiring for equity capital markets roles, including an analyst to develop tokenized equity products and assess prospective issuers. "
         },
         {
           "source": "CoinTelegraph",
@@ -6576,13 +6583,6 @@
           "link": "https://cointelegraph.com/news/ethereum-devs-set-glamsterdams-hoodi-rollout-for-mid-december-after-delays?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 04:47:36",
           "summary": "    Glamsterdam’s Hoodi upgrade was delayed in October after concerns that changes to gas pricing could break some existing smart contracts.  "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "AI is driving a flood of crypto bug reports. Now it’s helping sort them",
-          "link": "https://cointelegraph.com/news/ai-driving-flood-of-crypto-bug-reports-now-helping-sort-them?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-27 01:47:38",
-          "summary": "    Bug bounty platform HackerOne said it’s increasing its triage throughput with AI agents after a record quarter of reports in the third quarter. "
         },
         {
           "source": "Decrypt",
@@ -6690,9 +6690,7 @@
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinDesk"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -6770,23 +6768,23 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795786722977
+        "t": 1795787628832
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795785824352,
+      "fetchedAt": 1795787629762,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 16.61,
+        "ARB": 16.66,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 3.94,
+        "ENA": 3.9,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6798,112 +6796,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 85.41,
+          "pct": 84.06,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 466.64,
+          "pct": 459.24,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 423.43,
+          "pct": 416.72,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 16.61,
+          "pct": 16.66,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 59.36,
+          "pct": 59.51,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 296.18,
+          "pct": 296.93,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.36,
+          "pct": 4.37,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 35.33,
+          "pct": 35.42,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 16.06,
+          "pct": 16.1,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 51.69,
+          "pct": 51.82,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 160.87,
+          "pct": 161.28,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 82.13,
+          "pct": 82.34,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 97.78,
+          "pct": 98.96,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 228.84,
+          "pct": 231.59,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 30.35,
+          "pct": 30.71,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1265.4,
+          "pct": 1206.5,
           "lev": 10
         }
       ]
@@ -7049,257 +7047,257 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.467,
+            0.472,
             0.453,
             61
           ],
           [
-            0.493,
+            0.505,
             0.316,
             35
           ],
           [
-            0.491,
+            0.503,
             -1.078,
             46
           ],
           [
-            0.518,
+            0.529,
             0.541,
             10
           ],
           [
-            0.524,
+            0.533,
             -1.078,
             94
           ],
           [
-            0.513,
+            0.523,
             0.284,
             2
           ],
           [
-            0.568,
+            0.573,
             -1.13,
             35
           ],
           [
-            0.609,
+            0.615,
             -1.121,
             10
           ],
           [
-            0.504,
+            0.509,
             -1.126,
             69
           ],
           [
-            0.574,
+            0.582,
             0.582,
             35
           ],
           [
-            0.538,
+            0.548,
             -1.134,
             35
           ],
           [
-            0.548,
+            0.557,
             -1.121,
             10
           ],
           [
-            0.558,
+            0.567,
             0.302,
             10
           ],
           [
-            0.494,
+            0.5,
             0.399,
             61
           ],
           [
-            0.545,
+            0.555,
             0.505,
             34
           ],
           [
-            0.461,
+            0.473,
             1.004,
             94
           ],
           [
-            0.582,
+            0.59,
             1.514,
             10
           ],
           [
-            0.497,
+            0.509,
             -1.107,
             27
           ],
           [
-            0.509,
+            0.52,
             1.508,
             35
           ],
           [
-            0.566,
+            0.572,
             0.315,
             10
           ],
           [
-            0.604,
+            0.612,
             0.273,
             2
           ],
           [
-            0.56,
+            0.568,
             -1.129,
             16
           ],
           [
-            0.466,
+            0.472,
             -1.159,
             61
           ],
           [
-            0.59,
+            0.599,
             0.256,
             10
           ],
           [
-            0.544,
+            0.553,
             -1.167,
             10
           ],
           [
-            0.494,
+            0.506,
             0.447,
             10
           ],
           [
-            0.465,
+            0.477,
             0.159,
             90
           ],
           [
-            0.518,
+            0.528,
             -1.196,
             35
           ],
           [
-            0.571,
+            0.579,
             -1.155,
             41
           ],
           [
-            0.593,
+            0.6,
             0.85,
             10
           ],
           [
-            0.578,
+            0.587,
             0.927,
             15
           ],
           [
-            0.516,
+            0.522,
             0.167,
             69
           ],
           [
-            0.548,
+            0.558,
             0.18,
             10
           ],
           [
-            0.496,
+            0.503,
             -1.145,
             56
           ],
           [
-            0.492,
+            0.498,
             -1.129,
             61
           ],
           [
-            0.503,
+            0.513,
             0.741,
             2
           ],
           [
-            0.524,
+            0.534,
             -1.134,
             41
           ],
           [
-            0.55,
+            0.559,
             0.62,
             10
           ],
           [
-            0.593,
+            0.602,
             -1.129,
             35
           ],
           [
-            0.513,
+            0.521,
             -1.12,
             69
           ],
           [
-            0.554,
+            0.564,
             0.511,
             41
           ],
           [
-            0.45,
+            0.461,
             1.539,
             90
           ],
           [
-            0.526,
+            0.536,
             -1.111,
             46
           ],
           [
-            0.437,
+            0.448,
             -1.113,
             73
           ],
           [
-            0.554,
+            0.563,
             0.272,
             10
           ],
           [
-            0.549,
+            0.559,
             0.277,
             35
           ],
           [
-            0.579,
+            0.588,
             -1.119,
             35
           ],
           [
-            0.457,
+            0.462,
             0.307,
             69
           ],
           [
-            0.532,
+            0.543,
             1.578,
             33
           ],
           [
-            0.564,
+            0.574,
             -1.131,
             2
           ],
           [
-            0.46,
+            0.467,
             -1.124,
             69
           ]
@@ -11020,7 +11018,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1320,
-        "updatedAt": 1795786725084
+        "updatedAt": 1795787634182
       }
     },
     "champion": {
@@ -11036,7 +11034,7 @@
       "deflatedT": -5.6,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795786725083,
+      "updatedAt": 1795787634150,
       "gen": 87
     },
     "factory": {
