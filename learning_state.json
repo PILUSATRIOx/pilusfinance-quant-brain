@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795820027384,
+  "updatedAt": 1795820925418,
   "brain": {
     "v": 1,
     "gen": 93,
-    "cycles": 562,
+    "cycles": 563,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 12,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795816422650,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.5,
+    "lastHurst": 0.46,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.41181150583683823,
         "mae": -0.4706417209563796,
-        "lastBarT": 1795819800000
+        "lastBarT": 1795820700000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795820925397,
+        "type": "CYCLE",
+        "text": "[CYCLE #563] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795820922426,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795820027366,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795559025530,
         "type": "CYCLE",
         "text": "[CYCLE #436] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795559022335,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795558126705,
-        "type": "CYCLE",
-        "text": "[CYCLE #435] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 15400,
+      "newsIngested": 15430,
       "lessons": 1,
-      "backtests": 15250,
+      "backtests": 15280,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795820023810,
+      "fetchedAt": 1795820922426,
       "items": [
         {
           "source": "CoinDesk",
@@ -6843,7 +6843,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795820023810
+        "t": 1795820922426
       },
       "lastErrors": []
     },
@@ -11082,7 +11082,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1336,
-        "updatedAt": 1795820025391
+        "updatedAt": 1795820922731
       }
     },
     "champion": {
@@ -11098,7 +11098,7 @@
       "deflatedT": -5.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795820025390,
+      "updatedAt": 1795820922729,
       "gen": 93
     },
     "factory": {
