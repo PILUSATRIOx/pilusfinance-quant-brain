@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795750426297,
+  "updatedAt": 1795750736101,
   "brain": {
     "v": 1,
     "gen": 84,
-    "cycles": 505,
+    "cycles": 507,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 6,
+    "optCursor": 9,
     "scanCursor": 0,
     "lastOptAt": 1795744674962,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.53,
+    "lastHurst": 0.57,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -3681,6 +3681,16 @@
     ],
     "journal": [
       {
+        "t": 1795750727196,
+        "type": "CYCLE",
+        "text": "[CYCLE #507] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795750446319,
+        "type": "CYCLE",
+        "text": "[CYCLE #506] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
         "t": 1795750408024,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
@@ -5169,16 +5179,6 @@
         "t": 1795508262563,
         "type": "CYCLE",
         "text": "[CYCLE #381] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795508260272,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795505024815,
-        "type": "CYCLE",
-        "text": "[CYCLE #380] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -9878,7 +9878,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1306,
-        "updatedAt": 1795750426291
+        "updatedAt": 1795750716820
       }
     },
     "champion": {
@@ -9894,7 +9894,7 @@
       "deflatedT": -6.83,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795750426286,
+      "updatedAt": 1795750716817,
       "gen": 84
     },
     "factory": {
@@ -10120,7 +10120,7 @@
         }
       ],
       "lastError": {
-        "at": 1795745312204,
+        "at": 1795750736096,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
