@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795752548526,
+  "updatedAt": 1795767587622,
   "brain": {
     "v": 1,
-    "gen": 84,
-    "cycles": 509,
+    "gen": 85,
+    "cycles": 510,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795744674962,
+    "lastOptAt": 1795767577139,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,16 +35,16 @@
       "volConfirmMult": 1.178
     },
     "weights": {
-      "elder": 0.59,
-      "donchian": 0.56,
-      "bbrev": 0.75,
+      "elder": 0.58,
+      "donchian": 0.53,
+      "bbrev": 0.74,
       "wyckoff": 0.64,
-      "rsidiv": 0.43,
-      "macdm": 0.56,
-      "smc": 0.46,
-      "statarb": 0.58,
+      "rsidiv": 0.4,
+      "macdm": 0.54,
+      "smc": 0.42,
+      "statarb": 0.56,
       "tsmom": 1,
-      "emax": 0.49
+      "emax": 0.5
     },
     "bayesian": {
       "elder": {
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.45,
+    "lastHurst": 0.42,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -286,31 +286,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 31,
+          "wins": 18,
+          "losses": 13,
+          "winRate": 58.06451612903226,
+          "pf": 0.5199400574298645,
+          "exp": -0.3094922103386058,
+          "netR": -9.59425852049678,
+          "maxDD": 13.181607284630514,
+          "sumR2": 44.789169412055976,
+          "grossW": 10.39128426220495,
+          "grossL": 19.985542782701728,
+          "sd": 1.1806752465713202,
+          "tStat": -1.45948659828424,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 28,
+          "wins": 7,
+          "losses": 21,
+          "winRate": 25,
+          "pf": 0.13249544687091358,
+          "exp": -0.8677067485940196,
+          "netR": -24.29578896063255,
+          "maxDD": 27.13089076235268,
+          "sumR2": 49.95623903130094,
+          "grossW": 3.710737198795329,
+          "grossL": 28.006526159427885,
+          "sd": 1.0341326476228314,
+          "tStat": -4.439926102303118,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 25,
+          "wins": 16,
+          "losses": 9,
+          "winRate": 64,
+          "pf": 1.4166022659582338,
+          "exp": 0.16941864945125576,
+          "netR": 4.235466236281394,
+          "maxDD": 3.3648191176369293,
+          "sumR2": 32.537930678396606,
+          "grossW": 14.402156584302737,
+          "grossL": 10.166690348021342,
+          "sd": 1.151454943916055,
+          "tStat": 0.7356720744759204,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 103,
@@ -530,31 +560,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 13,
+          "wins": 7,
+          "losses": 6,
+          "winRate": 53.84615384615385,
+          "pf": 0.3792383462421565,
+          "exp": -0.3000278249950139,
+          "netR": -3.9003617249351805,
+          "maxDD": 4.20649754348613,
+          "sumR2": 8.48854797161821,
+          "grossW": 2.38282555205583,
+          "grossL": 6.283187276991011,
+          "sd": 0.7809359196178277,
+          "tStat": -1.3852169940074603,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 16,
+          "wins": 7,
+          "losses": 9,
+          "winRate": 43.75,
+          "pf": 0.1839609423982037,
+          "exp": -0.6256539709587027,
+          "netR": -10.010463535339243,
+          "maxDD": 10.353933433179138,
+          "sumR2": 23.91427245237122,
+          "grossW": 2.256674222451834,
+          "grossL": 12.267137757791078,
+          "sd": 1.0847791231505435,
+          "tStat": -2.307028067212815,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 15,
+          "wins": 10,
+          "losses": 5,
+          "winRate": 66.66666666666666,
+          "pf": 0.6051575468223638,
+          "exp": -0.1989366350479953,
+          "netR": -2.9840495257199295,
+          "maxDD": 2.9840495257199295,
+          "sumR2": 18.299931767481485,
+          "grossW": 4.573520592955815,
+          "grossL": 7.557570118675746,
+          "sd": 1.1246045335398762,
+          "tStat": -0.6851104112716161,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 67,
@@ -774,31 +834,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 10,
+          "wins": 7,
+          "losses": 3,
+          "winRate": 70,
+          "pf": 1.548537323004264,
+          "exp": 0.19886704909630148,
+          "netR": 1.9886704909630148,
+          "maxDD": 2.194905431928314,
+          "sumR2": 11.173950230651633,
+          "grossW": 5.614076470762781,
+          "grossL": 3.625405979799766,
+          "sd": 1.0943526345383336,
+          "tStat": 0.5746528192588858,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 15,
+          "wins": 7,
+          "losses": 8,
+          "winRate": 46.666666666666664,
+          "pf": 0.5096571557593174,
+          "exp": -0.29063984669287035,
+          "netR": -4.3595977003930555,
+          "maxDD": 7.2928191020928,
+          "sumR2": 17.044546172545218,
+          "grossW": 4.531319647741358,
+          "grossL": 8.890917348134414,
+          "sd": 1.0615848450467278,
+          "tStat": -1.060342271499002,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 16,
+          "wins": 9,
+          "losses": 7,
+          "winRate": 56.25,
+          "pf": 0.5761613626252942,
+          "exp": -0.2688353532999997,
+          "netR": -4.301365652799995,
+          "maxDD": 6.46244406405838,
+          "sumR2": 21.84387052933385,
+          "grossW": 5.847226932913841,
+          "grossL": 10.148592585713835,
+          "sd": 1.1743795915117872,
+          "tStat": -0.9156676605863903,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 54,
@@ -1018,31 +1108,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 16,
+          "wins": 9,
+          "losses": 7,
+          "winRate": 56.25,
+          "pf": 0.34741421670411937,
+          "exp": -0.3728746946593322,
+          "netR": -5.965995114549315,
+          "maxDD": 5.965995114549315,
+          "sumR2": 14.925051356441978,
+          "grossW": 3.1760905196459204,
+          "grossL": 9.142085634195237,
+          "sd": 0.9201624041354632,
+          "tStat": -1.6209081917867134,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 8,
+          "wins": 6,
+          "losses": 2,
+          "winRate": 75,
+          "pf": 5.332386306946077,
+          "exp": 0.3904851003960997,
+          "netR": 3.1238808031687975,
+          "maxDD": 0.5270178083754783,
+          "sumR2": 4.071254653453657,
+          "grossW": 3.8449339553681536,
+          "grossL": 0.7210531521993564,
+          "sd": 0.6382370522891095,
+          "tStat": 1.7304834399825293,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 10,
+          "wins": 7,
+          "losses": 2,
+          "winRate": 70,
+          "pf": 0.8157809628481404,
+          "exp": -0.08717740422239925,
+          "netR": -0.8717740422239926,
+          "maxDD": 4.598373443181535,
+          "sumR2": 15.625716541434024,
+          "grossW": 3.8616865769211257,
+          "grossL": 4.73372970538415,
+          "sd": 1.3144376720511182,
+          "tStat": -0.20973163178880697,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 49,
@@ -1262,31 +1382,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 9,
+          "wins": 3,
+          "losses": 6,
+          "winRate": 33.33333333333333,
+          "pf": 0.3925319932404586,
+          "exp": -0.5420976423329233,
+          "netR": -4.878878780996311,
+          "maxDD": 8.031499151736485,
+          "sumR2": 15.594960951334297,
+          "grossW": 3.1526203707401743,
+          "grossL": 8.031499151736483,
+          "sd": 1.2723075624101308,
+          "tStat": -1.2782231081909827,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 3,
+          "wins": 1,
+          "losses": 2,
+          "winRate": 33.33333333333333,
+          "pf": 1.239934285616608,
+          "exp": 0.024211939438964176,
+          "netR": 0.07263581831689253,
+          "maxDD": 0.3027321340517279,
+          "sumR2": 0.20804719902615498,
+          "grossW": 0.3753679523686204,
+          "grossL": 0.3027321340517279,
+          "sd": 0.32116082030033394,
+          "tStat": 0.13057728903186216,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 4,
+          "wins": 2,
+          "losses": 2,
+          "winRate": 50,
+          "pf": 1.5377440735320322,
+          "exp": 0.18473402808159384,
+          "netR": 0.7389361123263753,
+          "maxDD": 1.3741408761102012,
+          "sumR2": 4.285414406390968,
+          "grossW": 2.1130769884365765,
+          "grossL": 1.3741408761102012,
+          "sd": 1.1759971317802271,
+          "tStat": 0.3141742834048295,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 22,
@@ -1506,31 +1656,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 12,
+          "wins": 6,
+          "losses": 6,
+          "winRate": 50,
+          "pf": 0.631506839416579,
+          "exp": -0.18856068435928788,
+          "netR": -2.2627282123114547,
+          "maxDD": 2.4995292117125456,
+          "sumR2": 10.967356143890415,
+          "grossW": 3.8777608234388,
+          "grossL": 6.140489035750254,
+          "sd": 0.9788998724754929,
+          "tStat": -0.667272914837204,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 9,
+          "wins": 1,
+          "losses": 8,
+          "winRate": 11.11111111111111,
+          "pf": 0.03324149732173044,
+          "exp": -0.9468124569669428,
+          "netR": -8.521312112702486,
+          "maxDD": 8.521312112702486,
+          "sumR2": 17.08951636582062,
+          "grossW": 0.29300096455039526,
+          "grossL": 8.814313077252882,
+          "sd": 1.061922308116901,
+          "tStat": -2.674807139081347,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 8,
+          "wins": 5,
+          "losses": 3,
+          "winRate": 62.5,
+          "pf": 0.7008369752352933,
+          "exp": -0.1796501902916645,
+          "netR": -1.437201522333316,
+          "maxDD": 3.698230801117986,
+          "sumR2": 12.608032205386065,
+          "grossW": 3.3668731906553075,
+          "grossL": 4.8040747129886245,
+          "sd": 1.3282554981420132,
+          "tStat": -0.3825525073282483,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 49,
@@ -1750,31 +1930,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "winRate": 16.666666666666664,
+          "pf": 0.03760096547630724,
+          "exp": -0.9852915278857814,
+          "netR": -5.911749167314689,
+          "maxDD": 5.911749167314689,
+          "sumR2": 7.61731405713026,
+          "grossW": 0.23097225617521677,
+          "grossL": 6.142721423489905,
+          "sd": 0.5987516492819497,
+          "tStat": -4.030822285169019,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 4,
+          "wins": 3,
+          "losses": 1,
+          "winRate": 75,
+          "pf": 179.17124805760199,
+          "exp": 0.8923798603032257,
+          "netR": 3.5695194412129028,
+          "maxDD": 0.020034205743784728,
+          "sumR2": 4.329819426118622,
+          "grossW": 3.5895536469566878,
+          "grossL": 0.020034205743784728,
+          "sd": 0.6176439551012658,
+          "tStat": 2.8896254968023305,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 3,
+          "wins": 2,
+          "losses": 1,
+          "winRate": 66.66666666666666,
+          "pf": 0.5379410545744875,
+          "exp": -0.38215615984443924,
+          "netR": -1.1464684795333178,
+          "maxDD": 2.4812169332151535,
+          "sumR2": 7.78682426325736,
+          "grossW": 1.3347484536818355,
+          "grossL": 2.4812169332151535,
+          "sd": 1.9168586635086342,
+          "tStat": -0.34531178426290915,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 26,
@@ -1994,31 +2204,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 29,
+          "wins": 17,
+          "losses": 12,
+          "winRate": 58.620689655172406,
+          "pf": 0.5884328311666586,
+          "exp": -0.20563231697373052,
+          "netR": -5.9633371922381855,
+          "maxDD": 6.627648392057247,
+          "sumR2": 25.69234567139565,
+          "grossW": 8.52600414454118,
+          "grossL": 14.489341336779367,
+          "sd": 0.9347667934467492,
+          "tStat": -1.1846419067725942,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 33,
+          "wins": 17,
+          "losses": 16,
+          "winRate": 51.515151515151516,
+          "pf": 0.49434675435945136,
+          "exp": -0.3003783879998831,
+          "netR": -9.912486803996142,
+          "maxDD": 12.110296762233379,
+          "sumR2": 38.86363398779789,
+          "grossW": 9.690841938488752,
+          "grossL": 19.603328742484894,
+          "sd": 1.0589814856228514,
+          "tStat": -1.6294359164518715,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 33,
+          "wins": 14,
+          "losses": 18,
+          "winRate": 42.42424242424242,
+          "pf": 0.38691064515963,
+          "exp": -0.48799627220005626,
+          "netR": -16.103876982601857,
+          "maxDD": 18.969521921412067,
+          "sumR2": 56.884067561111415,
+          "grossW": 10.168432703491684,
+          "grossL": 26.281087973933708,
+          "sd": 1.237757998681909,
+          "tStat": -2.264841075489324,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 101,
@@ -2238,31 +2478,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 0,
@@ -2482,31 +2752,61 @@
           "dataStatus": "LIVE"
         },
         "MSFT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 6,
+          "wins": 4,
+          "losses": 2,
+          "winRate": 66.66666666666666,
+          "pf": 0.4792032521435044,
+          "exp": -0.21131127326715612,
+          "netR": -1.2678676396029367,
+          "maxDD": 2.434476875712547,
+          "sumR2": 3.545607293407284,
+          "grossW": 1.1666092361096105,
+          "grossL": 2.434476875712547,
+          "sd": 0.8096533292895872,
+          "tStat": -0.6392918767548491,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "SPY": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "winRate": 37.5,
+          "pf": 0.2724237641290335,
+          "exp": -0.4327354100311267,
+          "netR": -3.4618832802490136,
+          "maxDD": 4.006377475628379,
+          "sumR2": 7.334995050447689,
+          "grossW": 1.2962205576324761,
+          "grossL": 4.75810383788149,
+          "sd": 0.9131511821074185,
+          "tStat": -1.3403701331749716,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "QQQ": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 6,
+          "wins": 4,
+          "losses": 2,
+          "winRate": 66.66666666666666,
+          "pf": 1.91374910940503,
+          "exp": 0.41497118154410567,
+          "netR": 2.489827089264634,
+          "maxDD": 1.481568186457221,
+          "sumR2": 10.58104754295599,
+          "grossW": 5.214674712794286,
+          "grossL": 2.7248476235296533,
+          "sd": 1.3818712714202668,
+          "tStat": 0.7355733299949079,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "BTCUSDT": {
           "trades": 28,
@@ -3780,6 +4080,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795767579196,
+        "type": "CYCLE",
+        "text": "[CYCLE #510] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795767577140,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (74 trade OOS, -0.135R/trade, win 58.1%, t=-1.17) | Meta-model belum aktif (1306 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.276R)"
+      },
+      {
+        "t": 1795767577140,
+        "type": "GEN",
+        "text": "[GEN #85] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-71.64R, 261 trade, Win 54.4%, t=-4.57 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795767575129,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795752540113,
         "type": "CYCLE",
@@ -5259,26 +5579,6 @@
         "t": 1795510432290,
         "type": "CYCLE",
         "text": "[CYCLE #385] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795510429686,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795509523541,
-        "type": "CYCLE",
-        "text": "[CYCLE #384] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795509522638,
-        "type": "GEN",
-        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (74 trade OOS, -0.108R/trade, win 59.5%, t=-0.94) | Meta-model belum aktif (1272 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.286R)"
-      },
-      {
-        "t": 1795509522637,
-        "type": "GEN",
-        "text": "[GEN #64] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Bollinger Mean Reversion (BELUM SIGNIFIKAN) (-87.81R, 398 trade, Win 54.5%, t=-4.59 vs hurdle 2.15)"
       }
     ],
     "accuracyHistory": [
@@ -5365,9 +5665,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13870,
+      "newsIngested": 13900,
       "lessons": 1,
-      "backtests": 13720,
+      "backtests": 13750,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -5380,8 +5680,36 @@
       }
     },
     "news": {
-      "fetchedAt": 1795752531520,
+      "fetchedAt": 1795767575129,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Monero suffers biggest single-day slide in over 5 months. Here’s why",
+          "link": "https://www.coindesk.com/markets/2026/11/27/monero-suffers-biggest-single-day-slide-in-over-5-months-here-s-why",
+          "pubDate": "2026-11-27 07:33:01",
+          "summary": "Monero (XMR) crashed over 11% on Thursday, its biggest drop since early June. Back-to-back exchange delistings seem to have catalyzed the price slide."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Ripple&#39;s lending plan moves closer to tapping XRP Ledger&#39;s $800 million in stablecoins",
+          "link": "https://www.coindesk.com/markets/2026/11/27/ripple-s-lending-plan-moves-closer-to-tapping-xrp-ledger-s-usd950-million-in-stablecoins",
+          "pubDate": "2026-11-27 05:06:32",
+          "summary": "The vaults that would hold lenders&#39; money are on track to switch on Dec. 9. The loan system that draws from them still needs one more validator to start its own two-week clock."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
+          "link": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
+          "pubDate": "2026-11-27 04:45:47",
+          "summary": "Binance says it has fully lifted withdrawal suspensions imposed after October’s $6.3 billion hack, though a small number of networks remain paused for unrelated maintenance."
+        },
+        {
+          "source": "CoinDesk",
+          "title": "Ethereum&#39;s much-awaited Glamsterdam upgrade cleared for December test. Here&#39;s what to know",
+          "link": "https://www.coindesk.com/tech/2026/11/27/ethereum-s-much-awaited-glamsterdam-upgrade-cleared-for-december-test-here-s-what-to-know",
+          "pubDate": "2026-11-27 04:29:47",
+          "summary": "Developers have agreed to keep the planned storage charges despite concerns about some existing smart contracts, ending seven weeks of delays to the next major test."
+        },
         {
           "source": "CoinDesk",
           "title": "A tiny payment can expose the IP address behind a bitcoin wallet, developer finds",
@@ -5425,32 +5753,39 @@
           "summary": "Your day-ahead look for Nov. 26, 2026"
         },
         {
-          "source": "CoinDesk",
-          "title": "Hong Kong-based crypto trading firm Auros is winding down operations",
-          "link": "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources",
-          "pubDate": "2026-11-26 11:27:50",
-          "summary": "The firm previously estimated it handled 4% of global crypto exchange trading volume and raised $17 million after the FTX collapse."
+          "source": "CoinTelegraph",
+          "title": "ESMA to overhaul EU’s MiCA crypto register in 2027",
+          "link": "https://cointelegraph.com/news/esma-overhaul-eu-mica-crypto-register-2027?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 08:04:39",
+          "summary": "    ESMA’s new MiCA register will replace manual reporting and introduce automated data checks and a version history for crypto white papers. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Bitcoin little changed, DeFi tokens lead the bounce as U.S. marks Thanksgiving",
-          "link": "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving",
-          "pubDate": "2026-11-26 11:17:22",
-          "summary": "Bitcoin is holding near $60,800 after rebounding from Wednesday&#39;s $57,500 low, while DeFi and infrastructure tokens are gaining nearly twice as much."
+          "source": "CoinTelegraph",
+          "title": "New York AG secures $1.37B court judgment against NovaTech founders",
+          "link": "https://cointelegraph.com/news/new-york-ag-137b-court-judgment-novatech?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 07:19:44",
+          "summary": "    The judgment follows an August 2025 default ruling against the founders over a Ponzi scheme that targeted Haitian and other immigrant communities. "
         },
         {
-          "source": "CoinDesk",
-          "title": "Nvidia shipment freeze and U.S. chip curbs put AI stocks under pressure",
-          "link": "https://www.coindesk.com/markets/2026/11/26/nvidia-shipment-freeze-and-u-s-chip-curbs-put-ai-stocks-under-pressure",
-          "pubDate": "2026-11-26 10:56:08",
-          "summary": "U.S. export controls have halted Nvidia server shipments to four Southeast Asian countries and put billions in data centre financing under review."
+          "source": "CoinTelegraph",
+          "title": "Here’s what happened in crypto today",
+          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 06:00:00",
+          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
         },
         {
-          "source": "CoinDesk",
-          "title": "New York Attorney General wins $1.4 billion ruling against founders of crypto trading firm NovaTech",
-          "link": "https://www.coindesk.com/policy/2026/11/26/new-york-attorney-general-wins-usd1-4-billion-ruling-against-founders-of-crypto-trading-firm-novatech",
-          "pubDate": "2026-11-26 10:40:33",
-          "summary": "AWS Mining and NovaTech founders Cynthia and Eddie Petion were ordered to pay $1.37 billion after defrauding hundreds of thousands of people, including 11,000 New Yorkers."
+          "source": "CoinTelegraph",
+          "title": "Japan’s crypto security group taps SEAL to speed up hack response",
+          "link": "https://cointelegraph.com/news/japans-crypto-security-group-taps-seal-to-speed-up-hack-response?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 05:22:36",
+          "summary": "    The partnership comes weeks after a third-party data breach exposed hundreds of thousands of customer email addresses belonging to two Japanese crypto exchanges. "
+        },
+        {
+          "source": "CoinTelegraph",
+          "title": "Ethereum devs set Glamsterdam’s Hoodi rollout for mid-December after delays",
+          "link": "https://cointelegraph.com/news/ethereum-devs-set-glamsterdams-hoodi-rollout-for-mid-december-after-delays?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 04:47:36",
+          "summary": "    Glamsterdam’s Hoodi upgrade was delayed in October after concerns that changes to gas pricing could break some existing smart contracts.  "
         },
         {
           "source": "CoinTelegraph",
@@ -5475,13 +5810,6 @@
         },
         {
           "source": "CoinTelegraph",
-          "title": "Here’s what happened in crypto today",
-          "link": "https://cointelegraph.com/news/what-happened-in-crypto-today?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 22:12:06",
-          "summary": "    Need to know what happened in crypto today? Here is the latest news on daily trends and events impacting Bitcoin price, blockchain, DeFi, Web3 and crypto regulation. "
-        },
-        {
-          "source": "CoinTelegraph",
           "title": "BNB Chain details new layer-1 for trading, private finance and AI",
           "link": "https://cointelegraph.com/news/bnb-chain-details-new-layer-1-trading-private-finance-ai?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-26 21:42:43",
@@ -5493,34 +5821,6 @@
           "link": "https://cointelegraph.com/news/binance-completes-withdrawal-recovery-four-weeks-after-63b-hack?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-26 21:33:47",
           "summary": "    The announcement concludes a phased withdrawal recovery that began on Nov. 1, when Binance restored Bitcoin withdrawals following the record crypto theft. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "UK is ‘getting it wrong’ on DeFi regulation, says Coinbase",
-          "link": "https://cointelegraph.com/news/uk-wrong-defi-regulation-coinbase?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 21:13:53",
-          "summary": "    Coinbase and Stand With Crypto argue that the FCA’s proposed DeFi rules could leave UK users without regulated access to decentralized finance. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Japan weighs tighter oversight of DeFi, self-custodial wallets",
-          "link": "https://cointelegraph.com/news/japan-tighter-oversight-defi-self-custodial-wallets?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 20:05:18",
-          "summary": "    Japan’s financial regulator is exploring measures to curb illicit finance risks, including potential restrictions on access to DeFi services. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Spain moves to grant financial watchdog power to freeze crypto accounts",
-          "link": "https://cointelegraph.com/news/spain-moves-grant-financial-watchdog-power-freeze-crypto-accounts?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 18:26:31",
-          "summary": "    A new decree would allow Spain’s financial intelligence unit to suspend crypto accounts, with firms facing fines for noncompliance. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "Crypto on notice as hawkish Fed risks December ‘meltdown’",
-          "link": "https://cointelegraph.com/markets/crypto-hawkish-fed-risks-december-meltdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 17:39:53",
-          "summary": "    Economist Robin Brooks warned of dire consequences for stocks if the Federal Reserve fails to deliver dovish cues before the FOMC blackout period. "
         },
         {
           "source": "Decrypt",
@@ -5607,10 +5907,13 @@
           "critHead": "Binance completes withdrawal recovery four weeks after $6.3B hack"
         },
         "ETH": {
-          "sentiment": "NEUTRAL",
-          "impact": 0,
-          "sources": [],
-          "multiSourced": false,
+          "sentiment": "BULLISH",
+          "impact": 0.67,
+          "sources": [
+            "CoinDesk",
+            "CoinTelegraph"
+          ],
+          "multiSourced": true,
           "critical": false,
           "critHead": ""
         },
@@ -5625,7 +5928,9 @@
         "XRP": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [],
+          "sources": [
+            "CoinDesk"
+          ],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -5708,23 +6013,23 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795752531520
+        "t": 1795767575129
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795752534614,
+      "fetchedAt": 1795767575837,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 17,
+        "ARB": 16.48,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 3.57,
+        "ENA": 4.07,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -5736,112 +6041,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 86.16,
+          "pct": 84.46,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 470.72,
+          "pct": 461.44,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 411.85,
+          "pct": 418.72,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 17,
+          "pct": 16.48,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 60.74,
+          "pct": 58.89,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 303.04,
+          "pct": 293.85,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.46,
+          "pct": 4.33,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 36.15,
+          "pct": 35.05,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 16.43,
+          "pct": 15.93,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 52.89,
+          "pct": 51.28,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 164.6,
+          "pct": 159.61,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 84.03,
+          "pct": 81.49,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 99.36,
+          "pct": 96.46,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 232.53,
+          "pct": 225.74,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 30.84,
+          "pct": 29.94,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1232.33,
+          "pct": 1270.84,
           "lev": 10
         }
       ]
@@ -6497,42 +6802,42 @@
         ],
         "MSFT": [
           [
-            0.482,
+            0.48,
             0.14,
             10
           ],
           [
-            0.461,
+            0.46,
             -1.188,
             40
           ],
           [
-            0.481,
+            0.48,
             -1.201,
             2
           ],
           [
-            0.534,
+            0.533,
             1.414,
             90
           ],
           [
-            0.472,
+            0.471,
             -1.251,
             10
           ],
           [
-            0.49,
+            0.488,
             -1.251,
             69
           ],
           [
-            0.457,
+            0.456,
             0.151,
             64
           ],
           [
-            0.526,
+            0.524,
             0.156,
             2
           ],
@@ -6542,79 +6847,79 @@
             35
           ],
           [
-            0.55,
+            0.549,
             -1.207,
             27
           ],
           [
-            0.537,
+            0.536,
             0.231,
             10
           ],
           [
-            0.53,
+            0.528,
             1.492,
             35
           ],
           [
-            0.531,
+            0.53,
             -1.167,
             10
           ],
           [
-            0.457,
+            0.455,
             0.228,
             69
           ],
           [
-            0.453,
+            0.451,
             -1.158,
             69
           ],
           [
-            0.535,
+            0.534,
             -1.133,
             10
           ]
         ],
         "SPY": [
           [
-            0.533,
+            0.531,
             1.159,
             2
           ],
           [
-            0.46,
+            0.458,
             -1.394,
             40
           ],
           [
-            0.543,
+            0.542,
             -1.708,
             10
           ],
           [
-            0.411,
+            0.41,
             -0.257,
             61
           ],
           [
-            0.5,
+            0.499,
             -1.556,
             46
           ],
           [
-            0.426,
+            0.424,
             -1.476,
             48
           ],
           [
-            0.505,
+            0.503,
             -0.218,
             41
           ],
           [
-            0.424,
+            0.422,
             -0.025,
             56
           ],
@@ -6624,12 +6929,12 @@
             35
           ],
           [
-            0.528,
+            0.527,
             -1.414,
             10
           ],
           [
-            0.479,
+            0.478,
             1.347,
             2
           ],
@@ -6639,69 +6944,69 @@
             61
           ],
           [
-            0.457,
+            0.456,
             -1.22,
             61
           ]
         ],
         "QQQ": [
           [
-            0.496,
+            0.495,
             0.059,
             95
           ],
           [
-            0.492,
+            0.491,
             0.076,
             95
           ],
           [
-            0.467,
+            0.466,
             -1.747,
             10
           ],
           [
-            0.445,
+            0.444,
             1.176,
             48
           ],
           [
-            0.438,
+            0.436,
             1.599,
             69
           ],
           [
-            0.44,
+            0.439,
             -1.362,
             61
           ],
           [
-            0.503,
+            0.502,
             -1.245,
             41
           ],
           [
-            0.54,
+            0.538,
             0.661,
             10
           ],
           [
-            0.406,
+            0.404,
             1.353,
             96
           ],
           [
-            0.44,
+            0.438,
             0.243,
             56
           ],
           [
-            0.463,
+            0.461,
             0.339,
             56
           ],
           [
-            0.427,
+            0.426,
             -0.523,
             61
           ]
@@ -9978,24 +10283,24 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1306,
-        "updatedAt": 1795752536784
+        "updatedAt": 1795767577140
       }
     },
     "champion": {
       "id": "wyckoff",
       "name": "Wyckoff Spring & Upthrust",
       "book": "Richard D. Wyckoff",
-      "netR": -67.92,
-      "trades": 227,
-      "winRate": 52.9,
-      "pf": 0.48,
-      "expPerTrade": -0.299,
-      "tStat": -4.68,
-      "deflatedT": -6.83,
+      "netR": -71.64,
+      "trades": 261,
+      "winRate": 54.4,
+      "pf": 0.51,
+      "expPerTrade": -0.274,
+      "tStat": -4.57,
+      "deflatedT": -6.71,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795752536783,
-      "gen": 84
+      "updatedAt": 1795767577140,
+      "gen": 85
     },
     "factory": {
       "updatedAt": 1795671082104,
@@ -10220,7 +10525,7 @@
         }
       ],
       "lastError": {
-        "at": 1795752548521,
+        "at": 1795767587498,
         "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
       }
     }
