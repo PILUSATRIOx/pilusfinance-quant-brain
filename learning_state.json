@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795776780678,
+  "updatedAt": 1795776824378,
   "brain": {
     "v": 1,
     "gen": 85,
@@ -10186,12 +10186,12 @@
       "gen": 85
     },
     "factory": {
-      "updatedAt": 1795671082104,
-      "day": "2026-11-26",
-      "dataUntil": "2026-11-25",
+      "updatedAt": 1795776768324,
+      "day": "2026-11-27",
+      "dataUntil": "2026-11-26",
       "universe": 20,
-      "nTrials": 83,
-      "hurdleSharpe": 2.8,
+      "nTrials": 87,
+      "hurdleSharpe": 2.78,
       "pbo": 0.186,
       "top": [
         {
@@ -10286,7 +10286,7 @@
           "sharpe": 3.68,
           "cagr": 0.0441,
           "mdd": -0.008,
-          "dsr": 0.9981,
+          "dsr": 0.9985,
           "years": 6.92,
           "status": "KANDIDAT"
         },
@@ -10296,22 +10296,22 @@
           "family": "MAX",
           "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
           "sharpe": 1.1,
-          "cagr": 0.2937,
+          "cagr": 0.2936,
           "mdd": -0.3307,
           "dsr": 0,
-          "years": 6.83,
+          "years": 6.84,
           "status": "KANDIDAT"
         },
         {
-          "id": "XSMOM|L=14|frac=0.333|type=LO",
-          "label": "Momentum lintas koin 14 hari, 33% teratas (long-only)",
-          "family": "XSMOM",
-          "source": "Jegadeesh & Titman (1993), Journal of Finance; Liu, Tsyvinski & Wu (2022), \"Common Risk Factors in Cryptocurrency\", Journal of Finance",
-          "sharpe": 1.05,
-          "cagr": 0.6907,
-          "mdd": -0.7746,
+          "id": "MAX|fast=10|mode=LF|slow=45",
+          "label": "Persilangan SMA 10/45 (long/flat)",
+          "family": "MAX",
+          "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
+          "sharpe": 1.08,
+          "cagr": 0.2881,
+          "mdd": -0.2971,
           "dsr": 0,
-          "years": 6.9,
+          "years": 6.82,
           "status": "KANDIDAT"
         }
       ],
@@ -10323,11 +10323,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 9,
+            "days": 10,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.72
+            "z": -0.76
           }
         }
       ],
@@ -10351,6 +10351,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795776768324,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Persilangan SMA 51/113 (long/short); Momentum lintas koin 29 hari, 33% teratas vs terbawah (netral pasar); Trend TSMOM 45 hari (long/short); Persilangan SMA 10/45 (long/flat)"
+        },
         {
           "t": 1795671082104,
           "type": "EXPLORE",
@@ -10407,10 +10412,7 @@
           "text": "4 kandidat baru diuji: Breakout Donchian 49 hari (long/short); Trend TSMOM 202 hari (long/flat); Momentum lintas koin 66 hari, 33% teratas vs terbawah (netral pasar); Carry funding > 24%/th (long spot + short perpetual)"
         }
       ],
-      "lastError": {
-        "at": 1795768755427,
-        "message": "gagal mengambil https://fapi.binance.com/fapi/v1/klines"
-      }
+      "lastError": null
     }
   }
 }
