@@ -1,15 +1,15 @@
 {
   "version": "2.5",
-  "updatedAt": 1795815526120,
+  "updatedAt": 1795816424695,
   "brain": {
     "v": 1,
-    "gen": 92,
-    "cycles": 557,
+    "gen": 93,
+    "cycles": 558,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 15,
+    "optCursor": 0,
     "scanCursor": 0,
-    "lastOptAt": 1795811027348,
+    "lastOptAt": 1795816422650,
     "autoExecBursa": false,
     "engineV": 2,
     "params": {
@@ -35,14 +35,14 @@
       "volConfirmMult": 1.178
     },
     "weights": {
-      "elder": 0.59,
+      "elder": 0.6,
       "donchian": 0.54,
       "bbrev": 0.83,
       "wyckoff": 0.76,
       "rsidiv": 0.48,
       "macdm": 0.54,
       "smc": 0.51,
-      "statarb": 0.62,
+      "statarb": 0.63,
       "tsmom": 1,
       "emax": 0.55
     },
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.41181150583683823,
         "mae": -0.2647359680379686,
-        "lastBarT": 1795815300000
+        "lastBarT": 1795816200000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795816424677,
+        "type": "CYCLE",
+        "text": "[CYCLE #558] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795816422651,
+        "type": "GEN",
+        "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (70 trade OOS, -0.111R/trade, win 58.6%, t=-0.92) | Meta-model belum aktif (1336 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.28R)"
+      },
+      {
+        "t": 1795816422650,
+        "type": "GEN",
+        "text": "[GEN #93] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Bollinger Mean Reversion (BELUM SIGNIFIKAN) (-69.38R, 548 trade, Win 58.9%, t=-3.09 vs hurdle 2.15)"
+      },
+      {
+        "t": 1795816422349,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795815526103,
         "type": "CYCLE",
@@ -6394,26 +6414,6 @@
         "t": 1795555423255,
         "type": "GEN",
         "text": "[SISTEM] Sistem SCORE BELUM SIGNIFIKAN (73 trade OOS, -0.095R/trade, win 60.3%, t=-0.82) | Meta-model belum aktif (1286 sampel latih, 0 trade OOS lolos filter, +0R/trade vs semua -0.279R)"
-      },
-      {
-        "t": 1795555423255,
-        "type": "GEN",
-        "text": "[GEN #72] Universe penuh di-backtest out-of-sample (net fee+slippage) | Champion: Wyckoff Spring & Upthrust (BELUM SIGNIFIKAN) (-83.32R, 555 trade, Win 58.2%, t=-3.62 vs hurdle 2.15)"
-      },
-      {
-        "t": 1795555422289,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795554524547,
-        "type": "CYCLE",
-        "text": "[CYCLE #431] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795554522276,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 15250,
+      "newsIngested": 15280,
       "lessons": 1,
-      "backtests": 15100,
+      "backtests": 15130,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795815523185,
+      "fetchedAt": 1795816422349,
       "items": [
         {
           "source": "CoinDesk",
@@ -6664,6 +6664,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "OpenAI Turns the Tables on Apple With Its Own Trade-Secret Theft Claims",
+          "link": "https://decrypt.co/384222/openai-countersuit-apple-trade-secret-theft-claims",
+          "pubDate": "2026-11-27 21:46:03",
+          "summary": "The ChatGPT maker’s counterclaims flip the script on a dispute Apple started in July, alleging the iPhone maker took its trade secrets and pressured shared hardware suppliers to freeze it out of the AI-device race."
+        },
+        {
+          "source": "Decrypt",
           "title": "Could AI Break Bitcoin? Not Yet, Research Firm K33 Says",
           "link": "https://decrypt.co/384218/could-ai-break-bitcoin-not-yet-research-firm-k33-says",
           "pubDate": "2026-11-27 20:46:02",
@@ -6724,13 +6731,6 @@
           "link": "https://decrypt.co/384118/kalshi-courts-small-businesses-with-microinsurance-as-state-crackdowns-bite",
           "pubDate": "2026-11-27 11:19:47",
           "summary": "Kalshi says about 500 businesses have used it to hedge risks such as tariffs and bad weather, as legal fights weigh on its sports markets."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Ethereum Sets December 15 Date for Delayed Glamsterdam Testnet Upgrade",
-          "link": "https://decrypt.co/384104/ethereum-sets-december-15-date-for-delayed-glamsterdam-testnet-upgrade",
-          "pubDate": "2026-11-27 10:15:51",
-          "summary": "Core developers will ship Glamsterdam&#39;s contested gas changes unaltered, after security concerns halted the Hoodi fork in October."
         }
       ],
       "perCoin": {
@@ -6747,8 +6747,8 @@
           "critHead": ""
         },
         "ETH": {
-          "sentiment": "BULLISH",
-          "impact": 0.17,
+          "sentiment": "NEUTRAL",
+          "impact": 0,
           "sources": [
             "Decrypt"
           ],
@@ -6843,7 +6843,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795815523185
+        "t": 1795816422348
       },
       "lastErrors": []
     },
@@ -11082,7 +11082,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1336,
-        "updatedAt": 1795815524136
+        "updatedAt": 1795816422651
       }
     },
     "champion": {
@@ -11098,8 +11098,8 @@
       "deflatedT": -5.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795815524136,
-      "gen": 92
+      "updatedAt": 1795816422650,
+      "gen": 93
     },
     "factory": {
       "updatedAt": 1795776768324,
