@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795745312210,
+  "updatedAt": 1795750426297,
   "brain": {
     "v": 1,
     "gen": 84,
     "cycles": 505,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795744674962,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.56,
+    "lastHurst": 0.53,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -378,13 +378,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 92,
+          "wins": 55,
+          "losses": 37,
+          "winRate": 59.78260869565217,
+          "pf": 0.6412793424046965,
+          "exp": -0.1674280087251204,
+          "netR": -15.403376802711078,
+          "maxDD": 17.9841457939663,
+          "sumR2": 80.37623654480247,
+          "grossW": 27.53637722753675,
+          "grossL": 42.93975403024783,
+          "sd": 0.9246162247477779,
+          "tStat": -1.7368428124835134,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -602,13 +612,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 70,
+          "wins": 36,
+          "losses": 33,
+          "winRate": 51.42857142857142,
+          "pf": 0.37001138884034945,
+          "exp": -0.35251570177263897,
+          "netR": -24.67609912408473,
+          "maxDD": 30.16866911867184,
+          "sumR2": 64.72763099423054,
+          "grossW": 14.488498764564696,
+          "grossL": 39.15689949429129,
+          "sd": 0.901117813032048,
+          "tStat": -3.272999291917061,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -826,13 +846,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 57,
+          "wins": 32,
+          "losses": 25,
+          "winRate": 56.14035087719298,
+          "pf": 0.5238577770576146,
+          "exp": -0.25130444115705286,
+          "netR": -14.324353145952012,
+          "maxDD": 15.806796660551338,
+          "sumR2": 53.503832203029894,
+          "grossW": 15.759836946312298,
+          "grossL": 30.08419009226432,
+          "sd": 0.9440041865898211,
+          "tStat": -2.0098501156419,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -1050,13 +1080,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 43,
+          "wins": 28,
+          "losses": 15,
+          "winRate": 65.11627906976744,
+          "pf": 0.6958744375847622,
+          "exp": -0.13623916203909645,
+          "netR": -5.858283967681147,
+          "maxDD": 8.079903229097951,
+          "sumR2": 37.94309525826804,
+          "grossW": 13.404430817479,
+          "grossL": 19.262714785160146,
+          "sd": 0.9404275567594126,
+          "tStat": -0.9499720879641822,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -1274,13 +1314,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 24,
+          "wins": 12,
+          "losses": 12,
+          "winRate": 50,
+          "pf": 0.3687283858258332,
+          "exp": -0.4210982376958865,
+          "netR": -10.106357704701276,
+          "maxDD": 12.234224421251362,
+          "sumR2": 27.695200427956564,
+          "grossW": 5.903165736206919,
+          "grossL": 16.009523440908197,
+          "sd": 1.0095076503141134,
+          "tStat": -2.0435225302536293,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -1498,13 +1548,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 39,
+          "wins": 18,
+          "losses": 21,
+          "winRate": 46.15384615384615,
+          "pf": 0.46195048071690314,
+          "exp": -0.3264201552348564,
+          "netR": -12.7303860541594,
+          "maxDD": 15.936057108931163,
+          "sumR2": 42.61438912209547,
+          "grossW": 10.929863788869005,
+          "grossL": 23.660249843028407,
+          "sd": 1.0060204890936564,
+          "tStat": -2.0262939355391176,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -1722,13 +1782,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 30,
+          "wins": 15,
+          "losses": 15,
+          "winRate": 50,
+          "pf": 0.3659268275095768,
+          "exp": -0.3811483185890611,
+          "netR": -11.434449557671833,
+          "maxDD": 12.594325943064394,
+          "sumR2": 29.308377014799305,
+          "grossW": 6.598878540347542,
+          "grossL": 18.03332809801938,
+          "sd": 0.9275506453669972,
+          "tStat": -2.250696852933507,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -1946,13 +2016,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 109,
+          "wins": 59,
+          "losses": 48,
+          "winRate": 54.12844036697248,
+          "pf": 0.4672095339471454,
+          "exp": -0.2940933637252321,
+          "netR": -32.0561766460503,
+          "maxDD": 36.325609008255,
+          "sumR2": 105.05173216371851,
+          "grossW": 28.126083742503035,
+          "grossL": 60.20014939524948,
+          "sd": 0.940961994675265,
+          "tStat": -3.263070003786467,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -2170,13 +2250,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
           "trades": 0,
+          "wins": 0,
+          "losses": 0,
           "winRate": 0,
           "pf": 0,
           "exp": 0,
           "netR": 0,
-          "maxDD": 0
+          "maxDD": 0,
+          "sumR2": 0,
+          "grossW": 0,
+          "grossL": 0,
+          "sd": 0,
+          "tStat": 0,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -2394,13 +2484,23 @@
           "maxDD": 0
         },
         "BNBUSDT": {
-          "dataStatus": "OFFLINE",
-          "trades": 0,
-          "winRate": 0,
-          "pf": 0,
-          "exp": 0,
-          "netR": 0,
-          "maxDD": 0
+          "trades": 29,
+          "wins": 11,
+          "losses": 18,
+          "winRate": 37.93103448275862,
+          "pf": 0.20344737065713714,
+          "exp": -0.6603458317030789,
+          "netR": -19.150029119389288,
+          "maxDD": 19.150029119389288,
+          "sumR2": 37.317601690916035,
+          "grossW": 4.891105658092535,
+          "grossL": 24.041134777481822,
+          "sd": 0.9386913341937947,
+          "tStat": -3.788328499356559,
+          "atrMult": 1.846,
+          "window": "OOS_40",
+          "regime": "RANGING",
+          "dataStatus": "LIVE"
         },
         "ADAUSDT": {
           "dataStatus": "OFFLINE",
@@ -3580,6 +3680,11 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795750408024,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795745098605,
         "type": "CYCLE",
@@ -5074,11 +5179,6 @@
         "t": 1795505024815,
         "type": "CYCLE",
         "text": "[CYCLE #380] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795504824595,
-        "type": "CYCLE",
-        "text": "[CYCLE #379] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -5165,9 +5265,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 13780,
+      "newsIngested": 13810,
       "lessons": 1,
-      "backtests": 13670,
+      "backtests": 13680,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -5180,7 +5280,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795745033992,
+      "fetchedAt": 1795750408025,
       "items": [
         {
           "source": "CoinDesk",
@@ -5254,6 +5354,13 @@
         },
         {
           "source": "CoinTelegraph",
+          "title": "AI is driving a flood of crypto bug reports. Now it’s helping sort them",
+          "link": "https://cointelegraph.com/news/ai-driving-flood-of-crypto-bug-reports-now-helping-sort-them?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 01:47:38",
+          "summary": "    Bug bounty platform HackerOne said it’s increasing its triage throughput with AI agents after a record quarter of reports in the third quarter. "
+        },
+        {
+          "source": "CoinTelegraph",
           "title": "Privacy coins face diverging fortunes as KuCoin moves to drop Monero",
           "link": "https://cointelegraph.com/news/privacy-coins-kucoin-drop-monero-grayscale-zcash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 00:35:39",
@@ -5314,13 +5421,6 @@
           "link": "https://cointelegraph.com/markets/crypto-hawkish-fed-risks-december-meltdown?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-26 17:39:53",
           "summary": "    Economist Robin Brooks warned of dire consequences for stocks if the Federal Reserve fails to deliver dovish cues before the FOMC blackout period. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "BIS chief Pablo Hernández de Cos set to become next ECB president: FT",
-          "link": "https://cointelegraph.com/news/bis-chief-pablo-hernndez-de-cos-next-ecb-president?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 16:40:44",
-          "summary": "    The Spanish economist has questioned the viability of stablecoins for widespread payments while backing the development of a digital euro. "
         },
         {
           "source": "Decrypt",
@@ -5485,9 +5585,7 @@
         "EUR": {
           "sentiment": "NEUTRAL",
           "impact": 0,
-          "sources": [
-            "CoinTelegraph"
-          ],
+          "sources": [],
           "multiSourced": false,
           "critical": false,
           "critHead": ""
@@ -5510,15 +5608,143 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795745033992
+        "t": 1795750408024
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795744674933,
-      "bias": {},
-      "positions": []
+      "fetchedAt": 1795750412909,
+      "bias": {
+        "BTC": -20,
+        "ETH": 20,
+        "HYPE": -40,
+        "ARB": 16.54,
+        "LDO": 20,
+        "AAVE": 20,
+        "ZRO": 5,
+        "ETHFI": 20,
+        "ENA": 4.01,
+        "EIGEN": 20,
+        "WLFI": -20,
+        "MEGA": 20,
+        "GRASS": 20,
+        "AERO": 20
+      },
+      "positions": [
+        {
+          "whale": "0x37b81a",
+          "coin": "BTC",
+          "side": "SHORT",
+          "pct": 85.28,
+          "lev": 20
+        },
+        {
+          "whale": "0x37b81a",
+          "coin": "ETH",
+          "side": "LONG",
+          "pct": 465.91,
+          "lev": 20
+        },
+        {
+          "whale": "0x37b81a",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 407.64,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ARB",
+          "side": "LONG",
+          "pct": 16.54,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "LDO",
+          "side": "LONG",
+          "pct": 59.09,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "AAVE",
+          "side": "LONG",
+          "pct": 294.85,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ZRO",
+          "side": "LONG",
+          "pct": 4.34,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ETHFI",
+          "side": "LONG",
+          "pct": 35.17,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "ENA",
+          "side": "SHORT",
+          "pct": 15.99,
+          "lev": 10
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "EIGEN",
+          "side": "LONG",
+          "pct": 51.46,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "WLFI",
+          "side": "SHORT",
+          "pct": 160.15,
+          "lev": 5
+        },
+        {
+          "whale": "0x08c14b",
+          "coin": "MEGA",
+          "side": "LONG",
+          "pct": 81.76,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "ENA",
+          "side": "LONG",
+          "pct": 97.97,
+          "lev": 10
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "GRASS",
+          "side": "LONG",
+          "pct": 229.27,
+          "lev": 3
+        },
+        {
+          "whale": "0xfdf891",
+          "coin": "AERO",
+          "side": "LONG",
+          "pct": 30.4,
+          "lev": 3
+        },
+        {
+          "whale": "0x03ef8f",
+          "coin": "HYPE",
+          "side": "SHORT",
+          "pct": 1217.3,
+          "lev": 10
+        }
+      ]
     },
     "learnLog": [
       {
@@ -5586,60 +5812,60 @@
       "v": 1,
       "nf": 23,
       "w": [
-        0.04555253839255803,
-        0.11321672558425241,
-        0.06239460687654155,
-        0.08593982172103738,
-        0.0016868577961112808,
-        -0.037423842769397614,
-        -0.030353870982481792,
-        0.034050696091751306,
-        -0.06192627539444841,
-        0.138615995794013,
-        -0.08639979745617093,
-        0.07691505064444701,
-        -0.07032877539167699,
-        -0.09825458193205763,
-        0.1264117209201298,
-        0.09830184030070162,
-        -0.05158639270011291,
-        0.11183623175874448,
-        -0.05367199037965,
-        -0.04048485844275037,
-        -0.0007093543810174476,
-        0.14171975197559802,
-        -0.21023536061588777
+        0.04566008993957853,
+        0.11310791466748604,
+        0.06239286617627671,
+        0.08593714678572564,
+        0.001814195876581468,
+        -0.03767695158230502,
+        -0.030269868963259793,
+        0.03417076065177056,
+        -0.06209950513586395,
+        0.13881262613209258,
+        -0.0867116872722634,
+        0.07694351388476318,
+        -0.07043554350466096,
+        -0.09962494155971095,
+        0.12527626883464094,
+        0.09831424009639013,
+        -0.051392972769286255,
+        0.11183226748183406,
+        -0.056200721279252845,
+        -0.03967223608558533,
+        0.0012686047448825792,
+        0.1479719108312059,
+        -0.21065164588059768
       ],
       "g2": [
-        1290.9943558638893,
-        1290.9923770093735,
-        205.56799264088923,
-        165.14692164159132,
-        920.290840913456,
-        258.9187184258255,
-        239.6312580984852,
-        1028.3875610501157,
-        30.467626525651877,
-        48.120723397872666,
-        152.71946511788934,
-        53.046063877538714,
-        1291.002119775808,
-        16.193940931109854,
-        3.2823398966950115,
-        37.02472013941313,
-        57.98183157058983,
-        127.33376960916904,
-        80.17667920146707,
-        277.9033777130862,
-        525.5989434109431,
-        765.3572553200452,
-        80.11503603829576
+        1292.7114463028388,
+        1292.7094874394802,
+        205.56799267203317,
+        165.1469217006749,
+        922.0079339105002,
+        259.1665731026924,
+        239.8220099550995,
+        1030.10464889942,
+        30.46958648391285,
+        48.132406289941585,
+        152.72541202305476,
+        53.05509796525884,
+        1292.7192017587804,
+        16.19583587049708,
+        3.285326569653591,
+        37.06305466790822,
+        58.00974573326244,
+        127.33376970922467,
+        80.23806074274133,
+        278.12428193514506,
+        525.8046256918218,
+        766.8676270804124,
+        80.38719503543678
       ],
-      "nTrain": 1304,
-      "sumWinR": 363.13499999999993,
-      "nWin": 695,
-      "sumLossR": 719.0310000000001,
-      "nLoss": 609,
+      "nTrain": 1306,
+      "sumWinR": 363.16599999999994,
+      "nWin": 696,
+      "sumLossR": 720.4580000000001,
+      "nLoss": 610,
       "lastTrainT": {
         "SUIUSDT": 1790388000000,
         "NVDA": 1789997400000,
@@ -5653,7 +5879,7 @@
         "SOLUSDT": 1790499600000,
         "XRPUSDT": 1790445600000,
         "DOGEUSDT": 1790240400000,
-        "BNBUSDT": 1790456400000,
+        "BNBUSDT": 1790553600000,
         "ADAUSDT": 1790384400000,
         "AVAXUSDT": 1790488800000,
         "LINKUSDT": 1790431200000
@@ -8237,157 +8463,147 @@
         ],
         "BNBUSDT": [
           [
-            0.533,
-            0.031,
-            35
-          ],
-          [
-            0.484,
-            0.692,
-            81
-          ],
-          [
-            0.554,
+            0.551,
             0.403,
             2
           ],
           [
-            0.603,
+            0.598,
             0.235,
             2
           ],
           [
-            0.55,
+            0.545,
             1.411,
             10
           ],
           [
-            0.471,
+            0.466,
             -1.215,
             33
           ],
           [
-            0.539,
+            0.538,
             -1.328,
             69
           ],
           [
-            0.468,
+            0.461,
             0.069,
             10
           ],
           [
-            0.459,
+            0.454,
             0.353,
             41
           ],
           [
-            0.495,
+            0.489,
             -1.412,
             10
           ],
           [
-            0.495,
+            0.489,
             0.025,
             10
           ],
           [
-            0.535,
+            0.53,
             -1.446,
             10
           ],
           [
-            0.546,
+            0.541,
             -1.421,
             10
           ],
           [
-            0.546,
+            0.539,
             -1.387,
             10
           ],
           [
-            0.547,
+            0.541,
             0.066,
             10
           ],
           [
-            0.516,
+            0.509,
             0.424,
             41
           ],
           [
-            0.59,
+            0.584,
             -1.487,
             10
           ],
           [
-            0.617,
+            0.613,
             -1.408,
             10
           ],
           [
-            0.613,
+            0.609,
             0.299,
             10
           ],
           [
-            0.58,
+            0.573,
             -1.338,
             35
           ],
           [
-            0.536,
+            0.53,
             -1.311,
             10
           ],
           [
-            0.493,
+            0.486,
             1.262,
             35
           ],
           [
-            0.608,
+            0.605,
             -1.327,
             10
           ],
           [
-            0.552,
+            0.547,
             -1.296,
             10
           ],
           [
-            0.426,
+            0.422,
             1.314,
             95
           ],
           [
-            0.541,
+            0.535,
             -0.04,
             10
           ],
           [
-            0.537,
+            0.532,
             -1.37,
             2
           ],
           [
-            0.581,
+            0.576,
             0.049,
             10
           ],
           [
-            0.575,
+            0.57,
             0.061,
             33
           ],
           [
-            0.568,
+            0.564,
             0.537,
             33
           ],
           [
-            0.531,
+            0.524,
             -1.36,
             41
           ],
@@ -8397,7 +8613,7 @@
             69
           ],
           [
-            0.482,
+            0.476,
             -1.311,
             35
           ],
@@ -8407,22 +8623,22 @@
             82
           ],
           [
-            0.486,
+            0.481,
             1.284,
             10
           ],
           [
-            0.561,
+            0.555,
             -1.361,
             10
           ],
           [
-            0.565,
+            0.563,
             1.311,
             10
           ],
           [
-            0.487,
+            0.481,
             0.578,
             10
           ],
@@ -8432,209 +8648,214 @@
             56
           ],
           [
-            0.559,
+            0.556,
             1.347,
             33
           ],
           [
-            0.597,
+            0.591,
             0.12,
             35
           ],
           [
-            0.536,
+            0.532,
             -1.27,
             88
           ],
           [
-            0.551,
+            0.545,
             0.129,
             35
           ],
           [
-            0.424,
+            0.42,
             -1.268,
             100
           ],
           [
-            0.484,
+            0.478,
             0.222,
             40
           ],
           [
-            0.489,
+            0.484,
             0.079,
             10
           ],
           [
-            0.467,
+            0.461,
             0.105,
             10
           ],
           [
-            0.46,
+            0.455,
             -1.278,
             41
           ],
           [
-            0.44,
+            0.435,
             0.204,
             65
           ],
           [
-            0.528,
+            0.522,
             -1.341,
             35
           ],
           [
-            0.598,
+            0.595,
             0.087,
             10
           ],
           [
-            0.609,
+            0.603,
             0.139,
             2
           ],
           [
-            0.569,
+            0.564,
             1.422,
             41
           ],
           [
-            0.571,
+            0.565,
             0.19,
             2
           ],
           [
-            0.569,
+            0.564,
             0.2,
             2
           ],
           [
-            0.482,
+            0.481,
             -1.344,
             56
           ],
           [
-            0.601,
+            0.595,
             0.084,
             2
           ],
           [
-            0.598,
+            0.594,
             0.116,
             10
           ],
           [
-            0.543,
+            0.538,
             0.171,
             27
           ],
           [
-            0.523,
+            0.518,
             -1.274,
             41
           ],
           [
-            0.548,
+            0.543,
             0.181,
             10
           ],
           [
-            0.546,
+            0.54,
             -1.298,
             2
           ],
           [
-            0.521,
+            0.52,
             0.18,
             69
           ],
           [
-            0.506,
+            0.505,
             0.218,
             56
           ],
           [
-            0.6,
+            0.594,
             -1.173,
             10
           ],
           [
-            0.603,
+            0.597,
             -1.159,
             10
           ],
           [
-            0.544,
+            0.538,
             0.355,
             35
           ],
           [
-            0.556,
+            0.551,
             0.169,
             10
           ],
           [
-            0.556,
+            0.552,
             -1.218,
             10
           ],
           [
-            0.6,
+            0.595,
             0.171,
             10
           ],
           [
-            0.588,
+            0.584,
             0.357,
             41
           ],
           [
-            0.598,
+            0.592,
             -1.176,
             10
           ],
           [
-            0.538,
+            0.533,
             -1.182,
             10
           ],
           [
-            0.576,
+            0.572,
             -1.128,
             10
           ],
           [
-            0.492,
+            0.486,
             -1.171,
             10
           ],
           [
-            0.5,
+            0.499,
             0.232,
             69
           ],
           [
-            0.483,
+            0.477,
             1.505,
             15
           ],
           [
-            0.567,
+            0.561,
             -1.207,
             35
           ],
           [
-            0.459,
+            0.457,
             0.211,
             69
           ],
           [
-            0.545,
+            0.54,
             0.24,
             41
+          ],
+          [
+            0.55,
+            0.24,
+            10
           ]
         ],
         "ADAUSDT": [
@@ -9621,20 +9842,20 @@
       },
       "status": {
         "all": {
-          "n": 785,
-          "mean": -0.275,
+          "n": 784,
+          "mean": -0.276,
           "sd": 0.946,
-          "t": -8.15,
-          "winRate": 52.9,
-          "sum": -215.99
+          "t": -8.17,
+          "winRate": 52.8,
+          "sum": -216.47
         },
         "base": {
-          "n": 75,
-          "mean": -0.124,
-          "sd": 0.991,
-          "t": -1.08,
-          "winRate": 58.7,
-          "sum": -9.27
+          "n": 74,
+          "mean": -0.135,
+          "sd": 0.994,
+          "t": -1.17,
+          "winRate": 58.1,
+          "sum": -9.96
         },
         "taken": {
           "n": 0,
@@ -9647,33 +9868,33 @@
         "metaActive": false,
         "policy": "SCORE",
         "chosen": {
-          "n": 75,
-          "mean": -0.124,
-          "sd": 0.991,
-          "t": -1.08,
-          "winRate": 58.7,
-          "sum": -9.27
+          "n": 74,
+          "mean": -0.135,
+          "sd": 0.994,
+          "t": -1.17,
+          "winRate": 58.1,
+          "sum": -9.96
         },
         "significant": false,
         "symbols": 18,
-        "nTrain": 1304,
-        "updatedAt": 1795745048955
+        "nTrain": 1306,
+        "updatedAt": 1795750426291
       }
     },
     "champion": {
-      "id": "emax",
-      "name": "EMA Cross Naive (CONTROL)",
-      "book": "Baseline Penelitian",
-      "netR": -35.94,
-      "trades": 98,
-      "winRate": 52,
-      "pf": 0.35,
-      "expPerTrade": -0.367,
-      "tStat": -4.23,
-      "deflatedT": -6.38,
+      "id": "wyckoff",
+      "name": "Wyckoff Spring & Upthrust",
+      "book": "Richard D. Wyckoff",
+      "netR": -67.92,
+      "trades": 227,
+      "winRate": 52.9,
+      "pf": 0.48,
+      "expPerTrade": -0.299,
+      "tStat": -4.68,
+      "deflatedT": -6.83,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795745048954,
+      "updatedAt": 1795750426286,
       "gen": 84
     },
     "factory": {
