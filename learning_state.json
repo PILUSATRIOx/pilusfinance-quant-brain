@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795781327694,
+  "updatedAt": 1795783127030,
   "brain": {
     "v": 1,
     "gen": 86,
-    "cycles": 519,
+    "cycles": 521,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 15,
     "scanCursor": 0,
     "lastOptAt": 1795778623870,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.6,
+    "lastHurst": 0.55,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -2600,19 +2600,19 @@
       },
       "statarb": {
         "SUIUSDT": {
-          "trades": 99,
+          "trades": 98,
           "wins": 54,
-          "losses": 45,
-          "winRate": 54.54545454545454,
-          "pf": 0.6576823076563693,
-          "exp": -0.17388410440836416,
-          "netR": -17.21452633642805,
-          "maxDD": 18.514928576998535,
-          "sumR2": 87.72102002854247,
+          "losses": 44,
+          "winRate": 55.10204081632652,
+          "pf": 0.6718121594959012,
+          "exp": -0.16486574943645382,
+          "netR": -16.156843444772473,
+          "maxDD": 18.466707650996305,
+          "sumR2": 86.60232692924157,
           "grossW": 33.073632065701766,
-          "grossL": 50.28815840212981,
-          "sd": 0.9298216173761419,
-          "tStat": -1.8607063566351696,
+          "grossL": 49.23047551047422,
+          "sd": 0.9302400578444637,
+          "tStat": -1.7544800807102499,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3690,8 +3690,9 @@
         "tp1Hit": false,
         "beActive": false,
         "lockedR": 0,
-        "mfe": 0,
-        "mae": 0
+        "mfe": 0.12911792566902852,
+        "mae": -0.03521397972791782,
+        "lastBarT": 1795782900000
       },
       {
         "id": "sig_DOGEUSDT_1795633724067",
@@ -4841,6 +4842,26 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795783127010,
+        "type": "CYCLE",
+        "text": "[CYCLE #521] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795783123663,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
+      {
+        "t": 1795782226797,
+        "type": "CYCLE",
+        "text": "[CYCLE #520] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795782222746,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795781327670,
         "type": "CYCLE",
@@ -6320,26 +6341,6 @@
         "t": 1795523022834,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795522127394,
-        "type": "CYCLE",
-        "text": "[CYCLE #395] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795522124005,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795521228395,
-        "type": "CYCLE",
-        "text": "[CYCLE #394] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795521223738,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6426,9 +6427,9 @@
       "losses": 4,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 14110,
+      "newsIngested": 14170,
       "lessons": 1,
-      "backtests": 13960,
+      "backtests": 14020,
       "netR": -0.59,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6441,8 +6442,15 @@
       }
     },
     "news": {
-      "fetchedAt": 1795781322064,
+      "fetchedAt": 1795783123663,
       "items": [
+        {
+          "source": "CoinDesk",
+          "title": "Bitcoin &#39;death cross&#39; is coming. Here&#39;s what happened after previous 13.",
+          "link": "https://www.coindesk.com/daybook-us/2026/11/27/bitcoin-death-cross-is-coming-here-s-what-happened-after-previous-13",
+          "pubDate": "2026-11-27 12:16:07",
+          "summary": "Your day-ahead look for Nov. 27, 2026"
+        },
         {
           "source": "CoinDesk",
           "title": "Bitcoin on course to end seven-week losing streak while trailing stock rebound",
@@ -6507,11 +6515,11 @@
           "summary": "The vaults that would hold lenders&#39; money are on track to switch on Dec. 9. The loan system that draws from them still needs one more validator to start its own two-week clock."
         },
         {
-          "source": "CoinDesk",
-          "title": "Binance says customer withdrawals are fully restored, four weeks after the $6.3 billion hack",
-          "link": "https://www.coindesk.com/markets/2026/11/27/binance-says-its-withdrawal-suspension-is-over-four-weeks-after-a-usd6-3-billion-hack",
-          "pubDate": "2026-11-27 04:45:47",
-          "summary": "Binance says it has fully lifted withdrawal suspensions imposed after October’s $6.3 billion hack, though a small number of networks remain paused for unrelated maintenance."
+          "source": "CoinTelegraph",
+          "title": "Austria-supervised crypto firms report 20.4B euros in H1 trading volume",
+          "link": "https://cointelegraph.com/news/austria-supervised-crypto-firms-report-204b-h1-volume?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
+          "pubDate": "2026-11-27 12:20:00",
+          "summary": "    About 74% of accounts were based in other EEA countries, highlighting the market’s cross-border nature and putting Europe’s supervisory framework in focus, FMA said. "
         },
         {
           "source": "CoinTelegraph",
@@ -6575,13 +6583,6 @@
           "link": "https://cointelegraph.com/news/privacy-coins-kucoin-drop-monero-grayscale-zcash?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
           "pubDate": "2026-11-27 00:35:39",
           "summary": "    As KuCoin joins exchanges dropping Monero ahead of new EU restrictions, Grayscale argues that Zcash’s privacy design sets it apart. "
-        },
-        {
-          "source": "CoinTelegraph",
-          "title": "‘Very racist’ Netflix SBF series, BitMart’s $319M shortfall: Asia Express",
-          "link": "https://cointelegraph.com/magazine/very-racist-netflix-sbf-series-bitmarts-319m-shortfall-asia-express?utm_source=rss_feed&utm_medium=rss&utm_campaign=rss_partner_inbound",
-          "pubDate": "2026-11-26 22:39:46",
-          "summary": "    Netflix’s The Altruist has been slammed for its ‘very racist’ portrayal of CZ. BitMart reportedly has a $319.5 million shortfall and just $1.9M in liquid assets. "
         },
         {
           "source": "Decrypt",
@@ -6769,23 +6770,23 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795781322064
+        "t": 1795783123663
       },
       "lastErrors": []
     },
     "derivatives": {},
     "whale": {
-      "fetchedAt": 1795781322768,
+      "fetchedAt": 1795783124322,
       "bias": {
         "BTC": -20,
         "ETH": 20,
         "HYPE": -40,
-        "ARB": 16.85,
+        "ARB": 16.72,
         "LDO": 20,
         "AAVE": 20,
         "ZRO": 5,
         "ETHFI": 20,
-        "ENA": 3.71,
+        "ENA": 3.83,
         "EIGEN": 20,
         "WLFI": -20,
         "MEGA": 20,
@@ -6797,112 +6798,112 @@
           "whale": "0x37b81a",
           "coin": "BTC",
           "side": "SHORT",
-          "pct": 84.18,
+          "pct": 84.79,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "ETH",
           "side": "LONG",
-          "pct": 459.91,
+          "pct": 463.24,
           "lev": 20
         },
         {
           "whale": "0x37b81a",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 417.33,
+          "pct": 420.35,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ARB",
           "side": "LONG",
-          "pct": 16.85,
+          "pct": 16.72,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "LDO",
           "side": "LONG",
-          "pct": 60.2,
+          "pct": 59.75,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "AAVE",
           "side": "LONG",
-          "pct": 300.38,
+          "pct": 298.13,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "ZRO",
           "side": "LONG",
-          "pct": 4.42,
+          "pct": 4.39,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ETHFI",
           "side": "LONG",
-          "pct": 35.83,
+          "pct": 35.56,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "ENA",
           "side": "SHORT",
-          "pct": 16.29,
+          "pct": 16.17,
           "lev": 10
         },
         {
           "whale": "0x08c14b",
           "coin": "EIGEN",
           "side": "LONG",
-          "pct": 52.42,
+          "pct": 52.03,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "WLFI",
           "side": "SHORT",
-          "pct": 163.16,
+          "pct": 161.93,
           "lev": 5
         },
         {
           "whale": "0x08c14b",
           "coin": "MEGA",
           "side": "LONG",
-          "pct": 83.3,
+          "pct": 82.67,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "ENA",
           "side": "LONG",
-          "pct": 95.34,
+          "pct": 96.61,
           "lev": 10
         },
         {
           "whale": "0xfdf891",
           "coin": "GRASS",
           "side": "LONG",
-          "pct": 223.13,
+          "pct": 226.1,
           "lev": 3
         },
         {
           "whale": "0xfdf891",
           "coin": "AERO",
           "side": "LONG",
-          "pct": 29.59,
+          "pct": 29.98,
           "lev": 3
         },
         {
           "whale": "0x03ef8f",
           "coin": "HYPE",
           "side": "SHORT",
-          "pct": 1230.63,
+          "pct": 1227.08,
           "lev": 10
         }
       ]
@@ -7048,32 +7049,32 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.463,
+            0.467,
             0.453,
             61
           ],
           [
-            0.485,
+            0.493,
             0.316,
             35
           ],
           [
-            0.483,
+            0.491,
             -1.078,
             46
           ],
           [
-            0.511,
+            0.518,
             0.541,
             10
           ],
           [
-            0.531,
+            0.524,
             -1.078,
             94
           ],
           [
-            0.505,
+            0.513,
             0.284,
             2
           ],
@@ -7083,222 +7084,222 @@
             35
           ],
           [
-            0.616,
+            0.609,
             -1.121,
             10
           ],
           [
-            0.513,
+            0.504,
             -1.126,
             69
           ],
           [
-            0.58,
+            0.574,
             0.582,
             35
           ],
           [
-            0.536,
+            0.538,
             -1.134,
             35
           ],
           [
-            0.546,
+            0.548,
             -1.121,
             10
           ],
           [
-            0.556,
+            0.558,
             0.302,
             10
           ],
           [
-            0.499,
+            0.494,
             0.399,
             61
           ],
           [
-            0.546,
+            0.545,
             0.505,
             34
           ],
           [
-            0.459,
+            0.461,
             1.004,
             94
           ],
           [
-            0.585,
+            0.582,
             1.514,
             10
           ],
           [
-            0.489,
+            0.497,
             -1.107,
             27
           ],
           [
-            0.504,
+            0.509,
             1.508,
             35
           ],
           [
-            0.564,
+            0.566,
             0.315,
             10
           ],
           [
-            0.609,
+            0.604,
             0.273,
             2
           ],
           [
-            0.561,
+            0.56,
             -1.129,
             16
           ],
           [
-            0.467,
+            0.466,
             -1.159,
             61
           ],
           [
-            0.597,
+            0.59,
             0.256,
             10
           ],
           [
-            0.543,
+            0.544,
             -1.167,
             10
           ],
           [
-            0.489,
+            0.494,
             0.447,
             10
           ],
           [
-            0.464,
+            0.465,
             0.159,
             90
           ],
           [
-            0.516,
+            0.518,
             -1.196,
             35
           ],
           [
-            0.575,
+            0.571,
             -1.155,
             41
           ],
           [
-            0.6,
+            0.593,
             0.85,
             10
           ],
           [
-            0.585,
+            0.578,
             0.927,
             15
           ],
           [
-            0.519,
+            0.516,
             0.167,
             69
           ],
           [
-            0.547,
+            0.548,
             0.18,
             10
           ],
           [
-            0.502,
+            0.496,
             -1.145,
             56
           ],
           [
-            0.497,
+            0.492,
             -1.129,
             61
           ],
           [
-            0.494,
+            0.503,
             0.741,
             2
           ],
           [
-            0.523,
+            0.524,
             -1.134,
             41
           ],
           [
-            0.548,
+            0.55,
             0.62,
             10
           ],
           [
-            0.6,
+            0.593,
             -1.129,
             35
           ],
           [
-            0.52,
+            0.513,
             -1.12,
             69
           ],
           [
-            0.558,
+            0.554,
             0.511,
             41
           ],
           [
-            0.444,
+            0.45,
             1.539,
             90
           ],
           [
-            0.525,
+            0.526,
             -1.111,
             46
           ],
           [
-            0.432,
+            0.437,
             -1.113,
             73
           ],
           [
-            0.553,
+            0.554,
             0.272,
             10
           ],
           [
-            0.55,
+            0.549,
             0.277,
             35
           ],
           [
-            0.586,
+            0.579,
             -1.119,
             35
           ],
           [
-            0.456,
+            0.457,
             0.307,
             69
           ],
           [
-            0.531,
+            0.532,
             1.578,
             33
           ],
           [
-            0.566,
+            0.564,
             -1.131,
             2
           ],
           [
-            0.458,
+            0.46,
             -1.124,
             69
           ]
@@ -7307,12 +7308,12 @@
         "GBPUSDT": [],
         "NVDA": [
           [
-            0.493,
+            0.502,
             0.226,
             10
           ],
           [
-            0.459,
+            0.463,
             0.254,
             61
           ],
@@ -7322,206 +7323,206 @@
             10
           ],
           [
-            0.436,
+            0.445,
             -1.211,
             56
           ],
           [
-            0.433,
+            0.441,
             1.439,
             61
           ],
           [
-            0.548,
+            0.551,
             0.218,
             15
           ],
           [
-            0.513,
+            0.517,
             0.232,
             41
           ],
           [
-            0.447,
+            0.454,
             1.464,
             95
           ],
           [
-            0.523,
+            0.527,
             0.229,
             10
           ],
           [
-            0.471,
+            0.48,
             1.433,
             27
           ],
           [
-            0.545,
+            0.549,
             -1.171,
             10
           ],
           [
-            0.468,
+            0.474,
             1.594,
             56
           ]
         ],
         "AAPL": [
           [
-            0.471,
+            0.48,
             1.36,
             10
           ],
           [
-            0.538,
+            0.541,
             0.143,
             10
           ],
           [
-            0.449,
+            0.453,
             -1.221,
             96
           ],
           [
-            0.526,
+            0.529,
             -1.216,
             10
           ],
           [
-            0.556,
+            0.558,
             0.469,
             10
           ],
           [
-            0.47,
+            0.479,
             -1.257,
             35
           ],
           [
-            0.484,
+            0.491,
             0.368,
             10
           ],
           [
-            0.48,
+            0.488,
             -1.262,
             35
           ],
           [
-            0.488,
+            0.497,
             0.296,
             10
           ],
           [
-            0.46,
+            0.463,
             -1.236,
             61
           ],
           [
-            0.493,
+            0.495,
             0.171,
             90
           ],
           [
-            0.467,
+            0.47,
             0.431,
             73
           ],
           [
-            0.556,
+            0.554,
             -1.252,
             35
           ],
           [
-            0.533,
+            0.536,
             -3.517,
             10
           ],
           [
-            0.485,
+            0.492,
             -1.21,
             10
           ],
           [
-            0.49,
+            0.498,
             0.062,
             10
           ],
           [
-            0.474,
+            0.482,
             0.615,
             10
           ],
           [
-            0.54,
+            0.542,
             -1.232,
             35
           ],
           [
-            0.464,
+            0.467,
             -1.182,
             81
           ]
         ],
         "TSLA": [
           [
-            0.433,
+            0.441,
             0.806,
             61
           ],
           [
-            0.503,
+            0.512,
             0.264,
             10
           ],
           [
-            0.499,
+            0.508,
             0.24,
             10
           ],
           [
-            0.505,
+            0.508,
             -1.548,
             35
           ],
           [
-            0.479,
+            0.488,
             1.493,
             35
           ],
           [
-            0.44,
+            0.45,
             -1.911,
             56
           ],
           [
-            0.466,
+            0.475,
             0.307,
             56
           ],
           [
-            0.488,
+            0.498,
             1.513,
             10
           ],
           [
-            0.498,
+            0.506,
             -1.11,
             10
           ],
           [
-            0.48,
+            0.483,
             0.259,
             95
           ],
           [
-            0.484,
+            0.492,
             1.518,
             10
           ],
           [
-            0.561,
+            0.563,
             -0.213,
             2
           ],
@@ -7531,27 +7532,27 @@
             61
           ],
           [
-            0.545,
+            0.543,
             -1.13,
             69
           ],
           [
-            0.495,
+            0.504,
             0.292,
             49
           ],
           [
-            0.545,
+            0.547,
             0.289,
             35
           ],
           [
-            0.544,
+            0.545,
             -1.531,
             35
           ],
           [
-            0.567,
+            0.569,
             -1.101,
             10
           ]
@@ -11029,7 +11030,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1317,
-        "updatedAt": 1795781324837
+        "updatedAt": 1795783124732
       }
     },
     "champion": {
@@ -11045,7 +11046,7 @@
       "deflatedT": -5.6,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795781324836,
+      "updatedAt": 1795783124730,
       "gen": 86
     },
     "factory": {
