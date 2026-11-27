@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795802927841,
+  "updatedAt": 1795803827229,
   "brain": {
     "v": 1,
     "gen": 90,
-    "cycles": 543,
+    "cycles": 544,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795800224455,
     "autoExecBursa": false,
@@ -2604,15 +2604,15 @@
           "wins": 56,
           "losses": 42,
           "winRate": 57.14285714285714,
-          "pf": 0.7270048199080036,
-          "exp": -0.13110922983090775,
-          "netR": -12.848704523428959,
-          "maxDD": 16.301914835356037,
-          "sumR2": 85.90933439774352,
-          "grossW": 34.21697817140501,
+          "pf": 0.7269904817865305,
+          "exp": -0.13111611588678218,
+          "netR": -12.849379356904654,
+          "maxDD": 16.301914835356033,
+          "sumR2": 85.90887720044742,
+          "grossW": 34.21630333792932,
           "grossL": 47.06568269483397,
-          "sd": 0.9318242314863199,
-          "tStat": -1.3928755155721457,
+          "sd": 0.9318207234747757,
+          "tStat": -1.3929539155227049,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.3529812907172888,
         "mae": -0.2647359680379686,
-        "lastBarT": 1795802700000
+        "lastBarT": 1795803600000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795803827210,
+        "type": "CYCLE",
+        "text": "[CYCLE #544] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795803823380,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 12 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795802927824,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795542829398,
         "type": "CYCLE",
         "text": "[CYCLE #418] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795542824036,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 11 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795541927678,
-        "type": "CYCLE",
-        "text": "[CYCLE #417] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 14830,
+      "newsIngested": 14860,
       "lessons": 1,
-      "backtests": 14680,
+      "backtests": 14710,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795802922547,
+      "fetchedAt": 1795803823380,
       "items": [
         {
           "source": "CoinDesk",
@@ -6664,6 +6664,13 @@
         },
         {
           "source": "Decrypt",
+          "title": "$7 Billion in Bitcoin Options Just Expired: Here’s What It Means",
+          "link": "https://decrypt.co/384154/7-billion-bitcoin-options-just-expired-what-it-means",
+          "pubDate": "2026-11-27 18:16:03",
+          "summary": "Bitcoin’s largest options expiry this month comes as traders increasingly seek protection against further losses, with some hedging against a potential drop to $40,000 before the end of the year."
+        },
+        {
+          "source": "Decrypt",
           "title": "Hackers Hit US Air Force Cloud System Running Air-Defense and Munitions Data",
           "link": "https://decrypt.co/384174/us-air-force-hack-cloud-system-air-defense-munitions-data",
           "pubDate": "2026-11-27 17:43:29",
@@ -6724,13 +6731,6 @@
           "link": "https://decrypt.co/resources/what-is-self-custody-how-to-hold-your-own-crypto-keys",
           "pubDate": "2026-11-26 21:01:03",
           "summary": "Self-custody means holding your own crypto instead of trusting an exchange. Here&#39;s how it works, the wallets involved and the risks."
-        },
-        {
-          "source": "Decrypt",
-          "title": "Before the Sell-Off, AI Stocks Showed Dot-Com-Level Bubble Signals: Study",
-          "link": "https://decrypt.co/384066/before-the-sell-off-ai-stocks-showed-dot-com-level-bubble-signals-study",
-          "pubDate": "2026-11-26 19:01:02",
-          "summary": "A study of 170 years of financial journalism suggests AI stocks rivaled dot-com bubble levels, but estimates vary."
         }
       ],
       "perCoin": {
@@ -6739,7 +6739,8 @@
           "impact": -0.5,
           "sources": [
             "CoinDesk",
-            "CoinTelegraph"
+            "CoinTelegraph",
+            "Decrypt"
           ],
           "multiSourced": true,
           "critical": false,
@@ -6844,7 +6845,7 @@
       "fearGreed": {
         "value": 12,
         "classification": "Extreme Fear",
-        "t": 1795802922547
+        "t": 1795803823380
       },
       "lastErrors": []
     },
@@ -7127,32 +7128,32 @@
       "oosBySym": {
         "SUIUSDT": [
           [
-            0.515,
+            0.511,
             0.316,
             35
           ],
           [
-            0.508,
+            0.504,
             -1.078,
             46
           ],
           [
-            0.537,
+            0.533,
             0.541,
             10
           ],
           [
-            0.52,
+            0.516,
             -1.078,
             94
           ],
           [
-            0.534,
+            0.531,
             0.284,
             2
           ],
           [
-            0.579,
+            0.578,
             -1.13,
             35
           ],
@@ -7162,222 +7163,222 @@
             10
           ],
           [
-            0.492,
+            0.49,
             -1.126,
             69
           ],
           [
-            0.599,
+            0.598,
             0.582,
             35
           ],
           [
-            0.563,
+            0.561,
             -1.134,
             35
           ],
           [
-            0.574,
+            0.571,
             -1.121,
             10
           ],
           [
-            0.585,
+            0.583,
             0.302,
             10
           ],
           [
-            0.486,
+            0.482,
             0.399,
             61
           ],
           [
-            0.559,
+            0.556,
             0.505,
             34
           ],
           [
-            0.457,
+            0.451,
             1.004,
             94
           ],
           [
-            0.604,
+            0.603,
             1.514,
             10
           ],
           [
-            0.516,
+            0.512,
             -1.107,
             27
           ],
           [
-            0.526,
+            0.522,
             1.508,
             35
           ],
           [
-            0.584,
+            0.582,
             0.315,
             10
           ],
           [
-            0.631,
+            0.629,
             0.273,
             2
           ],
           [
-            0.58,
+            0.578,
             -1.129,
             16
           ],
           [
-            0.46,
+            0.457,
             -1.159,
             61
           ],
           [
-            0.615,
+            0.614,
             0.256,
             10
           ],
           [
-            0.563,
+            0.561,
             -1.167,
             10
           ],
           [
-            0.523,
+            0.521,
             0.447,
             10
           ],
           [
-            0.482,
+            0.477,
             0.159,
             90
           ],
           [
-            0.542,
+            0.539,
             -1.196,
             35
           ],
           [
-            0.59,
+            0.588,
             -1.155,
             41
           ],
           [
-            0.614,
+            0.615,
             0.85,
             10
           ],
           [
-            0.605,
+            0.604,
             0.927,
             15
           ],
           [
-            0.498,
+            0.494,
             0.167,
             69
           ],
           [
-            0.572,
+            0.57,
             0.18,
             10
           ],
           [
-            0.473,
+            0.468,
             -1.145,
             56
           ],
           [
-            0.48,
+            0.477,
             -1.129,
             61
           ],
           [
-            0.524,
+            0.52,
             0.741,
             2
           ],
           [
-            0.545,
+            0.542,
             -1.134,
             41
           ],
           [
-            0.575,
+            0.573,
             0.62,
             10
           ],
           [
-            0.615,
+            0.614,
             -1.129,
             35
           ],
           [
-            0.501,
+            0.497,
             -1.12,
             69
           ],
           [
-            0.584,
+            0.582,
             0.511,
             41
           ],
           [
-            0.456,
+            0.45,
             1.539,
             90
           ],
           [
-            0.545,
+            0.542,
             -1.111,
             46
           ],
           [
-            0.439,
+            0.433,
             -1.113,
             73
           ],
           [
-            0.577,
+            0.574,
             0.272,
             10
           ],
           [
-            0.569,
+            0.566,
             0.277,
             35
           ],
           [
-            0.605,
+            0.604,
             -1.119,
             35
           ],
           [
-            0.431,
+            0.426,
             0.307,
             69
           ],
           [
-            0.56,
+            0.558,
             1.578,
             33
           ],
           [
-            0.596,
+            0.595,
             -1.131,
             2
           ],
           [
-            0.442,
+            0.437,
             -1.124,
             69
           ],
           [
-            0.576,
+            0.575,
             0.236,
             10
           ]
@@ -11083,7 +11084,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1333,
-        "updatedAt": 1795802925201
+        "updatedAt": 1795803824407
       }
     },
     "champion": {
@@ -11099,7 +11100,7 @@
       "deflatedT": -5.24,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795802925200,
+      "updatedAt": 1795803824406,
       "gen": 90
     },
     "factory": {
