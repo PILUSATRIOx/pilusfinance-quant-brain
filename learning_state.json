@@ -1,6 +1,6 @@
 {
   "version": "2.5",
-  "updatedAt": 1795825446022,
+  "updatedAt": 1795825463255,
   "brain": {
     "v": 1,
     "gen": 94,
@@ -11102,12 +11102,12 @@
       "gen": 94
     },
     "factory": {
-      "updatedAt": 1795776768324,
-      "day": "2026-11-27",
-      "dataUntil": "2026-11-26",
+      "updatedAt": 1795825425718,
+      "day": "2026-11-28",
+      "dataUntil": "2026-11-27",
       "universe": 20,
-      "nTrials": 87,
-      "hurdleSharpe": 2.78,
+      "nTrials": 91,
+      "hurdleSharpe": 2.93,
       "pbo": 0.186,
       "top": [
         {
@@ -11116,10 +11116,10 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.84,
-          "cagr": 0.0649,
+          "cagr": 0.0648,
           "mdd": -0.0111,
           "dsr": 1,
-          "years": 6.92,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
@@ -11128,10 +11128,10 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.66,
-          "cagr": 0.0639,
+          "cagr": 0.0638,
           "mdd": -0.0311,
           "dsr": 1,
-          "years": 6.92,
+          "years": 6.93,
           "status": "INKUBASI"
         },
         {
@@ -11140,10 +11140,10 @@
           "family": "CARRY",
           "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
           "sharpe": 4.43,
-          "cagr": 0.0631,
-          "mdd": -0.0716,
+          "cagr": 0.063,
+          "mdd": -0.0717,
           "dsr": 1,
-          "years": 6.92,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
@@ -11155,7 +11155,7 @@
           "cagr": 0.0543,
           "mdd": -0.0082,
           "dsr": 1,
-          "years": 6.92,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
@@ -11166,8 +11166,20 @@
           "sharpe": 4.21,
           "cagr": 0.0536,
           "mdd": -0.0087,
-          "dsr": 1,
-          "years": 6.92,
+          "dsr": 0.9999,
+          "years": 6.93,
+          "status": "KANDIDAT"
+        },
+        {
+          "id": "CARRY|thr=0.23",
+          "label": "Carry funding > 23%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 4.05,
+          "cagr": 0.0507,
+          "mdd": -0.0083,
+          "dsr": 0.9998,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
@@ -11178,8 +11190,8 @@
           "sharpe": 4.01,
           "cagr": 0.0498,
           "mdd": -0.0082,
-          "dsr": 1,
-          "years": 6.92,
+          "dsr": 0.9998,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
@@ -11190,8 +11202,8 @@
           "sharpe": 4.02,
           "cagr": 0.0569,
           "mdd": -0.0761,
-          "dsr": 0.9999,
-          "years": 6.92,
+          "dsr": 0.9996,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
@@ -11202,32 +11214,20 @@
           "sharpe": 3.68,
           "cagr": 0.0441,
           "mdd": -0.008,
-          "dsr": 0.9985,
-          "years": 6.92,
+          "dsr": 0.9934,
+          "years": 6.93,
           "status": "KANDIDAT"
         },
         {
-          "id": "MAX|fast=9|mode=LF|slow=39",
-          "label": "Persilangan SMA 9/39 (long/flat)",
-          "family": "MAX",
-          "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
-          "sharpe": 1.1,
-          "cagr": 0.2936,
-          "mdd": -0.3307,
-          "dsr": 0,
-          "years": 6.84,
-          "status": "KANDIDAT"
-        },
-        {
-          "id": "MAX|fast=10|mode=LF|slow=45",
-          "label": "Persilangan SMA 10/45 (long/flat)",
-          "family": "MAX",
-          "source": "Hurst, Ooi & Pedersen (2017), \"A Century of Evidence on Trend-Following Investing\", Journal of Portfolio Management",
-          "sharpe": 1.08,
-          "cagr": 0.2881,
-          "mdd": -0.2971,
-          "dsr": 0,
-          "years": 6.82,
+          "id": "CARRY|thr=0.39",
+          "label": "Carry funding > 39%/th (long spot + short perpetual)",
+          "family": "CARRY",
+          "source": "Schmeling, Schrimpf & Todorov (2023), \"Crypto Carry\", BIS Working Paper",
+          "sharpe": 3.33,
+          "cagr": 0.0383,
+          "mdd": -0.008,
+          "dsr": 0.9063,
+          "years": 6.93,
           "status": "KANDIDAT"
         }
       ],
@@ -11239,11 +11239,11 @@
           "btSharpe": 4.67,
           "dsr": 1,
           "fwd": {
-            "days": 10,
+            "days": 11,
             "sharpe": 0,
             "ret": 0,
             "mdd": 0,
-            "z": -0.76
+            "z": -0.8
           }
         }
       ],
@@ -11267,6 +11267,11 @@
         "maxAssetPct": 25
       },
       "log": [
+        {
+          "t": 1795825425718,
+          "type": "EXPLORE",
+          "text": "4 kandidat baru diuji: Carry funding > 23%/th (long spot + short perpetual); Breakout Donchian 130 hari (long/short); Breakout Donchian 14 hari (long/short); Carry funding > 39%/th (long spot + short perpetual)"
+        },
         {
           "t": 1795776768324,
           "type": "EXPLORE",
