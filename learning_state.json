@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795824529016,
+  "updatedAt": 1795825446022,
   "brain": {
     "v": 1,
     "gen": 94,
-    "cycles": 567,
+    "cycles": 568,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 9,
+    "optCursor": 12,
     "scanCursor": 0,
     "lastOptAt": 1795821826787,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.55,
+    "lastHurst": 0.5,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -196,15 +196,15 @@
           "wins": 40,
           "losses": 35,
           "winRate": 53.333333333333336,
-          "pf": 0.7237794174343963,
-          "exp": -0.1445147331253832,
-          "netR": -10.83860498440374,
-          "maxDD": 14.294253442144788,
-          "sumR2": 74.72654508183027,
+          "pf": 0.7237153763217608,
+          "exp": -0.14456102951849742,
+          "netR": -10.842077213887306,
+          "maxDD": 14.294253442144786,
+          "sumR2": 74.73394858091582,
           "grossW": 28.400342684637266,
-          "grossL": 39.23894766904101,
-          "sd": 0.9943095320919377,
-          "tStat": -1.258696875251702,
+          "grossL": 39.242419898524574,
+          "sd": 0.9943530202473856,
+          "tStat": -1.2590450414592589,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.41181150583683823,
         "mae": -0.4706417209563796,
-        "lastBarT": 1795824300000
+        "lastBarT": 1795825200000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795825425698,
+        "type": "CYCLE",
+        "text": "[CYCLE #568] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795825422663,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795824528993,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795608452920,
         "type": "CYCLE",
         "text": "[CYCLE #441] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795608098930,
-        "type": "CYCLE",
-        "text": "[CYCLE #440] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795608056493,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 15550,
+      "newsIngested": 15580,
       "lessons": 1,
-      "backtests": 15400,
+      "backtests": 15430,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795824523691,
+      "fetchedAt": 1795825422663,
       "items": [
         {
           "source": "CoinDesk",
@@ -6843,7 +6843,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795824523691
+        "t": 1795825422663
       },
       "lastErrors": []
     },
@@ -11082,7 +11082,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1336,
-        "updatedAt": 1795824526730
+        "updatedAt": 1795825423648
       }
     },
     "champion": {
@@ -11098,7 +11098,7 @@
       "deflatedT": -5.22,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795824526729,
+      "updatedAt": 1795825423647,
       "gen": 94
     },
     "factory": {
