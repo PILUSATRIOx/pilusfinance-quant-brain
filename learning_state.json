@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795827225717,
+  "updatedAt": 1795828126805,
   "brain": {
     "v": 1,
     "gen": 95,
-    "cycles": 570,
+    "cycles": 571,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 0,
+    "optCursor": 3,
     "scanCursor": 0,
     "lastOptAt": 1795827223877,
     "autoExecBursa": false,
@@ -188,7 +188,7 @@
         }
       }
     },
-    "lastHurst": 0.46,
+    "lastHurst": 0.52,
     "leaderboard": {
       "elder": {
         "SUIUSDT": {
@@ -386,15 +386,15 @@
           "wins": 46,
           "losses": 52,
           "winRate": 46.93877551020408,
-          "pf": 0.4311607057061486,
-          "exp": -0.3566027917273753,
-          "netR": -34.94707358928278,
-          "maxDD": 40.34740067342158,
-          "sumR2": 103.40641913579843,
-          "grossW": 26.48868505088914,
+          "pf": 0.43119894025835825,
+          "exp": -0.356578822658791,
+          "netR": -34.944724620561516,
+          "maxDD": 40.34740067342159,
+          "sumR2": 103.40741414771331,
+          "grossW": 26.491034019610407,
           "grossL": 61.43575864017191,
-          "sd": 0.9682814786882494,
-          "tStat": -3.645827797789908,
+          "sd": 0.9682956936568553,
+          "tStat": -3.6455292247376185,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -405,15 +405,15 @@
           "wins": 53,
           "losses": 44,
           "winRate": 54.63917525773196,
-          "pf": 0.5043891894984676,
-          "exp": -0.2653790876081455,
-          "netR": -25.74177149799011,
-          "maxDD": 27.264382311563818,
-          "sumR2": 84.42090998075311,
-          "grossW": 26.19771600419085,
+          "pf": 0.5055877494072188,
+          "exp": -0.26473730835658665,
+          "netR": -25.679518910588907,
+          "maxDD": 27.26438231156382,
+          "sumR2": 84.45678094076429,
+          "grossW": 26.259968591592052,
           "grossL": 51.93948750218098,
-          "sd": 0.8990132446373214,
-          "tStat": -2.907277409997917,
+          "sd": 0.8994121588599024,
+          "tStat": -2.8989602588199017,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.41181150583683823,
         "mae": -0.4706417209563796,
-        "lastBarT": 1795827000000
+        "lastBarT": 1795827900000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795828126788,
+        "type": "CYCLE",
+        "text": "[CYCLE #571] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795828122792,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795827225702,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795614826160,
         "type": "NEWS",
         "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
-      },
-      {
-        "t": 1795613926939,
-        "type": "CYCLE",
-        "text": "[CYCLE #445] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795613759068,
-        "type": "CYCLE",
-        "text": "[CYCLE #444] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 15640,
+      "newsIngested": 15670,
       "lessons": 1,
-      "backtests": 15490,
+      "backtests": 15520,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795827222914,
+      "fetchedAt": 1795828122792,
       "items": [
         {
           "source": "CoinDesk",
@@ -6843,7 +6843,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795827222914
+        "t": 1795828122792
       },
       "lastErrors": []
     },
@@ -11082,7 +11082,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1336,
-        "updatedAt": 1795827223878
+        "updatedAt": 1795828124833
       }
     },
     "champion": {
@@ -11098,7 +11098,7 @@
       "deflatedT": -5.22,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795827223877,
+      "updatedAt": 1795828124832,
       "gen": 95
     },
     "factory": {
