@@ -1,6 +1,79 @@
 {
   "trades": [
     {
+      "id": "sig_ADAUSDT_1795795727281",
+      "sym": "ADAUSDT",
+      "side": "LONG",
+      "entry": 0.1487,
+      "sl": 0.14530038638999393,
+      "slInit": 0.14530038638999393,
+      "risk": 0.003399613610006077,
+      "rsiAtEntry": 44,
+      "tp1": 0.15141969088800486,
+      "tp2": 0.15413938177600972,
+      "tp3": 0.1571990340250152,
+      "momentumBurst": false,
+      "lev": 5,
+      "conf": 90,
+      "techScore": 90,
+      "extScore": 0,
+      "regime": "RANGING",
+      "hurst": 0.57,
+      "kalmanPrice": 0.1487,
+      "kalmanVelZ": -0.2971,
+      "bayesProb": 0.55,
+      "factors": [
+        "[OK] Screen1 (Elder): Tren 4H selaras arah LONG",
+        "[OK] Screen2: RSI 44 zona momentum sehat",
+        "[OK] Screen3 (Williams): SL 1.85x ATR",
+        "[OK] Screen4: Entry di area of value (dekat mid-BB)",
+        "[INFO] Screen6: berita netral",
+        "[INFO] Sistem belum terverifikasi: sinyal dipantau (paper), tidak dieksekusi otomatis"
+      ],
+      "votes": [
+        {
+          "strat": "wyckoff",
+          "side": "LONG",
+          "note": "WYCKOFF SPRING: sweep bawah range lalu reclaim + volume",
+          "w": 0.84,
+          "barAge": 0
+        },
+        {
+          "strat": "rsidiv",
+          "side": "SHORT",
+          "note": "Bearish RSI divergence: harga higher-high, momentum lower-high",
+          "w": 0.36,
+          "barAge": 2
+        },
+        {
+          "strat": "statarb",
+          "side": "LONG",
+          "note": "D.E. Shaw Z-Score (-1.23 sigma) mean-reversion deceleration (RSI 44)",
+          "w": 0.65,
+          "barAge": 0
+        }
+      ],
+      "atr": 0.0018416108396565962,
+      "volPct": 1.2384740011140527,
+      "metaP": 0.516,
+      "metaEV": -0.301,
+      "riskMult": 0,
+      "policy": "SCORE",
+      "systemVerified": false,
+      "status": "LOSS",
+      "createdAt": 1795795727283,
+      "tp1Hit": false,
+      "beActive": false,
+      "lockedR": 0,
+      "mfe": 0.41181150583683823,
+      "mae": -1.0295287645920874,
+      "lastBarT": 1795845000000,
+      "closedAt": 1795845220993,
+      "netR": -1.13,
+      "closeReason": "SL 0.1453 tersentuh",
+      "lossCause": "WICK_HUNT"
+    },
+    {
       "id": "sig_LINKUSDT_1795781326759",
       "sym": "LINKUSDT",
       "side": "LONG",
@@ -1151,5 +1224,5 @@
       "closeReason": "SL 349.3928 tersentuh"
     }
   ],
-  "updatedAt": 1795844329261
+  "updatedAt": 1795845227673
 }
