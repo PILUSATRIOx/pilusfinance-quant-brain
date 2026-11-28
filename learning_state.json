@@ -1,13 +1,13 @@
 {
   "version": "2.5",
-  "updatedAt": 1795828126805,
+  "updatedAt": 1795829026449,
   "brain": {
     "v": 1,
     "gen": 95,
-    "cycles": 571,
+    "cycles": 572,
     "firstBootAt": 1793623210734,
     "running": false,
-    "optCursor": 3,
+    "optCursor": 6,
     "scanCursor": 0,
     "lastOptAt": 1795827223877,
     "autoExecBursa": false,
@@ -443,15 +443,15 @@
           "wins": 48,
           "losses": 31,
           "winRate": 60.75949367088608,
-          "pf": 0.7354586521044894,
-          "exp": -0.12029012992475535,
-          "netR": -9.502920264055673,
-          "maxDD": 11.130659528615327,
-          "sumR2": 65.81632536332813,
-          "grossW": 26.41932909187173,
+          "pf": 0.7392546247475675,
+          "exp": -0.11856405554712324,
+          "netR": -9.366560388222736,
+          "maxDD": 11.130659528615325,
+          "sumR2": 65.95879426813379,
+          "grossW": 26.555688967704665,
           "grossL": 35.922249355927406,
-          "sd": 0.9105733460798363,
-          "tStat": -1.1741635815042148,
+          "sd": 0.9118047536305792,
+          "tStat": -1.1557522292049764,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -462,15 +462,15 @@
           "wins": 56,
           "losses": 36,
           "winRate": 60.86956521739131,
-          "pf": 0.6772402770148482,
-          "exp": -0.1464973586882181,
-          "netR": -13.477756999316064,
+          "pf": 0.6776169400827555,
+          "exp": -0.14632639514898382,
+          "netR": -13.462028353706511,
           "maxDD": 17.0030910973092,
-          "sumR2": 79.53475858558494,
-          "grossW": 28.280108184922227,
+          "sumR2": 79.54125880529793,
+          "grossW": 28.295836830531783,
           "grossL": 41.75786518423829,
-          "sd": 0.9232069213377748,
-          "tStat": -1.522035059834553,
+          "sd": 0.9232730164534552,
+          "tStat": -1.5201500012289972,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -2832,15 +2832,15 @@
           "wins": 53,
           "losses": 46,
           "winRate": 53.535353535353536,
-          "pf": 0.6157729075706188,
-          "exp": -0.2087424646741809,
-          "netR": -20.66550400274391,
+          "pf": 0.6157575292327504,
+          "exp": -0.20875603288209735,
+          "netR": -20.66684725532764,
           "maxDD": 29.358724077469333,
-          "sumR2": 97.98591777239376,
+          "sumR2": 97.98890505160172,
           "grossW": 33.11910517741718,
-          "grossL": 53.784609180161084,
-          "sd": 0.9776698116143868,
-          "tStat": -2.124399541380153,
+          "grossL": 53.78595243274481,
+          "sd": 0.9776824742591338,
+          "tStat": -2.124510110455862,
           "atrMult": 1.846,
           "window": "OOS_40",
           "regime": "RANGING",
@@ -3699,7 +3699,7 @@
         "lockedR": 0,
         "mfe": 0.41181150583683823,
         "mae": -0.4706417209563796,
-        "lastBarT": 1795827900000
+        "lastBarT": 1795828800000
       },
       {
         "id": "sig_LINKUSDT_1795781326759",
@@ -4915,6 +4915,16 @@
       }
     ],
     "journal": [
+      {
+        "t": 1795829026433,
+        "type": "CYCLE",
+        "text": "[CYCLE #572] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
+      },
+      {
+        "t": 1795829022358,
+        "type": "NEWS",
+        "text": "[MACRO] Fear & Greed: 10 (Extreme Fear) — makro sentiment riil."
+      },
       {
         "t": 1795828126788,
         "type": "CYCLE",
@@ -6404,16 +6414,6 @@
         "t": 1795614832065,
         "type": "CYCLE",
         "text": "[CYCLE #446] Evaluasi sinyal vs harga riil, berita tier-1, Kalman+Hurst, & 10 strategi selesai."
-      },
-      {
-        "t": 1795614826162,
-        "type": "CB",
-        "text": "[CIRCUIT BREAKER] AKTIF: BTC, ETH — Long baru diblokir (Coldcard Bitcoin Exploit, Revisited: How a Hidden Flaw Survived Years of Audits)"
-      },
-      {
-        "t": 1795614826160,
-        "type": "NEWS",
-        "text": "[MACRO] Fear & Greed: 13 (Extreme Fear) — makro sentiment riil."
       }
     ],
     "accuracyHistory": [
@@ -6505,9 +6505,9 @@
       "losses": 5,
       "be": 0,
       "tp1Hits": 12,
-      "newsIngested": 15670,
+      "newsIngested": 15700,
       "lessons": 1,
-      "backtests": 15520,
+      "backtests": 15550,
       "netR": -1.76,
       "peakEquity": 2.22,
       "maxDrawdown": 4.04,
@@ -6520,7 +6520,7 @@
       }
     },
     "news": {
-      "fetchedAt": 1795828122792,
+      "fetchedAt": 1795829022358,
       "items": [
         {
           "source": "CoinDesk",
@@ -6843,7 +6843,7 @@
       "fearGreed": {
         "value": 10,
         "classification": "Extreme Fear",
-        "t": 1795828122792
+        "t": 1795829022358
       },
       "lastErrors": []
     },
@@ -8973,11 +8973,6 @@
         ],
         "XRPUSDT": [
           [
-            0.617,
-            0.845,
-            35
-          ],
-          [
             0.579,
             0.222,
             27
@@ -9676,11 +9671,6 @@
           ]
         ],
         "BNBUSDT": [
-          [
-            0.617,
-            0.235,
-            2
-          ],
           [
             0.574,
             1.411,
@@ -11046,12 +11036,12 @@
       },
       "status": {
         "all": {
-          "n": 777,
-          "mean": -0.28,
+          "n": 775,
+          "mean": -0.282,
           "sd": 0.954,
-          "t": -8.18,
-          "winRate": 52.3,
-          "sum": -217.42
+          "t": -8.23,
+          "winRate": 52.1,
+          "sum": -218.5
         },
         "base": {
           "n": 70,
@@ -11082,7 +11072,7 @@
         "significant": false,
         "symbols": 18,
         "nTrain": 1336,
-        "updatedAt": 1795828124833
+        "updatedAt": 1795829024465
       }
     },
     "champion": {
@@ -11098,7 +11088,7 @@
       "deflatedT": -5.22,
       "hurdle": 2.15,
       "significant": false,
-      "updatedAt": 1795828124832,
+      "updatedAt": 1795829024464,
       "gen": 95
     },
     "factory": {
